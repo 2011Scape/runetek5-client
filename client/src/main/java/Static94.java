@@ -14,7 +14,7 @@ public final class Static94 {
 
 	@OriginalMember(owner = "client!cv", name = "b", descriptor = "(B)V")
 	public static void method1840() {
-		for (@Pc(4) Class2_Sub2_Sub16 local4 = (Class2_Sub2_Sub16) Static693.aClass339_79.method7699(65280); local4 != null; local4 = (Class2_Sub2_Sub16) Static693.aClass339_79.method7706()) {
+		for (@Pc(4) SecondaryLinkable_Sub16 local4 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.head(); local4 != null; local4 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.next()) {
 			if (Static466.method6326(local4.anInt7314)) {
 				Static679.method8911(local4);
 			}
@@ -39,7 +39,7 @@ public final class Static94 {
 		}
 		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = null;
 		for (@Pc(49) int local49 = 0; local49 < Static416.anInt6378; local49++) {
-			@Pc(55) Class8_Sub2_Sub1_Sub2_Sub2 local55 = Static592.aClass2_Sub45Array1[local49].aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(55) ParticleNode_Sub2_Sub1_Sub2_Sub2 local55 = Static592.aClass2_Sub45Array1[local49].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local55 != null) {
 				local55.anInt10722 = -1;
 			}

@@ -110,7 +110,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	protected Class370[] aClass370Array3;
 
 	@OriginalMember(owner = "client!am", name = "Hf", descriptor = "[Lclient!lca;")
-	protected Class2_Sub7[] aClass2_Sub7Array6;
+	protected Linkable_Sub7[] aClass2_Sub7Array6;
 
 	@OriginalMember(owner = "client!am", name = "df", descriptor = "Lclient!eda;")
 	private Class67_Sub2 aClass67_Sub2_3;
@@ -179,7 +179,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	private int anInt9186;
 
 	@OriginalMember(owner = "client!am", name = "vb", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_59 = new Class339();
+	private final LinkedList aLinkedList59 = new LinkedList();
 
 	@OriginalMember(owner = "client!am", name = "jg", descriptor = "Z")
 	protected boolean aBoolean676 = true;
@@ -559,8 +559,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public final Class2_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
-		return new Class2_Sub7_Sub2(arg0, arg1, arg2, arg3, arg4, arg5);
+	public final Linkable_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		return new Linkable_Sub7_Sub2(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@OriginalMember(owner = "client!am", name = "za", descriptor = "(IIIII)V")
@@ -1063,8 +1063,8 @@ public abstract class Class19_Sub1 extends Class19 {
 		if (this.aBoolean687) {
 			return;
 		}
-		for (@Pc(9) Class2 local9 = this.aClass339_59.method7699(65280); local9 != null; local9 = this.aClass339_59.method7706()) {
-			((Class2_Sub13_Sub2) local9).method2101();
+		for (@Pc(9) Linkable local9 = this.aLinkedList59.head(); local9 != null; local9 = this.aLinkedList59.next()) {
+			((Linkable_Sub13_Sub2) local9).method2101();
 		}
 		@Pc(28) Enumeration local28 = this.aHashtable6.keys();
 		while (local28.hasMoreElements()) {
@@ -1225,8 +1225,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public final void method7938(@OriginalArg(0) Class2_Sub13 arg0) {
-		this.aNativeHeap5 = ((Class2_Sub13_Sub2) arg0).aNativeHeap3;
+	public final void method7938(@OriginalArg(0) Linkable_Sub13 arg0) {
+		this.aNativeHeap5 = ((Linkable_Sub13_Sub2) arg0).aNativeHeap3;
 		this.aNativeHeapBuffer6 = this.aNativeHeap5.a(32768, false);
 	}
 
@@ -1362,9 +1362,9 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public final Class2_Sub13 method7961(@OriginalArg(0) int arg0) {
-		@Pc(8) Class2_Sub13_Sub2 local8 = new Class2_Sub13_Sub2(arg0);
-		this.aClass339_59.method7711(local8);
+	public final Linkable_Sub13 method7961(@OriginalArg(0) int arg0) {
+		@Pc(8) Linkable_Sub13_Sub2 local8 = new Linkable_Sub13_Sub2(arg0);
+		this.aLinkedList59.addTail(local8);
 		return local8;
 	}
 
@@ -1909,7 +1909,7 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public final void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public final void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub7[] arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0; local7++) {
 			this.aClass2_Sub7Array6[local7] = arg1[local7];
 		}
@@ -2455,9 +2455,9 @@ public abstract class Class19_Sub1 extends Class19 {
 			this.aClass370Array3[local38] = Static215.aClass370_2;
 			this.aClass73_Sub1Array3[local38] = new Class73_Sub1();
 		}
-		this.aClass2_Sub7Array6 = new Class2_Sub7[this.anInt9182 - 2];
+		this.aClass2_Sub7Array6 = new Linkable_Sub7[this.anInt9182 - 2];
 		this.anInterface17_3 = this.method8067(Static172.aClass92_8, Static702.aClass397_16, 1, 1);
-		this.method7938(new Class2_Sub13_Sub2(262144));
+		this.method7938(new Linkable_Sub13_Sub2(262144));
 		this.aClass244_17 = this.method8148(new Class237[] { new Class237(new Class157[] { Static231.aClass157_1, Static231.aClass157_5 }) });
 		this.aClass244_21 = this.method8148(new Class237[] { new Class237(new Class157[] { Static231.aClass157_1, Static231.aClass157_3 }) });
 		this.aClass244_20 = this.method8148(new Class237[] { new Class237(Static231.aClass157_1), new Class237(Static231.aClass157_3), new Class237(Static231.aClass157_5), new Class237(Static231.aClass157_2) });

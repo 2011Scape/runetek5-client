@@ -159,8 +159,8 @@ public final class Class293 {
 	}
 
 	@OriginalMember(owner = "client!pk", name = "b", descriptor = "(Lclient!r;III)V")
-	public void method6607(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(17) Class2_Sub2_Sub9_Sub1 local17 = (Class2_Sub2_Sub9_Sub1) arg0;
+	public void method6607(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		@Pc(17) SecondaryLinkable_Sub9_Sub1 local17 = (SecondaryLinkable_Sub9_Sub1) arg0;
 		arg2 += local17.anInt2328 + 1;
 		arg1 += local17.anInt2326 + 1;
 		@Pc(38) int local38 = arg1 + arg2 * this.anInt7428;
@@ -203,8 +203,8 @@ public final class Class293 {
 	}
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(ILclient!r;IB)Z")
-	public boolean method6608(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub9 arg1, @OriginalArg(2) int arg2) {
-		@Pc(6) Class2_Sub2_Sub9_Sub1 local6 = (Class2_Sub2_Sub9_Sub1) arg1;
+	public boolean method6608(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryLinkable_Sub9 arg1, @OriginalArg(2) int arg2) {
+		@Pc(6) SecondaryLinkable_Sub9_Sub1 local6 = (SecondaryLinkable_Sub9_Sub1) arg1;
 		arg2 += local6.anInt2328 + 1;
 		arg0 += local6.anInt2326 + 1;
 		@Pc(27) int local27 = arg2 * this.anInt7428 + arg0;
@@ -243,8 +243,8 @@ public final class Class293 {
 	}
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(Lclient!r;III)V")
-	public void method6609(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(6) Class2_Sub2_Sub9_Sub1 local6 = (Class2_Sub2_Sub9_Sub1) arg0;
+	public void method6609(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(6) SecondaryLinkable_Sub9_Sub1 local6 = (SecondaryLinkable_Sub9_Sub1) arg0;
 		arg2 += local6.anInt2326 + 1;
 		arg1 += local6.anInt2328 + 1;
 		@Pc(27) int local27 = arg1 * this.anInt7428 + arg2;

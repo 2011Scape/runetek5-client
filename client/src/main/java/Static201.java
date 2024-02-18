@@ -10,13 +10,13 @@ public final class Static201 {
 	public static final Class225 aClass225_206 = new Class225(136, 6);
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(ILclient!ie;Lclient!ie;)V")
-	public static void method7368(@OriginalArg(1) Class2 arg0, @OriginalArg(2) Class2 arg1) {
-		if (arg1.aClass2_345 != null) {
-			arg1.method9457();
+	public static void method7368(@OriginalArg(1) Linkable arg0, @OriginalArg(2) Linkable arg1) {
+		if (arg1.prev != null) {
+			arg1.unlink();
 		}
-		arg1.aClass2_346 = arg0;
-		arg1.aClass2_345 = arg0.aClass2_345;
-		arg1.aClass2_345.aClass2_346 = arg1;
-		arg1.aClass2_346.aClass2_345 = arg1;
+		arg1.next = arg0;
+		arg1.prev = arg0.prev;
+		arg1.prev.next = arg1;
+		arg1.next.prev = arg1;
 	}
 }

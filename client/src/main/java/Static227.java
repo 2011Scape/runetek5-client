@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static227 {
 
 	@OriginalMember(owner = "client!hb", name = "k", descriptor = "Lclient!sia;")
-	public static Class339 aClass339_18 = new Class339();
+	public static LinkedList aLinkedList18 = new LinkedList();
 
 	@OriginalMember(owner = "client!hb", name = "g", descriptor = "I")
 	public static int anInt3694 = -1;

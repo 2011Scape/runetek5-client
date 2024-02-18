@@ -16,7 +16,7 @@ public final class Static286 {
 	public static final Class225 aClass225_118 = new Class225(95, 6);
 
 	@OriginalMember(owner = "client!iw", name = "c", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_23 = new Class28(32);
+	public static final HashTable aHashTable23 = new HashTable(32);
 
 	@OriginalMember(owner = "client!iw", name = "a", descriptor = "(III)Z")
 	public static boolean method4110(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {

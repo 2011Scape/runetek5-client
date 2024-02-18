@@ -10,17 +10,17 @@ public final class Static184 {
 	}
 
 	@OriginalMember(owner = "client!fma", name = "a", descriptor = "(IIII)Lclient!cg;")
-	public static Class8_Sub2_Sub1_Sub2 method2798(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static ParticleNode_Sub2_Sub1_Sub2 method2798(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(13) Class291 local13 = Static334.aClass291ArrayArrayArray1[arg2][arg0][arg1];
 		if (local13 == null) {
 			return null;
 		}
-		@Pc(20) Class8_Sub2_Sub1_Sub2 local20 = null;
+		@Pc(20) ParticleNode_Sub2_Sub1_Sub2 local20 = null;
 		@Pc(22) int local22 = -1;
 		for (@Pc(31) Class286 local31 = local13.aClass286_2; local31 != null; local31 = local31.aClass286_1) {
-			@Pc(35) Class8_Sub2_Sub1 local35 = local31.aClass8_Sub2_Sub1_1;
-			if (local35 instanceof Class8_Sub2_Sub1_Sub2) {
-				@Pc(41) Class8_Sub2_Sub1_Sub2 local41 = (Class8_Sub2_Sub1_Sub2) local35;
+			@Pc(35) ParticleNode_Sub2_Sub1 local35 = local31.aClass8_Sub2_Sub1_1;
+			if (local35 instanceof ParticleNode_Sub2_Sub1_Sub2) {
+				@Pc(41) ParticleNode_Sub2_Sub1_Sub2 local41 = (ParticleNode_Sub2_Sub1_Sub2) local35;
 				@Pc(51) int local51 = local41.method9302((byte) 76) * 256 + 252 - 256;
 				@Pc(59) int local59 = local41.anInt10690 - local51 >> 9;
 				@Pc(66) int local66 = local41.anInt10694 - local51 >> 9;

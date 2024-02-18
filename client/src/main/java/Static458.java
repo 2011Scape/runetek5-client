@@ -37,7 +37,7 @@ public final class Static458 {
 							((Interface25) local29.aClass8_Sub2_Sub3_1).method6856();
 						}
 						for (@Pc(91) Class286 local91 = local29.aClass286_2; local91 != null; local91 = local91.aClass286_1) {
-							@Pc(95) Class8_Sub2_Sub1 local95 = local91.aClass8_Sub2_Sub1_1;
+							@Pc(95) ParticleNode_Sub2_Sub1 local95 = local91.aClass8_Sub2_Sub1_1;
 							if (local95 instanceof Interface25) {
 								((Interface25) local95).method6856();
 							}

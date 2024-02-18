@@ -19,13 +19,13 @@ public final class Class47_Sub1 extends Class47 {
 	private int anInt7473 = 0;
 
 	@OriginalMember(owner = "client!pm", name = "A", descriptor = "Lclient!av;")
-	private final Class28 aClass28_36 = new Class28(16);
+	private final HashTable aHashTable36 = new HashTable(16);
 
 	@OriginalMember(owner = "client!pm", name = "h", descriptor = "I")
 	private int anInt7475 = 0;
 
 	@OriginalMember(owner = "client!pm", name = "F", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_41 = new Class339();
+	private final LinkedList aLinkedList41 = new LinkedList();
 
 	@OriginalMember(owner = "client!pm", name = "m", descriptor = "J")
 	private long aLong239 = 0L;
@@ -40,7 +40,7 @@ public final class Class47_Sub1 extends Class47 {
 	private boolean aBoolean567;
 
 	@OriginalMember(owner = "client!pm", name = "v", descriptor = "Lclient!sia;")
-	private Class339 aClass339_42;
+	private LinkedList aLinkedList42;
 
 	@OriginalMember(owner = "client!pm", name = "x", descriptor = "Z")
 	private final boolean aBoolean569;
@@ -64,7 +64,7 @@ public final class Class47_Sub1 extends Class47 {
 	private final Class9 aClass9_2;
 
 	@OriginalMember(owner = "client!pm", name = "C", descriptor = "Lclient!tw;")
-	private Class2_Sub2_Sub17 aClass2_Sub2_Sub17_1;
+	private SecondaryLinkable_Sub17 aClass2_Sub2_Sub17_1;
 
 	@OriginalMember(owner = "client!pm", name = "<init>", descriptor = "(ILclient!af;Lclient!af;Lclient!pla;Lclient!iba;I[BIZ)V")
 	public Class47_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) Class9 arg1, @OriginalArg(2) Class9 arg2, @OriginalArg(3) Class295 arg3, @OriginalArg(4) Class174 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) byte[] arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
@@ -74,7 +74,7 @@ public final class Class47_Sub1 extends Class47 {
 			this.aBoolean567 = false;
 		} else {
 			this.aBoolean567 = true;
-			this.aClass339_42 = new Class339();
+			this.aLinkedList42 = new LinkedList();
 		}
 		this.aBoolean569 = arg8;
 		this.aClass295_2 = arg3;
@@ -108,14 +108,14 @@ public final class Class47_Sub1 extends Class47 {
 		if (this.aClass9_3 == null) {
 			return;
 		}
-		for (@Pc(23) Class2 local23 = this.aClass339_41.method7699(65280); local23 != null; local23 = this.aClass339_41.method7706()) {
-			if (local23.aLong328 == (long) arg0) {
+		for (@Pc(23) Linkable local23 = this.aLinkedList41.head(); local23 != null; local23 = this.aLinkedList41.next()) {
+			if (local23.id == (long) arg0) {
 				return;
 			}
 		}
-		@Pc(50) Class2 local50 = new Class2();
-		local50.aLong328 = (long) arg0;
-		this.aClass339_41.method7711(local50);
+		@Pc(50) Linkable local50 = new Linkable();
+		local50.id = (long) arg0;
+		this.aLinkedList41.addTail(local50);
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(I)I")
@@ -123,8 +123,8 @@ public final class Class47_Sub1 extends Class47 {
 		if (this.aClass292_1 == null) {
 			return 0;
 		} else if (this.aBoolean567) {
-			@Pc(29) Class2 local29 = this.aClass339_42.method7699(65280);
-			return local29 == null ? 0 : (int) local29.aLong328;
+			@Pc(29) Linkable local29 = this.aLinkedList42.head();
+			return local29 == null ? 0 : (int) local29.id;
 		} else {
 			return this.aClass292_1.anInt7367;
 		}
@@ -132,25 +132,25 @@ public final class Class47_Sub1 extends Class47 {
 
 	@OriginalMember(owner = "client!pm", name = "d", descriptor = "(I)V")
 	public void method6648() {
-		if (this.aClass339_42 != null) {
+		if (this.aLinkedList42 != null) {
 			if (this.method6642() == null) {
 				return;
 			}
 			@Pc(33) boolean local33;
-			@Pc(38) Class2 local38;
+			@Pc(38) Linkable local38;
 			@Pc(44) int local44;
-			@Pc(147) Class2 local147;
+			@Pc(147) Linkable local147;
 			if (this.aBoolean567) {
 				local33 = true;
-				for (local38 = this.aClass339_42.method7699(65280); local38 != null; local38 = this.aClass339_42.method7706()) {
-					local44 = (int) local38.aLong328;
+				for (local38 = this.aLinkedList42.head(); local38 != null; local38 = this.aLinkedList42.next()) {
+					local44 = (int) local38.id;
 					if (this.aByteArray88[local44] == 0) {
 						this.method6651(local44, 1);
 					}
 					if (this.aByteArray88[local44] == 0) {
 						local33 = false;
 					} else {
-						local38.method9457();
+						local38.unlink();
 					}
 				}
 				while (this.aClass292_1.anIntArray598.length > this.anInt7475) {
@@ -165,10 +165,10 @@ public final class Class47_Sub1 extends Class47 {
 							this.method6651(this.anInt7475, 1);
 						}
 						if (this.aByteArray88[this.anInt7475] == 0) {
-							local147 = new Class2();
-							local147.aLong328 = (long) this.anInt7475;
+							local147 = new Linkable();
+							local147.id = (long) this.anInt7475;
 							local33 = false;
-							this.aClass339_42.method7711(local147);
+							this.aLinkedList42.addTail(local147);
 						}
 						this.anInt7475++;
 					}
@@ -179,13 +179,13 @@ public final class Class47_Sub1 extends Class47 {
 				}
 			} else if (this.aBoolean568) {
 				local33 = true;
-				for (local38 = this.aClass339_42.method7699(65280); local38 != null; local38 = this.aClass339_42.method7706()) {
-					local44 = (int) local38.aLong328;
+				for (local38 = this.aLinkedList42.head(); local38 != null; local38 = this.aLinkedList42.next()) {
+					local44 = (int) local38.id;
 					if (this.aByteArray88[local44] != 1) {
 						this.method6651(local44, 2);
 					}
 					if (this.aByteArray88[local44] == 1) {
-						local38.method9457();
+						local38.unlink();
 					} else {
 						local33 = false;
 					}
@@ -202,9 +202,9 @@ public final class Class47_Sub1 extends Class47 {
 							this.method6651(this.anInt7475, 2);
 						}
 						if (this.aByteArray88[this.anInt7475] != 1) {
-							local147 = new Class2();
-							local147.aLong328 = (long) this.anInt7475;
-							this.aClass339_42.method7711(local147);
+							local147 = new Linkable();
+							local147.id = (long) this.anInt7475;
+							this.aLinkedList42.addTail(local147);
 							local33 = false;
 						}
 						this.anInt7475++;
@@ -215,19 +215,19 @@ public final class Class47_Sub1 extends Class47 {
 					this.aBoolean568 = false;
 				}
 			} else {
-				this.aClass339_42 = null;
+				this.aLinkedList42 = null;
 			}
 		}
 		if (!this.aBoolean569 || Static588.method7715() < this.aLong239) {
 			return;
 		}
-		for (@Pc(366) Class2_Sub2_Sub17 local366 = (Class2_Sub2_Sub17) this.aClass28_36.method736(); local366 != null; local366 = (Class2_Sub2_Sub17) this.aClass28_36.method740()) {
+		for (@Pc(366) SecondaryLinkable_Sub17 local366 = (SecondaryLinkable_Sub17) this.aHashTable36.head(); local366 != null; local366 = (SecondaryLinkable_Sub17) this.aHashTable36.next()) {
 			if (!local366.aBoolean778) {
 				if (local366.aBoolean776) {
 					if (!local366.aBoolean777) {
 						throw new RuntimeException();
 					}
-					local366.method9457();
+					local366.unlink();
 				} else {
 					local366.aBoolean776 = true;
 				}
@@ -244,21 +244,21 @@ public final class Class47_Sub1 extends Class47 {
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(IB)[B")
 	@Override
 	public byte[] method6641(@OriginalArg(0) int arg0) {
-		@Pc(9) Class2_Sub2_Sub17 local9 = this.method6651(arg0, 0);
+		@Pc(9) SecondaryLinkable_Sub17 local9 = this.method6651(arg0, 0);
 		if (local9 == null) {
 			return null;
 		} else {
 			@Pc(26) byte[] local26 = local9.method8971();
-			local9.method9457();
+			local9.unlink();
 			return local26;
 		}
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(III)Lclient!tw;")
-	private Class2_Sub2_Sub17 method6651(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738((long) arg0);
+	private SecondaryLinkable_Sub17 method6651(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		@Pc(19) SecondaryLinkable_Sub17 local19 = (SecondaryLinkable_Sub17) this.aHashTable36.get((long) arg0);
 		if (local19 != null && arg1 == 0 && !local19.aBoolean777 && local19.aBoolean778) {
-			local19.method9457();
+			local19.unlink();
 			local19 = null;
 		}
 		if (local19 == null) {
@@ -290,7 +290,7 @@ public final class Class47_Sub1 extends Class47 {
 			} else {
 				throw new RuntimeException();
 			}
-			this.aClass28_36.method735((long) arg0, local19);
+			this.aHashTable36.put((long) arg0, local19);
 		}
 		if (local19.aBoolean778) {
 			return null;
@@ -300,8 +300,8 @@ public final class Class47_Sub1 extends Class47 {
 		@Pc(254) byte[] local254;
 		@Pc(263) byte[] local263;
 		@Pc(265) int local265;
-		@Pc(383) Class2_Sub2_Sub17_Sub1 local383;
-		if (!(local19 instanceof Class2_Sub2_Sub17_Sub2)) {
+		@Pc(383) SecondaryLinkable_Sub17_Sub1 local383;
+		if (!(local19 instanceof SecondaryLinkable_Sub17_Sub2)) {
 			try {
 				label157: {
 					if (local194 != null && local194.length > 2) {
@@ -333,10 +333,10 @@ public final class Class47_Sub1 extends Class47 {
 				this.aClass295_2.anInt7452 = 0;
 			} catch (@Pc(498) RuntimeException local498) {
 				this.aClass295_2.method6619();
-				local19.method9457();
+				local19.unlink();
 				if (local19.aBoolean777 && !this.aClass295_2.method6630()) {
 					local383 = this.aClass295_2.method6633(this.anInt7465, arg0, true, (byte) 2);
-					this.aClass28_36.method735((long) arg0, local383);
+					this.aHashTable36.put((long) arg0, local383);
 				}
 				return null;
 			}
@@ -350,7 +350,7 @@ public final class Class47_Sub1 extends Class47 {
 				}
 			}
 			if (!local19.aBoolean777) {
-				local19.method9457();
+				local19.unlink();
 			}
 			return local19;
 		}
@@ -382,15 +382,15 @@ public final class Class47_Sub1 extends Class47 {
 				this.aByteArray88[arg0] = 1;
 			}
 			if (!local19.aBoolean777) {
-				local19.method9457();
+				local19.unlink();
 			}
 			return local19;
 		} catch (@Pc(355) Exception local355) {
 			this.aByteArray88[arg0] = -1;
-			local19.method9457();
+			local19.unlink();
 			if (local19.aBoolean777 && !this.aClass295_2.method6630()) {
 				local383 = this.aClass295_2.method6633(this.anInt7465, arg0, true, (byte) 2);
-				this.aClass28_36.method735((long) arg0, local383);
+				this.aHashTable36.put((long) arg0, local383);
 			}
 			return null;
 		}
@@ -399,19 +399,19 @@ public final class Class47_Sub1 extends Class47 {
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(BI)I")
 	@Override
 	public int method6637(@OriginalArg(1) int arg0) {
-		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738((long) arg0);
+		@Pc(19) SecondaryLinkable_Sub17 local19 = (SecondaryLinkable_Sub17) this.aHashTable36.get((long) arg0);
 		return local19 == null ? 0 : local19.method8972();
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(Z)V")
 	public void method6653() {
-		if (this.aClass339_42 == null || this.method6642() == null) {
+		if (this.aLinkedList42 == null || this.method6642() == null) {
 			return;
 		}
-		for (@Pc(21) Class2 local21 = this.aClass339_41.method7699(65280); local21 != null; local21 = this.aClass339_41.method7706()) {
-			@Pc(29) int local29 = (int) local21.aLong328;
+		for (@Pc(21) Linkable local21 = this.aLinkedList41.head(); local21 != null; local21 = this.aLinkedList41.next()) {
+			@Pc(29) int local29 = (int) local21.id;
 			if (local29 < 0 || local29 >= this.aClass292_1.anInt7368 || this.aClass292_1.anIntArray598[local29] == 0) {
-				local21.method9457();
+				local21.unlink();
 			} else {
 				if (this.aByteArray88[local29] == 0) {
 					this.method6651(local29, 1);
@@ -420,12 +420,12 @@ public final class Class47_Sub1 extends Class47 {
 					this.method6651(local29, 2);
 				}
 				if (this.aByteArray88[local29] == 1) {
-					local21.method9457();
+					local21.unlink();
 				}
 			}
 		}
 		if (false) {
-			Static498.method6650((Class8_Sub2[]) null, -92, -16);
+			Static498.method6650((ParticleNode_Sub2[]) null, -92, -16);
 		}
 	}
 
@@ -445,7 +445,7 @@ public final class Class47_Sub1 extends Class47 {
 			return null;
 		}
 		@Pc(53) byte[] local53 = this.aClass2_Sub2_Sub17_1.method8971();
-		if (this.aClass2_Sub2_Sub17_1 instanceof Class2_Sub2_Sub17_Sub2) {
+		if (this.aClass2_Sub2_Sub17_1 instanceof SecondaryLinkable_Sub17_Sub2) {
 			try {
 				if (local53 == null) {
 					throw new RuntimeException();
@@ -495,8 +495,8 @@ public final class Class47_Sub1 extends Class47 {
 	public void method6654() {
 		if (this.aClass9_3 != null) {
 			this.aBoolean568 = true;
-			if (this.aClass339_42 == null) {
-				this.aClass339_42 = new Class339();
+			if (this.aLinkedList42 == null) {
+				this.aLinkedList42 = new LinkedList();
 			}
 		}
 	}

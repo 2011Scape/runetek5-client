@@ -17,7 +17,7 @@ public final class Static720 {
 	public static int anInt10865 = 0;
 
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(ILclient!fu;ILclient!el;Lclient!rt;IBLclient!ha;I)V")
-	public static void method9396(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class105 arg3, @OriginalArg(4) Class327 arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7) {
+	public static void method9396(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class105 arg3, @OriginalArg(4) Class327 arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7) {
 		@Pc(14) int local14 = arg2 - arg5 / 2 - 5;
 		@Pc(18) int local18 = arg7 + 2;
 		if (arg3.anInt2605 != 0) {
@@ -52,9 +52,9 @@ public final class Static720 {
 	}
 
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(I)Lclient!kv;")
-	public static Class2_Sub34 method9398() {
+	public static Linkable_Sub34 method9398() {
 		@Pc(13) Class83 local13 = null;
-		@Pc(19) Class2_Sub34 local19 = new Class2_Sub34(Static392.aClass377_4, 0);
+		@Pc(19) Linkable_Sub34 local19 = new Linkable_Sub34(Static392.aClass377_4, 0);
 		try {
 			@Pc(25) Class270 local25 = Static446.aClass390_6.method8981("");
 			while (local25.anInt6789 == 0) {
@@ -70,7 +70,7 @@ public final class Static720 {
 						throw new IOException("EOF");
 					}
 				}
-				local19 = new Class2_Sub34(new Packet(local51), Static392.aClass377_4, 0);
+				local19 = new Linkable_Sub34(new Packet(local51), Static392.aClass377_4, 0);
 			}
 		} catch (@Pc(97) Exception local97) {
 		}

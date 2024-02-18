@@ -15,7 +15,7 @@ public final class Static703 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(Lclient!aea;I)V")
-	public static void method9171(@OriginalArg(0) Class8_Sub1 arg0) {
+	public static void method9171(@OriginalArg(0) ParticleNode_Sub1 arg0) {
 		arg0.aClass8_Sub2_Sub1_Sub2_1 = null;
 		if (Static6.anInt94 < 20) {
 			Static129.aClass130_3.method2787(arg0);

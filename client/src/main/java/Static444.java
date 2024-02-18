@@ -27,7 +27,7 @@ public final class Static444 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(B)V")
 	public static void method5988() {
-		@Pc(13) Class2_Sub2_Sub2 local13 = Static440.method5963(15, 0L);
+		@Pc(13) SecondaryLinkable_Sub2 local13 = Static440.method5963(15, 0L);
 		local13.method205();
 	}
 

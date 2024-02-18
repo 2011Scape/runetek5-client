@@ -9,7 +9,7 @@ public final class Class152_Sub2_Sub1 extends Class152_Sub2 {
 	public int anInt10508;
 
 	@OriginalMember(owner = "client!wb", name = "<init>", descriptor = "(Lclient!eo;)V")
-	public Class152_Sub2_Sub1(@OriginalArg(0) Class8_Sub2 arg0) {
+	public Class152_Sub2_Sub1(@OriginalArg(0) ParticleNode_Sub2 arg0) {
 		super(arg0, false);
 	}
 }

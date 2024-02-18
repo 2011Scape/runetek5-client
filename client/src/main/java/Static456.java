@@ -19,9 +19,9 @@ public final class Static456 {
 			if (Static377.anInt5930 != -1) {
 				Static347.method5094(Static377.anInt5930);
 			}
-			for (@Pc(21) Class2_Sub4 local21 = (Class2_Sub4) Static548.aClass28_40.method736(); local21 != null; local21 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-				if (!local21.method9458()) {
-					local21 = (Class2_Sub4) Static548.aClass28_40.method736();
+			for (@Pc(21) Linkable_Sub4 local21 = (Linkable_Sub4) Static548.aHashTable40.head(); local21 != null; local21 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+				if (!local21.isLinked()) {
+					local21 = (Linkable_Sub4) Static548.aHashTable40.head();
 					if (local21 == null) {
 						break;
 					}
@@ -29,7 +29,7 @@ public final class Static456 {
 				Static449.method6115(false, true, local21);
 			}
 			Static377.anInt5930 = -1;
-			Static548.aClass28_40 = new Class28(8);
+			Static548.aHashTable40 = new HashTable(8);
 			Static656.method6692();
 			Static377.anInt5930 = Static65.aClass3_1.anInt88;
 			Static640.method8435(false);
@@ -40,8 +40,8 @@ public final class Static456 {
 		Static461.aBoolean529 = false;
 		Static242.method3502();
 		Static442.anInt6699 = -1;
-		Static115.method2136(Class8_Sub2_Sub4_Sub1.lb);
-		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = new Class8_Sub2_Sub1_Sub2_Sub1();
+		Static115.method2136(ParticleNode_Sub2_Sub4_Sub1.lb);
+		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = new ParticleNode_Sub2_Sub1_Sub2_Sub1();
 		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 = Static501.anInt7568 * 512 / 2;
 		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 = Static720.anInt10859 * 512 / 2;
 		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] = Static720.anInt10859 / 2;

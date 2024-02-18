@@ -25,8 +25,8 @@ public final class Static114 {
 		} else {
 			local64 = Static29.anInt723 + (int) Static171.aFloat64 & 0x3FFF;
 		}
-		@Pc(77) int local77 = Class361.anIntArray741[local64];
-		@Pc(81) int local81 = Class361.anIntArray740[local64];
+		@Pc(77) int local77 = LruHashTable.anIntArray741[local64];
+		@Pc(81) int local81 = LruHashTable.anIntArray740[local64];
 		if (Static511.anInt7645 != 4) {
 			local81 = local81 * 256 / (Static660.anInt9835 + 256);
 			local77 = local77 * 256 / (Static660.anInt9835 + 256);
@@ -40,7 +40,7 @@ public final class Static114 {
 	}
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(III)Lclient!tla;")
-	public static Class8_Sub2_Sub4 method2134(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static ParticleNode_Sub2_Sub4 method2134(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(7) Class291 local7 = Static334.aClass291ArrayArrayArray1[arg0][arg1][arg2];
 		return local7 == null ? null : local7.aClass8_Sub2_Sub4_1;
 	}

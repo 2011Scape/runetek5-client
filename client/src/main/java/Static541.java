@@ -8,7 +8,7 @@ public final class Static541 {
 	public static final Class82 aClass82_174 = new Class82(8);
 
 	@OriginalMember(owner = "client!ra", name = "p", descriptor = "Lclient!ts;")
-	public static final Class361 aClass361_4 = new Class361(16);
+	public static final LruHashTable aLruHashTable4 = new LruHashTable(16);
 
 	@OriginalMember(owner = "client!ra", name = "q", descriptor = "Lclient!kda;")
 	public static final Class204 aClass204_12 = new Class204(5, 1);

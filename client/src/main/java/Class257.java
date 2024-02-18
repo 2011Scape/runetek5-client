@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class257 {
 
 	@OriginalMember(owner = "client!nfa", name = "c", descriptor = "Lclient!rw;")
-	public Class2_Sub2_Sub18 aClass2_Sub2_Sub18_1;
+	public SecondaryLinkable_Sub18 aClass2_Sub2_Sub18_1;
 
 	@OriginalMember(owner = "client!nfa", name = "f", descriptor = "I")
 	public int anInt6448;
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "Lclient!rw;")
-	public Class2_Sub2_Sub18 aClass2_Sub2_Sub18_2;
+	public SecondaryLinkable_Sub18 aClass2_Sub2_Sub18_2;
 
 	@OriginalMember(owner = "client!nfa", name = "k", descriptor = "I")
 	public int anInt6450;

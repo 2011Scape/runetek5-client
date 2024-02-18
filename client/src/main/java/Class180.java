@@ -13,7 +13,7 @@ public final class Class180 {
 	private int anInt4369 = 0;
 
 	@OriginalMember(owner = "client!ija", name = "c", descriptor = "Lclient!sia;")
-	private Class339 aClass339_25 = new Class339();
+	private LinkedList aLinkedList25 = new LinkedList();
 
 	@OriginalMember(owner = "client!ija", name = "o", descriptor = "Z")
 	public boolean aBoolean338 = false;
@@ -25,7 +25,7 @@ public final class Class180 {
 	private final int anInt4372;
 
 	@OriginalMember(owner = "client!ija", name = "a", descriptor = "[Lclient!v;")
-	private Class2_Sub54[] aClass2_Sub54Array1;
+	private Linkable_Sub54[] aClass2_Sub54Array1;
 
 	@OriginalMember(owner = "client!ija", name = "b", descriptor = "[[I")
 	private int[][] anIntArrayArray104;
@@ -34,7 +34,7 @@ public final class Class180 {
 	public Class180(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.anInt4373 = arg0;
 		this.anInt4372 = arg1;
-		this.aClass2_Sub54Array1 = new Class2_Sub54[this.anInt4372];
+		this.aClass2_Sub54Array1 = new Linkable_Sub54[this.anInt4372];
 		this.anIntArrayArray104 = new int[this.anInt4373][arg2];
 	}
 
@@ -59,8 +59,8 @@ public final class Class180 {
 		}
 		this.aClass2_Sub54Array1 = null;
 		this.anIntArrayArray104 = null;
-		this.aClass339_25.method7700();
-		this.aClass339_25 = null;
+		this.aLinkedList25.clear();
+		this.aLinkedList25 = null;
 	}
 
 	@OriginalMember(owner = "client!ija", name = "a", descriptor = "(II)[I")
@@ -74,23 +74,23 @@ public final class Class180 {
 			this.anInt4368 = arg0;
 			return this.anIntArrayArray104[0];
 		} else {
-			@Pc(34) Class2_Sub54 local34 = this.aClass2_Sub54Array1[arg0];
+			@Pc(34) Linkable_Sub54 local34 = this.aClass2_Sub54Array1[arg0];
 			if (local34 == null) {
 				this.aBoolean338 = true;
 				if (this.anInt4369 >= this.anInt4373) {
-					@Pc(59) Class2_Sub54 local59 = (Class2_Sub54) this.aClass339_25.method7708();
-					local34 = new Class2_Sub54(arg0, local59.anInt9846);
+					@Pc(59) Linkable_Sub54 local59 = (Linkable_Sub54) this.aLinkedList25.tail();
+					local34 = new Linkable_Sub54(arg0, local59.anInt9846);
 					this.aClass2_Sub54Array1[local59.anInt9844] = null;
-					local59.method9457();
+					local59.unlink();
 				} else {
-					local34 = new Class2_Sub54(arg0, this.anInt4369);
+					local34 = new Linkable_Sub54(arg0, this.anInt4369);
 					this.anInt4369++;
 				}
 				this.aClass2_Sub54Array1[arg0] = local34;
 			} else {
 				this.aBoolean338 = false;
 			}
-			this.aClass339_25.method7697(local34);
+			this.aLinkedList25.addHead(local34);
 			return this.anIntArrayArray104[local34.anInt9846];
 		}
 	}

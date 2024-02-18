@@ -9,5 +9,5 @@ public final class Static677 {
 	public static Interface4 anInterface4_11;
 
 	@OriginalMember(owner = "client!vi", name = "J", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_76 = new Class339();
+	public static final LinkedList aLinkedList76 = new LinkedList();
 }

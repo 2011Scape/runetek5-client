@@ -80,7 +80,7 @@ public final class Static719 {
 			Static30.aByteArrayArrayArray5 = Static640.method8437(Static30.anInt5643);
 			Static387.method5440();
 			Static30.method5069();
-			Static551.aClass339_54 = new Class339();
+			Static551.aLinkedList54 = new LinkedList();
 			Static30.anInt5641 += (int) (Math.random() * 5.0D) - 2;
 			if (Static30.anInt5641 < -8) {
 				Static30.anInt5641 = -8;

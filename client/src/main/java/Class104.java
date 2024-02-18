@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class104 {
 
 	@OriginalMember(owner = "client!eka", name = "n", descriptor = "Lclient!sq;")
-	public Class2_Sub49_Sub1 aClass2_Sub49_Sub1_2;
+	public Linkable_Sub49_Sub1 aClass2_Sub49_Sub1_2;
 
 	@OriginalMember(owner = "client!eka", name = "m", descriptor = "Lclient!haa;")
-	public Class2_Sub6_Sub2 aClass2_Sub6_Sub2_2;
+	public Linkable_Sub6_Sub2 aClass2_Sub6_Sub2_2;
 
 	@OriginalMember(owner = "client!eka", name = "a", descriptor = "Lclient!uj;")
-	public Class2_Sub53 aClass2_Sub53_1;
+	public Linkable_Sub53 aClass2_Sub53_1;
 
 	@OriginalMember(owner = "client!eka", name = "t", descriptor = "Lclient!dw;")
 	public Class89 aClass89_1;
@@ -36,13 +36,13 @@ public final class Class104 {
 	public final int anInt2574;
 
 	@OriginalMember(owner = "client!eka", name = "j", descriptor = "Lclient!eo;")
-	public final Class8_Sub2 aClass8_Sub2_10;
+	public final ParticleNode_Sub2 aClass8_Sub2_10;
 
 	@OriginalMember(owner = "client!eka", name = "r", descriptor = "I")
 	public final int anInt2577;
 
 	@OriginalMember(owner = "client!eka", name = "<init>", descriptor = "(BIIIIIILclient!eo;)V")
-	public Class104(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class8_Sub2 arg7) {
+	public Class104(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) ParticleNode_Sub2 arg7) {
 		this.anInt2573 = arg6;
 		this.aByte49 = arg0;
 		this.anInt2580 = arg1;

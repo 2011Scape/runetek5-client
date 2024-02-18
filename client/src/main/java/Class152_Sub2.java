@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class Class152_Sub2 extends Class152 {
 
 	@OriginalMember(owner = "client!wq", name = "P", descriptor = "Lclient!eo;")
-	private final Class8_Sub2 aClass8_Sub2_24;
+	private final ParticleNode_Sub2 aClass8_Sub2_24;
 
 	@OriginalMember(owner = "client!wq", name = "<init>", descriptor = "(Lclient!eo;Z)V")
-	public Class152_Sub2(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) boolean arg1) {
+	public Class152_Sub2(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) boolean arg1) {
 		super(arg1);
 		this.aClass8_Sub2_24 = arg0;
 	}

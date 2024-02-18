@@ -132,18 +132,18 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!lca;[I)V")
 	@Override
-	public void method7868(@OriginalArg(0) Class2_Sub7 arg0, @OriginalArg(1) int[] arg1) {
+	public void method7868(@OriginalArg(0) Linkable_Sub7 arg0, @OriginalArg(1) int[] arg1) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!r;IIIIZ)Z")
 	@Override
-	public boolean method7874(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public boolean method7874(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		return false;
 	}
 
 	@OriginalMember(owner = "client!qs", name = "CA", descriptor = "(Lclient!r;IIIIZ)V")
 	@Override
-	public void CA(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public void CA(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(IIZLclient!wf;Lclient!lb;[I[I[I[II)V")
@@ -1275,7 +1275,7 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "wa", descriptor = "(Lclient!r;IIIIZ)V")
 	@Override
-	public void wa(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public void wa(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(II[I[I[I[I[I[I[I[I[I[I[IIIIZ)V")
@@ -2118,7 +2118,7 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "fa", descriptor = "(IILclient!r;)Lclient!r;")
 	@Override
-	public Class2_Sub2_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub9 arg2) {
+	public SecondaryLinkable_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryLinkable_Sub9 arg2) {
 		return null;
 	}
 }

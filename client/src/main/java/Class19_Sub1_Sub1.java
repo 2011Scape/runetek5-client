@@ -756,7 +756,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	protected void method8049() {
 		@Pc(1) int local1;
 		for (local1 = 0; local1 < this.anInt9177; local1++) {
-			@Pc(10) Class2_Sub7 local10 = this.aClass2_Sub7Array6[local1];
+			@Pc(10) Linkable_Sub7 local10 = this.aClass2_Sub7Array6[local1];
 			@Pc(14) int local14 = local1 + 2;
 			@Pc(18) int local18 = local10.method8431();
 			@Pc(24) float local24 = local10.method8428() / 255.0F;

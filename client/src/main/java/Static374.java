@@ -15,7 +15,7 @@ public final class Static374 {
 
 	@OriginalMember(owner = "client!lp", name = "a", descriptor = "(II)V")
 	public static void method5303(@OriginalArg(1) int arg0) {
-		@Pc(1) Class2_Sub2_Sub9 local1 = null;
+		@Pc(1) SecondaryLinkable_Sub9 local1 = null;
 		for (@Pc(3) int local3 = 1; local3 < arg0; local3++) {
 			@Pc(8) Class178 local8 = Static706.aClass178Array3[local3];
 			if (local8 != null) {

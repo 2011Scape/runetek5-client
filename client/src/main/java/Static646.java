@@ -14,7 +14,7 @@ public final class Static646 {
 			@Pc(28) Class291 local28 = Static334.aClass291ArrayArrayArray1[local9][arg0][arg1] = Static334.aClass291ArrayArrayArray1[local9 + 1][arg0][arg1];
 			if (local28 != null) {
 				for (@Pc(33) Class286 local33 = local28.aClass286_2; local33 != null; local33 = local33.aClass286_1) {
-					@Pc(37) Class8_Sub2_Sub1 local37 = local33.aClass8_Sub2_Sub1_1;
+					@Pc(37) ParticleNode_Sub2_Sub1 local37 = local33.aClass8_Sub2_Sub1_1;
 					if (local37.aShort131 == arg0 && local37.aShort132 == arg1) {
 						local37.aByte144--;
 					}

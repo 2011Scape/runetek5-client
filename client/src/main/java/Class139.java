@@ -49,8 +49,8 @@ public final class Class139 {
 	}
 
 	@OriginalMember(owner = "client!gba", name = "a", descriptor = "(IZ)Lclient!ih;")
-	public Class2_Sub2_Sub12 method2950(@OriginalArg(0) int arg0) {
-		@Pc(11) Class2_Sub2_Sub12 local11 = (Class2_Sub2_Sub12) this.aClass82_70.method2156((long) arg0);
+	public SecondaryLinkable_Sub12 method2950(@OriginalArg(0) int arg0) {
+		@Pc(11) SecondaryLinkable_Sub12 local11 = (SecondaryLinkable_Sub12) this.aClass82_70.method2156((long) arg0);
 		if (local11 != null) {
 			return local11;
 		}
@@ -60,7 +60,7 @@ public final class Class139 {
 		} else {
 			local28 = this.aClass330_40.method7595(arg0, 1);
 		}
-		local11 = new Class2_Sub2_Sub12();
+		local11 = new SecondaryLinkable_Sub12();
 		local11.aClass139_1 = this;
 		if (local28 != null) {
 			local11.method3899(new Packet(local28));

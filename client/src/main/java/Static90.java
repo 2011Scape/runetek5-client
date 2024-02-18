@@ -13,14 +13,14 @@ public final class Static90 {
 	public static void method1733() {
 		@Pc(17) int[] local17 = Static210.anIntArray280;
 		for (@Pc(19) int local19 = 0; local19 < Static338.anInt5564; local19++) {
-			@Pc(27) Class8_Sub2_Sub1_Sub2_Sub1 local27 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local17[local19]];
+			@Pc(27) ParticleNode_Sub2_Sub1_Sub2_Sub1 local27 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local17[local19]];
 			if (local27 != null) {
 				local27.method9296();
 			}
 		}
 		for (@Pc(40) int local40 = 0; local40 < Static390.anInt6126; local40++) {
 			@Pc(49) long local49 = (long) Static103.anIntArray187[local40];
-			@Pc(57) Class2_Sub45 local57 = (Class2_Sub45) Static18.aClass28_2.method738(local49);
+			@Pc(57) Linkable_Sub45 local57 = (Linkable_Sub45) Static18.aHashTable2.get(local49);
 			if (local57 != null) {
 				local57.aClass8_Sub2_Sub1_Sub2_Sub2_2.method9296();
 			}

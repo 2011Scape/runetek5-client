@@ -248,7 +248,7 @@ public final class client extends Applet_Sub1 {
 		Static443.method5981();
 		Static642.anInt9599++;
 		for (local46 = 0; local46 < Static416.anInt6378; local46++) {
-			@Pc(97) Class8_Sub2_Sub1_Sub2_Sub2 local97 = Static592.aClass2_Sub45Array1[local46].aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(97) ParticleNode_Sub2_Sub1_Sub2_Sub2 local97 = Static592.aClass2_Sub45Array1[local46].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local97 != null) {
 				@Pc(103) byte local103 = local97.aClass268_1.aByte103;
 				if ((local103 & 0x1) != 0) {
@@ -304,19 +304,19 @@ public final class client extends Applet_Sub1 {
 			}
 		}
 		while (true) {
-			@Pc(453) Class2_Sub42 local453;
+			@Pc(453) Linkable_Sub42 local453;
 			@Pc(458) Class158 local458;
 			@Pc(470) Class158 local470;
 			do {
-				local453 = (Class2_Sub42) Static618.aClass339_68.method7705();
+				local453 = (Linkable_Sub42) Static618.aLinkedList68.removeHead();
 				if (local453 == null) {
 					while (true) {
 						do {
-							local453 = (Class2_Sub42) Static59.aClass339_33.method7705();
+							local453 = (Linkable_Sub42) Static59.aLinkedList33.removeHead();
 							if (local453 == null) {
 								while (true) {
 									do {
-										local453 = (Class2_Sub42) Static521.aClass339_44.method7705();
+										local453 = (Linkable_Sub42) Static521.aLinkedList44.removeHead();
 										if (local453 == null) {
 											if (Static109.aClass158_3 != null) {
 												Static603.method7899();
@@ -331,7 +331,7 @@ public final class client extends Applet_Sub1 {
 											if (Static624.aBoolean727 && Static588.method7715() - 60000L > Static98.aLong71) {
 												Static266.method6777();
 											}
-											for (@Pc(672) Class8_Sub4_Sub1 local672 = (Class8_Sub4_Sub1) Static168.aClass130_5.method2790(); local672 != null; local672 = (Class8_Sub4_Sub1) Static168.aClass130_5.method2785()) {
+											for (@Pc(672) ParticleNode_Sub4_Sub1 local672 = (ParticleNode_Sub4_Sub1) Static168.aClass130_5.method2790(); local672 != null; local672 = (ParticleNode_Sub4_Sub1) Static168.aClass130_5.method2785()) {
 												if ((long) local672.anInt6433 < Static588.method7715() / 1000L - 5L) {
 													if (local672.aShort74 > 0) {
 														Static44.method1072(local672.aString72 + Static32.aClass32_19.method877(Static51.anInt1052), "", 0, "", "", 5);
@@ -350,7 +350,7 @@ public final class client extends Applet_Sub1 {
 												if (Static405.aClass153_1 != null) {
 													Static405.aClass153_1.anInt3647++;
 													if (Static405.aClass153_1.anInt3647 > 50) {
-														@Pc(823) Class2_Sub19 local823 = Static293.method4335(Static415.aClass345_75, Static405.aClass153_1.aIsaacRandom_1);
+														@Pc(823) Linkable_Sub19 local823 = Static293.method4335(Static415.aClass345_75, Static405.aClass153_1.aIsaacRandom_1);
 														Static405.aClass153_1.method3275(local823);
 													}
 													try {
@@ -501,7 +501,7 @@ public final class client extends Applet_Sub1 {
 		}
 		if (Static18.anInt251 == 3) {
 			for (local110 = 0; local110 < Static122.anInt2339; local110++) {
-				@Pc(478) Rectangle local478 = Class2_Sub1_Sub28.aRectangleArray1[local110];
+				@Pc(478) Rectangle local478 = Linkable_Sub1_Sub28.aRectangleArray1[local110];
 				if (Static359.aBooleanArray17[local110]) {
 					Static163.aClass19_17.method7945(local478.y, -65281, local478.width, local478.height, local478.x);
 				} else if (Static469.aBooleanArray23[local110]) {
@@ -519,7 +519,7 @@ public final class client extends Applet_Sub1 {
 			for (local114 = 0; local114 < Static122.anInt2339; local114++) {
 				if (Static469.aBooleanArray23[local114]) {
 					Static469.aBooleanArray23[local114] = false;
-					Static663.aRectangleArray2[local110++] = Class2_Sub1_Sub28.aRectangleArray1[local114];
+					Static663.aRectangleArray2[local110++] = Linkable_Sub1_Sub28.aRectangleArray1[local114];
 				}
 			}
 			try {
@@ -639,16 +639,16 @@ public final class client extends Applet_Sub1 {
 			}
 		}
 		Static611.anInt9341 = 0;
-		for (@Pc(214) Class2_Sub9 local214 = Static189.aClass120_1.method8851(); local214 != null; local214 = Static189.aClass120_1.method8851()) {
+		for (@Pc(214) Linkable_Sub9 local214 = Static189.aClass120_1.method8851(); local214 != null; local214 = Static189.aClass120_1.method8851()) {
 			@Pc(222) int local222 = local214.method5328();
 			if (local222 == -1) {
-				Static677.aClass339_76.method7711(local214);
+				Static677.aLinkedList76.addTail(local214);
 			} else if (local222 == 6) {
 				Static611.anInt9341 += local214.method5332();
 			} else if (Static278.method4070(local222)) {
-				Static226.aClass339_58.method7711(local214);
-				if (Static226.aClass339_58.method7701() > 10) {
-					Static226.aClass339_58.method7705();
+				Static226.aLinkedList58.addTail(local214);
+				if (Static226.aLinkedList58.method7701() > 10) {
+					Static226.aLinkedList58.removeHead();
 				}
 			}
 		}
@@ -692,7 +692,7 @@ public final class client extends Applet_Sub1 {
 			}
 		}
 		Static369.method3851(Static163.aClass19_17);
-		Static226.aClass339_58.method7705();
+		Static226.aLinkedList58.removeHead();
 	}
 
 	@OriginalMember(owner = "client!client", name = "h", descriptor = "(I)V")

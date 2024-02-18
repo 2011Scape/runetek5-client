@@ -11,11 +11,11 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!cja", name = "b", descriptor = "(B)V")
 	public static void method1578() {
-		for (@Pc(10) Class2_Sub2_Sub4 local10 = (Class2_Sub2_Sub4) Static350.aClass192_8.method4352(); local10 != null; local10 = (Class2_Sub2_Sub4) Static350.aClass192_8.method4350()) {
+		for (@Pc(10) SecondaryLinkable_Sub4 local10 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.head(); local10 != null; local10 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.next()) {
 			if (local10.anInt1534 > 1) {
 				local10.anInt1534 = 0;
-				Static717.aClass82_232.method2150(local10, ((Class2_Sub2_Sub16) local10.aClass192_3.aClass2_Sub2_36.aClass2_Sub2_66).aLong234);
-				local10.aClass192_3.method4351();
+				Static717.aClass82_232.method2150(local10, ((SecondaryLinkable_Sub16) local10.aSecondaryLinkedList3.sentinel.secondaryPrev).aLong234);
+				local10.aSecondaryLinkedList3.clear();
 			}
 		}
 		Static594.anInt8777 = 0;
@@ -23,9 +23,9 @@ public final class Static79 {
 		if (98 != 98) {
 			anInt1634 = 47;
 		}
-		Static693.aClass339_79.method7700();
-		Static490.aClass28_34.method737();
-		Static350.aClass192_8.method4351();
+		Static693.aLinkedList79.clear();
+		Static490.aHashTable34.clear();
+		Static350.aSecondaryLinkedList8.clear();
 		Static84.method1662(Static525.aClass2_Sub2_Sub16_12);
 	}
 

@@ -16,14 +16,14 @@ public final class Static58 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(ILclient!wj;)V")
-	public static void method1259(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub2 arg0) {
-		for (@Pc(17) Class2_Sub51 local17 = (Class2_Sub51) Static717.aClass339_81.method7699(65280); local17 != null; local17 = (Class2_Sub51) Static717.aClass339_81.method7706()) {
+	public static void method1259(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg0) {
+		for (@Pc(17) Linkable_Sub51 local17 = (Linkable_Sub51) Static717.aLinkedList81.head(); local17 != null; local17 = (Linkable_Sub51) Static717.aLinkedList81.next()) {
 			if (local17.aClass8_Sub2_Sub1_Sub2_Sub2_3 == arg0) {
 				if (local17.aClass2_Sub6_Sub2_4 != null) {
 					Static336.aClass2_Sub6_Sub3_1.method5883(local17.aClass2_Sub6_Sub2_4);
 					local17.aClass2_Sub6_Sub2_4 = null;
 				}
-				local17.method9457();
+				local17.unlink();
 				return;
 			}
 		}

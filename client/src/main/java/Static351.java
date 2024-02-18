@@ -19,7 +19,7 @@ public final class Static351 {
 	}
 
 	@OriginalMember(owner = "client!laa", name = "a", descriptor = "(Lclient!ha;ILclient!el;ILclient!fu;I)Z")
-	public static boolean method5138(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class105 arg1, @OriginalArg(4) Class2_Sub20 arg2) {
+	public static boolean method5138(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class105 arg1, @OriginalArg(4) Linkable_Sub20 arg2) {
 		@Pc(7) int local7 = Integer.MAX_VALUE;
 		@Pc(9) int local9 = Integer.MIN_VALUE;
 		@Pc(11) int local11 = Integer.MAX_VALUE;
@@ -133,7 +133,7 @@ public final class Static351 {
 			Static720.method9396(local211, arg2, local213, arg1, local209, local217, arg0, local215);
 		}
 		if (arg1.anInt2596 != -1 || arg1.aString25 != null) {
-			@Pc(612) Class2_Sub37 local612 = new Class2_Sub37(arg2);
+			@Pc(612) Linkable_Sub37 local612 = new Linkable_Sub37(arg2);
 			local612.anInt6185 = local229;
 			local612.anInt6186 = local108;
 			local612.anInt6192 = local227;
@@ -142,7 +142,7 @@ public final class Static351 {
 			local612.anInt6184 = local231;
 			local612.anInt6187 = local233;
 			local612.anInt6195 = local104;
-			Static551.aClass339_54.method7711(local612);
+			Static551.aLinkedList54.addTail(local612);
 		}
 		return false;
 	}

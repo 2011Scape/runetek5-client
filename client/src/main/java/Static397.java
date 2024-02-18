@@ -91,7 +91,7 @@ public final class Static397 {
 	}
 
 	@OriginalMember(owner = "client!mia", name = "a", descriptor = "(BILclient!cg;ILclient!cg;IIIII)V")
-	public static void method5557(@OriginalArg(1) int arg0, @OriginalArg(2) Class8_Sub2_Sub1_Sub2 arg1, @OriginalArg(4) Class8_Sub2_Sub1_Sub2 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6) {
+	public static void method5557(@OriginalArg(1) int arg0, @OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2 arg1, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) int arg4, @OriginalArg(8) int arg5, @OriginalArg(9) int arg6) {
 		@Pc(7) int local7 = arg2.method9304((byte) -71);
 		if (local7 == -1) {
 			return;
@@ -115,7 +115,7 @@ public final class Static397 {
 			Static163.aClass19_17.method7945(local102 - 1, -256, 18, 18, local83 - 1);
 		}
 		Static682.method8927(local102 - 1, local102 - -18, local83 - 1, local83 - -18);
-		@Pc(140) Class8_Sub1 local140 = Static192.method2876();
+		@Pc(140) ParticleNode_Sub1 local140 = Static192.method2876();
 		local140.anInt108 = local83;
 		local140.aClass8_Sub2_Sub1_Sub2_1 = arg2;
 		local140.anInt112 = local102;

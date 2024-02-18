@@ -57,6 +57,6 @@ public final class Static230 {
 
 	@OriginalMember(owner = "client!hca", name = "a", descriptor = "(I)V")
 	public static void method3374() {
-		Static631.aClass339_78 = new Class339();
+		Static631.aLinkedList78 = new LinkedList();
 	}
 }

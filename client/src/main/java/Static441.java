@@ -49,7 +49,7 @@ public final class Static441 {
 	}
 
 	@OriginalMember(owner = "client!nu", name = "a", descriptor = "(ILclient!cg;)V")
-	public static void method5967(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0) {
+	public static void method5967(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0) {
 		@Pc(9) int local9 = arg0.anInt10759 - Static333.anInt5455;
 		@Pc(20) int local20 = arg0.anInt10750 * 512 + arg0.method9302((byte) 99) * 256;
 		@Pc(32) int local32 = arg0.anInt10753 * 512 + arg0.method9302((byte) 58) * 256;

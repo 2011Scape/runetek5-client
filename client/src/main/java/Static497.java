@@ -8,22 +8,22 @@ public final class Static497 {
 	public static boolean aBoolean564;
 
 	@OriginalMember(owner = "client!pla", name = "i", descriptor = "Lclient!av;")
-	public static Class28 aClass28_35 = new Class28(64);
+	public static HashTable aHashTable35 = new HashTable(64);
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(ILclient!ha;)V")
 	public static void method6623(@OriginalArg(1) Class19 arg0) {
-		for (@Pc(6) Class8_Sub5 local6 = (Class8_Sub5) Static342.aClass130_7.method2790(); local6 != null; local6 = (Class8_Sub5) Static342.aClass130_7.method2785()) {
+		for (@Pc(6) ParticleNode_Sub5 local6 = (ParticleNode_Sub5) Static342.aClass130_7.method2790(); local6 != null; local6 = (ParticleNode_Sub5) Static342.aClass130_7.method2785()) {
 			if (local6.aBoolean325) {
 				local6.method3646(arg0);
 			}
 		}
 		if (false) {
-			aClass28_35 = null;
+			aHashTable35 = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(ILclient!wj;)I")
-	public static int method6629(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub2 arg0) {
+	public static int method6629(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg0) {
 		@Pc(6) Class268 local6 = arg0.aClass268_1;
 		if (local6.anIntArray532 != null) {
 			local6 = local6.method5985(65535, Static34.aClass304_1);

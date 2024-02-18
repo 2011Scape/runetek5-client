@@ -16,9 +16,9 @@ public final class Static13 {
 	public static void method158() {
 		for (@Pc(7) int local7 = 0; local7 < Static390.anInt6126; local7++) {
 			@Pc(13) int local13 = Static103.anIntArray187[local7];
-			@Pc(20) Class2_Sub45 local20 = (Class2_Sub45) Static18.aClass28_2.method738((long) local13);
+			@Pc(20) Linkable_Sub45 local20 = (Linkable_Sub45) Static18.aHashTable2.get((long) local13);
 			if (local20 != null) {
-				@Pc(25) Class8_Sub2_Sub1_Sub2_Sub2 local25 = local20.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+				@Pc(25) ParticleNode_Sub2_Sub1_Sub2_Sub2 local25 = local20.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				Static489.method6547(false, local25);
 			}
 		}

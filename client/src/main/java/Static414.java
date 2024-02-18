@@ -11,7 +11,7 @@ public final class Static414 {
 	public static final float[] aFloatArray43 = new float[2];
 
 	@OriginalMember(owner = "client!nba", name = "a", descriptor = "(ZLclient!ca;I)V")
-	public static void method5696(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg1) {
+	public static void method5696(@OriginalArg(0) boolean arg0, @OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg1) {
 		if (Static594.anInt8777 >= 400) {
 			return;
 		}
@@ -72,7 +72,7 @@ public final class Static414 {
 				}
 			}
 			if (!arg0) {
-				for (@Pc(484) Class2_Sub2_Sub16 local484 = (Class2_Sub2_Sub16) Static693.aClass339_79.method7699(65280); local484 != null; local484 = (Class2_Sub2_Sub16) Static693.aClass339_79.method7706()) {
+				for (@Pc(484) SecondaryLinkable_Sub16 local484 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.head(); local484 != null; local484 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.next()) {
 					if (local484.anInt7314 == 58) {
 						local484.aString88 = "<col=ffffff>" + local177;
 						return;

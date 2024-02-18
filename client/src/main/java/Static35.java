@@ -66,8 +66,8 @@ public final class Static35 {
 									local251 = 0;
 								}
 								local179 = Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() * (local199 - local251) * local13.anInt2577 / local199 >> 2;
-								if (local13.aClass8_Sub2_10 != null && local13.aClass8_Sub2_10 instanceof Class8_Sub2_Sub1) {
-									@Pc(301) Class8_Sub2_Sub1 local301 = (Class8_Sub2_Sub1) local13.aClass8_Sub2_10;
+								if (local13.aClass8_Sub2_10 != null && local13.aClass8_Sub2_10 instanceof ParticleNode_Sub2_Sub1) {
+									@Pc(301) ParticleNode_Sub2_Sub1 local301 = (ParticleNode_Sub2_Sub1) local13.aClass8_Sub2_10;
 									@Pc(304) short local304 = local301.aShort132;
 									@Pc(307) short local307 = local301.aShort131;
 								}
@@ -91,19 +91,19 @@ public final class Static35 {
 							}
 						}
 						if (local179 > 0) {
-							@Pc(392) Class2_Sub49_Sub1 local392 = null;
+							@Pc(392) Linkable_Sub49_Sub1 local392 = null;
 							if (local13.aByte49 == 1) {
 								local392 = local13.aClass89_1.method2247().method7821(Static681.aClass224_2);
 							} else if (local13.method2418()) {
 								local392 = local13.aClass2_Sub49_Sub1_2;
 							}
-							@Pc(422) Class2_Sub6_Sub2 local422 = local13.aClass2_Sub6_Sub2_2 = Static730.method3346(local392, local13.anInt2573, local179, local154);
+							@Pc(422) Linkable_Sub6_Sub2 local422 = local13.aClass2_Sub6_Sub2_2 = Static730.method3346(local392, local13.anInt2573, local179, local154);
 							local422.method3318(local13.anInt2574 - 1);
 							Static336.aClass2_Sub6_Sub3_1.method5882(local422);
 						}
 					}
 				}
-			} else if (!local13.aClass2_Sub6_Sub2_2.method9458()) {
+			} else if (!local13.aClass2_Sub6_Sub2_2.isLinked()) {
 				local15 = true;
 			}
 			if (local15) {
@@ -125,7 +125,7 @@ public final class Static35 {
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
 		} else if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
-			@Pc(551) Class2_Sub19 local551 = Static293.method4335(Static235.aClass345_49, Static405.aClass153_2.aIsaacRandom_1);
+			@Pc(551) Linkable_Sub19 local551 = Static293.method4335(Static235.aClass345_49, Static405.aClass153_2.aIsaacRandom_1);
 			local551.aPacketBit_1.p4(Static588.anInt8692);
 			Static405.aClass153_2.method3275(local551);
 			Static588.anInt8692 = -1;

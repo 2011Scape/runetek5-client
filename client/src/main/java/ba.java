@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ba")
-public final class ba extends Class2_Sub2_Sub9 implements Interface5 {
+public final class ba extends SecondaryLinkable_Sub9 implements Interface5 {
 
 	@OriginalMember(owner = "client!ba", name = "nativeid", descriptor = "J")
 	private long nativeid;

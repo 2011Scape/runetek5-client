@@ -22,7 +22,7 @@ public final class Static695 {
 
 	@OriginalMember(owner = "client!vw", name = "a", descriptor = "(IZ)V")
 	public static void method9267(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub5 local10 = (Class2_Sub5) Static106.aClass28_11.method738((long) arg0);
+		@Pc(10) Linkable_Sub5 local10 = (Linkable_Sub5) Static106.aHashTable11.get((long) arg0);
 		if (local10 != null) {
 			local10.aBoolean16 = !local10.aBoolean16;
 			local10.aClass222_Sub1_1.method9174(local10.aBoolean16);

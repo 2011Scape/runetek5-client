@@ -14,7 +14,7 @@ public abstract class Class114 {
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(Lclient!tt;Lclient!ima;I)V")
-	public abstract void method7473(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2);
+	public abstract void method7473(@OriginalArg(0) Class73 arg0, @OriginalArg(1) ParticleNode_Sub6 arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!ka", name = "I", descriptor = "(I[IIIIZI[I)V")
 	protected abstract void I(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int[] arg7);
@@ -85,7 +85,7 @@ public abstract class Class114 {
 	public abstract void VA(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(IILclient!rw;IIILclient!rw;Lclient!rw;IZILclient!rw;[ZII)V")
-	public final void method7477(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub18 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class2_Sub2_Sub18 arg5, @OriginalArg(7) Class2_Sub2_Sub18 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class2_Sub2_Sub18 arg10, @OriginalArg(12) boolean[] arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {
+	public final void method7477(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryLinkable_Sub18 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) SecondaryLinkable_Sub18 arg5, @OriginalArg(7) SecondaryLinkable_Sub18 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8, @OriginalArg(10) int arg9, @OriginalArg(11) SecondaryLinkable_Sub18 arg10, @OriginalArg(12) boolean[] arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {
 		if (arg1 == -1) {
 			return;
 		}
@@ -99,7 +99,7 @@ public abstract class Class114 {
 			return;
 		}
 		@Pc(44) Class253 local44 = arg6.aClass253Array1[arg1];
-		@Pc(47) Class2_Sub44 local47 = local44.aClass2_Sub44_1;
+		@Pc(47) Linkable_Sub44 local47 = local44.aClass2_Sub44_1;
 		@Pc(49) Class253 local49 = null;
 		if (arg2 != null) {
 			local49 = arg2.aClass253Array1[arg4];
@@ -123,7 +123,7 @@ public abstract class Class114 {
 	}
 
 	@OriginalMember(owner = "client!ka", name = "ba", descriptor = "(Lclient!r;)Lclient!r;")
-	public abstract Class2_Sub2_Sub9 ba(@OriginalArg(0) Class2_Sub2_Sub9 arg0);
+	public abstract SecondaryLinkable_Sub9 ba(@OriginalArg(0) SecondaryLinkable_Sub9 arg0);
 
 	@OriginalMember(owner = "client!ka", name = "e", descriptor = "()V")
 	public abstract void method7479();
@@ -150,13 +150,13 @@ public abstract class Class114 {
 	public abstract int HA();
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(Lclient!tt;Lclient!ima;II)V")
-	public abstract void method7484(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public abstract void method7484(@OriginalArg(0) Class73 arg0, @OriginalArg(1) ParticleNode_Sub6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(IILclient!tt;ZI)Z")
 	public abstract boolean method7486(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class73 arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(Lclient!rw;IILclient!rw;IIIIZ)V")
-	public final void method7487(@OriginalArg(0) Class2_Sub2_Sub18 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class2_Sub2_Sub18 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) boolean arg7) {
+	public final void method7487(@OriginalArg(0) SecondaryLinkable_Sub18 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SecondaryLinkable_Sub18 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) boolean arg7) {
 		if (arg4 == -1) {
 			return;
 		}
@@ -166,7 +166,7 @@ public abstract class Class114 {
 			return;
 		}
 		@Pc(23) Class253 local23 = arg0.aClass253Array1[arg4];
-		@Pc(26) Class2_Sub44 local26 = local23.aClass2_Sub44_1;
+		@Pc(26) Linkable_Sub44 local26 = local23.aClass2_Sub44_1;
 		@Pc(28) Class253 local28 = null;
 		if (arg3 != null) {
 			local28 = arg3.aClass253Array1[arg5];
@@ -286,7 +286,7 @@ public abstract class Class114 {
 	public abstract void method7492(@OriginalArg(0) Class73 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2);
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(IILclient!rw;)V")
-	public final void method7493(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub2_Sub18 arg1) {
+	public final void method7493(@OriginalArg(0) int arg0, @OriginalArg(2) SecondaryLinkable_Sub18 arg1) {
 		if (arg0 == -1) {
 			return;
 		}
@@ -296,7 +296,7 @@ public abstract class Class114 {
 			return;
 		}
 		@Pc(33) Class253 local33 = arg1.aClass253Array1[arg0];
-		@Pc(36) Class2_Sub44 local36 = local33.aClass2_Sub44_1;
+		@Pc(36) Linkable_Sub44 local36 = local33.aClass2_Sub44_1;
 		for (@Pc(38) int local38 = 0; local38 < local33.anInt6359; local38++) {
 			@Pc(45) short local45 = local33.aShortArray87[local38];
 			if (local36.aBooleanArray25[local45]) {
@@ -326,7 +326,7 @@ public abstract class Class114 {
 	public abstract boolean r();
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(ILclient!rw;Lclient!rw;II[IBIZII)V")
-	public final void method7496(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub18 arg1, @OriginalArg(2) Class2_Sub2_Sub18 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(7) int arg5, @OriginalArg(8) boolean arg6, @OriginalArg(9) int arg7, @OriginalArg(10) int arg8) {
+	public final void method7496(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryLinkable_Sub18 arg1, @OriginalArg(2) SecondaryLinkable_Sub18 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(7) int arg5, @OriginalArg(8) boolean arg6, @OriginalArg(9) int arg7, @OriginalArg(10) int arg8) {
 		if (arg3 == -1) {
 			return;
 		}
@@ -336,7 +336,7 @@ public abstract class Class114 {
 			return;
 		}
 		@Pc(29) Class253 local29 = arg1.aClass253Array1[arg3];
-		@Pc(32) Class2_Sub44 local32 = local29.aClass2_Sub44_1;
+		@Pc(32) Linkable_Sub44 local32 = local29.aClass2_Sub44_1;
 		@Pc(34) Class253 local34 = null;
 		if (arg2 != null) {
 			local34 = arg2.aClass253Array1[arg7];
@@ -350,7 +350,7 @@ public abstract class Class114 {
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(Lclient!nb;[ZIZB[IIILclient!nb;Lclient!qda;IZ)V")
-	private void method7497(@OriginalArg(0) Class253 arg0, @OriginalArg(1) boolean[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class253 arg7, @OriginalArg(9) Class2_Sub44 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) boolean arg10) {
+	private void method7497(@OriginalArg(0) Class253 arg0, @OriginalArg(1) boolean[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class253 arg7, @OriginalArg(9) Linkable_Sub44 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) boolean arg10) {
 		@Pc(11) int local11;
 		if (arg0 == null || arg2 == 0) {
 			for (local11 = 0; local11 < arg7.anInt6359; local11++) {

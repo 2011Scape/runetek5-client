@@ -33,8 +33,8 @@ public final class Static620 {
 				} else {
 					local51 = (int) Static171.aFloat64 + Static29.anInt723 & 0x3FFF;
 				}
-				local62 = Class361.anIntArray741[local51];
-				local66 = Class361.anIntArray740[local51];
+				local62 = LruHashTable.anIntArray741[local51];
+				local66 = LruHashTable.anIntArray740[local51];
 				if (Static511.anInt7645 != 4) {
 					local62 = local62 * 256 / (Static660.anInt9835 + 256);
 					local66 = local66 * 256 / (Static660.anInt9835 + 256);

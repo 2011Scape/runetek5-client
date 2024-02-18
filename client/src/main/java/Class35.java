@@ -95,9 +95,9 @@ public abstract class Class35 {
 							local171 &= 0xFF;
 						}
 						local175 &= 0xFF;
-						@Pc(237) int local237 = Class2_Sub2_Sub19.anIntArray768[local122];
-						@Pc(241) int local241 = Class2_Sub2_Sub19.anIntArray768[local187];
-						@Pc(245) int local245 = Class2_Sub2_Sub19.anIntArray768[local99];
+						@Pc(237) int local237 = SecondaryLinkable_Sub19.anIntArray768[local122];
+						@Pc(241) int local241 = SecondaryLinkable_Sub19.anIntArray768[local187];
+						@Pc(245) int local245 = SecondaryLinkable_Sub19.anIntArray768[local99];
 						@Pc(250) short local250 = this.aShortArray98[local183];
 						@Pc(255) short local255 = this.aShortArray98[local175];
 						@Pc(259) int local259 = local187 - 4096;

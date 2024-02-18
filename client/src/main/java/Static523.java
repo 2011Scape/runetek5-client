@@ -265,7 +265,7 @@ public final class Static523 {
 			} catch (@Pc(1126) Throwable local1126) {
 			}
 			Static600.aClass27_1 = Static570.method7550();
-			Static292.aClass2_Sub43_2 = new Class2_Sub43(true, Static446.aClass390_6);
+			Static292.aClass2_Sub43_2 = new Linkable_Sub43(true, Static446.aClass390_6);
 		}
 		if (Static198.aClass140_15 == Static473.aClass140_22) {
 			local12 = Static188.method2860(Static721.aClass330_128) + Static372.method5291(true);

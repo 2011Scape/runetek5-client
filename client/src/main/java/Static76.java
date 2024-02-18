@@ -16,8 +16,8 @@ public final class Static76 {
 	public static int anInt1604 = 0;
 
 	@OriginalMember(owner = "client!cha", name = "a", descriptor = "(BLclient!ca;)V")
-	public static void method1552(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0) {
-		@Pc(19) Class2_Sub51 local19 = (Class2_Sub51) Static113.aClass28_12.method738((long) arg0.anInt10740);
+	public static void method1552(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0) {
+		@Pc(19) Linkable_Sub51 local19 = (Linkable_Sub51) Static113.aHashTable12.get((long) arg0.anInt10740);
 		if (local19 == null) {
 			return;
 		}
@@ -25,7 +25,7 @@ public final class Static76 {
 			Static336.aClass2_Sub6_Sub3_1.method5883(local19.aClass2_Sub6_Sub2_4);
 			local19.aClass2_Sub6_Sub2_4 = null;
 		}
-		local19.method9457();
+		local19.unlink();
 	}
 
 	@OriginalMember(owner = "client!cha", name = "b", descriptor = "(B)V")

@@ -14,7 +14,7 @@ public final class Static693 {
 	public static final Class345 aClass345_121 = new Class345(81, 8);
 
 	@OriginalMember(owner = "client!vu", name = "f", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_79 = new Class339();
+	public static final LinkedList aLinkedList79 = new LinkedList();
 
 	@OriginalMember(owner = "client!vu", name = "e", descriptor = "I")
 	public static int anInt10382 = -1;
@@ -103,7 +103,7 @@ public final class Static693 {
 
 	@OriginalMember(owner = "client!vu", name = "a", descriptor = "(III)V")
 	public static void method9013(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(21) Class2_Sub2_Sub2 local21 = Static440.method5963(19, (long) arg0 | (long) arg1 << 32);
+		@Pc(21) SecondaryLinkable_Sub2 local21 = Static440.method5963(19, (long) arg0 | (long) arg1 << 32);
 		local21.method205();
 	}
 }

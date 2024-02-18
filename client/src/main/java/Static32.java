@@ -209,8 +209,8 @@ public final class Static32 {
 	public static int anInt777 = 100;
 
 	@OriginalMember(owner = "client!bba", name = "a", descriptor = "(IBII)Lclient!fk;")
-	public static Class2_Sub19 method878(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(11) Class2_Sub19 local11 = null;
+	public static Linkable_Sub19 method878(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		@Pc(11) Linkable_Sub19 local11 = null;
 		if (arg2 == 0) {
 			local11 = Static293.method4335(Static500.aClass345_91, Static405.aClass153_2.aIsaacRandom_1);
 		}

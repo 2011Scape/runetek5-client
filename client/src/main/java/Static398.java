@@ -11,11 +11,11 @@ public final class Static398 {
 	public static double aDouble20;
 
 	@OriginalMember(owner = "client!mj", name = "y", descriptor = "[Lclient!eo;")
-	public static Class8_Sub2[] aClass8_Sub2Array7;
+	public static ParticleNode_Sub2[] aClass8_Sub2Array7;
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "(IIIII)I")
 	public static int method5560(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(15) int local15 = 65536 - Class361.anIntArray740[arg3 * 8192 / arg0] >> 1;
+		@Pc(15) int local15 = 65536 - LruHashTable.anIntArray740[arg3 * 8192 / arg0] >> 1;
 		return (local15 * arg2 >> 16) + (arg1 * (65536 - local15) >> 16);
 	}
 

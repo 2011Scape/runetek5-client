@@ -23,7 +23,7 @@ public final class Static501 {
 	public static boolean aBoolean575 = false;
 
 	@OriginalMember(owner = "client!pq", name = "u", descriptor = "[Lclient!lca;")
-	public static final Class2_Sub7[] aClass2_Sub7Array4 = new Class2_Sub7[8];
+	public static final Linkable_Sub7[] aClass2_Sub7Array4 = new Linkable_Sub7[8];
 
 	@OriginalMember(owner = "client!pq", name = "d", descriptor = "(I)Z")
 	public static boolean method6714() {

@@ -61,13 +61,13 @@ public final class Static370 {
 	}
 
 	@OriginalMember(owner = "client!lm", name = "a", descriptor = "(BLclient!ep;Lclient!ep;)V")
-	public static void method5282(@OriginalArg(1) Class8 arg0, @OriginalArg(2) Class8 arg1) {
-		if (arg0.aClass8_67 != null) {
+	public static void method5282(@OriginalArg(1) ParticleNode arg0, @OriginalArg(2) ParticleNode arg1) {
+		if (arg0.aParticleNode67 != null) {
 			arg0.method9274();
 		}
-		arg0.aClass8_68 = arg1;
-		arg0.aClass8_67 = arg1.aClass8_67;
-		arg0.aClass8_67.aClass8_68 = arg0;
-		arg0.aClass8_68.aClass8_67 = arg0;
+		arg0.aParticleNode68 = arg1;
+		arg0.aParticleNode67 = arg1.aParticleNode67;
+		arg0.aParticleNode67.aParticleNode68 = arg0;
+		arg0.aParticleNode68.aParticleNode67 = arg0;
 	}
 }

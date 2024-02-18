@@ -26,7 +26,7 @@ public final class Static358 {
 		for (@Pc(1) int local1 = 0; local1 < Static319.anInt5080; local1++) {
 			if (!Static279.aBooleanArray11[local1]) {
 				@Pc(10) Class353 local10 = Static265.aClass353Array1[local1];
-				@Pc(13) Class2_Sub7 local13 = local10.aClass2_Sub7_3;
+				@Pc(13) Linkable_Sub7 local13 = local10.aClass2_Sub7_3;
 				@Pc(16) int local16 = local10.anInt9369;
 				@Pc(22) int local22 = local13.method8432() - Static247.anInt3993;
 				@Pc(30) int local30 = (local22 * 2 >> Static52.anInt1066) + 1;
@@ -57,7 +57,7 @@ public final class Static358 {
 					}
 					for (@Pc(125) int local125 = local100; local125 <= local108; local125++) {
 						@Pc(128) byte local128 = 1;
-						@Pc(144) Class8_Sub2_Sub1 local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = getClass("Class8_Sub2_Sub1")) : aClass28);
+						@Pc(144) ParticleNode_Sub2_Sub1 local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = getClass("Class8_Sub2_Sub1")) : aClass28);
 						if (local144 != null && local144.aByte145 != 0) {
 							@Pc(169) boolean local169;
 							@Pc(179) boolean local179;

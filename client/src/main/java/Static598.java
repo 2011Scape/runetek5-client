@@ -30,11 +30,11 @@ public final class Static598 {
 
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "(Z)V")
 	public static void method7827() {
-		for (@Pc(13) Class2_Sub2_Sub20 local13 = (Class2_Sub2_Sub20) Static346.aClass28_29.method736(); local13 != null; local13 = (Class2_Sub2_Sub20) Static346.aClass28_29.method740()) {
-			@Pc(18) Class8_Sub2_Sub1_Sub5 local18 = local13.aClass8_Sub2_Sub1_Sub5_1;
+		for (@Pc(13) SecondaryLinkable_Sub20 local13 = (SecondaryLinkable_Sub20) Static346.aHashTable29.head(); local13 != null; local13 = (SecondaryLinkable_Sub20) Static346.aHashTable29.next()) {
+			@Pc(18) ParticleNode_Sub2_Sub1_Sub5 local18 = local13.aClass8_Sub2_Sub1_Sub5_1;
 			local18.method6598();
 			if (local18.method6603()) {
-				local13.method9457();
+				local13.unlink();
 				local18.method6600();
 			} else if (Static334.aClass291ArrayArrayArray1 != null && local18.method6595()) {
 				Static102.method2026(local18, true);

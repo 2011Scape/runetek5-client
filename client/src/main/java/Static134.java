@@ -42,7 +42,7 @@ public final class Static134 {
 		if (arg0.aClass158Array1 != null) {
 			Static220.method3200(local16, arg1, local37, arg0.aClass158Array1, arg0.anInt3812);
 		}
-		@Pc(72) Class2_Sub4 local72 = (Class2_Sub4) Static548.aClass28_40.method738((long) arg0.anInt3812);
+		@Pc(72) Linkable_Sub4 local72 = (Linkable_Sub4) Static548.aHashTable40.get((long) arg0.anInt3812);
 		if (local72 != null) {
 			Static19.method265(arg1, local72.anInt147, local37, local16);
 		}

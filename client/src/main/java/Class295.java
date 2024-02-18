@@ -17,19 +17,19 @@ public final class Class295 {
 	private long aLong238;
 
 	@OriginalMember(owner = "client!pla", name = "B", descriptor = "Lclient!rja;")
-	private Class2_Sub2_Sub17_Sub1 aClass2_Sub2_Sub17_Sub1_2;
+	private SecondaryLinkable_Sub17_Sub1 aClass2_Sub2_Sub17_Sub1_2;
 
 	@OriginalMember(owner = "client!pla", name = "C", descriptor = "Lclient!jga;")
-	private final Class192 aClass192_10 = new Class192();
+	private final SecondaryLinkedList aSecondaryLinkedList10 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pla", name = "b", descriptor = "Lclient!jga;")
-	private final Class192 aClass192_11 = new Class192();
+	private final SecondaryLinkedList aSecondaryLinkedList11 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pla", name = "r", descriptor = "Lclient!jga;")
-	private final Class192 aClass192_12 = new Class192();
+	private final SecondaryLinkedList aSecondaryLinkedList12 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pla", name = "j", descriptor = "Lclient!jga;")
-	private final Class192 aClass192_13 = new Class192();
+	private final SecondaryLinkedList aSecondaryLinkedList13 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pla", name = "v", descriptor = "Lclient!ge;")
 	private final Packet aPacket_13 = new Packet(4);
@@ -88,7 +88,7 @@ public final class Class295 {
 
 	@OriginalMember(owner = "client!pla", name = "e", descriptor = "(I)I")
 	public int method6622() {
-		return this.aClass192_10.method4349() + this.aClass192_11.method4349();
+		return this.aSecondaryLinkedList10.size() + this.aSecondaryLinkedList11.size();
 	}
 
 	@OriginalMember(owner = "client!pla", name = "d", descriptor = "(B)Z")
@@ -115,19 +115,19 @@ public final class Class295 {
 		}
 		try {
 			this.aClass263_1.method5823();
-			for (@Pc(84) Class2_Sub2_Sub17_Sub1 local84 = (Class2_Sub2_Sub17_Sub1) this.aClass192_10.method4352(); local84 != null; local84 = (Class2_Sub2_Sub17_Sub1) this.aClass192_10.method4350()) {
+			for (@Pc(84) SecondaryLinkable_Sub17_Sub1 local84 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList10.head(); local84 != null; local84 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList10.next()) {
 				this.aPacket_13.pos = 0;
 				this.aPacket_13.p1(1);
-				this.aPacket_13.p3((int) local84.aLong325);
+				this.aPacket_13.p3((int) local84.secondaryKey);
 				this.aClass263_1.method5829(4, this.aPacket_13.data);
-				this.aClass192_11.method4348(local84);
+				this.aSecondaryLinkedList11.addTail(local84);
 			}
-			for (@Pc(142) Class2_Sub2_Sub17_Sub1 local142 = (Class2_Sub2_Sub17_Sub1) this.aClass192_12.method4352(); local142 != null; local142 = (Class2_Sub2_Sub17_Sub1) this.aClass192_12.method4350()) {
+			for (@Pc(142) SecondaryLinkable_Sub17_Sub1 local142 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList12.head(); local142 != null; local142 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList12.next()) {
 				this.aPacket_13.pos = 0;
 				this.aPacket_13.p1(0);
-				this.aPacket_13.p3((int) local142.aLong325);
+				this.aPacket_13.p3((int) local142.secondaryKey);
 				this.aClass263_1.method5829(4, this.aPacket_13.data);
-				this.aClass192_13.method4348(local142);
+				this.aSecondaryLinkedList13.addTail(local142);
 			}
 			for (local14 = 0; local14 < 100; local14++) {
 				@Pc(199) int local199 = this.aClass263_1.method5828();
@@ -169,12 +169,12 @@ public final class Class295 {
 							@Pc(342) int local342 = local333 & 0x7F;
 							@Pc(354) boolean local354 = (local333 & 0x80) != 0;
 							@Pc(361) long local361 = (long) (local328 + (local260 << 16));
-							@Pc(371) Class2_Sub2_Sub17_Sub1 local371;
+							@Pc(371) SecondaryLinkable_Sub17_Sub1 local371;
 							if (local354) {
-								for (local371 = (Class2_Sub2_Sub17_Sub1) this.aClass192_13.method4352(); local371 != null && local371.aLong325 != local361; local371 = (Class2_Sub2_Sub17_Sub1) this.aClass192_13.method4350()) {
+								for (local371 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList13.head(); local371 != null && local371.secondaryKey != local361; local371 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList13.next()) {
 								}
 							} else {
-								for (local371 = (Class2_Sub2_Sub17_Sub1) this.aClass192_11.method4352(); local371 != null && local371.aLong325 != local361; local371 = (Class2_Sub2_Sub17_Sub1) this.aClass192_11.method4350()) {
+								for (local371 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList11.head(); local371 != null && local371.secondaryKey != local361; local371 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList11.next()) {
 								}
 							}
 							if (local371 == null) {
@@ -214,7 +214,7 @@ public final class Class295 {
 					this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos += local260;
 					this.aClass2_Sub2_Sub17_Sub1_2.anInt8331 += local260;
 					if (local236 == this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos) {
-						this.aClass2_Sub2_Sub17_Sub1_2.method9260();
+						this.aClass2_Sub2_Sub17_Sub1_2.unlinkSecondary();
 						this.aClass2_Sub2_Sub17_Sub1_2.aBoolean778 = false;
 						this.aClass2_Sub2_Sub17_Sub1_2 = null;
 					} else if (this.aClass2_Sub2_Sub17_Sub1_2.anInt8331 == 512) {
@@ -276,10 +276,10 @@ public final class Class295 {
 		this.aClass2_Sub2_Sub17_Sub1_2 = null;
 		this.aPacket_14.pos = 0;
 		while (true) {
-			@Pc(48) Class2_Sub2_Sub17_Sub1 local48 = (Class2_Sub2_Sub17_Sub1) this.aClass192_11.method4346();
+			@Pc(48) SecondaryLinkable_Sub17_Sub1 local48 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList11.removeTail();
 			if (local48 == null) {
 				while (true) {
-					local48 = (Class2_Sub2_Sub17_Sub1) this.aClass192_13.method4346();
+					local48 = (SecondaryLinkable_Sub17_Sub1) this.aSecondaryLinkedList13.removeTail();
 					if (local48 == null) {
 						if (this.aByte120 != 0) {
 							try {
@@ -302,10 +302,10 @@ public final class Class295 {
 						this.aLong238 = Static588.method7715();
 						return;
 					}
-					this.aClass192_12.method4348(local48);
+					this.aSecondaryLinkedList12.addTail(local48);
 				}
 			}
-			this.aClass192_10.method4348(local48);
+			this.aSecondaryLinkedList10.addTail(local48);
 		}
 	}
 
@@ -344,23 +344,23 @@ public final class Class295 {
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(B)I")
 	private int method6632() {
-		return this.aClass192_12.method4349() + this.aClass192_13.method4349();
+		return this.aSecondaryLinkedList12.size() + this.aSecondaryLinkedList13.size();
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(IIBZB)Lclient!rja;")
-	public Class2_Sub2_Sub17_Sub1 method6633(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte arg3) {
+	public SecondaryLinkable_Sub17_Sub1 method6633(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte arg3) {
 		@Pc(19) long local19 = (long) ((arg0 << 16) + arg1);
-		@Pc(23) Class2_Sub2_Sub17_Sub1 local23 = new Class2_Sub2_Sub17_Sub1();
+		@Pc(23) SecondaryLinkable_Sub17_Sub1 local23 = new SecondaryLinkable_Sub17_Sub1();
 		local23.aBoolean777 = arg2;
 		local23.aByte129 = arg3;
-		local23.aLong325 = local19;
+		local23.secondaryKey = local19;
 		if (arg2) {
 			if (this.method6622() >= 20) {
 				throw new RuntimeException();
 			}
-			this.aClass192_10.method4348(local23);
+			this.aSecondaryLinkedList10.addTail(local23);
 		} else if (this.method6632() < 20) {
-			this.aClass192_12.method4348(local23);
+			this.aSecondaryLinkedList12.addTail(local23);
 		} else {
 			throw new RuntimeException();
 		}

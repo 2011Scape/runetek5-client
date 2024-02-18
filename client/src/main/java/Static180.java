@@ -32,7 +32,7 @@ public final class Static180 {
 			return;
 		}
 		@Pc(45) Class153 local45 = Static668.method8701();
-		@Pc(53) Class2_Sub19 local53 = Static293.method4335(Static507.aClass345_95, local45.aIsaacRandom_1);
+		@Pc(53) Linkable_Sub19 local53 = Static293.method4335(Static507.aClass345_95, local45.aIsaacRandom_1);
 		local53.aPacketBit_1.p1(Static231.method3379(local29.aString2) + 2);
 		local53.aPacketBit_1.p2(arg0);
 		local53.aPacketBit_1.pjstr(local29.aString2);

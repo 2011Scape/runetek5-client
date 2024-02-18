@@ -32,7 +32,7 @@ public final class Class201 {
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(I)V")
 	private void method4543() {
-		@Pc(5) long[] local5 = Class2_Sub2_Sub14.aLongArray21;
+		@Pc(5) long[] local5 = ReferenceNode.aLongArray21;
 		this.aLong160 = -1L;
 		this.aLong160 = local5[(int) ((this.aLong160 ^ (long) (this.anInt5007 >> 8)) & 0xFFL)] ^ this.aLong160 >>> 8;
 		this.aLong160 = this.aLong160 >>> 8 ^ local5[(int) (((long) this.anInt5007 ^ this.aLong160) & 0xFFL)];

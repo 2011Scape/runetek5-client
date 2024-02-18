@@ -9,5 +9,5 @@ public final class Static505 {
 	public static final Class204 aClass204_16 = new Class204(9, 2);
 
 	@OriginalMember(owner = "client!pu", name = "c", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_77 = new Class339();
+	public static final LinkedList aLinkedList77 = new LinkedList();
 }

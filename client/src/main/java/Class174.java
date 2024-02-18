@@ -10,7 +10,7 @@ public final class Class174 implements Runnable {
 	public static final int[] anIntArray325 = new int[32];
 
 	@OriginalMember(owner = "client!iba", name = "d", descriptor = "Lclient!jga;")
-	private final Class192 aClass192_7 = new Class192();
+	private final SecondaryLinkedList aSecondaryLinkedList7 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!iba", name = "n", descriptor = "I")
 	public int anInt4243 = 0;
@@ -42,22 +42,22 @@ public final class Class174 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(Lclient!af;IZ)Lclient!vp;")
-	public Class2_Sub2_Sub17_Sub2 method3825(@OriginalArg(0) Class9 arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) Class2_Sub2_Sub17_Sub2 local7 = new Class2_Sub2_Sub17_Sub2();
+	public SecondaryLinkable_Sub17_Sub2 method3825(@OriginalArg(0) Class9 arg0, @OriginalArg(1) int arg1) {
+		@Pc(7) SecondaryLinkable_Sub17_Sub2 local7 = new SecondaryLinkable_Sub17_Sub2();
 		local7.anInt10352 = 1;
-		@Pc(13) Class192 local13 = this.aClass192_7;
-		synchronized (this.aClass192_7) {
-			@Pc(21) Class2_Sub2_Sub17_Sub2 local21 = (Class2_Sub2_Sub17_Sub2) this.aClass192_7.method4352();
+		@Pc(13) SecondaryLinkedList local13 = this.aSecondaryLinkedList7;
+		synchronized (this.aSecondaryLinkedList7) {
+			@Pc(21) SecondaryLinkable_Sub17_Sub2 local21 = (SecondaryLinkable_Sub17_Sub2) this.aSecondaryLinkedList7.head();
 			while (true) {
 				if (local21 == null) {
 					break;
 				}
-				if (local21.aLong325 == (long) arg1 && local21.aClass9_4 == arg0 && local21.anInt10352 == 2) {
+				if (local21.secondaryKey == (long) arg1 && local21.aClass9_4 == arg0 && local21.anInt10352 == 2) {
 					local7.aBoolean778 = false;
 					local7.aByteArray109 = local21.aByteArray109;
 					return local7;
 				}
-				local21 = (Class2_Sub2_Sub17_Sub2) this.aClass192_7.method4350();
+				local21 = (SecondaryLinkable_Sub17_Sub2) this.aSecondaryLinkedList7.next();
 			}
 		}
 		local7.aByteArray109 = arg0.method126(arg1);
@@ -69,9 +69,9 @@ public final class Class174 implements Runnable {
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(I)V")
 	public void method3826() {
 		this.aBoolean333 = true;
-		@Pc(9) Class192 local9 = this.aClass192_7;
-		synchronized (this.aClass192_7) {
-			this.aClass192_7.notifyAll();
+		@Pc(9) SecondaryLinkedList local9 = this.aSecondaryLinkedList7;
+		synchronized (this.aSecondaryLinkedList7) {
+			this.aSecondaryLinkedList7.notifyAll();
 		}
 		try {
 			this.aThread2.join();
@@ -81,12 +81,12 @@ public final class Class174 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(ILclient!vp;)V")
-	private void method3827(@OriginalArg(1) Class2_Sub2_Sub17_Sub2 arg0) {
-		@Pc(6) Class192 local6 = this.aClass192_7;
-		synchronized (this.aClass192_7) {
-			this.aClass192_7.method4348(arg0);
+	private void method3827(@OriginalArg(1) SecondaryLinkable_Sub17_Sub2 arg0) {
+		@Pc(6) SecondaryLinkedList local6 = this.aSecondaryLinkedList7;
+		synchronized (this.aSecondaryLinkedList7) {
+			this.aSecondaryLinkedList7.addTail(arg0);
 			this.anInt4243++;
-			this.aClass192_7.notifyAll();
+			this.aSecondaryLinkedList7.notifyAll();
 		}
 	}
 
@@ -94,13 +94,13 @@ public final class Class174 implements Runnable {
 	@Override
 	public void run() {
 		while (!this.aBoolean333) {
-			@Pc(10) Class192 local10 = this.aClass192_7;
-			@Pc(18) Class2_Sub2_Sub17_Sub2 local18;
-			synchronized (this.aClass192_7) {
-				local18 = (Class2_Sub2_Sub17_Sub2) this.aClass192_7.method4346();
+			@Pc(10) SecondaryLinkedList local10 = this.aSecondaryLinkedList7;
+			@Pc(18) SecondaryLinkable_Sub17_Sub2 local18;
+			synchronized (this.aSecondaryLinkedList7) {
+				local18 = (SecondaryLinkable_Sub17_Sub2) this.aSecondaryLinkedList7.removeTail();
 				if (local18 == null) {
 					try {
-						this.aClass192_7.wait();
+						this.aSecondaryLinkedList7.wait();
 					} catch (@Pc(26) InterruptedException local26) {
 					}
 					continue;
@@ -109,9 +109,9 @@ public final class Class174 implements Runnable {
 			}
 			try {
 				if (local18.anInt10352 == 2) {
-					local18.aClass9_4.method125(local18.aByteArray109.length, local18.aByteArray109, (int) local18.aLong325);
+					local18.aClass9_4.method125(local18.aByteArray109.length, local18.aByteArray109, (int) local18.secondaryKey);
 				} else if (local18.anInt10352 == 3) {
-					local18.aByteArray109 = local18.aClass9_4.method126((int) local18.aLong325);
+					local18.aByteArray109 = local18.aClass9_4.method126((int) local18.secondaryKey);
 				}
 			} catch (@Pc(83) Exception local83) {
 				Static240.method3496(local83, (String) null);
@@ -121,9 +121,9 @@ public final class Class174 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(B[BILclient!af;)Lclient!vp;")
-	public Class2_Sub2_Sub17_Sub2 method3829(@OriginalArg(1) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class9 arg2) {
-		@Pc(7) Class2_Sub2_Sub17_Sub2 local7 = new Class2_Sub2_Sub17_Sub2();
-		local7.aLong325 = (long) arg1;
+	public SecondaryLinkable_Sub17_Sub2 method3829(@OriginalArg(1) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class9 arg2) {
+		@Pc(7) SecondaryLinkable_Sub17_Sub2 local7 = new SecondaryLinkable_Sub17_Sub2();
+		local7.secondaryKey = (long) arg1;
 		local7.anInt10352 = 2;
 		local7.aByteArray109 = arg0;
 		local7.aClass9_4 = arg2;
@@ -133,12 +133,12 @@ public final class Class174 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(Lclient!af;II)Lclient!vp;")
-	public Class2_Sub2_Sub17_Sub2 method3830(@OriginalArg(0) Class9 arg0, @OriginalArg(2) int arg1) {
-		@Pc(7) Class2_Sub2_Sub17_Sub2 local7 = new Class2_Sub2_Sub17_Sub2();
+	public SecondaryLinkable_Sub17_Sub2 method3830(@OriginalArg(0) Class9 arg0, @OriginalArg(2) int arg1) {
+		@Pc(7) SecondaryLinkable_Sub17_Sub2 local7 = new SecondaryLinkable_Sub17_Sub2();
 		local7.aClass9_4 = arg0;
 		local7.aBoolean777 = false;
 		local7.anInt10352 = 3;
-		local7.aLong325 = (long) arg1;
+		local7.secondaryKey = (long) arg1;
 		this.method3827(local7);
 		return local7;
 	}

@@ -1,5 +1,5 @@
 import java.io.File;
-import java.lang.reflect.Method;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -17,7 +17,7 @@ public final class Static93 {
 	private static Class aClass6;
 
 	@OriginalMember(owner = "client!cu", name = "T", descriptor = "Lclient!ofa;")
-	public static final Class2_Sub41 aClass2_Sub41_1 = new Class2_Sub41(0, -1);
+	public static final Linkable_Sub41 aClass2_Sub41_1 = new Linkable_Sub41(0, -1);
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIILclient!d;Lclient!ha;I)V")
 	public static void method1832(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Interface4 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5) {
@@ -46,7 +46,7 @@ public final class Static93 {
 		Static534.anInt8111 = Static164.anInt2809 - (int) ((float) arg5 / Static30.aFloat105);
 		Static30.method5062(Static30.anInt5655 + local114, local38 - -Static30.anInt5648, local57 + Static30.anInt5655, local155 - -Static30.anInt5648, arg1, arg2, arg5 + arg1, arg0 + arg2 + 1);
 		Static30.method5060(arg4);
-		@Pc(203) Class339 local203 = Static30.method5081(arg4);
+		@Pc(203) LinkedList local203 = Static30.method5081(arg4);
 		Static368.method5272(local203, arg4);
 		if (Static320.anInt5084 > 0) {
 			Static212.anInt3467--;

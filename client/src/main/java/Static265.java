@@ -16,7 +16,7 @@ public final class Static265 {
 	@OriginalMember(owner = "client!iea", name = "a", descriptor = "(IIZIIIFI)[I")
 	public static int[] method3857(@OriginalArg(6) float arg0) {
 		@Pc(6) int[] local6 = new int[2048];
-		@Pc(10) Class2_Sub1_Sub27 local10 = new Class2_Sub1_Sub27();
+		@Pc(10) Linkable_Sub1_Sub27 local10 = new Linkable_Sub1_Sub27();
 		local10.anInt8799 = (int) (arg0 * 4096.0F);
 		local10.aBoolean667 = true;
 		local10.anInt8809 = 35;

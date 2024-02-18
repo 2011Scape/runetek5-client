@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static468 {
 
 	@OriginalMember(owner = "client!op", name = "l", descriptor = "[Lclient!eo;")
-	public static Class8_Sub2[] aClass8_Sub2Array10;
+	public static ParticleNode_Sub2[] aClass8_Sub2Array10;
 
 	@OriginalMember(owner = "client!op", name = "r", descriptor = "Lclient!lga;")
 	public static final Class225 aClass225_212 = new Class225(77, -2);
@@ -18,26 +18,26 @@ public final class Static468 {
 			return;
 		}
 		@Pc(67) long local67 = (long) (local12 << 14 | arg0 << 28 | local8);
-		@Pc(73) Class2_Sub17 local73 = (Class2_Sub17) Static497.aClass28_35.method738(local67);
+		@Pc(73) Linkable_Sub17 local73 = (Linkable_Sub17) Static497.aHashTable35.get(local67);
 		if (local73 == null) {
 			Static638.method8398(arg0, arg2, arg1);
 			return;
 		}
-		@Pc(88) Class2_Sub15 local88 = (Class2_Sub15) local73.aClass339_12.method7699(65280);
+		@Pc(88) Linkable_Sub15 local88 = (Linkable_Sub15) local73.aLinkedList12.head();
 		if (local88 == null) {
 			Static638.method8398(arg0, arg2, arg1);
 			return;
 		}
-		@Pc(103) Class8_Sub2_Sub5_Sub1 local103 = (Class8_Sub2_Sub5_Sub1) Static638.method8398(arg0, arg2, arg1);
+		@Pc(103) ParticleNode_Sub2_Sub5_Sub1 local103 = (ParticleNode_Sub2_Sub5_Sub1) Static638.method8398(arg0, arg2, arg1);
 		if (local103 == null) {
-			local103 = new Class8_Sub2_Sub5_Sub1(arg2 << 9, Static246.aClass178Array1[arg0].method7869(arg1, arg2), arg1 << 9, arg0, arg0);
+			local103 = new ParticleNode_Sub2_Sub5_Sub1(arg2 << 9, Static246.aClass178Array1[arg0].method7869(arg1, arg2), arg1 << 9, arg0, arg0);
 		} else {
 			local103.anInt8878 = local103.anInt8876 = -1;
 		}
 		local103.anInt8873 = local88.anInt1959;
 		local103.anInt8867 = local88.anInt1958;
 		label56: while (true) {
-			@Pc(146) Class2_Sub15 local146 = (Class2_Sub15) local73.aClass339_12.method7706();
+			@Pc(146) Linkable_Sub15 local146 = (Linkable_Sub15) local73.aLinkedList12.next();
 			if (local146 == null) {
 				break;
 			}
@@ -45,7 +45,7 @@ public final class Static468 {
 				local103.anInt8874 = local146.anInt1959;
 				local103.anInt8878 = local146.anInt1958;
 				while (true) {
-					@Pc(171) Class2_Sub15 local171 = (Class2_Sub15) local73.aClass339_12.method7706();
+					@Pc(171) Linkable_Sub15 local171 = (Linkable_Sub15) local73.aLinkedList12.next();
 					if (local171 == null) {
 						break label56;
 					}

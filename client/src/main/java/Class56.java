@@ -11,7 +11,7 @@ public class Class56 {
 	public int[] anIntArray315;
 
 	@OriginalMember(owner = "client!cd", name = "A", descriptor = "Lclient!dea;")
-	private Class2_Sub6 aClass2_Sub6_6;
+	private Linkable_Sub6 aClass2_Sub6_6;
 
 	@OriginalMember(owner = "client!cd", name = "B", descriptor = "I")
 	public int anInt4097;
@@ -38,7 +38,7 @@ public class Class56 {
 	private int anInt4099 = 0;
 
 	@OriginalMember(owner = "client!cd", name = "p", descriptor = "[Lclient!dea;")
-	private final Class2_Sub6[] aClass2_Sub6Array5 = new Class2_Sub6[8];
+	private final Linkable_Sub6[] aClass2_Sub6Array5 = new Linkable_Sub6[8];
 
 	@OriginalMember(owner = "client!cd", name = "z", descriptor = "I")
 	private int anInt4101 = 0;
@@ -53,13 +53,13 @@ public class Class56 {
 	private boolean aBoolean320 = true;
 
 	@OriginalMember(owner = "client!cd", name = "u", descriptor = "[Lclient!dea;")
-	private final Class2_Sub6[] aClass2_Sub6Array6 = new Class2_Sub6[8];
+	private final Linkable_Sub6[] aClass2_Sub6Array6 = new Linkable_Sub6[8];
 
 	@OriginalMember(owner = "client!cd", name = "G", descriptor = "I")
 	private int anInt4102 = 0;
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(ILclient!dea;)V")
-	public final synchronized void method3582(@OriginalArg(1) Class2_Sub6 arg0) {
+	public final synchronized void method3582(@OriginalArg(1) Linkable_Sub6 arg0) {
 		this.aClass2_Sub6_6 = arg0;
 	}
 
@@ -117,9 +117,9 @@ public class Class56 {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(ZILclient!dea;)V")
-	private void method3591(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub6 arg1) {
+	private void method3591(@OriginalArg(1) int arg0, @OriginalArg(2) Linkable_Sub6 arg1) {
 		@Pc(7) int local7 = arg0 >> 5;
-		@Pc(12) Class2_Sub6 local12 = this.aClass2_Sub6Array5[local7];
+		@Pc(12) Linkable_Sub6 local12 = this.aClass2_Sub6Array5[local7];
 		if (local12 == null) {
 			this.aClass2_Sub6Array6[local7] = arg1;
 		} else {
@@ -250,14 +250,14 @@ public class Class56 {
 				for (@Pc(74) int local74 = local49 >>> local58 & 0x11111111; local74 != 0; local74 >>>= 0x4) {
 					if ((local74 & 0x1) != 0) {
 						local49 &= ~(0x1 << local58);
-						@Pc(92) Class2_Sub6 local92 = null;
-						@Pc(97) Class2_Sub6 local97 = this.aClass2_Sub6Array6[local58];
+						@Pc(92) Linkable_Sub6 local92 = null;
+						@Pc(97) Linkable_Sub6 local97 = this.aClass2_Sub6Array6[local58];
 						label97: while (true) {
 							while (true) {
 								if (local97 == null) {
 									break label97;
 								}
-								@Pc(101) Class2_Sub49 local101 = local97.aClass2_Sub49_6;
+								@Pc(101) Linkable_Sub49 local101 = local97.aClass2_Sub49_6;
 								if (local101 == null || local101.anInt8817 <= local63) {
 									local97.aBoolean793 = true;
 									@Pc(127) int local127 = local97.method9132();
@@ -268,7 +268,7 @@ public class Class56 {
 									if (local47 >= this.anInt4087) {
 										break label103;
 									}
-									@Pc(148) Class2_Sub6 local148 = local97.method9133();
+									@Pc(148) Linkable_Sub6 local148 = local97.method9133();
 									if (local148 != null) {
 										@Pc(153) int local153 = local97.anInt10517;
 										while (local148 != null) {
@@ -276,7 +276,7 @@ public class Class56 {
 											local148 = local97.method9135();
 										}
 									}
-									@Pc(172) Class2_Sub6 local172 = local97.aClass2_Sub6_9;
+									@Pc(172) Linkable_Sub6 local172 = local97.aClass2_Sub6_9;
 									local97.aClass2_Sub6_9 = null;
 									if (local92 == null) {
 										this.aClass2_Sub6Array6[local58] = local172;
@@ -301,10 +301,10 @@ public class Class56 {
 				local51--;
 			}
 			for (local58 = 0; local58 < 8; local58++) {
-				@Pc(218) Class2_Sub6 local218 = this.aClass2_Sub6Array6[local58];
+				@Pc(218) Linkable_Sub6 local218 = this.aClass2_Sub6Array6[local58];
 				this.aClass2_Sub6Array6[local58] = this.aClass2_Sub6Array5[local58] = null;
 				while (local218 != null) {
-					@Pc(232) Class2_Sub6 local232 = local218.aClass2_Sub6_9;
+					@Pc(232) Linkable_Sub6 local232 = local218.aClass2_Sub6_9;
 					local218.aClass2_Sub6_9 = null;
 					local218 = local232;
 				}

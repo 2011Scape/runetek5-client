@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class303 implements Interface4 {
 
 	@OriginalMember(owner = "client!qea", name = "k", descriptor = "Lclient!ts;")
-	private final Class361 aClass361_3 = new Class361(256);
+	private final LruHashTable aLruHashTable3 = new LruHashTable(256);
 
 	@OriginalMember(owner = "client!qea", name = "b", descriptor = "Lclient!sb;")
 	private final Class330 aClass330_99;
@@ -131,17 +131,17 @@ public final class Class303 implements Interface4 {
 	}
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(IB)Lclient!vm;")
-	private Class2_Sub2_Sub21 method6819(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub2 local10 = this.aClass361_3.method8342((long) arg0);
+	private SecondaryLinkable_Sub21 method6819(@OriginalArg(0) int arg0) {
+		@Pc(10) SecondaryLinkable local10 = this.aLruHashTable3.method8342((long) arg0);
 		if (local10 != null) {
-			return (Class2_Sub2_Sub21) local10;
+			return (SecondaryLinkable_Sub21) local10;
 		}
 		@Pc(30) byte[] local30 = this.aClass330_98.method7589(arg0);
 		if (local30 == null) {
 			return null;
 		} else {
-			@Pc(43) Class2_Sub2_Sub21 local43 = new Class2_Sub2_Sub21(new Packet(local30));
-			this.aClass361_3.method8341(local43, (long) arg0);
+			@Pc(43) SecondaryLinkable_Sub21 local43 = new SecondaryLinkable_Sub21(new Packet(local30));
+			this.aLruHashTable3.method8341(local43, (long) arg0);
 			return local43;
 		}
 	}
@@ -161,7 +161,7 @@ public final class Class303 implements Interface4 {
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(II)Z")
 	@Override
 	public boolean method6814(@OriginalArg(1) int arg0) {
-		@Pc(8) Class2_Sub2_Sub21 local8 = this.method6819(arg0);
+		@Pc(8) SecondaryLinkable_Sub21 local8 = this.method6819(arg0);
 		return local8 != null && local8.method8947(this.aClass330_99, this);
 	}
 

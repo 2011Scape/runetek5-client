@@ -245,18 +245,18 @@ public final class Class112 {
 			local26.anIntArray800 = null;
 			local26.anInt10121 = 0;
 			local26.aBoolean771 = false;
-			if (local26.aClass28_44 != null) {
+			if (local26.aHashTable44 != null) {
 				@Pc(195) boolean local195 = false;
-				for (@Pc(200) Class2 local200 = local26.aClass28_44.method736(); local200 != null; local200 = local26.aClass28_44.method740()) {
-					@Pc(209) Class296 local209 = this.aClass49_1.method1161((int) local200.aLong328);
+				for (@Pc(200) Linkable local200 = local26.aHashTable44.head(); local200 != null; local200 = local26.aHashTable44.next()) {
+					@Pc(209) Class296 local209 = this.aClass49_1.method1161((int) local200.id);
 					if (local209.aBoolean570) {
-						local200.method9457();
+						local200.unlink();
 					} else {
 						local195 = true;
 					}
 				}
 				if (!local195) {
-					local26.aClass28_44 = null;
+					local26.aHashTable44 = null;
 				}
 			}
 		}

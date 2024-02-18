@@ -44,7 +44,7 @@ public abstract class Class120 {
 	public abstract void method8848();
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(B)Lclient!bv;")
-	public abstract Class2_Sub9 method8851();
+	public abstract Linkable_Sub9 method8851();
 
 	@OriginalMember(owner = "client!fb", name = "d", descriptor = "(B)I")
 	public abstract int method8853();

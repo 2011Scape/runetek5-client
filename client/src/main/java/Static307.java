@@ -8,7 +8,7 @@ public final class Static307 {
 	private static boolean aBoolean380 = false;
 
 	@OriginalMember(owner = "client!jo", name = "c", descriptor = "Lclient!sia;")
-	private static final Class339 aClass339_28 = new Class339();
+	private static final LinkedList aLinkedList28 = new LinkedList();
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "I")
 	private static int anInt4924 = 0;
@@ -21,21 +21,21 @@ public final class Static307 {
 		if (anInt4924 <= 0) {
 			arg0.w(false);
 		} else {
-			@Pc(15) Class2_Sub52 local15 = new Class2_Sub52();
+			@Pc(15) Linkable_Sub52 local15 = new Linkable_Sub52();
 			local15.anInterface5_1 = arg0;
-			aClass339_28.method7711(local15);
+			aLinkedList28.addTail(local15);
 		}
 	}
 
 	@OriginalMember(owner = "client!jo", name = "c", descriptor = "(I)V")
 	public static synchronized void method4478() {
 		while (true) {
-			@Pc(4) Class2_Sub52 local4 = (Class2_Sub52) aClass339_28.method7705();
+			@Pc(4) Linkable_Sub52 local4 = (Linkable_Sub52) aLinkedList28.removeHead();
 			if (local4 == null) {
 				return;
 			}
 			local4.anInterface5_1.w(true);
-			local4.method9457();
+			local4.unlink();
 		}
 	}
 

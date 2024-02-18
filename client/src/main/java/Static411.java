@@ -16,8 +16,8 @@ public final class Static411 {
 		if (local7 == null) {
 			return;
 		}
-		@Pc(14) Class8_Sub2_Sub4 local14 = local7.aClass8_Sub2_Sub4_1;
-		@Pc(17) Class8_Sub2_Sub4 local17 = local7.aClass8_Sub2_Sub4_2;
+		@Pc(14) ParticleNode_Sub2_Sub4 local14 = local7.aClass8_Sub2_Sub4_1;
+		@Pc(17) ParticleNode_Sub2_Sub4 local17 = local7.aClass8_Sub2_Sub4_2;
 		if (local14 != null) {
 			local14.aShort101 = (short) (local14.aShort101 * arg3 / (0x10 << Static52.anInt1066 - 7));
 			local14.aShort102 = (short) (local14.aShort102 * arg3 / (0x10 << Static52.anInt1066 - 7));

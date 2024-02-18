@@ -53,7 +53,7 @@ public final class Static494 {
 		@Pc(29) int local29 = (arg1 ? Static288.aClass139_2.anInt3261 : Static288.aClass139_2.anInt3264) + local18;
 		@Pc(80) int local80;
 		for (@Pc(31) int local31 = local18; local31 < local29; local31++) {
-			@Pc(37) Class2_Sub2_Sub12 local37 = Static288.aClass139_2.method2950(local31);
+			@Pc(37) SecondaryLinkable_Sub12 local37 = Static288.aClass139_2.method2950(local31);
 			if (local37.aBoolean334 && local37.method3906().toLowerCase().indexOf(local6) != -1) {
 				if (local11 >= 50) {
 					Static256.aShortArray63 = null;

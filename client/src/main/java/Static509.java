@@ -56,10 +56,10 @@ public final class Static509 {
 			Static475.anInt7168 = -1;
 			Static409.anInt6318 = -1;
 		}
-		if (!Static95.aBoolean184 || Static551.aClass339_54 == null) {
+		if (!Static95.aBoolean184 || Static551.aLinkedList54 == null) {
 			return;
 		}
-		for (@Pc(197) Class2_Sub37 local197 = (Class2_Sub37) Static551.aClass339_54.method7699(65280); local197 != null; local197 = (Class2_Sub37) Static551.aClass339_54.method7706()) {
+		for (@Pc(197) Linkable_Sub37 local197 = (Linkable_Sub37) Static551.aLinkedList54.head(); local197 != null; local197 = (Linkable_Sub37) Static551.aLinkedList54.next()) {
 			@Pc(206) Class105 local206 = Static30.aClass246_3.method5584(local197.aClass2_Sub20_1.anInt3131);
 			if (local197.method5553(arg0, arg1)) {
 				if (local206.aStringArray9 != null) {

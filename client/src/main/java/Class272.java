@@ -8,5 +8,5 @@ public final class Class272 {
 	public Class114 aClass114_7;
 
 	@OriginalMember(owner = "client!od", name = "m", descriptor = "Lclient!r;")
-	public Class2_Sub2_Sub9 aClass2_Sub2_Sub9_5;
+	public SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_5;
 }

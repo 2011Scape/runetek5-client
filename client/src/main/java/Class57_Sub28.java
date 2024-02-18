@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class57_Sub28 extends Class57 {
 
 	@OriginalMember(owner = "client!su", name = "<init>", descriptor = "(Lclient!kv;)V")
-	public Class57_Sub28(@OriginalArg(0) Class2_Sub34 arg0) {
+	public Class57_Sub28(@OriginalArg(0) Linkable_Sub34 arg0) {
 		super(arg0);
 		Static690.method8996(super.anInt9489);
 	}
 
 	@OriginalMember(owner = "client!su", name = "<init>", descriptor = "(ILclient!kv;)V")
-	public Class57_Sub28(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub34 arg1) {
+	public Class57_Sub28(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub34 arg1) {
 		super(arg0, arg1);
 		Static690.method8996(super.anInt9489);
 	}

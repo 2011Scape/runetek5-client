@@ -37,7 +37,7 @@ public final class Static540 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IBI)V")
 	public static void method6537(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5963(1, (long) arg1);
+		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.method5963(1, (long) arg1);
 		local16.method202();
 		local16.anInt197 = arg0;
 	}
@@ -116,7 +116,7 @@ public final class Static540 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IIILjava/lang/String;IIII)V")
 	public static void method6539(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
-		@Pc(7) Class8_Sub3 local7 = new Class8_Sub3();
+		@Pc(7) ParticleNode_Sub3 local7 = new ParticleNode_Sub3();
 		local7.anInt958 = arg0;
 		local7.anInt954 = arg6;
 		local7.anInt957 = arg3;

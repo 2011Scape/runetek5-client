@@ -30,7 +30,7 @@ public final class Static360 {
 			Static12.method5164(local46);
 			local53 = local46.g1();
 			for (@Pc(55) int local55 = 0; local55 < local53; local55++) {
-				Static391.aClass339_34.method7711(new Class2_Sub35(local46));
+				Static391.aLinkedList34.addTail(new Linkable_Sub35(local46));
 			}
 			@Pc(78) int local78 = local46.gSamrt1or2();
 			Static75.aClass357Array2 = new Class357[local78];
@@ -77,7 +77,7 @@ public final class Static360 {
 	}
 
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(Lclient!ca;IZBI)V")
-	public static void method5232(@OriginalArg(0) Class8_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2) {
+	public static void method5232(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2) {
 		@Pc(10) int local10 = arg0.anIntArray879[0];
 		@Pc(15) int local15 = arg0.anIntArray878[0];
 		if (local10 < 0 || local10 >= Static720.anInt10859 || local15 < 0 || Static501.anInt7568 <= local15 || (arg1 < 0 || arg1 >= Static720.anInt10859 || arg2 < 0 || Static501.anInt7568 <= arg2)) {

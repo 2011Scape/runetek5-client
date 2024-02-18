@@ -25,22 +25,22 @@ public final class Static440 {
 	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IIJ)Lclient!aj;")
-	public static Class2_Sub2_Sub2 method5963(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
-		@Pc(21) Class2_Sub2_Sub2 local21 = (Class2_Sub2_Sub2) Static658.aClass28_43.method738(arg1 | (long) arg0 << 56);
+	public static SecondaryLinkable_Sub2 method5963(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
+		@Pc(21) SecondaryLinkable_Sub2 local21 = (SecondaryLinkable_Sub2) Static658.aHashTable43.get(arg1 | (long) arg0 << 56);
 		if (local21 == null) {
-			local21 = new Class2_Sub2_Sub2(arg0, arg1);
-			Static658.aClass28_43.method735(local21.aLong328, local21);
+			local21 = new SecondaryLinkable_Sub2(arg0, arg1);
+			Static658.aHashTable43.put(local21.id, local21);
 		}
 		return local21;
 	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(ILclient!dea;)V")
-	public static void method5964(@OriginalArg(1) Class2_Sub6 arg0) {
+	public static void method5964(@OriginalArg(1) Linkable_Sub6 arg0) {
 		if (arg0.aClass2_Sub49_6 != null) {
 			arg0.aClass2_Sub49_6.anInt8817 = 0;
 		}
 		arg0.aBoolean793 = false;
-		for (@Pc(25) Class2_Sub6 local25 = arg0.method9133(); local25 != null; local25 = arg0.method9135()) {
+		for (@Pc(25) Linkable_Sub6 local25 = arg0.method9133(); local25 != null; local25 = arg0.method9135()) {
 			method5964(local25);
 		}
 	}

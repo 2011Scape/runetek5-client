@@ -24,7 +24,7 @@ public final class Static482 {
 		}
 		if (!Static501.aBoolean575 && Static588.anInt8692 != -1 && Static52.method1157(0x6E ^ 0x11) && !Static203.method3070()) {
 			Static8.aClass2_Sub6_Sub1_1 = Static426.method1018();
-			@Pc(52) Class2_Sub6_Sub1 local52 = Static48.method1100(Static8.aClass2_Sub6_Sub1_1);
+			@Pc(52) Linkable_Sub6_Sub1 local52 = Static48.method1100(Static8.aClass2_Sub6_Sub1_1);
 			Static697.method9120(local52);
 		}
 		Static611.method8229(arg1, local12, Static340.aClass330_69);

@@ -9,7 +9,7 @@ public final class Static506 {
 
 	@OriginalMember(owner = "client!pv", name = "a", descriptor = "(IIILclient!c;I)V")
 	public static void method8312(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class54 arg3) {
-		for (@Pc(18) Class2_Sub51 local18 = (Class2_Sub51) Static460.aClass339_40.method7699(65280); local18 != null; local18 = (Class2_Sub51) Static460.aClass339_40.method7706()) {
+		for (@Pc(18) Linkable_Sub51 local18 = (Linkable_Sub51) Static460.aLinkedList40.head(); local18 != null; local18 = (Linkable_Sub51) Static460.aLinkedList40.next()) {
 			if (local18.anInt9350 == arg2 && local18.anInt9357 == arg0 << 9 && local18.anInt9352 == arg1 << 9 && arg3.anInt1256 == local18.aClass54_1.anInt1256) {
 				if (local18.aClass2_Sub6_Sub2_4 != null) {
 					Static336.aClass2_Sub6_Sub3_1.method5883(local18.aClass2_Sub6_Sub2_4);
@@ -19,7 +19,7 @@ public final class Static506 {
 					Static336.aClass2_Sub6_Sub3_1.method5883(local18.aClass2_Sub6_Sub2_3);
 					local18.aClass2_Sub6_Sub2_3 = null;
 				}
-				local18.method9457();
+				local18.unlink();
 				return;
 			}
 		}

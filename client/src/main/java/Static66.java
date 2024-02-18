@@ -20,8 +20,8 @@ public final class Static66 {
 			local10.method6274(new Packet(local21));
 		}
 		local10.method6273();
-		if (local10.anInt6982 == 2 && Static503.aClass28_38.method738((long) arg0) == null) {
-			Static503.aClass28_38.method735((long) arg0, new Class2_Sub38(Static370.anInt5881));
+		if (local10.anInt6982 == 2 && Static503.aHashTable38.get((long) arg0) == null) {
+			Static503.aHashTable38.put((long) arg0, new IntNode(Static370.anInt5881));
 			Static367.aClass278Array1[Static370.anInt5881++] = local10;
 		}
 		Static713.aClass82_231.method2150(local10, (long) arg0);

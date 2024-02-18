@@ -32,7 +32,7 @@ public final class Static383 {
 				throw new RuntimeException("hr:lr");
 			}
 			@Pc(91) Class350 local91 = Static246.aClass350Array1[arg0];
-			@Pc(99) Class8_Sub2_Sub1_Sub2_Sub1 local99 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0] = new Class8_Sub2_Sub1_Sub2_Sub1();
+			@Pc(99) ParticleNode_Sub2_Sub1_Sub2_Sub1 local99 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0] = new ParticleNode_Sub2_Sub1_Sub2_Sub1();
 			local99.anInt10740 = arg0;
 			if (Static462.A_PACKET_ARRAY_1[arg0] != null) {
 				local99.method1420(Static462.A_PACKET_ARRAY_1[arg0]);

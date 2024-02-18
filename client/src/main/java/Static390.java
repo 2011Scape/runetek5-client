@@ -100,7 +100,7 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!mda", name = "a", descriptor = "(IZIZI)I")
 	public static int method5494(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
-		@Pc(18) Class2_Sub22 local18 = Static556.method7303(arg2, false);
+		@Pc(18) Linkable_Sub22 local18 = Static556.method7303(arg2, false);
 		if (local18 == null) {
 			return 0;
 		}

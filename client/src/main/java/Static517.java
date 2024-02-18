@@ -14,12 +14,12 @@ public final class Static517 {
 	public static final Class155 aClass155_36 = new Class155(15);
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!sb;III)Lclient!ip;")
-	public static Class2_Sub2_Sub13 method6820(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static SecondaryLinkable_Sub13 method6820(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(14) Packet local14 = new Packet(arg0.method7595(arg2, arg1));
-		@Pc(50) Class2_Sub2_Sub13 local50 = new Class2_Sub2_Sub13(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
+		@Pc(50) SecondaryLinkable_Sub13 local50 = new SecondaryLinkable_Sub13(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(54) int local54 = local14.g1();
 		for (@Pc(56) int local56 = 0; local56 < local54; local56++) {
-			local50.aClass339_26.method7711(new Class2_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
+			local50.aLinkedList26.addTail(new Linkable_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
 		}
 		local50.method4090();
 		return local50;
@@ -41,7 +41,7 @@ public final class Static517 {
 		Static546.anInt8244 = 0;
 		Static645.anInt9611 = 0;
 		Static675.anInt10155++;
-		@Pc(22) Class8_Sub2 local22;
+		@Pc(22) ParticleNode_Sub2 local22;
 		if ((arg5 & 0x2) == 0) {
 			for (local22 = Static576.aClass8_Sub2Array9[local6]; local22 != null; local22 = local22.aClass8_Sub2_25) {
 				if (!Static208.method3107(local22, arg0, arg1, arg2, arg3)) {
@@ -62,7 +62,7 @@ public final class Static517 {
 					}
 				}
 			}
-			for (@Pc(98) Class8_Sub2 local98 = Static468.aClass8_Sub2Array10[local6]; local98 != null; local98 = local98.aClass8_Sub2_25) {
+			for (@Pc(98) ParticleNode_Sub2 local98 = Static468.aClass8_Sub2Array10[local6]; local98 != null; local98 = local98.aClass8_Sub2_25) {
 				if (!Static208.method3107(local98, arg0, arg1, arg2, arg3)) {
 					if (local98.method9282(0)) {
 						method6824(local98);
@@ -100,7 +100,7 @@ public final class Static517 {
 			}
 		}
 		if (Static442.aBoolean500) {
-			Static665.aClass19_15.method8009(0, (Class2_Sub7[]) null);
+			Static665.aClass19_15.method8009(0, (Linkable_Sub7[]) null);
 		}
 		if ((arg5 & 0x2) == 0) {
 			for (local225 = Static296.anInt4792; local225 < Static299.anInt4824; local225++) {
@@ -141,7 +141,7 @@ public final class Static517 {
 							Static246.aClass178Array1[local225].method7870(0, 0, 0, (boolean[][]) null, false, arg5);
 						}
 						for (local316 = 0; local316 < Static32.anInt772; local316++) {
-							Static684.aClass302Array1[local316].method6805(new Class8_Sub9(local225 + 1));
+							Static684.aClass302Array1[local316].method6805(new ParticleNode_Sub9(local225 + 1));
 						}
 					} else if (arg4 >= 0) {
 						Static246.aClass178Array1[local225].method7877(Static403.anInt6246, Static550.anInt8271, Static35.anInt813, Static142.aBooleanArrayArray1, true, arg4, arg5);
@@ -189,7 +189,7 @@ public final class Static517 {
 							Static246.aClass178Array1[local225].method7870(0, 0, 0, (boolean[][]) null, false, arg5);
 						}
 						for (local316 = 0; local316 < Static32.anInt772; local316++) {
-							Static684.aClass302Array1[local316].method6805(new Class8_Sub9(local225 + 1));
+							Static684.aClass302Array1[local316].method6805(new ParticleNode_Sub9(local225 + 1));
 						}
 					} else if (arg4 >= 0) {
 						Static246.aClass178Array1[local225].method7877(Static403.anInt6246, Static550.anInt8271, Static35.anInt813, Static142.aBooleanArrayArray1, false, arg4, arg5);
@@ -208,7 +208,7 @@ public final class Static517 {
 	}
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!eo;)V")
-	private static void method6824(@OriginalArg(0) Class8_Sub2 arg0) {
+	private static void method6824(@OriginalArg(0) ParticleNode_Sub2 arg0) {
 		Static665.aClass19_15.H(arg0.anInt10690, arg0.anInt10691 + (arg0.method9286(2) >> 1), arg0.anInt10694, Static486.anIntArray591);
 		arg0.anInt10692 = Static486.anIntArray591[0];
 		arg0.anInt10698 = Static486.anIntArray591[1];

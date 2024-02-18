@@ -125,12 +125,12 @@ public final class Static638 {
 	}
 
 	@OriginalMember(owner = "client!uca", name = "a", descriptor = "(III)Lclient!nda;")
-	public static Class8_Sub2_Sub5 method8398(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static ParticleNode_Sub2_Sub5 method8398(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(7) Class291 local7 = Static334.aClass291ArrayArrayArray1[arg0][arg1][arg2];
 		if (local7 == null) {
 			return null;
 		} else {
-			@Pc(15) Class8_Sub2_Sub5 local15 = local7.aClass8_Sub2_Sub5_1;
+			@Pc(15) ParticleNode_Sub2_Sub5 local15 = local7.aClass8_Sub2_Sub5_1;
 			local7.aClass8_Sub2_Sub5_1 = null;
 			Static109.method2068(local15);
 			return local15;

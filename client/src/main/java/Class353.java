@@ -19,7 +19,7 @@ public final class Class353 {
 	private int anInt9371;
 
 	@OriginalMember(owner = "client!th", name = "r", descriptor = "Lclient!lca;")
-	public Class2_Sub7 aClass2_Sub7_3;
+	public Linkable_Sub7 aClass2_Sub7_3;
 
 	@OriginalMember(owner = "client!th", name = "v", descriptor = "Z")
 	public boolean aBoolean717;
@@ -95,7 +95,7 @@ public final class Class353 {
 			@Pc(27) int local27 = arg1 * this.anInt9377 / 50 + this.anInt9371 & 0x7FF;
 			@Pc(30) int local30 = this.anInt9379;
 			if (local30 == 1) {
-				local71 = (Class361.anIntArray741[local27 << 3] >> 4) + 1024;
+				local71 = (LruHashTable.anIntArray741[local27 << 3] >> 4) + 1024;
 			} else if (local30 == 3) {
 				local71 = Static695.anIntArray868[local27] >> 1;
 			} else if (local30 == 4) {

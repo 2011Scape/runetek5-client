@@ -8,14 +8,14 @@ public final class Static145 {
 	public static int anInt2561 = 0;
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(ZLclient!cm;Lclient!cm;)V")
-	public static void method2408(@OriginalArg(1) Class2_Sub2 arg0, @OriginalArg(2) Class2_Sub2 arg1) {
-		if (arg0.aClass2_Sub2_67 != null) {
-			arg0.method9260();
+	public static void method2408(@OriginalArg(1) SecondaryLinkable arg0, @OriginalArg(2) SecondaryLinkable arg1) {
+		if (arg0.secondaryNext != null) {
+			arg0.unlinkSecondary();
 		}
-		arg0.aClass2_Sub2_67 = arg1.aClass2_Sub2_67;
-		arg0.aClass2_Sub2_66 = arg1;
-		arg0.aClass2_Sub2_67.aClass2_Sub2_66 = arg0;
-		arg0.aClass2_Sub2_66.aClass2_Sub2_67 = arg0;
+		arg0.secondaryNext = arg1.secondaryNext;
+		arg0.secondaryPrev = arg1;
+		arg0.secondaryNext.secondaryPrev = arg0;
+		arg0.secondaryPrev.secondaryNext = arg0;
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(I)V")
@@ -39,7 +39,7 @@ public final class Static145 {
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(Lclient!cg;Z)V")
-	public static void method2410(@OriginalArg(0) Class8_Sub2_Sub1_Sub2 arg0) {
+	public static void method2410(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
 		if (arg0.anIntArray872 == null && arg0.anIntArray877 == null) {
 			return;
 		}
@@ -61,17 +61,17 @@ public final class Static145 {
 					@Pc(164) int local164 = local72 & 0x3FFF;
 					local95 = arg0.anInt10694 - (local164 - Static116.anInt2270) * 512 - 256;
 				} else if ((local25 & 0x8000) == 0) {
-					@Pc(111) Class2_Sub45 local111 = (Class2_Sub45) Static18.aClass28_2.method738((long) local25);
+					@Pc(111) Linkable_Sub45 local111 = (Linkable_Sub45) Static18.aHashTable2.get((long) local25);
 					if (local111 == null) {
 						arg0.method9307(local19, -1);
 						continue;
 					}
-					@Pc(116) Class8_Sub2_Sub1_Sub2_Sub2 local116 = local111.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+					@Pc(116) ParticleNode_Sub2_Sub1_Sub2_Sub2 local116 = local111.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					local95 = arg0.anInt10694 - local116.anInt10694;
 					local102 = arg0.anInt10690 - local116.anInt10690;
 				} else {
 					local72 = local25 & 0x7FFF;
-					@Pc(76) Class8_Sub2_Sub1_Sub2_Sub1 local76 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local72];
+					@Pc(76) ParticleNode_Sub2_Sub1_Sub2_Sub1 local76 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local72];
 					if (local76 == null) {
 						arg0.method9307(local19, -1);
 						continue;

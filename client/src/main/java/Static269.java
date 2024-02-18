@@ -61,7 +61,7 @@ public final class Static269 {
 
 	@OriginalMember(owner = "client!iha", name = "a", descriptor = "(Z)V")
 	public static void method3909() {
-		Static480.aClass361_2.method8345();
+		Static480.aLruHashTable2.method8345();
 	}
 
 	@OriginalMember(owner = "client!iha", name = "a", descriptor = "(IIIIIIBII)V")

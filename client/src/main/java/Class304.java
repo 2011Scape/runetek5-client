@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class304 implements Interface23 {
 
 	@OriginalMember(owner = "client!qga", name = "b", descriptor = "Lclient!av;")
-	private Class28 aClass28_39 = new Class28(128);
+	private HashTable aHashTable39 = new HashTable(128);
 
 	@OriginalMember(owner = "client!qga", name = "k", descriptor = "[I")
 	private final int[] anIntArray622 = new int[Static36.aClass260_1.anInt6462];
@@ -18,12 +18,12 @@ public final class Class304 implements Interface23 {
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(III)V")
 	public void method6866(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray621[arg0] = arg1;
-		@Pc(24) Class2_Sub48 local24 = (Class2_Sub48) this.aClass28_39.method738((long) arg0);
+		@Pc(24) LongNode local24 = (LongNode) this.aHashTable39.get((long) arg0);
 		if (local24 == null) {
-			local24 = new Class2_Sub48(Static588.method7715() + 500L);
-			this.aClass28_39.method735((long) arg0, local24);
+			local24 = new LongNode(Static588.method7715() + 500L);
+			this.aHashTable39.put((long) arg0, local24);
 		} else {
-			local24.aLong264 = Static588.method7715() + 500L;
+			local24.value = Static588.method7715() + 500L;
 		}
 	}
 
@@ -47,7 +47,7 @@ public final class Class304 implements Interface23 {
 				this.anIntArray621[local5] = 0;
 			}
 		}
-		this.aClass28_39 = new Class28(128);
+		this.aHashTable39 = new HashTable(128);
 	}
 
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(BII)V")
@@ -87,15 +87,15 @@ public final class Class304 implements Interface23 {
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(IZ)I")
 	public int method6872(@OriginalArg(1) boolean arg0) {
 		@Pc(8) long local8 = Static588.method7715();
-		for (@Pc(23) Class2_Sub48 local23 = arg0 ? (Class2_Sub48) this.aClass28_39.method736() : (Class2_Sub48) this.aClass28_39.method740(); local23 != null; local23 = (Class2_Sub48) this.aClass28_39.method740()) {
-			if ((local23.aLong264 & 0x3FFFFFFFFFFFFFFFL) < local8) {
-				if ((local23.aLong264 & 0x4000000000000000L) != 0L) {
-					@Pc(55) int local55 = (int) local23.aLong328;
+		for (@Pc(23) LongNode local23 = arg0 ? (LongNode) this.aHashTable39.head() : (LongNode) this.aHashTable39.next(); local23 != null; local23 = (LongNode) this.aHashTable39.next()) {
+			if ((local23.value & 0x3FFFFFFFFFFFFFFFL) < local8) {
+				if ((local23.value & 0x4000000000000000L) != 0L) {
+					@Pc(55) int local55 = (int) local23.id;
 					this.anIntArray621[local55] = this.anIntArray622[local55];
-					local23.method9457();
+					local23.unlink();
 					return local55;
 				}
-				local23.method9457();
+				local23.unlink();
 			}
 		}
 		return -1;
@@ -104,12 +104,12 @@ public final class Class304 implements Interface23 {
 	@OriginalMember(owner = "client!qga", name = "b", descriptor = "(BII)V")
 	public void method6873(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray622[arg0] = arg1;
-		@Pc(24) Class2_Sub48 local24 = (Class2_Sub48) this.aClass28_39.method738((long) arg0);
+		@Pc(24) LongNode local24 = (LongNode) this.aHashTable39.get((long) arg0);
 		if (local24 == null) {
-			local24 = new Class2_Sub48(4611686018427387905L);
-			this.aClass28_39.method735((long) arg0, local24);
-		} else if (local24.aLong264 != 4611686018427387905L) {
-			local24.aLong264 = Static588.method7715() + 500L | 0x4000000000000000L;
+			local24 = new LongNode(4611686018427387905L);
+			this.aHashTable39.put((long) arg0, local24);
+		} else if (local24.value != 4611686018427387905L) {
+			local24.value = Static588.method7715() + 500L | 0x4000000000000000L;
 		}
 	}
 }

@@ -22,7 +22,7 @@ public final class Class382 {
 	public int[] anIntArray798;
 
 	@OriginalMember(owner = "client!vfa", name = "nb", descriptor = "Lclient!av;")
-	public Class28 aClass28_44;
+	public HashTable aHashTable44;
 
 	@OriginalMember(owner = "client!vfa", name = "n", descriptor = "[B")
 	private byte[] aByteArray107;
@@ -232,7 +232,7 @@ public final class Class382 {
 		this.anInt10111 = arg0.anInt10111;
 		this.anInt10095 = arg0.anInt10095;
 		this.anInt10121 = arg0.anInt10121;
-		this.aClass28_44 = arg0.aClass28_44;
+		this.aHashTable44 = arg0.aHashTable44;
 		this.aBoolean770 = arg0.aBoolean770;
 		this.aShortArray137 = arg0.aShortArray137;
 		this.anInt10146 = arg0.anInt10146;
@@ -292,11 +292,11 @@ public final class Class382 {
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(III)I")
 	public int method8794(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (this.aClass28_44 == null) {
+		if (this.aHashTable44 == null) {
 			return arg1;
 		} else {
-			@Pc(19) Class2_Sub38 local19 = (Class2_Sub38) this.aClass28_44.method738((long) arg0);
-			return local19 == null ? arg1 : local19.anInt6379;
+			@Pc(19) IntNode local19 = (IntNode) this.aHashTable44.get((long) arg0);
+			return local19 == null ? arg1 : local19.value;
 		}
 	}
 
@@ -473,20 +473,20 @@ public final class Class382 {
 				this.anInt10144 = arg0.g2();
 			} else if (arg1 == 249) {
 				local202 = arg0.g1();
-				if (this.aClass28_44 == null) {
+				if (this.aHashTable44 == null) {
 					local212 = Static440.method5962(local202);
-					this.aClass28_44 = new Class28(local212);
+					this.aHashTable44 = new HashTable(local212);
 				}
 				for (local212 = 0; local212 < local202; local212++) {
 					@Pc(554) boolean local554 = arg0.g1() == 1;
 					@Pc(558) int local558 = arg0.g3();
-					@Pc(567) Class2 local567;
+					@Pc(567) Linkable local567;
 					if (local554) {
-						local567 = new Class2_Sub24(arg0.gjstr());
+						local567 = new StringNode(arg0.gjstr());
 					} else {
-						local567 = new Class2_Sub38(arg0.g4());
+						local567 = new IntNode(arg0.g4());
 					}
-					this.aClass28_44.method735((long) local558, local567);
+					this.aHashTable44.put((long) local558, local567);
 				}
 			}
 		}
@@ -572,7 +572,7 @@ public final class Class382 {
 		@Pc(414) Class73 local414 = arg6.method7985();
 		local414.method7132(-this.anInt10094 << 3);
 		local414.method7127(this.anInt10096 << 3);
-		local414.method7134(this.anInt10126 << 2, (Class361.anIntArray741[this.anInt10107 << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (Class361.anIntArray740[this.anInt10107 << 3] * local363 >> 14) - -(this.anInt10099 << 2));
+		local414.method7134(this.anInt10126 << 2, (LruHashTable.anIntArray741[this.anInt10107 << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (LruHashTable.anIntArray740[this.anInt10107 << 3] * local363 >> 14) - -(this.anInt10099 << 2));
 		local414.method7130(this.anInt10107 << 3);
 		@Pc(480) int local480 = arg6.i();
 		@Pc(483) int local483 = arg6.XA();
@@ -580,7 +580,7 @@ public final class Class382 {
 		arg6.ya();
 		arg6.la();
 		arg6.aa(0, 0, 36, 32, 0, 0);
-		local244.method7473(local414, (Class8_Sub6) null, 1);
+		local244.method7473(local414, (ParticleNode_Sub6) null, 1);
 		arg6.f(local480, local483);
 		@Pc(515) int[] local515 = arg6.na(0, 0, 36, 32);
 		if (arg8 >= 1) {
@@ -698,11 +698,11 @@ public final class Class382 {
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(Ljava/lang/String;II)Ljava/lang/String;")
 	public String method8800(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass28_44 == null) {
+		if (this.aHashTable44 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_44.method738((long) arg1);
-			return local17 == null ? arg0 : local17.aString46;
+			@Pc(17) StringNode local17 = (StringNode) this.aHashTable44.get((long) arg1);
+			return local17 == null ? arg0 : local17.value;
 		}
 	}
 
@@ -976,7 +976,7 @@ public final class Class382 {
 		this.anInt10098 = arg0.anInt10098;
 		this.aShortArray135 = arg1.aShortArray135;
 		this.anInt10119 = arg1.anInt10119;
-		this.aClass28_44 = arg1.aClass28_44;
+		this.aHashTable44 = arg1.aHashTable44;
 		this.anInt10104 = arg1.anInt10104;
 		this.anInt10107 = arg0.anInt10107;
 		this.anInt10096 = arg0.anInt10096;

@@ -117,7 +117,7 @@ public final class Static50 {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(Lclient!cg;B)V")
-	public static void method6638(@OriginalArg(0) Class8_Sub2_Sub1_Sub2 arg0) {
+	public static void method6638(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
 		@Pc(8) Class152 local8 = arg0.aClass152_10;
 		if (local8.method9109() && local8.method9112(1) && local8.method9102()) {
 			if (arg0.aBoolean817) {
@@ -188,7 +188,7 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIB)V")
 	public static void method6639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class2_Sub2_Sub2 local8 = Static440.method5963(15, 0L);
+		@Pc(8) SecondaryLinkable_Sub2 local8 = Static440.method5963(15, 0L);
 		local8.method202();
 		local8.anInt197 = arg1;
 		local8.anInt195 = arg0;

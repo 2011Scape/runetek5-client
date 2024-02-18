@@ -9,7 +9,7 @@ public final class Static503 {
 	public static int anInt7582;
 
 	@OriginalMember(owner = "client!ps", name = "i", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_38 = new Class28(16);
+	public static final HashTable aHashTable38 = new HashTable(16);
 
 	@OriginalMember(owner = "client!ps", name = "h", descriptor = "Lclient!ss;")
 	public static final Class345 aClass345_94 = new Class345(65, 11);

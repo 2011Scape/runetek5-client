@@ -13,7 +13,7 @@ public final class Static687 {
 		@Pc(15) int local15 = Integer.MAX_VALUE;
 		@Pc(19) int local19 = arg2 - Static30.anInt5655;
 		@Pc(23) int local23 = arg1 - Static30.anInt5648;
-		for (@Pc(34) Class2_Sub20 local34 = (Class2_Sub20) Static30.aClass339_31.method7699(65280); local34 != null; local34 = (Class2_Sub20) Static30.aClass339_31.method7706()) {
+		for (@Pc(34) Linkable_Sub20 local34 = (Linkable_Sub20) Static30.aLinkedList31.head(); local34 != null; local34 = (Linkable_Sub20) Static30.aLinkedList31.next()) {
 			if (local34.anInt3131 == arg0) {
 				@Pc(46) int local46 = local34.anInt3129;
 				@Pc(49) int local49 = local34.anInt3124;
@@ -55,7 +55,7 @@ public final class Static687 {
 	}
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(III)Lclient!eia;")
-	public static Class8_Sub2_Sub2 method8959(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static ParticleNode_Sub2_Sub2 method8959(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(7) Class291 local7 = Static334.aClass291ArrayArrayArray1[arg0][arg1][arg2];
 		return local7 == null || local7.aClass8_Sub2_Sub2_1 == null ? null : local7.aClass8_Sub2_Sub2_1;
 	}

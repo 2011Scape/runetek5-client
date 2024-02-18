@@ -8,7 +8,7 @@ public final class Static372 {
 	public static final Class345 aClass345_69 = new Class345(20, 8);
 
 	@OriginalMember(owner = "client!ln", name = "l", descriptor = "[Lclient!fk;")
-	public static final Class2_Sub19[] aClass2_Sub19Array1 = new Class2_Sub19[300];
+	public static final Linkable_Sub19[] aClass2_Sub19Array1 = new Linkable_Sub19[300];
 
 	@OriginalMember(owner = "client!ln", name = "a", descriptor = "(III)I")
 	public static int method5290(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

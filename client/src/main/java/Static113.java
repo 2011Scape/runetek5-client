@@ -11,7 +11,7 @@ public final class Static113 {
 	public static final Class345 aClass345_22 = new Class345(17, -1);
 
 	@OriginalMember(owner = "client!dja", name = "h", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_12 = new Class28(16);
+	public static final HashTable aHashTable12 = new HashTable(16);
 
 	@OriginalMember(owner = "client!dja", name = "n", descriptor = "Z")
 	public static boolean aBoolean198 = false;

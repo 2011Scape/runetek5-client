@@ -11,7 +11,7 @@ public final class Static535 {
 	public static final Class204 aClass204_11 = new Class204(3, 2);
 
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(Lclient!eo;IIIII)V")
-	public static void method7148(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public static void method7148(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(1) boolean local1 = true;
 		@Pc(3) int local3 = arg2;
 		@Pc(7) int local7 = arg2 + arg4;
@@ -26,8 +26,8 @@ public final class Static535 {
 								@Pc(77) Class291 local77 = Static334.aClass291ArrayArrayArray1[local17][local23][local35];
 								if (local77 != null) {
 									@Pc(163) int local163 = (Static246.aClass178Array1[local17].method7869(local35, local23) + Static246.aClass178Array1[local17].method7869(local35, local23 + 1) + Static246.aClass178Array1[local17].method7869(local35 + 1, local23) + Static246.aClass178Array1[local17].method7869(local35 + 1, local23 + 1)) / 4 - (Static246.aClass178Array1[arg1].method7869(arg3, arg2) + Static246.aClass178Array1[arg1].method7869(arg3, arg2 + 1) + Static246.aClass178Array1[arg1].method7869(arg3 + 1, arg2) + Static246.aClass178Array1[arg1].method7869(arg3 + 1, arg2 + 1)) / 4;
-									@Pc(166) Class8_Sub2_Sub3 local166 = local77.aClass8_Sub2_Sub3_2;
-									@Pc(169) Class8_Sub2_Sub3 local169 = local77.aClass8_Sub2_Sub3_1;
+									@Pc(166) ParticleNode_Sub2_Sub3 local166 = local77.aClass8_Sub2_Sub3_2;
+									@Pc(169) ParticleNode_Sub2_Sub3 local169 = local77.aClass8_Sub2_Sub3_1;
 									if (local166 != null && local166.method9290(0)) {
 										arg0.method9285(local163, local1, Static665.aClass19_15, (local35 - arg3) * Static340.anInt5586 + (1 - arg5) * Static247.anInt3993, (byte) 110, (local23 - arg2) * Static340.anInt5586 + (1 - arg4) * Static247.anInt3993, local166);
 									}
@@ -35,7 +35,7 @@ public final class Static535 {
 										arg0.method9285(local163, local1, Static665.aClass19_15, (local35 - arg3) * Static340.anInt5586 + (1 - arg5) * Static247.anInt3993, (byte) 115, (local23 - arg2) * Static340.anInt5586 + (1 - arg4) * Static247.anInt3993, local169);
 									}
 									for (@Pc(250) Class286 local250 = local77.aClass286_2; local250 != null; local250 = local250.aClass286_1) {
-										@Pc(254) Class8_Sub2_Sub1 local254 = local250.aClass8_Sub2_Sub1_1;
+										@Pc(254) ParticleNode_Sub2_Sub1 local254 = local250.aClass8_Sub2_Sub1_1;
 										if (local254 != null && local254.method9290(0) && (local23 == local254.aShort131 || local23 == local3) && (local35 == local254.aShort132 || local35 == local11)) {
 											@Pc(294) int local294 = local254.aShort134 + 1 - local254.aShort131;
 											@Pc(302) int local302 = local254.aShort133 + 1 - local254.aShort132;

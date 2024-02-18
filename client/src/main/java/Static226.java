@@ -11,7 +11,7 @@ public final class Static226 {
 	public static Class46[] aClass46Array7;
 
 	@OriginalMember(owner = "client!ha", name = "q", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_58 = new Class339();
+	public static final LinkedList aLinkedList58 = new LinkedList();
 
 	@OriginalMember(owner = "client!ha", name = "l", descriptor = "[Lclient!pm;")
 	public static final Class47_Sub1[] aClass47_Sub1Array8 = new Class47_Sub1[37];

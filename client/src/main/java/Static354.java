@@ -29,7 +29,7 @@ public final class Static354 {
 	public static boolean aBoolean440 = false;
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(BLclient!cg;)V")
-	public static void method5181(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0) {
+	public static void method5181(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0) {
 		@Pc(6) Class152 local6 = arg0.aClass152_11;
 		if (Static333.anInt5455 == arg0.anInt10755 || !local6.method9109() || local6.method9090()) {
 			@Pc(34) int local34 = arg0.anInt10755 - arg0.anInt10759;

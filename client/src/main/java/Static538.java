@@ -6,20 +6,20 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static538 {
 
 	@OriginalMember(owner = "client!qv", name = "e", descriptor = "[Lclient!pp;")
-	public static Class8_Sub4_Sub2_Sub1[] aClass8_Sub4_Sub2_Sub1Array2;
+	public static ParticleNode_Sub4_Sub2_Sub1[] aClass8_Sub4_Sub2_Sub1Array2;
 
 	@OriginalMember(owner = "client!qv", name = "f", descriptor = "F")
 	public static float aFloat174;
 
 	@OriginalMember(owner = "client!qv", name = "a", descriptor = "(ILjava/awt/Canvas;II)Lclient!cda;")
-	public static Class2_Sub10 method7192(@OriginalArg(0) int arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(3) int arg2) {
+	public static Linkable_Sub10 method7192(@OriginalArg(0) int arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(3) int arg2) {
 		try {
-			@Pc(13) Class local13 = Class.forName("Class2_Sub10_Sub2");
-			@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) local13.getDeclaredConstructor().newInstance();
+			@Pc(13) Class local13 = Class.forName("Linkable_Sub10_Sub2");
+			@Pc(17) Linkable_Sub10 local17 = (Linkable_Sub10) local13.getDeclaredConstructor().newInstance();
 			local17.method6332(arg2, arg0, arg1);
 			return local17;
 		} catch (@Pc(26) Throwable local26) {
-			@Pc(30) Class2_Sub10_Sub1 local30 = new Class2_Sub10_Sub1();
+			@Pc(30) Linkable_Sub10_Sub1 local30 = new Linkable_Sub10_Sub1();
 			local30.method6332(arg2, arg0, arg1);
 			return local30;
 		}
@@ -30,7 +30,7 @@ public final class Static538 {
 		@Pc(15) PacketBit local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		for (@Pc(17) int local17 = 0; local17 < Static86.anInt1798; local17++) {
 			@Pc(23) int local23 = Static458.anIntArray553[local17];
-			@Pc(31) Class8_Sub2_Sub1_Sub2_Sub2 local31 = ((Class2_Sub45) Static18.aClass28_2.method738((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(31) ParticleNode_Sub2_Sub1_Sub2_Sub2 local31 = ((Linkable_Sub45) Static18.aHashTable2.get((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			@Pc(35) int local35 = local15.g1();
 			if ((local35 & 0x80) != 0) {
 				local35 += local15.g1() << 8;
@@ -129,7 +129,7 @@ public final class Static538 {
 				local31.method9310(local31.aClass268_1.anInt6713);
 				local31.anInt10757 = local31.aClass268_1.lb << 3;
 				if (local31.aClass268_1.method5984()) {
-					Static89.method1714(local31.aByte144, (Class8_Sub2_Sub1_Sub2_Sub1) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (Class54) null, 0);
+					Static89.method1714(local31.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (Class54) null, 0);
 				}
 			}
 			if ((local35 & 0x2) != 0) {

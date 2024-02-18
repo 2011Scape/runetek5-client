@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static8 {
 
 	@OriginalMember(owner = "client!aea", name = "k", descriptor = "Lclient!bd;")
-	public static Class2_Sub6_Sub1 aClass2_Sub6_Sub1_1;
+	public static Linkable_Sub6_Sub1 aClass2_Sub6_Sub1_1;
 
 	@OriginalMember(owner = "client!aea", name = "i", descriptor = "Lclient!ss;")
 	public static final Class345 aClass345_1 = new Class345(38, -1);

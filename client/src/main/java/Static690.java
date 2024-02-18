@@ -21,7 +21,7 @@ public final class Static690 {
 			arg0 = 0;
 		}
 		Static507.anInt7618 = arg0;
-		Static81.aClass8_Sub5Array1 = new Class8_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
+		Static81.aClass8_Sub5Array1 = new ParticleNode_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
 		Static295.anInt4781 = 0;
 		Static349.anInt5693 = 0;
 	}

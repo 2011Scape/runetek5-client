@@ -17,7 +17,7 @@ public final class Class19_Sub2 extends Class19 {
 	private Canvas aCanvas3;
 
 	@OriginalMember(owner = "client!iaa", name = "Q", descriptor = "Lclient!cda;")
-	public Class2_Sub10 aClass2_Sub10_1;
+	public Linkable_Sub10 aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!iaa", name = "gb", descriptor = "I")
 	private int anInt4185;
@@ -95,7 +95,7 @@ public final class Class19_Sub2 extends Class19 {
 	private boolean aBoolean330;
 
 	@OriginalMember(owner = "client!iaa", name = "N", descriptor = "Lclient!av;")
-	private Class28 aClass28_20;
+	private HashTable aHashTable20;
 
 	@OriginalMember(owner = "client!iaa", name = "L", descriptor = "I")
 	public int anInt4186;
@@ -162,7 +162,7 @@ public final class Class19_Sub2 extends Class19 {
 		super(arg0);
 		this.aBoolean331 = false;
 		this.aBoolean330 = false;
-		this.aClass28_20 = new Class28(4);
+		this.aHashTable20 = new HashTable(4);
 		this.anInt4186 = 0;
 		this.anInt4188 = 512;
 		this.anInt4202 = 75518;
@@ -219,7 +219,7 @@ public final class Class19_Sub2 extends Class19 {
 		this.aCanvas3 = null;
 		this.anInt4183 = 0;
 		this.anInt4185 = 0;
-		this.aClass28_20 = null;
+		this.aHashTable20 = null;
 		this.aBoolean331 = true;
 	}
 
@@ -415,7 +415,7 @@ public final class Class19_Sub2 extends Class19 {
 			}
 			return;
 		}
-		@Pc(10) Class2_Sub10 local10 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(10) Linkable_Sub10 local10 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
 		if (local10 == null) {
 			return;
 		}
@@ -569,9 +569,9 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7967(@OriginalArg(0) Class230 arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) Class399 local3 = this.method3787(Thread.currentThread());
-		@Pc(7) Class8_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
-		for (@Pc(10) Class8_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
-			@Pc(14) Class8_Sub4_Sub2 local14 = (Class8_Sub4_Sub2) local10;
+		@Pc(7) ParticleNode_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
+		for (@Pc(10) ParticleNode_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
+			@Pc(14) ParticleNode_Sub4_Sub2 local14 = (ParticleNode_Sub4_Sub2) local10;
 			@Pc(19) int local19 = local14.anInt7537 >> 12;
 			@Pc(24) int local24 = local14.anInt7534 >> 12;
 			@Pc(29) int local29 = local14.anInt7536 >> 12;
@@ -590,7 +590,7 @@ public final class Class19_Sub2 extends Class19 {
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Lclient!up;IIII)V")
-	private void method3784(@OriginalArg(0) Class8_Sub4_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	private void method3784(@OriginalArg(0) ParticleNode_Sub4_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(2) int local2 = arg0.anInt7540;
 		@Pc(8) int local8 = arg4 << 1;
 		if (local2 == -1) {
@@ -906,13 +906,13 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7935(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(8) Linkable_Sub10 local8 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
 		if (local8 == null) {
 			return;
 		}
-		local8.method9457();
+		local8.unlink();
 		local8 = Static538.method7192(arg2, arg0, arg1);
-		this.aClass28_20.method735((long) arg0.hashCode(), local8);
+		this.aHashTable20.put((long) arg0.hashCode(), local8);
 		if (this.aCanvas3 != arg0 || this.aClass87_1 != null) {
 			return;
 		}
@@ -1177,16 +1177,16 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "o", descriptor = "(I)[I")
 	public int[] method3788(@OriginalArg(0) int arg0) {
 		@Pc(2) Class82 local2 = this.aClass82_89;
-		@Pc(14) Class2_Sub29 local14;
+		@Pc(14) Linkable_Sub29 local14;
 		synchronized (this.aClass82_89) {
-			local14 = (Class2_Sub29) this.aClass82_89.method2156((long) arg0 | Long.MIN_VALUE);
+			local14 = (Linkable_Sub29) this.aClass82_89.method2156((long) arg0 | Long.MIN_VALUE);
 			if (local14 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
 				}
 				@Pc(36) Class118 local36 = super.anInterface4_10.method6817(arg0);
 				@Pc(50) int local50 = local36.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
-				local14 = new Class2_Sub29(arg0, local50, super.anInterface4_10.method6815(0.7F, arg0, local50, local50), local36.anInt2796 != 1);
+				local14 = new Linkable_Sub29(arg0, local50, super.anInterface4_10.method6815(0.7F, arg0, local50, local50), local36.anInt2796 != 1);
 				this.aClass82_89.method2150(local14, (long) arg0 | Long.MIN_VALUE);
 			}
 		}
@@ -1433,7 +1433,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public void method7938(@OriginalArg(0) Class2_Sub13 arg0) {
+	public void method7938(@OriginalArg(0) Linkable_Sub13 arg0) {
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "k", descriptor = "(I)V")
@@ -1754,7 +1754,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public Class2_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+	public Linkable_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
 		return null;
 	}
 
@@ -1869,7 +1869,7 @@ public final class Class19_Sub2 extends Class19 {
 	public void method7977(@OriginalArg(0) int arg0) {
 		@Pc(4) int local4 = arg0 - this.anInt4184;
 		for (@Pc(9) Object local9 = this.aClass82_89.method2145(); local9 != null; local9 = this.aClass82_89.method2152()) {
-			@Pc(13) Class2_Sub29 local13 = (Class2_Sub29) local9;
+			@Pc(13) Linkable_Sub29 local13 = (Linkable_Sub29) local9;
 			if (local13.aBoolean341) {
 				local13.anInt4409 += local4;
 				@Pc(27) int local27 = local13.anInt4409 / 20;
@@ -2197,16 +2197,16 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "l", descriptor = "(I)[I")
 	public int[] method3792(@OriginalArg(0) int arg0) {
 		@Pc(2) Class82 local2 = this.aClass82_89;
-		@Pc(12) Class2_Sub29 local12;
+		@Pc(12) Linkable_Sub29 local12;
 		synchronized (this.aClass82_89) {
-			local12 = (Class2_Sub29) this.aClass82_89.method2156((long) arg0);
+			local12 = (Linkable_Sub29) this.aClass82_89.method2156((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
 				}
 				@Pc(34) Class118 local34 = super.anInterface4_10.method6817(arg0);
 				@Pc(48) int local48 = local34.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
-				local12 = new Class2_Sub29(arg0, local48, super.anInterface4_10.method6818(local48, true, local48, arg0, 0.7F), local34.anInt2796 != 1);
+				local12 = new Linkable_Sub29(arg0, local48, super.anInterface4_10.method6818(local48, true, local48, arg0, 0.7F), local34.anInt2796 != 1);
 				this.aClass82_89.method2150(local12, (long) arg0);
 			}
 		}
@@ -2703,7 +2703,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub7[] arg1) {
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "d", descriptor = "(I)Z")
@@ -2791,10 +2791,10 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8022(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(8) Linkable_Sub10 local8 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
 		if (local8 == null) {
 			local8 = Static538.method7192(arg2, arg0, arg1);
-			this.aClass28_20.method735((long) arg0.hashCode(), local8);
+			this.aHashTable20.put((long) arg0.hashCode(), local8);
 		} else if (local8.anInt7053 != arg1 || local8.anInt7050 != arg2) {
 			this.method7935(arg0, arg1, arg2);
 		}
@@ -2824,9 +2824,9 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method8021(@OriginalArg(0) Class230 arg0) {
 		@Pc(3) Class399 local3 = this.method3787(Thread.currentThread());
-		@Pc(7) Class8_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
-		for (@Pc(10) Class8_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
-			@Pc(14) Class8_Sub4_Sub2 local14 = (Class8_Sub4_Sub2) local10;
+		@Pc(7) ParticleNode_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
+		for (@Pc(10) ParticleNode_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
+			@Pc(14) ParticleNode_Sub4_Sub2 local14 = (ParticleNode_Sub4_Sub2) local10;
 			@Pc(19) int local19 = local14.anInt7537 >> 12;
 			@Pc(24) int local24 = local14.anInt7534 >> 12;
 			@Pc(29) int local29 = local14.anInt7536 >> 12;
@@ -2856,9 +2856,9 @@ public final class Class19_Sub2 extends Class19 {
 		if (this.aCanvas3 == arg0) {
 			this.method8019((Canvas) null);
 		}
-		@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(17) Linkable_Sub10 local17 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
 		if (local17 != null) {
-			local17.method9457();
+			local17.unlink();
 		}
 	}
 
@@ -2879,7 +2879,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public Class2_Sub13 method7961(@OriginalArg(0) int arg0) {
+	public Linkable_Sub13 method7961(@OriginalArg(0) int arg0) {
 		return null;
 	}
 }

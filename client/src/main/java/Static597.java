@@ -9,7 +9,7 @@ public final class Static597 {
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(IIIZ)I")
 	public static int method7822(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2) {
-		@Pc(18) Class2_Sub22 local18 = Static556.method7303(arg0, arg2);
+		@Pc(18) Linkable_Sub22 local18 = Static556.method7303(arg0, arg2);
 		if (local18 == null) {
 			return -1;
 		} else if (arg1 >= 0 && arg1 < local18.anIntArray278.length) {

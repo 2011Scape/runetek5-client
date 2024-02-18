@@ -35,7 +35,7 @@ public final class Static702 {
 	public static boolean aBoolean797 = false;
 
 	@OriginalMember(owner = "client!wda", name = "a", descriptor = "(ILclient!cg;I)V")
-	public static void method9166(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) int arg1) {
+	public static void method9166(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) int arg1) {
 		if (arg0.anIntArray869 == null) {
 			return;
 		}

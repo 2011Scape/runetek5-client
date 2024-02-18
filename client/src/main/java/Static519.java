@@ -8,7 +8,7 @@ public final class Static519 {
 	public static final Class162 aClass162_4 = new Class162("RC", 1);
 
 	@OriginalMember(owner = "client!qfa", name = "n", descriptor = "Lclient!gga;")
-	public static Class144 aClass144_1 = new Class144(8);
+	public static SecondaryHashTable aSecondaryHashTable1 = new SecondaryHashTable(8);
 
 	@OriginalMember(owner = "client!qfa", name = "b", descriptor = "(B)I")
 	public static int method6831() {

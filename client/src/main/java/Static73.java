@@ -8,7 +8,7 @@ public final class Static73 {
 	public static final Class287 aClass287_18 = new Class287(6, 16);
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(IIILclient!kp;I)Z")
-	public static boolean method9308(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class8_Sub2_Sub3 arg2, @OriginalArg(4) int arg3) {
+	public static boolean method9308(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) ParticleNode_Sub2_Sub3 arg2, @OriginalArg(4) int arg3) {
 		if (!Static18.aBoolean20 || !Static29.aBoolean60) {
 			return false;
 		} else if (Static432.anInt525 < 100) {

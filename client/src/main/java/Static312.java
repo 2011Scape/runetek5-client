@@ -36,14 +36,14 @@ public final class Static312 {
 		if (arg0.anObjectArray10 != null) {
 			@Pc(17) Class158 local17 = Static15.method186(Static77.anInt1614, Static450.anInt6819);
 			if (local17 != null) {
-				@Pc(23) Class2_Sub42 local23 = new Class2_Sub42();
+				@Pc(23) Linkable_Sub42 local23 = new Linkable_Sub42();
 				local23.anObjectArray36 = arg0.anObjectArray10;
 				local23.aClass158_14 = arg0;
 				local23.aClass158_13 = local17;
 				Static472.method6420(local23);
 			}
 		}
-		@Pc(45) Class2_Sub19 local45 = Static293.method4335(Static505.aClass345_119, Static405.aClass153_2.aIsaacRandom_1);
+		@Pc(45) Linkable_Sub19 local45 = Static293.method4335(Static505.aClass345_119, Static405.aClass153_2.aIsaacRandom_1);
 		local45.aPacketBit_1.p4_alt2(arg0.anInt3812);
 		local45.aPacketBit_1.p2_alt2(Static162.anInt2799);
 		local45.aPacketBit_1.p2_alt3(Static77.anInt1614);

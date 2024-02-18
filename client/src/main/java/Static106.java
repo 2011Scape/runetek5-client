@@ -10,7 +10,7 @@ public final class Static106 {
 	public static Class297_Sub1[] aClass297_Sub1Array1;
 
 	@OriginalMember(owner = "client!dfa", name = "a", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_11 = new Class28(4);
+	public static final HashTable aHashTable11 = new HashTable(4);
 
 	@OriginalMember(owner = "client!dfa", name = "a", descriptor = "(ILclient!ha;)V")
 	public static void method2046(@OriginalArg(1) Class19 arg0) {

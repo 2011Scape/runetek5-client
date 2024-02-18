@@ -18,7 +18,7 @@ public final class Static168 {
 	public static void method2633(@OriginalArg(0) PacketBit arg0) {
 		arg0.bits();
 		@Pc(10) int local10 = Static312.anInt5000;
-		@Pc(20) Class8_Sub2_Sub1_Sub2_Sub1 local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new Class8_Sub2_Sub1_Sub2_Sub1();
+		@Pc(20) ParticleNode_Sub2_Sub1_Sub2_Sub1 local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new ParticleNode_Sub2_Sub1_Sub2_Sub1();
 		local20.anInt10740 = local10;
 		@Pc(28) int local28 = arg0.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);

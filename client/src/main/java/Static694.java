@@ -22,7 +22,7 @@ public final class Static694 {
 
 	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(IZ)[B")
 	public static byte[] method9027(@OriginalArg(0) int arg0) {
-		@Pc(17) Class2_Sub2_Sub7 local17 = (Class2_Sub2_Sub7) Static541.aClass361_4.method8342((long) arg0);
+		@Pc(17) ByteArraySecondaryNode local17 = (ByteArraySecondaryNode) Static541.aLruHashTable4.method8342((long) arg0);
 		if (local17 == null) {
 			@Pc(22) byte[] local22 = new byte[512];
 			@Pc(28) Random local28 = new Random((long) arg0);
@@ -36,8 +36,8 @@ public final class Static694 {
 				local22[local53] = local22[local48];
 				local22[local48] = local22[511 - local42] = local57;
 			}
-			local17 = new Class2_Sub2_Sub7(local22);
-			Static541.aClass361_4.method8341(local17, (long) arg0);
+			local17 = new ByteArraySecondaryNode(local22);
+			Static541.aLruHashTable4.method8341(local17, (long) arg0);
 		}
 		return local17.aByteArray21;
 	}

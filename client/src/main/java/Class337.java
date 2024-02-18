@@ -13,13 +13,13 @@ public final class Class337 {
 	private Class150 aClass150_2;
 
 	@OriginalMember(owner = "client!sh", name = "r", descriptor = "Lclient!hv;")
-	public Class8_Sub5 aClass8_Sub5_7;
+	public ParticleNode_Sub5 aClass8_Sub5_7;
 
 	@OriginalMember(owner = "client!sh", name = "g", descriptor = "Lclient!ka;")
 	private Class114 aClass114_8;
 
 	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!r;")
-	private Class2_Sub2_Sub9 aClass2_Sub2_Sub9_6;
+	private SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_6;
 
 	@OriginalMember(owner = "client!sh", name = "b", descriptor = "[Z")
 	private boolean[] aBooleanArray27;
@@ -58,7 +58,7 @@ public final class Class337 {
 	public final int anInt8645;
 
 	@OriginalMember(owner = "client!sh", name = "B", descriptor = "Lclient!eo;")
-	private final Class8_Sub2 aClass8_Sub2_21;
+	private final ParticleNode_Sub2 aClass8_Sub2_21;
 
 	@OriginalMember(owner = "client!sh", name = "H", descriptor = "Z")
 	private final boolean aBoolean661;
@@ -67,7 +67,7 @@ public final class Class337 {
 	private final Class152 aClass152_9;
 
 	@OriginalMember(owner = "client!sh", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIILclient!eo;ZI)V")
-	public Class337(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8) {
+	public Class337(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) ParticleNode_Sub2 arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8) {
 		this.aByte133 = (byte) arg5;
 		this.anInt8663 = arg3;
 		this.aByte132 = (byte) arg4;
@@ -280,7 +280,7 @@ public final class Class337 {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!eo;Z)V")
-	private void method7680(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) boolean arg1) {
+	private void method7680(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) boolean arg1) {
 		if (!this.aClass152_9.method9109()) {
 			this.method7676(0, -1, false);
 		} else if (this.aClass152_9.method9112(Static333.anInt5455 - this.anInt8643)) {

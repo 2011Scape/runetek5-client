@@ -28,25 +28,25 @@ public final class Static706 {
 		if (local52 == null) {
 			return;
 		}
-		if (local52 instanceof Class8_Sub2_Sub1_Sub4) {
-			((Class8_Sub2_Sub1_Sub4) local52).method6160(arg1);
+		if (local52 instanceof ParticleNode_Sub2_Sub1_Sub4) {
+			((ParticleNode_Sub2_Sub1_Sub4) local52).method6160(arg1);
 			return;
 		}
-		if (!(local52 instanceof Class8_Sub2_Sub2_Sub2)) {
-			if (local52 instanceof Class8_Sub2_Sub3_Sub1) {
-				((Class8_Sub2_Sub3_Sub1) local52).method1963(arg1);
-			} else if (local52 instanceof Class8_Sub2_Sub4_Sub2) {
-				((Class8_Sub2_Sub4_Sub2) local52).method6862(arg1);
+		if (!(local52 instanceof ParticleNode_Sub2_Sub2_Sub2)) {
+			if (local52 instanceof ParticleNode_Sub2_Sub3_Sub1) {
+				((ParticleNode_Sub2_Sub3_Sub1) local52).method1963(arg1);
+			} else if (local52 instanceof ParticleNode_Sub2_Sub4_Sub2) {
+				((ParticleNode_Sub2_Sub4_Sub2) local52).method6862(arg1);
 				return;
 			}
 			return;
 		}
-		((Class8_Sub2_Sub2_Sub2) local52).method3581(arg1);
+		((ParticleNode_Sub2_Sub2_Sub2) local52).method3581(arg1);
 		return;
 	}
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(BLclient!bn;I)V")
-	public static void method9221(@OriginalArg(1) Class2_Sub8 arg0, @OriginalArg(2) int arg1) {
+	public static void method9221(@OriginalArg(1) Linkable_Sub8 arg0, @OriginalArg(2) int arg1) {
 		Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208();
 		if (arg0 == null) {
 			Static100.method1988();
@@ -116,7 +116,7 @@ public final class Static706 {
 			return;
 		}
 		@Pc(230) Class153 local230 = Static668.method8701();
-		@Pc(236) Class2_Sub19 local236 = Static293.method4335(Static669.aClass345_116, local230.aIsaacRandom_1);
+		@Pc(236) Linkable_Sub19 local236 = Static293.method4335(Static669.aClass345_116, local230.aIsaacRandom_1);
 		local236.aPacketBit_1.p1(Static231.method3379(arg0));
 		local236.aPacketBit_1.pjstr(arg0);
 		local230.method3275(local236);

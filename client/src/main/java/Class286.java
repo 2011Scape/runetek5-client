@@ -8,7 +8,7 @@ public final class Class286 {
 	public Class286 aClass286_1;
 
 	@OriginalMember(owner = "client!pba", name = "e", descriptor = "Lclient!qf;")
-	public Class8_Sub2_Sub1 aClass8_Sub2_Sub1_1;
+	public ParticleNode_Sub2_Sub1 aClass8_Sub2_Sub1_1;
 
 	@OriginalMember(owner = "client!pba", name = "a", descriptor = "(I)V")
 	public void method6459() {

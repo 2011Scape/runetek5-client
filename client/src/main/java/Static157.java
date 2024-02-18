@@ -17,7 +17,7 @@ public final class Static157 {
 	}
 
 	@OriginalMember(owner = "client!eu", name = "a", descriptor = "(IIIILclient!nda;)V")
-	public static void method2564(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class8_Sub2_Sub5 arg4) {
+	public static void method2564(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) ParticleNode_Sub2_Sub5 arg4) {
 		@Pc(4) Class291 local4 = Static347.method5095(arg0, arg1, arg2);
 		if (local4 == null) {
 			return;

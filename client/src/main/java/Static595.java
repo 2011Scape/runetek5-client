@@ -48,7 +48,7 @@ public final class Static595 {
 							local141 = Static292.aClass2_Sub43_2.anInt7610 > 256;
 						} catch (@Pc(152) Throwable local152) {
 						}
-						@Pc(158) Class2_Sub13 local158;
+						@Pc(158) Linkable_Sub13 local158;
 						if (local141) {
 							local158 = Static163.aClass19_17.method7961(146800640);
 						} else {

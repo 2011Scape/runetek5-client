@@ -220,7 +220,7 @@ public final class Class148 {
 			this.aClass114_2.method7498((byte) arg1, this.aByteArray35);
 			this.anInt3503 = arg1;
 		}
-		this.aClass114_2.method7473(local36, (Class8_Sub6) null, 0);
+		this.aClass114_2.method7473(local36, (ParticleNode_Sub6) null, 0);
 		arg4.method8000(local7);
 	}
 

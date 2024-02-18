@@ -24,7 +24,7 @@ public final class Static437 {
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(ILclient!rka;)V")
 	public static void method5915(@OriginalArg(1) PacketBit arg0) {
-		@Pc(10) Class2_Sub57 local10 = (Class2_Sub57) Static631.aClass339_78.method7699(65280);
+		@Pc(10) Linkable_Sub57 local10 = (Linkable_Sub57) Static631.aLinkedList78.head();
 		if (local10 == null) {
 			return;
 		}
@@ -131,7 +131,7 @@ public final class Static437 {
 		}
 		arg0.addcrc(local98);
 		if (-2 == -2) {
-			local10.method9457();
+			local10.unlink();
 		}
 	}
 

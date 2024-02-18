@@ -49,7 +49,7 @@ public final class Static489 {
 	}
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "(ZBLclient!cg;)V")
-	public static void method6547(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class8_Sub2_Sub1_Sub2 arg1) {
+	public static void method6547(@OriginalArg(0) boolean arg0, @OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2 arg1) {
 		@Pc(7) int local7 = -1;
 		@Pc(16) int local16 = 0;
 		if (arg1.anInt10759 > Static333.anInt5455) {
@@ -316,7 +316,7 @@ public final class Static489 {
 		Static197.method2949();
 		Static352.method5180();
 		Static442.method5969();
-		@Pc(920) Class2_Sub19 local920;
+		@Pc(920) Linkable_Sub19 local920;
 		if (Static353.aFrame10 != null && Static405.aClass153_2.aClass348_1 != null && Static283.anInt4574 == 12) {
 			local920 = Static293.method4335(Static694.aClass345_122, Static405.aClass153_2.aIsaacRandom_1);
 			local920.aPacketBit_1.p4(1057001181);

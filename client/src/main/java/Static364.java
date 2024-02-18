@@ -17,11 +17,11 @@ public final class Static364 {
 	public static final boolean[] aBooleanArray18 = new boolean[100];
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(Z)Lclient!fu;")
-	public static Class2_Sub20 method5248() {
-		if (Static30.aClass339_31 == null || Static444.aClass191_1 == null) {
+	public static Linkable_Sub20 method5248() {
+		if (Static30.aLinkedList31 == null || Static444.aClass191_1 == null) {
 			return null;
 		}
-		for (@Pc(17) Class2_Sub20 local17 = (Class2_Sub20) Static444.aClass191_1.method4342(); local17 != null; local17 = (Class2_Sub20) Static444.aClass191_1.method4342()) {
+		for (@Pc(17) Linkable_Sub20 local17 = (Linkable_Sub20) Static444.aClass191_1.method4342(); local17 != null; local17 = (Linkable_Sub20) Static444.aClass191_1.method4342()) {
 			@Pc(30) Class105 local30 = Static30.aClass246_3.method5584(local17.anInt3131);
 			if (local30 != null && local30.aBoolean217 && local30.method2425(Static30.anInterface23_3)) {
 				return local17;
@@ -96,7 +96,7 @@ public final class Static364 {
 				}
 				Static135.anInt8223 = 2;
 			}
-			@Pc(186) Class2_Sub19 local186;
+			@Pc(186) Linkable_Sub19 local186;
 			@Pc(203) int local203;
 			@Pc(250) int local250;
 			if (Static135.anInt8223 == 2) {

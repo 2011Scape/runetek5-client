@@ -20,7 +20,7 @@ public final class Static515 {
 	public static final Class22 aClass22_1 = Static433.method5595();
 
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(IIIIILclient!ha;IIIIILclient!cba;)V")
-	public static void method6799(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class2_Sub2_Sub4 arg10) {
+	public static void method6799(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) SecondaryLinkable_Sub4 arg10) {
 		if (arg8 < arg5 && arg5 < arg1 + arg8 && arg2 - 13 < arg0 && arg0 < arg2 + 3) {
 			arg6 = arg3;
 		}
@@ -70,7 +70,7 @@ public final class Static515 {
 		} else {
 			local202 = Static212.anInt3467 * 5;
 		}
-		for (@Pc(213) Class2_Sub20 local213 = (Class2_Sub20) Static30.aClass339_31.method7699(65280); local213 != null; local213 = (Class2_Sub20) Static30.aClass339_31.method7706()) {
+		for (@Pc(213) Linkable_Sub20 local213 = (Linkable_Sub20) Static30.aLinkedList31.head(); local213 != null; local213 = (Linkable_Sub20) Static30.aLinkedList31.next()) {
 			@Pc(221) Class105 local221 = Static30.aClass246_3.method5584(local213.anInt3131);
 			if (Static408.method5634(local221)) {
 				@Pc(256) int local256;
@@ -90,13 +90,13 @@ public final class Static515 {
 
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(ZIII)V")
 	public static void method6802(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (Static106.aClass28_11.method738((long) arg1) != null) {
+		if (Static106.aHashTable11.get((long) arg1) != null) {
 			return;
 		}
 		if (Static234.aBoolean303) {
-			@Pc(34) Class2_Sub5 local34 = new Class2_Sub5(arg1, new Class222_Sub1(4096, Static709.aClass330_127, arg1), arg2, arg0);
+			@Pc(34) Linkable_Sub5 local34 = new Linkable_Sub5(arg1, new Class222_Sub1(4096, Static709.aClass330_127, arg1), arg2, arg0);
 			local34.aClass222_Sub1_1.method9183(Static384.aStringArray31[Static51.anInt1052]);
-			Static106.aClass28_11.method735((long) arg1, local34);
+			Static106.aHashTable11.put((long) arg1, local34);
 		} else {
 			Static635.method8380(arg1, arg0);
 		}

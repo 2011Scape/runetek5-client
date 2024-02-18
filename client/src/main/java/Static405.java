@@ -19,7 +19,7 @@ public final class Static405 {
 	public static final Class153[] aClass153Array1 = new Class153[] { aClass153_2, aClass153_1 };
 
 	@OriginalMember(owner = "client!mn", name = "p", descriptor = "Lclient!v;")
-	public static final Class2_Sub54 aClass2_Sub54_1 = new Class2_Sub54(0, 0);
+	public static final Linkable_Sub54 aClass2_Sub54_1 = new Linkable_Sub54(0, 0);
 
 	@OriginalMember(owner = "client!mn", name = "i", descriptor = "Lclient!ss;")
 	public static final Class345 aClass345_73 = new Class345(55, 7);

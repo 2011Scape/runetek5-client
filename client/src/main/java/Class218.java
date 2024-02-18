@@ -16,7 +16,7 @@ public final class Class218 {
 	private int[][] anIntArrayArray137;
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "Lclient!av;")
-	private Class28 aClass28_30;
+	private HashTable aHashTable30;
 
 	@OriginalMember(owner = "client!la", name = "m", descriptor = "[I")
 	private int[] anIntArray430;
@@ -149,20 +149,20 @@ public final class Class218 {
 					}
 				} else if (arg0 == 249) {
 					local29 = arg1.g1();
-					if (this.aClass28_30 == null) {
+					if (this.aHashTable30 == null) {
 						local36 = Static440.method5962(local29);
-						this.aClass28_30 = new Class28(local36);
+						this.aHashTable30 = new HashTable(local36);
 					}
 					for (local36 = 0; local36 < local29; local36++) {
 						@Pc(224) boolean local224 = arg1.g1() == 1;
 						@Pc(228) int local228 = arg1.g3();
-						@Pc(237) Class2 local237;
+						@Pc(237) Linkable local237;
 						if (local224) {
-							local237 = new Class2_Sub24(arg1.gjstr());
+							local237 = new StringNode(arg1.gjstr());
 						} else {
-							local237 = new Class2_Sub38(arg1.g4());
+							local237 = new IntNode(arg1.g4());
 						}
-						this.aClass28_30.method735((long) local228, local237);
+						this.aHashTable30.put((long) local228, local237);
 					}
 				}
 			}

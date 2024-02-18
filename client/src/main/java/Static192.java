@@ -8,21 +8,21 @@ public final class Static192 {
 	public static int anInt3123 = -1;
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(Lclient!cba;B)Ljava/lang/String;")
-	public static String method2874(@OriginalArg(0) Class2_Sub2_Sub4 arg0) {
+	public static String method2874(@OriginalArg(0) SecondaryLinkable_Sub4 arg0) {
 		return arg0.aString10 + " <col=ffffff>>";
 	}
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(Lclient!cba;I)I")
-	public static int method2875(@OriginalArg(0) Class2_Sub2_Sub4 arg0) {
+	public static int method2875(@OriginalArg(0) SecondaryLinkable_Sub4 arg0) {
 		@Pc(14) String local14 = method2874(arg0);
 		return Static42.aClass381_4.method8742(Static186.aClass23Array5, local14);
 	}
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(I)Lclient!aea;")
-	public static Class8_Sub1 method2876() {
-		@Pc(14) Class8_Sub1 local14 = (Class8_Sub1) Static129.aClass130_3.method2783();
+	public static ParticleNode_Sub1 method2876() {
+		@Pc(14) ParticleNode_Sub1 local14 = (ParticleNode_Sub1) Static129.aClass130_3.method2783();
 		if (local14 == null) {
-			return new Class8_Sub1();
+			return new ParticleNode_Sub1();
 		} else {
 			Static6.anInt94--;
 			return local14;

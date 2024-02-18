@@ -13,7 +13,7 @@ public final class Class292 {
 	public int[] anIntArray596;
 
 	@OriginalMember(owner = "client!pj", name = "e", descriptor = "[Lclient!eha;")
-	public Class100[] aClass100Array1;
+	public IntHashTable[] aIntHashTableArray1;
 
 	@OriginalMember(owner = "client!pj", name = "n", descriptor = "[[I")
 	public int[][] anIntArrayArray185;
@@ -43,7 +43,7 @@ public final class Class292 {
 	public int[] anIntArray600;
 
 	@OriginalMember(owner = "client!pj", name = "c", descriptor = "Lclient!eha;")
-	public Class100 aClass100_1;
+	public IntHashTable aIntHashTable1;
 
 	@OriginalMember(owner = "client!pj", name = "l", descriptor = "[[I")
 	public int[][] anIntArrayArray186;
@@ -131,7 +131,7 @@ public final class Class292 {
 			for (local265 = 0; local265 < this.anInt7367; local265++) {
 				this.anIntArray596[this.anIntArray600[local265]] = local12.g4();
 			}
-			this.aClass100_1 = new Class100(this.anIntArray596);
+			this.aIntHashTable1 = new IntHashTable(this.anIntArray596);
 		}
 		for (local115 = 0; local115 < this.anInt7367; local115++) {
 			this.anIntArray599[this.anIntArray600[local115]] = local12.g4();
@@ -199,7 +199,7 @@ public final class Class292 {
 		if (!local63) {
 			return;
 		}
-		this.aClass100Array1 = new Class100[local103 + 1];
+		this.aIntHashTableArray1 = new IntHashTable[local103 + 1];
 		this.anIntArrayArray186 = new int[local103 + 1][];
 		for (local398 = 0; local398 < this.anInt7367; local398++) {
 			local423 = this.anIntArray600[local398];
@@ -216,7 +216,7 @@ public final class Class292 {
 				}
 				this.anIntArrayArray186[local423][local449] = local12.g4();
 			}
-			this.aClass100Array1[local423] = new Class100(this.anIntArrayArray186[local423]);
+			this.aIntHashTableArray1[local423] = new IntHashTable(this.anIntArrayArray186[local423]);
 		}
 	}
 }

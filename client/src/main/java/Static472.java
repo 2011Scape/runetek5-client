@@ -22,7 +22,7 @@ public final class Static472 {
 	private static Class21 aClass21_1;
 
 	@OriginalMember(owner = "client!ou", name = "z", descriptor = "Lclient!rfa;")
-	private static Class2_Sub47 aClass2_Sub47_2;
+	private static Linkable_Sub47 aClass2_Sub47_2;
 
 	@OriginalMember(owner = "client!ou", name = "G", descriptor = "Lclient!hi;")
 	private static Class164 aClass164_7;
@@ -114,7 +114,7 @@ public final class Static472 {
 		for (@Pc(16) int local16 = 0; local16 < local14.length; local16++) {
 			@Pc(21) Class158 local21 = local14[local16];
 			if (local21.anObjectArray13 != null) {
-				@Pc(28) Class2_Sub42 local28 = new Class2_Sub42();
+				@Pc(28) Linkable_Sub42 local28 = new Linkable_Sub42();
 				local28.aClass158_14 = local21;
 				local28.anObjectArray36 = local21.anObjectArray13;
 				method6422(local28, 2000000);
@@ -1204,11 +1204,11 @@ public final class Static472 {
 								if (local220.anObjectArray19 == null) {
 									return;
 								}
-								@Pc(4169) Class2_Sub42 local4169 = new Class2_Sub42();
+								@Pc(4169) Linkable_Sub42 local4169 = new Linkable_Sub42();
 								local4169.aClass158_14 = local220;
 								local4169.anObjectArray36 = local220.anObjectArray19;
 								local4169.anInt7220 = anInt7153 + 1;
-								Static521.aClass339_44.method7711(local4169);
+								Static521.aLinkedList44.addTail(local4169);
 								return;
 							}
 						} else if (arg0 < 2600) {
@@ -1313,8 +1313,8 @@ public final class Static472 {
 								return;
 							}
 						} else {
-							@Pc(4760) Class2_Sub4 local4760;
-							@Pc(4653) Class2_Sub4 local4653;
+							@Pc(4760) Linkable_Sub4 local4760;
+							@Pc(4653) Linkable_Sub4 local4653;
 							if (arg0 < 2800) {
 								if (arg0 == 2700) {
 									local220 = Static145.method2412(anIntArray578[--anInt7142]);
@@ -1332,7 +1332,7 @@ public final class Static472 {
 								}
 								if (arg0 == 2702) {
 									local15 = anIntArray578[--anInt7142];
-									local4653 = (Class2_Sub4) Static548.aClass28_40.method738((long) local15);
+									local4653 = (Linkable_Sub4) Static548.aHashTable40.get((long) local15);
 									if (local4653 != null) {
 										anIntArray578[anInt7142++] = 1;
 										return;
@@ -1360,7 +1360,7 @@ public final class Static472 {
 									anInt7142 -= 2;
 									local15 = anIntArray578[anInt7142];
 									local21 = anIntArray578[anInt7142 + 1];
-									local4760 = (Class2_Sub4) Static548.aClass28_40.method738((long) local15);
+									local4760 = (Linkable_Sub4) Static548.aHashTable40.get((long) local15);
 									if (local4760 != null && local4760.anInt147 == local21) {
 										anIntArray578[anInt7142++] = 1;
 										return;
@@ -1393,7 +1393,7 @@ public final class Static472 {
 									return;
 								}
 							} else {
-								@Pc(5005) Class2_Sub19 local5005;
+								@Pc(5005) Linkable_Sub19 local5005;
 								@Pc(4911) String local4911;
 								if (arg0 < 3200) {
 									if (arg0 == 3100) {
@@ -1416,7 +1416,7 @@ public final class Static472 {
 										if (Static467.method6350(local4911)) {
 											local21 = Static647.method8473(local4911);
 										}
-										@Pc(4974) Class2_Sub19 local4974 = Static293.method4335(Static330.aClass345_66, Static405.aClass153_2.aIsaacRandom_1);
+										@Pc(4974) Linkable_Sub19 local4974 = Static293.method4335(Static330.aClass345_66, Static405.aClass153_2.aIsaacRandom_1);
 										local4974.aPacketBit_1.p4(local21);
 										Static405.aClass153_2.method3275(local4974);
 										return;
@@ -1471,7 +1471,7 @@ public final class Static472 {
 										anInt7142 -= 2;
 										local15 = anIntArray578[anInt7142];
 										local21 = anIntArray578[anInt7142 + 1];
-										local4760 = (Class2_Sub4) Static548.aClass28_40.method738((long) local15);
+										local4760 = (Linkable_Sub4) Static548.aHashTable40.get((long) local15);
 										if (local4760 != null) {
 											Static449.method6115(true, local4760.anInt147 != local21, local4760);
 										}
@@ -1481,7 +1481,7 @@ public final class Static472 {
 									if (arg0 == 3112) {
 										anInt7142--;
 										local15 = anIntArray578[anInt7142];
-										local4653 = (Class2_Sub4) Static548.aClass28_40.method738((long) local15);
+										local4653 = (Linkable_Sub4) Static548.aHashTable40.get((long) local15);
 										if (local4653 != null && local4653.anInt146 == 3) {
 											Static449.method6115(true, true, local4653);
 										}
@@ -1899,7 +1899,7 @@ public final class Static472 {
 											if (local6963.aChar1 != local15) {
 												throw new RuntimeException();
 											}
-											@Pc(7133) Class2_Sub40 local7133 = local6963.method1223(local27);
+											@Pc(7133) Linkable_Sub40 local7133 = local6963.method1223(local27);
 											local72 = 0;
 											if (local7133 != null) {
 												local72 = local7133.anIntArray531.length;
@@ -1917,7 +1917,7 @@ public final class Static472 {
 											if (local6822.aChar1 != 's') {
 												throw new RuntimeException();
 											}
-											@Pc(7196) Class2_Sub26 local7196 = local6822.method1237(local1394);
+											@Pc(7196) Linkable_Sub26 local7196 = local6822.method1237(local1394);
 											local2978 = 0;
 											if (local7196 != null) {
 												local2978 = local7196.anIntArray318.length;
@@ -1942,7 +1942,7 @@ public final class Static472 {
 											if (local7261.aChar1 != local15) {
 												throw new RuntimeException();
 											}
-											@Pc(7284) Class2_Sub40 local7284 = local7261.method1223(local506);
+											@Pc(7284) Linkable_Sub40 local7284 = local7261.method1223(local506);
 											if (local2978 >= 0 && local7284 != null && local7284.anIntArray531.length > local2978) {
 												anIntArray578[anInt7142++] = local7284.anIntArray531[local2978];
 												return;
@@ -1965,7 +1965,7 @@ public final class Static472 {
 											if (local6868.aChar1 != 's') {
 												throw new RuntimeException();
 											}
-											@Pc(7381) Class2_Sub26 local7381 = local6868.method1237(local7345);
+											@Pc(7381) Linkable_Sub26 local7381 = local6868.method1237(local7345);
 											if (local27 >= 0 && local7381 != null && local7381.anIntArray318.length > local27) {
 												anIntArray578[anInt7142++] = local7381.anIntArray318[local27];
 												return;
@@ -3202,7 +3202,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!fj;I)V")
-	private static void method6419(@OriginalArg(0) Class2_Sub2_Sub10 arg0, @OriginalArg(1) int arg1) {
+	private static void method6419(@OriginalArg(0) SecondaryLinkable_Sub10 arg0, @OriginalArg(1) int arg1) {
 		anInt7142 = 0;
 		anInt7139 = 0;
 		@Pc(5) int local5 = -1;
@@ -3320,7 +3320,7 @@ public final class Static472 {
 							anInt7139--;
 						} else if (local34 == 40) {
 							local96 = local11[local5];
-							@Pc(503) Class2_Sub2_Sub10 local503 = Static488.method6525(local96);
+							@Pc(503) SecondaryLinkable_Sub10 local503 = Static488.method6525(local96);
 							if (local503 == null) {
 								throw new RuntimeException();
 							}
@@ -3409,10 +3409,10 @@ public final class Static472 {
 							Static37.aStringArray4[local96] = aStringArray37[--anInt7139];
 							Static85.method9262(local96);
 						} else if (local34 == 51) {
-							@Pc(889) Class28 local889 = arg0.aClass28Array1[local11[local5]];
-							@Pc(902) Class2_Sub38 local902 = (Class2_Sub38) local889.method738((long) anIntArray578[--anInt7142]);
+							@Pc(889) HashTable local889 = arg0.aHashTableArray1[local11[local5]];
+							@Pc(902) IntNode local902 = (IntNode) local889.get((long) anIntArray578[--anInt7142]);
 							if (local902 != null) {
-								local5 += local902.anInt6379;
+								local5 += local902.value;
 							}
 						} else if (local34 == 54) {
 							aLongArray14[anInt7152++] = arg0.aLongArray4[local5];
@@ -3516,9 +3516,9 @@ public final class Static472 {
 			}
 		} catch (@Pc(1479) Exception local1479) {
 			@Pc(1484) StringBuffer local1484 = new StringBuffer(30);
-			local1484.append("CS2: ").append(arg0.aLong328).append(" ");
+			local1484.append("CS2: ").append(arg0.id).append(" ");
 			for (local706 = anInt7140 - 1; local706 >= 0; local706--) {
-				local1484.append("v: ").append(aClass143Array1[local706].aClass2_Sub2_Sub10_1.aLong328).append(" ");
+				local1484.append("v: ").append(aClass143Array1[local706].aClass2_Sub2_Sub10_1.id).append(" ");
 			}
 			local1484.append("op: ").append(local13);
 			Static240.method3496(local1479, local1484.toString());
@@ -3526,7 +3526,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!pd;)V")
-	public static void method6420(@OriginalArg(0) Class2_Sub42 arg0) {
+	public static void method6420(@OriginalArg(0) Linkable_Sub42 arg0) {
 		method6422(arg0, 200000);
 	}
 
@@ -3547,7 +3547,7 @@ public final class Static472 {
 				return;
 			}
 			@Pc(57) Class153 local57;
-			@Pc(63) Class2_Sub19 local63;
+			@Pc(63) Linkable_Sub19 local63;
 			if (arg0 == 5001) {
 				anInt7142 -= 3;
 				Static133.anInt2458 = anIntArray578[anInt7142];
@@ -3578,7 +3578,7 @@ public final class Static472 {
 					local101 = local101.substring(0, 80);
 				}
 				@Pc(135) Class153 local135 = Static668.method8701();
-				@Pc(141) Class2_Sub19 local141 = Static293.method4335(Static245.aClass345_114, local135.aIsaacRandom_1);
+				@Pc(141) Linkable_Sub19 local141 = Static293.method4335(Static245.aClass345_114, local135.aIsaacRandom_1);
 				local141.aPacketBit_1.p1(Static231.method3379(local95) + Static231.method3379(local101) + 2);
 				local141.aPacketBit_1.pjstr(local95);
 				local141.aPacketBit_1.p1(local109 - 1);
@@ -3616,7 +3616,7 @@ public final class Static472 {
 				anIntArray578[anInt7142++] = Static726.aClass280_7.anInt7039;
 				return;
 			}
-			@Pc(295) Class2_Sub19 local295;
+			@Pc(295) Linkable_Sub19 local295;
 			@Pc(289) Class153 local289;
 			if (arg0 == 5006) {
 				local192 = anIntArray578[--anInt7142];
@@ -3637,7 +3637,7 @@ public final class Static472 {
 				local101 = aStringArray37[anInt7139 + 1];
 				if (Static608.anInt9290 != 0 || (!Static389.aBoolean459 || Static34.aBoolean62) && !Static617.aBoolean724) {
 					@Pc(360) Class153 local360 = Static668.method8701();
-					@Pc(366) Class2_Sub19 local366 = Static293.method4335(Static243.aClass345_52, local360.aIsaacRandom_1);
+					@Pc(366) Linkable_Sub19 local366 = Static293.method4335(Static243.aClass345_52, local360.aIsaacRandom_1);
 					local366.aPacketBit_1.p2(0);
 					local375 = local366.aPacketBit_1.pos;
 					local366.aPacketBit_1.pjstr(local95);
@@ -3759,7 +3759,7 @@ public final class Static472 {
 				aStringArray37[anInt7139++] = Static68.aClass151_3.method3234(local192).aString4;
 				return;
 			}
-			@Pc(793) Class2_Sub2_Sub3 local793;
+			@Pc(793) SecondaryLinkable_Sub3 local793;
 			if (arg0 == 5051) {
 				local192 = anIntArray578[--anInt7142];
 				local793 = Static68.aClass151_3.method3234(local192);
@@ -3774,7 +3774,7 @@ public final class Static472 {
 				anInt7142 -= 2;
 				local192 = anIntArray578[anInt7142];
 				local834 = anIntArray578[anInt7142 + 1];
-				@Pc(839) Class2_Sub2_Sub3 local839 = Static68.aClass151_3.method3234(local192);
+				@Pc(839) SecondaryLinkable_Sub3 local839 = Static68.aClass151_3.method3234(local192);
 				local115 = local839.anIntArray93[local834];
 				anIntArray578[anInt7142++] = local115;
 				return;
@@ -3803,7 +3803,7 @@ public final class Static472 {
 			}
 			if (arg0 == 5056) {
 				local192 = anIntArray578[--anInt7142];
-				@Pc(966) Class2_Sub2_Sub12 local966 = Static288.aClass139_2.method2950(local192);
+				@Pc(966) SecondaryLinkable_Sub12 local966 = Static288.aClass139_2.method2950(local192);
 				if (local966.anIntArray333 == null) {
 					anIntArray578[anInt7142++] = 0;
 					return;
@@ -3930,7 +3930,7 @@ public final class Static472 {
 				local192 = anIntArray578[anInt7142];
 				local834 = anIntArray578[anInt7142 + 1];
 				local109 = anIntArray578[anInt7142 + 2];
-				@Pc(1526) Class2_Sub2_Sub12 local1526 = Static288.aClass139_2.method2950(local192);
+				@Pc(1526) SecondaryLinkable_Sub12 local1526 = Static288.aClass139_2.method2950(local192);
 				if (local1526.method3898(local834).anInt4575 != 0) {
 					throw new RuntimeException("bad command");
 				}
@@ -4020,7 +4020,7 @@ public final class Static472 {
 					Static60.method1293(anIntArray578[--anInt7142], false, -1, -1, -11493);
 					return;
 				}
-				@Pc(1908) Class2_Sub2_Sub13 local1908;
+				@Pc(1908) SecondaryLinkable_Sub13 local1908;
 				if (arg0 == 5206) {
 					local192 = anIntArray578[--anInt7142];
 					local1908 = Static30.method5078(local192 >> 14 & 0x3FFF, local192 & 0x3FFF);
@@ -4031,7 +4031,7 @@ public final class Static472 {
 					anIntArray578[anInt7142++] = local1908.anInt4563;
 					return;
 				}
-				@Pc(1942) Class2_Sub2_Sub13 local1942;
+				@Pc(1942) SecondaryLinkable_Sub13 local1942;
 				if (arg0 == 5207) {
 					local1942 = Static30.method5059(anIntArray578[--anInt7142]);
 					if (local1942 != null && local1942.aString49 != null) {
@@ -4075,7 +4075,7 @@ public final class Static472 {
 					anIntArray578[anInt7142++] = local1908.anInt4562 - local1908.anInt4559;
 					return;
 				}
-				@Pc(2139) Class2_Sub20 local2139;
+				@Pc(2139) Linkable_Sub20 local2139;
 				if (arg0 == 5212) {
 					local2139 = Static122.method2207();
 					if (local2139 == null) {
@@ -4116,9 +4116,9 @@ public final class Static472 {
 					anInt7142 -= 2;
 					local192 = anIntArray578[anInt7142];
 					local834 = anIntArray578[anInt7142 + 1];
-					@Pc(2329) Class192 local2329 = Static30.method5076(local192 >> 14 & 0x3FFF, local192 & 0x3FFF);
+					@Pc(2329) SecondaryLinkedList local2329 = Static30.method5076(local192 >> 14 & 0x3FFF, local192 & 0x3FFF);
 					local2331 = false;
-					for (@Pc(2336) Class2_Sub2_Sub13 local2336 = (Class2_Sub2_Sub13) local2329.method4352(); local2336 != null; local2336 = (Class2_Sub2_Sub13) local2329.method4350()) {
+					for (@Pc(2336) SecondaryLinkable_Sub13 local2336 = (SecondaryLinkable_Sub13) local2329.head(); local2336 != null; local2336 = (SecondaryLinkable_Sub13) local2329.next()) {
 						if (local2336.anInt4563 == local834) {
 							local2331 = true;
 							break;
@@ -4234,29 +4234,29 @@ public final class Static472 {
 					Static170.method2653(local192);
 					return;
 				}
-				@Pc(2867) Class2 local2867;
+				@Pc(2867) Linkable local2867;
 				if (arg0 == 5231) {
 					anInt7142 -= 2;
 					local192 = anIntArray578[anInt7142];
 					local1578 = anIntArray578[anInt7142 + 1] == 1;
-					if (Static232.aClass28_18 != null) {
-						local2867 = Static232.aClass28_18.method738((long) local192);
+					if (Static232.aHashTable18 != null) {
+						local2867 = Static232.aHashTable18.get((long) local192);
 						if (local2867 != null && !local1578) {
-							local2867.method9457();
+							local2867.unlink();
 							return;
 						}
 						if (local2867 == null && local1578) {
-							local2867 = new Class2();
-							Static232.aClass28_18.method735((long) local192, local2867);
+							local2867 = new Linkable();
+							Static232.aHashTable18.put((long) local192, local2867);
 						}
 					}
 					return;
 				}
-				@Pc(2914) Class2 local2914;
+				@Pc(2914) Linkable local2914;
 				if (arg0 == 5232) {
 					local192 = anIntArray578[--anInt7142];
-					if (Static232.aClass28_18 != null) {
-						local2914 = Static232.aClass28_18.method738((long) local192);
+					if (Static232.aHashTable18 != null) {
+						local2914 = Static232.aHashTable18.get((long) local192);
 						anIntArray578[anInt7142++] = local2914 == null ? 0 : 1;
 						return;
 					}
@@ -4267,23 +4267,23 @@ public final class Static472 {
 					anInt7142 -= 2;
 					local192 = anIntArray578[anInt7142];
 					local1578 = anIntArray578[anInt7142 + 1] == 1;
-					if (Static268.aClass28_22 != null) {
-						local2867 = Static268.aClass28_22.method738((long) local192);
+					if (Static268.aHashTable22 != null) {
+						local2867 = Static268.aHashTable22.get((long) local192);
 						if (local2867 != null && !local1578) {
-							local2867.method9457();
+							local2867.unlink();
 							return;
 						}
 						if (local2867 == null && local1578) {
-							local2867 = new Class2();
-							Static268.aClass28_22.method735((long) local192, local2867);
+							local2867 = new Linkable();
+							Static268.aHashTable22.put((long) local192, local2867);
 						}
 					}
 					return;
 				}
 				if (arg0 == 5234) {
 					local192 = anIntArray578[--anInt7142];
-					if (Static268.aClass28_22 != null) {
-						local2914 = Static268.aClass28_22.method738((long) local192);
+					if (Static268.aHashTable22 != null) {
+						local2914 = Static268.aHashTable22.get((long) local192);
 						anIntArray578[anInt7142++] = local2914 == null ? 0 : 1;
 						return;
 					}
@@ -4389,7 +4389,7 @@ public final class Static472 {
 						local101 = aStringArray37[anInt7139 + 1];
 						local109 = anIntArray578[--anInt7142];
 						@Pc(3411) Class153 local3411 = Static668.method8701();
-						@Pc(3417) Class2_Sub19 local3417 = Static293.method4335(Static563.aClass345_102, local3411.aIsaacRandom_1);
+						@Pc(3417) Linkable_Sub19 local3417 = Static293.method4335(Static563.aClass345_102, local3411.aIsaacRandom_1);
 						local3417.aPacketBit_1.p1(Static231.method3379(local95) + Static231.method3379(local101) + 1);
 						local3417.aPacketBit_1.pjstr(local95);
 						local3417.aPacketBit_1.pjstr(local101);
@@ -4533,7 +4533,7 @@ public final class Static472 {
 					}
 					if (arg0 == 5426) {
 						anInt7142 -= 2;
-						Class8_Sub2_Sub4_Sub1.lb = anIntArray578[anInt7142];
+						ParticleNode_Sub2_Sub4_Sub1.lb = anIntArray578[anInt7142];
 						Static39.anInt950 = anIntArray578[anInt7142 + 1];
 						return;
 					}
@@ -5496,7 +5496,7 @@ public final class Static472 {
 								return;
 							}
 							Static149.aBoolean221 = true;
-							@Pc(7662) Class2_Sub19 local7662 = Static293.method4335(Static231.aClass345_41, Static405.aClass153_1.aIsaacRandom_1);
+							@Pc(7662) Linkable_Sub19 local7662 = Static293.method4335(Static231.aClass345_41, Static405.aClass153_1.aIsaacRandom_1);
 							local7662.aPacketBit_1.p4(Static379.anInt5968);
 							Static405.aClass153_1.method3275(local7662);
 							anIntArray578[anInt7142++] = 0;
@@ -5615,7 +5615,7 @@ public final class Static472 {
 				} else if (arg0 >= 6700) {
 					if (arg0 < 6800 && Static598.aClass162_5 == Static225.aClass162_1) {
 						if (arg0 == 6700) {
-							local192 = Static548.aClass28_40.method739();
+							local192 = Static548.aHashTable40.size();
 							if (Static377.anInt5930 != -1) {
 								local192++;
 							}
@@ -5631,9 +5631,9 @@ public final class Static472 {
 								}
 								local192--;
 							}
-							@Pc(8344) Class2_Sub4 local8344 = (Class2_Sub4) Static548.aClass28_40.method736();
+							@Pc(8344) Linkable_Sub4 local8344 = (Linkable_Sub4) Static548.aHashTable40.head();
 							while (local192-- > 0) {
-								local8344 = (Class2_Sub4) Static548.aClass28_40.method740();
+								local8344 = (Linkable_Sub4) Static548.aHashTable40.next();
 							}
 							anIntArray578[anInt7142++] = local8344.anInt147;
 							return;
@@ -5778,7 +5778,7 @@ public final class Static472 {
 							local109 = anIntArray578[anInt7142 + 2];
 							@Pc(8940) Class158 local8940 = Static15.method186(local109, local192 << 16 | local834);
 							Static470.method6384();
-							@Pc(8945) Class2_Sub41 local8945 = Static84.method1661(local8940);
+							@Pc(8945) Linkable_Sub41 local8945 = Static84.method1661(local8940);
 							Static389.method5476(local8945.method6216(), local8940, local8945.anInt6904);
 							return;
 						}
@@ -6147,10 +6147,10 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!pd;I)V")
-	private static void method6422(@OriginalArg(0) Class2_Sub42 arg0, @OriginalArg(1) int arg1) {
+	private static void method6422(@OriginalArg(0) Linkable_Sub42 arg0, @OriginalArg(1) int arg1) {
 		@Pc(2) Object[] local2 = arg0.anObjectArray36;
 		@Pc(8) int local8 = (Integer) local2[0];
-		@Pc(12) Class2_Sub2_Sub10 local12 = Static488.method6525(local8);
+		@Pc(12) SecondaryLinkable_Sub10 local12 = Static488.method6525(local8);
 		if (local12 == null) {
 			return;
 		}
@@ -6335,7 +6335,7 @@ public final class Static472 {
 			}
 		}
 		@Pc(650) Class153 local650 = Static668.method8701();
-		@Pc(656) Class2_Sub19 local656 = Static293.method4335(Static278.aClass345_57, local650.aIsaacRandom_1);
+		@Pc(656) Linkable_Sub19 local656 = Static293.method4335(Static278.aClass345_57, local650.aIsaacRandom_1);
 		local656.aPacketBit_1.p1(0);
 		@Pc(665) int local665 = local656.aPacketBit_1.pos;
 		local656.aPacketBit_1.p1(local20);
@@ -6347,7 +6347,7 @@ public final class Static472 {
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(ILjava/lang/String;I)V")
 	public static void method6427(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) Class2_Sub2_Sub10 local5 = Static537.method7189(Static42.aClass242_4, arg0, -1);
+		@Pc(5) SecondaryLinkable_Sub10 local5 = Static537.method7189(Static42.aClass242_4, arg0, -1);
 		if (local5 == null) {
 			return;
 		}
@@ -6364,7 +6364,7 @@ public final class Static472 {
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!mia;II)V")
 	public static void method6429(@OriginalArg(0) Class242 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) Class2_Sub2_Sub10 local5 = Static537.method7189(arg0, arg1, arg2);
+		@Pc(5) SecondaryLinkable_Sub10 local5 = Static537.method7189(arg0, arg1, arg2);
 		if (local5 == null) {
 			return;
 		}

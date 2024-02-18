@@ -8,10 +8,10 @@ public final class Static59 {
 	public static Class73 aClass73_5;
 
 	@OriginalMember(owner = "client!bv", name = "k", descriptor = "Lclient!jga;")
-	public static final Class192 aClass192_9 = new Class192();
+	public static final SecondaryLinkedList aSecondaryLinkedList9 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "o", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_33 = new Class339();
+	public static final LinkedList aLinkedList33 = new LinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "n", descriptor = "I")
 	public static int anInt5936 = 999999;

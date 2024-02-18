@@ -17,7 +17,7 @@ public final class Static161 {
 	public static final Class345 aClass345_29 = new Class345(33, 0);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ILclient!ca;ILclient!rka;I)V")
-	public static void method2585(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PacketBit arg2, @OriginalArg(4) int arg3) {
+	public static void method2585(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PacketBit arg2, @OriginalArg(4) int arg3) {
 		@Pc(7) byte local7 = -1;
 		@Pc(15) int local15;
 		@Pc(18) int[] local18;
@@ -258,7 +258,7 @@ public final class Static161 {
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(IIIIII)V")
 	public static void method2586(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (Static400.aClass2_Sub34_28.aClass57_Sub25_3.method7208() != 0 && arg3 != 0 && Static33.anInt779 < 50 && arg2 != -1) {
-			Static409.aClass104Array1[Static33.anInt779++] = new Class104((byte) 1, arg2, arg3, arg1, arg4, 0, arg0, (Class8_Sub2) null);
+			Static409.aClass104Array1[Static33.anInt779++] = new Class104((byte) 1, arg2, arg3, arg1, arg4, 0, arg0, (ParticleNode_Sub2) null);
 		}
 	}
 
@@ -271,13 +271,13 @@ public final class Static161 {
 				break;
 			}
 			@Pc(29) boolean local29 = false;
-			@Pc(36) Class2_Sub45 local36 = (Class2_Sub45) Static18.aClass28_2.method738((long) local22);
-			@Pc(42) Class8_Sub2_Sub1_Sub2_Sub2 local42;
+			@Pc(36) Linkable_Sub45 local36 = (Linkable_Sub45) Static18.aHashTable2.get((long) local22);
+			@Pc(42) ParticleNode_Sub2_Sub1_Sub2_Sub2 local42;
 			if (local36 == null) {
-				local42 = new Class8_Sub2_Sub1_Sub2_Sub2();
+				local42 = new ParticleNode_Sub2_Sub1_Sub2_Sub2();
 				local42.anInt10740 = local22;
-				local36 = new Class2_Sub45(local42);
-				Static18.aClass28_2.method735((long) local22, local36);
+				local36 = new Linkable_Sub45(local42);
+				Static18.aHashTable2.put((long) local22, local36);
 				Static592.aClass2_Sub45Array1[Static416.anInt6378++] = local36;
 				local29 = true;
 			}
@@ -310,7 +310,7 @@ public final class Static161 {
 			}
 			local42.method9326(local170 == 1, local131 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0], local159 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0], local144, local42.method9302((byte) 91));
 			if (local42.aClass268_1.method5984()) {
-				Static89.method1714(local42.aByte144, (Class8_Sub2_Sub1_Sub2_Sub1) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (Class54) null, 0);
+				Static89.method1714(local42.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (Class54) null, 0);
 			}
 		}
 		local8.bytes();

@@ -88,7 +88,7 @@ public final class Class306_Sub1 extends Class306 {
 												local512.method8244(local523.anInt10374, local523.anInt10372, local523.anInt10373, local523.anInt10377);
 											}
 											if (arg3.method7955() > 0) {
-												@Pc(543) Class2_Sub7 local543 = local512.aClass2_Sub7_3;
+												@Pc(543) Linkable_Sub7 local543 = local512.aClass2_Sub7_3;
 												local149 = (arg2 << 9) + local543.method8426();
 												local153 = (arg0 << 9) + local543.method8429();
 												local290 = local149 >> 9;
@@ -292,28 +292,28 @@ public final class Class306_Sub1 extends Class306 {
 		@Pc(187) int local187 = (local68 << 8) + (arg3 << 9);
 		@Pc(204) boolean local204 = Static404.aBoolean465 && !super.aBoolean673 && local40.aBoolean102;
 		if (local40.method1303()) {
-			Static89.method1714(arg8, (Class8_Sub2_Sub1_Sub2_Sub1) null, arg5, arg3, (Class8_Sub2_Sub1_Sub2_Sub2) null, local40, arg6);
+			Static89.method1714(arg8, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, arg5, arg3, (ParticleNode_Sub2_Sub1_Sub2_Sub2) null, local40, arg6);
 		}
 		@Pc(248) boolean local248 = arg9 == -1 && !local40.method1300() && local40.anIntArray113 == null && !local40.aBoolean93 && !local40.aBoolean91;
 		if (Static614.aBoolean718 && (Static540.method6540(arg0) && local40.anInt1223 != 1 || !(!Static389.method5474(arg0) || local40.anInt1223 != 0))) {
 			return;
 		}
 		if (arg0 != 22) {
-			@Pc(420) Class8_Sub2_Sub1 local420;
-			@Pc(384) Class8_Sub2_Sub1_Sub3 local384;
+			@Pc(420) ParticleNode_Sub2_Sub1 local420;
+			@Pc(384) ParticleNode_Sub2_Sub1_Sub3 local384;
 			@Pc(424) int local424;
 			@Pc(495) int local495;
 			@Pc(492) int local492;
 			if (arg0 == 10 || arg0 == 11) {
 				local384 = null;
 				if (local248) {
-					@Pc(416) Class8_Sub2_Sub1_Sub3 local416 = new Class8_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
+					@Pc(416) ParticleNode_Sub2_Sub1_Sub3 local416 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
 					local384 = local416;
 					local420 = local416;
 					local424 = local416.method4222();
 				} else {
 					local424 = 15;
-					local420 = new Class8_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
+					local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
 				}
 				if (Static102.method2026(local420, false)) {
 					if (local384 != null && local384.method6860(-19717)) {
@@ -335,13 +335,13 @@ public final class Class306_Sub1 extends Class306 {
 				}
 			} else if (arg0 >= 12 && arg0 <= 17 || arg0 >= 18 && arg0 <= 21) {
 				if (local248) {
-					local384 = new Class8_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
+					local384 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
 					if (local384.method6860(-19717)) {
 						local384.method6861(arg4);
 					}
 					local420 = local384;
 				} else {
-					local420 = new Class8_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
+					local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
 				}
 				Static102.method2026(local420, false);
 				if (Static404.aBoolean465 && !super.aBoolean673 && arg0 >= 12 && arg0 <= 17 && arg0 != 13 && arg8 > 0 && local40.anInt1223 != 0) {
@@ -351,22 +351,22 @@ public final class Class306_Sub1 extends Class306 {
 					arg2.method2472(arg5, local68, arg3, !local40.aBoolean97, local65, local40.aBoolean99);
 				}
 			} else {
-				@Pc(774) Class8_Sub2_Sub3 local774;
+				@Pc(774) ParticleNode_Sub2_Sub3 local774;
 				if (arg0 == 0) {
 					@Pc(744) int local744 = local40.anInt1223;
 					if (Static648.aBoolean742 && local40.anInt1223 == -1) {
 						local744 = 1;
 					}
 					if (local248) {
-						@Pc(772) Class8_Sub2_Sub3_Sub2 local772 = new Class8_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
+						@Pc(772) ParticleNode_Sub2_Sub3_Sub2 local772 = new ParticleNode_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
 						local774 = local772;
 						if (local772.method6860(-19717)) {
 							local772.method6861(arg4);
 						}
 					} else {
-						local774 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
+						local774 = new ParticleNode_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
 					}
-					Static584.method7665(arg8, arg5, arg3, local774, (Class8_Sub2_Sub3) null);
+					Static584.method7665(arg8, arg5, arg3, local774, (ParticleNode_Sub2_Sub3) null);
 					if (arg6 == 0) {
 						if (Static404.aBoolean465 && local40.aBoolean98) {
 							local143.ka(arg5, arg3, 50);
@@ -407,19 +407,19 @@ public final class Class306_Sub1 extends Class306 {
 						Static411.method5666(arg8, arg5, arg3, local40.anInt1243);
 					}
 				} else {
-					@Pc(1079) Class8_Sub2_Sub3 local1079;
-					@Pc(1096) Class8_Sub2_Sub3_Sub2 local1096;
+					@Pc(1079) ParticleNode_Sub2_Sub3 local1079;
+					@Pc(1096) ParticleNode_Sub2_Sub3_Sub2 local1096;
 					if (arg0 == 1) {
 						if (local248) {
-							local1096 = new Class8_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
+							local1096 = new ParticleNode_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
 							local1079 = local1096;
 							if (local1096.method6860(-19717)) {
 								local1096.method6861(arg4);
 							}
 						} else {
-							local1079 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
+							local1079 = new ParticleNode_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
 						}
-						Static584.method7665(arg8, arg5, arg3, local1079, (Class8_Sub2_Sub3) null);
+						Static584.method7665(arg8, arg5, arg3, local1079, (ParticleNode_Sub2_Sub3) null);
 						if (local40.aBoolean98 && Static404.aBoolean465) {
 							if (arg6 == 0) {
 								local143.ka(arg5, arg3 + 1, 50);
@@ -437,8 +437,8 @@ public final class Class306_Sub1 extends Class306 {
 					} else if (arg0 == 2) {
 						local424 = arg6 + 1 & 0x3;
 						if (local248) {
-							@Pc(1267) Class8_Sub2_Sub3_Sub2 local1267 = new Class8_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6 + 4, local204);
-							@Pc(1283) Class8_Sub2_Sub3_Sub2 local1283 = new Class8_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, local424, local204);
+							@Pc(1267) ParticleNode_Sub2_Sub3_Sub2 local1267 = new ParticleNode_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6 + 4, local204);
+							@Pc(1283) ParticleNode_Sub2_Sub3_Sub2 local1283 = new ParticleNode_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, local424, local204);
 							if (local1267.method6860(-19717)) {
 								local1267.method6861(arg4);
 							}
@@ -448,8 +448,8 @@ public final class Class306_Sub1 extends Class306 {
 							}
 							local1079 = local1267;
 						} else {
-							local1079 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6 + 4, arg9);
-							local774 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, local424, arg9);
+							local1079 = new ParticleNode_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6 + 4, arg9);
+							local774 = new ParticleNode_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, local424, arg9);
 						}
 						Static584.method7665(arg8, arg5, arg3, local1079, local774);
 						if ((local40.anInt1223 == 1 || Static648.aBoolean742 && local40.anInt1223 == -1) && !super.aBoolean673) {
@@ -475,15 +475,15 @@ public final class Class306_Sub1 extends Class306 {
 						}
 					} else if (arg0 == 3) {
 						if (local248) {
-							local1096 = new Class8_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
+							local1096 = new ParticleNode_Sub2_Sub3_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, local204);
 							if (local1096.method6860(-19717)) {
 								local1096.method6861(arg4);
 							}
 							local1079 = local1096;
 						} else {
-							local1079 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
+							local1079 = new ParticleNode_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg0, arg6, arg9);
 						}
-						Static584.method7665(arg8, arg5, arg3, local1079, (Class8_Sub2_Sub3) null);
+						Static584.method7665(arg8, arg5, arg3, local1079, (ParticleNode_Sub2_Sub3) null);
 						if (local40.aBoolean98 && Static404.aBoolean465) {
 							if (arg6 == 0) {
 								local143.ka(arg5, arg3 + 1, 50);
@@ -500,13 +500,13 @@ public final class Class306_Sub1 extends Class306 {
 						}
 					} else if (arg0 == 9) {
 						if (local248) {
-							local384 = new Class8_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5, arg3, arg3, arg0, arg6, local204);
+							local384 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5, arg3, arg3, arg0, arg6, local204);
 							if (local384.method6860(-19717)) {
 								local384.method6861(arg4);
 							}
 							local420 = local384;
 						} else {
-							local420 = new Class8_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, local68 + arg3 - 1, arg0, arg6, arg9);
+							local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, local68 + arg3 - 1, arg0, arg6, arg9);
 						}
 						Static102.method2026(local420, false);
 						if (local40.anInt1223 == 1 && !super.aBoolean673) {
@@ -525,22 +525,22 @@ public final class Class306_Sub1 extends Class306 {
 							Static411.method5666(arg8, arg5, arg3, local40.anInt1243);
 						}
 					} else {
-						@Pc(1813) Class8_Sub2_Sub4 local1813;
+						@Pc(1813) ParticleNode_Sub2_Sub4 local1813;
 						if (arg0 == 4) {
 							if (local248) {
-								@Pc(1801) Class8_Sub2_Sub4_Sub1 local1801 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, arg6);
+								@Pc(1801) ParticleNode_Sub2_Sub4_Sub1 local1801 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, arg6);
 								if (local1801.method6860(-19717)) {
 									local1801.method6861(arg4);
 								}
 								local1813 = local1801;
 							} else {
-								local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, arg6, arg9);
+								local1813 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, arg6, arg9);
 							}
-							Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+							Static177.method2718(arg8, arg5, arg3, local1813, (ParticleNode_Sub2_Sub4) null);
 						} else {
 							@Pc(1844) int local1844;
 							@Pc(1850) Interface25 local1850;
-							@Pc(1916) Class8_Sub2_Sub4_Sub1 local1916;
+							@Pc(1916) ParticleNode_Sub2_Sub4_Sub1 local1916;
 							if (arg0 == 5) {
 								local1844 = 65;
 								local1850 = (Interface25) Static302.method4414(arg8, arg5, arg3);
@@ -548,15 +548,15 @@ public final class Class306_Sub1 extends Class306 {
 									local1844 = Static354.aClass142_4.method3063(local1850.method6859(-32136), 32).anInt1243 + 1;
 								}
 								if (local248) {
-									local1916 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, Static609.anIntArray715[arg6] * local1844, arg0, arg6);
+									local1916 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, Static609.anIntArray715[arg6] * local1844, arg0, arg6);
 									if (local1916.method6860(-19717)) {
 										local1916.method6861(arg4);
 									}
 									local1813 = local1916;
 								} else {
-									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6, arg9);
+									local1813 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, (ParticleNode_Sub2_Sub4) null);
 							} else if (arg0 == 6) {
 								local1844 = 33;
 								local1850 = (Interface25) Static302.method4414(arg8, arg5, arg3);
@@ -564,27 +564,27 @@ public final class Class306_Sub1 extends Class306 {
 									local1844 = Static354.aClass142_4.method3063(local1850.method6859(-32136), 115).anInt1243 / 2 + 1;
 								}
 								if (local248) {
-									local1916 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6 + 4);
+									local1916 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6 + 4);
 									local1813 = local1916;
 									if (local1916.method6860(-19717)) {
 										local1916.method6861(arg4);
 									}
 								} else {
-									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local1844, Static636.anIntArray742[arg6] * local1844, arg0, arg6 + 4, arg9);
+									local1813 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local1844, Static636.anIntArray742[arg6] * local1844, arg0, arg6 + 4, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, (ParticleNode_Sub2_Sub4) null);
 							} else if (arg0 == 7) {
 								local1844 = arg6 + 2 & 0x3;
 								if (local248) {
-									@Pc(2068) Class8_Sub2_Sub4_Sub1 local2068 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local1844 + 4);
+									@Pc(2068) ParticleNode_Sub2_Sub4_Sub1 local2068 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local1844 + 4);
 									local1813 = local2068;
 									if (local2068.method6860(-19717)) {
 										local2068.method6861(arg4);
 									}
 								} else {
-									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local1844 + 4, arg9);
+									local1813 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local1844 + 4, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, (ParticleNode_Sub2_Sub4) null);
 							} else if (arg0 == 8) {
 								local492 = arg6 + 2 & 0x3;
 								local495 = 33;
@@ -592,11 +592,11 @@ public final class Class306_Sub1 extends Class306 {
 								if (local2134 != null) {
 									local495 = Static354.aClass142_4.method3063(local2134.method6859(-32136), 92).anInt1243 / 2 + 1;
 								}
-								@Pc(2178) Class8_Sub2_Sub4 local2178;
-								@Pc(2200) Class8_Sub2_Sub4 local2200;
+								@Pc(2178) ParticleNode_Sub2_Sub4 local2178;
+								@Pc(2200) ParticleNode_Sub2_Sub4 local2200;
 								if (local248) {
-									local2178 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local495, Static636.anIntArray742[arg6] * local495, arg0, arg6 + 4);
-									local2200 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local492 + 4);
+									local2178 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local495, Static636.anIntArray742[arg6] * local495, arg0, arg6 + 4);
+									local2200 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local492 + 4);
 									if (local2178.method6860(-19717)) {
 										local2178.method6861(arg4);
 									}
@@ -604,8 +604,8 @@ public final class Class306_Sub1 extends Class306 {
 										local2200.method6861(arg4);
 									}
 								} else {
-									local2178 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local495, Static636.anIntArray742[arg6] * local495, arg0, arg6 + 4, arg9);
-									local2200 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local492 + 4, arg9);
+									local2178 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static407.anIntArray489[arg6] * local495, Static636.anIntArray742[arg6] * local495, arg0, arg6 + 4, arg9);
+									local2200 = new ParticleNode_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, 0, 0, arg0, local492 + 4, arg9);
 								}
 								Static177.method2718(arg8, arg5, arg3, local2178, local2200);
 							}
@@ -614,15 +614,15 @@ public final class Class306_Sub1 extends Class306 {
 				}
 			}
 		} else if (Static400.aClass2_Sub34_28.aClass57_Sub6_1.method2714() != 0 || local40.anInt1271 != 0 || local40.anInt1242 == 1 || local40.aBoolean101) {
-			@Pc(325) Class8_Sub2_Sub2 local325;
+			@Pc(325) ParticleNode_Sub2_Sub2 local325;
 			if (local248) {
-				@Pc(341) Class8_Sub2_Sub2_Sub1 local341 = new Class8_Sub2_Sub2_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg6, local204);
+				@Pc(341) ParticleNode_Sub2_Sub2_Sub1 local341 = new ParticleNode_Sub2_Sub2_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg6, local204);
 				local325 = local341;
 				if (local341.method6860(-19717)) {
 					local341.method6861(arg4);
 				}
 			} else {
-				local325 = new Class8_Sub2_Sub2_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg6, arg9);
+				local325 = new ParticleNode_Sub2_Sub2_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg6, arg9);
 			}
 			Static61.method1299(arg8, arg5, arg3, local325);
 			if (local40.anInt1242 == 1 && arg2 != null) {
@@ -662,7 +662,7 @@ public final class Class306_Sub1 extends Class306 {
 									local78.method8244(local91.anInt10374, local91.anInt10372, local91.anInt10373, local91.anInt10377);
 								}
 								if (arg1.method7955() > 0) {
-									@Pc(108) Class2_Sub7 local108 = local78.aClass2_Sub7_3;
+									@Pc(108) Linkable_Sub7 local108 = local78.aClass2_Sub7_3;
 									local116 = local108.method8426() >> 9;
 									local122 = local108.method8429() >> 9;
 									if (arg7 == local78.anInt9369 && local116 >= local18 && local116 < local18 + 8 && local122 >= local24 && local24 + 8 > local122) {

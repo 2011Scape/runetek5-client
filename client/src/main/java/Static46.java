@@ -12,7 +12,7 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!bja", name = "a", descriptor = "(BZI)I")
 	public static int method1082(@OriginalArg(2) int arg0) {
-		@Pc(13) Class2_Sub22 local13 = Static556.method7303(arg0, false);
+		@Pc(13) Linkable_Sub22 local13 = Static556.method7303(arg0, false);
 		if (local13 == null) {
 			return Static503.aClass335_1.method7657(arg0).anInt2072;
 		}
@@ -27,7 +27,7 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!bja", name = "a", descriptor = "(I)V")
 	public static void method1084() {
-		for (@Pc(8) Class2_Sub5 local8 = (Class2_Sub5) Static106.aClass28_11.method736(); local8 != null; local8 = (Class2_Sub5) Static106.aClass28_11.method740()) {
+		for (@Pc(8) Linkable_Sub5 local8 = (Linkable_Sub5) Static106.aHashTable11.head(); local8 != null; local8 = (Linkable_Sub5) Static106.aHashTable11.next()) {
 			Static121.method2199(local8.anInt182);
 		}
 	}

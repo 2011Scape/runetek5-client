@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class113 {
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "Lclient!fi;")
-	private Class8_Sub4 aClass8_Sub4_2;
+	private ParticleNode_Sub4 aClass8_Sub4_2;
 
 	@OriginalMember(owner = "client!et", name = "e", descriptor = "Lclient!fi;")
-	public final Class8_Sub4 aClass8_Sub4_1 = new Class8_Sub4();
+	public final ParticleNode_Sub4 aClass8_Sub4_1 = new ParticleNode_Sub4();
 
 	@OriginalMember(owner = "client!et", name = "<init>", descriptor = "()V")
 	public Class113() {
@@ -21,7 +21,7 @@ public final class Class113 {
 	@OriginalMember(owner = "client!et", name = "b", descriptor = "(I)V")
 	public void method2487() {
 		while (true) {
-			@Pc(16) Class8_Sub4 local16 = this.aClass8_Sub4_1.aClass8_Sub4_10;
+			@Pc(16) ParticleNode_Sub4 local16 = this.aClass8_Sub4_1.aClass8_Sub4_10;
 			if (local16 == this.aClass8_Sub4_1) {
 				this.aClass8_Sub4_2 = null;
 				return;
@@ -31,7 +31,7 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(ILclient!fi;)V")
-	public void method2488(@OriginalArg(1) Class8_Sub4 arg0) {
+	public void method2488(@OriginalArg(1) ParticleNode_Sub4 arg0) {
 		if (arg0.aClass8_Sub4_9 != null) {
 			arg0.method6686();
 		}
@@ -44,15 +44,15 @@ public final class Class113 {
 	@OriginalMember(owner = "client!et", name = "c", descriptor = "(I)I")
 	public int method2489() {
 		@Pc(7) int local7 = 0;
-		for (@Pc(19) Class8_Sub4 local19 = this.aClass8_Sub4_1.aClass8_Sub4_10; local19 != this.aClass8_Sub4_1; local19 = local19.aClass8_Sub4_10) {
+		for (@Pc(19) ParticleNode_Sub4 local19 = this.aClass8_Sub4_1.aClass8_Sub4_10; local19 != this.aClass8_Sub4_1; local19 = local19.aClass8_Sub4_10) {
 			local7++;
 		}
 		return local7;
 	}
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(Z)Lclient!fi;")
-	public Class8_Sub4 method2490() {
-		@Pc(6) Class8_Sub4 local6 = this.aClass8_Sub4_2;
+	public ParticleNode_Sub4 method2490() {
+		@Pc(6) ParticleNode_Sub4 local6 = this.aClass8_Sub4_2;
 		if (local6 == this.aClass8_Sub4_1) {
 			this.aClass8_Sub4_2 = null;
 			return null;
@@ -63,8 +63,8 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(I)Lclient!fi;")
-	public Class8_Sub4 method2491() {
-		@Pc(15) Class8_Sub4 local15 = this.aClass8_Sub4_1.aClass8_Sub4_10;
+	public ParticleNode_Sub4 method2491() {
+		@Pc(15) ParticleNode_Sub4 local15 = this.aClass8_Sub4_1.aClass8_Sub4_10;
 		if (local15 == this.aClass8_Sub4_1) {
 			this.aClass8_Sub4_2 = null;
 			return null;

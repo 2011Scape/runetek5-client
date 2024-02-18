@@ -94,7 +94,7 @@ public final class Class406 implements Interface14 {
 	}
 
 	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(Lclient!ut;II)V")
-	public void method9366(@OriginalArg(0) Class2_Sub2_Sub19 arg0, @OriginalArg(1) int arg1) {
+	public void method9366(@OriginalArg(0) SecondaryLinkable_Sub19 arg0, @OriginalArg(1) int arg1) {
 		if (this.anInt10825 == -1) {
 			throw new RuntimeException();
 		}

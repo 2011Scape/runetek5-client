@@ -17,7 +17,7 @@ public final class Static610 {
 			Static321.anIntArray388[Static652.anInt9713++] = arg0;
 		}
 		@Pc(33) int local33 = arg1.gBit(2);
-		@Pc(37) Class8_Sub2_Sub1_Sub2_Sub1 local37 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0];
+		@Pc(37) ParticleNode_Sub2_Sub1_Sub2_Sub1 local37 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0];
 		if (local33 != 0) {
 			@Pc(165) int local165;
 			@Pc(170) int local170;

@@ -16,10 +16,10 @@ public final class Class319_Sub1 extends Class319 implements KeyListener, FocusL
 	private Component aComponent4;
 
 	@OriginalMember(owner = "client!ui", name = "p", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_70 = new Class339();
+	private final LinkedList aLinkedList70 = new LinkedList();
 
 	@OriginalMember(owner = "client!ui", name = "q", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_71 = new Class339();
+	private final LinkedList aLinkedList71 = new LinkedList();
 
 	@OriginalMember(owner = "client!ui", name = "i", descriptor = "[Z")
 	private final boolean[] aBooleanArray31 = new boolean[112];
@@ -47,12 +47,12 @@ public final class Class319_Sub1 extends Class319 implements KeyListener, FocusL
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(CIII)V")
 	private void method8485(@OriginalArg(0) char arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) Class2_Sub18 local7 = new Class2_Sub18();
+		@Pc(7) Linkable_Sub18 local7 = new Linkable_Sub18();
 		local7.aChar4 = arg0;
 		local7.anInt2881 = arg1;
 		local7.anInt2886 = arg2;
 		local7.aLong99 = Static588.method7715();
-		this.aClass339_71.method7711(local7);
+		this.aLinkedList71.addTail(local7);
 	}
 
 	@OriginalMember(owner = "client!ui", name = "focusGained", descriptor = "(Ljava/awt/event/FocusEvent;)V")
@@ -63,7 +63,7 @@ public final class Class319_Sub1 extends Class319 implements KeyListener, FocusL
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(I)Lclient!wka;")
 	@Override
 	public Interface27 method8478() {
-		return (Interface27) this.aClass339_70.method7705();
+		return (Interface27) this.aLinkedList70.removeHead();
 	}
 
 	@OriginalMember(owner = "client!ui", name = "keyReleased", descriptor = "(Ljava/awt/event/KeyEvent;)V")
@@ -81,42 +81,42 @@ public final class Class319_Sub1 extends Class319 implements KeyListener, FocusL
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(B)V")
 	@Override
 	public synchronized void method8481() {
-		this.aClass339_70.method7700();
-		for (@Pc(22) Class2_Sub18 local22 = (Class2_Sub18) this.aClass339_71.method7705(); local22 != null; local22 = (Class2_Sub18) this.aClass339_71.method7705()) {
+		this.aLinkedList70.clear();
+		for (@Pc(22) Linkable_Sub18 local22 = (Linkable_Sub18) this.aLinkedList71.removeHead(); local22 != null; local22 = (Linkable_Sub18) this.aLinkedList71.removeHead()) {
 			local22.anInt2885 = this.method8484();
 			if (local22.anInt2886 == 0) {
 				if (!this.aBooleanArray31[local22.anInt2881]) {
-					@Pc(152) Class2_Sub18 local152 = new Class2_Sub18();
+					@Pc(152) Linkable_Sub18 local152 = new Linkable_Sub18();
 					local152.aChar4 = '\u0000';
 					local152.anInt2881 = local22.anInt2881;
 					local152.anInt2886 = 0;
 					local152.anInt2885 = local22.anInt2885;
 					local152.aLong99 = local22.aLong99;
-					this.aClass339_70.method7711(local152);
+					this.aLinkedList70.addTail(local152);
 					this.aBooleanArray31[local22.anInt2881] = true;
 				}
 				local22.anInt2886 = 2;
-				this.aClass339_70.method7711(local22);
+				this.aLinkedList70.addTail(local22);
 			} else if (local22.anInt2886 == 1) {
 				if (this.aBooleanArray31[local22.anInt2881]) {
-					this.aClass339_70.method7711(local22);
+					this.aLinkedList70.addTail(local22);
 					this.aBooleanArray31[local22.anInt2881] = false;
 				}
 			} else if (local22.anInt2886 == -1) {
 				for (@Pc(65) int local65 = 0; local65 < 112; local65++) {
 					if (this.aBooleanArray31[local65]) {
-						@Pc(78) Class2_Sub18 local78 = new Class2_Sub18();
+						@Pc(78) Linkable_Sub18 local78 = new Linkable_Sub18();
 						local78.anInt2881 = local65;
 						local78.anInt2885 = local22.anInt2885;
 						local78.aChar4 = '\u0000';
 						local78.anInt2886 = 1;
 						local78.aLong99 = local22.aLong99;
-						this.aClass339_70.method7711(local78);
+						this.aLinkedList70.addTail(local78);
 						this.aBooleanArray31[local65] = false;
 					}
 				}
 			} else if (local22.anInt2886 == 3) {
-				this.aClass339_70.method7711(local22);
+				this.aLinkedList70.addTail(local22);
 			}
 		}
 	}
@@ -174,8 +174,8 @@ public final class Class319_Sub1 extends Class319 implements KeyListener, FocusL
 		for (@Pc(26) int local26 = 0; local26 < 112; local26++) {
 			this.aBooleanArray31[local26] = false;
 		}
-		this.aClass339_70.method7700();
-		this.aClass339_71.method7700();
+		this.aLinkedList70.clear();
+		this.aLinkedList71.clear();
 	}
 
 	@OriginalMember(owner = "client!ui", name = "focusLost", descriptor = "(Ljava/awt/event/FocusEvent;)V")

@@ -11,7 +11,7 @@ public final class Static522 {
 	public static int anInt7900 = 0;
 
 	@OriginalMember(owner = "client!qha", name = "Xd", descriptor = "Lclient!cja;")
-	public static Class2_Sub12 aClass2_Sub12_4 = null;
+	public static Linkable_Sub12 aClass2_Sub12_4 = null;
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIJ)Ljava/lang/String;")
 	public static String method6994(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
@@ -23,7 +23,7 @@ public final class Static522 {
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(ILclient!bn;)V")
-	public static void method7041(@OriginalArg(1) Class2_Sub8 arg0) {
+	public static void method7041(@OriginalArg(1) Linkable_Sub8 arg0) {
 		Static581.aClass2_Sub6_Sub1_3.method934(arg0, false);
 		if (Static426.aClass56_2 != null) {
 			Static426.aClass56_2.method3582(Static581.aClass2_Sub6_Sub1_3);

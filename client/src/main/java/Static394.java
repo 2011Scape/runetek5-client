@@ -45,7 +45,7 @@ public final class Static394 {
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(ZILjava/lang/String;)V")
 	public static void method5544(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5963(2, (long) arg0);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(2, (long) arg0);
 		local9.method202();
 		local9.aString1 = arg1;
 	}

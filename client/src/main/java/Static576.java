@@ -8,7 +8,7 @@ public final class Static576 {
 	public static int anInt8580;
 
 	@OriginalMember(owner = "client!sba", name = "e", descriptor = "[Lclient!eo;")
-	public static Class8_Sub2[] aClass8_Sub2Array9;
+	public static ParticleNode_Sub2[] aClass8_Sub2Array9;
 
 	@OriginalMember(owner = "client!sba", name = "d", descriptor = "I")
 	public static int anInt8585;
@@ -31,7 +31,7 @@ public final class Static576 {
 				if (Static12.aClass123_4 == null) {
 					Static12.aClass123_4 = new Class123(Static91.aClass330_117, Static296.aClass330_61);
 				}
-				@Pc(36) Class2_Sub6_Sub1 local36 = Static581.aClass2_Sub6_Sub1_3;
+				@Pc(36) Linkable_Sub6_Sub1 local36 = Static581.aClass2_Sub6_Sub1_3;
 				if (Static117.aClass2_Sub6_Sub1_2 != null) {
 					local36 = Static117.aClass2_Sub6_Sub1_2;
 				}
@@ -86,6 +86,6 @@ public final class Static576 {
 
 	@OriginalMember(owner = "client!sba", name = "b", descriptor = "(B)V")
 	public static void method7614() {
-		Static286.aClass28_23.method737();
+		Static286.aHashTable23.clear();
 	}
 }

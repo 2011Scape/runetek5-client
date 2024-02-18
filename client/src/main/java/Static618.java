@@ -11,7 +11,7 @@ public final class Static618 {
 	public static final Class225 aClass225_226 = new Class225(141, 2);
 
 	@OriginalMember(owner = "client!tja", name = "G", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_68 = new Class339();
+	public static final LinkedList aLinkedList68 = new LinkedList();
 
 	@OriginalMember(owner = "client!tja", name = "z", descriptor = "Lclient!lga;")
 	public static final Class225 aClass225_227 = new Class225(81, 12);
@@ -66,7 +66,7 @@ public final class Static618 {
 	public static void method8319(@OriginalArg(0) PacketBit arg0) {
 		for (@Pc(10) int local10 = 0; local10 < Static652.anInt9713; local10++) {
 			@Pc(18) int local18 = Static321.anIntArray388[local10];
-			@Pc(22) Class8_Sub2_Sub1_Sub2_Sub1 local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
+			@Pc(22) ParticleNode_Sub2_Sub1_Sub2_Sub1 local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
 			@Pc(26) int local26 = arg0.g1();
 			if ((local26 & 0x80) != 0) {
 				local26 += arg0.g1() << 8;
@@ -124,8 +124,8 @@ public final class Static618 {
 				local185 = local143[local175];
 				for (local187 = 0; local187 < local106; local187++) {
 					@Pc(195) int local195 = (local187 << 14) / local106;
-					@Pc(203) int local203 = Class361.anIntArray741[local195] * local181 >> 14;
-					local211 = local185 * Class361.anIntArray740[local195] >> 14;
+					@Pc(203) int local203 = LruHashTable.anIntArray741[local195] * local181 >> 14;
+					local211 = local185 * LruHashTable.anIntArray740[local195] >> 14;
 					local173[local175][local187] = local162.method2230(local211, 0, local203);
 				}
 			}

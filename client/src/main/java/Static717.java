@@ -15,5 +15,5 @@ public final class Static717 {
 	public static final Class82 aClass82_232 = new Class82(30);
 
 	@OriginalMember(owner = "client!wn", name = "f", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_81 = new Class339();
+	public static final LinkedList aLinkedList81 = new LinkedList();
 }

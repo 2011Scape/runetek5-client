@@ -8,7 +8,7 @@ public final class Static310 {
 	public static final int[] anIntArray379 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "([II[I[ILclient!cg;)V")
-	public static void method4505(@OriginalArg(0) int[] arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Class8_Sub2_Sub1_Sub2 arg3) {
+	public static void method4505(@OriginalArg(0) int[] arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2 arg3) {
 		for (@Pc(14) int local14 = 0; local14 < arg1.length; local14++) {
 			@Pc(20) int local20 = arg1[local14];
 			@Pc(24) int local24 = arg0[local14];

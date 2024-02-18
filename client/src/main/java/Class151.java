@@ -28,8 +28,8 @@ public final class Class151 {
 	}
 
 	@OriginalMember(owner = "client!gt", name = "a", descriptor = "(BI)Lclient!bq;")
-	public Class2_Sub2_Sub3 method3234(@OriginalArg(1) int arg0) {
-		@Pc(11) Class2_Sub2_Sub3 local11 = (Class2_Sub2_Sub3) this.aClass82_79.method2156((long) arg0);
+	public SecondaryLinkable_Sub3 method3234(@OriginalArg(1) int arg0) {
+		@Pc(11) SecondaryLinkable_Sub3 local11 = (SecondaryLinkable_Sub3) this.aClass82_79.method2156((long) arg0);
 		if (local11 != null) {
 			return local11;
 		}
@@ -39,7 +39,7 @@ public final class Class151 {
 		} else {
 			local28 = this.aClass330_51.method7595(arg0 & 0x7FFF, 0);
 		}
-		local11 = new Class2_Sub2_Sub3();
+		local11 = new SecondaryLinkable_Sub3();
 		if (local28 != null) {
 			local11.method1180(new Packet(local28));
 		}

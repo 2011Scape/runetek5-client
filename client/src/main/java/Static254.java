@@ -44,13 +44,13 @@ public final class Static254 {
 		}
 		Static390.anInt6126 = 0;
 		Static416.anInt6378 = 0;
-		Static18.aClass28_2.method737();
-		Static505.aClass339_77.method7700();
-		Static346.aClass28_29.method737();
+		Static18.aHashTable2.clear();
+		Static505.aLinkedList77.clear();
+		Static346.aHashTable29.clear();
 		Static422.aClass130_9.method2789();
-		Static497.aClass28_35.method737();
-		Static159.aClass339_15 = new Class339();
-		Static227.aClass339_18 = new Class339();
+		Static497.aHashTable35.clear();
+		Static159.aLinkedList15 = new LinkedList();
+		Static227.aLinkedList18 = new LinkedList();
 		Static34.aClass304_1.method6867();
 		Static457.method6230();
 		Static121.anInt2333 = 0;
@@ -71,9 +71,9 @@ public final class Static254 {
 		if (Static377.anInt5930 != -1) {
 			Static347.method5094(Static377.anInt5930);
 		}
-		for (@Pc(8803) Class2_Sub4 local8803 = (Class2_Sub4) Static548.aClass28_40.method736(); local8803 != null; local8803 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-			if (!local8803.method9458()) {
-				local8803 = (Class2_Sub4) Static548.aClass28_40.method736();
+		for (@Pc(8803) Linkable_Sub4 local8803 = (Linkable_Sub4) Static548.aHashTable40.head(); local8803 != null; local8803 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+			if (!local8803.isLinked()) {
+				local8803 = (Linkable_Sub4) Static548.aHashTable40.head();
 				if (local8803 == null) {
 					break;
 				}
@@ -81,7 +81,7 @@ public final class Static254 {
 			Static449.method6115(false, true, local8803);
 		}
 		Static377.anInt5930 = -1;
-		Static548.aClass28_40 = new Class28(8);
+		Static548.aHashTable40 = new HashTable(8);
 		Static656.method6692();
 		Static390.aClass158_9 = null;
 		for (@Pc(8849) int local8849 = 0; local8849 < 8; local8849++) {

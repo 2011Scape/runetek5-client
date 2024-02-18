@@ -47,14 +47,14 @@ public final class Static223 {
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIIII)V")
 	public static void method9094(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(22) Class2_Sub2_Sub2 local22 = Static440.method5963(18, (long) arg0 << 32 | (long) arg2);
+		@Pc(22) SecondaryLinkable_Sub2 local22 = Static440.method5963(18, (long) arg0 << 32 | (long) arg2);
 		local22.method202();
 		local22.anInt197 = arg3;
 		local22.anInt195 = arg1;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ZLclient!qf;)Lclient!pba;")
-	public static Class286 method9095(@OriginalArg(1) Class8_Sub2_Sub1 arg0) {
+	public static Class286 method9095(@OriginalArg(1) ParticleNode_Sub2_Sub1 arg0) {
 		@Pc(7) Class286 local7;
 		if (Static620.aClass286_3 == null) {
 			local7 = new Class286();

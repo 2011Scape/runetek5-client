@@ -18,11 +18,11 @@ public final class Static77 {
 
 	@OriginalMember(owner = "client!ci", name = "a", descriptor = "(IZ)V")
 	public static void method1557() {
-		@Pc(13) Class2_Sub19 local13 = Static293.method4335(Static317.aClass345_62, Static405.aClass153_2.aIsaacRandom_1);
+		@Pc(13) Linkable_Sub19 local13 = Static293.method4335(Static317.aClass345_62, Static405.aClass153_2.aIsaacRandom_1);
 		Static405.aClass153_2.method3275(local13);
-		for (@Pc(22) Class2_Sub4 local22 = (Class2_Sub4) Static548.aClass28_40.method736(); local22 != null; local22 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-			if (!local22.method9458()) {
-				local22 = (Class2_Sub4) Static548.aClass28_40.method736();
+		for (@Pc(22) Linkable_Sub4 local22 = (Linkable_Sub4) Static548.aHashTable40.head(); local22 != null; local22 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+			if (!local22.isLinked()) {
+				local22 = (Linkable_Sub4) Static548.aHashTable40.head();
 				if (local22 == null) {
 					break;
 				}
@@ -39,7 +39,7 @@ public final class Static77 {
 
 	@OriginalMember(owner = "client!ci", name = "b", descriptor = "(IZ)V")
 	public static void method1558(@OriginalArg(0) int arg0) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5963(8, (long) arg0);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(8, (long) arg0);
 		local9.method205();
 	}
 

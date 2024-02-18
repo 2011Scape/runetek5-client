@@ -6,5 +6,5 @@ public final class Static336 {
 	public static Class330 aClass330_68;
 
 	@OriginalMember(owner = "client!kka", name = "d", descriptor = "Lclient!nn;")
-	public static Class2_Sub6_Sub3 aClass2_Sub6_Sub3_1;
+	public static Linkable_Sub6_Sub3 aClass2_Sub6_Sub3_1;
 }

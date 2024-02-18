@@ -9,7 +9,7 @@ public final class Static633 {
 
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "(ZI)V")
 	public static void method9425(@OriginalArg(1) int arg0) {
-		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5963(6, (long) arg0);
+		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.method5963(6, (long) arg0);
 		local16.method205();
 	}
 

@@ -38,7 +38,7 @@ public final class Class153 {
 	private int anInt3649;
 
 	@OriginalMember(owner = "client!gw", name = "h", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_17 = new Class339();
+	private final LinkedList aLinkedList17 = new LinkedList();
 
 	@OriginalMember(owner = "client!gw", name = "x", descriptor = "I")
 	private int anInt3640 = 0;
@@ -79,7 +79,7 @@ public final class Class153 {
 
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(B)V")
 	public void method3272() {
-		this.aClass339_17.method7700();
+		this.aLinkedList17.clear();
 		this.anInt3640 = 0;
 	}
 
@@ -90,7 +90,7 @@ public final class Class153 {
 		}
 		this.aPacket_6.pos = 0;
 		while (true) {
-			@Pc(23) Class2_Sub19 local23 = (Class2_Sub19) this.aClass339_17.method7699(65280);
+			@Pc(23) Linkable_Sub19 local23 = (Linkable_Sub19) this.aLinkedList17.head();
 			if (local23 == null || local23.anInt2989 > this.aPacket_6.data.length - this.aPacket_6.pos) {
 				this.aClass348_1.method7931(this.aPacket_6.data, this.aPacket_6.pos);
 				this.anInt3647 = 0;
@@ -99,7 +99,7 @@ public final class Class153 {
 			}
 			this.aPacket_6.pdata(local23.aPacketBit_1.data, 0, local23.anInt2989);
 			this.anInt3640 -= local23.anInt2989;
-			local23.method9457();
+			local23.unlink();
 			local23.aPacketBit_1.release();
 			local23.method2768();
 		}
@@ -114,8 +114,8 @@ public final class Class153 {
 	}
 
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
-	public void method3275(@OriginalArg(1) Class2_Sub19 arg0) {
-		this.aClass339_17.method7711(arg0);
+	public void method3275(@OriginalArg(1) Linkable_Sub19 arg0) {
+		this.aLinkedList17.addTail(arg0);
 		arg0.anInt2989 = arg0.aPacketBit_1.pos;
 		arg0.aPacketBit_1.pos = 0;
 		this.anInt3640 += arg0.anInt2989;

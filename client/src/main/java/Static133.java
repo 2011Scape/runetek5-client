@@ -9,7 +9,7 @@ public final class Static133 {
 	public static final Class225 aClass225_55 = new Class225(90, 17);
 
 	@OriginalMember(owner = "client!ed", name = "g", descriptor = "Lclient!sia;")
-	public static final Class339 aClass339_13 = new Class339();
+	public static final LinkedList aLinkedList13 = new LinkedList();
 
 	@OriginalMember(owner = "client!ed", name = "d", descriptor = "Lclient!ss;")
 	public static final Class345 aClass345_26 = new Class345(89, 4);

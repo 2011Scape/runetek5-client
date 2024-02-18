@@ -6,5 +6,5 @@ public final class Static268 {
 	public static final int[] anIntArray332 = new int[32];
 
 	@OriginalMember(owner = "client!ih", name = "D", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_22 = new Class28(8);
+	public static final HashTable aHashTable22 = new HashTable(8);
 }

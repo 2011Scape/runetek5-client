@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ge")
-public class Packet extends Class2 {
+public class Packet extends Linkable {
 
 	@OriginalMember(owner = "client!vl", name = "i", descriptor = "[I")
 	public static final int[] crctable = new int[256];

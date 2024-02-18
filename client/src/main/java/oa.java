@@ -32,7 +32,7 @@ public final class oa extends Class19 implements Interface5 {
 	private boolean aBoolean509 = false;
 
 	@OriginalMember(owner = "client!oa", name = "E", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_38 = new Class339();
+	private final LinkedList aLinkedList38 = new LinkedList();
 
 	@OriginalMember(owner = "client!oa", name = "I", descriptor = "I")
 	private int anInt6768 = 4096;
@@ -41,7 +41,7 @@ public final class oa extends Class19 implements Interface5 {
 	private int anInt6769 = 4096;
 
 	@OriginalMember(owner = "client!oa", name = "x", descriptor = "Lclient!av;")
-	private final Class28 aClass28_33 = new Class28(4);
+	private final HashTable aHashTable33 = new HashTable(4);
 
 	@OriginalMember(owner = "client!oa", name = "G", descriptor = "Z")
 	private boolean aBoolean510 = false;
@@ -96,7 +96,7 @@ public final class oa extends Class19 implements Interface5 {
 	public void method7977(@OriginalArg(0) int arg0) {
 		Static307.method4478();
 		this.d(arg0);
-		for (@Pc(10) ya local10 = (ya) this.aClass339_38.method7699(65280); local10 != null; local10 = (ya) this.aClass339_38.method7706()) {
+		for (@Pc(10) ya local10 = (ya) this.aLinkedList38.head(); local10 != null; local10 = (ya) this.aLinkedList38.next()) {
 			local10.r();
 		}
 	}
@@ -138,7 +138,7 @@ public final class oa extends Class19 implements Interface5 {
 		@Pc(3) int local3 = 0;
 		@Pc(5) int local5 = 0;
 		@Pc(7) int local7 = 0;
-		for (@Pc(15) Class8_Sub4_Sub2 local15 = (Class8_Sub4_Sub2) arg0.aClass113_1.method2491(); local15 != null; local15 = (Class8_Sub4_Sub2) arg0.aClass113_1.method2490()) {
+		for (@Pc(15) ParticleNode_Sub4_Sub2 local15 = (ParticleNode_Sub4_Sub2) arg0.aClass113_1.method2491(); local15 != null; local15 = (ParticleNode_Sub4_Sub2) arg0.aClass113_1.method2490()) {
 			Static445.anIntArray539[local1++] = local15.anInt7537;
 			Static445.anIntArray539[local1++] = local15.anInt7534;
 			Static445.anIntArray539[local1++] = local15.anInt7536;
@@ -161,7 +161,7 @@ public final class oa extends Class19 implements Interface5 {
 			this.aP1 = null;
 			this.t((p) null);
 		} else {
-			@Pc(10) p local10 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+			@Pc(10) p local10 = (p) this.aHashTable33.get((long) arg0.hashCode());
 			this.aP1 = local10;
 			this.t(local10);
 		}
@@ -173,7 +173,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7935(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aHashTable33.get((long) arg0.hashCode());
 		local8.method6439(arg0, arg1, arg2);
 		if (arg0 != null && arg0 == this.aP1.aCanvas9) {
 			this.method8019(arg0);
@@ -245,7 +245,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public void method7938(@OriginalArg(0) Class2_Sub13 arg0) {
+	public void method7938(@OriginalArg(0) Linkable_Sub13 arg0) {
 		this.aYa2 = (ya) arg0;
 		this.va(arg0);
 	}
@@ -300,8 +300,8 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public Class2_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
-		return new Class2_Sub7_Sub3(arg0, arg1, arg2, arg3, arg4, arg5);
+	public Linkable_Sub7 method7941(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		return new Linkable_Sub7_Sub3(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "KA", descriptor = "(IIII)V")
@@ -329,9 +329,9 @@ public final class oa extends Class19 implements Interface5 {
 		if (this.aP1.aCanvas9 == arg0) {
 			this.method8019((Canvas) null);
 		}
-		@Pc(18) p local18 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(18) p local18 = (p) this.aHashTable33.get((long) arg0.hashCode());
 		if (local18 != null) {
-			local18.method9457();
+			local18.unlink();
 			local18.method6442();
 		}
 	}
@@ -370,9 +370,9 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public Class2_Sub13 method7961(@OriginalArg(0) int arg0) {
+	public Linkable_Sub13 method7961(@OriginalArg(0) int arg0) {
 		@Pc(5) ya local5 = new ya(this, arg0);
-		this.aClass339_38.method7711(local5);
+		this.aLinkedList38.addTail(local5);
 		return local5;
 	}
 
@@ -474,7 +474,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8022(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aHashTable33.get((long) arg0.hashCode());
 		if (local8 == null) {
 			try {
 				@Pc(15) Class local15 = Class.forName("java.awt.Canvas");
@@ -483,7 +483,7 @@ public final class oa extends Class19 implements Interface5 {
 			} catch (@Pc(39) Exception local39) {
 			}
 			local8 = new p(this, arg0, arg1, arg2);
-			this.aClass28_33.method735((long) arg0.hashCode(), local8);
+			this.aHashTable33.put((long) arg0.hashCode(), local8);
 		} else if (local8.anInt7161 != arg1 || local8.anInt7162 != arg2) {
 			local8.method6439(arg0, arg1, arg2);
 		}
@@ -627,7 +627,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public void method8009(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub7[] arg1) {
 		@Pc(1) int local1 = 0;
 		for (@Pc(3) int local3 = 0; local3 < arg0; local3++) {
 			Static445.anIntArray540[local1++] = arg1[local3].method8426();
@@ -777,11 +777,11 @@ public final class oa extends Class19 implements Interface5 {
 		this.aP1 = null;
 		this.aYa2 = null;
 		this.aClass73_8 = null;
-		this.aClass28_33.method737();
-		for (@Pc(26) ya local26 = (ya) this.aClass339_38.method7699(65280); local26 != null; local26 = (ya) this.aClass339_38.method7706()) {
+		this.aHashTable33.clear();
+		for (@Pc(26) ya local26 = (ya) this.aLinkedList38.head(); local26 != null; local26 = (ya) this.aLinkedList38.next()) {
 			local26.ga();
 		}
-		this.aClass339_38.method7700();
+		this.aLinkedList38.clear();
 		this.FA();
 		if (this.aBoolean510) {
 			Static300.method4390(false, true);
@@ -808,7 +808,7 @@ public final class oa extends Class19 implements Interface5 {
 	public native void la();
 
 	@OriginalMember(owner = "client!oa", name = "va", descriptor = "(Lclient!za;)V")
-	private native void va(@OriginalArg(0) Class2_Sub13 arg0);
+	private native void va(@OriginalArg(0) Linkable_Sub13 arg0);
 
 	@OriginalMember(owner = "client!oa", name = "C", descriptor = "(Z)V")
 	public native void C(@OriginalArg(0) boolean arg0);

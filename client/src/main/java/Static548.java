@@ -8,7 +8,7 @@ public final class Static548 {
 	public static int anInt8259;
 
 	@OriginalMember(owner = "client!re", name = "n", descriptor = "Lclient!av;")
-	public static Class28 aClass28_40 = new Class28(8);
+	public static HashTable aHashTable40 = new HashTable(8);
 
 	@OriginalMember(owner = "client!re", name = "a", descriptor = "(IIIIIIB)V")
 	public static void method7253(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {

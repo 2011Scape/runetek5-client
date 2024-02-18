@@ -32,8 +32,8 @@ public final class Static6 {
 		if (local37 * local37 < local45) {
 			return;
 		}
-		@Pc(60) int local60 = Class361.anIntArray741[local15];
-		@Pc(64) int local64 = Class361.anIntArray740[local15];
+		@Pc(60) int local60 = LruHashTable.anIntArray741[local15];
+		@Pc(64) int local64 = LruHashTable.anIntArray740[local15];
 		if (Static511.anInt7645 != 4) {
 			local60 = local60 * 256 / (Static660.anInt9835 + 256);
 			local64 = local64 * 256 / (Static660.anInt9835 + 256);

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static292 {
 
 	@OriginalMember(owner = "client!jea", name = "m", descriptor = "Lclient!pw;")
-	public static Class2_Sub43 aClass2_Sub43_2;
+	public static Linkable_Sub43 aClass2_Sub43_2;
 
 	@OriginalMember(owner = "client!jea", name = "t", descriptor = "J")
 	public static long aLong163;
@@ -59,12 +59,12 @@ public final class Static292 {
 		@Pc(69) int local69 = 0;
 		@Pc(71) int local71 = local45;
 		if (local52 != 0) {
-			local69 = Class361.anIntArray741[local52] * -local45 >> 14;
-			local71 = local45 * Class361.anIntArray740[local52] >> 14;
+			local69 = LruHashTable.anIntArray741[local52] * -local45 >> 14;
+			local71 = local45 * LruHashTable.anIntArray740[local52] >> 14;
 		}
 		if (local65 != 0) {
-			local67 = local71 * Class361.anIntArray741[local65] >> 14;
-			local71 = Class361.anIntArray740[local65] * local71 >> 14;
+			local67 = local71 * LruHashTable.anIntArray741[local65] >> 14;
+			local71 = LruHashTable.anIntArray740[local65] * local71 >> 14;
 		}
 		Static598.anInt8832 = arg0;
 		Static110.anInt2186 = arg5 - local71;
@@ -93,7 +93,7 @@ public final class Static292 {
 	}
 
 	@OriginalMember(owner = "client!jea", name = "a", descriptor = "(Lclient!r;III[Z)V")
-	public static void method4618(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
+	public static void method4618(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
 		if (Static246.aClass178Array1 == Static693.aClass178Array2) {
 			return;
 		}

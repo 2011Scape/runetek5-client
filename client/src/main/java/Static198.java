@@ -92,15 +92,15 @@ public final class Static198 {
 			local52 = (Interface25) Static302.method4414(arg0, arg4, arg1);
 			@Pc(58) Interface25 local58 = (Interface25) Static619.method1510(arg0, arg4, arg1);
 			if (local52 != null && arg2 != 2) {
-				if (local52 instanceof Class8_Sub2_Sub3_Sub1) {
-					((Class8_Sub2_Sub3_Sub1) local52).aClass337_1.method7672(arg3);
+				if (local52 instanceof ParticleNode_Sub2_Sub3_Sub1) {
+					((ParticleNode_Sub2_Sub3_Sub1) local52).aClass337_1.method7672(arg3);
 				} else {
 					Static235.method3421(arg1, arg2, arg5, arg4, arg3, arg6, arg0, local52.method6859(-32136));
 				}
 			}
 			if (local58 != null) {
-				if (local58 instanceof Class8_Sub2_Sub3_Sub1) {
-					((Class8_Sub2_Sub3_Sub1) local58).aClass337_1.method7672(arg3);
+				if (local58 instanceof ParticleNode_Sub2_Sub3_Sub1) {
+					((ParticleNode_Sub2_Sub3_Sub1) local58).aClass337_1.method7672(arg3);
 				} else {
 					Static235.method3421(arg1, arg2, arg5, arg4, arg3, arg6, arg0, local58.method6859(-32136));
 				}
@@ -108,8 +108,8 @@ public final class Static198 {
 		} else if (arg6 == 1) {
 			local52 = (Interface25) Static114.method2134(arg0, arg4, arg1);
 			if (local52 != null) {
-				if (local52 instanceof Class8_Sub2_Sub4_Sub2) {
-					((Class8_Sub2_Sub4_Sub2) local52).aClass337_4.method7672(arg3);
+				if (local52 instanceof ParticleNode_Sub2_Sub4_Sub2) {
+					((ParticleNode_Sub2_Sub4_Sub2) local52).aClass337_4.method7672(arg3);
 				} else {
 					@Pc(279) int local279 = local52.method6859(-32136);
 					if (arg2 == 4 || arg2 == 5) {
@@ -130,8 +130,8 @@ public final class Static198 {
 				if (arg2 == 11) {
 					arg2 = 10;
 				}
-				if (local52 instanceof Class8_Sub2_Sub1_Sub4) {
-					((Class8_Sub2_Sub1_Sub4) local52).aClass337_3.method7672(arg3);
+				if (local52 instanceof ParticleNode_Sub2_Sub1_Sub4) {
+					((ParticleNode_Sub2_Sub1_Sub4) local52).aClass337_3.method7672(arg3);
 				} else {
 					Static235.method3421(arg1, arg2, arg5, arg4, arg3, arg6, arg0, local52.method6859(-32136));
 				}
@@ -139,8 +139,8 @@ public final class Static198 {
 		} else if (arg6 == 3) {
 			local52 = (Interface25) Static687.method8959(arg0, arg4, arg1);
 			if (local52 != null) {
-				if (local52 instanceof Class8_Sub2_Sub2_Sub2) {
-					((Class8_Sub2_Sub2_Sub2) local52).aClass337_2.method7672(arg3);
+				if (local52 instanceof ParticleNode_Sub2_Sub2_Sub2) {
+					((ParticleNode_Sub2_Sub2_Sub2) local52).aClass337_2.method7672(arg3);
 				} else {
 					Static235.method3421(arg1, arg2, arg5, arg4, arg3, arg6, arg0, local52.method6859(-32136));
 				}

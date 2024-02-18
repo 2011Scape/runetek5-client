@@ -33,25 +33,25 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	private boolean aBoolean702;
 
 	@OriginalMember(owner = "client!tca", name = "jh", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_60 = new Class339();
+	private final LinkedList aLinkedList60 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "oi", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_61 = new Class339();
+	private final LinkedList aLinkedList61 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "oh", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_62 = new Class339();
+	private final LinkedList aLinkedList62 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Gi", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_63 = new Class339();
+	private final LinkedList aLinkedList63 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Ji", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_64 = new Class339();
+	private final LinkedList aLinkedList64 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "ii", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_65 = new Class339();
+	private final LinkedList aLinkedList65 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Ng", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_66 = new Class339();
+	private final LinkedList aLinkedList66 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "ni", descriptor = "[Lclient!gla;")
 	private final Class72_Sub1[] aClass72_Sub1Array1 = new Class72_Sub1[16];
@@ -321,9 +321,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "b", descriptor = "(IIZ)V")
 	public synchronized void method8160(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(20) Class2_Sub38 local20 = new Class2_Sub38(arg0);
-		local20.aLong328 = (long) arg1;
-		this.aClass339_62.method7711(local20);
+		@Pc(20) IntNode local20 = new IntNode(arg0);
+		local20.id = (long) arg1;
+		this.aLinkedList62.addTail(local20);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "i", descriptor = "(II)Lclient!rea;")
@@ -451,11 +451,11 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public synchronized void method7977(@OriginalArg(0) int arg0) {
 		@Pc(7) int local7 = 0;
 		@Pc(11) int local11 = arg0 & Integer.MAX_VALUE;
-		@Pc(19) Class2_Sub38 local19;
-		while (!this.aClass339_61.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_61.method7705();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
-			super.anInt9141 -= local19.anInt6379;
+		@Pc(19) IntNode local19;
+		while (!this.aLinkedList61.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList61.removeHead();
+			Static382.anIntArray465[local7++] = (int) local19.id;
+			super.anInt9141 -= local19.value;
 			if (local7 == 1000) {
 				OpenGL.glDeleteBuffersARB(local7, Static382.anIntArray465, 0);
 				local7 = 0;
@@ -465,10 +465,10 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteBuffersARB(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass339_62.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_62.method7705();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
-			super.anInt9145 -= local19.anInt6379;
+		while (!this.aLinkedList62.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList62.removeHead();
+			Static382.anIntArray465[local7++] = (int) local19.id;
+			super.anInt9145 -= local19.value;
 			if (local7 == 1000) {
 				OpenGL.glDeleteTextures(local7, Static382.anIntArray465, 0);
 				local7 = 0;
@@ -478,9 +478,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteTextures(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass339_63.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_63.method7705();
-			Static382.anIntArray465[local7++] = local19.anInt6379;
+		while (!this.aLinkedList63.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList63.removeHead();
+			Static382.anIntArray465[local7++] = local19.value;
 			if (local7 == 1000) {
 				OpenGL.glDeleteFramebuffersEXT(local7, Static382.anIntArray465, 0);
 				local7 = 0;
@@ -490,10 +490,10 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteFramebuffersEXT(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass339_64.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_64.method7705();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
-			super.anInt9143 -= local19.anInt6379;
+		while (!this.aLinkedList64.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList64.removeHead();
+			Static382.anIntArray465[local7++] = (int) local19.id;
+			super.anInt9143 -= local19.value;
 			if (local7 == 1000) {
 				OpenGL.glDeleteRenderbuffersEXT(local7, Static382.anIntArray465, 0);
 				local7 = 0;
@@ -502,22 +502,22 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		if (local7 > 0) {
 			OpenGL.glDeleteRenderbuffersEXT(local7, Static382.anIntArray465, 0);
 		}
-		while (!this.aClass339_60.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_60.method7705();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6379);
+		while (!this.aLinkedList60.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList60.removeHead();
+			OpenGL.glDeleteLists((int) local19.id, local19.value);
 		}
-		@Pc(227) Class2 local227;
-		while (!this.aClass339_65.method7702()) {
-			local227 = this.aClass339_65.method7705();
-			OpenGL.glDeleteProgramARB((int) local227.aLong328);
+		@Pc(227) Linkable local227;
+		while (!this.aLinkedList65.isEmpty()) {
+			local227 = this.aLinkedList65.removeHead();
+			OpenGL.glDeleteProgramARB((int) local227.id);
 		}
-		while (!this.aClass339_66.method7702()) {
-			local227 = this.aClass339_66.method7705();
-			OpenGL.glDeleteObjectARB(local227.aLong328);
+		while (!this.aLinkedList66.isEmpty()) {
+			local227 = this.aLinkedList66.removeHead();
+			OpenGL.glDeleteObjectARB(local227.id);
 		}
-		while (!this.aClass339_60.method7702()) {
-			local19 = (Class2_Sub38) this.aClass339_60.method7705();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6379);
+		while (!this.aLinkedList60.isEmpty()) {
+			local19 = (IntNode) this.aLinkedList60.removeHead();
+			OpenGL.glDeleteLists((int) local19.id, local19.value);
 		}
 		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.method7715()) {
 			System.gc();
@@ -534,9 +534,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "k", descriptor = "(II)V")
 	public synchronized void method8162(@OriginalArg(0) int arg0) {
-		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = (long) arg0;
-		this.aClass339_65.method7711(local7);
+		@Pc(7) Linkable local7 = new Linkable();
+		local7.id = (long) arg0;
+		this.aLinkedList65.addTail(local7);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "GA", descriptor = "(I)V")
@@ -666,9 +666,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(BII)V")
 	public synchronized void method8164(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Class2_Sub38 local13 = new Class2_Sub38(arg1);
-		local13.aLong328 = (long) arg0;
-		this.aClass339_61.method7711(local13);
+		@Pc(13) IntNode local13 = new IntNode(arg1);
+		local13.id = (long) arg0;
+		this.aLinkedList61.addTail(local13);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "d", descriptor = "()V")
@@ -683,9 +683,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IJ)V")
 	public synchronized void method8165(@OriginalArg(1) long arg0) {
-		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = arg0;
-		this.aClass339_66.method7711(local7);
+		@Pc(7) Linkable local7 = new Linkable();
+		local7.id = arg0;
+		this.aLinkedList66.addTail(local7);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "j", descriptor = "()V")
@@ -1118,7 +1118,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		this.method8096();
 		@Pc(18) int local18;
 		for (local18 = 0; super.anInt9177 > local18; local18++) {
-			@Pc(25) Class2_Sub7 local25 = super.aClass2_Sub7Array6[local18];
+			@Pc(25) Linkable_Sub7 local25 = super.aClass2_Sub7Array6[local18];
 			@Pc(29) int local29 = local25.method8431();
 			@Pc(34) int local34 = local18 + 16386;
 			@Pc(40) float local40 = local25.method8428() / 255.0F;

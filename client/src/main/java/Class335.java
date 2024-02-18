@@ -19,11 +19,11 @@ public final class Class335 {
 	}
 
 	@OriginalMember(owner = "client!sfa", name = "a", descriptor = "(II)Lclient!dba;")
-	public Class2_Sub2_Sub6 method7657(@OriginalArg(0) int arg0) {
+	public SecondaryLinkable_Sub6 method7657(@OriginalArg(0) int arg0) {
 		@Pc(6) Class82 local6 = this.aClass82_188;
-		@Pc(16) Class2_Sub2_Sub6 local16;
+		@Pc(16) SecondaryLinkable_Sub6 local16;
 		synchronized (this.aClass82_188) {
-			local16 = (Class2_Sub2_Sub6) this.aClass82_188.method2156((long) arg0);
+			local16 = (SecondaryLinkable_Sub6) this.aClass82_188.method2156((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -33,7 +33,7 @@ public final class Class335 {
 		synchronized (this.aClass330_107) {
 			local39 = this.aClass330_107.method7595(arg0, 5);
 		}
-		local16 = new Class2_Sub2_Sub6();
+		local16 = new SecondaryLinkable_Sub6();
 		if (local39 != null) {
 			local16.method1979(new Packet(local39));
 		}

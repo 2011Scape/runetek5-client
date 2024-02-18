@@ -249,14 +249,14 @@ public final class i extends Class114 implements Interface5 {
 	public native int HA();
 
 	@OriginalMember(owner = "client!i", name = "ba", descriptor = "(Lclient!r;)Lclient!r;")
-	public native Class2_Sub2_Sub9 ba(@OriginalArg(0) Class2_Sub2_Sub9 arg0);
+	public native SecondaryLinkable_Sub9 ba(@OriginalArg(0) SecondaryLinkable_Sub9 arg0);
 
 	@OriginalMember(owner = "client!i", name = "FA", descriptor = "(I)V")
 	public native void FA(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(Lclient!tt;Lclient!ima;II)V")
 	@Override
-	public void method7484(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void method7484(@OriginalArg(0) Class73 arg0, @OriginalArg(1) ParticleNode_Sub6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg1 == null) {
 			this.anOa2.method6087().method9(this, arg0, (int[]) null, arg2, arg3);
 			return;
@@ -330,7 +330,7 @@ public final class i extends Class114 implements Interface5 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(Lclient!tt;Lclient!ima;I)V")
 	@Override
-	public void method7473(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2) {
+	public void method7473(@OriginalArg(0) Class73 arg0, @OriginalArg(1) ParticleNode_Sub6 arg1, @OriginalArg(2) int arg2) {
 		if (arg1 == null) {
 			this.anOa2.method6087().method8(this, arg0, (int[]) null, arg2);
 			return;

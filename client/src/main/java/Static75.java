@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static75 {
 
 	@OriginalMember(owner = "client!ch", name = "j", descriptor = "Lclient!pg;")
-	public static Class2_Sub2_Sub16 aClass2_Sub2_Sub16_9;
+	public static SecondaryLinkable_Sub16 aClass2_Sub2_Sub16_9;
 
 	@OriginalMember(owner = "client!ch", name = "m", descriptor = "[Lclient!tn;")
 	public static Class357[] aClass357Array2;

@@ -18,19 +18,19 @@ public final class Static2 {
 
 	@OriginalMember(owner = "client!aaa", name = "d", descriptor = "(III)V")
 	public static void method62(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5963(6, (long) arg1);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(6, (long) arg1);
 		local9.method202();
 		local9.anInt197 = arg0;
 	}
 
 	@OriginalMember(owner = "client!aaa", name = "a", descriptor = "(IBIILclient!cv;)V")
-	public static void method63(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class2_Sub15 arg3) {
+	public static void method63(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Linkable_Sub15 arg3) {
 		@Pc(16) long local16 = (long) (arg1 << 14 | arg0 << 28 | arg2);
-		@Pc(22) Class2_Sub17 local22 = (Class2_Sub17) Static497.aClass28_35.method738(local16);
+		@Pc(22) Linkable_Sub17 local22 = (Linkable_Sub17) Static497.aHashTable35.get(local16);
 		if (local22 == null) {
-			local22 = new Class2_Sub17();
-			Static497.aClass28_35.method735(local16, local22);
-			local22.aClass339_12.method7711(arg3);
+			local22 = new Linkable_Sub17();
+			Static497.aHashTable35.put(local16, local22);
+			local22.aLinkedList12.addTail(arg3);
 			return;
 		}
 		@Pc(45) Class382 local45 = Static419.aClass112_1.method2486(arg3.anInt1958);
@@ -38,7 +38,7 @@ public final class Static2 {
 		if (local45.anInt10115 == 1) {
 			local48 *= arg3.anInt1959 + 1;
 		}
-		for (@Pc(65) Class2_Sub15 local65 = (Class2_Sub15) local22.aClass339_12.method7699(65280); local65 != null; local65 = (Class2_Sub15) local22.aClass339_12.method7706()) {
+		for (@Pc(65) Linkable_Sub15 local65 = (Linkable_Sub15) local22.aLinkedList12.head(); local65 != null; local65 = (Linkable_Sub15) local22.aLinkedList12.next()) {
 			local45 = Static419.aClass112_1.method2486(local65.anInt1958);
 			@Pc(78) int local78 = local45.anInt10142;
 			if (local45.anInt10115 == 1) {
@@ -50,7 +50,7 @@ public final class Static2 {
 			}
 		}
 		if (-108 == -108) {
-			local22.aClass339_12.method7711(arg3);
+			local22.aLinkedList12.addTail(arg3);
 		}
 	}
 

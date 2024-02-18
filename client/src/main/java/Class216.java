@@ -103,15 +103,15 @@ public final class Class216 {
 		@Pc(84) int local84;
 		@Pc(94) int local94;
 		if (this.anInt5639 != 0) {
-			local79 = Class361.anIntArray741[this.anInt5639];
-			local84 = Class361.anIntArray740[this.anInt5639];
+			local79 = LruHashTable.anIntArray741[this.anInt5639];
+			local84 = LruHashTable.anIntArray740[this.anInt5639];
 			local94 = local33 * local84 - local35 * local79 >> 14;
 			local35 = local33 * local79 + local35 * local84 >> 14;
 			local33 = local94;
 		}
 		if (this.anInt5628 != 0) {
-			local79 = Class361.anIntArray741[this.anInt5628];
-			local84 = Class361.anIntArray740[this.anInt5628];
+			local79 = LruHashTable.anIntArray741[this.anInt5628];
+			local84 = LruHashTable.anIntArray740[this.anInt5628];
 			local94 = local35 * local79 + local31 * local84 >> 14;
 			local35 = local35 * local84 - local31 * local79 >> 14;
 			local31 = local94;
@@ -129,7 +129,7 @@ public final class Class216 {
 		arg0.method8000(arg0.method7953());
 		@Pc(209) Class73 local209 = arg0.method7953();
 		local209.method7125(0, 0, arg0.i() - local147.HA());
-		local147.method7484(local209, (Class8_Sub6) null, 1024, 1);
+		local147.method7484(local209, (ParticleNode_Sub6) null, 1024, 1);
 		@Pc(231) int local231 = this.anInt5638 * 13 / 16;
 		@Pc(238) int local238 = (this.anInt5638 - local231) / 2;
 		Static345.aClass23_23.method8205(local238, local238, local231, local231, 0, this.anInt5634 | 0xFF000000, 1);
@@ -172,16 +172,16 @@ public final class Class216 {
 		@Pc(101) int local101;
 		if (this.anInt5639 != 0) {
 			local83 = -this.anInt5639 & 0x3FFF;
-			local87 = Class361.anIntArray741[local83];
-			local91 = Class361.anIntArray740[local83];
+			local87 = LruHashTable.anIntArray741[local83];
+			local91 = LruHashTable.anIntArray740[local83];
 			local101 = local36 * local91 - local38 * local87 >> 14;
 			local38 = local36 * local87 + local38 * local91 >> 14;
 			local36 = local101;
 		}
 		if (this.anInt5628 != 0) {
 			local83 = -this.anInt5628 & 0x3FFF;
-			local87 = Class361.anIntArray741[local83];
-			local91 = Class361.anIntArray740[local83];
+			local87 = LruHashTable.anIntArray741[local83];
+			local91 = LruHashTable.anIntArray740[local83];
 			local101 = local38 * local87 + local34 * local91 >> 14;
 			local38 = local38 * local91 - local34 * local87 >> 14;
 			local34 = local101;
@@ -199,7 +199,7 @@ public final class Class216 {
 		arg0.method8000(arg0.method7953());
 		@Pc(238) Class73 local238 = arg0.method7985();
 		local238.method7125(0, 0, arg0.i() - local190.HA());
-		local190.method7484(local238, (Class8_Sub6) null, arg0.i(), 1);
+		local190.method7484(local238, (ParticleNode_Sub6) null, arg0.i(), 1);
 		this.aClass23_24 = arg0.method7964(0, 0, this.anInt5638, this.anInt5638, true);
 		this.aClass23_24.method8196();
 		arg0.DA(local219[0], local219[1], local219[2], local219[3]);

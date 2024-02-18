@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static592 {
 
 	@OriginalMember(owner = "client!sla", name = "b", descriptor = "[Lclient!qfa;")
-	public static final Class2_Sub45[] aClass2_Sub45Array1 = new Class2_Sub45[1024];
+	public static final Linkable_Sub45[] aClass2_Sub45Array1 = new Linkable_Sub45[1024];
 
 	@OriginalMember(owner = "client!sla", name = "a", descriptor = "(I)V")
 	public static void method7761() {

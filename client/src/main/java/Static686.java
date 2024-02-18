@@ -46,7 +46,7 @@ public final class Static686 {
 			local116 = Static442.anInt6699;
 		}
 		if (local116 == -1) {
-			local116 = Class8_Sub2_Sub4_Sub1.lb;
+			local116 = ParticleNode_Sub2_Sub4_Sub1.lb;
 		}
 		Static115.method2136(local116);
 		@Pc(136) int local136 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 70) << 8;

@@ -13,7 +13,7 @@ public final class Class68 {
 	private long aLong56 = -1L;
 
 	@OriginalMember(owner = "client!ck", name = "h", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_10 = new Class339();
+	private final LinkedList aLinkedList10 = new LinkedList();
 
 	@OriginalMember(owner = "client!ck", name = "<init>", descriptor = "(Lclient!ge;)V")
 	public Class68(@OriginalArg(0) Packet arg0) {
@@ -25,20 +25,20 @@ public final class Class68 {
 		this.aLong57 = arg0.g8();
 		this.aLong56 = arg0.g8();
 		for (@Pc(21) int local21 = arg0.g1(); local21 != 0; local21 = arg0.g1()) {
-			@Pc(44) Class2_Sub30 local44;
+			@Pc(44) Linkable_Sub30 local44;
 			if (local21 == 1) {
-				local44 = new Class2_Sub30_Sub1();
+				local44 = new Linkable_Sub30_Sub1();
 			} else if (local21 == 4) {
-				local44 = new Class2_Sub30_Sub2();
+				local44 = new Linkable_Sub30_Sub2();
 			} else if (local21 == 3) {
-				local44 = new Class2_Sub30_Sub3();
+				local44 = new Linkable_Sub30_Sub3();
 			} else if (local21 == 2) {
-				local44 = new Class2_Sub30_Sub4();
+				local44 = new Linkable_Sub30_Sub4();
 			} else {
 				throw new RuntimeException("Unrecognised ClanChannelDelta type in decode()");
 			}
 			local44.method7647(arg0);
-			this.aClass339_10.method7711(local44);
+			this.aLinkedList10.addTail(local44);
 		}
 		if (17 != 17) {
 			Static80.anIntArray153 = null;
@@ -46,11 +46,11 @@ public final class Class68 {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(Lclient!rfa;Z)V")
-	public void method1581(@OriginalArg(0) Class2_Sub47 arg0) {
-		if (arg0.aLong328 != this.aLong57 || this.aLong56 != arg0.aLong256) {
-			throw new RuntimeException("ClanChannelDelta.applyToClanChannel(): Credentials do not match! cc.clanHash:" + arg0.aLong328 + " updateNum:" + arg0.aLong256 + " delta.clanHash:" + this.aLong57 + " updateNum:" + this.aLong56);
+	public void method1581(@OriginalArg(0) Linkable_Sub47 arg0) {
+		if (arg0.id != this.aLong57 || this.aLong56 != arg0.aLong256) {
+			throw new RuntimeException("ClanChannelDelta.applyToClanChannel(): Credentials do not match! cc.clanHash:" + arg0.id + " updateNum:" + arg0.aLong256 + " delta.clanHash:" + this.aLong57 + " updateNum:" + this.aLong56);
 		}
-		for (@Pc(69) Class2_Sub30 local69 = (Class2_Sub30) this.aClass339_10.method7699(65280); local69 != null; local69 = (Class2_Sub30) this.aClass339_10.method7706()) {
+		for (@Pc(69) Linkable_Sub30 local69 = (Linkable_Sub30) this.aLinkedList10.head(); local69 != null; local69 = (Linkable_Sub30) this.aLinkedList10.next()) {
 			local69.method7642(arg0);
 		}
 		arg0.aLong256++;

@@ -37,7 +37,7 @@ public final class Static426 {
 	}
 
 	@OriginalMember(owner = "client!nha", name = "b", descriptor = "(B)Lclient!bd;")
-	public static Class2_Sub6_Sub1 method1018() {
+	public static Linkable_Sub6_Sub1 method1018() {
 		return Static581.aClass2_Sub6_Sub1_3;
 	}
 }

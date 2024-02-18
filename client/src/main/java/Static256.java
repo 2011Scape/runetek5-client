@@ -31,7 +31,7 @@ public final class Static256 {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(ZLclient!cg;Z)V")
-	public static void method3638(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) boolean arg1) {
+	public static void method3638(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(9) Class289 local9 = arg0.method9317();
 		if (arg0.anInt10764 == 0) {
 			arg0.anInt10763 = 0;
@@ -114,8 +114,8 @@ public final class Static256 {
 		}
 		@Pc(422) int local422 = 16;
 		@Pc(424) boolean local424 = true;
-		if (arg0 instanceof Class8_Sub2_Sub1_Sub2_Sub2) {
-			local424 = ((Class8_Sub2_Sub1_Sub2_Sub2) arg0).aClass268_1.aBoolean501;
+		if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub2) {
+			local424 = ((ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0).aClass268_1.aBoolean501;
 		}
 		@Pc(468) int local468;
 		if (local424) {
@@ -242,8 +242,8 @@ public final class Static256 {
 		if (local33 * local33 < local59) {
 			return;
 		}
-		@Pc(74) int local74 = Class361.anIntArray741[local11];
-		@Pc(78) int local78 = Class361.anIntArray740[local11];
+		@Pc(74) int local74 = LruHashTable.anIntArray741[local11];
+		@Pc(78) int local78 = LruHashTable.anIntArray740[local11];
 		if (Static511.anInt7645 != 4) {
 			local74 = local74 * 256 / (Static660.anInt9835 + 256);
 			local78 = local78 * 256 / (Static660.anInt9835 + 256);

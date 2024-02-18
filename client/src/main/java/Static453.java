@@ -8,7 +8,7 @@ public final class Static453 {
 	public static Class158[][] aClass158ArrayArray2;
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(Lclient!eo;III)V")
-	public static void method6209(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void method6209(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(12) Class291 local12;
 		if (arg2 < Static619.anInt1566) {
 			local12 = Static334.aClass291ArrayArrayArray1[arg1][arg2 + 1][arg3];

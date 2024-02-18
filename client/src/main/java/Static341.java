@@ -8,7 +8,7 @@ public final class Static341 {
 	public static int[][] anIntArrayArray133;
 
 	@OriginalMember(owner = "client!ko", name = "H", descriptor = "Lclient!ts;")
-	public static final Class361 aClass361_1 = new Class361(64);
+	public static final LruHashTable aLruHashTable1 = new LruHashTable(64);
 
 	@OriginalMember(owner = "client!ko", name = "g", descriptor = "(I)V")
 	public static void method5033(@OriginalArg(0) int arg0) {
@@ -53,10 +53,10 @@ public final class Static341 {
 	@OriginalMember(owner = "client!ko", name = "a", descriptor = "(ZIIIII)V")
 	public static void method5034(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(20) long local20 = (long) ((arg0 ? Integer.MIN_VALUE : 0) | arg4);
-		@Pc(26) Class2_Sub22 local26 = (Class2_Sub22) Static286.aClass28_23.method738(local20);
+		@Pc(26) Linkable_Sub22 local26 = (Linkable_Sub22) Static286.aHashTable23.get(local20);
 		if (local26 == null) {
-			local26 = new Class2_Sub22();
-			Static286.aClass28_23.method735(local20, local26);
+			local26 = new Linkable_Sub22();
+			Static286.aHashTable23.put(local20, local26);
 		}
 		if (arg2 >= local26.anIntArray278.length) {
 			@Pc(47) int[] local47 = new int[arg2 + 1];

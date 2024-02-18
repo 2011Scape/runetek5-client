@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static556 {
 
 	@OriginalMember(owner = "client!rj", name = "c", descriptor = "Lclient!ca;")
-	public static Class8_Sub2_Sub1_Sub2_Sub1 aClass8_Sub2_Sub1_Sub2_Sub1_2;
+	public static ParticleNode_Sub2_Sub1_Sub2_Sub1 aClass8_Sub2_Sub1_Sub2_Sub1_2;
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "Lclient!uc;")
 	public static Class367 aClass367_2;
@@ -16,10 +16,10 @@ public final class Static556 {
 			return Static145.method2412(arg0.anInt3743);
 		}
 		@Pc(25) int local25 = arg0.anInt3812 >>> 16;
-		@Pc(30) Class331 local30 = new Class331(Static548.aClass28_40);
-		for (@Pc(35) Class2_Sub4 local35 = (Class2_Sub4) local30.method7613(); local35 != null; local35 = (Class2_Sub4) local30.method7610()) {
+		@Pc(30) Class331 local30 = new Class331(Static548.aHashTable40);
+		for (@Pc(35) Linkable_Sub4 local35 = (Linkable_Sub4) local30.method7613(); local35 != null; local35 = (Linkable_Sub4) local30.method7610()) {
 			if (local35.anInt147 == local25) {
-				return Static145.method2412((int) local35.aLong328);
+				return Static145.method2412((int) local35.id);
 			}
 		}
 		return null;
@@ -45,7 +45,7 @@ public final class Static556 {
 		} else if (Static209.aBoolean269 && Static334.aClass319_1.method8479(81) && Static594.anInt8777 > 2) {
 			local63 = Static518.method9293(Static470.aClass2_Sub2_Sub16_10);
 		} else {
-			@Pc(55) Class2_Sub2_Sub16 local55 = Static470.aClass2_Sub2_Sub16_10;
+			@Pc(55) SecondaryLinkable_Sub16 local55 = Static470.aClass2_Sub2_Sub16_10;
 			if (local55 == null) {
 				return;
 			}
@@ -56,9 +56,9 @@ public final class Static556 {
 			} else if (local55.anInt7317 != -1) {
 				local65 = Static419.aClass112_1.method2486(local55.anInt7317).anIntArray800;
 			} else if (Static598.method7825(local55.anInt7314)) {
-				@Pc(93) Class2_Sub45 local93 = (Class2_Sub45) Static18.aClass28_2.method738((long) (int) local55.aLong233);
+				@Pc(93) Linkable_Sub45 local93 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) local55.aLong233);
 				if (local93 != null) {
-					@Pc(98) Class8_Sub2_Sub1_Sub2_Sub2 local98 = local93.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+					@Pc(98) ParticleNode_Sub2_Sub1_Sub2_Sub2 local98 = local93.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					@Pc(101) Class268 local101 = local98.aClass268_1;
 					if (local101.anIntArray532 != null) {
 						local101 = local101.method5985(65535, Static34.aClass304_1);
@@ -102,8 +102,8 @@ public final class Static556 {
 	}
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "(IBZ)Lclient!gfa;")
-	public static Class2_Sub22 method7303(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
+	public static Linkable_Sub22 method7303(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(19) long local19 = (long) (arg0 | (arg1 ? Integer.MIN_VALUE : 0));
-		return (Class2_Sub22) Static286.aClass28_23.method738(local19);
+		return (Linkable_Sub22) Static286.aHashTable23.get(local19);
 	}
 }

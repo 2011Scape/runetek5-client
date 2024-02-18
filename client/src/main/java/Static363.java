@@ -77,7 +77,7 @@ public final class Static363 {
 				for (@Pc(123) int local123 = 15; local123 >= 0; local123--) {
 					for (@Pc(126) int local126 = 0; local126 <= local123; local126++) {
 						Static59.aClass73_5.method7125((int) ((float) Static340.anInt5586 * (-((float) local123 / 2.0F) + (float) local126)), 0, (local123 + 1) * Static340.anInt5586);
-						local111.method7473(Static59.aClass73_5, (Class8_Sub6) null, 0);
+						local111.method7473(Static59.aClass73_5, (ParticleNode_Sub6) null, 0);
 						local113++;
 						if ((long) arg0 <= Static588.method7715() - local70) {
 							break label41;

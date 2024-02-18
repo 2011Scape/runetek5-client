@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class291 {
 
 	@OriginalMember(owner = "client!pha", name = "n", descriptor = "Lclient!kp;")
-	public Class8_Sub2_Sub3 aClass8_Sub2_Sub3_1;
+	public ParticleNode_Sub2_Sub3 aClass8_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!pha", name = "c", descriptor = "Lclient!pha;")
 	public Class291 aClass291_1;
@@ -19,22 +19,22 @@ public final class Class291 {
 	public short aShort83;
 
 	@OriginalMember(owner = "client!pha", name = "o", descriptor = "Lclient!kp;")
-	public Class8_Sub2_Sub3 aClass8_Sub2_Sub3_2;
+	public ParticleNode_Sub2_Sub3 aClass8_Sub2_Sub3_2;
 
 	@OriginalMember(owner = "client!pha", name = "q", descriptor = "Lclient!tla;")
-	public Class8_Sub2_Sub4 aClass8_Sub2_Sub4_1;
+	public ParticleNode_Sub2_Sub4 aClass8_Sub2_Sub4_1;
 
 	@OriginalMember(owner = "client!pha", name = "g", descriptor = "Lclient!nda;")
-	public Class8_Sub2_Sub5 aClass8_Sub2_Sub5_1;
+	public ParticleNode_Sub2_Sub5 aClass8_Sub2_Sub5_1;
 
 	@OriginalMember(owner = "client!pha", name = "f", descriptor = "Lclient!eia;")
-	public Class8_Sub2_Sub2 aClass8_Sub2_Sub2_1;
+	public ParticleNode_Sub2_Sub2 aClass8_Sub2_Sub2_1;
 
 	@OriginalMember(owner = "client!pha", name = "p", descriptor = "S")
 	public short aShort84;
 
 	@OriginalMember(owner = "client!pha", name = "d", descriptor = "Lclient!tla;")
-	public Class8_Sub2_Sub4 aClass8_Sub2_Sub4_2;
+	public ParticleNode_Sub2_Sub4 aClass8_Sub2_Sub4_2;
 
 	@OriginalMember(owner = "client!pha", name = "j", descriptor = "S")
 	public short aShort85;

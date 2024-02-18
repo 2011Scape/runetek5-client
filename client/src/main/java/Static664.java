@@ -11,7 +11,7 @@ public final class Static664 {
 	public static final Class345 aClass345_115 = new Class345(40, 11);
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(ILclient!fk;)[I")
-	public static int[] method8652(@OriginalArg(1) Class2_Sub19 arg0) {
+	public static int[] method8652(@OriginalArg(1) Linkable_Sub19 arg0) {
 		@Pc(8) Packet local8 = new Packet(518);
 		@Pc(11) int[] local11 = new int[4];
 		for (@Pc(13) int local13 = 0; local13 < 4; local13++) {

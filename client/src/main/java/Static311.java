@@ -8,7 +8,7 @@ public final class Static311 {
 	public static boolean aBoolean384 = false;
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(Lclient!bn;I)Z")
-	public static boolean method4537(@OriginalArg(0) Class2_Sub8 arg0) {
+	public static boolean method4537(@OriginalArg(0) Linkable_Sub8 arg0) {
 		if (arg0 == null) {
 			return true;
 		}

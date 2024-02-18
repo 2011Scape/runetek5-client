@@ -15,9 +15,9 @@ public final class Static651 {
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(BILclient!ha;)Lclient!st;")
 	public static Class23 method8512(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
-		@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static106.aClass28_11.method738((long) arg0);
+		@Pc(18) Linkable_Sub5 local18 = (Linkable_Sub5) Static106.aHashTable11.get((long) arg0);
 		if (local18 != null) {
-			@Pc(25) Class2_Sub28_Sub3 local25 = local18.aClass222_Sub1_1.method9187();
+			@Pc(25) Linkable_Sub28_Sub3 local25 = local18.aClass222_Sub1_1.method9187();
 			local18.aBoolean18 = true;
 			if (local25 != null) {
 				return local25.method5491(arg1);
@@ -27,7 +27,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(IIIILclient!cg;)V")
-	public static void method8513(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Class8_Sub2_Sub1_Sub2 arg3) {
+	public static void method8513(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2 arg3) {
 		@Pc(9) Class289 local9 = arg3.method9317();
 		@Pc(19) Class152 local19 = arg3.aClass152_10;
 		@Pc(29) int local29 = arg3.anInt10756 - arg3.aClass126_7.anInt2889 & 0x3FFF;
@@ -117,7 +117,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "([IIZLclient!cg;I)V")
-	public static void method8515(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class8_Sub2_Sub1_Sub2 arg3) {
+	public static void method8515(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) ParticleNode_Sub2_Sub1_Sub2 arg3) {
 		@Pc(8) boolean local8;
 		@Pc(10) int local10;
 		if (arg3.anIntArray869 != null) {
@@ -170,7 +170,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(IZLclient!wj;)V")
-	public static void method8517(@OriginalArg(1) boolean arg0, @OriginalArg(2) Class8_Sub2_Sub1_Sub2_Sub2 arg1) {
+	public static void method8517(@OriginalArg(1) boolean arg0, @OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg1) {
 		if (Static594.anInt8777 >= 400) {
 			return;
 		}

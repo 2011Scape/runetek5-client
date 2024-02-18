@@ -20,14 +20,14 @@ public final class Static409 {
 	public static int anInt6318 = -1;
 
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(ILclient!cm;Lclient!cm;)V")
-	public static void method5654(@OriginalArg(1) Class2_Sub2 arg0, @OriginalArg(2) Class2_Sub2 arg1) {
-		if (arg1.aClass2_Sub2_67 != null) {
-			arg1.method9260();
+	public static void method5654(@OriginalArg(1) SecondaryLinkable arg0, @OriginalArg(2) SecondaryLinkable arg1) {
+		if (arg1.secondaryNext != null) {
+			arg1.unlinkSecondary();
 		}
-		arg1.aClass2_Sub2_66 = arg0.aClass2_Sub2_66;
-		arg1.aClass2_Sub2_67 = arg0;
-		arg1.aClass2_Sub2_67.aClass2_Sub2_66 = arg1;
-		arg1.aClass2_Sub2_66.aClass2_Sub2_67 = arg1;
+		arg1.secondaryPrev = arg0.secondaryPrev;
+		arg1.secondaryNext = arg0;
+		arg1.secondaryNext.secondaryPrev = arg1;
+		arg1.secondaryPrev.secondaryNext = arg1;
 	}
 
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(II[[[Lclient!pha;IIZ)Z")
@@ -62,7 +62,7 @@ public final class Static409 {
 				if (arg1 != null) {
 					label237: for (local139 = Static394.anInt6176 + 1; local139 <= 3; local139++) {
 						if (arg1[local139] != null && (Static280.aByteArrayArrayArray3[local139][local78][local100] & 0x8) == 0) {
-							@Pc(341) Class8_Sub2_Sub1 local341;
+							@Pc(341) ParticleNode_Sub2_Sub1 local341;
 							@Pc(351) int local351;
 							@Pc(331) Class291 local331;
 							@Pc(337) Class286 local337;

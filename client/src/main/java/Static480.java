@@ -12,7 +12,7 @@ public final class Static480 {
 	public static int anInt7206 = 0;
 
 	@OriginalMember(owner = "client!pca", name = "i", descriptor = "Lclient!ts;")
-	public static final Class361 aClass361_2 = new Class361(128);
+	public static final LruHashTable aLruHashTable2 = new LruHashTable(128);
 
 	@OriginalMember(owner = "client!pca", name = "a", descriptor = "(II[IIIIII)V")
 	public static void method6466(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(7) int arg5) {
@@ -77,7 +77,7 @@ public final class Static480 {
 
 	@OriginalMember(owner = "client!pca", name = "a", descriptor = "(ILclient!ge;Lclient!vq;I)V")
 	public static void method6468(@OriginalArg(1) Packet arg0, @OriginalArg(2) Class390 arg1, @OriginalArg(3) int arg2) {
-		@Pc(23) Class2_Sub57 local23 = new Class2_Sub57();
+		@Pc(23) Linkable_Sub57 local23 = new Linkable_Sub57();
 		local23.anInt10364 = arg0.g1();
 		local23.anInt10366 = arg0.g4();
 		local23.anIntArray829 = new int[local23.anInt10364];
@@ -139,7 +139,7 @@ public final class Static480 {
 				local23.anIntArray829[local65] = -5;
 			}
 		}
-		Static631.aClass339_78.method7711(local23);
+		Static631.aLinkedList78.addTail(local23);
 	}
 
 	@OriginalMember(owner = "client!pca", name = "c", descriptor = "(B)V")

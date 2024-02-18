@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "x", descriptor = "[Lclient!hv;")
-	public static Class8_Sub5[] aClass8_Sub5Array1;
+	public static ParticleNode_Sub5[] aClass8_Sub5Array1;
 
 	@OriginalMember(owner = "client!cka", name = "q", descriptor = "I")
 	public static int anInt1644;
@@ -84,24 +84,24 @@ public final class Static81 {
 	}
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(I)Lclient!aj;")
-	public static Class2_Sub2_Sub2 method1587() {
-		@Pc(17) Class2_Sub2_Sub2 local17 = (Class2_Sub2_Sub2) Static138.aClass192_6.method4352();
+	public static SecondaryLinkable_Sub2 method1587() {
+		@Pc(17) SecondaryLinkable_Sub2 local17 = (SecondaryLinkable_Sub2) Static138.aSecondaryLinkedList6.head();
 		if (local17 != null) {
-			local17.method9457();
-			local17.method9260();
+			local17.unlink();
+			local17.unlinkSecondary();
 			return local17;
 		}
 		do {
-			local17 = (Class2_Sub2_Sub2) Static59.aClass192_9.method4352();
+			local17 = (SecondaryLinkable_Sub2) Static59.aSecondaryLinkedList9.head();
 			if (local17 == null) {
 				return null;
 			}
 			if (local17.method201() > Static588.method7715()) {
 				return null;
 			}
-			local17.method9457();
-			local17.method9260();
-		} while ((local17.aLong325 & Long.MIN_VALUE) == 0L);
+			local17.unlink();
+			local17.unlinkSecondary();
+		} while ((local17.secondaryKey & Long.MIN_VALUE) == 0L);
 		return local17;
 	}
 
@@ -112,7 +112,7 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
-		@Pc(8) Class2_Sub19 local8 = Static273.method3962();
+		@Pc(8) Linkable_Sub19 local8 = Static273.method3962();
 		local8.aPacketBit_1.p1(Static572.aClass167_58.anInt3973);
 		local8.aPacketBit_1.p2(0);
 		@Pc(25) int local25 = local8.aPacketBit_1.pos;

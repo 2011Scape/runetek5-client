@@ -11,7 +11,7 @@ public final class Static281 {
 	public static Class330 aClass330_60;
 
 	@OriginalMember(owner = "client!iq", name = "a", descriptor = "(ILclient!pea;)V")
-	public static void method4092(@OriginalArg(1) Class8_Sub7 arg0) {
+	public static void method4092(@OriginalArg(1) ParticleNode_Sub7 arg0) {
 		arg0.aClass8_Sub2_18 = null;
 		@Pc(10) int local10 = arg0.aClass8_Sub6Array1.length;
 		for (@Pc(12) int local12 = 0; local12 < local10; local12++) {

@@ -8,7 +8,7 @@ public final class Static630 {
 	public static int anInt9494;
 
 	@OriginalMember(owner = "client!tv", name = "a", descriptor = "(Lclient!r;III[Z)Z")
-	public static boolean method8357(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
+	public static boolean method8357(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
 		@Pc(1) boolean local1 = false;
 		if (Static246.aClass178Array1 != Static693.aClass178Array2) {
 			@Pc(12) int local12 = Static706.aClass178Array3[arg1].method7878(arg3, arg2);

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class268 {
 
 	@OriginalMember(owner = "client!o", name = "tb", descriptor = "Lclient!av;")
-	private Class28 aClass28_32;
+	private HashTable aHashTable32;
 
 	@OriginalMember(owner = "client!o", name = "gb", descriptor = "[B")
 	private byte[] aByteArray80;
@@ -462,20 +462,20 @@ public final class Class268 {
 				this.anInt6741 = arg1.g1();
 			} else if (arg0 == 249) {
 				local12 = arg1.g1();
-				if (this.aClass28_32 == null) {
+				if (this.aHashTable32 == null) {
 					local18 = Static440.method5962(local12);
-					this.aClass28_32 = new Class28(local18);
+					this.aHashTable32 = new HashTable(local18);
 				}
 				for (local18 = 0; local18 < local12; local18++) {
 					@Pc(761) boolean local761 = arg1.g1() == 1;
 					@Pc(765) int local765 = arg1.g3();
-					@Pc(774) Class2 local774;
+					@Pc(774) Linkable local774;
 					if (local761) {
-						local774 = new Class2_Sub24(arg1.gjstr());
+						local774 = new StringNode(arg1.gjstr());
 					} else {
-						local774 = new Class2_Sub38(arg1.g4());
+						local774 = new IntNode(arg1.g4());
 					}
-					this.aClass28_32.method735((long) local765, local774);
+					this.aHashTable32.put((long) local765, local774);
 				}
 			}
 		}
@@ -483,11 +483,11 @@ public final class Class268 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BLjava/lang/String;I)Ljava/lang/String;")
 	public String method5991(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass28_32 == null) {
+		if (this.aHashTable32 == null) {
 			return arg0;
 		} else {
-			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_32.method738((long) arg1);
-			return local23 == null ? arg0 : local23.aString46;
+			@Pc(23) StringNode local23 = (StringNode) this.aHashTable32.get((long) arg1);
+			return local23 == null ? arg0 : local23.value;
 		}
 	}
 
@@ -830,11 +830,11 @@ public final class Class268 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(III)I")
 	public int method5995(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass28_32 == null) {
+		if (this.aHashTable32 == null) {
 			return arg1;
 		} else {
-			@Pc(25) Class2_Sub38 local25 = (Class2_Sub38) this.aClass28_32.method738((long) arg0);
-			return local25 == null ? arg1 : local25.anInt6379;
+			@Pc(25) IntNode local25 = (IntNode) this.aHashTable32.get((long) arg0);
+			return local25 == null ? arg1 : local25.value;
 		}
 	}
 

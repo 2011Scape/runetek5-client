@@ -26,7 +26,7 @@ public final class Class262 {
 	private final BigInteger aBigInteger3;
 
 	@OriginalMember(owner = "client!nj", name = "f", descriptor = "Lclient!rja;")
-	private Class2_Sub2_Sub17_Sub1 aClass2_Sub2_Sub17_Sub1_1;
+	private SecondaryLinkable_Sub17_Sub1 aClass2_Sub2_Sub17_Sub1_1;
 
 	@OriginalMember(owner = "client!nj", name = "<init>", descriptor = "(Lclient!pla;Lclient!iba;Ljava/math/BigInteger;Ljava/math/BigInteger;)V")
 	public Class262(@OriginalArg(0) Class295 arg0, @OriginalArg(1) Class174 arg1, @OriginalArg(2) BigInteger arg2, @OriginalArg(3) BigInteger arg3) {

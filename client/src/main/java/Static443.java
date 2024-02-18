@@ -14,7 +14,7 @@ public final class Static443 {
 		}
 		@Pc(13) int local13 = Static189.aClass120_1.method8853();
 		@Pc(22) int local22 = Static189.aClass120_1.method8854();
-		@Pc(27) Class2_Sub9 local27 = (Class2_Sub9) Static226.aClass339_58.method7699(65280);
+		@Pc(27) Linkable_Sub9 local27 = (Linkable_Sub9) Static226.aLinkedList58.head();
 		if (local27 != null) {
 			local13 = local27.method5331();
 			local22 = local27.method5333();

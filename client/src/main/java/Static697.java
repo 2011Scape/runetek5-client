@@ -13,7 +13,7 @@ public final class Static697 {
 	public static final int anInt10507 = 1405;
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(ZILclient!bd;)V")
-	public static void method9120(@OriginalArg(2) Class2_Sub6_Sub1 arg0) {
+	public static void method9120(@OriginalArg(2) Linkable_Sub6_Sub1 arg0) {
 		Static719.aClass56_5.method3582(arg0);
 		Static220.method3201(Static719.aClass56_5, Static147.aClass330_26, Static281.aClass330_60, Static405.aClass330_84, arg0);
 	}

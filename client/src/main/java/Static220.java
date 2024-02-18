@@ -14,7 +14,7 @@ public final class Static220 {
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(IBIII)V")
 	public static void method3198(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(6) Class2_Sub51 local6 = (Class2_Sub51) Static460.aClass339_40.method7699(65280); local6 != null; local6 = (Class2_Sub51) Static460.aClass339_40.method7706()) {
+		for (@Pc(6) Linkable_Sub51 local6 = (Linkable_Sub51) Static460.aLinkedList40.head(); local6 != null; local6 = (Linkable_Sub51) Static460.aLinkedList40.next()) {
 			Static632.method8366(arg0, local6, arg3, arg2, arg1);
 		}
 		if (-123 <= -127) {
@@ -22,7 +22,7 @@ public final class Static220 {
 		}
 		@Pc(154) int local154;
 		@Pc(198) boolean local198;
-		for (@Pc(42) Class2_Sub51 local42 = (Class2_Sub51) Static717.aClass339_81.method7699(65280); local42 != null; local42 = (Class2_Sub51) Static717.aClass339_81.method7706()) {
+		for (@Pc(42) Linkable_Sub51 local42 = (Linkable_Sub51) Static717.aLinkedList81.head(); local42 != null; local42 = (Linkable_Sub51) Static717.aLinkedList81.next()) {
 			@Pc(46) byte local46 = 1;
 			@Pc(51) Class289 local51 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9317();
 			@Pc(57) int local57 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass152_10.method9114();
@@ -74,7 +74,7 @@ public final class Static220 {
 			local42.anInt9349 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.anInt10694 + (local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9302((byte) 68) << 8);
 			Static632.method8366(arg0, local42, arg3, arg2, arg1);
 		}
-		for (@Pc(329) Class2_Sub51 local329 = (Class2_Sub51) Static113.aClass28_12.method736(); local329 != null; local329 = (Class2_Sub51) Static113.aClass28_12.method740()) {
+		for (@Pc(329) Linkable_Sub51 local329 = (Linkable_Sub51) Static113.aHashTable12.head(); local329 != null; local329 = (Linkable_Sub51) Static113.aHashTable12.next()) {
 			@Pc(333) byte local333 = 1;
 			@Pc(338) Class289 local338 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.method9317();
 			local154 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.aClass152_10.method9114();
@@ -147,7 +147,7 @@ public final class Static220 {
 	}
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(Lclient!cd;Lclient!sb;Lclient!sb;Lclient!sb;ILclient!bd;)Z")
-	public static boolean method3201(@OriginalArg(0) Class56 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Class330 arg3, @OriginalArg(5) Class2_Sub6_Sub1 arg4) {
+	public static boolean method3201(@OriginalArg(0) Class56 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Class330 arg3, @OriginalArg(5) Linkable_Sub6_Sub1 arg4) {
 		Static581.aClass2_Sub6_Sub1_3 = arg4;
 		Static296.aClass330_61 = arg1;
 		Static91.aClass330_117 = arg2;

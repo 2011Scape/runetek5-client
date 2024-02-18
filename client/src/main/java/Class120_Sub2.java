@@ -32,10 +32,10 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 	private Component aComponent5;
 
 	@OriginalMember(owner = "client!vha", name = "J", descriptor = "Lclient!sia;")
-	private Class339 aClass339_74 = new Class339();
+	private LinkedList aLinkedList74 = new LinkedList();
 
 	@OriginalMember(owner = "client!vha", name = "K", descriptor = "Lclient!sia;")
-	private Class339 aClass339_75 = new Class339();
+	private LinkedList aLinkedList75 = new LinkedList();
 
 	@OriginalMember(owner = "client!vha", name = "p", descriptor = "Z")
 	private final boolean aBoolean772;
@@ -48,13 +48,13 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!vha", name = "a", descriptor = "(IIBII)V")
 	private void method8855(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(15) Class2_Sub9_Sub2 local15 = new Class2_Sub9_Sub2();
+		@Pc(15) Linkable_Sub9_Sub2 local15 = new Linkable_Sub9_Sub2();
 		local15.anInt5946 = arg2;
 		local15.anInt5937 = arg3;
 		local15.anInt5942 = arg1;
 		local15.anInt5940 = arg0;
 		local15.aLong181 = Static588.method7715();
-		this.aClass339_75.method7711(local15);
+		this.aLinkedList75.addTail(local15);
 	}
 
 	@OriginalMember(owner = "client!vha", name = "c", descriptor = "(I)Z")
@@ -119,8 +119,8 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 		this.aComponent5.removeMouseMotionListener(this);
 		this.aComponent5.removeMouseListener(this);
 		this.aComponent5 = null;
-		this.aClass339_75 = null;
-		this.aClass339_74 = null;
+		this.aLinkedList75 = null;
+		this.aLinkedList74 = null;
 		this.anInt10196 = this.anInt10197 = this.anInt10204 = 0;
 		this.anInt10209 = this.anInt10208 = this.anInt10210 = 0;
 	}
@@ -191,8 +191,8 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!vha", name = "a", descriptor = "(B)Lclient!bv;")
 	@Override
-	public Class2_Sub9 method8851() {
-		return (Class2_Sub9) this.aClass339_74.method7705();
+	public Linkable_Sub9 method8851() {
+		return (Linkable_Sub9) this.aLinkedList74.removeHead();
 	}
 
 	@OriginalMember(owner = "client!vha", name = "mouseReleased", descriptor = "(Ljava/awt/event/MouseEvent;)V")
@@ -229,9 +229,9 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 		this.anInt10204 = this.anInt10210;
 		this.anInt10197 = this.anInt10208;
 		this.anInt10196 = this.anInt10209;
-		@Pc(18) Class339 local18 = this.aClass339_74;
-		this.aClass339_74 = this.aClass339_75;
-		this.aClass339_75 = local18;
-		this.aClass339_75.method7700();
+		@Pc(18) LinkedList local18 = this.aLinkedList74;
+		this.aLinkedList74 = this.aLinkedList75;
+		this.aLinkedList75 = local18;
+		this.aLinkedList75.clear();
 	}
 }

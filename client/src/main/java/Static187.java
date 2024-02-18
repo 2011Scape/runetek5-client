@@ -37,9 +37,9 @@ public final class Static187 {
 			Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local48] = null;
 		}
 		Static390.anInt6126 = 0;
-		Static18.aClass28_2.method737();
+		Static18.aHashTable2.clear();
 		Static416.anInt6378 = 0;
-		Static497.aClass28_35.method737();
+		Static497.aHashTable35.clear();
 		Static693.method9012();
 		Static334.anInt5456 = 0;
 		Static34.aClass304_1.method6867();
@@ -56,8 +56,8 @@ public final class Static187 {
 		Static559.anInt8410 = 0;
 		Static600.anInt8880 = 0;
 		Static342.aClass130_7 = new Class130();
-		Static538.aClass8_Sub4_Sub2_Sub1Array2 = new Class8_Sub4_Sub2_Sub1[1024];
-		Static81.aClass8_Sub5Array1 = new Class8_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
+		Static538.aClass8_Sub4_Sub2_Sub1Array2 = new ParticleNode_Sub4_Sub2_Sub1[1024];
+		Static81.aClass8_Sub5Array1 = new ParticleNode_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
 		Static349.anInt5693 = 0;
 		Static295.anInt4781 = 0;
 		Static703.method9169(arg0);

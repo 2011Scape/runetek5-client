@@ -22,7 +22,7 @@ public final class Static236 {
 
 	@OriginalMember(owner = "client!hfa", name = "a", descriptor = "(IZ)V")
 	public static void method3450(@OriginalArg(0) int arg0) {
-		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5963(14, (long) arg0);
+		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.method5963(14, (long) arg0);
 		local16.method205();
 	}
 
@@ -51,7 +51,7 @@ public final class Static236 {
 
 	@OriginalMember(owner = "client!hfa", name = "c", descriptor = "(I)V")
 	public static void method3453() {
-		for (@Pc(16) Class2_Sub5 local16 = (Class2_Sub5) Static106.aClass28_11.method736(); local16 != null; local16 = (Class2_Sub5) Static106.aClass28_11.method740()) {
+		for (@Pc(16) Linkable_Sub5 local16 = (Linkable_Sub5) Static106.aHashTable11.head(); local16 != null; local16 = (Linkable_Sub5) Static106.aHashTable11.next()) {
 			if (local16.aClass222_Sub1_1.method9177()) {
 				Static121.method2199(local16.anInt182);
 			} else {
@@ -63,9 +63,9 @@ public final class Static236 {
 					Static121.method2199(local16.anInt182);
 				}
 				if (!local16.aBoolean14 && !local16.aBoolean16) {
-					@Pc(73) Class2_Sub28_Sub1 local73 = local16.aClass222_Sub1_1.method9189();
+					@Pc(73) Linkable_Sub28_Sub1 local73 = local16.aClass222_Sub1_1.method9189();
 					if (local73 != null) {
-						@Pc(79) Class2_Sub6_Sub5 local79 = local73.method3960();
+						@Pc(79) Linkable_Sub6_Sub5 local79 = local73.method3960();
 						if (local79 != null) {
 							local79.method9147(local16.anInt180);
 							Static336.aClass2_Sub6_Sub3_1.method5882(local79);

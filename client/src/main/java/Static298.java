@@ -24,8 +24,8 @@ public final class Static298 {
 
 	@OriginalMember(owner = "client!ji", name = "b", descriptor = "(I)V")
 	public static void method4385() {
-		Static25.aClass28_4.method737();
-		Static391.aClass339_34.method7700();
+		Static25.aHashTable4.clear();
+		Static391.aLinkedList34.clear();
 		Static507.aClass394Array1 = null;
 		Static75.aClass357Array2 = null;
 		Static219.aClass236Array1 = null;

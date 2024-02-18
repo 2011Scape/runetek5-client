@@ -48,7 +48,7 @@ public final class Static208 {
 	}
 
 	@OriginalMember(owner = "client!gha", name = "a", descriptor = "(Lclient!eo;Z[[[BIB)Z")
-	public static boolean method3107(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) byte[][][] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4) {
+	public static boolean method3107(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) byte[][][] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4) {
 		if (!Static581.aBoolean657) {
 			return false;
 		}
@@ -56,11 +56,11 @@ public final class Static208 {
 		@Pc(11) int local11 = local9;
 		@Pc(16) int local16 = arg0.anInt10694 >> Static52.anInt1066;
 		@Pc(18) int local18 = local16;
-		if (arg0 instanceof Class8_Sub2_Sub1) {
-			local11 = ((Class8_Sub2_Sub1) arg0).aShort134;
-			local18 = ((Class8_Sub2_Sub1) arg0).aShort133;
-			local9 = ((Class8_Sub2_Sub1) arg0).aShort131;
-			local16 = ((Class8_Sub2_Sub1) arg0).aShort132;
+		if (arg0 instanceof ParticleNode_Sub2_Sub1) {
+			local11 = ((ParticleNode_Sub2_Sub1) arg0).aShort134;
+			local18 = ((ParticleNode_Sub2_Sub1) arg0).aShort133;
+			local9 = ((ParticleNode_Sub2_Sub1) arg0).aShort131;
+			local16 = ((ParticleNode_Sub2_Sub1) arg0).aShort132;
 		}
 		for (@Pc(39) int local39 = local9; local39 <= local11; local39++) {
 			for (@Pc(42) int local42 = local16; local42 <= local18; local42++) {

@@ -12,7 +12,7 @@ public final class Static205 {
 
 	@OriginalMember(owner = "client!gg", name = "a", descriptor = "(IZB)V")
 	public static void method3089(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
-		@Pc(10) Class2_Sub22 local10 = Static556.method7303(arg0, arg1);
+		@Pc(10) Linkable_Sub22 local10 = Static556.method7303(arg0, arg1);
 		if (local10 != null) {
 			for (@Pc(16) int local16 = 0; local16 < local10.anIntArray278.length; local16++) {
 				local10.anIntArray278[local16] = -1;
@@ -23,7 +23,7 @@ public final class Static205 {
 
 	@OriginalMember(owner = "client!gg", name = "a", descriptor = "(BIIIIII)V")
 	public static void method3091(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
-		for (@Pc(17) Class8_Sub3 local17 = (Class8_Sub3) Static422.aClass130_9.method2790(); local17 != null; local17 = (Class8_Sub3) Static422.aClass130_9.method2785()) {
+		for (@Pc(17) ParticleNode_Sub3 local17 = (ParticleNode_Sub3) Static422.aClass130_9.method2790(); local17 != null; local17 = (ParticleNode_Sub3) Static422.aClass130_9.method2785()) {
 			if (local17.anInt953 <= Static333.anInt5455) {
 				local17.method9274();
 			} else {

@@ -34,7 +34,7 @@ public final class Static716 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IILclient!cg;BIII)V")
-	public static void method9350(@OriginalArg(2) Class8_Sub2_Sub1_Sub2 arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
+	public static void method9350(@OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2 arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
 		Static418.method7860(arg0.aByte144, arg0.anInt10694, arg2, arg0.anInt10690, 0);
 	}
 }

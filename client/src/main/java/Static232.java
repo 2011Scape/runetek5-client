@@ -17,13 +17,13 @@ public final class Static232 {
 	public static int anInt3764 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "ob", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_18 = new Class28(8);
+	public static final HashTable aHashTable18 = new HashTable(8);
 
 	@OriginalMember(owner = "client!hda", name = "u", descriptor = "Lclient!mia;")
 	public static final Class242 aClass242_6 = new Class242("", 21);
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;IIIIILclient!pg;IIIII)V")
-	public static void method3387(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class2_Sub2_Sub16 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
+	public static void method3387(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) SecondaryLinkable_Sub16 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
 		if (arg9 < arg10 && arg1 + arg9 > arg10 && arg8 > arg4 - 13 && arg4 + 3 > arg8 && arg6.aBoolean552) {
 			arg7 = arg5;
 		}
@@ -33,9 +33,9 @@ public final class Static232 {
 		} else if (arg6.anInt7317 != -1) {
 			local49 = Static419.aClass112_1.method2486(arg6.anInt7317).anIntArray800;
 		} else if (Static598.method7825(arg6.anInt7314)) {
-			@Pc(110) Class2_Sub45 local110 = (Class2_Sub45) Static18.aClass28_2.method738((long) (int) arg6.aLong233);
+			@Pc(110) Linkable_Sub45 local110 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) arg6.aLong233);
 			if (local110 != null) {
-				@Pc(115) Class8_Sub2_Sub1_Sub2_Sub2 local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+				@Pc(115) ParticleNode_Sub2_Sub1_Sub2_Sub2 local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(118) Class268 local118 = local115.aClass268_1;
 				if (local118.anIntArray532 != null) {
 					local118 = local118.method5985(65535, Static34.aClass304_1);
@@ -121,7 +121,7 @@ public final class Static232 {
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(I)Z")
 	public static boolean method3400() {
-		@Pc(10) Class2_Sub57 local10 = (Class2_Sub57) Static631.aClass339_78.method7699(65280);
+		@Pc(10) Linkable_Sub57 local10 = (Linkable_Sub57) Static631.aLinkedList78.head();
 		if (local10 == null) {
 			return false;
 		}

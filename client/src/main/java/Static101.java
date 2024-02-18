@@ -12,12 +12,12 @@ public final class Static101 {
 
 	@OriginalMember(owner = "client!dca", name = "a", descriptor = "(I)V")
 	public static void method2000() {
-		for (@Pc(8) Class2_Sub51 local8 = (Class2_Sub51) Static460.aClass339_40.method7699(65280); local8 != null; local8 = (Class2_Sub51) Static460.aClass339_40.method7706()) {
+		for (@Pc(8) Linkable_Sub51 local8 = (Linkable_Sub51) Static460.aLinkedList40.head(); local8 != null; local8 = (Linkable_Sub51) Static460.aLinkedList40.next()) {
 			if (local8.aBoolean713) {
 				local8.method8236();
 			}
 		}
-		for (@Pc(31) Class2_Sub51 local31 = (Class2_Sub51) Static717.aClass339_81.method7699(65280); local31 != null; local31 = (Class2_Sub51) Static717.aClass339_81.method7706()) {
+		for (@Pc(31) Linkable_Sub51 local31 = (Linkable_Sub51) Static717.aLinkedList81.head(); local31 != null; local31 = (Linkable_Sub51) Static717.aLinkedList81.next()) {
 			if (local31.aBoolean713) {
 				local31.method8236();
 			}

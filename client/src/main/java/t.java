@@ -10,7 +10,7 @@ public final class t extends Class178 implements Interface5 {
 	public long nativeid;
 
 	@OriginalMember(owner = "client!t", name = "C", descriptor = "Lclient!sia;")
-	private final Class339 aClass339_57 = new Class339();
+	private final LinkedList aLinkedList57 = new LinkedList();
 
 	@OriginalMember(owner = "client!t", name = "A", descriptor = "I")
 	private int anInt8897 = -1;
@@ -41,8 +41,8 @@ public final class t extends Class178 implements Interface5 {
 	public void method7870(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean[][] arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5) {
 		this.anInt8897 = -1;
 		@Pc(4) int local4 = 0;
-		@Pc(10) float[] local10 = new float[this.aClass339_57.method7701()];
-		for (@Pc(16) Class2_Sub7 local16 = (Class2_Sub7) this.aClass339_57.method7699(65280); local16 != null; local16 = (Class2_Sub7) this.aClass339_57.method7706()) {
+		@Pc(10) float[] local10 = new float[this.aLinkedList57.method7701()];
+		for (@Pc(16) Linkable_Sub7 local16 = (Linkable_Sub7) this.aLinkedList57.head(); local16 != null; local16 = (Linkable_Sub7) this.aLinkedList57.next()) {
 			local10[local4++] = local16.method8428();
 		}
 		this.q(local10);
@@ -61,8 +61,8 @@ public final class t extends Class178 implements Interface5 {
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(Lclient!lca;[I)V")
 	@Override
-	public void method7868(@OriginalArg(0) Class2_Sub7 arg0, @OriginalArg(1) int[] arg1) {
-		this.aClass339_57.method7711(arg0);
+	public void method7868(@OriginalArg(0) Linkable_Sub7 arg0, @OriginalArg(1) int[] arg1) {
+		this.aLinkedList57.addTail(arg0);
 		this.V(arg0.hashCode(), arg0.method8426(), arg0.method8425(), arg0.method8429(), arg0.method8432(), arg0.method8431(), arg1);
 	}
 
@@ -84,8 +84,8 @@ public final class t extends Class178 implements Interface5 {
 	public void method7877(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean[][] arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		this.anInt8897 = arg5;
 		@Pc(4) int local4 = 0;
-		@Pc(10) float[] local10 = new float[this.aClass339_57.method7701()];
-		for (@Pc(16) Class2_Sub7 local16 = (Class2_Sub7) this.aClass339_57.method7699(65280); local16 != null; local16 = (Class2_Sub7) this.aClass339_57.method7706()) {
+		@Pc(10) float[] local10 = new float[this.aLinkedList57.method7701()];
+		for (@Pc(16) Linkable_Sub7 local16 = (Linkable_Sub7) this.aLinkedList57.head(); local16 != null; local16 = (Linkable_Sub7) this.aLinkedList57.next()) {
 			local10[local4++] = local16.method8428();
 		}
 		this.q(local10);
@@ -185,15 +185,15 @@ public final class t extends Class178 implements Interface5 {
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(Lclient!r;IIIIZ)Z")
 	@Override
-	public boolean method7874(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public boolean method7874(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		return true;
 	}
 
 	@OriginalMember(owner = "client!t", name = "wa", descriptor = "(Lclient!r;IIIIZ)V")
-	public native void wa(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
+	public native void wa(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
 
 	@OriginalMember(owner = "client!t", name = "CA", descriptor = "(Lclient!r;IIIIZ)V")
-	public native void CA(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
+	public native void CA(@OriginalArg(0) SecondaryLinkable_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
 
 	@OriginalMember(owner = "client!t", name = "ka", descriptor = "(III)V")
 	public native void ka(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
@@ -205,7 +205,7 @@ public final class t extends Class178 implements Interface5 {
 	public native void w(@OriginalArg(0) boolean arg0);
 
 	@OriginalMember(owner = "client!t", name = "fa", descriptor = "(IILclient!r;)Lclient!r;")
-	public native Class2_Sub2_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub9 arg2);
+	public native SecondaryLinkable_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryLinkable_Sub9 arg2);
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(IIIIIII[[Z)V")
 	@Override

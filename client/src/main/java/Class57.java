@@ -6,19 +6,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class57 {
 
 	@OriginalMember(owner = "client!ta", name = "c", descriptor = "Lclient!kv;")
-	protected final Class2_Sub34 aClass2_Sub34_34;
+	protected final Linkable_Sub34 aClass2_Sub34_34;
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "I")
 	protected int anInt9489;
 
 	@OriginalMember(owner = "client!ta", name = "<init>", descriptor = "(Lclient!kv;)V")
-	public Class57(@OriginalArg(0) Class2_Sub34 arg0) {
+	public Class57(@OriginalArg(0) Linkable_Sub34 arg0) {
 		this.aClass2_Sub34_34 = arg0;
 		this.anInt9489 = this.method8354();
 	}
 
 	@OriginalMember(owner = "client!ta", name = "<init>", descriptor = "(ILclient!kv;)V")
-	public Class57(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub34 arg1) {
+	public Class57(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub34 arg1) {
 		this.anInt9489 = arg0;
 		this.aClass2_Sub34_34 = arg1;
 	}
