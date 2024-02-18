@@ -391,7 +391,7 @@ public final class Linkable_Sub11 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!cea", name = "a", descriptor = "(BLclient!fca;[I[B)Z")
-	public boolean method1526(@OriginalArg(1) Class123 arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) byte[] arg2) {
+	public boolean method1526(@OriginalArg(1) SoundBank arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) byte[] arg2) {
 		@Pc(5) boolean local5 = true;
 		@Pc(7) int local7 = 0;
 		@Pc(9) PcmSound local9 = null;

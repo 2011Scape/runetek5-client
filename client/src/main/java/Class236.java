@@ -10,10 +10,10 @@ public final class Class236 {
 	public boolean aBoolean455 = false;
 
 	@OriginalMember(owner = "client!lw", name = "c", descriptor = "Lclient!wj;")
-	private ParticleNode_Sub2_Sub1_Sub2_Sub2 aClass8_Sub2_Sub1_Sub2_Sub2_1 = null;
+	private Npc aClass8_Sub2_Sub1_Sub2_Sub2_1 = null;
 
 	@OriginalMember(owner = "client!lw", name = "e", descriptor = "Lclient!ca;")
-	private ParticleNode_Sub2_Sub1_Sub2_Sub1 aClass8_Sub2_Sub1_Sub2_Sub1_1 = null;
+	private Player aClass8_Sub2_Sub1_Sub2_Sub1_1 = null;
 
 	@OriginalMember(owner = "client!lw", name = "b", descriptor = "I")
 	private final int anInt5985;
@@ -53,7 +53,7 @@ public final class Class236 {
 	}
 
 	@OriginalMember(owner = "client!lw", name = "a", descriptor = "(I)Lclient!cg;")
-	public ParticleNode_Sub2_Sub1_Sub2 method5363() {
+	public PathingEntity method5363() {
 		return this.aClass8_Sub2_Sub1_Sub2_Sub2_1 == null ? this.aClass8_Sub2_Sub1_Sub2_Sub1_1 : this.aClass8_Sub2_Sub1_Sub2_Sub2_1;
 	}
 
@@ -62,7 +62,7 @@ public final class Class236 {
 		if (!this.aBoolean455) {
 			this.aBoolean455 = true;
 			if (this.anInt5980 >= 0) {
-				this.aClass8_Sub2_Sub1_Sub2_Sub2_1 = new ParticleNode_Sub2_Sub1_Sub2_Sub2(25);
+				this.aClass8_Sub2_Sub1_Sub2_Sub2_1 = new Npc(25);
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10751 = Static333.anInt5455;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10740 = this.anInt5985;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9328(Static690.aNpcTypeList2.method7092(this.anInt5980));
@@ -70,7 +70,7 @@ public final class Class236 {
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10757 = this.aClass8_Sub2_Sub1_Sub2_Sub2_1.aNpcType1.lb << 3;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10739 = Static457.anInt6933++;
 			} else {
-				this.aClass8_Sub2_Sub1_Sub2_Sub1_1 = new ParticleNode_Sub2_Sub1_Sub2_Sub1(25);
+				this.aClass8_Sub2_Sub1_Sub2_Sub1_1 = new Player(25);
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1420(Static518.aPacket_18);
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10751 = Static333.anInt5455;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10739 = Static457.anInt6933++;

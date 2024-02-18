@@ -59,7 +59,7 @@ public final class Static242 {
 		@Pc(7) int[] local7 = Static210.anIntArray280;
 		@Pc(9) boolean local9 = false;
 		for (@Pc(19) int local19 = 0; local19 < local5; local19++) {
-			@Pc(26) ParticleNode_Sub2_Sub1_Sub2_Sub1 local26 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local7[local19]];
+			@Pc(26) Player local26 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local7[local19]];
 			if (local26 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local26 && local26.aString9 != null && local26.aString9.equalsIgnoreCase(arg0)) {
 				@Pc(47) ClientProt local47 = null;
 				if (arg1 == 1) {

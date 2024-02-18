@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class39_Sub13 extends Class39 {
 
 	@OriginalMember(owner = "client!kha", name = "i", descriptor = "Lclient!bn;")
-	private Linkable_Sub8 aClass2_Sub8_4;
+	private MidiSong aClass2_Sub8_4;
 
 	@OriginalMember(owner = "client!kha", name = "n", descriptor = "I")
 	private final int anInt5431;

@@ -111,7 +111,7 @@ public final class Static263 {
 		Static338.anInt5564 = 0;
 		for (local243 = 1; local243 < 2048; local243++) {
 			Static402.aByteArray68[local243] = (byte) (Static402.aByteArray68[local243] >> 1);
-			@Pc(433) ParticleNode_Sub2_Sub1_Sub2_Sub1 local433 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local243];
+			@Pc(433) Player local433 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local243];
 			if (local433 == null) {
 				Static409.anIntArray494[Static51.anInt1053++] = local243;
 			} else {

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!i")
-public final class i extends Class114 implements Interface5 {
+public final class i extends Model implements Interface5 {
 
 	@OriginalMember(owner = "client!i", name = "nativeid", descriptor = "J")
 	public long nativeid;
@@ -304,7 +304,7 @@ public final class i extends Class114 implements Interface5 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(BIZ)Lclient!ka;")
 	@Override
-	public Class114 method7495(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+	public Model method7495(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
 		return this.anOa2.method6087().method3(this, arg0, arg1, arg2);
 	}
 
@@ -359,7 +359,7 @@ public final class i extends Class114 implements Interface5 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(Lclient!ka;IIIZ)V")
 	@Override
-	public void method7481(@OriginalArg(0) Class114 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+	public void method7481(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
 		this.anOa2.method6087().method10(this, arg0, arg1, arg2, arg3, arg4);
 	}
 

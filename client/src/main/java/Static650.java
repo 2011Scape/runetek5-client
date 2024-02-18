@@ -17,7 +17,7 @@ public final class Static650 {
 	private static int anInt9677;
 
 	@OriginalMember(owner = "client!uj", name = "N", descriptor = "[Lclient!l;")
-	public static Class217[] aClass217Array1;
+	public static VorbisResidue[] aVorbisResidueArray1;
 
 	@OriginalMember(owner = "client!uj", name = "G", descriptor = "[I")
 	public static int[] anIntArray757;
@@ -41,10 +41,10 @@ public final class Static650 {
 	public static float[] aFloatArray75;
 
 	@OriginalMember(owner = "client!uj", name = "P", descriptor = "[Lclient!bk;")
-	public static Class44[] aClass44Array1;
+	public static VorbisFloor[] aVorbisFloorArray1;
 
 	@OriginalMember(owner = "client!uj", name = "o", descriptor = "[Lclient!tr;")
-	public static Class360[] aClass360Array1;
+	public static VorbisMapping[] aVorbisMappingArray1;
 
 	@OriginalMember(owner = "client!uj", name = "J", descriptor = "[I")
 	public static int[] anIntArray758;
@@ -53,7 +53,7 @@ public final class Static650 {
 	private static int anInt9682;
 
 	@OriginalMember(owner = "client!uj", name = "z", descriptor = "[Lclient!oca;")
-	public static Class271[] aClass271Array1;
+	public static VorbisCodebook[] aVorbisCodebookArray1;
 
 	@OriginalMember(owner = "client!uj", name = "x", descriptor = "[F")
 	public static float[] aFloatArray76;
@@ -68,10 +68,10 @@ public final class Static650 {
 	private static boolean aBoolean746 = false;
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;I)Lclient!uj;")
-	public static Linkable_Sub53 method8498(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
+	public static VorbisSound method8498(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		if (method8505(arg0)) {
 			@Pc(14) byte[] local14 = arg0.method7589(arg1);
-			return local14 == null ? null : new Linkable_Sub53(local14);
+			return local14 == null ? null : new VorbisSound(local14);
 		} else {
 			arg0.method7581(arg1);
 			return null;
@@ -152,28 +152,28 @@ public final class Static650 {
 			}
 		}
 		local24 = method8500(8) + 1;
-		aClass271Array1 = new Class271[local24];
+		aVorbisCodebookArray1 = new VorbisCodebook[local24];
 		for (local28 = 0; local28 < local24; local28++) {
-			aClass271Array1[local28] = new Class271();
+			aVorbisCodebookArray1[local28] = new VorbisCodebook();
 		}
 		local32 = method8500(6) + 1;
 		for (local36 = 0; local36 < local32; local36++) {
 			method8500(16);
 		}
 		@Pc(269) int local269 = method8500(6) + 1;
-		aClass44Array1 = new Class44[local269];
+		aVorbisFloorArray1 = new VorbisFloor[local269];
 		for (local41 = 0; local41 < local269; local41++) {
-			aClass44Array1[local41] = new Class44();
+			aVorbisFloorArray1[local41] = new VorbisFloor();
 		}
 		@Pc(290) int local290 = method8500(6) + 1;
-		aClass217Array1 = new Class217[local290];
+		aVorbisResidueArray1 = new VorbisResidue[local290];
 		for (local86 = 0; local86 < local290; local86++) {
-			aClass217Array1[local86] = new Class217();
+			aVorbisResidueArray1[local86] = new VorbisResidue();
 		}
 		@Pc(311) int local311 = method8500(6) + 1;
-		aClass360Array1 = new Class360[local311];
+		aVorbisMappingArray1 = new VorbisMapping[local311];
 		for (local138 = 0; local138 < local311; local138++) {
-			aClass360Array1[local138] = new Class360();
+			aVorbisMappingArray1[local138] = new VorbisMapping();
 		}
 		@Pc(332) int local332 = method8500(6) + 1;
 		aBooleanArray32 = new boolean[local332];
@@ -200,10 +200,10 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;II)Lclient!uj;")
-	public static Linkable_Sub53 method8506(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static VorbisSound method8506(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method8505(arg0)) {
 			@Pc(16) byte[] local16 = arg0.method7595(arg2, arg1);
-			return local16 == null ? null : new Linkable_Sub53(local16);
+			return local16 == null ? null : new VorbisSound(local16);
 		} else {
 			arg0.method7586(arg2, arg1);
 			return null;

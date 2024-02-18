@@ -7,10 +7,10 @@ public final class Static638 {
 
 	@OriginalMember(owner = "client!uca", name = "c", descriptor = "(I)V")
 	public static void method8393() {
-		@Pc(5) Class130[] local5 = Class43.aClass130Array1;
-		synchronized (Class43.aClass130Array1) {
-			for (@Pc(9) int local9 = 0; local9 < Class43.aClass130Array1.length; local9++) {
-				Class43.aClass130Array1[local9] = new Class130();
+		@Pc(5) ParticleLinkedList[] local5 = Class43.aParticleLinkedListArray1;
+		synchronized (Class43.aParticleLinkedListArray1) {
+			for (@Pc(9) int local9 = 0; local9 < Class43.aParticleLinkedListArray1.length; local9++) {
+				Class43.aParticleLinkedListArray1[local9] = new ParticleLinkedList();
 				Static159.anIntArray245[local9] = 0;
 			}
 		}

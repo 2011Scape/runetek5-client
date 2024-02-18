@@ -8,7 +8,7 @@ public final class Static114 {
 	public static int anInt2256 = -1;
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(IIBJLclient!aa;IIILclient!hda;)V")
-	public static void method2132(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) long arg2, @OriginalArg(4) Class1 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class158 arg7) {
+	public static void method2132(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) long arg2, @OriginalArg(4) Class1 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Component arg7) {
 		@Pc(16) int local16 = arg6 * arg6 + arg0 * arg0;
 		if ((long) local16 > arg2) {
 			return;

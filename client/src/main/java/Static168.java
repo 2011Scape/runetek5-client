@@ -12,13 +12,13 @@ public final class Static168 {
 	public static int anInt2842;
 
 	@OriginalMember(owner = "client!fda", name = "c", descriptor = "Lclient!fla;")
-	public static final Class130 aClass130_5 = new Class130();
+	public static final ParticleLinkedList aParticleLinkedList5 = new ParticleLinkedList();
 
 	@OriginalMember(owner = "client!fda", name = "a", descriptor = "(Lclient!rka;I)V")
 	public static void method2633(@OriginalArg(0) PacketBit arg0) {
 		arg0.bits();
 		@Pc(10) int local10 = Static312.anInt5000;
-		@Pc(20) ParticleNode_Sub2_Sub1_Sub2_Sub1 local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new ParticleNode_Sub2_Sub1_Sub2_Sub1();
+		@Pc(20) Player local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new Player();
 		local20.anInt10740 = local10;
 		@Pc(28) int local28 = arg0.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
@@ -90,12 +90,12 @@ public final class Static168 {
 		}
 		@Pc(13) int local13 = (arg1 + arg0) / 2;
 		@Pc(15) int local15 = arg1;
-		@Pc(19) Class297_Sub1 local19 = Static343.aClass297_Sub1Array2[local13];
+		@Pc(19) World local19 = Static343.aClass297_Sub1Array2[local13];
 		Static343.aClass297_Sub1Array2[local13] = Static343.aClass297_Sub1Array2[arg0];
 		Static343.aClass297_Sub1Array2[arg0] = local19;
 		for (@Pc(31) int local31 = arg1; local31 < arg0; local31++) {
 			if (Static639.method8418(local19, arg3, arg5, arg4, 70, Static343.aClass297_Sub1Array2[local31], arg2) <= 0) {
-				@Pc(47) Class297_Sub1 local47 = Static343.aClass297_Sub1Array2[local31];
+				@Pc(47) World local47 = Static343.aClass297_Sub1Array2[local31];
 				Static343.aClass297_Sub1Array2[local31] = Static343.aClass297_Sub1Array2[local15];
 				Static343.aClass297_Sub1Array2[local15++] = local47;
 			}

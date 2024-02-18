@@ -8,7 +8,7 @@ public final class Static148 {
 	public static int[][] anIntArrayArray64;
 
 	@OriginalMember(owner = "client!el", name = "R", descriptor = "[[Lclient!hda;")
-	public static Class158[][] aClass158ArrayArray1;
+	public static Component[][] aComponentArrayArray1;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!el", name = "Z", descriptor = "Ljava/lang/Class;")

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static484 {
 
 	@OriginalMember(owner = "client!pea", name = "l", descriptor = "Lclient!rt;")
-	public static Class327 aClass327_6;
+	public static WorldMapFont aWorldMapFont6;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!pea", name = "n", descriptor = "Ljava/lang/Class;")

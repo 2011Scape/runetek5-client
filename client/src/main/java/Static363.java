@@ -69,7 +69,7 @@ public final class Static363 {
 			Static163.aClass19_17.DA(local43.width / 2, local43.height / 2, 512, 512);
 			Static163.aClass19_17.xa(1.0F);
 			Static163.aClass19_17.ZA(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
-			@Pc(111) Class114 local111 = Static163.aClass19_17.method7952(local67, 2048, 64, 64, 768);
+			@Pc(111) Model local111 = Static163.aClass19_17.method7952(local67, 2048, 64, 64, 768);
 			@Pc(113) int local113 = 0;
 			label41: for (@Pc(115) int local115 = 0; local115 < 500; local115++) {
 				Static163.aClass19_17.GA(0);

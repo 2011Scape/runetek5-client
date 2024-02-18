@@ -20,7 +20,7 @@ public final class Static192 {
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(I)Lclient!aea;")
 	public static ParticleNode_Sub1 method2876() {
-		@Pc(14) ParticleNode_Sub1 local14 = (ParticleNode_Sub1) Static129.aClass130_3.method2783();
+		@Pc(14) ParticleNode_Sub1 local14 = (ParticleNode_Sub1) Static129.aParticleLinkedList3.method2783();
 		if (local14 == null) {
 			return new ParticleNode_Sub1();
 		} else {

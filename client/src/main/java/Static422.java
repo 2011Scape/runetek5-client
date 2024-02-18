@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static422 {
 
 	@OriginalMember(owner = "client!nfa", name = "b", descriptor = "Lclient!fla;")
-	public static final Class130 aClass130_9 = new Class130();
+	public static final ParticleLinkedList aParticleLinkedList9 = new ParticleLinkedList();
 
 	@OriginalMember(owner = "client!nfa", name = "b", descriptor = "(I)I")
 	public static int method5771() {

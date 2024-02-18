@@ -35,7 +35,7 @@ public final class Static232 {
 		} else if (Static598.method7825(arg6.anInt7314)) {
 			@Pc(110) Linkable_Sub45 local110 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) arg6.aLong233);
 			if (local110 != null) {
-				@Pc(115) ParticleNode_Sub2_Sub1_Sub2_Sub2 local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+				@Pc(115) Npc local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(118) NpcType local118 = local115.aNpcType1;
 				if (local118.anIntArray532 != null) {
 					local118 = local118.method5985(65535, Static34.aClass304_1);
@@ -79,7 +79,7 @@ public final class Static232 {
 				}
 				Static581.aClass2_Sub6_Sub1_3.method912();
 				Static581.aClass2_Sub6_Sub1_3.method927();
-				Static12.aClass123_4 = null;
+				Static12.aSoundBank4 = null;
 				Static62.aClass2_Sub8_3 = null;
 				if (Static676.aJs5121 == null) {
 					Static96.anInt10171 = 0;
@@ -107,7 +107,7 @@ public final class Static232 {
 			Static62.aClass2_Sub8_3 = null;
 			Static96.anInt10171 = 0;
 			Static676.aJs5121 = null;
-			Static12.aClass123_4 = null;
+			Static12.aSoundBank4 = null;
 		}
 	}
 

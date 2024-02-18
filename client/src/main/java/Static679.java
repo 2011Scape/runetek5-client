@@ -8,7 +8,7 @@ public final class Static679 {
 	public static int anInt10273;
 
 	@OriginalMember(owner = "client!vj", name = "E", descriptor = "[Lclient!qf;")
-	public static ParticleNode_Sub2_Sub1[] aClass8_Sub2_Sub1Array1;
+	public static Entity[] aClass8_Sub2_Sub1Array1;
 
 	@OriginalMember(owner = "client!vj", name = "t", descriptor = "I")
 	public static int anInt10278;
@@ -27,7 +27,7 @@ public final class Static679 {
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(Z)I")
 	public static int method8909() {
-		if (Static109.aClass158_3 == null) {
+		if (Static109.aComponent3 == null) {
 			if (!Static400.aBoolean622 && Static470.aClass2_Sub2_Sub16_10 != null) {
 				return Static470.aClass2_Sub2_Sub16_10.anInt7318;
 			}

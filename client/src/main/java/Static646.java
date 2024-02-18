@@ -14,7 +14,7 @@ public final class Static646 {
 			@Pc(28) Class291 local28 = Static334.aClass291ArrayArrayArray1[local9][arg0][arg1] = Static334.aClass291ArrayArrayArray1[local9 + 1][arg0][arg1];
 			if (local28 != null) {
 				for (@Pc(33) Class286 local33 = local28.aClass286_2; local33 != null; local33 = local33.aClass286_1) {
-					@Pc(37) ParticleNode_Sub2_Sub1 local37 = local33.aClass8_Sub2_Sub1_1;
+					@Pc(37) Entity local37 = local33.aClass8_Sub2_Sub1_1;
 					if (local37.aShort131 == arg0 && local37.aShort132 == arg1) {
 						local37.aByte144--;
 					}
@@ -45,7 +45,7 @@ public final class Static646 {
 	}
 
 	@OriginalMember(owner = "client!uga", name = "a", descriptor = "(Lclient!hda;III)V")
-	public static void method8454(@OriginalArg(0) Class158 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static void method8454(@OriginalArg(0) Component arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(8) Class159 local8 = arg0.method3393(Static163.aClass19_17);
 		if (local8 == null) {
 			return;

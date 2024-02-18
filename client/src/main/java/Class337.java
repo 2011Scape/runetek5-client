@@ -16,7 +16,7 @@ public final class Class337 {
 	public ParticleSystem aClass8_Sub5_7;
 
 	@OriginalMember(owner = "client!sh", name = "g", descriptor = "Lclient!ka;")
-	private Class114 aClass114_8;
+	private Model aModel8;
 
 	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!r;")
 	private SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_6;
@@ -170,14 +170,14 @@ public final class Class337 {
 			this.aClass152_9.method9104(false, -1, 838828768);
 		} else {
 			this.aClass152_9.method9092(local10, 0, arg0, local12);
-			this.aClass114_8 = null;
+			this.aModel8 = null;
 			this.aBoolean662 = false;
 			this.anInt8643 = Static333.anInt5455;
 		}
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!ha;ZZZI)Lclient!ka;")
-	public Class114 method7678(@OriginalArg(0) Class19 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4) {
+	public Model method7678(@OriginalArg(0) Class19 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4) {
 		@Pc(11) LocType local11 = Static354.aLocTypeList4.method3063(this.anInt8649, 119);
 		if (local11.anIntArray113 != null) {
 			local11 = local11.method1301(13, Static1.anInt10798 == 3 ? Static298.anInterface23_2 : Static34.aClass304_1);
@@ -189,7 +189,7 @@ public final class Class337 {
 		}
 		if (!this.aBoolean659 && this.anInt8647 != local11.anInt1256) {
 			this.method7676(0, -1, true);
-			this.aClass114_8 = null;
+			this.aModel8 = null;
 			this.aBoolean662 = false;
 		}
 		this.method7680(this.aClass8_Sub2_21, arg2);
@@ -211,7 +211,7 @@ public final class Class337 {
 		} else {
 			local163 = this.aByte133 >= 3 ? null : Static246.aClass178Array1[this.aByte133 + 1];
 		}
-		@Pc(171) Class114 local171 = null;
+		@Pc(171) Model local171 = null;
 		if (this.aClass152_9.method9109()) {
 			if (arg3) {
 				arg4 |= 0x40000;
@@ -234,12 +234,12 @@ public final class Class337 {
 				this.anInt8660 = local171.fa();
 				this.anInt8652 = local171.ma();
 			}
-			this.aClass114_8 = null;
-		} else if (this.aClass114_8 != null && (arg4 & this.aClass114_8.ua()) == arg4 && local11.anInt1256 == this.anInt8647) {
-			local171 = this.aClass114_8;
+			this.aModel8 = null;
+		} else if (this.aModel8 != null && (arg4 & this.aModel8.ua()) == arg4 && local11.anInt1256 == this.anInt8647) {
+			local171 = this.aModel8;
 		} else {
-			if (this.aClass114_8 != null) {
-				arg4 |= this.aClass114_8.ua();
+			if (this.aModel8 != null) {
+				arg4 |= this.aModel8.ua();
 			}
 			@Pc(389) Class272 local389 = local11.method1309(this.anInt8645 == 11 ? this.anInt8663 + 4 : this.anInt8663, this.aClass8_Sub2_21.anInt10694, this.aClass8_Sub2_21.anInt10690, local142, arg3, local142.method7878(this.aClass8_Sub2_21.anInt10694, this.aClass8_Sub2_21.anInt10690), this.anInt8645 == 11 ? 10 : this.anInt8645, arg0, this.aClass150_2, arg4, local163);
 			if (local389 == null) {
@@ -247,10 +247,10 @@ public final class Class337 {
 				this.aBooleanArray27 = null;
 				this.anInt8660 = 0;
 				this.aClass2_Sub2_Sub9_6 = null;
-				this.aClass114_8 = null;
+				this.aModel8 = null;
 			} else {
-				local171 = local389.aClass114_7;
-				this.aClass114_8 = local389.aClass114_7;
+				local171 = local389.aModel7;
+				this.aModel8 = local389.aModel7;
 				if (arg3) {
 					this.aClass2_Sub2_Sub9_6 = local389.aClass2_Sub2_Sub9_5;
 					this.aBooleanArray27 = null;
@@ -268,7 +268,7 @@ public final class Class337 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!gp;I)V")
 	public void method7679(@OriginalArg(0) Class150 arg0) {
 		this.aClass150_2 = arg0;
-		this.aClass114_8 = null;
+		this.aModel8 = null;
 	}
 
 	@OriginalMember(owner = "client!sh", name = "finalize", descriptor = "()V")
@@ -299,7 +299,7 @@ public final class Class337 {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(ILclient!ka;ZILclient!ha;IIILclient!tt;)V")
-	public void method7681(@OriginalArg(0) int arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class73 arg8) {
+	public void method7681(@OriginalArg(0) int arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class73 arg8) {
 		if (arg3 != -9827) {
 			return;
 		}

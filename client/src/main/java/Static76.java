@@ -16,7 +16,7 @@ public final class Static76 {
 	public static int anInt1604 = 0;
 
 	@OriginalMember(owner = "client!cha", name = "a", descriptor = "(BLclient!ca;)V")
-	public static void method1552(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0) {
+	public static void method1552(@OriginalArg(1) Player arg0) {
 		@Pc(19) Linkable_Sub51 local19 = (Linkable_Sub51) Static113.aHashTable12.get((long) arg0.anInt10740);
 		if (local19 == null) {
 			return;

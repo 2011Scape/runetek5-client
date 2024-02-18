@@ -398,10 +398,10 @@ public abstract class Class19_Sub1 extends Class19 {
 	private final Stream aStream6 = new Stream();
 
 	@OriginalMember(owner = "client!am", name = "bd", descriptor = "[Lclient!eu;")
-	public final Class114_Sub1[] aClass114_Sub1Array5 = new Class114_Sub1[7];
+	public final Model_Sub1[] aClass114_Sub1Array5 = new Model_Sub1[7];
 
 	@OriginalMember(owner = "client!am", name = "ug", descriptor = "[Lclient!eu;")
-	public final Class114_Sub1[] aClass114_Sub1Array6 = new Class114_Sub1[7];
+	public final Model_Sub1[] aClass114_Sub1Array6 = new Model_Sub1[7];
 
 	@OriginalMember(owner = "client!am", name = "B", descriptor = "Lclient!cw;")
 	private final Class73_Sub1 aClass73_Sub1_21 = new Class73_Sub1();
@@ -2463,8 +2463,8 @@ public abstract class Class19_Sub1 extends Class19 {
 		this.aClass244_20 = this.method8148(new Class237[] { new Class237(Static231.aClass157_1), new Class237(Static231.aClass157_3), new Class237(Static231.aClass157_5), new Class237(Static231.aClass157_2) });
 		this.aClass244_22 = this.method8148(new Class237[] { new Class237(Static231.aClass157_1), new Class237(Static231.aClass157_3), new Class237(Static231.aClass157_5) });
 		for (@Pc(203) int local203 = 0; local203 < 7; local203++) {
-			this.aClass114_Sub1Array6[local203] = new Class114_Sub1(this, 0, 0, false, false);
-			this.aClass114_Sub1Array5[local203] = new Class114_Sub1(this, 0, 0, true, true);
+			this.aClass114_Sub1Array6[local203] = new Model_Sub1(this, 0, 0, false, false);
+			this.aClass114_Sub1Array5[local203] = new Model_Sub1(this, 0, 0, true, true);
 		}
 		this.aClass316_3 = new Class316(this);
 		this.anInterface20_6 = this.method8122(true);
@@ -2683,8 +2683,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(Lclient!dv;IIII)Lclient!ka;")
 	@Override
-	public final Class114 method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class114_Sub1(this, arg0, arg1, arg3, arg4, arg2);
+	public final Model method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new Model_Sub1(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!am", name = "Y", descriptor = "()[I")

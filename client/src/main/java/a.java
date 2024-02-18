@@ -67,7 +67,7 @@ public final class a implements Interface5 {
 	private native void ta(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean[][] arg9);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!i;BIZ)Lclient!ka;")
-	public Class114 method3(@OriginalArg(0) i arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
+	public Model method3(@OriginalArg(0) i arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
 		@Pc(1) boolean local1 = false;
 		@Pc(20) i local20;
 		@Pc(13) i local13;
@@ -90,7 +90,7 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;IILclient!tt;ZI)Z")
-	public boolean method5(@OriginalArg(0) Class114 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class73 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5) {
+	public boolean method5(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class73 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5) {
 		return this.n(this.nativeid, ((i) arg0).nativeid, arg1, arg2, ((ja) arg3).nativeid, arg4, arg5);
 	}
 
@@ -119,17 +119,17 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;Lclient!tt;[II)V")
-	public void method8(@OriginalArg(0) Class114 arg0, @OriginalArg(1) Class73 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3) {
+	public void method8(@OriginalArg(0) Model arg0, @OriginalArg(1) Class73 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3) {
 		this.UA(this.nativeid, ((i) arg0).nativeid, ((ja) arg1).nativeid, arg2, arg3);
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;Lclient!tt;[III)V")
-	public void method9(@OriginalArg(0) Class114 arg0, @OriginalArg(1) Class73 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public void method9(@OriginalArg(0) Model arg0, @OriginalArg(1) Class73 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		this.f(this.nativeid, ((i) arg0).nativeid, ((ja) arg1).nativeid, arg2, arg3, arg4);
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;Lclient!ka;IIIZ)V")
-	public void method10(@OriginalArg(0) Class114 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public void method10(@OriginalArg(0) Model arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		this.r(this.nativeid, ((i) arg0).nativeid, ((i) arg1).nativeid, arg2, arg3, arg4, arg5);
 	}
 
@@ -140,7 +140,7 @@ public final class a implements Interface5 {
 	private native void E(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;IILclient!tt;Z)Z")
-	public boolean method11(@OriginalArg(0) Class114 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class73 arg3, @OriginalArg(4) boolean arg4) {
+	public boolean method11(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class73 arg3, @OriginalArg(4) boolean arg4) {
 		return this.R(this.nativeid, ((i) arg0).nativeid, arg1, arg2, ((ja) arg3).nativeid, arg4);
 	}
 
@@ -176,7 +176,7 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;[ILclient!tt;)V")
-	public void method15(@OriginalArg(0) Class114 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class73 arg2) {
+	public void method15(@OriginalArg(0) Model arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class73 arg2) {
 		this.e(this.nativeid, ((i) arg0).nativeid, arg1, ((ja) arg2).nativeid);
 	}
 

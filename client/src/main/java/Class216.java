@@ -116,7 +116,7 @@ public final class Class216 {
 			local35 = local35 * local84 - local31 * local79 >> 14;
 			local31 = local94;
 		}
-		@Pc(147) Class114 local147 = Static345.aClass114_6.method7495((byte) 0, 51200, true);
+		@Pc(147) Model local147 = Static345.aModel6.method7495((byte) 0, 51200, true);
 		local147.aa((short) 0, (short) this.anInt5633);
 		arg0.xa(1.0F);
 		arg0.ZA(16777215, 1.0F, 1.0F, (float) local31, (float) local33, (float) local35);
@@ -189,7 +189,7 @@ public final class Class216 {
 		arg0.xa(1.0F);
 		arg0.ZA(this.anInt5634, 1.0F, 1.0F, (float) local34, (float) local36, (float) local38);
 		local6.method2236(this.anInt5636 & 0x3FFF, this.anInt5632 & 0x3FFF, this.anInt5629 & 0x3FFF);
-		@Pc(190) Class114 local190 = arg0.method7952(local6, 2048, 0, 64, 768);
+		@Pc(190) Model local190 = arg0.method7952(local6, 2048, 0, 64, 768);
 		local87 = local190.RA() - local190.V();
 		local91 = local190.EA() - local190.fa();
 		local101 = local87 > local91 ? local87 : local91;

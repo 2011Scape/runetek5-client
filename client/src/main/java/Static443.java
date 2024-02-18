@@ -26,13 +26,13 @@ public final class Static443 {
 			local46 = Static422.method5771();
 		}
 		Static431.method5822(local46 + Static380.anInt5979, local46, local46, local22, local22 + local46, local44 + Static680.anInt10289, local44, Static377.anInt5930, local13, local44 + local13, local44);
-		if (Static210.aClass158_4 != null) {
+		if (Static210.aComponent4 != null) {
 			Static509.method6759(local13 + local44, local22 - -local46);
 		}
 	}
 
 	@OriginalMember(owner = "client!nw", name = "a", descriptor = "(Lclient!hda;II)Ljava/lang/String;")
-	public static String method5982(@OriginalArg(0) Class158 arg0, @OriginalArg(1) int arg1) {
+	public static String method5982(@OriginalArg(0) Component arg0, @OriginalArg(1) int arg1) {
 		if (!Static84.method1661(arg0).method6221(arg1) && arg0.anObjectArray15 == null) {
 			return null;
 		} else if (arg0.aStringArray17 == null || arg1 >= arg0.aStringArray17.length || arg0.aStringArray17[arg1] == null || arg0.aStringArray17[arg1].trim().length() == 0) {

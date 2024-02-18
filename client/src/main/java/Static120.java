@@ -10,7 +10,7 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method2193(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class158 local8 = Static15.method186(arg1, arg0);
+		@Pc(8) Component local8 = Static15.method186(arg1, arg0);
 		if (local8 == null) {
 			return;
 		}
@@ -19,7 +19,7 @@ public final class Static120 {
 			local19.anObjectArray36 = local8.anObjectArray15;
 			local19.anInt7219 = arg3;
 			local19.aString84 = arg2;
-			local19.aClass158_14 = local8;
+			local19.aComponent14 = local8;
 			Static472.method6420(local19);
 		}
 		if (Static283.anInt4574 != 11 || !Static84.method1661(local8).method6221(arg3 - 1)) {

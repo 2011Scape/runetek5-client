@@ -60,7 +60,7 @@ public final class Static320 {
 				local64 = 2;
 			}
 			if (local64 == 2 && Static594.anInt8777 > 0 && local204 != null) {
-				if (Static109.aClass158_3 == null && Static460.anInt6964 == 0) {
+				if (Static109.aComponent3 == null && Static460.anInt6964 == 0) {
 					Static572.method7876(local204.method5333(), local204.method5331());
 				} else {
 					Static536.anInt8149 = 2;
@@ -73,7 +73,7 @@ public final class Static320 {
 					Static470.method6384();
 				}
 			}
-			if (Static109.aClass158_3 == null && Static460.anInt6964 == 0) {
+			if (Static109.aComponent3 == null && Static460.anInt6964 == 0) {
 				Static75.aClass2_Sub2_Sub16_9 = null;
 				Static536.anInt8149 = 0;
 			}

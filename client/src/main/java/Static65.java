@@ -52,9 +52,9 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!cba", name = "a", descriptor = "(IZILclient!hda;)V")
-	public static void method1473(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class158 arg2) {
+	public static void method1473(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Component arg2) {
 		Static366.anInt5852 = arg0;
-		Static605.aClass158_15 = arg2;
+		Static605.aComponent15 = arg2;
 		Static157.anInt2777 = arg1;
 	}
 }

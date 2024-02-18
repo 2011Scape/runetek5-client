@@ -21,7 +21,7 @@ public final class Static444 {
 		Static262.aJs556 = arg2;
 		Static666.aJs5118 = arg0;
 		Static607.aJs5113 = arg3;
-		Static453.aClass158ArrayArray2 = new Class158[Static666.aJs5118.method7597()][];
+		Static453.aComponentArrayArray2 = new Component[Static666.aJs5118.method7597()][];
 		Static132.aBooleanArray5 = new boolean[Static666.aJs5118.method7597()];
 	}
 

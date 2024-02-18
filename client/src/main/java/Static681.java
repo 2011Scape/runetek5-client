@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static681 {
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "Lclient!lg;")
-	public static Class224 aClass224_2;
+	public static Resampler aResampler2;
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(I[B)Z")
 	public static boolean method8919(@OriginalArg(1) byte[] arg0) {

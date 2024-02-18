@@ -47,7 +47,7 @@ public final class Static254 {
 		Static18.aHashTable2.clear();
 		Static505.aLinkedList77.clear();
 		Static346.aHashTable29.clear();
-		Static422.aClass130_9.method2789();
+		Static422.aParticleLinkedList9.method2789();
 		Static497.aHashTable35.clear();
 		Static159.aLinkedList15 = new LinkedList();
 		Static227.aLinkedList18 = new LinkedList();
@@ -71,9 +71,9 @@ public final class Static254 {
 		if (Static377.anInt5930 != -1) {
 			Static347.method5094(Static377.anInt5930);
 		}
-		for (@Pc(8803) Linkable_Sub4 local8803 = (Linkable_Sub4) Static548.aHashTable40.head(); local8803 != null; local8803 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+		for (@Pc(8803) SubInterface local8803 = (SubInterface) Static548.aHashTable40.head(); local8803 != null; local8803 = (SubInterface) Static548.aHashTable40.next()) {
 			if (!local8803.isLinked()) {
-				local8803 = (Linkable_Sub4) Static548.aHashTable40.head();
+				local8803 = (SubInterface) Static548.aHashTable40.head();
 				if (local8803 == null) {
 					break;
 				}
@@ -83,7 +83,7 @@ public final class Static254 {
 		Static377.anInt5930 = -1;
 		Static548.aHashTable40 = new HashTable(8);
 		Static656.method6692();
-		Static390.aClass158_9 = null;
+		Static390.aComponent9 = null;
 		for (@Pc(8849) int local8849 = 0; local8849 < 8; local8849++) {
 			Static297.aStringArray24[local8849] = null;
 			Static601.aBooleanArray28[local8849] = false;

@@ -28,7 +28,7 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(IIZLclient!ha;)Z")
 	@Override
 	public boolean method9279(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class19 arg3) {
-		@Pc(12) Class114 local12 = this.aClass337_2.method7678(arg3, false, true, arg2, 131072);
+		@Pc(12) Model local12 = this.aClass337_2.method7678(arg3, false, true, arg2, 131072);
 		if (local12 == null) {
 			return false;
 		} else {
@@ -53,7 +53,7 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 		if (arg1 != -5) {
 			this.method3581((Class150) null);
 		}
-		@Pc(21) Class114 local21 = this.aClass337_2.method7678(arg0, true, true, true, 262144);
+		@Pc(21) Model local21 = this.aClass337_2.method7678(arg0, true, true, true, 262144);
 		if (local21 == null) {
 			return;
 		}
@@ -147,7 +147,7 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(ILclient!ha;)Lclient!pea;")
 	@Override
 	public ParticleNode_Sub7 method9276(@OriginalArg(1) Class19 arg0) {
-		@Pc(22) Class114 local22 = this.aClass337_2.method7678(arg0, false, true, true, 2048);
+		@Pc(22) Model local22 = this.aClass337_2.method7678(arg0, false, true, true, 2048);
 		if (local22 == null) {
 			return null;
 		}

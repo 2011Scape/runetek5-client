@@ -63,7 +63,7 @@ public final class Static385 {
 	public static boolean method5421() {
 		if (Static98.aBoolean191) {
 			try {
-				if ((Boolean) Static727.method97("showingVideoAd", Static166.anApplet1)) {
+				if ((Boolean) BrowserControl.call("showingVideoAd", Static166.anApplet1)) {
 					return false;
 				}
 				return true;

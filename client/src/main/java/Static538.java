@@ -30,7 +30,7 @@ public final class Static538 {
 		@Pc(15) PacketBit local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		for (@Pc(17) int local17 = 0; local17 < Static86.anInt1798; local17++) {
 			@Pc(23) int local23 = Static458.anIntArray553[local17];
-			@Pc(31) ParticleNode_Sub2_Sub1_Sub2_Sub2 local31 = ((Linkable_Sub45) Static18.aHashTable2.get((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(31) Npc local31 = ((Linkable_Sub45) Static18.aHashTable2.get((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			@Pc(35) int local35 = local15.g1();
 			if ((local35 & 0x80) != 0) {
 				local35 += local15.g1() << 8;
@@ -129,7 +129,7 @@ public final class Static538 {
 				local31.method9310(local31.aNpcType1.anInt6713);
 				local31.anInt10757 = local31.aNpcType1.lb << 3;
 				if (local31.aNpcType1.method5984()) {
-					Static89.method1714(local31.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (LocType) null, 0);
+					Static89.method1714(local31.aByte144, (Player) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (LocType) null, 0);
 				}
 			}
 			if ((local35 & 0x2) != 0) {

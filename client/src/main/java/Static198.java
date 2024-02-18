@@ -130,8 +130,8 @@ public final class Static198 {
 				if (arg2 == 11) {
 					arg2 = 10;
 				}
-				if (local52 instanceof ParticleNode_Sub2_Sub1_Sub4) {
-					((ParticleNode_Sub2_Sub1_Sub4) local52).aClass337_3.method7672(arg3);
+				if (local52 instanceof Entity_Sub2) {
+					((Entity_Sub2) local52).aClass337_3.method7672(arg3);
 				} else {
 					Static235.method3421(arg1, arg2, arg5, arg4, arg3, arg6, arg0, local52.method6859(-32136));
 				}

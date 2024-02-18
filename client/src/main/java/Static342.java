@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static342 {
 
 	@OriginalMember(owner = "client!kp", name = "w", descriptor = "Lclient!fla;")
-	public static Class130 aClass130_7;
+	public static ParticleLinkedList aParticleLinkedList7;
 
 	@OriginalMember(owner = "client!kp", name = "A", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt61 = new ClientProt(47, 7);

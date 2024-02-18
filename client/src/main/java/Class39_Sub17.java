@@ -31,7 +31,7 @@ public final class Class39_Sub17 extends Class39 {
 	@OriginalMember(owner = "client!q", name = "b", descriptor = "(I)V")
 	@Override
 	public void method9161() {
-		@Pc(10) ParticleNode_Sub2_Sub1_Sub2 local10 = Static219.aClass236Array1[this.anInt7622].method5363();
+		@Pc(10) PathingEntity local10 = Static219.aClass236Array1[this.anInt7622].method5363();
 		if (this.anInt7625 == 0) {
 			Static651.method8515(this.anIntArray611, 0, false, local10);
 		} else {

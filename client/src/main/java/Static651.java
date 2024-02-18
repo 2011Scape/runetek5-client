@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static651 {
 
 	@OriginalMember(owner = "client!uja", name = "j", descriptor = "Lclient!rt;")
-	public static Class327 aClass327_8;
+	public static WorldMapFont aWorldMapFont8;
 
 	@OriginalMember(owner = "client!uja", name = "p", descriptor = "[Lclient!gaa;")
 	public static Interface9[] anInterface9Array1;
@@ -27,7 +27,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(IIIILclient!cg;)V")
-	public static void method8513(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2 arg3) {
+	public static void method8513(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) PathingEntity arg3) {
 		@Pc(9) BasType local9 = arg3.method9317();
 		@Pc(19) Class152 local19 = arg3.aClass152_10;
 		@Pc(29) int local29 = arg3.anInt10756 - arg3.aClass126_7.anInt2889 & 0x3FFF;
@@ -117,7 +117,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "([IIZLclient!cg;I)V")
-	public static void method8515(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) ParticleNode_Sub2_Sub1_Sub2 arg3) {
+	public static void method8515(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) PathingEntity arg3) {
 		@Pc(8) boolean local8;
 		@Pc(10) int local10;
 		if (arg3.anIntArray869 != null) {
@@ -170,7 +170,7 @@ public final class Static651 {
 	}
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(IZLclient!wj;)V")
-	public static void method8517(@OriginalArg(1) boolean arg0, @OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg1) {
+	public static void method8517(@OriginalArg(1) boolean arg0, @OriginalArg(2) Npc arg1) {
 		if (Static594.anInt8777 >= 400) {
 			return;
 		}

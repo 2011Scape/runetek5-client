@@ -66,7 +66,7 @@ public final class Static618 {
 	public static void method8319(@OriginalArg(0) PacketBit arg0) {
 		for (@Pc(10) int local10 = 0; local10 < Static652.anInt9713; local10++) {
 			@Pc(18) int local18 = Static321.anIntArray388[local10];
-			@Pc(22) ParticleNode_Sub2_Sub1_Sub2_Sub1 local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
+			@Pc(22) Player local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
 			@Pc(26) int local26 = arg0.g1();
 			if ((local26 & 0x80) != 0) {
 				local26 += arg0.g1() << 8;
@@ -80,7 +80,7 @@ public final class Static618 {
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(ILclient!ka;IIIIZLclient!ha;ILclient!gu;III)Lclient!ka;")
-	public static Class114 method8320(@OriginalArg(0) int arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) Class152 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11) {
+	public static Model method8320(@OriginalArg(0) int arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) Class152 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11) {
 		if (arg1 == null) {
 			return null;
 		}
@@ -91,9 +91,9 @@ public final class Static618 {
 		}
 		@Pc(58) long local58 = ((long) arg3 << 48) + ((long) arg11 << 32) + (long) (arg5 + (arg7 << 16) + (arg0 << 24));
 		@Pc(60) SoftLruHashTable local60 = Static354.aSoftLruHashTable120;
-		@Pc(68) Class114 local68;
+		@Pc(68) Model local68;
 		synchronized (Static354.aSoftLruHashTable120) {
-			local68 = (Class114) Static354.aSoftLruHashTable120.method2156(local58);
+			local68 = (Model) Static354.aSoftLruHashTable120.method2156(local58);
 		}
 		if (local68 == null || arg6.method7960(local68.ua(), local12) != 0) {
 			if (local68 != null) {

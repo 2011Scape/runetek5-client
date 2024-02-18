@@ -136,13 +136,13 @@ public final class Static293 {
 		if (Static586.ServerProt215 == arg0.aServerProt_93) {
 			local277 = local11.g4_alt1();
 			Static574.method7573();
-			@Pc(287) Linkable_Sub4 local287 = (Linkable_Sub4) Static548.aHashTable40.get((long) local277);
+			@Pc(287) SubInterface local287 = (SubInterface) Static548.aHashTable40.get((long) local277);
 			if (local287 != null) {
 				Static449.method6115(false, true, local287);
 			}
-			if (Static390.aClass158_9 != null) {
-				Static178.method2729(Static390.aClass158_9);
-				Static390.aClass158_9 = null;
+			if (Static390.aComponent9 != null) {
+				Static178.method2729(Static390.aComponent9);
+				Static390.aComponent9 = null;
 			}
 			arg0.aServerProt_93 = null;
 			return true;
@@ -439,7 +439,7 @@ public final class Static293 {
 											} else if (local627.equals(Static330.aStringArray25[local1449])) {
 												if (Static371.anIntArray455[local1449] != local1409) {
 													local1491 = true;
-													for (@Pc(1496) SecondaryParticleNode_Sub1 local1496 = (SecondaryParticleNode_Sub1) Static168.aClass130_5.method2790(); local1496 != null; local1496 = (SecondaryParticleNode_Sub1) Static168.aClass130_5.method2785()) {
+													for (@Pc(1496) SecondaryParticleNode_Sub1 local1496 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2790(); local1496 != null; local1496 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2785()) {
 														if (local1496.aString72.equals(local627)) {
 															if (local1409 != 0 && local1496.aShort74 == 0) {
 																local1491 = false;
@@ -451,7 +451,7 @@ public final class Static293 {
 														}
 													}
 													if (local1491) {
-														Static168.aClass130_5.method2787(new SecondaryParticleNode_Sub1(local627, local1409));
+														Static168.aParticleLinkedList5.method2787(new SecondaryParticleNode_Sub1(local627, local1409));
 													}
 													Static371.anIntArray455[local1449] = local1409;
 												}
@@ -1238,7 +1238,7 @@ public final class Static293 {
 																		local653 = local100 & 0xFFFF;
 																		@Pc(5032) Linkable_Sub45 local5032 = (Linkable_Sub45) Static18.aHashTable2.get((long) local653);
 																		if (local5032 != null) {
-																			@Pc(5037) ParticleNode_Sub2_Sub1_Sub2_Sub2 local5037 = local5032.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+																			@Pc(5037) Npc local5037 = local5032.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 																			@Pc(5042) Class199 local5042 = local5037.aClass199Array3[local526];
 																			if (local2098 == 65535) {
 																				local2098 = -1;
@@ -1287,7 +1287,7 @@ public final class Static293 {
 																		}
 																	} else if (local100 >> 28 != 0) {
 																		local653 = local100 & 0xFFFF;
-																		@Pc(4839) ParticleNode_Sub2_Sub1_Sub2_Sub1 local4839;
+																		@Pc(4839) Player local4839;
 																		if (local653 == Static312.anInt5000) {
 																			local4839 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
 																		} else {
@@ -1361,7 +1361,7 @@ public final class Static293 {
 																			if (local653 < 3 && Static441.method5968(local3502, local657)) {
 																				local667 = local653 + 1;
 																			}
-																			@Pc(5334) ParticleNode_Sub2_Sub1_Sub5 local5334 = new ParticleNode_Sub2_Sub1_Sub5(local2098, local277, local653, local667, local1021, Static102.method2025(local653, -29754, local1097, local1021) - local1413, local1097, local657, local657, local3502, local3502, local992, local4806);
+																			@Pc(5334) Entity_Sub3 local5334 = new Entity_Sub3(local2098, local277, local653, local667, local1021, Static102.method2025(local653, -29754, local1097, local1021) - local1413, local1097, local657, local657, local3502, local3502, local992, local4806);
 																			Static346.aHashTable29.put((long) (local3502 | local657 << 16), new SecondaryLinkable_Sub20(local5334));
 																		}
 																	}
@@ -1388,13 +1388,13 @@ public final class Static293 {
 																arg0.aServerProt_93 = null;
 																return true;
 															} else {
-																@Pc(5445) Linkable_Sub4 local5445;
+																@Pc(5445) SubInterface local5445;
 																if (Static119.ServerProt47 == arg0.aServerProt_93) {
 																	local277 = local11.g4_alt2();
 																	local100 = local11.g4_alt3();
 																	Static574.method7573();
-																	@Pc(5438) Linkable_Sub4 local5438 = (Linkable_Sub4) Static548.aHashTable40.get((long) local100);
-																	local5445 = (Linkable_Sub4) Static548.aHashTable40.get((long) local277);
+																	@Pc(5438) SubInterface local5438 = (SubInterface) Static548.aHashTable40.get((long) local100);
+																	local5445 = (SubInterface) Static548.aHashTable40.get((long) local277);
 																	if (local5445 != null) {
 																		Static449.method6115(false, local5438 == null || local5438.anInt147 != local5445.anInt147, local5445);
 																	}
@@ -1402,7 +1402,7 @@ public final class Static293 {
 																		local5438.unlink();
 																		Static548.aHashTable40.put((long) local277, local5438);
 																	}
-																	@Pc(5487) Class158 local5487 = Static145.method2412(local100);
+																	@Pc(5487) Component local5487 = Static145.method2412(local100);
 																	if (local5487 != null) {
 																		Static178.method2729(local5487);
 																	}
@@ -1421,7 +1421,7 @@ public final class Static293 {
 																	local100 = local11.g4_alt1();
 																	local526 = local11.g1();
 																	Static574.method7573();
-																	local5445 = (Linkable_Sub4) Static548.aHashTable40.get((long) local100);
+																	local5445 = (SubInterface) Static548.aHashTable40.get((long) local100);
 																	if (local5445 != null) {
 																		Static449.method6115(false, local5445.anInt147 != local277, local5445);
 																	}
@@ -1541,11 +1541,11 @@ public final class Static293 {
 																	local100 = local11.g2();
 																	local526 = local11.g2();
 																	Static574.method7573();
-																	if (Static453.aClass158ArrayArray2[local277] != null) {
+																	if (Static453.aComponentArrayArray2[local277] != null) {
 																		for (local1409 = local100; local1409 < local526; local1409++) {
 																			local1413 = local11.g3();
-																			if (Static453.aClass158ArrayArray2[local277].length > local1409 && Static453.aClass158ArrayArray2[local277][local1409] != null) {
-																				Static453.aClass158ArrayArray2[local277][local1409].anInt3774 = local1413;
+																			if (Static453.aComponentArrayArray2[local277].length > local1409 && Static453.aComponentArrayArray2[local277][local1409] != null) {
+																				Static453.aComponentArrayArray2[local277][local1409].anInt3774 = local1413;
 																			}
 																		}
 																	}
@@ -1894,7 +1894,7 @@ public final class Static293 {
 																			return true;
 																		} else if (Static132.ServerProt54 == arg0.aServerProt_93) {
 																			local277 = local11.g2();
-																			@Pc(7724) ParticleNode_Sub2_Sub1_Sub2_Sub1 local7724;
+																			@Pc(7724) Player local7724;
 																			if (local277 == Static312.anInt5000) {
 																				local7724 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
 																			} else {
@@ -1907,7 +1907,7 @@ public final class Static293 {
 																			local526 = local11.g2();
 																			local1409 = local11.g1();
 																			local6565 = (local526 & 0x8000) != 0;
-																			if (local7724.aString9 != null && local7724.aClass201_1 != null) {
+																			if (local7724.aString9 != null && local7724.aPlayerAppearance1 != null) {
 																				local1425 = false;
 																				if (local1409 <= 1) {
 																					if (!local6565 && (Static389.aBoolean459 && !Static34.aBoolean62 || Static617.aBoolean724)) {

@@ -106,10 +106,10 @@ public final class Class399 {
 	public final int[] anIntArray841 = new int[10];
 
 	@OriginalMember(owner = "client!wf", name = "g", descriptor = "[Lclient!rs;")
-	public final Class114_Sub3[] aClass114_Sub3Array4 = new Class114_Sub3[7];
+	public final Model_Sub3[] aClass114_Sub3Array4 = new Model_Sub3[7];
 
 	@OriginalMember(owner = "client!wf", name = "Q", descriptor = "[Lclient!rs;")
-	public final Class114_Sub3[] aClass114_Sub3Array3 = new Class114_Sub3[7];
+	public final Model_Sub3[] aClass114_Sub3Array3 = new Model_Sub3[7];
 
 	@OriginalMember(owner = "client!wf", name = "y", descriptor = "Lclient!iaa;")
 	private final Class19_Sub2 aClass19_Sub2_12;
@@ -129,8 +129,8 @@ public final class Class399 {
 		this.anInt10601 = this.aClass19_Sub2_12.anInt4199 - 255;
 		this.aClass219_2 = new Class219(arg0, this);
 		for (@Pc(135) int local135 = 0; local135 < 7; local135++) {
-			this.aClass114_Sub3Array4[local135] = new Class114_Sub3(this.aClass19_Sub2_12);
-			this.aClass114_Sub3Array3[local135] = new Class114_Sub3(this.aClass19_Sub2_12);
+			this.aClass114_Sub3Array4[local135] = new Model_Sub3(this.aClass19_Sub2_12);
+			this.aClass114_Sub3Array3[local135] = new Model_Sub3(this.aClass19_Sub2_12);
 		}
 		this.anIntArray853 = new int[Static567.anInt8486];
 		for (@Pc(166) int local166 = 0; local166 < Static567.anInt8486; local166++) {

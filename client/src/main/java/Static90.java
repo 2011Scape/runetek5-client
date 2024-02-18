@@ -13,7 +13,7 @@ public final class Static90 {
 	public static void method1733() {
 		@Pc(17) int[] local17 = Static210.anIntArray280;
 		for (@Pc(19) int local19 = 0; local19 < Static338.anInt5564; local19++) {
-			@Pc(27) ParticleNode_Sub2_Sub1_Sub2_Sub1 local27 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local17[local19]];
+			@Pc(27) Player local27 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local17[local19]];
 			if (local27 != null) {
 				local27.method9296();
 			}

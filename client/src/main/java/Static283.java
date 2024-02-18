@@ -107,7 +107,7 @@ public final class Static283 {
 		}
 		Static497.method6623(Static665.aClass19_15);
 		if (!Static514.aClass213_2.aBoolean426) {
-			@Pc(387) Class130 local387 = Static514.aClass213_2.aClass130_8;
+			@Pc(387) ParticleLinkedList local387 = Static514.aClass213_2.aParticleLinkedList8;
 			for (@Pc(392) ParticleNode_Sub7 local392 = (ParticleNode_Sub7) local387.method2790(); local392 != null; local392 = (ParticleNode_Sub7) local387.method2785()) {
 				local392.method9274();
 				Static281.method4092(local392);

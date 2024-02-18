@@ -43,7 +43,7 @@ public final class Static369 {
 					@Pc(142) NpcType local142 = Static690.aNpcTypeList2.method7092(local66.g2());
 					@Pc(149) Linkable_Sub45 local149 = (Linkable_Sub45) Static18.aHashTable2.get((long) local88);
 					if (local149 == null && (local142.aByte103 & 0x1) > 0 && local98 == Static164.anInt2808 && local121 >= 0 && local142.anInt6713 + local121 < Static720.anInt10859 && local135 >= 0 && local135 + local142.anInt6713 < Static501.anInt7568) {
-						@Pc(197) ParticleNode_Sub2_Sub1_Sub2_Sub2 local197 = new ParticleNode_Sub2_Sub1_Sub2_Sub2();
+						@Pc(197) Npc local197 = new Npc();
 						local197.anInt10740 = local88;
 						@Pc(205) Linkable_Sub45 local205 = new Linkable_Sub45(local197);
 						Static18.aHashTable2.put((long) local88, local205);
@@ -69,7 +69,7 @@ public final class Static369 {
 		@Pc(31) Linkable_Sub36 local31;
 		if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 0) {
 			for (local31 = (Linkable_Sub36) Static133.aLinkedList13.head(); local31 != null; local31 = (Linkable_Sub36) Static133.aLinkedList13.next()) {
-				Static419.aObjTypeList1.method2478(local31.anInt5893, arg0, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass201_1 : null, false, local31.anInt5891, local31.anInt5888, false, local31.anInt5890, Static665.aClass14_12, local31.anInt5895);
+				Static419.aObjTypeList1.method2478(local31.anInt5893, arg0, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aPlayerAppearance1 : null, false, local31.anInt5891, local31.anInt5888, false, local31.anInt5890, Static665.aClass14_12, local31.anInt5895);
 				local31.unlink();
 			}
 			Static469.method6362();
@@ -82,7 +82,7 @@ public final class Static369 {
 			Static629.aClass14_11 = Static158.aClass19_5.method8010(Static74.method1535(Static662.anInt9845, Static697.aJs5123), Static735.method9375(Static721.aJs5128, Static662.anInt9845), true);
 		}
 		for (local31 = (Linkable_Sub36) Static133.aLinkedList13.head(); local31 != null; local31 = (Linkable_Sub36) Static133.aLinkedList13.next()) {
-			Static419.aObjTypeList1.method2478(local31.anInt5893, Static158.aClass19_5, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass201_1 : null, false, local31.anInt5891, local31.anInt5888, false, local31.anInt5890, Static629.aClass14_11, local31.anInt5895);
+			Static419.aObjTypeList1.method2478(local31.anInt5893, Static158.aClass19_5, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aPlayerAppearance1 : null, false, local31.anInt5891, local31.anInt5888, false, local31.anInt5890, Static629.aClass14_11, local31.anInt5895);
 			local31.unlink();
 		}
 	}

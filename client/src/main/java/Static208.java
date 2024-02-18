@@ -56,11 +56,11 @@ public final class Static208 {
 		@Pc(11) int local11 = local9;
 		@Pc(16) int local16 = arg0.anInt10694 >> Static52.anInt1066;
 		@Pc(18) int local18 = local16;
-		if (arg0 instanceof ParticleNode_Sub2_Sub1) {
-			local11 = ((ParticleNode_Sub2_Sub1) arg0).aShort134;
-			local18 = ((ParticleNode_Sub2_Sub1) arg0).aShort133;
-			local9 = ((ParticleNode_Sub2_Sub1) arg0).aShort131;
-			local16 = ((ParticleNode_Sub2_Sub1) arg0).aShort132;
+		if (arg0 instanceof Entity) {
+			local11 = ((Entity) arg0).aShort134;
+			local18 = ((Entity) arg0).aShort133;
+			local9 = ((Entity) arg0).aShort131;
+			local16 = ((Entity) arg0).aShort132;
 		}
 		for (@Pc(39) int local39 = local9; local39 <= local11; local39++) {
 			for (@Pc(42) int local42 = local16; local42 <= local18; local42++) {

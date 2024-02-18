@@ -27,12 +27,12 @@ public final class Static597 {
 	}
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(ILclient!hda;ZI)V")
-	public static void method7824(@OriginalArg(0) int arg0, @OriginalArg(1) Class158 arg1, @OriginalArg(3) int arg2) {
-		if (Static109.aClass158_3 != null || Static400.aBoolean622 || (arg1 == null || Static582.method7658(arg1) == null)) {
+	public static void method7824(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(3) int arg2) {
+		if (Static109.aComponent3 != null || Static400.aBoolean622 || (arg1 == null || Static582.method7658(arg1) == null)) {
 			return;
 		}
-		Static109.aClass158_3 = arg1;
-		Static354.aClass158_8 = Static582.method7658(arg1);
+		Static109.aComponent3 = arg1;
+		Static354.aComponent8 = Static582.method7658(arg1);
 		Static150.anInt2631 = arg0;
 		Static378.anInt5941 = arg2;
 		Static172.aBoolean246 = false;

@@ -51,7 +51,7 @@ public final class Linkable_Sub51 extends Linkable {
 	public int anInt9360;
 
 	@OriginalMember(owner = "client!tg", name = "P", descriptor = "Lclient!ca;")
-	public ParticleNode_Sub2_Sub1_Sub2_Sub1 aClass8_Sub2_Sub1_Sub2_Sub1_3;
+	public Player aClass8_Sub2_Sub1_Sub2_Sub1_3;
 
 	@OriginalMember(owner = "client!tg", name = "l", descriptor = "Z")
 	public boolean aBoolean713;
@@ -63,7 +63,7 @@ public final class Linkable_Sub51 extends Linkable {
 	public PcmSound aClass2_Sub49_Sub1_4;
 
 	@OriginalMember(owner = "client!tg", name = "s", descriptor = "Lclient!uj;")
-	public Linkable_Sub53 aClass2_Sub53_2;
+	public VorbisSound aClass2_Sub53_2;
 
 	@OriginalMember(owner = "client!tg", name = "o", descriptor = "[I")
 	public int[] anIntArray718;
@@ -72,13 +72,13 @@ public final class Linkable_Sub51 extends Linkable {
 	public boolean aBoolean714;
 
 	@OriginalMember(owner = "client!tg", name = "r", descriptor = "Lclient!uj;")
-	public Linkable_Sub53 aClass2_Sub53_3;
+	public VorbisSound aClass2_Sub53_3;
 
 	@OriginalMember(owner = "client!tg", name = "t", descriptor = "I")
 	public int anInt9362;
 
 	@OriginalMember(owner = "client!tg", name = "L", descriptor = "Lclient!wj;")
-	public ParticleNode_Sub2_Sub1_Sub2_Sub2 aClass8_Sub2_Sub1_Sub2_Sub2_3;
+	public Npc aClass8_Sub2_Sub1_Sub2_Sub2_3;
 
 	@OriginalMember(owner = "client!tg", name = "A", descriptor = "Z")
 	public boolean aBoolean715;

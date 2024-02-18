@@ -292,28 +292,28 @@ public final class Class306_Sub1 extends Class306 {
 		@Pc(187) int local187 = (local68 << 8) + (arg3 << 9);
 		@Pc(204) boolean local204 = Static404.aBoolean465 && !super.aBoolean673 && local40.aBoolean102;
 		if (local40.method1303()) {
-			Static89.method1714(arg8, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, arg5, arg3, (ParticleNode_Sub2_Sub1_Sub2_Sub2) null, local40, arg6);
+			Static89.method1714(arg8, (Player) null, arg5, arg3, (Npc) null, local40, arg6);
 		}
 		@Pc(248) boolean local248 = arg9 == -1 && !local40.method1300() && local40.anIntArray113 == null && !local40.aBoolean93 && !local40.aBoolean91;
 		if (Static614.aBoolean718 && (Static540.method6540(arg0) && local40.anInt1223 != 1 || !(!Static389.method5474(arg0) || local40.anInt1223 != 0))) {
 			return;
 		}
 		if (arg0 != 22) {
-			@Pc(420) ParticleNode_Sub2_Sub1 local420;
-			@Pc(384) ParticleNode_Sub2_Sub1_Sub3 local384;
+			@Pc(420) Entity local420;
+			@Pc(384) Entity_Sub1 local384;
 			@Pc(424) int local424;
 			@Pc(495) int local495;
 			@Pc(492) int local492;
 			if (arg0 == 10 || arg0 == 11) {
 				local384 = null;
 				if (local248) {
-					@Pc(416) ParticleNode_Sub2_Sub1_Sub3 local416 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
+					@Pc(416) Entity_Sub1 local416 = new Entity_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
 					local384 = local416;
 					local420 = local416;
 					local424 = local416.method4222();
 				} else {
 					local424 = 15;
-					local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
+					local420 = new Entity_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
 				}
 				if (Static102.method2026(local420, false)) {
 					if (local384 != null && local384.method6860(-19717)) {
@@ -335,13 +335,13 @@ public final class Class306_Sub1 extends Class306 {
 				}
 			} else if (arg0 >= 12 && arg0 <= 17 || arg0 >= 18 && arg0 <= 21) {
 				if (local248) {
-					local384 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
+					local384 = new Entity_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5 + local65 - 1, arg3, arg3 + local68 - 1, arg0, arg6, local204);
 					if (local384.method6860(-19717)) {
 						local384.method6861(arg4);
 					}
 					local420 = local384;
 				} else {
-					local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
+					local420 = new Entity_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, arg3 + local68 - 1, arg0, arg6, arg9);
 				}
 				Static102.method2026(local420, false);
 				if (Static404.aBoolean465 && !super.aBoolean673 && arg0 >= 12 && arg0 <= 17 && arg0 != 13 && arg8 > 0 && local40.anInt1223 != 0) {
@@ -500,13 +500,13 @@ public final class Class306_Sub1 extends Class306 {
 						}
 					} else if (arg0 == 9) {
 						if (local248) {
-							local384 = new ParticleNode_Sub2_Sub1_Sub3(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5, arg3, arg3, arg0, arg6, local204);
+							local384 = new Entity_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, arg5, arg3, arg3, arg0, arg6, local204);
 							if (local384.method6860(-19717)) {
 								local384.method6861(arg4);
 							}
 							local420 = local384;
 						} else {
-							local420 = new ParticleNode_Sub2_Sub1_Sub4(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, local68 + arg3 - 1, arg0, arg6, arg9);
+							local420 = new Entity_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, arg5, local65 + arg5 - 1, arg3, local68 + arg3 - 1, arg0, arg6, arg9);
 						}
 						Static102.method2026(local420, false);
 						if (local40.anInt1223 == 1 && !super.aBoolean673) {

@@ -467,7 +467,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!dv;IIII)Lclient!ka;")
 	@Override
-	public Class114 method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public Model method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		return new i(this, this.aYa2, arg0, arg1, arg2, arg3, arg4);
 	}
 

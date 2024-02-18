@@ -33,10 +33,10 @@ public final class Static534 {
 				local60 = Static599.anInt8837;
 				Static691.anInt10368 = 1;
 			}
-			if (Static148.aClass158ArrayArray1[arg0] == null) {
-				Static71.method1522(-1, arg6, Static453.aClass158ArrayArray2[arg0], arg1, arg3, arg7, arg5, arg5 < 0, arg2, arg4);
+			if (Static148.aComponentArrayArray1[arg0] == null) {
+				Static71.method1522(-1, arg6, Static453.aComponentArrayArray2[arg0], arg1, arg3, arg7, arg5, arg5 < 0, arg2, arg4);
 			} else {
-				Static71.method1522(-1, arg6, Static148.aClass158ArrayArray1[arg0], arg1, arg3, arg7, arg5, arg5 < 0, arg2, arg4);
+				Static71.method1522(-1, arg6, Static148.aComponentArrayArray1[arg0], arg1, arg3, arg7, arg5, arg5 < 0, arg2, arg4);
 			}
 			if (Static137.aBoolean210) {
 				if (arg5 >= 0 && Static691.anInt10368 == 2) {

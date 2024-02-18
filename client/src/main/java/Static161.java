@@ -17,7 +17,7 @@ public final class Static161 {
 	public static final ClientProt aClientProt29 = new ClientProt(33, 0);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ILclient!ca;ILclient!rka;I)V")
-	public static void method2585(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PacketBit arg2, @OriginalArg(4) int arg3) {
+	public static void method2585(@OriginalArg(1) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PacketBit arg2, @OriginalArg(4) int arg3) {
 		@Pc(7) byte local7 = -1;
 		@Pc(15) int local15;
 		@Pc(18) int[] local18;
@@ -272,9 +272,9 @@ public final class Static161 {
 			}
 			@Pc(29) boolean local29 = false;
 			@Pc(36) Linkable_Sub45 local36 = (Linkable_Sub45) Static18.aHashTable2.get((long) local22);
-			@Pc(42) ParticleNode_Sub2_Sub1_Sub2_Sub2 local42;
+			@Pc(42) Npc local42;
 			if (local36 == null) {
-				local42 = new ParticleNode_Sub2_Sub1_Sub2_Sub2();
+				local42 = new Npc();
 				local42.anInt10740 = local22;
 				local36 = new Linkable_Sub45(local42);
 				Static18.aHashTable2.put((long) local22, local36);
@@ -310,7 +310,7 @@ public final class Static161 {
 			}
 			local42.method9326(local170 == 1, local131 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0], local159 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0], local144, local42.method9302((byte) 91));
 			if (local42.aNpcType1.method5984()) {
-				Static89.method1714(local42.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (LocType) null, 0);
+				Static89.method1714(local42.aByte144, (Player) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (LocType) null, 0);
 			}
 		}
 		local8.bytes();

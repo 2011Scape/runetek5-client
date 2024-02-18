@@ -38,8 +38,8 @@ public final class Static446 {
 	@OriginalMember(owner = "client!oaa", name = "a", descriptor = "(ILjava/lang/Throwable;)Ljava/lang/String;")
 	public static String method6093(@OriginalArg(1) Throwable arg0) throws IOException {
 		@Pc(14) String local14;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			@Pc(18) RuntimeException_Sub1 local18 = (RuntimeException_Sub1) arg0;
+		if (arg0 instanceof TracingException) {
+			@Pc(18) TracingException local18 = (TracingException) arg0;
 			local14 = local18.aString32 + " | ";
 			arg0 = local18.aThrowable1;
 		} else {

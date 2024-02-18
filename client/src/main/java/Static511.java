@@ -11,7 +11,7 @@ public final class Static511 {
 	public static int[] anIntArray614;
 
 	@OriginalMember(owner = "client!qb", name = "i", descriptor = "[Lclient!ci;")
-	public static Class65[] aClass65Array1;
+	public static Country[] aCountryArray1;
 
 	@OriginalMember(owner = "client!qb", name = "n", descriptor = "[J")
 	public static final long[] aLongArray17 = new long[100];

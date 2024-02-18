@@ -16,7 +16,7 @@ public final class Static58 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(ILclient!wj;)V")
-	public static void method1259(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg0) {
+	public static void method1259(@OriginalArg(1) Npc arg0) {
 		for (@Pc(17) Linkable_Sub51 local17 = (Linkable_Sub51) Static717.aLinkedList81.head(); local17 != null; local17 = (Linkable_Sub51) Static717.aLinkedList81.next()) {
 			if (local17.aClass8_Sub2_Sub1_Sub2_Sub2_3 == arg0) {
 				if (local17.aClass2_Sub6_Sub2_4 != null) {

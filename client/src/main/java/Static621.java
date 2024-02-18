@@ -9,5 +9,5 @@ public final class Static621 {
 	public static final ClientProt aClientProt113 = new ClientProt(93, 1);
 
 	@OriginalMember(owner = "client!tl", name = "f", descriptor = "[Lclient!ca;")
-	public static final ParticleNode_Sub2_Sub1_Sub2_Sub1[] aClass8_Sub2_Sub1_Sub2_Sub1Array3 = new ParticleNode_Sub2_Sub1_Sub2_Sub1[2048];
+	public static final Player[] aClass8_Sub2_Sub1_Sub2_Sub1Array3 = new Player[2048];
 }

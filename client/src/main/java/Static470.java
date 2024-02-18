@@ -23,7 +23,7 @@ public final class Static470 {
 	public static int anInt7113 = -1;
 
 	@OriginalMember(owner = "client!or", name = "a", descriptor = "(Lclient!hda;III)V")
-	public static void method6383(@OriginalArg(0) Class158 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void method6383(@OriginalArg(0) Component arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg0.aByte64 == 0) {
 			arg0.anInt3784 = arg0.anInt3808;
 		} else if (arg0.aByte64 == 1) {
@@ -76,11 +76,11 @@ public final class Static470 {
 		if (!Static156.aBoolean223) {
 			return;
 		}
-		@Pc(14) Class158 local14 = Static15.method186(Static77.anInt1614, Static450.anInt6819);
+		@Pc(14) Component local14 = Static15.method186(Static77.anInt1614, Static450.anInt6819);
 		if (local14 != null && local14.anObjectArray16 != null) {
 			@Pc(25) Linkable_Sub42 local25 = new Linkable_Sub42();
 			local25.anObjectArray36 = local14.anObjectArray16;
-			local25.aClass158_14 = local14;
+			local25.aComponent14 = local14;
 			Static472.method6420(local25);
 		}
 		Static442.anInt6699 = -1;

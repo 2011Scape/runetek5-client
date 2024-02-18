@@ -104,7 +104,7 @@ public final class Static30 {
 	public static int anInt5654;
 
 	@OriginalMember(owner = "client!baa", name = "L", descriptor = "[[[Lclient!fla;")
-	private static Class130[][][] aClass130ArrayArrayArray2;
+	private static ParticleLinkedList[][][] aParticleLinkedListArrayArrayArray2;
 
 	@OriginalMember(owner = "client!baa", name = "t", descriptor = "I")
 	public static int anInt5655;
@@ -528,11 +528,11 @@ public final class Static30 {
 		}
 		local50 = anInt5647 >> 6;
 		local57 = anInt5645 >> 6;
-		if (local50 >= aClass130ArrayArrayArray2[0].length) {
-			local50 = aClass130ArrayArrayArray2[0].length - 1;
+		if (local50 >= aParticleLinkedListArrayArrayArray2[0].length) {
+			local50 = aParticleLinkedListArrayArrayArray2[0].length - 1;
 		}
-		if (local57 >= aClass130ArrayArrayArray2[0][0].length) {
-			local57 = aClass130ArrayArrayArray2[0][0].length - 1;
+		if (local57 >= aParticleLinkedListArrayArrayArray2[0][0].length) {
+			local57 = aParticleLinkedListArrayArrayArray2[0][0].length - 1;
 		}
 		for (local70 = 0; local70 < 3; local70++) {
 			@Pc(641) int local641;
@@ -542,7 +542,7 @@ public final class Static30 {
 			@Pc(631) int local631;
 			for (local80 = local40; local80 <= local50; local80++) {
 				for (local84 = local44; local84 <= local57; local84++) {
-					@Pc(589) Class130 local589 = aClass130ArrayArrayArray2[local70][local80][local84];
+					@Pc(589) ParticleLinkedList local589 = aParticleLinkedListArrayArrayArray2[local70][local80][local84];
 					if (local589 != null) {
 						local173 = (local80 + (anInt5655 >> 6)) * 64;
 						local175 = (local84 + (anInt5648 >> 6)) * 64;
@@ -560,7 +560,7 @@ public final class Static30 {
 			}
 			for (local84 = local40; local84 <= local50; local84++) {
 				for (local93 = local44; local93 <= local57; local93++) {
-					@Pc(727) Class130 local727 = aClass130ArrayArrayArray2[local70][local84][local93];
+					@Pc(727) ParticleLinkedList local727 = aParticleLinkedListArrayArrayArray2[local70][local84][local93];
 					if (local727 != null) {
 						local175 = (local84 + (anInt5655 >> 6)) * 64;
 						local177 = (local93 + (anInt5648 >> 6)) * 64;
@@ -636,7 +636,7 @@ public final class Static30 {
 		aShortArray78 = new short[anInt5650 * anInt5644];
 		aByteArray58 = new byte[anInt5650 * anInt5644];
 		aHashTable28 = new HashTable(1024);
-		aClass130ArrayArrayArray2 = new Class130[3][anInt5650 >> 6][anInt5644 >> 6];
+		aParticleLinkedListArrayArrayArray2 = new ParticleLinkedList[3][anInt5650 >> 6][anInt5644 >> 6];
 		anIntArray419 = new int[aFloTypeList2.anInt2506 + 1];
 	}
 
@@ -650,7 +650,7 @@ public final class Static30 {
 		aShortArray78 = null;
 		aByteArray58 = null;
 		aHashTable28 = null;
-		aClass130ArrayArrayArray2 = null;
+		aParticleLinkedListArrayArrayArray2 = null;
 		anIntArray419 = null;
 	}
 
@@ -801,11 +801,11 @@ public final class Static30 {
 						local218[local220] = arg1.g1b();
 					}
 				}
-				if (aClass130ArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)] == null) {
-					aClass130ArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)] = new Class130();
+				if (aParticleLinkedListArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)] == null) {
+					aParticleLinkedListArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)] = new ParticleLinkedList();
 				}
 				@Pc(338) ParticleNode_Sub10 local338 = new ParticleNode_Sub10(arg4 & 0x3F, arg5 & 0x3F, local123, local125, local127, local215, local218);
-				aClass130ArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)].method2787(local338);
+				aParticleLinkedListArrayArrayArray2[local118 - 1][arg2 - (anInt5655 >> 6)][arg3 - (anInt5648 >> 6)].method2787(local338);
 			}
 		}
 	}
@@ -860,9 +860,9 @@ public final class Static30 {
 			}
 		}
 		for (local4 = 0; local4 < 3; local4++) {
-			for (local15 = 0; local15 < aClass130ArrayArrayArray2[0].length; local15++) {
-				for (@Pc(144) int local144 = 0; local144 < aClass130ArrayArrayArray2[0][0].length; local144++) {
-					@Pc(153) Class130 local153 = aClass130ArrayArrayArray2[local4][local15][local144];
+			for (local15 = 0; local15 < aParticleLinkedListArrayArrayArray2[0].length; local15++) {
+				for (@Pc(144) int local144 = 0; local144 < aParticleLinkedListArrayArrayArray2[0][0].length; local144++) {
+					@Pc(153) ParticleLinkedList local153 = aParticleLinkedListArrayArrayArray2[local4][local15][local144];
 					if (local153 != null) {
 						for (@Pc(160) ParticleNode_Sub10 local160 = (ParticleNode_Sub10) local153.method2790(); local160 != null; local160 = (ParticleNode_Sub10) local153.method2785()) {
 							if (local160.aShortArray133 != null) {
@@ -975,9 +975,9 @@ public final class Static30 {
 			aShortArray79 = new short[anInt5650 * anInt5644];
 			for (local60 = 0; local60 < 3; local60++) {
 				@Pc(193) byte[] local193 = new byte[anInt5650 * anInt5644];
-				for (local66 = 0; local66 < aClass130ArrayArrayArray2[local60].length; local66++) {
-					for (local69 = 0; local69 < aClass130ArrayArrayArray2[local60][0].length; local69++) {
-						@Pc(207) Class130 local207 = aClass130ArrayArrayArray2[local60][local66][local69];
+				for (local66 = 0; local66 < aParticleLinkedListArrayArrayArray2[local60].length; local66++) {
+					for (local69 = 0; local69 < aParticleLinkedListArrayArrayArray2[local60][0].length; local69++) {
+						@Pc(207) ParticleLinkedList local207 = aParticleLinkedListArrayArrayArray2[local60][local66][local69];
 						if (local207 != null) {
 							for (@Pc(214) ParticleNode_Sub10 local214 = (ParticleNode_Sub10) local207.method2790(); local214 != null; local214 = (ParticleNode_Sub10) local207.method2785()) {
 								local193[local66 * 64 + local214.aByte138 + (local69 * 64 + local214.aByte139) * anInt5650] = (byte) local214.anInt9770;
@@ -986,9 +986,9 @@ public final class Static30 {
 					}
 				}
 				method5064(local193, aByteArray56, aShortArray79, arg1, arg2);
-				for (local69 = 0; local69 < aClass130ArrayArrayArray2[local60].length; local69++) {
-					for (local78 = 0; local78 < aClass130ArrayArrayArray2[local60][0].length; local78++) {
-						@Pc(278) Class130 local278 = aClass130ArrayArrayArray2[local60][local69][local78];
+				for (local69 = 0; local69 < aParticleLinkedListArrayArrayArray2[local60].length; local69++) {
+					for (local78 = 0; local78 < aParticleLinkedListArrayArrayArray2[local60][0].length; local78++) {
+						@Pc(278) ParticleLinkedList local278 = aParticleLinkedListArrayArrayArray2[local60][local69][local78];
 						if (local278 != null) {
 							for (@Pc(285) ParticleNode_Sub10 local285 = (ParticleNode_Sub10) local278.method2790(); local285 != null; local285 = (ParticleNode_Sub10) local278.method2785()) {
 								local150 = local69 * 64 + local285.aByte138 + (local78 * 64 + local285.aByte139) * anInt5650;

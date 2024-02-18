@@ -12,7 +12,7 @@ public final class Static497 {
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(ILclient!ha;)V")
 	public static void method6623(@OriginalArg(1) Class19 arg0) {
-		for (@Pc(6) ParticleSystem local6 = (ParticleSystem) Static342.aClass130_7.method2790(); local6 != null; local6 = (ParticleSystem) Static342.aClass130_7.method2785()) {
+		for (@Pc(6) ParticleSystem local6 = (ParticleSystem) Static342.aParticleLinkedList7.method2790(); local6 != null; local6 = (ParticleSystem) Static342.aParticleLinkedList7.method2785()) {
 			if (local6.aBoolean325) {
 				local6.method3646(arg0);
 			}
@@ -23,7 +23,7 @@ public final class Static497 {
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(ILclient!wj;)I")
-	public static int method6629(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg0) {
+	public static int method6629(@OriginalArg(1) Npc arg0) {
 		@Pc(6) NpcType local6 = arg0.aNpcType1;
 		if (local6.anIntArray532 != null) {
 			local6 = local6.method5985(65535, Static34.aClass304_1);

@@ -39,7 +39,7 @@ public final class Static94 {
 		}
 		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = null;
 		for (@Pc(49) int local49 = 0; local49 < Static416.anInt6378; local49++) {
-			@Pc(55) ParticleNode_Sub2_Sub1_Sub2_Sub2 local55 = Static592.aClass2_Sub45Array1[local49].aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(55) Npc local55 = Static592.aClass2_Sub45Array1[local49].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local55 != null) {
 				local55.anInt10722 = -1;
 			}

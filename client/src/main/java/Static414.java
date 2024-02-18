@@ -11,7 +11,7 @@ public final class Static414 {
 	public static final float[] aFloatArray43 = new float[2];
 
 	@OriginalMember(owner = "client!nba", name = "a", descriptor = "(ZLclient!ca;I)V")
-	public static void method5696(@OriginalArg(0) boolean arg0, @OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg1) {
+	public static void method5696(@OriginalArg(0) boolean arg0, @OriginalArg(1) Player arg1) {
 		if (Static594.anInt8777 >= 400) {
 			return;
 		}

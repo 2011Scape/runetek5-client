@@ -117,7 +117,7 @@ public final class Static50 {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(Lclient!cg;B)V")
-	public static void method6638(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
+	public static void method6638(@OriginalArg(0) PathingEntity arg0) {
 		@Pc(8) Class152 local8 = arg0.aClass152_10;
 		if (local8.method9109() && local8.method9112(1) && local8.method9102()) {
 			if (arg0.aBoolean817) {

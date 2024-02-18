@@ -26,14 +26,14 @@ public final class Static571 {
 				Static132.aBooleanArray5[arg0] = true;
 				return true;
 			}
-			if (Static453.aClass158ArrayArray2[arg0] == null) {
-				Static453.aClass158ArrayArray2[arg0] = new Class158[local25];
+			if (Static453.aComponentArrayArray2[arg0] == null) {
+				Static453.aComponentArrayArray2[arg0] = new Component[local25];
 			}
 			for (@Pc(53) int local53 = 0; local53 < local25; local53++) {
-				if (Static453.aClass158ArrayArray2[arg0][local53] == null) {
+				if (Static453.aComponentArrayArray2[arg0][local53] == null) {
 					@Pc(66) byte[] local66 = Static666.aJs5118.method7595(local53, arg0);
 					if (local66 != null) {
-						@Pc(78) Class158 local78 = Static453.aClass158ArrayArray2[arg0][local53] = new Class158();
+						@Pc(78) Component local78 = Static453.aComponentArrayArray2[arg0][local53] = new Component();
 						local78.anInt3812 = local53 + (arg0 << 16);
 						if (local66[0] != -1) {
 							throw new IllegalStateException("if1");

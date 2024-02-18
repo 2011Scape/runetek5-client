@@ -44,7 +44,7 @@ public final class Static249 {
 		} else if (Static598.method7825(arg0.anInt7314)) {
 			@Pc(51) Linkable_Sub45 local51 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) arg0.aLong233);
 			if (local51 != null) {
-				@Pc(56) ParticleNode_Sub2_Sub1_Sub2_Sub2 local56 = local51.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+				@Pc(56) Npc local56 = local51.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(59) NpcType local59 = local56.aNpcType1;
 				if (local59.anIntArray532 != null) {
 					local59 = local59.method5985(65535, Static34.aClass304_1);

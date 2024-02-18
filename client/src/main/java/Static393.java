@@ -17,7 +17,7 @@ public final class Static393 {
 	public static String[] aStringArray32;
 
 	@OriginalMember(owner = "client!mfa", name = "a", descriptor = "(Lclient!ha;IBLclient!hda;II)V")
-	public static void method5509(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class158 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public static void method5509(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		for (@Pc(10) int local10 = 7; local10 >= 0; local10--) {
 			for (@Pc(16) int local16 = 127; local16 >= 0; local16--) {
 				Static198.method2954(true, false);

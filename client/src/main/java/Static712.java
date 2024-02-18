@@ -12,7 +12,7 @@ public final class Static712 {
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "()V")
 	public static void method9323() {
 		for (@Pc(1) int local1 = 0; local1 < Static125.anInt2352; local1++) {
-			@Pc(6) ParticleNode_Sub2_Sub1 local6 = Static679.aClass8_Sub2_Sub1Array1[local1];
+			@Pc(6) Entity local6 = Static679.aClass8_Sub2_Sub1Array1[local1];
 			Static549.method8293(local6, true);
 			Static679.aClass8_Sub2_Sub1Array1[local1] = null;
 		}

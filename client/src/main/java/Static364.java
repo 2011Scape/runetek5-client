@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static364 {
 
 	@OriginalMember(owner = "client!lia", name = "r", descriptor = "Lclient!rt;")
-	public static Class327 aClass327_4;
+	public static WorldMapFont aWorldMapFont4;
 
 	@OriginalMember(owner = "client!lia", name = "p", descriptor = "D")
 	public static double aDouble17;
@@ -461,7 +461,7 @@ public final class Static364 {
 					}
 					if (Static389.aBoolean459 && !Static298.aBoolean369 || Static126.aBoolean200) {
 						try {
-							Static727.method97("zap", Static166.anApplet1);
+							BrowserControl.call("zap", Static166.anApplet1);
 						} catch (@Pc(1850) Throwable local1850) {
 							if (Static305.aBoolean372) {
 								try {
@@ -472,13 +472,13 @@ public final class Static364 {
 						}
 					} else {
 						try {
-							Static727.method97("unzap", Static166.anApplet1);
+							BrowserControl.call("unzap", Static166.anApplet1);
 						} catch (@Pc(1879) Throwable local1879) {
 						}
 					}
 					if (Static2.aClass355_1 == Static446.aClass355_5) {
 						try {
-							Static727.method97("loggedin", Static166.anApplet1);
+							BrowserControl.call("loggedin", Static166.anApplet1);
 						} catch (@Pc(1892) Throwable local1892) {
 						}
 					}

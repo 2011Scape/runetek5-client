@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class213 {
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "Lclient!fla;")
-	public final Class130 aClass130_8 = new Class130();
+	public final ParticleLinkedList aParticleLinkedList8 = new ParticleLinkedList();
 
 	@OriginalMember(owner = "client!kn", name = "f", descriptor = "Z")
 	public boolean aBoolean426 = false;
@@ -33,26 +33,26 @@ public final class Class213 {
 		}
 		@Pc(42) ParticleNode_Sub7 local42;
 		if (this.aBoolean426) {
-			for (local42 = (ParticleNode_Sub7) this.aClass130_8.method2790(); local42 != null; local42 = (ParticleNode_Sub7) this.aClass130_8.method2785()) {
+			for (local42 = (ParticleNode_Sub7) this.aParticleLinkedList8.method2790(); local42 != null; local42 = (ParticleNode_Sub7) this.aParticleLinkedList8.method2785()) {
 				if (local42.aClass8_Sub2_18 == local6) {
 					local42.method9274();
 					Static281.method4092(local42);
 				}
 			}
 		}
-		for (local42 = (ParticleNode_Sub7) this.aClass130_8.method2790(); local42 != null; local42 = (ParticleNode_Sub7) this.aClass130_8.method2785()) {
+		for (local42 = (ParticleNode_Sub7) this.aParticleLinkedList8.method2790(); local42 != null; local42 = (ParticleNode_Sub7) this.aParticleLinkedList8.method2785()) {
 			if (local6.anInt10697 >= local42.aClass8_Sub2_18.anInt10697) {
 				Static370.method5282(arg0, local42);
 				return;
 			}
 		}
-		this.aClass130_8.method2787(arg0);
+		this.aParticleLinkedList8.method2787(arg0);
 	}
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(B)V")
 	public void method5010() {
 		while (true) {
-			@Pc(5) ParticleNode_Sub7 local5 = (ParticleNode_Sub7) this.aClass130_8.method2783();
+			@Pc(5) ParticleNode_Sub7 local5 = (ParticleNode_Sub7) this.aParticleLinkedList8.method2783();
 			if (local5 == null) {
 				return;
 			}

@@ -303,7 +303,7 @@ public final class TextureOpColorGradient extends TextureOp {
 		}
 		this.method4896();
 		if (arg0 != 7) {
-			Static327.aClass158_7 = null;
+			Static327.aComponent7 = null;
 		}
 	}
 

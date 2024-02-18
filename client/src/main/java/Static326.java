@@ -17,7 +17,7 @@ public final class Static326 {
 	public static final Class206 aClass206_4 = new Class206();
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(ILclient!ca;)I")
-	public static int method4870(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0) {
+	public static int method4870(@OriginalArg(1) Player arg0) {
 		@Pc(6) int local6 = arg0.anInt1445;
 		@Pc(10) BasType local10 = arg0.method9317();
 		@Pc(15) int local15 = arg0.aClass152_10.method9114();

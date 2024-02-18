@@ -493,7 +493,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(ILclient!ha;IBIZLclient!ju;Lclient!ha;Lclient!da;I)[I")
-	public int[] method8798(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) Class201 arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class14 arg7, @OriginalArg(9) int arg8) {
+	public int[] method8798(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4, @OriginalArg(6) PlayerAppearance arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class14 arg7, @OriginalArg(9) int arg8) {
 		@Pc(14) Class88 local14 = Static121.method2201(this.anInt10120, this.aObjTypeList2.aJs528);
 		if (local14 == null) {
 			return null;
@@ -531,7 +531,7 @@ public final class ObjType {
 			local200 = true;
 			local198 = 2055;
 		}
-		@Pc(244) Class114 local244 = arg6.method7952(local14, local198, 64, this.anInt10100 + 64, this.anInt10109 + 768);
+		@Pc(244) Model local244 = arg6.method7952(local14, local198, 64, this.anInt10100 + 64, this.anInt10109 + 768);
 		if (!local244.method7474()) {
 			return null;
 		}
@@ -830,7 +830,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(Lclient!gu;ILclient!ju;ILclient!ha;I)Lclient!ka;")
-	public Class114 method8805(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class201 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4) {
+	public Model method8805(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) PlayerAppearance arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4) {
 		@Pc(17) int local17;
 		if (this.anIntArray799 != null && arg3 > 1) {
 			local17 = -1;
@@ -848,9 +848,9 @@ public final class ObjType {
 			local17 = arg1 | arg0.method9101();
 		}
 		@Pc(87) SoftLruHashTable local87 = this.aObjTypeList2.aSoftLruHashTable58;
-		@Pc(104) Class114 local104;
+		@Pc(104) Model local104;
 		synchronized (this.aObjTypeList2.aSoftLruHashTable58) {
-			local104 = (Class114) this.aObjTypeList2.aSoftLruHashTable58.method2156((long) (this.anInt10134 | arg4.anInt8962 << 29));
+			local104 = (Model) this.aObjTypeList2.aSoftLruHashTable58.method2156((long) (this.anInt10134 | arg4.anInt8962 << 29));
 		}
 		if (local104 == null || arg4.method7960(local104.ua(), local17) != 0) {
 			if (local104 != null) {

@@ -128,9 +128,9 @@ public final class Static632 {
 					}
 				}
 			} else {
-				@Pc(408) Class89 local408 = Static729.method2245(Static281.aJs560, arg1.anInt9353, 0);
+				@Pc(408) SynthSound local408 = Static729.method2245(Static281.aJs560, arg1.anInt9353, 0);
 				if (local408 != null) {
-					@Pc(415) PcmSound local415 = local408.method2247().method7821(Static681.aClass224_2);
+					@Pc(415) PcmSound local415 = local408.method2247().method7821(Static681.aResampler2);
 					@Pc(423) SoundPcmStream local423 = Static730.method3346(local415, local264, local182 << 6, local214);
 					local423.method3318(-1);
 					Static336.aClass2_Sub6_Sub3_1.method5882(local423);
@@ -150,9 +150,9 @@ public final class Static632 {
 			local264 = arg1.anInt9360 == 256 && arg1.anInt9359 == 256 ? 256 : arg1.anInt9359 + (int) ((double) (arg1.anInt9360 - arg1.anInt9359) * Math.random());
 			if (!arg1.aBoolean715) {
 				local275 = (int) ((double) arg1.anIntArray718.length * Math.random());
-				@Pc(536) Class89 local536 = Static729.method2245(Static281.aJs560, arg1.anIntArray718[local275], 0);
+				@Pc(536) SynthSound local536 = Static729.method2245(Static281.aJs560, arg1.anIntArray718[local275], 0);
 				if (local536 != null) {
-					@Pc(543) PcmSound local543 = local536.method2247().method7821(Static681.aClass224_2);
+					@Pc(543) PcmSound local543 = local536.method2247().method7821(Static681.aResampler2);
 					@Pc(551) SoundPcmStream local551 = Static730.method3346(local543, local264, local182 << 6, local214);
 					local551.method3318(0);
 					Static336.aClass2_Sub6_Sub3_1.method5882(local551);

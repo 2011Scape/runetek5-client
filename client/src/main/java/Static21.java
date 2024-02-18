@@ -59,7 +59,7 @@ public final class Static21 {
 		Static546.anInt8244 = 0;
 		Static395.aClass8_Sub2Array11 = new ParticleNode_Sub2[5000];
 		Static645.anInt9611 = 0;
-		Static679.aClass8_Sub2_Sub1Array1 = new ParticleNode_Sub2_Sub1[5000];
+		Static679.aClass8_Sub2_Sub1Array1 = new Entity[5000];
 		Static125.anInt2352 = 0;
 		Static258.aBooleanArrayArray3 = new boolean[Static35.anInt813 + Static35.anInt813 + 1][Static35.anInt813 + Static35.anInt813 + 1];
 		Static142.aBooleanArrayArray1 = new boolean[Static35.anInt813 + Static35.anInt813 + 2][Static35.anInt813 + Static35.anInt813 + 2];
@@ -119,7 +119,7 @@ public final class Static21 {
 	public static boolean method8119() {
 		if (Static98.aBoolean191) {
 			try {
-				Static727.method97("showVideoAd", Static166.anApplet1);
+				BrowserControl.call("showVideoAd", Static166.anApplet1);
 				return true;
 			} catch (@Pc(15) Throwable local15) {
 			}

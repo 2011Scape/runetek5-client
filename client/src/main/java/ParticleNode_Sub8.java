@@ -58,7 +58,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 	public ParticleEmitterType aParticleEmitterType1;
 
 	@OriginalMember(owner = "client!rf", name = "j", descriptor = "Lclient!fla;")
-	public final Class130 aClass130_11;
+	public final ParticleLinkedList aParticleLinkedList11;
 
 	@OriginalMember(owner = "client!rf", name = "<init>", descriptor = "(Lclient!ha;Lclient!rv;Lclient!hv;J)V")
 	public ParticleNode_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class328 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
@@ -69,7 +69,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 		if (!arg0.method7937() && this.aParticleEmitterType1.anInt9880 != -1) {
 			this.aParticleEmitterType1 = Static444.method5994(this.aParticleEmitterType1.anInt9880);
 		}
-		this.aClass130_11 = new Class130();
+		this.aParticleLinkedList11 = new ParticleLinkedList();
 		this.anInt8264 = (int) ((double) this.anInt8264 + Math.random() * 64.0D);
 		this.method7264();
 		this.aClass177_2.anInt4281 = this.aClass177_1.anInt4281;
@@ -244,7 +244,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 			this.aClass177_1.anInt4269 = this.aClass328_1.anInt8503;
 		}
 		this.anInt8268 = 0;
-		for (@Pc(1171) SecondaryParticleNode_Sub2_Sub1 local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2790(); local1171 != null; local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2785()) {
+		for (@Pc(1171) SecondaryParticleNode_Sub2_Sub1 local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aParticleLinkedList11.method2790(); local1171 != null; local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aParticleLinkedList11.method2785()) {
 			local1171.method6694(arg2, arg0);
 			this.anInt8268++;
 		}
@@ -253,7 +253,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(JLclient!ha;I)V")
 	public void method7263(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1) {
-		for (@Pc(11) SecondaryParticleNode_Sub2_Sub1 local11 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2790(); local11 != null; local11 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2785()) {
+		for (@Pc(11) SecondaryParticleNode_Sub2_Sub1 local11 = (SecondaryParticleNode_Sub2_Sub1) this.aParticleLinkedList11.method2790(); local11 != null; local11 = (SecondaryParticleNode_Sub2_Sub1) this.aParticleLinkedList11.method2785()) {
 			local11.method6695(arg1, arg0);
 		}
 	}

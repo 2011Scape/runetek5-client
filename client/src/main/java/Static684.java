@@ -46,7 +46,7 @@ public final class Static684 {
 			for (local308 = 0; local308 < Static416.anInt6378; local308++) {
 				@Pc(313) Linkable_Sub45 local313 = Static592.aClass2_Sub45Array1[local308];
 				if (local313 != null) {
-					@Pc(318) ParticleNode_Sub2_Sub1_Sub2_Sub2 local318 = local313.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+					@Pc(318) Npc local318 = local313.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					for (local136 = 0; local136 < local318.anIntArray879.length; local136++) {
 						local318.anIntArray879[local136] -= local109;
 						local318.anIntArray878[local136] -= local113;
@@ -63,7 +63,7 @@ public final class Static684 {
 			for (local136 = 0; local136 < Static416.anInt6378; local136++) {
 				@Pc(141) Linkable_Sub45 local141 = Static592.aClass2_Sub45Array1[local136];
 				if (local141 != null) {
-					@Pc(146) ParticleNode_Sub2_Sub1_Sub2_Sub2 local146 = local141.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+					@Pc(146) Npc local146 = local141.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					local146.anInt10694 -= local113 * 512;
 					local146.anInt10690 -= local109 * 512;
 					if (local146.anInt10690 >= 0 && local128 >= local146.anInt10690 && local146.anInt10694 >= 0 && local134 >= local146.anInt10694) {
@@ -95,7 +95,7 @@ public final class Static684 {
 			}
 		}
 		for (local308 = 0; local308 < 2048; local308++) {
-			@Pc(389) ParticleNode_Sub2_Sub1_Sub2_Sub1 local389 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local308];
+			@Pc(389) Player local389 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local308];
 			if (local389 != null) {
 				for (local134 = 0; local134 < local389.anIntArray879.length; local134++) {
 					local389.anIntArray879[local134] -= local109;
@@ -168,7 +168,7 @@ public final class Static684 {
 		Static244.method3512();
 		Static346.aHashTable29.clear();
 		Static505.aLinkedList77.clear();
-		Static422.aClass130_9.method2789();
+		Static422.aParticleLinkedList9.method2789();
 		Static105.method2044();
 	}
 }

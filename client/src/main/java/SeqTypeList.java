@@ -90,12 +90,12 @@ public final class SeqTypeList {
 	}
 
 	@OriginalMember(owner = "client!bp", name = "b", descriptor = "(II)Lclient!rw;")
-	public SecondaryLinkable_Sub18 method1166(@OriginalArg(0) int arg0) {
+	public AnimFrameset method1166(@OriginalArg(0) int arg0) {
 		@Pc(12) SoftLruHashTable local12 = this.aSoftLruHashTable23;
 		synchronized (this.aSoftLruHashTable23) {
-			@Pc(22) SecondaryLinkable_Sub18 local22 = (SecondaryLinkable_Sub18) this.aSoftLruHashTable23.method2156((long) arg0);
+			@Pc(22) AnimFrameset local22 = (AnimFrameset) this.aSoftLruHashTable23.method2156((long) arg0);
 			if (local22 == null) {
-				local22 = new SecondaryLinkable_Sub18(arg0);
+				local22 = new AnimFrameset(arg0);
 				this.aSoftLruHashTable23.method2150(local22, (long) arg0);
 			}
 			return local22.method7565() ? local22 : null;

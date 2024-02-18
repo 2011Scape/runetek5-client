@@ -11,7 +11,7 @@ public final class ParticleNode_Sub1 extends ParticleNode {
 	public int anInt109;
 
 	@OriginalMember(owner = "client!aea", name = "j", descriptor = "Lclient!cg;")
-	public ParticleNode_Sub2_Sub1_Sub2 aClass8_Sub2_Sub1_Sub2_1;
+	public PathingEntity aClass8_Sub2_Sub1_Sub2_1;
 
 	@OriginalMember(owner = "client!aea", name = "g", descriptor = "I")
 	public int anInt111;

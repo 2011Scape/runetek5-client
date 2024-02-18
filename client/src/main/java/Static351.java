@@ -60,7 +60,7 @@ public final class Static351 {
 				}
 			}
 		}
-		@Pc(209) Class327 local209 = null;
+		@Pc(209) WorldMapFont local209 = null;
 		@Pc(211) int local211 = 0;
 		@Pc(213) int local213 = 0;
 		@Pc(215) int local215 = 0;

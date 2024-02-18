@@ -8,7 +8,7 @@ public final class Static359 {
 	public static int[] anIntArray449;
 
 	@OriginalMember(owner = "client!lfa", name = "k", descriptor = "Lclient!rt;")
-	public static Class327 aClass327_3;
+	public static WorldMapFont aWorldMapFont3;
 
 	@OriginalMember(owner = "client!lfa", name = "g", descriptor = "I")
 	public static int anInt5801;

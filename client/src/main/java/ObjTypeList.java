@@ -16,7 +16,7 @@ public final class ObjTypeList {
 	public final SoftLruHashTable aSoftLruHashTable58 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!es", name = "f", descriptor = "Lclient!aka;")
-	public final Class16 aClass16_1 = new Class16(250);
+	public final ObjLruHashTable aObjLruHashTable1 = new ObjLruHashTable(250);
 
 	@OriginalMember(owner = "client!es", name = "j", descriptor = "Lclient!rla;")
 	private final Class324 aClass324_1 = new Class324();
@@ -80,14 +80,14 @@ public final class ObjTypeList {
 		synchronized (this.aSoftLruHashTable58) {
 			this.aSoftLruHashTable58.method2157();
 		}
-		@Pc(44) Class16 local44 = this.aClass16_1;
-		synchronized (this.aClass16_1) {
-			this.aClass16_1.method252();
+		@Pc(44) ObjLruHashTable local44 = this.aObjLruHashTable1;
+		synchronized (this.aObjLruHashTable1) {
+			this.aObjLruHashTable1.method252();
 		}
 	}
 
 	@OriginalMember(owner = "client!es", name = "a", descriptor = "(ILclient!ha;Lclient!ha;Lclient!ju;ZIIZILclient!da;II)Lclient!st;")
-	public SoftwareIndexedSprite method2478(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) Class201 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class14 arg9, @OriginalArg(10) int arg10) {
+	public SoftwareIndexedSprite method2478(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) PlayerAppearance arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class14 arg9, @OriginalArg(10) int arg10) {
 		@Pc(24) SoftwareIndexedSprite local24 = this.method2483(arg3, arg2, arg8, arg10, arg0, arg6, arg5);
 		if (local24 != null) {
 			return local24;
@@ -123,7 +123,7 @@ public final class ObjTypeList {
 			local136.anInt8434 = arg0;
 			local136.anInt8433 = arg10;
 			local136.anInt8436 = arg5;
-			this.aClass16_1.method261(local119, local136);
+			this.aObjLruHashTable1.method261(local119, local136);
 		}
 		return local119;
 	}
@@ -138,9 +138,9 @@ public final class ObjTypeList {
 		synchronized (this.aSoftLruHashTable58) {
 			this.aSoftLruHashTable58.method2147(5);
 		}
-		@Pc(48) Class16 local48 = this.aClass16_1;
-		synchronized (this.aClass16_1) {
-			this.aClass16_1.method255();
+		@Pc(48) ObjLruHashTable local48 = this.aObjLruHashTable1;
+		synchronized (this.aObjLruHashTable1) {
+			this.aObjLruHashTable1.method255();
 		}
 	}
 
@@ -154,9 +154,9 @@ public final class ObjTypeList {
 		synchronized (this.aSoftLruHashTable58) {
 			this.aSoftLruHashTable58.method2151();
 		}
-		@Pc(44) Class16 local44 = this.aClass16_1;
-		synchronized (this.aClass16_1) {
-			this.aClass16_1.method253();
+		@Pc(44) ObjLruHashTable local44 = this.aObjLruHashTable1;
+		synchronized (this.aObjLruHashTable1) {
+			this.aObjLruHashTable1.method253();
 		}
 	}
 
@@ -178,7 +178,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!es", name = "a", descriptor = "(Lclient!ju;BLclient!ha;IIIII)Lclient!st;")
-	public SoftwareIndexedSprite method2483(@OriginalArg(0) Class201 arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public SoftwareIndexedSprite method2483(@OriginalArg(0) PlayerAppearance arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		this.aClass324_1.anInt8430 = arg5;
 		this.aClass324_1.anInt8432 = arg1.anInt8962;
 		this.aClass324_1.anInt8435 = arg2;
@@ -186,14 +186,14 @@ public final class ObjTypeList {
 		this.aClass324_1.aBoolean641 = arg0 != null;
 		this.aClass324_1.anInt8434 = arg4;
 		this.aClass324_1.anInt8433 = arg3;
-		return (SoftwareIndexedSprite) this.aClass16_1.method260(this.aClass324_1);
+		return (SoftwareIndexedSprite) this.aObjLruHashTable1.method260(this.aClass324_1);
 	}
 
 	@OriginalMember(owner = "client!es", name = "c", descriptor = "(I)V")
 	public void method2484() {
-		@Pc(6) Class16 local6 = this.aClass16_1;
-		synchronized (this.aClass16_1) {
-			this.aClass16_1.method252();
+		@Pc(6) ObjLruHashTable local6 = this.aObjLruHashTable1;
+		synchronized (this.aObjLruHashTable1) {
+			this.aObjLruHashTable1.method252();
 		}
 	}
 

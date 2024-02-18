@@ -14,7 +14,7 @@ public final class Static12 {
 	public static int anInt5741;
 
 	@OriginalMember(owner = "client!ah", name = "h", descriptor = "Lclient!fca;")
-	public static Class123 aClass123_4;
+	public static SoundBank aSoundBank4;
 
 	@OriginalMember(owner = "client!ah", name = "f", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_24 = new Class155(13);

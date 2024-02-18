@@ -14,7 +14,7 @@ public final class Static710 {
 	public static final Class403 aClass403_13 = new Class403();
 
 	@OriginalMember(owner = "client!wha", name = "a", descriptor = "(ILclient!hda;Lclient!hda;)V")
-	public static void method6710(@OriginalArg(1) Class158 arg0, @OriginalArg(2) Class158 arg1) {
+	public static void method6710(@OriginalArg(1) Component arg0, @OriginalArg(2) Component arg1) {
 		@Pc(15) OutboundPacket local15 = Static293.method4335(Static671.aClientProt117, Static405.aClass153_2.aIsaacRandom_1);
 		local15.aPacketBit_1.p2(arg1.anInt3760);
 		local15.aPacketBit_1.ip2(arg0.anInt3741);
@@ -27,7 +27,7 @@ public final class Static710 {
 
 	@OriginalMember(owner = "client!wha", name = "a", descriptor = "(I)V")
 	public static void method6711() {
-		for (@Pc(10) ParticleNode_Sub1 local10 = (ParticleNode_Sub1) Static149.aClass130_4.method2783(); local10 != null; local10 = (ParticleNode_Sub1) Static149.aClass130_4.method2783()) {
+		for (@Pc(10) ParticleNode_Sub1 local10 = (ParticleNode_Sub1) Static149.aParticleLinkedList4.method2783(); local10 != null; local10 = (ParticleNode_Sub1) Static149.aParticleLinkedList4.method2783()) {
 			Static703.method9171(local10);
 		}
 		@Pc(36) int local36;

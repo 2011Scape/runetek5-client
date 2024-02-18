@@ -28,14 +28,14 @@ public final class Static576 {
 						return false;
 					}
 				}
-				if (Static12.aClass123_4 == null) {
-					Static12.aClass123_4 = new Class123(Static91.aJs5117, Static296.aJs561);
+				if (Static12.aSoundBank4 == null) {
+					Static12.aSoundBank4 = new SoundBank(Static91.aJs5117, Static296.aJs561);
 				}
 				@Pc(36) MidiPcmStream local36 = Static581.aClass2_Sub6_Sub1_3;
 				if (Static117.aClass2_Sub6_Sub1_2 != null) {
 					local36 = Static117.aClass2_Sub6_Sub1_2;
 				}
-				if (local36.method944(Static12.aClass123_4, Static86.aJs513, Static62.aClass2_Sub8_3)) {
+				if (local36.method944(Static12.aSoundBank4, Static86.aJs513, Static62.aClass2_Sub8_3)) {
 					Static581.aClass2_Sub6_Sub1_3 = local36;
 					Static581.aClass2_Sub6_Sub1_3.method933();
 					@Pc(65) int local65;
@@ -65,7 +65,7 @@ public final class Static576 {
 						Static426.aAudioChannel2.method3582(Static581.aClass2_Sub6_Sub1_3);
 					}
 					Static146.aLong95 = 0L;
-					Static12.aClass123_4 = null;
+					Static12.aSoundBank4 = null;
 					Static62.aClass2_Sub8_3 = null;
 					Static117.aClass2_Sub6_Sub1_2 = null;
 					Static676.aJs5121 = null;
@@ -75,7 +75,7 @@ public final class Static576 {
 		} catch (@Pc(191) Exception local191) {
 			local191.printStackTrace();
 			Static581.aClass2_Sub6_Sub1_3.method912();
-			Static12.aClass123_4 = null;
+			Static12.aSoundBank4 = null;
 			Static117.aClass2_Sub6_Sub1_2 = null;
 			Static676.aJs5121 = null;
 			Static62.aClass2_Sub8_3 = null;

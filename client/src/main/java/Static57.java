@@ -88,7 +88,7 @@ public final class Static57 {
 		@Pc(24) int local24 = Static338.anInt5564;
 		@Pc(26) int[] local26 = Static210.anIntArray280;
 		for (@Pc(28) int local28 = 0; local28 < local24; local28++) {
-			@Pc(35) ParticleNode_Sub2_Sub1_Sub2_Sub1 local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
+			@Pc(35) Player local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
 			if (local35.aString9 != null && local35.aString9.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10822 & 0x10) != 0 || (Static717.anInt10822 & 0x8) != 0)) {
 				@Pc(75) OutboundPacket local75 = Static293.method4335(Static664.aClientProt115, Static405.aClass153_2.aIsaacRandom_1);
 				local75.aPacketBit_1.ip2(local26[local28]);

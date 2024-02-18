@@ -28,7 +28,7 @@ public final class Static708 {
 			} else {
 				local47 = local47 + "; Expires=" + Static163.method8846(Static588.method7715() + 94608000000L) + "; Max-Age=" + 94608000L;
 			}
-			Static727.method98("document.cookie=\"" + local47 + "\"", Static166.anApplet1);
+			BrowserControl.eval("document.cookie=\"" + local47 + "\"", Static166.anApplet1);
 		} catch (@Pc(104) Throwable local104) {
 		}
 	}

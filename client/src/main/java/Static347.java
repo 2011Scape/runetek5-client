@@ -11,8 +11,8 @@ public final class Static347 {
 	public static void method5094(@OriginalArg(0) int arg0) {
 		if (arg0 != -1 && Static132.aBooleanArray5[arg0]) {
 			Static666.aJs5118.method7605(arg0);
-			Static453.aClass158ArrayArray2[arg0] = null;
-			Static148.aClass158ArrayArray1[arg0] = null;
+			Static453.aComponentArrayArray2[arg0] = null;
+			Static148.aComponentArrayArray1[arg0] = null;
 			Static132.aBooleanArray5[arg0] = false;
 		}
 	}

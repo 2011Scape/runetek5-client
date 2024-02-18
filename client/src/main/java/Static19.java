@@ -22,7 +22,7 @@ public final class Static19 {
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "(ZIIII)V")
 	public static void method265(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (Static571.method7566(arg1)) {
-			Static220.method3200(arg3, arg0, arg2, Static453.aClass158ArrayArray2[arg1], -1);
+			Static220.method3200(arg3, arg0, arg2, Static453.aComponentArrayArray2[arg1], -1);
 		}
 	}
 }

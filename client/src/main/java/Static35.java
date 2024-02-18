@@ -24,12 +24,12 @@ public final class Static35 {
 				if (local13.anInt2571 < (local13.method2418() ? -1500 : -10)) {
 					local15 = true;
 				} else {
-					if (local13.aByte49 == 1 && local13.aClass89_1 == null) {
-						local13.aClass89_1 = Static729.method2245(Static281.aJs560, local13.anInt2580, 0);
-						if (local13.aClass89_1 == null) {
+					if (local13.aByte49 == 1 && local13.aSynthSound1 == null) {
+						local13.aSynthSound1 = Static729.method2245(Static281.aJs560, local13.anInt2580, 0);
+						if (local13.aSynthSound1 == null) {
 							continue;
 						}
-						local13.anInt2571 += local13.aClass89_1.method2248();
+						local13.anInt2571 += local13.aSynthSound1.method2248();
 					} else if (local13.method2418() && (local13.aClass2_Sub53_1 == null || local13.aClass2_Sub49_Sub1_2 == null)) {
 						if (local13.aClass2_Sub53_1 == null) {
 							local13.aClass2_Sub53_1 = Static650.method8498(Static147.aJs526, local13.anInt2580);
@@ -66,8 +66,8 @@ public final class Static35 {
 									local251 = 0;
 								}
 								local179 = Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() * (local199 - local251) * local13.anInt2577 / local199 >> 2;
-								if (local13.aClass8_Sub2_10 != null && local13.aClass8_Sub2_10 instanceof ParticleNode_Sub2_Sub1) {
-									@Pc(301) ParticleNode_Sub2_Sub1 local301 = (ParticleNode_Sub2_Sub1) local13.aClass8_Sub2_10;
+								if (local13.aClass8_Sub2_10 != null && local13.aClass8_Sub2_10 instanceof Entity) {
+									@Pc(301) Entity local301 = (Entity) local13.aClass8_Sub2_10;
 									@Pc(304) short local304 = local301.aShort132;
 									@Pc(307) short local307 = local301.aShort131;
 								}
@@ -93,7 +93,7 @@ public final class Static35 {
 						if (local179 > 0) {
 							@Pc(392) PcmSound local392 = null;
 							if (local13.aByte49 == 1) {
-								local392 = local13.aClass89_1.method2247().method7821(Static681.aClass224_2);
+								local392 = local13.aSynthSound1.method2247().method7821(Static681.aResampler2);
 							} else if (local13.method2418()) {
 								local392 = local13.aClass2_Sub49_Sub1_2;
 							}

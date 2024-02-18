@@ -33,7 +33,7 @@ public final class Static212 {
 	}
 
 	@OriginalMember(owner = "client!gka", name = "a", descriptor = "(Lclient!hda;IBILclient!ha;)V")
-	public static void method3136(@OriginalArg(0) Class158 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3) {
+	public static void method3136(@OriginalArg(0) Component arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3) {
 		for (@Pc(16) int local16 = 63; local16 >= 0; local16--) {
 			Static198.method2954(true, false);
 			@Pc(42) int local42 = (local16 & 0x3F) << 10 | 0x3F | 0x380;

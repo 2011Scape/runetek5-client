@@ -8,14 +8,14 @@ public final class Static15 {
 	public static boolean aBoolean17 = false;
 
 	@OriginalMember(owner = "client!aia", name = "a", descriptor = "(III)Lclient!hda;")
-	public static Class158 method186(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(21) Class158 local21 = Static145.method2412(arg1);
+	public static Component method186(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+		@Pc(21) Component local21 = Static145.method2412(arg1);
 		if (arg0 == -1) {
 			return local21;
-		} else if (local21 == null || local21.aClass158Array2 == null || arg0 >= local21.aClass158Array2.length) {
+		} else if (local21 == null || local21.aComponentArray2 == null || arg0 >= local21.aComponentArray2.length) {
 			return null;
 		} else {
-			return local21.aClass158Array2[arg0];
+			return local21.aComponentArray2[arg0];
 		}
 	}
 

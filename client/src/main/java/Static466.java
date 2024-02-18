@@ -8,14 +8,14 @@ public final class Static466 {
 	public static int anInt7042;
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!cg;I)V")
-	public static void method6322(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
-		if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub2) {
-			@Pc(5) ParticleNode_Sub2_Sub1_Sub2_Sub2 local5 = (ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0;
+	public static void method6322(@OriginalArg(0) PathingEntity arg0) {
+		if (arg0 instanceof Npc) {
+			@Pc(5) Npc local5 = (Npc) arg0;
 			if (local5.aNpcType1 != null) {
 				Static651.method8517(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 != local5.aByte144, local5);
 			}
-		} else if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub1) {
-			@Pc(33) ParticleNode_Sub2_Sub1_Sub2_Sub1 local33 = (ParticleNode_Sub2_Sub1_Sub2_Sub1) arg0;
+		} else if (arg0 instanceof Player) {
+			@Pc(33) Player local33 = (Player) arg0;
 			Static414.method5696(local33.aByte144 != Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144, local33);
 		}
 	}
@@ -150,7 +150,7 @@ public final class Static466 {
 					local395 = local252;
 					local388 = local393;
 				}
-				@Pc(451) Class130 local451 = Static10.aClass213_1.aClass130_8;
+				@Pc(451) ParticleLinkedList local451 = Static10.aClass213_1.aParticleLinkedList8;
 				@Pc(465) int local465;
 				for (@Pc(456) ParticleNode_Sub7 local456 = (ParticleNode_Sub7) local451.method2790(); local456 != null; local456 = (ParticleNode_Sub7) local451.method2785()) {
 					@Pc(461) ParticleNode_Sub6[] local461 = local456.aClass8_Sub6Array1;

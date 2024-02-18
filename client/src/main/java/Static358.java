@@ -57,7 +57,7 @@ public final class Static358 {
 					}
 					for (@Pc(125) int local125 = local100; local125 <= local108; local125++) {
 						@Pc(128) byte local128 = 1;
-						@Pc(144) ParticleNode_Sub2_Sub1 local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = getClass("Class8_Sub2_Sub1")) : aClass28);
+						@Pc(144) Entity local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = getClass("Class8_Sub2_Sub1")) : aClass28);
 						if (local144 != null && local144.aByte145 != 0) {
 							@Pc(169) boolean local169;
 							@Pc(179) boolean local179;
@@ -135,7 +135,7 @@ public final class Static358 {
 			@Pc(23) String local23 = Static166.anApplet1.getParameter("cookiehost");
 			@Pc(31) int local31 = (int) (Static588.method7715() / 86400000L) - 11745;
 			@Pc(47) String local47 = "usrdob=" + local31 + "; version=1; path=/; domain=" + local23;
-			Static727.method98("document.cookie=\"" + local47 + "\"", Static166.anApplet1);
+			BrowserControl.eval("document.cookie=\"" + local47 + "\"", Static166.anApplet1);
 		} catch (@Pc(63) Throwable local63) {
 		}
 	}

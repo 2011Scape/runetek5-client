@@ -18,7 +18,7 @@ public final class Static703 {
 	public static void method9171(@OriginalArg(0) ParticleNode_Sub1 arg0) {
 		arg0.aClass8_Sub2_Sub1_Sub2_1 = null;
 		if (Static6.anInt94 < 20) {
-			Static129.aClass130_3.method2787(arg0);
+			Static129.aParticleLinkedList3.method2787(arg0);
 			Static6.anInt94++;
 		}
 	}

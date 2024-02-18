@@ -28,7 +28,7 @@ public final class MidiPcmStream extends PcmStream {
 	private boolean aBoolean66;
 
 	@OriginalMember(owner = "client!bd", name = "Cb", descriptor = "Lclient!bn;")
-	private Linkable_Sub8 aClass2_Sub8_1;
+	private MidiSong aClass2_Sub8_1;
 
 	@OriginalMember(owner = "client!bd", name = "D", descriptor = "[I")
 	private final int[] anIntArray42 = new int[16];
@@ -194,7 +194,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(ZZLclient!bn;I)V")
-	private synchronized void method913(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Linkable_Sub8 arg2) {
+	private synchronized void method913(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) MidiSong arg2) {
 		this.method911(arg1);
 		this.aClass40_1.method1061(arg2.aByteArray12);
 		this.aLong29 = 0L;
@@ -527,7 +527,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(Lclient!bn;ZIJZ)V")
-	public synchronized void method925(@OriginalArg(0) Linkable_Sub8 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) long arg2) {
+	public synchronized void method925(@OriginalArg(0) MidiSong arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) long arg2) {
 		this.method913(arg1, true, arg0);
 		this.method910(arg2 * (long) this.aClass40_1.anInt988);
 	}
@@ -643,7 +643,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(ILclient!bn;Z)V")
-	public synchronized void method934(@OriginalArg(1) Linkable_Sub8 arg0, @OriginalArg(2) boolean arg1) {
+	public synchronized void method934(@OriginalArg(1) MidiSong arg0, @OriginalArg(2) boolean arg1) {
 		this.method913(arg1, true, arg0);
 	}
 
@@ -784,7 +784,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(Lclient!fca;Lclient!sb;IILclient!bn;)Z")
-	public synchronized boolean method944(@OriginalArg(0) Class123 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(4) Linkable_Sub8 arg2) {
+	public synchronized boolean method944(@OriginalArg(0) SoundBank arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(4) MidiSong arg2) {
 		arg2.method1154();
 		@Pc(15) boolean local15 = true;
 		@Pc(29) int[] local29 = new int[] { 22050 };

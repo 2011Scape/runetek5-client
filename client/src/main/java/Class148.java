@@ -34,7 +34,7 @@ public final class Class148 {
 	private Class148 aClass148_2;
 
 	@OriginalMember(owner = "client!gm", name = "C", descriptor = "Lclient!ka;")
-	private Class114 aClass114_2;
+	private Model aModel2;
 
 	@OriginalMember(owner = "client!gm", name = "e", descriptor = "I")
 	private int anInt3517;
@@ -122,7 +122,7 @@ public final class Class148 {
 	@OriginalMember(owner = "client!gm", name = "a", descriptor = "(IIILclient!ha;ZZIIIIIIII)V")
 	private void method3161(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(9) int arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) int arg10, @OriginalArg(13) int arg11) {
 		@Pc(10) int local10 = 255 - arg9;
-		if (this.aClass114_2 == null) {
+		if (this.aModel2 == null) {
 			arg8 = arg8 + arg1 & 0x3FFF;
 			arg3.ya();
 			if (this.anInt3507 == -1 || this.anInt3518 == 0) {
@@ -217,10 +217,10 @@ public final class Class148 {
 		@Pc(36) Class73 local36 = arg4.method7953();
 		local36.method7133();
 		if (this.anInt3503 != arg1) {
-			this.aClass114_2.method7498((byte) arg1, this.aByteArray35);
+			this.aModel2.method7498((byte) arg1, this.aByteArray35);
 			this.anInt3503 = arg1;
 		}
-		this.aClass114_2.method7473(local36, (ParticleNode_Sub6) null, 0);
+		this.aModel2.method7473(local36, (ParticleNode_Sub6) null, 0);
 		arg4.method8000(local7);
 	}
 
@@ -237,8 +237,8 @@ public final class Class148 {
 			if (local17) {
 				arg0.ZA(16777215, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F);
 				@Pc(36) Class88 local36 = Static121.method2201(this.anInt3514, Static386.aJs580);
-				this.aClass114_2 = arg0.method7952(local36, 1099776, 0, 255, 1);
-				@Pc(49) byte[] local49 = this.aClass114_2.method7489();
+				this.aModel2 = arg0.method7952(local36, 1099776, 0, 255, 1);
+				@Pc(49) byte[] local49 = this.aModel2.method7489();
 				if (local49 == null) {
 					this.aByteArray35 = null;
 				} else {
@@ -294,8 +294,8 @@ public final class Class148 {
 			}
 		}
 		if (arg0 == 0 || !arg2.method7992()) {
-			this.aClass114_2 = null;
-		} else if (this.aClass114_2 == null && this.anInt3514 >= 0) {
+			this.aModel2 = null;
+		} else if (this.aModel2 == null && this.anInt3514 >= 0) {
 			this.method3166(arg2);
 		}
 		if (this.aClass148_2 != null && this.aClass148_2 != this) {

@@ -11,7 +11,7 @@ public final class Static142 {
 	public static Js5 aJs525;
 
 	@OriginalMember(owner = "client!eha", name = "d", descriptor = "Lclient!rt;")
-	public static Class327 aClass327_1;
+	public static WorldMapFont aWorldMapFont1;
 
 	@OriginalMember(owner = "client!eha", name = "e", descriptor = "[I")
 	public static final int[] anIntArray225 = new int[32];

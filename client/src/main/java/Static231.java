@@ -61,18 +61,18 @@ public final class Static231 {
 		Static143.method3572();
 		Static668.method8700(false);
 		for (@Pc(34) int local34 = 0; local34 < 2048; local34++) {
-			@Pc(39) ParticleNode_Sub2_Sub1_Sub2_Sub1 local39 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local34];
+			@Pc(39) Player local39 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local34];
 			if (local39 != null) {
-				for (@Pc(43) int local43 = 0; local43 < local39.aClass114Array3.length; local43++) {
-					local39.aClass114Array3[local43] = null;
+				for (@Pc(43) int local43 = 0; local43 < local39.aModelArray3.length; local43++) {
+					local39.aModelArray3[local43] = null;
 				}
 			}
 		}
 		for (@Pc(65) int local65 = 0; local65 < Static416.anInt6378; local65++) {
-			@Pc(71) ParticleNode_Sub2_Sub1_Sub2_Sub2 local71 = Static592.aClass2_Sub45Array1[local65].aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(71) Npc local71 = Static592.aClass2_Sub45Array1[local65].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local71 != null) {
-				for (@Pc(75) int local75 = 0; local75 < local71.aClass114Array3.length; local75++) {
-					local71.aClass114Array3[local75] = null;
+				for (@Pc(75) int local75 = 0; local75 < local71.aModelArray3.length; local75++) {
+					local71.aModelArray3[local75] = null;
 				}
 			}
 		}
@@ -118,13 +118,13 @@ public final class Static231 {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!fl;")
-	public static RuntimeException_Sub1 method3380(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		@Pc(12) RuntimeException_Sub1 local12;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			local12 = (RuntimeException_Sub1) arg0;
+	public static TracingException method3380(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		@Pc(12) TracingException local12;
+		if (arg0 instanceof TracingException) {
+			local12 = (TracingException) arg0;
 			local12.aString32 = local12.aString32 + ' ' + arg1;
 		} else {
-			local12 = new RuntimeException_Sub1(arg0, arg1);
+			local12 = new TracingException(arg0, arg1);
 		}
 		return local12;
 	}
@@ -220,7 +220,7 @@ public final class Static231 {
 					}
 				}
 				if (arg2.equalsIgnoreCase("cleartext")) {
-					Static422.aClass130_9.method2789();
+					Static422.aParticleLinkedList9.method2789();
 					Static79.method1579("Text coords cleared");
 					return;
 				}
@@ -503,7 +503,7 @@ public final class Static231 {
 				if (arg2.startsWith("cachespace")) {
 					Static79.method1579("I(s): " + Static473.aSoftLruHashTable157.method2144() + "/" + Static473.aSoftLruHashTable157.method2146());
 					Static79.method1579("I(m): " + Static312.aSoftLruHashTable106.method2144() + "/" + Static312.aSoftLruHashTable106.method2146());
-					Static79.method1579("O(s): " + Static419.aObjTypeList1.aClass16_1.method257() + "/" + Static419.aObjTypeList1.aClass16_1.method256());
+					Static79.method1579("O(s): " + Static419.aObjTypeList1.aObjLruHashTable1.method257() + "/" + Static419.aObjTypeList1.aObjLruHashTable1.method256());
 					return;
 				}
 				if (arg2.equals("renderprofile") || arg2.equals("rp")) {

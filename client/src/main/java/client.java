@@ -243,12 +243,12 @@ public final class client extends GameShell {
 			}
 		}
 		Static35.anInt800++;
-		Static449.method6114(-1, -1, (Class158) null);
-		Static65.method1473(-1, -1, (Class158) null);
+		Static449.method6114(-1, -1, (Component) null);
+		Static65.method1473(-1, -1, (Component) null);
 		Static443.method5981();
 		Static642.anInt9599++;
 		for (local46 = 0; local46 < Static416.anInt6378; local46++) {
-			@Pc(97) ParticleNode_Sub2_Sub1_Sub2_Sub2 local97 = Static592.aClass2_Sub45Array1[local46].aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(97) Npc local97 = Static592.aClass2_Sub45Array1[local46].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local97 != null) {
 				@Pc(103) byte local103 = local97.aNpcType1.aByte103;
 				if ((local103 & 0x1) != 0) {
@@ -305,8 +305,8 @@ public final class client extends GameShell {
 		}
 		while (true) {
 			@Pc(453) Linkable_Sub42 local453;
-			@Pc(458) Class158 local458;
-			@Pc(470) Class158 local470;
+			@Pc(458) Component local458;
+			@Pc(470) Component local470;
 			do {
 				local453 = (Linkable_Sub42) Static618.aLinkedList68.removeHead();
 				if (local453 == null) {
@@ -318,7 +318,7 @@ public final class client extends GameShell {
 									do {
 										local453 = (Linkable_Sub42) Static521.aLinkedList44.removeHead();
 										if (local453 == null) {
-											if (Static109.aClass158_3 != null) {
+											if (Static109.aComponent3 != null) {
 												Static603.method7899();
 											}
 											if (Static333.anInt5455 % 1500 == 0) {
@@ -331,7 +331,7 @@ public final class client extends GameShell {
 											if (Static624.aBoolean727 && Static588.method7715() - 60000L > Static98.aLong71) {
 												Static266.method6777();
 											}
-											for (@Pc(672) SecondaryParticleNode_Sub1 local672 = (SecondaryParticleNode_Sub1) Static168.aClass130_5.method2790(); local672 != null; local672 = (SecondaryParticleNode_Sub1) Static168.aClass130_5.method2785()) {
+											for (@Pc(672) SecondaryParticleNode_Sub1 local672 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2790(); local672 != null; local672 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2785()) {
 												if ((long) local672.anInt6433 < Static588.method7715() / 1000L - 5L) {
 													if (local672.aShort74 > 0) {
 														Static44.method1072(local672.aString72 + Static32.aLocalizedText19.method877(Static51.anInt1052), "", 0, "", "", 5);
@@ -368,30 +368,30 @@ public final class client extends GameShell {
 											}
 											return;
 										}
-										local458 = local453.aClass158_14;
+										local458 = local453.aComponent14;
 										if (local458.anInt3741 < 0) {
 											break;
 										}
 										local470 = Static145.method2412(local458.anInt3743);
-									} while (local470 == null || local470.aClass158Array2 == null || local470.aClass158Array2.length <= local458.anInt3741 || local470.aClass158Array2[local458.anInt3741] != local458);
+									} while (local470 == null || local470.aComponentArray2 == null || local470.aComponentArray2.length <= local458.anInt3741 || local470.aComponentArray2[local458.anInt3741] != local458);
 									Static472.method6420(local453);
 								}
 							}
-							local458 = local453.aClass158_14;
+							local458 = local453.aComponent14;
 							if (local458.anInt3741 < 0) {
 								break;
 							}
 							local470 = Static145.method2412(local458.anInt3743);
-						} while (local470 == null || local470.aClass158Array2 == null || local470.aClass158Array2.length <= local458.anInt3741 || local458 != local470.aClass158Array2[local458.anInt3741]);
+						} while (local470 == null || local470.aComponentArray2 == null || local470.aComponentArray2.length <= local458.anInt3741 || local458 != local470.aComponentArray2[local458.anInt3741]);
 						Static472.method6420(local453);
 					}
 				}
-				local458 = local453.aClass158_14;
+				local458 = local453.aComponent14;
 				if (local458.anInt3741 < 0) {
 					break;
 				}
 				local470 = Static145.method2412(local458.anInt3743);
-			} while (local470 == null || local470.aClass158Array2 == null || local470.aClass158Array2.length <= local458.anInt3741 || local458 != local470.aClass158Array2[local458.anInt3741]);
+			} while (local470 == null || local470.aComponentArray2 == null || local470.aComponentArray2.length <= local458.anInt3741 || local458 != local470.aComponentArray2[local458.anInt3741]);
 			Static472.method6420(local453);
 		}
 	}

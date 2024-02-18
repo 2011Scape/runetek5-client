@@ -121,9 +121,9 @@ public final class Static220 {
 	}
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(ZIZI[Lclient!hda;I)V")
-	public static void method3200(@OriginalArg(1) int arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class158[] arg3, @OriginalArg(5) int arg4) {
+	public static void method3200(@OriginalArg(1) int arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component[] arg3, @OriginalArg(5) int arg4) {
 		for (@Pc(5) int local5 = 0; local5 < arg3.length; local5++) {
-			@Pc(14) Class158 local14 = arg3[local5];
+			@Pc(14) Component local14 = arg3[local5];
 			if (local14 != null && local14.anInt3743 == arg4) {
 				Static507.method6743(arg1, arg2, arg0, local14);
 				Static470.method6383(local14, arg0, arg2, -8525);

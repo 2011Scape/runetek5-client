@@ -22,9 +22,9 @@ public final class Static658 {
 		}
 		if (Static693.aClass178Array2 == Static246.aClass178Array1) {
 			@Pc(28) int local28;
-			if (arg0 instanceof ParticleNode_Sub2_Sub1) {
-				local6 = ((ParticleNode_Sub2_Sub1) arg0).aShort131;
-				local28 = ((ParticleNode_Sub2_Sub1) arg0).aShort132;
+			if (arg0 instanceof Entity) {
+				local6 = ((Entity) arg0).aShort131;
+				local28 = ((Entity) arg0).aShort132;
 			} else {
 				local6 = arg0.anInt10690 >> Static52.anInt1066;
 				local28 = arg0.anInt10694 >> Static52.anInt1066;

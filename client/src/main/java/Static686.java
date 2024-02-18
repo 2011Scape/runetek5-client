@@ -31,7 +31,7 @@ public final class Static686 {
 			Static364.aBooleanArray18[local54] = false;
 		}
 		Static171.anInt2880 = Static333.anInt5455;
-		Static449.method6114(-1, -1, (Class158) null);
+		Static449.method6114(-1, -1, (Component) null);
 		if (105 <= 103) {
 			return;
 		}

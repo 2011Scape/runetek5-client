@@ -25,9 +25,9 @@ public final class Static25 {
 			if (Static377.anInt5930 != -1) {
 				Static347.method5094(Static377.anInt5930);
 			}
-			for (@Pc(16) Linkable_Sub4 local16 = (Linkable_Sub4) Static548.aHashTable40.head(); local16 != null; local16 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+			for (@Pc(16) SubInterface local16 = (SubInterface) Static548.aHashTable40.head(); local16 != null; local16 = (SubInterface) Static548.aHashTable40.next()) {
 				if (!local16.isLinked()) {
-					local16 = (Linkable_Sub4) Static548.aHashTable40.head();
+					local16 = (SubInterface) Static548.aHashTable40.head();
 					if (local16 == null) {
 						break;
 					}

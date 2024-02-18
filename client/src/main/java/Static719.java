@@ -121,42 +121,42 @@ public final class Static719 {
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 70) {
-			Static559.aClass327_7 = new Class327(arg1, 11, true, Static434.aCanvas7);
+			Static559.aWorldMapFont7 = new WorldMapFont(arg1, 11, true, Static434.aCanvas7);
 			Static273.anInt4403 = 73;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 73) {
-			Static484.aClass327_6 = new Class327(arg1, 12, true, Static434.aCanvas7);
+			Static484.aWorldMapFont6 = new WorldMapFont(arg1, 12, true, Static434.aCanvas7);
 			Static273.anInt4403 = 76;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 76) {
-			Static142.aClass327_1 = new Class327(arg1, 14, true, Static434.aCanvas7);
+			Static142.aWorldMapFont1 = new WorldMapFont(arg1, 14, true, Static434.aCanvas7);
 			Static273.anInt4403 = 79;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 79) {
-			Static651.aClass327_8 = new Class327(arg1, 17, true, Static434.aCanvas7);
+			Static651.aWorldMapFont8 = new WorldMapFont(arg1, 17, true, Static434.aCanvas7);
 			Static273.anInt4403 = 82;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 82) {
-			Static275.aClass327_2 = new Class327(arg1, 19, true, Static434.aCanvas7);
+			Static275.aWorldMapFont2 = new WorldMapFont(arg1, 19, true, Static434.aCanvas7);
 			Static273.anInt4403 = 85;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 85) {
-			Static390.aClass327_5 = new Class327(arg1, 22, true, Static434.aCanvas7);
+			Static390.aWorldMapFont5 = new WorldMapFont(arg1, 22, true, Static434.aCanvas7);
 			Static273.anInt4403 = 88;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 88) {
-			Static364.aClass327_4 = new Class327(arg1, 26, true, Static434.aCanvas7);
+			Static364.aWorldMapFont4 = new WorldMapFont(arg1, 26, true, Static434.aCanvas7);
 			Static273.anInt4403 = 91;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else {
-			Static359.aClass327_3 = new Class327(arg1, 30, true, Static434.aCanvas7);
+			Static359.aWorldMapFont3 = new WorldMapFont(arg1, 30, true, Static434.aCanvas7);
 			Static273.anInt4403 = 100;
 			Static314.method4568(true);
 			Static199.method2977();

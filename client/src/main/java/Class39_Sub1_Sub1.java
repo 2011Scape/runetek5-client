@@ -33,7 +33,7 @@ public final class Class39_Sub1_Sub1 extends Class39_Sub1 {
 		if (local30 < 3 && Static441.method5968(this.anInt987, this.anInt983)) {
 			local30++;
 		}
-		@Pc(79) ParticleNode_Sub2_Sub1_Sub5 local79 = new ParticleNode_Sub2_Sub1_Sub5(super.anInt10558, 0, this.anInt986, local30, local10, Static102.method2025(this.anInt986, -29754, local17, local10) - super.anInt10560, local17, this.anInt983, this.anInt983, this.anInt987, this.anInt987, super.anInt10556, false);
+		@Pc(79) Entity_Sub3 local79 = new Entity_Sub3(super.anInt10558, 0, this.anInt986, local30, local10, Static102.method2025(this.anInt986, -29754, local17, local10) - super.anInt10560, local17, this.anInt983, this.anInt983, this.anInt987, this.anInt987, super.anInt10556, false);
 		Static346.aHashTable29.put((long) (this.anInt983 << 16 | this.anInt987), new SecondaryLinkable_Sub20(local79));
 	}
 }

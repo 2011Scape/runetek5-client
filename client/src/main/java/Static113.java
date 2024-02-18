@@ -34,10 +34,10 @@ public final class Static113 {
 			return;
 		}
 		Static681.method8919(Static339.aPacket_9.data);
-		Static343.aClass297_Sub1Array2 = new Class297_Sub1[Static476.anInt7177];
+		Static343.aClass297_Sub1Array2 = new World[Static476.anInt7177];
 		@Pc(31) int local31 = 0;
 		for (@Pc(33) int local33 = Static494.anInt7396; local33 <= Static699.anInt10532; local33++) {
-			@Pc(38) Class297_Sub1 local38 = Static615.method8260(local33);
+			@Pc(38) World local38 = Static615.method8260(local33);
 			if (local38 != null) {
 				Static343.aClass297_Sub1Array2[local31++] = local38;
 			}

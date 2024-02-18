@@ -29,7 +29,7 @@ public final class Static102 {
 	@OriginalMember(owner = "client!dd", name = "b", descriptor = "(IIII)I")
 	public static int method2025(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg1 != -29754) {
-			method2026((ParticleNode_Sub2_Sub1) null, false);
+			method2026((Entity) null, false);
 		}
 		if (Static246.aClass178Array1 == null) {
 			return 0;
@@ -47,7 +47,7 @@ public final class Static102 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(Lclient!qf;Z)Z")
-	public static boolean method2026(@OriginalArg(0) ParticleNode_Sub2_Sub1 arg0, @OriginalArg(1) boolean arg1) {
+	public static boolean method2026(@OriginalArg(0) Entity arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(7) boolean local7 = Static246.aClass178Array1 == Static693.aClass178Array2;
 		@Pc(9) int local9 = 0;
 		@Pc(11) short local11 = 0;

@@ -55,7 +55,7 @@ public final class Static187 {
 	public static void method2844(@OriginalArg(0) Js5 arg0) {
 		Static559.anInt8410 = 0;
 		Static600.anInt8880 = 0;
-		Static342.aClass130_7 = new Class130();
+		Static342.aParticleLinkedList7 = new ParticleLinkedList();
 		Static538.aClass8_Sub4_Sub2_Sub1Array2 = new SecondaryParticleNode_Sub2_Sub1[1024];
 		Static81.aClass8_Sub5Array1 = new ParticleSystem[Static190.anIntArray265[Static507.anInt7618] + 1];
 		Static349.anInt5693 = 0;

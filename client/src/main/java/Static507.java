@@ -20,7 +20,7 @@ public final class Static507 {
 	public static int anInt7618 = 2;
 
 	@OriginalMember(owner = "client!pw", name = "a", descriptor = "(ZIIILclient!hda;)V")
-	public static void method6743(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class158 arg3) {
+	public static void method6743(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component arg3) {
 		@Pc(6) int local6 = arg3.anInt3802;
 		@Pc(16) int local16 = arg3.anInt3746;
 		if (arg3.aByte63 == 0) {
@@ -57,12 +57,12 @@ public final class Static507 {
 			}
 		}
 		if (Static188.anInt3104 == arg3.anInt3806) {
-			Static610.aClass158_16 = arg3;
+			Static610.aComponent16 = arg3;
 		}
 		if (arg0 && arg3.anObjectArray19 != null && (local6 != arg3.anInt3802 || local16 != arg3.anInt3746)) {
 			@Pc(225) Linkable_Sub42 local225 = new Linkable_Sub42();
 			local225.anObjectArray36 = arg3.anObjectArray19;
-			local225.aClass158_14 = arg3;
+			local225.aComponent14 = arg3;
 			Static521.aLinkedList44.addTail(local225);
 		}
 	}

@@ -39,7 +39,7 @@ public final class Static145 {
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(Lclient!cg;Z)V")
-	public static void method2410(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
+	public static void method2410(@OriginalArg(0) PathingEntity arg0) {
 		if (arg0.anIntArray872 == null && arg0.anIntArray877 == null) {
 			return;
 		}
@@ -66,12 +66,12 @@ public final class Static145 {
 						arg0.method9307(local19, -1);
 						continue;
 					}
-					@Pc(116) ParticleNode_Sub2_Sub1_Sub2_Sub2 local116 = local111.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+					@Pc(116) Npc local116 = local111.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					local95 = arg0.anInt10694 - local116.anInt10694;
 					local102 = arg0.anInt10690 - local116.anInt10690;
 				} else {
 					local72 = local25 & 0x7FFF;
-					@Pc(76) ParticleNode_Sub2_Sub1_Sub2_Sub1 local76 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local72];
+					@Pc(76) Player local76 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local72];
 					if (local76 == null) {
 						arg0.method9307(local19, -1);
 						continue;
@@ -95,20 +95,20 @@ public final class Static145 {
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(III)V")
 	public static void method2411(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (Static571.method7566(arg1)) {
-			Static84.method1663(Static453.aClass158ArrayArray2[arg1], arg0);
+			Static84.method1663(Static453.aComponentArrayArray2[arg1], arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(BI)Lclient!hda;")
-	public static Class158 method2412(@OriginalArg(1) int arg0) {
+	public static Component method2412(@OriginalArg(1) int arg0) {
 		@Pc(16) int local16 = arg0 >> 16;
 		@Pc(20) int local20 = arg0 & 0xFFFF;
-		if (Static453.aClass158ArrayArray2[local16] == null || Static453.aClass158ArrayArray2[local16][local20] == null) {
+		if (Static453.aComponentArrayArray2[local16] == null || Static453.aComponentArrayArray2[local16][local20] == null) {
 			@Pc(38) boolean local38 = Static571.method7566(local16);
 			if (!local38) {
 				return null;
 			}
 		}
-		return Static453.aClass158ArrayArray2[local16][local20];
+		return Static453.aComponentArrayArray2[local16][local20];
 	}
 }

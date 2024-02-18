@@ -8,7 +8,7 @@ public final class Static605 {
 	public static final ServerProt ServerProt220 = new ServerProt(108, 12);
 
 	@OriginalMember(owner = "client!tba", name = "g", descriptor = "Lclient!hda;")
-	public static Class158 aClass158_15 = null;
+	public static Component aComponent15 = null;
 
 	@OriginalMember(owner = "client!tba", name = "a", descriptor = "(ILclient!pc;)V")
 	public static void method7912(@OriginalArg(1) Class287 arg0) {
@@ -201,7 +201,7 @@ public final class Static605 {
 						local290 <<= 0x2;
 						local21 *= 256;
 						if (local212 != 0 && local46 != -1) {
-							@Pc(948) ParticleNode_Sub2_Sub1_Sub2 local948 = null;
+							@Pc(948) PathingEntity local948 = null;
 							@Pc(957) int local957;
 							if (local212 >= 0) {
 								local957 = local212 - 1;
@@ -227,7 +227,7 @@ public final class Static605 {
 								}
 							}
 						}
-						@Pc(1053) ParticleNode_Sub2_Sub1_Sub1 local1053 = new ParticleNode_Sub2_Sub1_Sub1(local219, Static87.anInt1810, Static87.anInt1810, local21, local25, local812, local322 + Static333.anInt5455, Static333.anInt5455 + local353, local843, local847, local212, local217, local290, local764, local46);
+						@Pc(1053) ProjAnimEntity local1053 = new ProjAnimEntity(local219, Static87.anInt1810, Static87.anInt1810, local21, local25, local812, local322 + Static333.anInt5455, Static333.anInt5455 + local353, local843, local847, local212, local217, local290, local764, local46);
 						local1053.method813(Static102.method2025(Static87.anInt1810, -29754, local537, local52) - local290, local322 + Static333.anInt5455, local537, local52);
 						Static505.aLinkedList77.addTail(new SecondaryLinkable_Sub15(local1053));
 					}
@@ -327,7 +327,7 @@ public final class Static605 {
 						local212 <<= 0x2;
 						local38 = local38 * 512 + 256;
 						local34 = local34 * 512 + 256;
-						@Pc(1728) ParticleNode_Sub2_Sub1_Sub1 local1728 = new ParticleNode_Sub2_Sub1_Sub1(local52, Static87.anInt1810, Static87.anInt1810, local25, local34, local537, local217 + Static333.anInt5455, local219 + Static333.anInt5455, local812, local290, 0, local46, local212, local1540, -1);
+						@Pc(1728) ProjAnimEntity local1728 = new ProjAnimEntity(local52, Static87.anInt1810, Static87.anInt1810, local25, local34, local537, local217 + Static333.anInt5455, local219 + Static333.anInt5455, local812, local290, 0, local46, local212, local1540, -1);
 						local1728.method813(Static102.method2025(Static87.anInt1810, -29754, local42, local38) - local212, Static333.anInt5455 + local217, local42, local38);
 						Static505.aLinkedList77.addTail(new SecondaryLinkable_Sub15(local1728));
 					}
@@ -383,7 +383,7 @@ public final class Static605 {
 							if (local212 < 3 && Static441.method5968(local25, local21)) {
 								local212++;
 							}
-							@Pc(2065) ParticleNode_Sub2_Sub1_Sub5 local2065 = new ParticleNode_Sub2_Sub1_Sub5(local34, local42, Static87.anInt1810, local212, local52, Static102.method2025(Static87.anInt1810, -29754, local537, local52) - local38, local537, local21, local21, local25, local25, local46, false);
+							@Pc(2065) Entity_Sub3 local2065 = new Entity_Sub3(local34, local42, Static87.anInt1810, local212, local52, Static102.method2025(Static87.anInt1810, -29754, local537, local52) - local38, local537, local21, local21, local25, local25, local46, false);
 							Static346.aHashTable29.put((long) (local21 << 16 | local25), new SecondaryLinkable_Sub20(local2065));
 						}
 					}

@@ -11,14 +11,14 @@ public final class Static112 {
 	public static boolean aBoolean197 = false;
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(ILclient!cg;)I")
-	public static int method2104(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0) {
+	public static int method2104(@OriginalArg(1) PathingEntity arg0) {
 		if (arg0.anInt10757 == 0) {
 			return 0;
 		}
 		@Pc(74) int local74;
 		@Pc(67) int local67;
 		if (arg0.anInt10722 != -1) {
-			@Pc(24) ParticleNode_Sub2_Sub1_Sub2 local24 = null;
+			@Pc(24) PathingEntity local24 = null;
 			if (arg0.anInt10722 < 32768) {
 				@Pc(54) Linkable_Sub45 local54 = (Linkable_Sub45) Static18.aHashTable2.get((long) arg0.anInt10722);
 				if (local54 != null) {
@@ -35,14 +35,14 @@ public final class Static112 {
 				}
 			}
 		}
-		if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub1) {
-			@Pc(104) ParticleNode_Sub2_Sub1_Sub2_Sub1 local104 = (ParticleNode_Sub2_Sub1_Sub2_Sub1) arg0;
+		if (arg0 instanceof Player) {
+			@Pc(104) Player local104 = (Player) arg0;
 			if (local104.anInt1467 != -1 && (local104.anInt10764 == 0 || local104.anInt10763 > 0)) {
 				local104.method9305(local104.anInt1467);
 				local104.anInt1467 = -1;
 			}
-		} else if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub2) {
-			@Pc(138) ParticleNode_Sub2_Sub1_Sub2_Sub2 local138 = (ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0;
+		} else if (arg0 instanceof Npc) {
+			@Pc(138) Npc local138 = (Npc) arg0;
 			if (local138.anInt10774 != -1 && (local138.anInt10764 == 0 || local138.anInt10763 > 0)) {
 				local67 = local138.anInt10690 - (local138.anInt10774 - Static691.anInt10367 - Static691.anInt10367) * 256;
 				local74 = local138.anInt10694 - (local138.anInt10767 - Static116.anInt2270 - Static116.anInt2270) * 256;

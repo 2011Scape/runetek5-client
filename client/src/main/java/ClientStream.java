@@ -149,8 +149,8 @@ public final class ClientStream implements Runnable {
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(B)V")
 	public void method5826() {
 		if (!this.aBoolean488) {
-			this.anInputStream2 = new InputStream_Sub2();
-			this.anOutputStream1 = new OutputStream_Sub2();
+			this.anInputStream2 = new BrokenInputStream();
+			this.anOutputStream1 = new BrokenOutputStream();
 		}
 	}
 

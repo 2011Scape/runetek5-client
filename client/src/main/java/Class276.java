@@ -198,9 +198,9 @@ public final class Class276 {
 		this.aClass19_Sub3_32.la();
 		@Pc(90) int local90 = 0;
 		@Pc(99) int local99 = 1;
-		@Pc(115) Linkable_Sub31 local115;
-		for (@Pc(105) Linkable_Sub31 local105 = (Linkable_Sub31) this.aLinkedList39.head(); local105 != null; local105 = local115) {
-			local115 = (Linkable_Sub31) this.aLinkedList39.next();
+		@Pc(115) PostProcessor local115;
+		for (@Pc(105) PostProcessor local105 = (PostProcessor) this.aLinkedList39.head(); local105 != null; local105 = local115) {
+			local115 = (PostProcessor) this.aLinkedList39.next();
 			@Pc(119) int local119 = local105.method4605();
 			for (@Pc(121) int local121 = 0; local121 < local119; local121++) {
 				local105.method4611(this.aClass93_Sub2_4, this.aClass93_Sub2Array2[local90], local121);
@@ -247,7 +247,7 @@ public final class Class276 {
 	}
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "(Lclient!jea;B)Z")
-	public boolean method6246(@OriginalArg(0) Linkable_Sub31 arg0) {
+	public boolean method6246(@OriginalArg(0) PostProcessor arg0) {
 		if (this.aClass406_5 != null) {
 			if (arg0.method4609() || arg0.method4617()) {
 				this.aLinkedList39.addTail(arg0);
@@ -271,7 +271,7 @@ public final class Class276 {
 		@Pc(15) int local15 = 0;
 		@Pc(17) int local17 = 0;
 		@Pc(32) int local32;
-		for (@Pc(25) Linkable_Sub31 local25 = (Linkable_Sub31) this.aLinkedList39.head(); local25 != null; local25 = (Linkable_Sub31) this.aLinkedList39.next()) {
+		for (@Pc(25) PostProcessor local25 = (PostProcessor) this.aLinkedList39.head(); local25 != null; local25 = (PostProcessor) this.aLinkedList39.next()) {
 			local32 = local25.method4612();
 			if (local15 < local32) {
 				local15 = local32;
@@ -316,7 +316,7 @@ public final class Class276 {
 		this.aClass93_Sub2_4 = null;
 		if (!this.aLinkedList39.isEmpty()) {
 			for (@Pc(41) Linkable local41 = this.aLinkedList39.head(); local41 != this.aLinkedList39.sentinel; local41 = local41.next) {
-				((Linkable_Sub31) local41).method4608();
+				((PostProcessor) local41).method4608();
 			}
 		}
 		this.anInt6944 = this.anInt6943 = 1;
@@ -331,7 +331,7 @@ public final class Class276 {
 			this.anInt6944 = arg0;
 			this.anInt6943 = arg2;
 			for (@Pc(43) Linkable local43 = this.aLinkedList39.head(); local43 != this.aLinkedList39.sentinel; local43 = local43.next) {
-				((Linkable_Sub31) local43).method4614(this.anInt6944, this.anInt6943);
+				((PostProcessor) local43).method4614(this.anInt6944, this.anInt6943);
 			}
 			this.aBoolean526 = true;
 			this.aBoolean527 = true;
@@ -350,7 +350,7 @@ public final class Class276 {
 	}
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "(ILclient!jea;)V")
-	public void method6251(@OriginalArg(1) Linkable_Sub31 arg0) {
+	public void method6251(@OriginalArg(1) PostProcessor arg0) {
 		arg0.aBoolean387 = false;
 		arg0.method4608();
 		arg0.unlink();

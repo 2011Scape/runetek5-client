@@ -10,8 +10,8 @@ public final class Static44 {
 	}
 
 	@OriginalMember(owner = "client!bia", name = "a", descriptor = "(ILclient!hda;)V")
-	public static void method1073(@OriginalArg(1) Class158 arg0) {
-		@Pc(7) Class158 local7 = Static556.method7299(arg0);
+	public static void method1073(@OriginalArg(1) Component arg0) {
+		@Pc(7) Component local7 = Static556.method7299(arg0);
 		@Pc(24) int local24;
 		@Pc(27) int local27;
 		if (local7 == null) {

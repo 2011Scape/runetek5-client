@@ -20,14 +20,14 @@ public final class Static449 {
 	public static String aString75 = "";
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(IBILclient!hda;)V")
-	public static void method6114(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class158 arg2) {
+	public static void method6114(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Component arg2) {
 		Static192.anInt3123 = arg0;
-		Static71.aClass158_2 = arg2;
+		Static71.aComponent2 = arg2;
 		Static725.anInt10936 = arg1;
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BZZLclient!aha;)V")
-	public static void method6115(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Linkable_Sub4 arg2) {
+	public static void method6115(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) SubInterface arg2) {
 		@Pc(6) int local6 = arg2.anInt147;
 		@Pc(10) int local10 = (int) arg2.id;
 		arg2.unlink();
@@ -35,7 +35,7 @@ public final class Static449 {
 			Static347.method5094(local6);
 		}
 		Static193.method2897(local6);
-		@Pc(27) Class158 local27 = Static145.method2412(local10);
+		@Pc(27) Component local27 = Static145.method2412(local10);
 		if (local27 != null) {
 			Static178.method2729(local27);
 		}
@@ -44,9 +44,9 @@ public final class Static449 {
 			Static145.method2411(1, Static377.anInt5930);
 		}
 		@Pc(55) Class331 local55 = new Class331(Static548.aHashTable40);
-		for (@Pc(60) Linkable_Sub4 local60 = (Linkable_Sub4) local55.method7613(); local60 != null; local60 = (Linkable_Sub4) local55.method7610()) {
+		for (@Pc(60) SubInterface local60 = (SubInterface) local55.method7613(); local60 != null; local60 = (SubInterface) local55.method7610()) {
 			if (!local60.isLinked()) {
-				local60 = (Linkable_Sub4) local55.method7613();
+				local60 = (SubInterface) local55.method7613();
 				if (local60 == null) {
 					break;
 				}

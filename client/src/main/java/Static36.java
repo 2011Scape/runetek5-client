@@ -50,7 +50,7 @@ public final class Static36 {
 		@Pc(57) PrivilegedRequest local57;
 		if (arg3 == 1) {
 			try {
-				@Pc(36) Object local36 = Static727.method96(Static166.anApplet1, arg2, new Object[] { (new URL(Static166.anApplet1.getCodeBase(), arg1)).toString() });
+				@Pc(36) Object local36 = BrowserControl.call(Static166.anApplet1, arg2, new Object[] { (new URL(Static166.anApplet1.getCodeBase(), arg1)).toString() });
 				if (local36 == null) {
 					throw new RuntimeException();
 				}
@@ -75,7 +75,7 @@ public final class Static36 {
 			}
 		} else if (arg3 == 3) {
 			try {
-				Static727.method97("loggedout", Static166.anApplet1);
+				BrowserControl.call("loggedout", Static166.anApplet1);
 			} catch (@Pc(115) Throwable local115) {
 			}
 			try {

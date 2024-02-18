@@ -173,7 +173,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		this.aBoolean156 = true;
 		System.out.println("error_game_" + arg0);
 		try {
-			Static727.method97("loggedout", Static166.anApplet1);
+			BrowserControl.call("loggedout", Static166.anApplet1);
 		} catch (@Pc(31) Throwable local31) {
 		}
 		try {

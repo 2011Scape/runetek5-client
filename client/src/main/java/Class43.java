@@ -6,11 +6,11 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class43 {
 
 	@OriginalMember(owner = "client!bja", name = "b", descriptor = "[Lclient!fla;")
-	public static final Class130[] aClass130Array1 = new Class130[5];
+	public static final ParticleLinkedList[] aParticleLinkedListArray1 = new ParticleLinkedList[5];
 
 	static {
-		for (@Pc(25) int local25 = 0; local25 < aClass130Array1.length; local25++) {
-			aClass130Array1[local25] = new Class130();
+		for (@Pc(25) int local25 = 0; local25 < aParticleLinkedListArray1.length; local25++) {
+			aParticleLinkedListArray1[local25] = new ParticleLinkedList();
 		}
 	}
 }

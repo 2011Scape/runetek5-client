@@ -27,7 +27,7 @@ public final class Static317 {
 	}
 
 	@OriginalMember(owner = "client!kaa", name = "a", descriptor = "(IIILclient!ka;I)Lclient!ke;")
-	public static Class205 method4583(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class114 arg2, @OriginalArg(4) int arg3) {
+	public static Class205 method4583(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Model arg2, @OriginalArg(4) int arg3) {
 		return arg2 == null ? null : new Class205(arg1, arg0, arg3, arg2.na(), arg2.V(), arg2.RA(), arg2.fa(), arg2.EA(), arg2.HA(), arg2.G());
 	}
 }

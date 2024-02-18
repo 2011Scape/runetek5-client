@@ -28,8 +28,8 @@ public final class Static706 {
 		if (local52 == null) {
 			return;
 		}
-		if (local52 instanceof ParticleNode_Sub2_Sub1_Sub4) {
-			((ParticleNode_Sub2_Sub1_Sub4) local52).method6160(arg1);
+		if (local52 instanceof Entity_Sub2) {
+			((Entity_Sub2) local52).method6160(arg1);
 			return;
 		}
 		if (!(local52 instanceof ParticleNode_Sub2_Sub2_Sub2)) {
@@ -46,7 +46,7 @@ public final class Static706 {
 	}
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(BLclient!bn;I)V")
-	public static void method9221(@OriginalArg(1) Linkable_Sub8 arg0, @OriginalArg(2) int arg1) {
+	public static void method9221(@OriginalArg(1) MidiSong arg0, @OriginalArg(2) int arg1) {
 		Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208();
 		if (arg0 == null) {
 			Static100.method1988();

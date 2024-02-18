@@ -63,7 +63,7 @@ public final class Static105 {
 	public static void method2044() {
 		Static519.aSecondaryHashTable1 = new SecondaryHashTable(8);
 		Static654.anInt9740 = 0;
-		for (@Pc(20) ParticleSystem local20 = (ParticleSystem) Static342.aClass130_7.method2790(); local20 != null; local20 = (ParticleSystem) Static342.aClass130_7.method2785()) {
+		for (@Pc(20) ParticleSystem local20 = (ParticleSystem) Static342.aParticleLinkedList7.method2790(); local20 != null; local20 = (ParticleSystem) Static342.aParticleLinkedList7.method2785()) {
 			local20.method3652();
 		}
 	}

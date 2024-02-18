@@ -33,8 +33,8 @@ public final class Linkable_Sub22 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!gfa", name = "a", descriptor = "(IILclient!ha;IZLclient!gu;Lclient!ju;)Lclient!ka;")
-	public Class114 method3078(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(4) boolean arg2, @OriginalArg(5) Class152 arg3, @OriginalArg(6) Class201 arg4) {
-		@Pc(7) Class114 local7 = null;
+	public Model method3078(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(4) boolean arg2, @OriginalArg(5) Class152 arg3, @OriginalArg(6) PlayerAppearance arg4) {
+		@Pc(7) Model local7 = null;
 		@Pc(9) int local9 = 2048;
 		@Pc(11) BasType local11 = null;
 		if (arg0 != -1) {
@@ -57,7 +57,7 @@ public final class Linkable_Sub22 extends Linkable {
 		}
 		@Pc(116) long local116 = this.method3077(arg2, arg0, local23, arg4 == null ? null : arg4.anIntArray380);
 		if (Static166.aSoftLruHashTable59 != null) {
-			local7 = (Class114) Static166.aSoftLruHashTable59.method2156(local116);
+			local7 = (Model) Static166.aSoftLruHashTable59.method2156(local116);
 		}
 		if (local7 == null || arg1.method7960(local7.ua(), local9) != 0) {
 			if (local7 != null) {
@@ -121,7 +121,7 @@ public final class Linkable_Sub22 extends Linkable {
 		if (arg3 == null) {
 			return local7;
 		} else {
-			@Pc(478) Class114 local478 = local7.method7495((byte) 1, local9, true);
+			@Pc(478) Model local478 = local7.method7495((byte) 1, local9, true);
 			arg3.method9089(local478, 0);
 			return local478;
 		}

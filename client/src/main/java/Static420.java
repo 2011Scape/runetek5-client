@@ -23,7 +23,7 @@ public final class Static420 {
 	public static final ClientProt aClientProt78 = new ClientProt(28, 3);
 
 	@OriginalMember(owner = "client!nea", name = "a", descriptor = "(ILclient!hda;II)V")
-	public static void method5758(@OriginalArg(1) Class158 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void method5758(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (Static156.aBoolean223) {
 			@Pc(16) ParamType local16 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
 			if (Static84.method1661(arg0).method6217() && (Static717.anInt10822 & 0x20) != 0 && (local16 == null || arg0.method3404(local16.anInt7509, Static610.anInt9329) != local16.anInt7509)) {

@@ -785,10 +785,10 @@ public final class LocType {
 		synchronized (this.aLocTypeList2.aSoftLruHashTable75) {
 			local106 = (Class272) this.aLocTypeList2.aSoftLruHashTable75.method2156(local21);
 		}
-		@Pc(120) Class114 local120 = local106 == null ? null : local106.aClass114_7;
+		@Pc(120) Model local120 = local106 == null ? null : local106.aModel7;
 		@Pc(122) SecondaryLinkable_Sub9 local122 = null;
 		if (local120 != null && arg7.method7960(local120.ua(), local40) == 0) {
-			local120 = local106.aClass114_7;
+			local120 = local106.aModel7;
 			local122 = local106.aClass2_Sub2_Sub9_5;
 			if (arg4 && local122 == null) {
 				local122 = local106.aClass2_Sub2_Sub9_5 = local120.ba((SecondaryLinkable_Sub9) null);
@@ -814,7 +814,7 @@ public final class LocType {
 			local120.s(local40);
 			local106 = new Class272();
 			local106.aClass2_Sub2_Sub9_5 = local122;
-			local106.aClass114_7 = local120;
+			local106.aModel7 = local120;
 			@Pc(210) SoftLruHashTable local210 = this.aLocTypeList2.aSoftLruHashTable75;
 			synchronized (this.aLocTypeList2.aSoftLruHashTable75) {
 				this.aLocTypeList2.aSoftLruHashTable75.method2150(local106, local21);
@@ -834,13 +834,13 @@ public final class LocType {
 		} else {
 			local120 = local120.method7495((byte) 0, arg9, true);
 		}
-		Static270.aClass272_1.aClass114_7 = local120;
+		Static270.aClass272_1.aModel7 = local120;
 		Static270.aClass272_1.aClass2_Sub2_Sub9_5 = local122;
 		return Static270.aClass272_1;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IIIILclient!s;Lclient!gu;ILclient!ha;Lclient!s;Lclient!gp;II)Lclient!ka;")
-	public Class114 method1311(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(5) Class152 arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class178 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
+	public Model method1311(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(5) Class152 arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class178 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
 		if (Static449.method6117(arg2)) {
 			arg2 = 4;
 		}
@@ -870,9 +870,9 @@ public final class LocType {
 			arg9 |= 0x5;
 		}
 		@Pc(116) SoftLruHashTable local116 = this.aLocTypeList2.aSoftLruHashTable76;
-		@Pc(126) Class114 local126;
+		@Pc(126) Model local126;
 		synchronized (this.aLocTypeList2.aSoftLruHashTable76) {
-			local126 = (Class114) this.aLocTypeList2.aSoftLruHashTable76.method2156(local22);
+			local126 = (Model) this.aLocTypeList2.aSoftLruHashTable76.method2156(local22);
 		}
 		if (local126 == null || arg6.method7960(local126.ua(), arg9) != 0) {
 			if (local126 != null) {
@@ -921,7 +921,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!ha;ILclient!gp;BII)Lclient!ka;")
-	private Class114 method1314(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class150 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	private Model method1314(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class150 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(8) int local8 = this.anInt1263 + 64;
 		@Pc(13) int local13 = this.anInt1254 + 850;
 		@Pc(15) int local15 = arg1;
@@ -951,7 +951,7 @@ public final class LocType {
 		if (this.aByte10 != 0) {
 			arg1 |= 0x80000;
 		}
-		@Pc(123) Class114 local123 = null;
+		@Pc(123) Model local123 = null;
 		if (this.aByteArray13 == null) {
 			return null;
 		}
@@ -975,7 +975,7 @@ public final class LocType {
 			}
 			@Pc(211) SoftLruHashTable local211 = this.aLocTypeList2.aSoftLruHashTable74;
 			synchronized (this.aLocTypeList2.aSoftLruHashTable74) {
-				local123 = (Class114) this.aLocTypeList2.aSoftLruHashTable74.method2156(local191);
+				local123 = (Model) this.aLocTypeList2.aSoftLruHashTable74.method2156(local191);
 			}
 			if (local123 != null) {
 				if (local123.WA() != local8) {
@@ -1027,7 +1027,7 @@ public final class LocType {
 		if (local123 == null) {
 			return null;
 		}
-		@Pc(398) Class114 local398 = local123.method7495((byte) 0, arg1, true);
+		@Pc(398) Model local398 = local123.method7495((byte) 0, arg1, true);
 		if (local8 != local123.WA()) {
 			local398.C(local8);
 		}

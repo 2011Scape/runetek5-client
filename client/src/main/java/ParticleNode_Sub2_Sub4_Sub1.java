@@ -31,7 +31,7 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	private final boolean aBoolean349;
 
 	@OriginalMember(owner = "client!im", name = "M", descriptor = "Lclient!ka;")
-	private Class114 aClass114_3;
+	private Model aModel3;
 
 	@OriginalMember(owner = "client!im", name = "eb", descriptor = "Lclient!r;")
 	private SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_2;
@@ -49,7 +49,7 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 		this.aBoolean349 = arg0.method8006() && arg1.aBoolean89 && !this.aBoolean348 && Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4364() != 0;
 		@Pc(81) Class272 local81 = this.method4045(arg0, 2048, this.aBoolean349);
 		if (local81 != null) {
-			this.aClass114_3 = local81.aClass114_7;
+			this.aModel3 = local81.aModel7;
 			this.aClass2_Sub2_Sub9_2 = local81.aClass2_Sub2_Sub9_5;
 		}
 	}
@@ -64,20 +64,20 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	}
 
 	@OriginalMember(owner = "client!im", name = "a", descriptor = "(IILclient!ha;)Lclient!ka;")
-	private Class114 method4041(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
-		if (this.aClass114_3 != null && arg1.method7960(this.aClass114_3.ua(), arg0) == 0) {
-			return this.aClass114_3;
+	private Model method4041(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
+		if (this.aModel3 != null && arg1.method7960(this.aModel3.ua(), arg0) == 0) {
+			return this.aModel3;
 		} else {
 			@Pc(35) Class272 local35 = this.method4045(arg1, arg0, false);
-			return local35 == null ? null : local35.aClass114_7;
+			return local35 == null ? null : local35.aModel7;
 		}
 	}
 
 	@OriginalMember(owner = "client!im", name = "d", descriptor = "(I)V")
 	@Override
 	public void method6856() {
-		if (this.aClass114_3 != null) {
-			this.aClass114_3.method7479();
+		if (this.aModel3 != null) {
+			this.aModel3.method7479();
 		}
 	}
 
@@ -85,9 +85,9 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	@Override
 	public int method9286(@OriginalArg(0) int arg0) {
 		if (arg0 != 2) {
-			this.aClass114_3 = null;
+			this.aModel3 = null;
 		}
-		return this.aClass114_3 == null ? 0 : this.aClass114_3.fa();
+		return this.aModel3 == null ? 0 : this.aModel3.fa();
 	}
 
 	@OriginalMember(owner = "client!im", name = "e", descriptor = "(I)Z")
@@ -102,7 +102,7 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 		if (arg2) {
 			this.method6857((Class19) null, 39);
 		}
-		@Pc(18) Class114 local18 = this.method4041(131072, arg3);
+		@Pc(18) Model local18 = this.method4041(131072, arg3);
 		if (local18 == null) {
 			return false;
 		} else {
@@ -152,7 +152,7 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	@Override
 	public boolean method9282(@OriginalArg(0) int arg0) {
 		if (arg0 == 0) {
-			return this.aClass114_3 == null ? false : this.aClass114_3.F();
+			return this.aModel3 == null ? false : this.aModel3.F();
 		} else {
 			return false;
 		}
@@ -183,10 +183,10 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	@OriginalMember(owner = "client!im", name = "b", descriptor = "(B)Z")
 	@Override
 	public boolean method9283() {
-		if (this.aClass114_3 == null) {
+		if (this.aModel3 == null) {
 			return true;
 		} else {
-			return !this.aClass114_3.r();
+			return !this.aModel3.r();
 		}
 	}
 
@@ -218,16 +218,16 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 	@OriginalMember(owner = "client!im", name = "a", descriptor = "(ILclient!ha;)Lclient!pea;")
 	@Override
 	public ParticleNode_Sub7 method9276(@OriginalArg(1) Class19 arg0) {
-		if (this.aClass114_3 == null) {
+		if (this.aModel3 == null) {
 			return null;
 		}
 		@Pc(12) Class73 local12 = arg0.method7985();
 		local12.method7125(super.anInt10690 + super.aShort101, super.anInt10691, super.aShort102 + super.anInt10694);
 		@Pc(41) ParticleNode_Sub7 local41 = Static642.method8441(this.aBoolean350, 1);
 		if (Static504.aBoolean579) {
-			this.aClass114_3.method7484(local12, local41.aClass8_Sub6Array1[0], Static582.anInt8627, 0);
+			this.aModel3.method7484(local12, local41.aClass8_Sub6Array1[0], Static582.anInt8627, 0);
 		} else {
-			this.aClass114_3.method7473(local12, local41.aClass8_Sub6Array1[0], 0);
+			this.aModel3.method7473(local12, local41.aClass8_Sub6Array1[0], 0);
 		}
 		return local41;
 	}
@@ -238,6 +238,6 @@ public final class ParticleNode_Sub2_Sub4_Sub1 extends ParticleNode_Sub2_Sub4 im
 		if (arg0 != -21) {
 			this.aByte77 = 110;
 		}
-		return this.aClass114_3 == null ? 0 : this.aClass114_3.ma();
+		return this.aModel3 == null ? 0 : this.aModel3.ma();
 	}
 }

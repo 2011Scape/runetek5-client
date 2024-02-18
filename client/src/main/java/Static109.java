@@ -11,7 +11,7 @@ public final class Static109 {
 	public static final ServerProt ServerProt45 = new ServerProt(33, -2);
 
 	@OriginalMember(owner = "client!dh", name = "f", descriptor = "Lclient!hda;")
-	public static Class158 aClass158_3 = null;
+	public static Component aComponent3 = null;
 
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(Lclient!eo;)V")
 	public static void method2068(@OriginalArg(0) ParticleNode_Sub2 arg0) {

@@ -24,7 +24,7 @@ public final class Static407 {
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(B)V")
 	public static void method5628() {
 		@Pc(16) Linkable_Sub9 local16 = (Linkable_Sub9) Static226.aLinkedList58.head();
-		@Pc(30) boolean local30 = Static109.aClass158_3 != null || Static460.anInt6964 > 0;
+		@Pc(30) boolean local30 = Static109.aComponent3 != null || Static460.anInt6964 > 0;
 		@Pc(34) int local34 = local16.method5331();
 		@Pc(38) int local38 = local16.method5333();
 		if (local30) {

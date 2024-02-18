@@ -353,7 +353,7 @@ public final class Class19_Sub3 extends Class19 {
 	public int anInt8010;
 
 	@OriginalMember(owner = "client!qha", name = "te", descriptor = "[Lclient!kla;")
-	public final Class114_Sub2[] aClass114_Sub2Array1;
+	public final Model_Sub2[] aClass114_Sub2Array1;
 
 	@OriginalMember(owner = "client!qha", name = "If", descriptor = "F")
 	public float aFloat143;
@@ -422,7 +422,7 @@ public final class Class19_Sub3 extends Class19 {
 	public final float[] aFloatArray51;
 
 	@OriginalMember(owner = "client!qha", name = "Uc", descriptor = "[Lclient!kla;")
-	public final Class114_Sub2[] aClass114_Sub2Array2;
+	public final Model_Sub2[] aClass114_Sub2Array2;
 
 	@OriginalMember(owner = "client!qha", name = "yf", descriptor = "I")
 	public int anInt8025;
@@ -509,7 +509,7 @@ public final class Class19_Sub3 extends Class19 {
 	private final Class276 aClass276_1;
 
 	@OriginalMember(owner = "client!qha", name = "ub", descriptor = "Lclient!kca;")
-	private Linkable_Sub31_Sub1 aClass2_Sub31_Sub1_1;
+	private BloomPostProcessor aClass2_Sub31_Sub1_1;
 
 	@OriginalMember(owner = "client!qha", name = "vf", descriptor = "Lclient!eg;")
 	private final Class98 aClass98_1;
@@ -543,7 +543,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.anInt8015 = 8448;
 		this.anInt8008 = -1;
 		this.anInt8010 = 50;
-		this.aClass114_Sub2Array1 = new Class114_Sub2[7];
+		this.aClass114_Sub2Array1 = new Model_Sub2[7];
 		this.aFloat143 = 1.0F;
 		this.aFloat137 = 1.0F;
 		this.aFloat130 = -1.0F;
@@ -566,7 +566,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.aFloat147 = 0.0F;
 		this.aBoolean596 = true;
 		this.aFloatArray51 = new float[4];
-		this.aClass114_Sub2Array2 = new Class114_Sub2[7];
+		this.aClass114_Sub2Array2 = new Model_Sub2[7];
 		this.anInt8025 = 512;
 		this.anInt8009 = 0;
 		this.anInt8032 = 0;
@@ -657,7 +657,7 @@ public final class Class19_Sub3 extends Class19 {
 				this.aClass202_1 = new Class202(this);
 				this.aClass276_1 = new Class276(this);
 				if (this.aClass276_1.method6248()) {
-					this.aClass2_Sub31_Sub1_1 = new Linkable_Sub31_Sub1(this);
+					this.aClass2_Sub31_Sub1_1 = new BloomPostProcessor(this);
 					if (!this.aClass2_Sub31_Sub1_1.method4623()) {
 						this.aClass2_Sub31_Sub1_1.method4608();
 						this.aClass2_Sub31_Sub1_1 = null;
@@ -1276,8 +1276,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(Lclient!dv;IIII)Lclient!ka;")
 	@Override
-	public Class114 method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class114_Sub2(this, arg0, arg1, arg3, arg4, arg2);
+	public Model method7952(@OriginalArg(0) Class88 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new Model_Sub2(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "e", descriptor = "()I")
@@ -1561,8 +1561,8 @@ public final class Class19_Sub3 extends Class19 {
 		new Class93_Sub2(this, 3553, 6408, 1, 1);
 		new Class93_Sub2(this, 3553, 6408, 1, 1);
 		for (@Pc(42) int local42 = 0; local42 < 7; local42++) {
-			this.aClass114_Sub2Array2[local42] = new Class114_Sub2(this);
-			this.aClass114_Sub2Array1[local42] = new Class114_Sub2(this);
+			this.aClass114_Sub2Array2[local42] = new Model_Sub2(this);
+			this.aClass114_Sub2Array1[local42] = new Model_Sub2(this);
 		}
 		if (this.aBoolean613) {
 			this.aClass406_7 = new Class406(this);

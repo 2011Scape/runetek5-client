@@ -11,7 +11,7 @@ public final class Static149 {
 	public static volatile long aLong96 = 0L;
 
 	@OriginalMember(owner = "client!ema", name = "c", descriptor = "Lclient!fla;")
-	public static final Class130 aClass130_4 = new Class130();
+	public static final ParticleLinkedList aParticleLinkedList4 = new ParticleLinkedList();
 
 	@OriginalMember(owner = "client!ema", name = "i", descriptor = "I")
 	public static final int anInt2630 = 1408;

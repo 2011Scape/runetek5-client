@@ -8,7 +8,7 @@ public final class Static327 {
 	public static int anInt5392 = 0;
 
 	@OriginalMember(owner = "client!kg", name = "M", descriptor = "Lclient!hda;")
-	public static Class158 aClass158_7 = null;
+	public static Component aComponent7 = null;
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BLjava/lang/String;I)Lclient!cca;")
 	public static Class58 method4894(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1) {

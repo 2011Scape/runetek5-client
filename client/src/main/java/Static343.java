@@ -14,7 +14,7 @@ public final class Static343 {
 	public static final int anInt5612 = 1409;
 
 	@OriginalMember(owner = "client!kq", name = "i", descriptor = "[Lclient!pq;")
-	public static Class297_Sub1[] aClass297_Sub1Array2 = new Class297_Sub1[0];
+	public static World[] aClass297_Sub1Array2 = new World[0];
 
 	@OriginalMember(owner = "client!kq", name = "a", descriptor = "(III)I")
 	public static int method5036(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {

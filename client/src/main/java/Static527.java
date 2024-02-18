@@ -21,7 +21,7 @@ public final class Static527 {
 	@OriginalMember(owner = "client!qka", name = "c", descriptor = "(I)V")
 	public static void method7083() {
 		for (@Pc(15) SecondaryLinkable_Sub15 local15 = (SecondaryLinkable_Sub15) Static505.aLinkedList77.head(); local15 != null; local15 = (SecondaryLinkable_Sub15) Static505.aLinkedList77.next()) {
-			@Pc(20) ParticleNode_Sub2_Sub1_Sub1 local20 = local15.aClass8_Sub2_Sub1_Sub1_1;
+			@Pc(20) ProjAnimEntity local20 = local15.aClass8_Sub2_Sub1_Sub1_1;
 			if (Static333.anInt5455 > local20.anInt697) {
 				local15.unlink();
 				local20.method815();
@@ -29,14 +29,14 @@ public final class Static527 {
 				local20.method816();
 				if (local20.anInt711 > 0) {
 					if (Static1.anInt10798 == 3) {
-						@Pc(61) ParticleNode_Sub2_Sub1_Sub2 local61 = Static219.aClass236Array1[local20.anInt711 - 1].method5363();
+						@Pc(61) PathingEntity local61 = Static219.aClass236Array1[local20.anInt711 - 1].method5363();
 						if (local61 != null && local61.anInt10690 >= 0 && local61.anInt10690 < Static720.anInt10859 * 512 && local61.anInt10694 >= 0 && local61.anInt10694 < Static501.anInt7568 * 512) {
 							local20.method813(Static102.method2025(local20.aByte144, -29754, local61.anInt10694, local61.anInt10690) - local20.lb, Static333.anInt5455, local61.anInt10694, local61.anInt10690);
 						}
 					} else {
 						@Pc(130) Linkable_Sub45 local130 = (Linkable_Sub45) Static18.aHashTable2.get((long) (local20.anInt711 - 1));
 						if (local130 != null) {
-							@Pc(135) ParticleNode_Sub2_Sub1_Sub2_Sub2 local135 = local130.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+							@Pc(135) Npc local135 = local130.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 							if (local135.anInt10690 >= 0 && local135.anInt10690 < Static720.anInt10859 * 512 && local135.anInt10694 >= 0 && local135.anInt10694 < Static501.anInt7568 * 512) {
 								local20.method813(Static102.method2025(local20.aByte144, -29754, local135.anInt10694, local135.anInt10690) - local20.lb, Static333.anInt5455, local135.anInt10694, local135.anInt10690);
 							}
@@ -45,7 +45,7 @@ public final class Static527 {
 				}
 				if (local20.anInt711 < 0) {
 					@Pc(193) int local193 = -local20.anInt711 - 1;
-					@Pc(198) ParticleNode_Sub2_Sub1_Sub2_Sub1 local198;
+					@Pc(198) Player local198;
 					if (local193 == Static312.anInt5000) {
 						local198 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
 					} else {

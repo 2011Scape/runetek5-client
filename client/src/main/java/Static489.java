@@ -49,7 +49,7 @@ public final class Static489 {
 	}
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "(ZBLclient!cg;)V")
-	public static void method6547(@OriginalArg(0) boolean arg0, @OriginalArg(2) ParticleNode_Sub2_Sub1_Sub2 arg1) {
+	public static void method6547(@OriginalArg(0) boolean arg0, @OriginalArg(2) PathingEntity arg1) {
 		@Pc(7) int local7 = -1;
 		@Pc(16) int local16 = 0;
 		if (arg1.anInt10759 > Static333.anInt5455) {

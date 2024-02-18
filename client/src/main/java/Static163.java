@@ -33,19 +33,19 @@ public final class Static163 {
 	}
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIZ)Lclient!aha;")
-	public static Linkable_Sub4 method8850(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) boolean arg3) {
-		@Pc(7) Linkable_Sub4 local7 = new Linkable_Sub4();
+	public static SubInterface method8850(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) boolean arg3) {
+		@Pc(7) SubInterface local7 = new SubInterface();
 		local7.anInt147 = arg1;
 		local7.anInt146 = arg0;
 		Static548.aHashTable40.put((long) arg2, local7);
 		Static122.method2208(arg1);
-		@Pc(26) Class158 local26 = Static145.method2412(arg2);
+		@Pc(26) Component local26 = Static145.method2412(arg2);
 		if (local26 != null) {
 			Static178.method2729(local26);
 		}
-		if (Static390.aClass158_9 != null) {
-			Static178.method2729(Static390.aClass158_9);
-			Static390.aClass158_9 = null;
+		if (Static390.aComponent9 != null) {
+			Static178.method2729(Static390.aComponent9);
+			Static390.aComponent9 = null;
 		}
 		Static94.method1840();
 		if (local26 != null) {

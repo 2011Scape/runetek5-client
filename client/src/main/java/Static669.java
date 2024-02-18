@@ -22,7 +22,7 @@ public final class Static669 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!pq;ZLclient!pq;II)I")
-	public static int method8712(@OriginalArg(0) Class297_Sub1 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class297_Sub1 arg2, @OriginalArg(3) int arg3) {
+	public static int method8712(@OriginalArg(0) World arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) World arg2, @OriginalArg(3) int arg3) {
 		@Pc(11) int local11;
 		@Pc(14) int local14;
 		if (arg3 == 1) {

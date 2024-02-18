@@ -21,7 +21,7 @@ public final class Static10 {
 			return;
 		}
 		for (@Pc(14) Class286 local14 = local7.aClass286_2; local14 != null; local14 = local14.aClass286_1) {
-			@Pc(18) ParticleNode_Sub2_Sub1 local18 = local14.aClass8_Sub2_Sub1_1;
+			@Pc(18) Entity local18 = local14.aClass8_Sub2_Sub1_1;
 			if (arg3.isAssignableFrom(local18.getClass()) && local18.aShort131 == arg1 && local18.aShort132 == arg2) {
 				Static549.method8293(local18, false);
 				return;

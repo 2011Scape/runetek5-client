@@ -8,13 +8,13 @@ public final class Static311 {
 	public static boolean aBoolean384 = false;
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(Lclient!bn;I)Z")
-	public static boolean method4537(@OriginalArg(0) Linkable_Sub8 arg0) {
+	public static boolean method4537(@OriginalArg(0) MidiSong arg0) {
 		if (arg0 == null) {
 			return true;
 		}
 		Static62.aClass2_Sub8_3 = null;
 		Static96.anInt10171 = 0;
-		Static12.aClass123_4 = null;
+		Static12.aSoundBank4 = null;
 		Static117.aClass2_Sub6_Sub1_2 = null;
 		if (arg0 != Static62.aClass2_Sub8_2) {
 			Static159.anInt2788 = 0;
@@ -22,15 +22,15 @@ public final class Static311 {
 		}
 		Static676.aJs5121 = null;
 		if (Static159.anInt2788 == 0) {
-			Static270.aClass123_2 = new Class123(Static91.aJs5117, Static296.aJs561);
+			Static270.aSoundBank2 = new SoundBank(Static91.aJs5117, Static296.aJs561);
 			Static581.aClass2_Sub6_Sub1_3.method927();
 			Static159.anInt2788 = 1;
 		}
 		if (Static159.anInt2788 == 1) {
-			if (!Static581.aClass2_Sub6_Sub1_3.method944(Static270.aClass123_2, Static86.aJs513, arg0)) {
+			if (!Static581.aClass2_Sub6_Sub1_3.method944(Static270.aSoundBank2, Static86.aJs513, arg0)) {
 				return false;
 			}
-			Static270.aClass123_2 = null;
+			Static270.aSoundBank2 = null;
 			Static62.aClass2_Sub8_2 = null;
 			Static159.anInt2788 = 0;
 		}

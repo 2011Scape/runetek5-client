@@ -10,7 +10,7 @@ public final class Static270 {
 	public static int anInt4355;
 
 	@OriginalMember(owner = "client!iia", name = "m", descriptor = "Lclient!fca;")
-	public static Class123 aClass123_2 = null;
+	public static SoundBank aSoundBank2 = null;
 
 	@OriginalMember(owner = "client!iia", name = "o", descriptor = "Lclient!od;")
 	public static final Class272 aClass272_1 = new Class272();

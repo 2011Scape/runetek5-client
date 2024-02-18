@@ -19,13 +19,13 @@ public final class Static389 {
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(IBLclient!hda;I)V")
-	public static void method5476(@OriginalArg(0) int arg0, @OriginalArg(2) Class158 arg1, @OriginalArg(3) int arg2) {
+	public static void method5476(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2) {
 		if (arg1 == null) {
 			return;
 		}
 		if (arg1.anObjectArray14 != null) {
 			@Pc(14) Linkable_Sub42 local14 = new Linkable_Sub42();
-			local14.aClass158_14 = arg1;
+			local14.aComponent14 = arg1;
 			local14.anObjectArray36 = arg1.anObjectArray14;
 			Static472.method6420(local14);
 		}

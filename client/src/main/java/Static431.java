@@ -12,10 +12,10 @@ public final class Static431 {
 		if (!Static571.method7566(arg7)) {
 			return;
 		}
-		if (Static148.aClass158ArrayArray1[arg7] == null) {
-			Static84.method1669(Static453.aClass158ArrayArray2[arg7], -1, arg10, arg2, arg5, arg0, arg6, arg1, arg8, arg3, arg9, arg4);
+		if (Static148.aComponentArrayArray1[arg7] == null) {
+			Static84.method1669(Static453.aComponentArrayArray2[arg7], -1, arg10, arg2, arg5, arg0, arg6, arg1, arg8, arg3, arg9, arg4);
 		} else {
-			Static84.method1669(Static148.aClass158ArrayArray1[arg7], -1, arg10, arg2, arg5, arg0, arg6, arg1, arg8, arg3, arg9, arg4);
+			Static84.method1669(Static148.aComponentArrayArray1[arg7], -1, arg10, arg2, arg5, arg0, arg6, arg1, arg8, arg3, arg9, arg4);
 		}
 	}
 

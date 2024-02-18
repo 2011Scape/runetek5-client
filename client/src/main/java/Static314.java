@@ -27,7 +27,7 @@ public final class Static314 {
 	public static void method4562() {
 		if (Static2.aClass355_1 != Static16.aClass355_2) {
 			try {
-				Static727.method97("tbrefresh", Static295.aClient1);
+				BrowserControl.call("tbrefresh", Static295.aClient1);
 			} catch (@Pc(34) Throwable local34) {
 			}
 		}

@@ -8,7 +8,7 @@ public final class Linkable_Sub42 extends Linkable {
 	public int anInt7214;
 
 	@OriginalMember(owner = "client!pd", name = "s", descriptor = "Lclient!hda;")
-	public Class158 aClass158_13;
+	public Component aComponent13;
 
 	@OriginalMember(owner = "client!pd", name = "u", descriptor = "Z")
 	public boolean aBoolean544;
@@ -20,7 +20,7 @@ public final class Linkable_Sub42 extends Linkable {
 	public int anInt7216;
 
 	@OriginalMember(owner = "client!pd", name = "y", descriptor = "Lclient!hda;")
-	public Class158 aClass158_14;
+	public Component aComponent14;
 
 	@OriginalMember(owner = "client!pd", name = "w", descriptor = "I")
 	public int anInt7218;

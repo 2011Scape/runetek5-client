@@ -61,7 +61,7 @@ public final class SecondaryParticleNode_Sub2_Sub1 extends SecondaryParticleNode
 		this.aClass8_Sub8_1.aClass8_Sub5_6.aClass8_Sub4_Sub2_Sub1Array1[local4] = this;
 		this.aShort91 = (short) this.aClass8_Sub8_1.aClass8_Sub5_6.anInt4147;
 		this.aClass8_Sub8_1.aClass8_Sub5_6.anInt4147 = local4 + 1 & 0x1FFF;
-		this.aClass8_Sub8_1.aClass130_11.method2787(this);
+		this.aClass8_Sub8_1.aParticleLinkedList11.method2787(this);
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(JI)V")

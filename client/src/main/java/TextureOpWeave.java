@@ -29,7 +29,7 @@ public final class TextureOpWeave extends TextureOp {
 	@Override
 	public int[] method9411(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg0 <= 107) {
-			Static639.method8418((Class297_Sub1) null, 60, -47, true, -23, (Class297_Sub1) null, true);
+			Static639.method8418((World) null, 60, -47, true, -23, (World) null, true);
 		}
 		@Pc(25) int[] local25 = super.aMonochromeImageCache41.method3935(arg1);
 		if (super.aMonochromeImageCache41.aBoolean338) {

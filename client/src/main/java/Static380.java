@@ -10,7 +10,7 @@ public final class Static380 {
 	public static int anInt5979;
 
 	@OriginalMember(owner = "client!lv", name = "a", descriptor = "(Lclient!hda;B)Ljava/lang/String;")
-	public static String method5359(@OriginalArg(0) Class158 arg0) {
+	public static String method5359(@OriginalArg(0) Component arg0) {
 		if (Static84.method1661(arg0).method6216() == 0) {
 			return null;
 		} else if (arg0.aString43 == null || arg0.aString43.trim().length() == 0) {

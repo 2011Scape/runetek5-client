@@ -7,7 +7,7 @@ public final class Static106 {
 	public static int anInt2153;
 
 	@OriginalMember(owner = "client!dfa", name = "d", descriptor = "[Lclient!pq;")
-	public static Class297_Sub1[] aClass297_Sub1Array1;
+	public static World[] aClass297_Sub1Array1;
 
 	@OriginalMember(owner = "client!dfa", name = "a", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable11 = new HashTable(4);

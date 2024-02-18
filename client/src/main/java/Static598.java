@@ -31,7 +31,7 @@ public final class Static598 {
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "(Z)V")
 	public static void method7827() {
 		for (@Pc(13) SecondaryLinkable_Sub20 local13 = (SecondaryLinkable_Sub20) Static346.aHashTable29.head(); local13 != null; local13 = (SecondaryLinkable_Sub20) Static346.aHashTable29.next()) {
-			@Pc(18) ParticleNode_Sub2_Sub1_Sub5 local18 = local13.aClass8_Sub2_Sub1_Sub5_1;
+			@Pc(18) Entity_Sub3 local18 = local13.aClass8_Sub2_Sub1_Sub5_1;
 			local18.method6598();
 			if (local18.method6603()) {
 				local13.unlink();

@@ -28,7 +28,7 @@ public final class Static674 {
 		Static559.aAudioChannel3 = Static638.method8394(Static446.aSignlink6, 1, 2048, Static434.aCanvas7);
 		Static336.aClass2_Sub6_Sub3_1 = new MixerPcmStream();
 		Static559.aAudioChannel3.method3582(Static336.aClass2_Sub6_Sub3_1);
-		Static681.aClass224_2 = new Class224(22050, Static686.anInt8944);
+		Static681.aResampler2 = new Resampler(22050, Static686.anInt8944);
 		Static550.method7266();
 	}
 }

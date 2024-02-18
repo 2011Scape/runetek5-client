@@ -30,7 +30,7 @@ public final class Class231 {
 	public void method5271(@OriginalArg(0) Class236 arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) int local10 = this.anIntArray453[0];
 		arg0.method5360(local10 >>> 16, arg1, local10 & 0xFFFF);
-		@Pc(24) ParticleNode_Sub2_Sub1_Sub2 local24 = arg0.method5363();
+		@Pc(24) PathingEntity local24 = arg0.method5363();
 		local24.anInt10764 = 0;
 		for (@Pc(41) int local41 = this.anIntArray454.length - 1; local41 >= 0; local41--) {
 			@Pc(48) int local48 = this.anIntArray454[local41];

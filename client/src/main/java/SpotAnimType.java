@@ -66,7 +66,7 @@ public final class SpotAnimType {
 	}
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(BZILclient!gu;Lclient!s;BILclient!s;IILclient!ha;)Lclient!ka;")
-	public Class114 method5249(@OriginalArg(0) byte arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class152 arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class178 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class19 arg9) {
+	public Model method5249(@OriginalArg(0) byte arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class152 arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class178 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class19 arg9) {
 		@Pc(13) boolean local13 = arg1 & this.aByte96 != 0;
 		@Pc(15) int local15 = arg7;
 		if (arg3 != null) {
@@ -82,9 +82,9 @@ public final class SpotAnimType {
 			local15 |= 0x5;
 		}
 		@Pc(65) SoftLruHashTable local65 = this.aSpotAnimTypeList2.aSoftLruHashTable62;
-		@Pc(85) Class114 local85;
+		@Pc(85) Model local85;
 		synchronized (this.aSpotAnimTypeList2.aSoftLruHashTable62) {
-			local85 = (Class114) this.aSpotAnimTypeList2.aSoftLruHashTable62.method2156((long) (this.anInt5833 |= arg9.anInt8962 << 29));
+			local85 = (Model) this.aSpotAnimTypeList2.aSoftLruHashTable62.method2156((long) (this.anInt5833 |= arg9.anInt8962 << 29));
 		}
 		if (local85 == null || arg9.method7960(local85.ua(), local15) != 0) {
 			if (local85 != null) {
@@ -122,7 +122,7 @@ public final class SpotAnimType {
 				this.aSpotAnimTypeList2.aSoftLruHashTable62.method2150(local85, (long) (this.anInt5833 |= arg9.anInt8962 << 29));
 			}
 		}
-		@Pc(263) Class114 local263 = local85.method7495(arg0, local15, true);
+		@Pc(263) Model local263 = local85.method7495(arg0, local15, true);
 		if (arg3 != null) {
 			arg3.method9089(local263, 0);
 		}
@@ -207,7 +207,7 @@ public final class SpotAnimType {
 	}
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(Lclient!gu;BIBLclient!ha;)Lclient!ka;")
-	public Class114 method5252(@OriginalArg(0) Class152 arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Class19 arg3) {
+	public Model method5252(@OriginalArg(0) Class152 arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Class19 arg3) {
 		return this.method5249(arg1, false, 0, arg0, (Class178) null, 0, (Class178) null, arg2, 0, arg3);
 	}
 }

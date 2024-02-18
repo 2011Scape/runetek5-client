@@ -11,7 +11,7 @@ public final class Static28 {
 	public static boolean aBoolean43 = false;
 
 	@OriginalMember(owner = "client!aw", name = "a", descriptor = "(ILclient!ha;ILclient!hda;I)V")
-	public static void method746(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(3) Class158 arg2, @OriginalArg(4) int arg3) {
+	public static void method746(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3) {
 		@Pc(23) Class159 local23 = arg2.method3393(arg1);
 		if (local23 == null) {
 			return;
@@ -80,7 +80,7 @@ public final class Static28 {
 		for (local211 = 0; local211 < Static390.anInt6126; local211++) {
 			@Pc(427) Linkable_Sub45 local427 = (Linkable_Sub45) Static18.aHashTable2.get((long) Static103.anIntArray187[local211]);
 			if (local427 != null) {
-				@Pc(432) ParticleNode_Sub2_Sub1_Sub2_Sub2 local432 = local427.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+				@Pc(432) Npc local432 = local427.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				if (local432.method9322() && local432.aByte144 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
 					@Pc(446) NpcType local446 = local432.aNpcType1;
 					if (local446 != null && local446.anIntArray532 != null) {
@@ -104,7 +104,7 @@ public final class Static28 {
 		@Pc(589) int local589;
 		@Pc(622) int local622;
 		for (local381 = 0; local381 < local222; local381++) {
-			@Pc(541) ParticleNode_Sub2_Sub1_Sub2_Sub1 local541 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local531[local381]];
+			@Pc(541) Player local541 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local531[local381]];
 			if (local541 != null && local541.method1417() && !local541.aBoolean124 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local541 && local541.aByte144 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
 				local490 = local541.anInt10690 / 128 - local90 / 128;
 				local585 = local541.anInt10694 / 128 - local93 / 128;
@@ -150,7 +150,7 @@ public final class Static28 {
 				if (local796.anInt6363 == 1) {
 					@Pc(828) Linkable_Sub45 local828 = (Linkable_Sub45) Static18.aHashTable2.get((long) local796.anInt6366);
 					if (local828 != null) {
-						@Pc(833) ParticleNode_Sub2_Sub1_Sub2_Sub2 local833 = local828.aClass8_Sub2_Sub1_Sub2_Sub2_2;
+						@Pc(833) Npc local833 = local828.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 						local843 = local833.anInt10690 / 128 - local90 / 128;
 						local622 = local833.anInt10694 / 128 - local93 / 128;
 						Static114.method2132(local843, arg3, 360000L, local30, local796.anInt6367, arg0, local622, arg2);
@@ -164,7 +164,7 @@ public final class Static28 {
 					Static114.method2132(local878, arg3, local897, local30, local796.anInt6367, arg0, local589, arg2);
 				}
 				if (local796.anInt6363 == 10 && local796.anInt6366 >= 0 && local796.anInt6366 < Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3.length) {
-					@Pc(932) ParticleNode_Sub2_Sub1_Sub2_Sub1 local932 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local796.anInt6366];
+					@Pc(932) Player local932 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local796.anInt6366];
 					if (local932 != null) {
 						local589 = local932.anInt10690 / 128 - local90 / 128;
 						local843 = local932.anInt10694 / 128 - local93 / 128;

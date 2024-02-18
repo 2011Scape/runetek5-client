@@ -17,15 +17,15 @@ public final class Static251 {
 		}
 		@Pc(12) int local12 = arg0 >> 16;
 		@Pc(23) int local23 = arg0 & 0xFFFF;
-		if (Static453.aClass158ArrayArray2[local12] == null || Static453.aClass158ArrayArray2[local12][local23] == null) {
+		if (Static453.aComponentArrayArray2[local12] == null || Static453.aComponentArrayArray2[local12][local23] == null) {
 			return false;
 		}
-		@Pc(44) Class158 local44 = Static453.aClass158ArrayArray2[local12][local23];
+		@Pc(44) Component local44 = Static453.aComponentArrayArray2[local12][local23];
 		@Pc(57) SecondaryLinkable_Sub16 local57;
 		if (arg1 == -1 && local44.anInt3820 == 0) {
 			for (local57 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.head(); local57 != null; local57 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.next()) {
 				if (local57.anInt7314 == 18 || local57.anInt7314 == 1002 || local57.anInt7314 == 12 || local57.anInt7314 == 20 || local57.anInt7314 == 10) {
-					for (@Pc(160) Class158 local160 = Static145.method2412(local57.anInt7313); local160 != null; local160 = Static556.method7299(local160)) {
+					for (@Pc(160) Component local160 = Static145.method2412(local57.anInt7313); local160 != null; local160 = Static556.method7299(local160)) {
 						if (local160.anInt3812 == local44.anInt3812) {
 							return true;
 						}

@@ -25,7 +25,7 @@ public final class ParticleSystem extends ParticleNode {
 	public int anInt4147 = 0;
 
 	@OriginalMember(owner = "client!hv", name = "h", descriptor = "Lclient!fla;")
-	private Class130 aClass130_6 = new Class130();
+	private ParticleLinkedList aParticleLinkedList6 = new ParticleLinkedList();
 
 	@OriginalMember(owner = "client!hv", name = "o", descriptor = "I")
 	private int anInt4148 = 0;
@@ -75,7 +75,7 @@ public final class ParticleSystem extends ParticleNode {
 	@OriginalMember(owner = "client!hv", name = "a", descriptor = "(Lclient!ha;)V")
 	public void method3646(@OriginalArg(0) Class19 arg0) {
 		this.aClass230_1.aClass113_1.method2487();
-		for (@Pc(10) ParticleNode_Sub8 local10 = (ParticleNode_Sub8) this.aClass130_6.method2790(); local10 != null; local10 = (ParticleNode_Sub8) this.aClass130_6.method2785()) {
+		for (@Pc(10) ParticleNode_Sub8 local10 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2790(); local10 != null; local10 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2785()) {
 			local10.method7263(this.aLong132, arg0);
 		}
 	}
@@ -146,7 +146,7 @@ public final class ParticleSystem extends ParticleNode {
 			Static257.aBooleanArray7[local1] = false;
 		}
 		@Pc(21) int local21;
-		label62: for (@Pc(16) ParticleNode_Sub8 local16 = (ParticleNode_Sub8) this.aClass130_6.method2790(); local16 != null; local16 = (ParticleNode_Sub8) this.aClass130_6.method2785()) {
+		label62: for (@Pc(16) ParticleNode_Sub8 local16 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2790(); local16 != null; local16 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2785()) {
 			if (arg1 != null) {
 				for (local21 = 0; local21 < arg1.length; local21++) {
 					if (local16.aClass328_1 == arg1[local21] || local16.aClass328_1 == arg1[local21].aClass328_2) {
@@ -170,7 +170,7 @@ public final class ParticleSystem extends ParticleNode {
 		for (local21 = 0; local21 < arg1.length && local21 != 32 && this.anInt4148 != 32; local21++) {
 			if (!Static257.aBooleanArray7[local21]) {
 				@Pc(104) ParticleNode_Sub8 local104 = new ParticleNode_Sub8(arg0, arg1[local21], this, this.aLong133);
-				this.aClass130_6.method2787(local104);
+				this.aParticleLinkedList6.method2787(local104);
 				this.anInt4148++;
 				Static257.aBooleanArray7[local21] = true;
 			}
@@ -192,7 +192,7 @@ public final class ParticleSystem extends ParticleNode {
 			}
 		}
 		this.anInt4147 = 0;
-		this.aClass130_6 = new Class130();
+		this.aParticleLinkedList6 = new ParticleLinkedList();
 		this.anInt4148 = 0;
 		this.aLinkedList22 = new LinkedList();
 		this.anInt4150 = 0;
@@ -215,14 +215,14 @@ public final class ParticleSystem extends ParticleNode {
 		@Pc(27) int local27 = (int) (arg1 - this.aLong132);
 		@Pc(36) ParticleNode_Sub8 local36;
 		if (this.aBoolean326) {
-			for (local36 = (ParticleNode_Sub8) this.aClass130_6.method2790(); local36 != null; local36 = (ParticleNode_Sub8) this.aClass130_6.method2785()) {
+			for (local36 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2790(); local36 != null; local36 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2785()) {
 				for (@Pc(39) int local39 = 0; local39 < local36.aParticleEmitterType1.anInt9882; local39++) {
 					local36.method7261(1, !this.aBoolean323, arg1, arg0);
 				}
 			}
 			this.aBoolean326 = false;
 		}
-		for (local36 = (ParticleNode_Sub8) this.aClass130_6.method2790(); local36 != null; local36 = (ParticleNode_Sub8) this.aClass130_6.method2785()) {
+		for (local36 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2790(); local36 != null; local36 = (ParticleNode_Sub8) this.aParticleLinkedList6.method2785()) {
 			local36.method7261(local27, !this.aBoolean323, arg1, arg0);
 		}
 		this.aLong132 = arg1;
@@ -241,7 +241,7 @@ public final class ParticleSystem extends ParticleNode {
 
 	@OriginalMember(owner = "client!hv", name = "a", descriptor = "(IZ)V")
 	public void method3657(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
-		Static342.aClass130_7.method2787(this);
+		Static342.aParticleLinkedList7.method2787(this);
 		this.aLong133 = (long) arg0;
 		this.aLong132 = (long) arg0;
 		this.aBoolean326 = true;

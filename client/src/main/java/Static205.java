@@ -23,7 +23,7 @@ public final class Static205 {
 
 	@OriginalMember(owner = "client!gg", name = "a", descriptor = "(BIIIIII)V")
 	public static void method3091(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
-		for (@Pc(17) ParticleNode_Sub3 local17 = (ParticleNode_Sub3) Static422.aClass130_9.method2790(); local17 != null; local17 = (ParticleNode_Sub3) Static422.aClass130_9.method2785()) {
+		for (@Pc(17) ParticleNode_Sub3 local17 = (ParticleNode_Sub3) Static422.aParticleLinkedList9.method2790(); local17 != null; local17 = (ParticleNode_Sub3) Static422.aParticleLinkedList9.method2785()) {
 			if (local17.anInt953 <= Static333.anInt5455) {
 				local17.method9274();
 			} else {

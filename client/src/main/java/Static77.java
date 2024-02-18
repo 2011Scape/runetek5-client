@@ -20,9 +20,9 @@ public final class Static77 {
 	public static void method1557() {
 		@Pc(13) OutboundPacket local13 = Static293.method4335(Static317.aClientProt62, Static405.aClass153_2.aIsaacRandom_1);
 		Static405.aClass153_2.method3275(local13);
-		for (@Pc(22) Linkable_Sub4 local22 = (Linkable_Sub4) Static548.aHashTable40.head(); local22 != null; local22 = (Linkable_Sub4) Static548.aHashTable40.next()) {
+		for (@Pc(22) SubInterface local22 = (SubInterface) Static548.aHashTable40.head(); local22 != null; local22 = (SubInterface) Static548.aHashTable40.next()) {
 			if (!local22.isLinked()) {
-				local22 = (Linkable_Sub4) Static548.aHashTable40.head();
+				local22 = (SubInterface) Static548.aHashTable40.head();
 				if (local22 == null) {
 					break;
 				}
@@ -31,9 +31,9 @@ public final class Static77 {
 				Static449.method6115(true, true, local22);
 			}
 		}
-		if (Static390.aClass158_9 != null) {
-			Static178.method2729(Static390.aClass158_9);
-			Static390.aClass158_9 = null;
+		if (Static390.aComponent9 != null) {
+			Static178.method2729(Static390.aComponent9);
+			Static390.aComponent9 = null;
 		}
 	}
 

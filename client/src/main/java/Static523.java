@@ -308,8 +308,8 @@ public final class Static523 {
 				return 0;
 			}
 			local184 = true;
-			for (local74 = 0; local74 < Static453.aClass158ArrayArray2[Static65.aClass3_1.anInt88].length; local74++) {
-				@Pc(1315) Class158 local1315 = Static453.aClass158ArrayArray2[Static65.aClass3_1.anInt88][local74];
+			for (local74 = 0; local74 < Static453.aComponentArrayArray2[Static65.aClass3_1.anInt88].length; local74++) {
+				@Pc(1315) Component local1315 = Static453.aComponentArrayArray2[Static65.aClass3_1.anInt88][local74];
 				if (local1315.anInt3820 == 5 && local1315.anInt3810 != -1 && !Static721.aJs5128.method7586(0, local1315.anInt3810)) {
 					local184 = false;
 				}
@@ -358,7 +358,7 @@ public final class Static523 {
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZLclient!hda;)V")
-	public static void method3449(@OriginalArg(1) Class158 arg0) {
+	public static void method3449(@OriginalArg(1) Component arg0) {
 		if (Static376.anInt5921 != arg0.anInt3806) {
 			return;
 		}

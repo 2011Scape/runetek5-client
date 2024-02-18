@@ -28,22 +28,22 @@ public final class Static668 {
 			Static357.anInt6504 = -1;
 		}
 		Static551.aLinkedList54 = null;
-		Static210.aClass158_4 = null;
+		Static210.aComponent4 = null;
 		Static30.aClass2_Sub2_Sub13_3 = null;
 		Static273.anInt4403 = 0;
 		Static30.method5070();
 		Static30.aLinkedList31.clear();
-		Static359.aClass327_3 = null;
-		Static484.aClass327_6 = null;
+		Static359.aWorldMapFont3 = null;
+		Static484.aWorldMapFont6 = null;
 		Static30.aClass255_3 = null;
-		Static651.aClass327_8 = null;
+		Static651.aWorldMapFont8 = null;
 		Static180.anInt3001 = -1;
 		Static13.aSoftwareIndexedSprite4 = null;
-		Static142.aClass327_1 = null;
-		Static390.aClass327_5 = null;
-		Static559.aClass327_7 = null;
-		Static364.aClass327_4 = null;
-		Static275.aClass327_2 = null;
+		Static142.aWorldMapFont1 = null;
+		Static390.aWorldMapFont5 = null;
+		Static559.aWorldMapFont7 = null;
+		Static364.aWorldMapFont4 = null;
+		Static275.aWorldMapFont2 = null;
 		Static558.anInt3181 = -1;
 		if (Static30.aMelTypeList3 != null) {
 			Static30.aMelTypeList3.method5586();

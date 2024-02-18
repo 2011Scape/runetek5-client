@@ -62,7 +62,7 @@ public final class Static409 {
 				if (arg1 != null) {
 					label237: for (local139 = Static394.anInt6176 + 1; local139 <= 3; local139++) {
 						if (arg1[local139] != null && (Static280.aByteArrayArrayArray3[local139][local78][local100] & 0x8) == 0) {
-							@Pc(341) ParticleNode_Sub2_Sub1 local341;
+							@Pc(341) Entity local341;
 							@Pc(351) int local351;
 							@Pc(331) Class291 local331;
 							@Pc(337) Class286 local337;

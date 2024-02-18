@@ -22,7 +22,7 @@ public final class Linkable_Sub28_Sub1 extends Linkable_Sub28 {
 	private int anInt4396;
 
 	@OriginalMember(owner = "client!ik", name = "Q", descriptor = "Lclient!lg;")
-	private Class224 aClass224_1;
+	private Resampler aResampler1;
 
 	@OriginalMember(owner = "client!ik", name = "N", descriptor = "D")
 	private double aDouble14;
@@ -76,7 +76,7 @@ public final class Linkable_Sub28_Sub1 extends Linkable_Sub28 {
 				}
 				this.aDSPState1 = new DSPState(this.aVorbisInfo1);
 				this.aVorbisBlock1 = new VorbisBlock(this.aDSPState1);
-				this.aClass224_1 = new Class224(this.aVorbisInfo1.rate, Static686.anInt8944);
+				this.aResampler1 = new Resampler(this.aVorbisInfo1.rate, Static686.anInt8944);
 				this.aClass2_Sub6_Sub5_1 = new Linkable_Sub6_Sub5(this.aVorbisInfo1.channels);
 			}
 			return;
@@ -94,7 +94,7 @@ public final class Linkable_Sub28_Sub1 extends Linkable_Sub28 {
 		@Pc(85) SecondaryLinkable_Sub8 local85 = this.aClass2_Sub6_Sub5_1.method9142(local35[0].length, this.aDouble14);
 		Static373.method5300(local35, local85.aShortArrayArray3);
 		for (@Pc(93) int local93 = 0; local93 < this.aVorbisInfo1.channels; local93++) {
-			local85.aShortArrayArray3[local93] = this.aClass224_1.method5237(local85.aShortArrayArray3[local93]);
+			local85.aShortArrayArray3[local93] = this.aResampler1.method5237(local85.aShortArrayArray3[local93]);
 		}
 		this.aClass2_Sub6_Sub5_1.method9143(local85);
 	}

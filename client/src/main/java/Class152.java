@@ -60,7 +60,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ILclient!ka;I)V")
-	public final void method9089(@OriginalArg(1) Class114 arg0, @OriginalArg(2) int arg1) {
+	public final void method9089(@OriginalArg(1) Model arg0, @OriginalArg(2) int arg1) {
 		if (this.aSeqType4 == null || !this.method9111()) {
 			return;
 		}
@@ -183,7 +183,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(Lclient!ka;I)V")
-	public final void method9105(@OriginalArg(0) Class114 arg0) {
+	public final void method9105(@OriginalArg(0) Model arg0) {
 		if (this.method9111()) {
 			arg0.method7493(this.aClass257_8.anInt6448, this.aClass257_8.aClass2_Sub2_Sub18_1);
 			if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
@@ -216,7 +216,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIZLclient!ka;)V")
-	public final void method9110(@OriginalArg(0) int arg0, @OriginalArg(3) Class114 arg1) {
+	public final void method9110(@OriginalArg(0) int arg0, @OriginalArg(3) Model arg1) {
 		if (this.method9111()) {
 			arg1.method7496(this.anInt10478, this.aClass257_8.aClass2_Sub2_Sub18_1, this.aClass257_8.aClass2_Sub2_Sub18_2, this.aClass257_8.anInt6448, (int[]) null, this.aSeqType4.anIntArray157[this.anInt10489], this.aSeqType4.aBoolean140, this.aClass257_8.anInt6450, arg0);
 			if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null && this.aClass257_7.aBoolean481) {

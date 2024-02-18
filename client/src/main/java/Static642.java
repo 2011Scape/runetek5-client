@@ -18,17 +18,17 @@ public final class Static642 {
 
 	@OriginalMember(owner = "client!uea", name = "a", descriptor = "(ZBI)Lclient!pea;")
 	public static ParticleNode_Sub7 method8441(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
-		@Pc(7) Class130[] local7 = Class43.aClass130Array1;
-		synchronized (Class43.aClass130Array1) {
+		@Pc(7) ParticleLinkedList[] local7 = Class43.aParticleLinkedListArray1;
+		synchronized (Class43.aParticleLinkedListArray1) {
 			@Pc(37) ParticleNode_Sub7 local37;
-			if (Class43.aClass130Array1.length <= arg1 || Class43.aClass130Array1[arg1].method2782()) {
+			if (Class43.aParticleLinkedListArray1.length <= arg1 || Class43.aParticleLinkedListArray1[arg1].method2782()) {
 				local37 = new ParticleNode_Sub7();
 				local37.aClass8_Sub6Array1 = new ParticleNode_Sub6[arg1];
 				for (@Pc(43) int local43 = 0; local43 < arg1; local43++) {
 					local37.aClass8_Sub6Array1[local43] = new ParticleNode_Sub6();
 				}
 			} else {
-				local37 = (ParticleNode_Sub7) Class43.aClass130Array1[arg1].method2788();
+				local37 = (ParticleNode_Sub7) Class43.aParticleLinkedListArray1[arg1].method2788();
 				local37.method9274();
 				@Pc(78) int local78 = Static159.anIntArray245[arg1]--;
 			}
