@@ -13,28 +13,28 @@ public final class SecondaryLinkable_Sub21 extends SecondaryLinkable {
 	private final int[] anIntArray823;
 
 	@OriginalMember(owner = "client!vm", name = "t", descriptor = "Lclient!pf;")
-	private final Linkable_Sub1 aClass2_Sub1_2;
+	private final TextureOp aClass2_Sub1_2;
 
 	@OriginalMember(owner = "client!vm", name = "D", descriptor = "Lclient!pf;")
-	private final Linkable_Sub1 aClass2_Sub1_3;
+	private final TextureOp aClass2_Sub1_3;
 
 	@OriginalMember(owner = "client!vm", name = "v", descriptor = "Lclient!pf;")
-	private final Linkable_Sub1 aClass2_Sub1_1;
+	private final TextureOp aClass2_Sub1_1;
 
 	@OriginalMember(owner = "client!vm", name = "F", descriptor = "[Lclient!pf;")
-	private final Linkable_Sub1[] aClass2_Sub1Array39;
+	private final TextureOp[] aClass2_Sub1Array39;
 
 	@OriginalMember(owner = "client!vm", name = "<init>", descriptor = "()V")
 	private SecondaryLinkable_Sub21() {
 		this.anIntArray824 = new int[0];
 		this.anIntArray823 = new int[0];
-		this.aClass2_Sub1_2 = new Linkable_Sub1_Sub17(0);
+		this.aClass2_Sub1_2 = new TextureOpMonochromeFill(0);
 		this.aClass2_Sub1_2.anInt10880 = 1;
-		this.aClass2_Sub1_3 = new Linkable_Sub1_Sub17();
+		this.aClass2_Sub1_3 = new TextureOpMonochromeFill();
 		this.aClass2_Sub1_3.anInt10880 = 1;
-		this.aClass2_Sub1_1 = new Linkable_Sub1_Sub17();
+		this.aClass2_Sub1_1 = new TextureOpMonochromeFill();
 		this.aClass2_Sub1_1.anInt10880 = 1;
-		this.aClass2_Sub1Array39 = new Linkable_Sub1[] { this.aClass2_Sub1_3, this.aClass2_Sub1_1, this.aClass2_Sub1_2 };
+		this.aClass2_Sub1Array39 = new TextureOp[] { this.aClass2_Sub1_3, this.aClass2_Sub1_1, this.aClass2_Sub1_2 };
 	}
 
 	@OriginalMember(owner = "client!vm", name = "<init>", descriptor = "(Lclient!ge;)V")
@@ -43,10 +43,10 @@ public final class SecondaryLinkable_Sub21 extends SecondaryLinkable {
 		@Pc(9) int local9 = 0;
 		@Pc(11) int local11 = 0;
 		@Pc(14) int[][] local14 = new int[local7][];
-		this.aClass2_Sub1Array39 = new Linkable_Sub1[local7];
+		this.aClass2_Sub1Array39 = new TextureOp[local7];
 		@Pc(56) int local56;
 		for (@Pc(20) int local20 = 0; local20 < local7; local20++) {
-			@Pc(28) Linkable_Sub1 local28 = Static294.method4341(arg0);
+			@Pc(28) TextureOp local28 = Static294.method4341(arg0);
 			if (local28.method9412() >= 0) {
 				local9++;
 			}
@@ -65,7 +65,7 @@ public final class SecondaryLinkable_Sub21 extends SecondaryLinkable {
 		local9 = 0;
 		local11 = 0;
 		for (@Pc(105) int local105 = 0; local105 < local7; local105++) {
-			@Pc(114) Linkable_Sub1 local114 = this.aClass2_Sub1Array39[local105];
+			@Pc(114) TextureOp local114 = this.aClass2_Sub1Array39[local105];
 			local56 = local114.aClass2_Sub1Array42.length;
 			for (@Pc(120) int local120 = 0; local120 < local56; local120++) {
 				local114.aClass2_Sub1Array42[local120] = this.aClass2_Sub1Array39[local14[local105][local120]];

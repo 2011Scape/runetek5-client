@@ -28,7 +28,7 @@ public final class Static71 {
 				@Pc(69) int local69 = local54 + local19.anInt3746 + 1;
 				@Pc(74) int local74;
 				if (arg6 == -1) {
-					Linkable_Sub1_Sub28.aRectangleArray1[Static122.anInt2339].setBounds(local19.anInt3735 + arg1, arg9 + local19.anInt3784, local19.anInt3802, local19.anInt3746);
+					TextureOpSquareWaveform.aRectangleArray1[Static122.anInt2339].setBounds(local19.anInt3735 + arg1, arg9 + local19.anInt3784, local19.anInt3802, local19.anInt3746);
 					local74 = Static122.anInt2339++;
 				} else {
 					local74 = arg6;

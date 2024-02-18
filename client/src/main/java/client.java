@@ -501,7 +501,7 @@ public final class client extends Applet_Sub1 {
 		}
 		if (Static18.anInt251 == 3) {
 			for (local110 = 0; local110 < Static122.anInt2339; local110++) {
-				@Pc(478) Rectangle local478 = Linkable_Sub1_Sub28.aRectangleArray1[local110];
+				@Pc(478) Rectangle local478 = TextureOpSquareWaveform.aRectangleArray1[local110];
 				if (Static359.aBooleanArray17[local110]) {
 					Static163.aClass19_17.method7945(local478.y, -65281, local478.width, local478.height, local478.x);
 				} else if (Static469.aBooleanArray23[local110]) {
@@ -519,7 +519,7 @@ public final class client extends Applet_Sub1 {
 			for (local114 = 0; local114 < Static122.anInt2339; local114++) {
 				if (Static469.aBooleanArray23[local114]) {
 					Static469.aBooleanArray23[local114] = false;
-					Static663.aRectangleArray2[local110++] = Linkable_Sub1_Sub28.aRectangleArray1[local114];
+					Static663.aRectangleArray2[local110++] = TextureOpSquareWaveform.aRectangleArray1[local114];
 				}
 			}
 			try {
