@@ -138,7 +138,7 @@ public final class MelType {
 	}
 
 	@OriginalMember(owner = "client!el", name = "a", descriptor = "(BLclient!uk;)Z")
-	public boolean method2425(@OriginalArg(1) Interface23 arg0) {
+	public boolean method2425(@OriginalArg(1) VarDomain arg0) {
 		@Pc(31) int local31;
 		if (this.anInt2616 == -1) {
 			if (this.anInt2599 == -1) {
@@ -321,7 +321,7 @@ public final class MelType {
 					} else if (arg1 == 249) {
 						local74 = arg0.g1();
 						if (this.aHashTable14 == null) {
-							local291 = Static440.method5962(local74);
+							local291 = IntUtils.clp2(local74);
 							this.aHashTable14 = new HashTable(local291);
 						}
 						for (local291 = 0; local291 < local74; local291++) {

@@ -861,7 +861,7 @@ public final class Model_Sub3 extends Model {
 
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(IIII)V")
 	@Override
-	public void method7488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if ((this.anInt8489 & 0x80000) != 524288) {
 			throw new IllegalStateException("FMT");
 		}

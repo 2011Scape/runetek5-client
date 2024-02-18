@@ -330,7 +330,7 @@ public final class Static71 {
 											}
 										}
 										if (local19 == Static390.aComponent9) {
-											local1533 = Static32.aLocalizedText31.method877(Static51.anInt1052);
+											local1533 = LocalizedText.PLEASE_WAIT.get(Static51.anInt1052);
 											local323 = local19.anInt3779;
 										}
 										if (Static376.aBoolean452) {

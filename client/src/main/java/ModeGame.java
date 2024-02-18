@@ -5,6 +5,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!ul")
 public final class ModeGame {
 
+	@OriginalMember(owner = "client!vf", name = "J", descriptor = "Lclient!ul;")
+	public static final ModeGame GAME_RUNESCAPE = new ModeGame("runescape", "RuneScape", 0);
 	@OriginalMember(owner = "client!ul", name = "d", descriptor = "Ljava/lang/String;")
 	public final String aString114;
 

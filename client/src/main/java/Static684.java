@@ -19,17 +19,17 @@ public final class Static684 {
 			Static1.anInt10798 = 0;
 			Static717.anInt10817 = -1;
 		}
-		if (!arg0 && Static62.anInt1465 == arg1 && Static525.anInt8907 == arg3 && (Static164.anInt2808 == Static394.anInt6176 || Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5960() == 1)) {
+		if (!arg0 && Static62.anInt1465 == arg1 && Static525.anInt8907 == arg3 && (Static164.anInt2808 == Static394.anInt6176 || Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 1)) {
 			return;
 		}
 		Static525.anInt8907 = arg3;
 		Static62.anInt1465 = arg1;
 		Static164.anInt2808 = Static394.anInt6176;
-		if (Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5960() == 1) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 1) {
 			Static164.anInt2808 = 0;
 		}
 		Static81.method1586(arg2);
-		Static694.method9028(Static163.aClass19_17, Static32.aLocalizedText12.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+		Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
 		@Pc(74) int local74 = Static691.anInt10367;
 		Static691.anInt10367 = (Static62.anInt1465 - (Static720.anInt10859 >> 4)) * 8;
 		@Pc(85) int local85 = Static116.anInt2270;

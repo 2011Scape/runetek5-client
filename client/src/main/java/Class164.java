@@ -532,7 +532,7 @@ public final class Class164 {
 		if (local282 <= 0) {
 			return;
 		}
-		this.aHashTable19 = new HashTable(local282 >= 16 ? 16 : Static440.method5962(local282));
+		this.aHashTable19 = new HashTable(local282 >= 16 ? 16 : IntUtils.clp2(local282));
 		while (local282-- > 0) {
 			@Pc(493) int local493 = arg0.g4();
 			@Pc(497) int local497 = local493 & 0x3FFFFFFF;

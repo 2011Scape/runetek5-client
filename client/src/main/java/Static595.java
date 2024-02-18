@@ -11,7 +11,7 @@ public final class Static595 {
 	public static void method7807(@OriginalArg(1) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
 		Static164.method2606();
 		if (arg2 == 0) {
-			Static163.aClass19_17 = Static255.method3612(Static124.aJs520, Static56.anInterface4_3, 0, Static434.aCanvas7, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4373() * 2);
+			Static163.aClass19_17 = Static255.method3612(Static124.aJs520, Static56.anInterface4_3, 0, Static434.aCanvas7, Static400.aClass2_Sub34_28.aPreference_Sub13_1.method4373() * 2);
 			if (arg0 != null) {
 				Static163.aClass19_17.GA(0);
 				@Pc(36) Class381 local36 = Static74.method1535(Static539.anInt8173, Static697.aJs5123);
@@ -34,7 +34,7 @@ public final class Static595 {
 			label216: {
 				try {
 					var14 = true;
-					Static163.aClass19_17 = Static255.method3612(Static124.aJs520, Static56.anInterface4_3, arg2, Static434.aCanvas7, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4373() * 2);
+					Static163.aClass19_17 = Static255.method3612(Static124.aJs520, Static56.anInterface4_3, arg2, Static434.aCanvas7, Static400.aClass2_Sub34_28.aPreference_Sub13_1.method4373() * 2);
 					if (arg0 != null) {
 						local57.GA(0);
 						@Pc(118) Class381 local118 = Static74.method1535(Static539.anInt8173, Static697.aJs5123);
@@ -61,11 +61,11 @@ public final class Static595 {
 					}
 					break label216;
 				} catch (@Pc(168) Throwable local168) {
-					@Pc(173) int local173 = Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915();
+					@Pc(173) int local173 = Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915();
 					if (local173 == 2) {
 						Static171.aBoolean245 = true;
 					}
-					Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aClass57_Sub29_1);
+					Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_1);
 					method7807(arg0, arg1, local173);
 					@Pc(194) Object local194 = null;
 					var14 = false;
@@ -96,17 +96,17 @@ public final class Static595 {
 				}
 			}
 		}
-		Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7918(!arg1);
-		Static400.aClass2_Sub34_28.method5104(arg2, Static400.aClass2_Sub34_28.aClass57_Sub29_1);
+		Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7918(!arg1);
+		Static400.aClass2_Sub34_28.method5104(arg2, Static400.aClass2_Sub34_28.aPreference_Sub29_1);
 		Static112.method2109();
 		Static163.aClass19_17.method8003();
 		Static163.aClass19_17.X(32);
 		Static460.aClass73_10 = Static163.aClass19_17.method7953();
 		Static59.aClass73_5 = Static163.aClass19_17.method7953();
 		Static209.method3110();
-		Static163.aClass19_17.method7997(Static400.aClass2_Sub34_28.aClass57_Sub9_1.method3199() == 1);
+		Static163.aClass19_17.method7997(Static400.aClass2_Sub34_28.aPreference_Sub9_1.method3199() == 1);
 		if (Static163.aClass19_17.method7936()) {
-			Static249.method3537(Static400.aClass2_Sub34_28.aClass57_Sub20_1.method6108() == 1);
+			Static249.method3537(Static400.aClass2_Sub34_28.aPreference_Sub20_1.method6108() == 1);
 		}
 		Static613.method8239(Static163.aClass19_17, Static501.anInt7568 >> 3, Static720.anInt10859 >> 3);
 		Static218.method3187();

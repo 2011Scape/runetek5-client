@@ -506,7 +506,7 @@ public final class Class19_Sub3 extends Class19 {
 	public final Class202 aClass202_1;
 
 	@OriginalMember(owner = "client!qha", name = "rf", descriptor = "Lclient!oia;")
-	private final Class276 aClass276_1;
+	private final PostProcessorManager aPostProcessorManager1;
 
 	@OriginalMember(owner = "client!qha", name = "ub", descriptor = "Lclient!kca;")
 	private BloomPostProcessor aClass2_Sub31_Sub1_1;
@@ -655,8 +655,8 @@ public final class Class19_Sub3 extends Class19 {
 				this.aClass169_1 = new Class169(this, super.anInterface4_10);
 				this.method6992();
 				this.aClass202_1 = new Class202(this);
-				this.aClass276_1 = new Class276(this);
-				if (this.aClass276_1.method6248()) {
+				this.aPostProcessorManager1 = new PostProcessorManager(this);
+				if (this.aPostProcessorManager1.method6248()) {
 					this.aClass2_Sub31_Sub1_1 = new BloomPostProcessor(this);
 					if (!this.aClass2_Sub31_Sub1_1.method4623()) {
 						this.aClass2_Sub31_Sub1_1.method4608();
@@ -929,7 +929,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "()V")
 	@Override
 	public void method7974() {
-		this.aClass276_1.method6245();
+		this.aPostProcessorManager1.method6245();
 	}
 
 	@OriginalMember(owner = "client!qha", name = "XA", descriptor = "()I")
@@ -1120,8 +1120,8 @@ public final class Class19_Sub3 extends Class19 {
 		for (@Pc(8) Linkable local8 = this.aLinkedList46.head(); local8 != null; local8 = this.aLinkedList46.next()) {
 			((Linkable_Sub13_Sub1) local8).method1609();
 		}
-		if (this.aClass276_1 != null) {
-			this.aClass276_1.method6249();
+		if (this.aPostProcessorManager1 != null) {
+			this.aPostProcessorManager1.method6249();
 		}
 		if (this.anOpenGL1 != null) {
 			this.method7045();
@@ -1400,7 +1400,7 @@ public final class Class19_Sub3 extends Class19 {
 			return false;
 		}
 		if (!this.aClass2_Sub31_Sub1_1.method4616()) {
-			if (!this.aClass276_1.method6246(this.aClass2_Sub31_Sub1_1)) {
+			if (!this.aPostProcessorManager1.method6246(this.aClass2_Sub31_Sub1_1)) {
 				return false;
 			}
 			this.aClass169_1.method3527();
@@ -2524,7 +2524,7 @@ public final class Class19_Sub3 extends Class19 {
 	@Override
 	public void method7980() {
 		if (this.aClass2_Sub31_Sub1_1 != null && this.aClass2_Sub31_Sub1_1.method4616()) {
-			this.aClass276_1.method6251(this.aClass2_Sub31_Sub1_1);
+			this.aPostProcessorManager1.method6251(this.aClass2_Sub31_Sub1_1);
 			this.aClass169_1.method3527();
 		}
 	}
@@ -3208,7 +3208,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIII)V")
 	@Override
 	public void method7959(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		this.aClass276_1.method6250(arg2, arg0, arg3, arg1);
+		this.aPostProcessorManager1.method6250(arg2, arg0, arg3, arg1);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(JI)V")

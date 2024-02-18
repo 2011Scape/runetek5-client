@@ -2729,7 +2729,7 @@ public final class Model_Sub2 extends Model {
 
 	@OriginalMember(owner = "client!kla", name = "a", descriptor = "(IIII)V")
 	@Override
-	public void method7488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(18) int local18;
 		for (@Pc(7) int local7 = 0; local7 < this.anInt5560; local7++) {
 			local18 = this.aShortArray74[local7] & 0xFFFF;

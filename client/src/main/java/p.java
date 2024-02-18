@@ -6,6 +6,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+// sw3d: do not rename!
 @OriginalClass("client!p")
 public final class p extends Linkable implements Interface5 {
 

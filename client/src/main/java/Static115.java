@@ -19,7 +19,7 @@ public final class Static115 {
 
 	@OriginalMember(owner = "client!dka", name = "a", descriptor = "(II)V")
 	public static void method2136(@OriginalArg(1) int arg0) {
-		if (Static400.aClass2_Sub34_28.aClass57_Sub14_1.method5302() == 0) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub14_1.method5302() == 0) {
 			arg0 = -1;
 		}
 		if (arg0 == Static470.anInt7112) {

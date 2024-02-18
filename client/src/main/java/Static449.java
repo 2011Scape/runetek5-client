@@ -80,11 +80,11 @@ public final class Static449 {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(ILclient!uv;)Z")
 	public static boolean method6118(@OriginalArg(1) Interface25 arg0) {
-		@Pc(17) LocType local17 = Static354.aLocTypeList4.method3063(arg0.method6859(-32136), 49);
-		if (local17.anInt1239 == -1) {
+		@Pc(17) LocType local17 = Static354.aLocTypeList4.get(arg0.method6859(-32136));
+		if (local17.mapscene == -1) {
 			return true;
 		} else {
-			@Pc(31) MsiType local31 = Static720.aMsiTypeList4.method8362(local17.anInt1239);
+			@Pc(31) MsiType local31 = Static720.aMsiTypeList4.method8362(local17.mapscene);
 			return local31.anInt4167 == -1 ? true : local31.method3690();
 		}
 	}

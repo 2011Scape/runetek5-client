@@ -72,20 +72,20 @@ public final class Static498 {
 	@OriginalMember(owner = "client!pm", name = "b", descriptor = "(I)V")
 	public static void method6646() {
 		Static135.method7237();
-		@Pc(19) int local19 = Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2120();
+		@Pc(19) int local19 = Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2120();
 		if (local19 == 2) {
 			Static85.method9264(Static380.anInt5979, Static680.anInt10289, Static163.aClass19_17);
 		} else if (local19 == 3) {
 			Static126.method2227(Static163.aClass19_17, Static680.anInt10289, Static32.anInt777, Static288.anInt4620, Static380.anInt5979);
 		}
-		if (Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2118()) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2118()) {
 			Static575.method7606(Static434.aCanvas7);
 		}
 		if (Static163.aClass19_17 != null) {
 			Static209.method3110();
 		}
-		Static504.aBoolean579 = Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2120() != 0;
-		Static137.aBoolean210 = Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2118();
+		Static504.aBoolean579 = Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2120() != 0;
+		Static137.aBoolean210 = Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2118();
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "([Lclient!eo;II)V")

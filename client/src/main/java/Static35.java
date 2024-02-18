@@ -47,7 +47,7 @@ public final class Static35 {
 					if (local13.anInt2571 < 0) {
 						@Pc(154) int local154 = 8192;
 						if (local13.anInt2578 == 0) {
-							local179 = local13.anInt2577 * (local13.aByte49 == 3 ? Static400.aClass2_Sub34_28.lb.method7208() : Static400.aClass2_Sub34_28.aClass57_Sub25_3.method7208()) >> 2;
+							local179 = local13.anInt2577 * (local13.aByte49 == 3 ? Static400.aClass2_Sub34_28.lb.method7208() : Static400.aClass2_Sub34_28.aPreference_Sub25_3.method7208()) >> 2;
 						} else {
 							@Pc(188) int local188 = local13.anInt2578 >> 24 & 0x3;
 							if (local188 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
@@ -65,7 +65,7 @@ public final class Static35 {
 								if (local251 < 0) {
 									local251 = 0;
 								}
-								local179 = Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() * (local199 - local251) * local13.anInt2577 / local199 >> 2;
+								local179 = Static400.aClass2_Sub34_28.aPreference_Sub25_1.method7208() * (local199 - local251) * local13.anInt2577 / local199 >> 2;
 								if (local13.aClass8_Sub2_10 != null && local13.aClass8_Sub2_10 instanceof Entity) {
 									@Pc(301) Entity local301 = (Entity) local13.aClass8_Sub2_10;
 									@Pc(304) short local304 = local301.aShort132;
@@ -115,16 +115,16 @@ public final class Static35 {
 			}
 		}
 		if (Static501.aBoolean575 && !Static52.method1157(126)) {
-			if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1) {
+			if (Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1) {
 				if (Static8.aClass2_Sub6_Sub1_1 == null) {
-					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208(), Static398.aJs581);
+					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208(), Static398.aJs581);
 				} else {
-					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, Static398.aJs581, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208());
+					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, Static398.aJs581, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208());
 				}
 			}
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
-		} else if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
+		} else if (Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
 			@Pc(551) OutboundPacket local551 = Static293.method4335(Static235.aClientProt49, Static405.aClass153_2.aIsaacRandom_1);
 			local551.aPacketBit_1.p4(Static588.anInt8692);
 			Static405.aClass153_2.method3275(local551);

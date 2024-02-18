@@ -212,7 +212,7 @@ public final class NpcType {
 		if (this.aByte107 != -1) {
 			return;
 		}
-		if (Static673.aModeGame8 == this.aNpcTypeList1.aModeGame6) {
+		if (ModeGame.GAME_RUNESCAPE == this.aNpcTypeList1.aModeGame6) {
 			this.aByte107 = 1;
 		} else {
 			this.aByte107 = 0;
@@ -236,7 +236,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ILclient!uk;)Lclient!o;")
-	public NpcType method5985(@OriginalArg(0) int arg0, @OriginalArg(1) Interface23 arg1) {
+	public NpcType method5985(@OriginalArg(0) int arg0, @OriginalArg(1) VarDomain arg1) {
 		if (arg0 != 65535) {
 			return null;
 		}
@@ -463,7 +463,7 @@ public final class NpcType {
 			} else if (arg0 == 249) {
 				local12 = arg1.g1();
 				if (this.aHashTable32 == null) {
-					local18 = Static440.method5962(local12);
+					local18 = IntUtils.clp2(local12);
 					this.aHashTable32 = new HashTable(local18);
 				}
 				for (local18 = 0; local18 < local12; local18++) {
@@ -492,7 +492,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ILclient!gu;Lclient!vk;ILclient!ha;Lclient!uk;)Lclient!ka;")
-	public Model method5992(@OriginalArg(1) Class152 arg0, @OriginalArg(2) Class386 arg1, @OriginalArg(4) Class19 arg2, @OriginalArg(5) Interface23 arg3) {
+	public Model method5992(@OriginalArg(1) Class152 arg0, @OriginalArg(2) Class386 arg1, @OriginalArg(4) Class19 arg2, @OriginalArg(5) VarDomain arg3) {
 		if (this.anIntArray532 != null) {
 			@Pc(15) NpcType local15 = this.method5985(65535, arg3);
 			return local15 == null ? null : local15.method5992(arg0, arg1, arg2, arg3);
@@ -590,7 +590,7 @@ public final class NpcType {
 					}
 				}
 				if (this.aByte105 != 0) {
-					local94.method7488(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
+					local94.a(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
 				}
 				local94.s(local54);
 				@Pc(469) SoftLruHashTable local469 = this.aNpcTypeList1.aSoftLruHashTable171;
@@ -608,7 +608,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!uk;Lclient!ha;Lclient!qp;BLclient!gu;I[ILclient!vk;Lclient!gu;I[Lclient!gu;)Lclient!ka;")
-	public Model method5993(@OriginalArg(0) Interface23 arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int[] arg5, @OriginalArg(7) Class386 arg6, @OriginalArg(8) Class152 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class152[] arg9) {
+	public Model method5993(@OriginalArg(0) VarDomain arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int[] arg5, @OriginalArg(7) Class386 arg6, @OriginalArg(8) Class152 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class152[] arg9) {
 		if (this.anIntArray532 != null) {
 			@Pc(11) NpcType local11 = this.method5985(65535, arg0);
 			return local11 == null ? null : local11.method5993(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -755,7 +755,7 @@ public final class NpcType {
 				}
 			}
 			if (this.aByte105 != 0) {
-				local139.method7488(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
+				local139.a(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
 			}
 			local139.s(local32);
 			@Pc(685) SoftLruHashTable local685 = this.aNpcTypeList1.aSoftLruHashTable170;
@@ -839,7 +839,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BLclient!uk;)Z")
-	public boolean method5996(@OriginalArg(1) Interface23 arg0) {
+	public boolean method5996(@OriginalArg(1) VarDomain arg0) {
 		if (this.anIntArray532 == null) {
 			return true;
 		}

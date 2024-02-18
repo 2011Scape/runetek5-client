@@ -7,892 +7,845 @@ import org.openrs2.deob.annotation.Pc;
 public final class LocType {
 
 	@OriginalMember(owner = "client!c", name = "sb", descriptor = "[B")
-	public byte[] aByteArray13;
+	public byte[] shapes;
 
 	@OriginalMember(owner = "client!c", name = "Wb", descriptor = "B")
-	private byte aByte11;
+	private byte hue;
 
 	@OriginalMember(owner = "client!c", name = "Bb", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray6;
+	public String[] ops;
 
 	@OriginalMember(owner = "client!c", name = "u", descriptor = "[I")
-	public int[] anIntArray112;
+	public int[] quests;
 
 	@OriginalMember(owner = "client!c", name = "H", descriptor = "[I")
-	public int[] anIntArray113;
+	public int[] multiloc;
 
 	@OriginalMember(owner = "client!c", name = "ub", descriptor = "[S")
-	public short[] aShortArray12;
+	public short[] retex_s;
 
 	@OriginalMember(owner = "client!c", name = "d", descriptor = "[B")
-	private byte[] aByteArray14;
+	private byte[] recol_dpalette;
 
 	@OriginalMember(owner = "client!c", name = "kb", descriptor = "Lclient!av;")
-	private HashTable aHashTable10;
+	private HashTable params;
 
 	@OriginalMember(owner = "client!c", name = "mb", descriptor = "[S")
-	public short[] aShortArray13;
+	public short[] recol_s;
 
 	@OriginalMember(owner = "client!c", name = "S", descriptor = "Lclient!gea;")
-	public LocTypeList aLocTypeList2;
+	public LocTypeList locTypes;
 
 	@OriginalMember(owner = "client!c", name = "j", descriptor = "I")
-	public int anInt1256;
+	public int id;
 
 	@OriginalMember(owner = "client!c", name = "I", descriptor = "[[I")
-	public int[][] anIntArrayArray30;
+	public int[][] models;
 
 	@OriginalMember(owner = "client!c", name = "Tb", descriptor = "[I")
-	public int[] anIntArray116;
+	public int[] bgsounds;
 
 	@OriginalMember(owner = "client!c", name = "ob", descriptor = "[S")
-	private short[] aShortArray14;
+	private short[] retex_d;
 
 	@OriginalMember(owner = "client!c", name = "Vb", descriptor = "B")
-	private byte aByte13;
+	private byte saturation;
 
 	@OriginalMember(owner = "client!c", name = "Db", descriptor = "[S")
-	private short[] aShortArray15;
+	private short[] recol_d;
 
 	@OriginalMember(owner = "client!c", name = "D", descriptor = "B")
-	private byte aByte14;
+	private byte luminance;
 
 	@OriginalMember(owner = "client!c", name = "Rb", descriptor = "Z")
 	public boolean aBoolean88 = false;
 
 	@OriginalMember(owner = "client!c", name = "B", descriptor = "Z")
-	public boolean aBoolean89 = true;
+	public boolean hardshadow = true;
 
 	@OriginalMember(owner = "client!c", name = "db", descriptor = "I")
-	private int anInt1220 = 128;
+	private int resizey = 128;
 
 	@OriginalMember(owner = "client!c", name = "x", descriptor = "I")
-	private int anInt1213 = 0;
+	private int postoffsety = 0;
 
 	@OriginalMember(owner = "client!c", name = "g", descriptor = "B")
-	private byte aByte10 = 0;
+	private byte weight = 0;
 
 	@OriginalMember(owner = "client!c", name = "O", descriptor = "I")
-	public int anInt1227 = 0;
+	public int decorheight = 0;
 
 	@OriginalMember(owner = "client!c", name = "Gb", descriptor = "I")
-	public int anInt1219 = 0;
+	public int bgsoundmax = 0;
 
 	@OriginalMember(owner = "client!c", name = "w", descriptor = "I")
-	public int anInt1229 = 1;
+	public int length = 1;
 
 	@OriginalMember(owner = "client!c", name = "q", descriptor = "I")
-	public int anInt1230 = -1;
+	public int cursor1op = -1;
 
 	@OriginalMember(owner = "client!c", name = "h", descriptor = "I")
-	public int anInt1221 = 0;
+	public int bgsounddistance = 0;
 
 	@OriginalMember(owner = "client!c", name = "k", descriptor = "I")
-	private int anInt1214 = 0;
+	private int postoffsetx = 0;
 
 	@OriginalMember(owner = "client!c", name = "K", descriptor = "I")
-	private int anInt1218 = 128;
+	private int resizex = 128;
 
 	@OriginalMember(owner = "client!c", name = "qb", descriptor = "Ljava/lang/String;")
-	public String aString7 = "null";
+	public String name = "null";
 
 	@OriginalMember(owner = "client!c", name = "G", descriptor = "I")
-	private int anInt1228 = 0;
+	private int offsetz = 0;
 
 	@OriginalMember(owner = "client!c", name = "ib", descriptor = "Z")
-	public boolean aBoolean95 = false;
+	public boolean members = false;
 
 	@OriginalMember(owner = "client!c", name = "lb", descriptor = "I")
-	public int lb = -1;
+	public int raiseobject = -1;
 
 	@OriginalMember(owner = "client!c", name = "s", descriptor = "I")
-	public int anInt1233 = -1;
+	public int mel = -1;
 
 	@OriginalMember(owner = "client!c", name = "v", descriptor = "I")
-	public int anInt1223 = -1;
+	public int occlude = -1;
 
 	@OriginalMember(owner = "client!c", name = "p", descriptor = "I")
-	public int anInt1244 = 0;
+	public int bgsoundradius = 0;
 
 	@OriginalMember(owner = "client!c", name = "z", descriptor = "I")
-	public int anInt1246 = -1;
+	public int bgsound = -1;
 
 	@OriginalMember(owner = "client!c", name = "c", descriptor = "I")
-	private int anInt1247 = -1;
+	private int multivarbit = -1;
 
 	@OriginalMember(owner = "client!c", name = "Nb", descriptor = "Z")
-	public boolean aBoolean97 = false;
+	public boolean breakroutefinding = false;
 
 	@OriginalMember(owner = "client!c", name = "m", descriptor = "Z")
-	public boolean aBoolean96 = false;
+	public boolean mapsceneflipy = false;
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "I")
-	private int anInt1241 = 128;
+	private int resizez = 128;
 
 	@OriginalMember(owner = "client!c", name = "y", descriptor = "I")
-	private int anInt1248 = 0;
+	private int postoffsetz = 0;
 
 	@OriginalMember(owner = "client!c", name = "f", descriptor = "I")
-	public int anInt1253 = 255;
+	public int bgsoundvol = 255;
 
 	@OriginalMember(owner = "client!c", name = "n", descriptor = "I")
-	public int anInt1210 = 0;
+	public int mapsceneangle = 0;
 
 	@OriginalMember(owner = "client!c", name = "Cb", descriptor = "[I")
-	private int[] anIntArray115 = null;
+	private int[] anims = null;
 
 	@OriginalMember(owner = "client!c", name = "nb", descriptor = "I")
-	private int anInt1252 = -1;
+	private int hillskewAmount = -1;
 
 	@OriginalMember(owner = "client!c", name = "Sb", descriptor = "I")
-	public int anInt1231 = 0;
+	public int bgsoundmin = 0;
 
 	@OriginalMember(owner = "client!c", name = "L", descriptor = "I")
-	public int anInt1240 = -1;
+	public int cursor1 = -1;
 
 	@OriginalMember(owner = "client!c", name = "yb", descriptor = "I")
-	public int anInt1257 = 960;
+	public int occludewidth = 960;
 
 	@OriginalMember(owner = "client!c", name = "W", descriptor = "Z")
-	public boolean aBoolean94 = true;
+	public boolean randseq = true;
 
 	@OriginalMember(owner = "client!c", name = "U", descriptor = "I")
-	public int anInt1243 = 64;
+	public int wallwidth = 64;
 
 	@OriginalMember(owner = "client!c", name = "vb", descriptor = "[I")
-	private int[] anIntArray114 = null;
+	private int[] animWeights = null;
 
 	@OriginalMember(owner = "client!c", name = "X", descriptor = "B")
-	private byte aByte12 = 0;
+	private byte hillskewType = 0;
 
 	@OriginalMember(owner = "client!c", name = "jb", descriptor = "I")
-	public int anInt1249 = 256;
+	public int bgsoundratemax = 256;
 
 	@OriginalMember(owner = "client!c", name = "tb", descriptor = "I")
-	public int anInt1260 = -1;
+	public int cursor2op = -1;
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "I")
-	private int anInt1217 = 0;
+	private int offsetx = 0;
 
 	@OriginalMember(owner = "client!c", name = "Y", descriptor = "I")
-	private int anInt1263 = 0;
+	private int ambient = 0;
 
 	@OriginalMember(owner = "client!c", name = "M", descriptor = "I")
-	public int anInt1242 = 2;
+	public int blockwalk = 2;
 
 	@OriginalMember(owner = "client!c", name = "bb", descriptor = "Z")
 	public boolean aBoolean92 = false;
 
 	@OriginalMember(owner = "client!c", name = "N", descriptor = "Z")
-	public boolean aBoolean93 = false;
+	public boolean hasAnimation = false;
 
 	@OriginalMember(owner = "client!c", name = "Eb", descriptor = "I")
-	private int anInt1259 = 0;
+	private int offsety = 0;
 
 	@OriginalMember(owner = "client!c", name = "E", descriptor = "I")
-	public int anInt1261 = 0;
+	public int forceapproach = 0;
 
 	@OriginalMember(owner = "client!c", name = "fb", descriptor = "I")
-	public int anInt1268 = 256;
+	public int bgsoundratemin = 256;
 
 	@OriginalMember(owner = "client!c", name = "o", descriptor = "I")
-	private int anInt1254 = 0;
+	private int contrast = 0;
 
 	@OriginalMember(owner = "client!c", name = "gb", descriptor = "Z")
-	public boolean aBoolean101 = false;
+	public boolean forcedecor = false;
 
 	@OriginalMember(owner = "client!c", name = "t", descriptor = "Z")
-	public boolean aBoolean90 = false;
+	public boolean shouldRender = false;
 
 	@OriginalMember(owner = "client!c", name = "P", descriptor = "Z")
-	public boolean aBoolean99 = true;
+	public boolean blockrange = true;
 
 	@OriginalMember(owner = "client!c", name = "Mb", descriptor = "Z")
 	public boolean aBoolean91 = false;
 
 	@OriginalMember(owner = "client!c", name = "e", descriptor = "Z")
-	public boolean aBoolean102 = false;
+	public boolean sharelight = false;
 
 	@OriginalMember(owner = "client!c", name = "Ub", descriptor = "I")
-	public int anInt1270 = 1;
+	public int width = 1;
 
 	@OriginalMember(owner = "client!c", name = "Q", descriptor = "I")
-	public int anInt1212 = 0;
+	public int occludeheight = 0;
 
 	@OriginalMember(owner = "client!c", name = "xb", descriptor = "I")
-	public int anInt1239 = -1;
+	public int mapscene = -1;
 
 	@OriginalMember(owner = "client!c", name = "pb", descriptor = "I")
-	private int anInt1258 = -1;
+	private int multivarp = -1;
 
 	@OriginalMember(owner = "client!c", name = "Ab", descriptor = "I")
-	public int anInt1245 = -1;
+	public int cursor2 = -1;
 
 	@OriginalMember(owner = "client!c", name = "Z", descriptor = "Z")
-	public boolean aBoolean98 = true;
+	public boolean shadow = true;
 
 	@OriginalMember(owner = "client!c", name = "zb", descriptor = "Z")
-	public boolean aBoolean103 = false;
+	public boolean mapscenerotates = false;
 
 	@OriginalMember(owner = "client!c", name = "Jb", descriptor = "Z")
-	public boolean aBoolean100 = false;
+	public boolean mirror = false;
 
 	@OriginalMember(owner = "client!c", name = "Ib", descriptor = "I")
-	public int anInt1271 = -1;
+	public int active = -1;
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(B)Z")
-	public boolean method1295() {
-		return this.anIntArray115 != null && this.anIntArray115.length > 1;
+	public boolean hasAnims() {
+		return this.anims != null && this.anims.length > 1;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!ge;II)V")
-	private void method1296(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
-		@Pc(37) int local37;
-		@Pc(47) int local47;
-		@Pc(59) int local59;
-		@Pc(67) int local67;
-		if (arg1 == 1 || arg1 == 5) {
-			if (arg1 == 5 && this.aLocTypeList2.aBoolean266) {
-				this.method1315(arg0);
+	private void decode(@OriginalArg(0) Packet buf, @OriginalArg(1) int opcode) {
+		if (opcode == 1 || opcode == 5) {
+			if (opcode == 5 && this.locTypes.lowDetail) {
+				this.skipModels(buf);
 			}
-			local37 = arg0.g1();
-			this.aByteArray13 = new byte[local37];
-			this.anIntArrayArray30 = new int[local37][];
-			for (local47 = 0; local47 < local37; local47++) {
-				this.aByteArray13[local47] = arg0.g1b();
-				local59 = arg0.g1();
-				this.anIntArrayArray30[local47] = new int[local59];
-				for (local67 = 0; local67 < local59; local67++) {
-					this.anIntArrayArray30[local47][local67] = arg0.g2();
+
+			int shapeCount = buf.g1();
+			this.shapes = new byte[shapeCount];
+			this.models = new int[shapeCount][];
+			for (int i = 0; i < shapeCount; i++) {
+				this.shapes[i] = buf.g1b();
+
+				int modelCount = buf.g1();
+				this.models[i] = new int[modelCount];
+
+				for (int j = 0; j < modelCount; j++) {
+					this.models[i][j] = buf.g2();
 				}
 			}
-			if (arg1 == 5 && !this.aLocTypeList2.aBoolean266) {
-				this.method1315(arg0);
+
+			if (opcode == 5 && !this.locTypes.lowDetail) {
+				this.skipModels(buf);
 			}
-		} else if (arg1 == 2) {
-			this.aString7 = arg0.gjstr();
-		} else if (arg1 == 14) {
-			this.anInt1270 = arg0.g1();
-		} else if (arg1 == 15) {
-			this.anInt1229 = arg0.g1();
-		} else if (arg1 == 17) {
-			this.aBoolean99 = false;
-			this.anInt1242 = 0;
-		} else if (arg1 == 18) {
-			this.aBoolean99 = false;
-		} else if (arg1 == 19) {
-			this.anInt1271 = arg0.g1();
-		} else if (arg1 == 21) {
-			this.aByte12 = 1;
-		} else if (arg1 == 22) {
-			this.aBoolean102 = true;
-		} else if (arg1 == 23) {
-			this.anInt1223 = 1;
-		} else if (arg1 == 24) {
-			local37 = arg0.g2();
-			if (local37 != 65535) {
-				this.anIntArray115 = new int[] { local37 };
-				return;
+		} else if (opcode == 2) {
+			this.name = buf.gjstr();
+		} else if (opcode == 14) {
+			this.width = buf.g1();
+		} else if (opcode == 15) {
+			this.length = buf.g1();
+		} else if (opcode == 17) {
+			this.blockrange = false;
+			this.blockwalk = 0;
+		} else if (opcode == 18) {
+			this.blockrange = false;
+		} else if (opcode == 19) {
+			this.active = buf.g1();
+		} else if (opcode == 21) {
+			// hillskew=yes
+			this.hillskewType = 1;
+		} else if (opcode == 22) {
+			this.sharelight = true;
+		} else if (opcode == 23) {
+			this.occlude = 1;
+		} else if (opcode == 24) {
+			int seq = buf.g2();
+			if (seq != 65535) {
+				this.anims = new int[] { seq };
 			}
-		} else if (arg1 == 27) {
-			this.anInt1242 = 1;
-			return;
-		} else if (arg1 == 28) {
-			this.anInt1243 = arg0.g1() << 2;
-			return;
-		} else if (arg1 == 29) {
-			this.anInt1263 = arg0.g1b();
-			return;
-		} else if (arg1 == 39) {
-			this.anInt1254 = arg0.g1b() * 5;
-			return;
-		} else if (arg1 < 30 || arg1 >= 35) {
-			if (arg1 != 40) {
-				if (arg1 != 41) {
-					if (arg1 == 42) {
-						local37 = arg0.g1();
-						this.aByteArray14 = new byte[local37];
-						for (local47 = 0; local47 < local37; local47++) {
-							this.aByteArray14[local47] = arg0.g1b();
-						}
-						return;
-					}
-					if (arg1 != 62) {
-						if (arg1 == 64) {
-							this.aBoolean98 = false;
-							return;
-						}
-						if (arg1 == 65) {
-							this.anInt1218 = arg0.g2();
-							return;
-						}
-						if (arg1 == 66) {
-							this.anInt1220 = arg0.g2();
-							return;
-						}
-						if (arg1 == 67) {
-							this.anInt1241 = arg0.g2();
-							return;
-						}
-						if (arg1 == 69) {
-							this.anInt1261 = arg0.g1();
-							return;
-						}
-						if (arg1 == 70) {
-							this.anInt1217 = arg0.g2s() << 2;
-							return;
-						}
-						if (arg1 == 71) {
-							this.anInt1259 = arg0.g2s() << 2;
-							return;
-						}
-						if (arg1 == 72) {
-							this.anInt1228 = arg0.g2s() << 2;
-							return;
-						}
-						if (arg1 == 73) {
-							this.aBoolean101 = true;
-							return;
-						}
-						if (arg1 == 74) {
-							this.aBoolean97 = true;
-							return;
-						}
-						if (arg1 == 75) {
-							this.lb = arg0.g1();
-							return;
-						}
-						if (arg1 != 77 && arg1 != 92) {
-							if (arg1 == 78) {
-								this.anInt1246 = arg0.g2();
-								this.anInt1244 = arg0.g1();
-								return;
-							}
-							if (arg1 == 79) {
-								this.anInt1231 = arg0.g2();
-								this.anInt1219 = arg0.g2();
-								this.anInt1244 = arg0.g1();
-								local37 = arg0.g1();
-								this.anIntArray116 = new int[local37];
-								for (local47 = 0; local47 < local37; local47++) {
-									this.anIntArray116[local47] = arg0.g2();
-								}
-								return;
-							}
-							if (arg1 == 81) {
-								this.aByte12 = 2;
-								this.anInt1252 = arg0.g1() * 256;
-								return;
-							}
-							if (arg1 != 82) {
-								if (arg1 == 88) {
-									this.aBoolean89 = false;
-									return;
-								}
-								if (arg1 != 89) {
-									if (arg1 == 91) {
-										this.aBoolean95 = true;
-										return;
-									}
-									if (arg1 == 93) {
-										this.aByte12 = 3;
-										this.anInt1252 = arg0.g2();
-										return;
-									}
-									if (arg1 == 94) {
-										this.aByte12 = 4;
-										return;
-									}
-									if (arg1 != 95) {
-										if (arg1 == 97) {
-											this.aBoolean103 = true;
-											return;
-										}
-										if (arg1 == 98) {
-											this.aBoolean93 = true;
-											return;
-										}
-										if (arg1 == 99) {
-											this.anInt1230 = arg0.g1();
-											this.anInt1240 = arg0.g2();
-											return;
-										}
-										if (arg1 != 100) {
-											if (arg1 == 101) {
-												this.anInt1210 = arg0.g1();
-												return;
-											}
-											if (arg1 == 102) {
-												this.anInt1239 = arg0.g2();
-												return;
-											}
-											if (arg1 == 103) {
-												this.anInt1223 = 0;
-												return;
-											}
-											if (arg1 == 104) {
-												this.anInt1253 = arg0.g1();
-												return;
-											}
-											if (arg1 == 105) {
-												this.aBoolean96 = true;
-												return;
-											}
-											if (arg1 == 106) {
-												local37 = arg0.g1();
-												local47 = 0;
-												this.anIntArray115 = new int[local37];
-												this.anIntArray114 = new int[local37];
-												for (local59 = 0; local59 < local37; local59++) {
-													this.anIntArray115[local59] = arg0.g2();
-													if (this.anIntArray115[local59] == 65535) {
-														this.anIntArray115[local59] = -1;
-													}
-													local47 += this.anIntArray114[local59] = arg0.g1();
-												}
-												for (local67 = 0; local67 < local37; local67++) {
-													this.anIntArray114[local67] = this.anIntArray114[local67] * 65535 / local47;
-												}
-												return;
-											}
-											if (arg1 == 107) {
-												this.anInt1233 = arg0.g2();
-											} else if (arg1 >= 150 && arg1 < 155) {
-												this.aStringArray6[arg1 - 150] = arg0.gjstr();
-												if (!this.aLocTypeList2.aBoolean267) {
-													this.aStringArray6[arg1 - 150] = null;
-													return;
-												}
-											} else if (arg1 == 160) {
-												local37 = arg0.g1();
-												this.anIntArray112 = new int[local37];
-												for (local47 = 0; local47 < local37; local47++) {
-													this.anIntArray112[local47] = arg0.g2();
-												}
-												return;
-											} else if (arg1 == 162) {
-												this.aByte12 = 3;
-												this.anInt1252 = arg0.g4();
-												return;
-											} else if (arg1 == 163) {
-												this.aByte11 = arg0.g1b();
-												this.aByte13 = arg0.g1b();
-												this.aByte14 = arg0.g1b();
-												this.aByte10 = arg0.g1b();
-												return;
-											} else if (arg1 == 164) {
-												this.anInt1214 = arg0.g2s();
-												return;
-											} else if (arg1 == 165) {
-												this.anInt1213 = arg0.g2s();
-												return;
-											} else if (arg1 == 166) {
-												this.anInt1248 = arg0.g2s();
-												return;
-											} else if (arg1 == 167) {
-												this.anInt1227 = arg0.g2();
-												return;
-											} else if (arg1 == 168) {
-												this.aBoolean88 = true;
-												return;
-											} else if (arg1 == 169) {
-												this.aBoolean92 = true;
-												return;
-											} else if (arg1 == 170) {
-												this.anInt1257 = arg0.gSamrt1or2();
-												return;
-											} else if (arg1 == 171) {
-												this.anInt1212 = arg0.gSamrt1or2();
-												return;
-											} else if (arg1 == 173) {
-												this.anInt1268 = arg0.g2();
-												this.anInt1249 = arg0.g2();
-												return;
-											} else {
-												if (arg1 == 177) {
-													this.aBoolean91 = true;
-												} else if (arg1 == 178) {
-													this.anInt1221 = arg0.g1();
-													return;
-												} else if (arg1 == 249) {
-													local37 = arg0.g1();
-													if (this.aHashTable10 == null) {
-														local47 = Static440.method5962(local37);
-														this.aHashTable10 = new HashTable(local47);
-													}
-													for (local47 = 0; local47 < local37; local47++) {
-														@Pc(872) boolean local872 = arg0.g1() == 1;
-														local67 = arg0.g3();
-														@Pc(885) Linkable local885;
-														if (local872) {
-															local885 = new StringNode(arg0.gjstr());
-														} else {
-															local885 = new IntNode(arg0.g4());
-														}
-														this.aHashTable10.put((long) local67, local885);
-													}
-													return;
-												}
-												return;
-											}
-											return;
-										}
-										this.anInt1260 = arg0.g1();
-										this.anInt1245 = arg0.g2();
-										return;
-									}
-									this.aByte12 = 5;
-									this.anInt1252 = arg0.g2s();
-									return;
-								}
-								this.aBoolean94 = false;
-								return;
-							}
-							this.aBoolean90 = true;
-							return;
-						}
-						this.anInt1247 = arg0.g2();
-						if (this.anInt1247 == 65535) {
-							this.anInt1247 = -1;
-						}
-						this.anInt1258 = arg0.g2();
-						if (this.anInt1258 == 65535) {
-							this.anInt1258 = -1;
-						}
-						local37 = -1;
-						if (arg1 == 92) {
-							local37 = arg0.g2();
-							if (local37 == 65535) {
-								local37 = -1;
-							}
-						}
-						local47 = arg0.g1();
-						this.anIntArray113 = new int[local47 + 2];
-						for (local59 = 0; local59 <= local47; local59++) {
-							this.anIntArray113[local59] = arg0.g2();
-							if (this.anIntArray113[local59] == 65535) {
-								this.anIntArray113[local59] = -1;
-							}
-						}
-						this.anIntArray113[local47 + 1] = local37;
-						return;
-					}
-					this.aBoolean100 = true;
-					return;
+		} else if (opcode == 27) {
+			this.blockwalk = 1;
+		} else if (opcode == 28) {
+			this.wallwidth = buf.g1() << 2;
+		} else if (opcode == 29) {
+			this.ambient = buf.g1b();
+		} else if (opcode == 39) {
+			this.contrast = buf.g1b() * 5;
+		} else if (opcode >= 30 && opcode < 35) {
+			this.ops[opcode - 30] = buf.gjstr();
+		} else if (opcode == 40) {
+			int count = buf.g1();
+			this.recol_s = new short[count];
+			this.recol_d = new short[count];
+			for (int i = 0; i < count; i++) {
+				this.recol_d[i] = (short) buf.g2();
+				this.recol_s[i] = (short) buf.g2();
+			}
+		} else if (opcode == 41) {
+			int count = buf.g1();
+			this.retex_s = new short[count];
+			this.retex_d = new short[count];
+			for (int i = 0; i < count; i++) {
+				this.retex_d[i] = (short) buf.g2();
+				this.retex_s[i] = (short) buf.g2();
+			}
+		} else if (opcode == 42) {
+			int count = buf.g1();
+			this.recol_dpalette = new byte[count];
+			for (int i = 0; i < count; i++) {
+				this.recol_dpalette[i] = buf.g1b();
+			}
+		} else if (opcode == 62) {
+			this.mirror = true;
+		} else if (opcode == 64) {
+			this.shadow = false;
+		} else if (opcode == 65) {
+			this.resizex = buf.g2();
+		} else if (opcode == 66) {
+			this.resizey = buf.g2();
+		} else if (opcode == 67) {
+			this.resizez = buf.g2();
+		} else if (opcode == 69) {
+			this.forceapproach = buf.g1();
+		} else if (opcode == 70) {
+			this.offsetx = buf.g2s() << 2;
+		} else if (opcode == 71) {
+			this.offsety = buf.g2s() << 2;
+		} else if (opcode == 72) {
+			this.offsetz = buf.g2s() << 2;
+		} else if (opcode == 73) {
+			this.forcedecor = true;
+		} else if (opcode == 74) {
+			this.breakroutefinding = true;
+		} else if (opcode == 75) {
+			this.raiseobject = buf.g1();
+		} else if (opcode == 77 || opcode == 92) {
+			this.multivarbit = buf.g2();
+			if (this.multivarbit == 65535) {
+				this.multivarbit = -1;
+			}
+
+			this.multivarp = buf.g2();
+			if (this.multivarp == 65535) {
+				this.multivarp = -1;
+			}
+
+			int defaultValue = -1;
+			if (opcode == 92) {
+				defaultValue = buf.g2();
+				if (defaultValue == 65535) {
+					defaultValue = -1;
 				}
-				local37 = arg0.g1();
-				this.aShortArray12 = new short[local37];
-				this.aShortArray14 = new short[local37];
-				for (local47 = 0; local47 < local37; local47++) {
-					this.aShortArray14[local47] = (short) arg0.g2();
-					this.aShortArray12[local47] = (short) arg0.g2();
+			}
+
+			int count = buf.g1();
+			this.multiloc = new int[count + 2];
+			for (int i = 0; i <= count; i++) {
+				this.multiloc[i] = buf.g2();
+				if (this.multiloc[i] == 65535) {
+					this.multiloc[i] = -1;
 				}
-				return;
 			}
-			local37 = arg0.g1();
-			this.aShortArray13 = new short[local37];
-			this.aShortArray15 = new short[local37];
-			for (local47 = 0; local47 < local37; local47++) {
-				this.aShortArray15[local47] = (short) arg0.g2();
-				this.aShortArray13[local47] = (short) arg0.g2();
+
+			this.multiloc[count + 1] = defaultValue;
+		} else if (opcode == 78) {
+			this.bgsound = buf.g2();
+			this.bgsoundradius = buf.g1();
+		} else if (opcode == 79) {
+			this.bgsoundmin = buf.g2();
+			this.bgsoundmax = buf.g2();
+			this.bgsoundradius = buf.g1();
+
+			int count = buf.g1();
+			this.bgsounds = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.bgsounds[i] = buf.g2();
 			}
-			return;
-		} else {
-			this.aStringArray6[arg1 - 30] = arg0.gjstr();
-			return;
+		} else if (opcode == 81) {
+			// treeskew
+			this.hillskewType = 2;
+			this.hillskewAmount = buf.g1() * 256;
+		} else if (opcode == 82) {
+			this.shouldRender = true;
+		} else if (opcode == 88) {
+			this.hardshadow = false;
+		} else if (opcode == 89) {
+			this.randseq = false;
+		} else if (opcode == 91) {
+			this.members = true;
+		} else if (opcode == 93) {
+			// rotateskew
+			this.hillskewType = 3;
+			this.hillskewAmount = buf.g2();
+		} else if (opcode == 94) {
+			// ceilingskew
+			this.hillskewType = 4;
+		} else if (opcode == 95) {
+			// skewtofit
+			this.hillskewType = 5;
+			this.hillskewAmount = buf.g2s();
+		} else if (opcode == 97) {
+			this.mapscenerotates = true;
+		} else if (opcode == 98) {
+			// todo: real name
+			this.hasAnimation = true;
+		} else if (opcode == 99) {
+			this.cursor1op = buf.g1();
+			this.cursor1 = buf.g2();
+		} else if (opcode == 100) {
+			this.cursor2op = buf.g1();
+			this.cursor2 = buf.g2();
+		} else if (opcode == 101) {
+			this.mapsceneangle = buf.g1();
+		} else if (opcode == 102) {
+			this.mapscene = buf.g2();
+		} else if (opcode == 103) {
+			this.occlude = 0;
+		} else if (opcode == 104) {
+			this.bgsoundvol = buf.g1();
+		} else if (opcode == 105) {
+			this.mapsceneflipy = true;
+		} else if (opcode == 106) {
+			int count = buf.g1();
+			int totalWeight = 0;
+
+			this.anims = new int[count];
+			this.animWeights = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.anims[i] = buf.g2();
+				if (this.anims[i] == 65535) {
+					this.anims[i] = -1;
+				}
+
+				totalWeight += this.animWeights[i] = buf.g1();
+			}
+
+			for (int i = 0; i < count; i++) {
+				this.animWeights[i] = this.animWeights[i] * 65535 / totalWeight;
+			}
+		} else if (opcode == 107) {
+			this.mel = buf.g2();
+		} else if (opcode >= 150 && opcode < 155) {
+			this.ops[opcode - 150] = buf.gjstr();
+			if (!this.locTypes.members) {
+				this.ops[opcode - 150] = null;
+			}
+		} else if (opcode == 160) {
+			int count = buf.g1();
+			this.quests = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.quests[i] = buf.g2();
+			}
+		} else if (opcode == 162) {
+			// rotateskew
+			this.hillskewType = 3;
+			this.hillskewAmount = buf.g4();
+		} else if (opcode == 163) {
+			// tint
+			this.hue = buf.g1b();
+			this.saturation = buf.g1b();
+			this.luminance = buf.g1b();
+			this.weight = buf.g1b();
+		} else if (opcode == 164) {
+			this.postoffsetx = buf.g2s();
+		} else if (opcode == 165) {
+			this.postoffsety = buf.g2s();
+		} else if (opcode == 166) {
+			this.postoffsetz = buf.g2s();
+		} else if (opcode == 167) {
+			this.decorheight = buf.g2();
+		} else if (opcode == 168) {
+			// todo: identify
+			this.aBoolean88 = true;
+		} else if (opcode == 169) {
+			// todo: identify
+			this.aBoolean92 = true;
+		} else if (opcode == 170) {
+			this.occludewidth = buf.gSamrt1or2();
+		} else if (opcode == 171) {
+			this.occludeheight = buf.gSamrt1or2();
+		} else if (opcode == 173) {
+			this.bgsoundratemin = buf.g2();
+			this.bgsoundratemax = buf.g2();
+		} else if (opcode == 177) {
+			// todo: identify
+			this.aBoolean91 = true;
+		} else if (opcode == 178) {
+			this.bgsounddistance = buf.g1();
+		} else if (opcode == 249) {
+			int count = buf.g1();
+
+			if (this.params == null) {
+				int buckets = IntUtils.clp2(count);
+				this.params = new HashTable(buckets);
+			}
+
+			for (int i = 0; i < count; i++) {
+				@Pc(872) boolean isString = buf.g1() == 1;
+				int id = buf.g3();
+
+				@Pc(885) Linkable node;
+				if (isString) {
+					node = new StringNode(buf.gjstr());
+				} else {
+					node = new IntNode(buf.g4());
+				}
+
+				this.params.put(id, node);
+			}
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Ljava/lang/String;IZ)Ljava/lang/String;")
-	public String method1297(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		if (this.aHashTable10 == null) {
-			return arg0;
+	public String getParam(@OriginalArg(0) String defaultValue, @OriginalArg(1) int id) {
+		if (this.params == null) {
+			return defaultValue;
 		} else {
-			@Pc(25) StringNode local25 = (StringNode) this.aHashTable10.get((long) arg1);
-			return local25 == null ? arg0 : local25.value;
+			@Pc(25) StringNode node = (StringNode) this.params.get(id);
+			return node == null ? defaultValue : node.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "(II)Z")
-	public boolean method1298(@OriginalArg(0) int arg0) {
-		if (this.anIntArray115 != null && arg0 != -1) {
-			for (@Pc(21) int local21 = 0; local21 < this.anIntArray115.length; local21++) {
-				if (arg0 == this.anIntArray115[local21]) {
+	public boolean hasAnim(@OriginalArg(0) int anim) {
+		if (this.anims != null && anim != -1) {
+			for (@Pc(21) int i = 0; i < this.anims.length; i++) {
+				if (anim == this.anims[i]) {
 					return true;
 				}
 			}
 		}
+
 		return false;
 	}
 
 	@OriginalMember(owner = "client!c", name = "c", descriptor = "(I)Z")
-	public boolean method1300() {
-		return this.anIntArray115 != null;
+	public boolean hasAnim() {
+		return this.anims != null;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(ILclient!uk;)Lclient!c;")
-	public LocType method1301(@OriginalArg(0) int arg0, @OriginalArg(1) Interface23 arg1) {
-		@Pc(5) int local5 = -1;
-		if (arg0 != 13) {
-			this.method1295();
+	public LocType getMultiLoc(@OriginalArg(1) VarDomain domain) {
+		@Pc(5) int value = -1;
+		if (this.multivarbit != -1) {
+			value = domain.method6864(this.multivarbit);
+		} else if (this.multivarp != -1) {
+			value = domain.method6865(this.multivarp);
 		}
-		if (this.anInt1247 != -1) {
-			local5 = arg1.method6864(this.anInt1247);
-		} else if (this.anInt1258 != -1) {
-			local5 = arg1.method6865(this.anInt1258);
-		}
-		if (local5 < 0 || this.anIntArray113.length - 1 <= local5 || this.anIntArray113[local5] == -1) {
-			@Pc(74) int local74 = this.anIntArray113[this.anIntArray113.length - 1];
-			return local74 == -1 ? null : this.aLocTypeList2.method3063(local74, arg0 + 99);
+
+		if (value < 0 || this.multiloc.length - 1 <= value || this.multiloc[value] == -1) {
+			@Pc(74) int id = this.multiloc[this.multiloc.length - 1];
+			return id == -1 ? null : this.locTypes.get(id);
 		} else {
-			return this.aLocTypeList2.method3063(this.anIntArray113[local5], 81);
+			return this.locTypes.get(this.multiloc[value]);
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(I)Z")
 	public boolean method1302() {
-		if (this.anIntArrayArray30 == null) {
+		if (this.models == null) {
 			return true;
 		}
-		@Pc(11) boolean local11 = true;
-		@Pc(15) Js5 local15 = this.aLocTypeList2.aJs544;
-		synchronized (this.aLocTypeList2.aJs544) {
-			for (@Pc(19) int local19 = 0; local19 < this.anIntArrayArray30.length; local19++) {
-				for (@Pc(22) int local22 = 0; local22 < this.anIntArrayArray30[local19].length; local22++) {
-					local11 &= this.aLocTypeList2.aJs544.method7586(0, this.anIntArrayArray30[local19][local22]);
+
+		@Pc(11) boolean success = true;
+		@Pc(15) Js5 modelArchive = this.locTypes.modelArchive;
+		synchronized (modelArchive) {
+			for (@Pc(19) int shape = 0; shape < this.models.length; shape++) {
+				for (@Pc(22) int model = 0; model < this.models[shape].length; model++) {
+					success &= this.locTypes.modelArchive.method7586(0, this.models[shape][model]);
 				}
 			}
-			return local11;
+
+			return success;
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "d", descriptor = "(I)Z")
-	public boolean method1303() {
-		if (this.anIntArray113 == null) {
-			return this.anInt1246 != -1 || this.anIntArray116 != null;
+	public boolean hasBgSound() {
+		if (this.multiloc == null) {
+			return this.bgsound != -1 || this.bgsounds != null;
 		}
-		for (@Pc(35) int local35 = 0; local35 < this.anIntArray113.length; local35++) {
-			if (this.anIntArray113[local35] != -1) {
-				@Pc(52) LocType local52 = this.aLocTypeList2.method3063(this.anIntArray113[local35], 59);
-				if (local52.anInt1246 != -1 || local52.anIntArray116 != null) {
+
+		for (@Pc(35) int i = 0; i < this.multiloc.length; i++) {
+			if (this.multiloc[i] != -1) {
+				@Pc(52) LocType type = this.locTypes.get(this.multiloc[i]);
+				if (type.bgsound != -1 || type.bgsounds != null) {
 					return true;
 				}
 			}
 		}
+
 		return false;
 	}
 
 	@OriginalMember(owner = "client!c", name = "c", descriptor = "(II)Z")
-	public boolean method1304(@OriginalArg(0) int arg0) {
-		if (this.anIntArrayArray30 == null) {
+	public boolean method1304(@OriginalArg(0) int shape) {
+		if (this.models == null) {
 			return true;
 		}
-		@Pc(13) Js5 local13 = this.aLocTypeList2.aJs544;
-		synchronized (this.aLocTypeList2.aJs544) {
-			for (@Pc(26) int local26 = 0; local26 < this.aByteArray13.length; local26++) {
-				if (arg0 == this.aByteArray13[local26]) {
-					for (@Pc(35) int local35 = 0; local35 < this.anIntArrayArray30[local26].length; local35++) {
-						if (!this.aLocTypeList2.aJs544.method7586(0, this.anIntArrayArray30[local26][local35])) {
+
+		@Pc(13) Js5 modelArchive = this.locTypes.modelArchive;
+		synchronized (modelArchive) {
+			for (@Pc(26) int i = 0; i < this.shapes.length; i++) {
+				if (shape == this.shapes[i]) {
+					for (@Pc(35) int j = 0; j < this.models[i].length; j++) {
+						if (!this.locTypes.modelArchive.method7586(0, this.models[i][j])) {
 							return false;
 						}
 					}
+
 					return true;
 				}
 			}
+
 			return true;
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "(BLclient!ge;)V")
-	public void method1305(@OriginalArg(1) Packet arg0) {
+	public void decode(@OriginalArg(1) Packet buf) {
 		while (true) {
-			@Pc(3) int local3 = arg0.g1();
-			if (local3 == 0) {
+			@Pc(3) int opcode = buf.g1();
+			if (opcode == 0) {
 				return;
 			}
-			this.method1296(arg0, local3);
+
+			this.decode(buf, opcode);
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "(I)V")
-	public void method1306() {
-		if (this.anInt1271 == -1) {
-			this.anInt1271 = 0;
-			if (this.aByteArray13 != null && this.aByteArray13.length == 1 && this.aByteArray13[0] == 10) {
-				this.anInt1271 = 1;
+	public void postDecode() {
+		if (this.active == -1) {
+			this.active = 0;
+
+			if (this.shapes != null && this.shapes.length == 1 && this.shapes[0] == 10) {
+				this.active = 1;
 			}
-			for (@Pc(43) int local43 = 0; local43 < 5; local43++) {
-				if (this.aStringArray6[local43] != null) {
-					this.anInt1271 = 1;
+
+			for (@Pc(43) int i = 0; i < 5; i++) {
+				if (this.ops[i] != null) {
+					this.active = 1;
 					break;
 				}
 			}
 		}
-		if (this.lb == -1) {
-			this.lb = this.anInt1242 == 0 ? 0 : 1;
+
+		if (this.raiseobject == -1) {
+			this.raiseobject = this.blockwalk == 0 ? 0 : 1;
 		}
-		if (this.method1300() || this.aBoolean93 || this.anIntArray113 != null) {
+
+		if (this.hasAnim() || this.hasAnimation || this.multiloc != null) {
 			this.aBoolean91 = true;
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "e", descriptor = "(I)I")
 	public int method1307() {
-		if (this.anIntArray115 != null) {
-			if (this.anIntArray115.length <= 1) {
-				return this.anIntArray115[0];
+		if (this.anims != null) {
+			if (this.anims.length <= 1) {
+				return this.anims[0];
 			}
-			@Pc(34) int local34 = (int) (Math.random() * 65535.0D);
-			for (@Pc(36) int local36 = 0; local36 < this.anIntArray115.length; local36++) {
-				if (local34 <= this.anIntArray114[local36]) {
-					return this.anIntArray115[local36];
+
+			@Pc(34) int chance = (int) (Math.random() * 65535.0D);
+			for (@Pc(36) int i = 0; i < this.anims.length; i++) {
+				if (chance <= this.animWeights[i]) {
+					return this.anims[i];
 				}
-				local34 -= this.anIntArray114[local36];
+
+				chance -= this.animWeights[i];
 			}
 		}
+
 		return -1;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IIILclient!s;ZBIILclient!ha;Lclient!gp;ILclient!s;)Lclient!od;")
-	public Class272 method1309(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class178 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class19 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class178 arg10) {
-		if (Static449.method6117(arg6)) {
-			arg6 = 4;
+	public Class272 method1309(@OriginalArg(0) int angle, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class178 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int shape, @OriginalArg(8) Class19 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class178 arg10) {
+		if (Static449.method6117(shape)) {
+			shape = 4;
 		}
-		@Pc(21) long local21 = (long) (arg0 + (this.anInt1256 << 10) + (arg6 << 3));
-		local21 |= (long) (arg7.anInt8962 << 29);
+
+		@Pc(21) long local21 = angle + ((long) this.id << 10) + ((long) shape << 3);
+		local21 |= (long) arg7.anInt8962 << 29;
 		if (arg8 != null) {
 			local21 |= arg8.aLong119 << 32;
 		}
+
 		@Pc(40) int local40 = arg9;
-		if (this.aByte12 == 3) {
+		if (this.hillskewType == 3) {
 			local40 = arg9 | 0x7;
 		} else {
-			if (this.aByte12 != 0 || this.anInt1213 != 0) {
+			if (this.hillskewType != 0 || this.postoffsety != 0) {
 				local40 = arg9 | 0x2;
 			}
-			if (this.anInt1214 != 0) {
+			if (this.postoffsetx != 0) {
 				local40 |= 0x1;
 			}
-			if (this.anInt1248 != 0) {
+			if (this.postoffsetz != 0) {
 				local40 |= 0x4;
 			}
 		}
+
 		if (arg4) {
 			local40 |= 0x40000;
 		}
-		@Pc(96) SoftLruHashTable local96 = this.aLocTypeList2.aSoftLruHashTable75;
+
+		@Pc(96) SoftLruHashTable cache = this.locTypes.aSoftLruHashTable75;
 		@Pc(106) Class272 local106;
-		synchronized (this.aLocTypeList2.aSoftLruHashTable75) {
-			local106 = (Class272) this.aLocTypeList2.aSoftLruHashTable75.method2156(local21);
+		synchronized (cache) {
+			local106 = (Class272) this.locTypes.aSoftLruHashTable75.method2156(local21);
 		}
-		@Pc(120) Model local120 = local106 == null ? null : local106.aModel7;
+
+		@Pc(120) Model local120 = local106 == null ? null : local106.model;
 		@Pc(122) SecondaryLinkable_Sub9 local122 = null;
 		if (local120 != null && arg7.method7960(local120.ua(), local40) == 0) {
-			local120 = local106.aModel7;
+			local120 = local106.model;
 			local122 = local106.aClass2_Sub2_Sub9_5;
 			if (arg4 && local122 == null) {
-				local122 = local106.aClass2_Sub2_Sub9_5 = local120.ba((SecondaryLinkable_Sub9) null);
+				local122 = local106.aClass2_Sub2_Sub9_5 = local120.ba(null);
 			}
 		} else {
 			if (local120 != null) {
 				local40 = arg7.method8013(local40, local120.ua());
 			}
 			@Pc(144) int local144 = local40;
-			if (arg6 == 10 && arg0 > 3) {
+			if (shape == 10 && angle > 3) {
 				local144 = local40 | 0x5;
 			}
-			local120 = this.method1314(arg7, local144, arg8, arg0, arg6);
+			local120 = this.getModel(arg7, local144, arg8, angle, shape);
 			if (local120 == null) {
 				return null;
 			}
-			if (arg6 == 10 && arg0 > 3) {
+			if (shape == 10 && angle > 3) {
 				local120.a(2048);
 			}
 			if (arg4) {
-				local122 = local120.ba((SecondaryLinkable_Sub9) null);
+				local122 = local120.ba(null);
 			}
 			local120.s(local40);
 			local106 = new Class272();
 			local106.aClass2_Sub2_Sub9_5 = local122;
-			local106.aModel7 = local120;
-			@Pc(210) SoftLruHashTable local210 = this.aLocTypeList2.aSoftLruHashTable75;
-			synchronized (this.aLocTypeList2.aSoftLruHashTable75) {
-				this.aLocTypeList2.aSoftLruHashTable75.method2150(local106, local21);
+			local106.model = local120;
+			@Pc(210) SoftLruHashTable local210 = this.locTypes.aSoftLruHashTable75;
+			synchronized (this.locTypes.aSoftLruHashTable75) {
+				this.locTypes.aSoftLruHashTable75.method2150(local106, local21);
 			}
 		}
-		@Pc(271) boolean local271 = this.aByte12 != 0 && (arg3 != null || arg10 != null);
-		@Pc(292) boolean local292 = this.anInt1214 != 0 || this.anInt1213 != 0 || this.anInt1248 != 0;
+
+		@Pc(271) boolean local271 = this.hillskewType != 0 && (arg3 != null || arg10 != null);
+		@Pc(292) boolean local292 = this.postoffsetx != 0 || this.postoffsety != 0 || this.postoffsetz != 0;
 		if (local271 || local292) {
 			local120 = local120.method7495((byte) 0, local40, true);
 			if (local271) {
-				local120.p(this.aByte12, this.anInt1252, arg3, arg10, arg2, arg5, arg1);
+				local120.p(this.hillskewType, this.hillskewAmount, arg3, arg10, arg2, arg5, arg1);
 			}
 			if (local292) {
-				local120.H(this.anInt1214, this.anInt1213, this.anInt1248);
+				local120.H(this.postoffsetx, this.postoffsety, this.postoffsetz);
 			}
 			local120.s(arg9);
 		} else {
 			local120 = local120.method7495((byte) 0, arg9, true);
 		}
-		Static270.aClass272_1.aModel7 = local120;
+
+		Static270.aClass272_1.model = local120;
 		Static270.aClass272_1.aClass2_Sub2_Sub9_5 = local122;
 		return Static270.aClass272_1;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IIIILclient!s;Lclient!gu;ILclient!ha;Lclient!s;Lclient!gp;II)Lclient!ka;")
-	public Model method1311(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(5) Class152 arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class178 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
+	public Model getModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class178 arg4, @OriginalArg(5) Class152 arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class178 arg7, @OriginalArg(9) Class150 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
 		if (Static449.method6117(arg2)) {
 			arg2 = 4;
 		}
-		@Pc(22) long local22 = (long) ((this.anInt1256 << 10) + ((arg2 << 3) + arg0));
+
+		@Pc(22) long local22 = ((long) this.id << 10) + (((long) arg2 << 3) + arg0);
 		@Pc(24) int local24 = arg9;
-		local22 |= (long) (arg6.anInt8962 << 29);
+		local22 |= (long) arg6.anInt8962 << 29;
 		if (arg8 != null) {
 			local22 |= arg8.aLong119 << 32;
 		}
+
 		if (arg5 != null) {
 			arg9 |= arg5.method9101();
 		}
-		if (this.aByte12 == 3) {
+
+		if (this.hillskewType == 3) {
 			arg9 |= 0x7;
 		} else {
-			if (this.aByte12 != 0 || this.anInt1213 != 0) {
+			if (this.hillskewType != 0 || this.postoffsety != 0) {
 				arg9 |= 0x2;
 			}
-			if (this.anInt1214 != 0) {
+			if (this.postoffsetx != 0) {
 				arg9 |= 0x1;
 			}
-			if (this.anInt1248 != 0) {
+			if (this.postoffsetz != 0) {
 				arg9 |= 0x4;
 			}
 		}
+
 		if (arg2 == 10 && arg0 > 3) {
 			arg9 |= 0x5;
 		}
-		@Pc(116) SoftLruHashTable local116 = this.aLocTypeList2.aSoftLruHashTable76;
+
+		@Pc(116) SoftLruHashTable local116 = this.locTypes.aSoftLruHashTable76;
 		@Pc(126) Model local126;
-		synchronized (this.aLocTypeList2.aSoftLruHashTable76) {
-			local126 = (Model) this.aLocTypeList2.aSoftLruHashTable76.method2156(local22);
+		synchronized (this.locTypes.aSoftLruHashTable76) {
+			local126 = (Model) this.locTypes.aSoftLruHashTable76.method2156(local22);
 		}
+
 		if (local126 == null || arg6.method7960(local126.ua(), arg9) != 0) {
 			if (local126 != null) {
 				arg9 = arg6.method8013(arg9, local126.ua());
 			}
-			local126 = this.method1314(arg6, arg9, arg8, arg0, arg2);
+			local126 = this.getModel(arg6, arg9, arg8, arg0, arg2);
 			if (local126 == null) {
 				return null;
 			}
-			local116 = this.aLocTypeList2.aSoftLruHashTable76;
-			synchronized (this.aLocTypeList2.aSoftLruHashTable76) {
-				this.aLocTypeList2.aSoftLruHashTable76.method2150(local126, local22);
+			local116 = this.locTypes.aSoftLruHashTable76;
+			synchronized (this.locTypes.aSoftLruHashTable76) {
+				this.locTypes.aSoftLruHashTable76.method2150(local126, local22);
 			}
 		}
+
 		@Pc(190) boolean local190 = false;
 		if (arg5 != null) {
 			local126 = local126.method7495((byte) 1, arg9, true);
 			local190 = true;
 			arg5.method9089(local126, arg0 & 0x3);
 		}
+
 		if (arg2 == 10 && arg0 > 3) {
 			if (!local190) {
 				local126 = local126.method7495((byte) 3, arg9, true);
@@ -900,96 +853,116 @@ public final class LocType {
 			}
 			local126.a(2048);
 		}
-		if (this.aByte12 != 0) {
+
+		if (this.hillskewType != 0) {
 			if (!local190) {
 				local190 = true;
 				local126 = local126.method7495((byte) 3, arg9, true);
 			}
-			local126.p(this.aByte12, this.anInt1252, arg7, arg4, arg3, arg10, arg1);
+			local126.p(this.hillskewType, this.hillskewAmount, arg7, arg4, arg3, arg10, arg1);
 		}
-		if (this.anInt1214 != 0 || this.anInt1213 != 0 || this.anInt1248 != 0) {
+
+		if (this.postoffsetx != 0 || this.postoffsety != 0 || this.postoffsetz != 0) {
 			if (!local190) {
 				local126 = local126.method7495((byte) 3, arg9, true);
 				local190 = true;
 			}
-			local126.H(this.anInt1214, this.anInt1213, this.anInt1248);
+			local126.H(this.postoffsetx, this.postoffsety, this.postoffsetz);
 		}
+
 		if (local190) {
 			local126.s(local24);
 		}
+
 		return local126;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!ha;ILclient!gp;BII)Lclient!ka;")
-	private Model method1314(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class150 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(8) int local8 = this.anInt1263 + 64;
-		@Pc(13) int local13 = this.anInt1254 + 850;
-		@Pc(15) int local15 = arg1;
-		@Pc(35) boolean local35 = this.aBoolean100 || arg4 == 2 && arg3 > 3;
-		if (local35) {
-			arg1 |= 0x10;
+	private Model getModel(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int key, @OriginalArg(2) Class150 arg2, @OriginalArg(4) int angle, @OriginalArg(5) int shape) {
+		@Pc(8) int ambient = this.ambient + 64;
+		@Pc(13) int contrast = this.contrast + 850;
+		@Pc(15) int local15 = key;
+
+		@Pc(35) boolean flipped = this.mirror || shape == 2 && angle > 3;
+		if (flipped) {
+			key |= 0x10;
 		}
-		if (arg3 == 0) {
-			if (this.anInt1218 != 128 || this.anInt1217 != 0) {
-				arg1 |= 0x1;
+
+		if (angle == 0) {
+			if (this.resizex != 128 || this.offsetx != 0) {
+				key |= 0x1;
 			}
-			if (this.anInt1241 != 128 || this.anInt1228 != 0) {
-				arg1 |= 0x4;
+			if (this.resizez != 128 || this.offsetz != 0) {
+				key |= 0x4;
 			}
 		} else {
-			arg1 |= 0xD;
+			key |= 0xD;
 		}
-		if (this.anInt1220 != 128 || this.anInt1259 != 0) {
-			arg1 |= 0x2;
+
+		if (this.resizey != 128 || this.offsety != 0) {
+			key |= 0x2;
 		}
-		if (this.aShortArray15 != null) {
-			arg1 |= 0x4000;
+
+		if (this.recol_d != null) {
+			key |= 0x4000;
 		}
-		if (this.aShortArray14 != null) {
-			arg1 |= 0x8000;
+
+		if (this.retex_d != null) {
+			key |= 0x8000;
 		}
-		if (this.aByte10 != 0) {
-			arg1 |= 0x80000;
+
+		if (this.weight != 0) {
+			key |= 0x80000;
 		}
+
 		@Pc(123) Model local123 = null;
-		if (this.aByteArray13 == null) {
+		if (this.shapes == null) {
 			return null;
 		}
-		@Pc(131) int local131 = -1;
-		for (@Pc(139) int local139 = 0; local139 < this.aByteArray13.length; local139++) {
-			if (this.aByteArray13[local139] == arg4) {
-				local131 = local139;
+
+		@Pc(131) int shapeIndex = -1;
+		for (@Pc(139) int i = 0; i < this.shapes.length; i++) {
+			if (this.shapes[i] == shape) {
+				shapeIndex = i;
 				break;
 			}
 		}
-		if (local131 == -1) {
+
+		if (shapeIndex == -1) {
 			return null;
 		}
-		@Pc(179) int[] local179 = arg2 == null || arg2.anIntArray286 == null ? this.anIntArrayArray30[local131] : arg2.anIntArray286;
+
+		@Pc(179) int[] local179 = arg2 == null || arg2.anIntArray286 == null ? this.models[shapeIndex] : arg2.anIntArray286;
 		@Pc(182) int local182 = local179.length;
+
 		@Pc(193) int local193;
 		if (local182 > 0) {
-			@Pc(191) long local191 = (long) arg0.anInt8962;
+			@Pc(191) long local191 = arg0.anInt8962;
 			for (local193 = 0; local193 < local182; local193++) {
 				local191 = local191 * 67783L + (long) local179[local193];
 			}
-			@Pc(211) SoftLruHashTable local211 = this.aLocTypeList2.aSoftLruHashTable74;
-			synchronized (this.aLocTypeList2.aSoftLruHashTable74) {
-				local123 = (Model) this.aLocTypeList2.aSoftLruHashTable74.method2156(local191);
+
+			@Pc(211) SoftLruHashTable local211 = this.locTypes.aSoftLruHashTable74;
+			synchronized (this.locTypes.aSoftLruHashTable74) {
+				local123 = (Model) this.locTypes.aSoftLruHashTable74.method2156(local191);
 			}
+
 			if (local123 != null) {
-				if (local123.WA() != local8) {
-					arg1 |= 0x1000;
+				if (local123.WA() != ambient) {
+					key |= 0x1000;
 				}
-				if (local13 != local123.da()) {
-					arg1 |= 0x2000;
+
+				if (contrast != local123.da()) {
+					key |= 0x2000;
 				}
 			}
-			if (local123 == null || arg0.method7960(local123.ua(), arg1) != 0) {
-				@Pc(265) int local265 = arg1 | 0x1F01F;
+
+			if (local123 == null || arg0.method7960(local123.ua(), key) != 0) {
+				@Pc(265) int local265 = key | 0x1F01F;
 				if (local123 != null) {
 					local265 = arg0.method8013(local265, local123.ua());
 				}
+
 				@Pc(275) Class88 local275 = null;
 				@Pc(277) Class88[] local277 = Static600.aClass88Array1;
 				synchronized (Static600.aClass88Array1) {
@@ -1001,9 +974,9 @@ public final class LocType {
 							}
 							break;
 						}
-						@Pc(286) Js5 local286 = this.aLocTypeList2.aJs544;
-						synchronized (this.aLocTypeList2.aJs544) {
-							local275 = Static121.method2201(local179[local281] & 0xFFFF, this.aLocTypeList2.aJs544);
+						@Pc(286) Js5 local286 = this.locTypes.modelArchive;
+						synchronized (this.locTypes.modelArchive) {
+							local275 = Static121.method2201(local179[local281] & 0xFFFF, this.locTypes.modelArchive);
 						}
 						if (local275 == null) {
 							return null;
@@ -1017,93 +990,109 @@ public final class LocType {
 						local281++;
 					}
 				}
-				local123 = arg0.method7952(local275, local265, this.aLocTypeList2.anInt3390, local8, local13);
-				@Pc(372) SoftLruHashTable local372 = this.aLocTypeList2.aSoftLruHashTable74;
-				synchronized (this.aLocTypeList2.aSoftLruHashTable74) {
-					this.aLocTypeList2.aSoftLruHashTable74.method2150(local123, local191);
+
+				local123 = arg0.method7952(local275, local265, this.locTypes.anInt3390, ambient, contrast);
+				@Pc(372) SoftLruHashTable local372 = this.locTypes.aSoftLruHashTable74;
+				synchronized (this.locTypes.aSoftLruHashTable74) {
+					this.locTypes.aSoftLruHashTable74.method2150(local123, local191);
 				}
 			}
 		}
+
 		if (local123 == null) {
 			return null;
 		}
-		@Pc(398) Model local398 = local123.method7495((byte) 0, arg1, true);
-		if (local8 != local123.WA()) {
-			local398.C(local8);
+
+		@Pc(398) Model model = local123.method7495((byte) 0, key, true);
+		if (ambient != local123.WA()) {
+			model.C(ambient);
 		}
-		if (local123.da() != local13) {
-			local398.LA(local13);
+
+		if (local123.da() != contrast) {
+			model.LA(contrast);
 		}
-		if (local35) {
-			local398.v();
+
+		if (flipped) {
+			model.v();
 		}
-		if (arg4 == 4 && arg3 > 3) {
-			local398.k(2048);
-			local398.H(180, 0, -180);
+
+		if (shape == 4 && angle > 3) {
+			model.k(2048);
+			model.H(180, 0, -180);
 		}
-		@Pc(448) int local448 = arg3 & 0x3;
+
+		@Pc(448) int local448 = angle & 0x3;
 		if (local448 == 1) {
-			local398.k(4096);
+			model.k(4096);
 		} else if (local448 == 2) {
-			local398.k(8192);
+			model.k(8192);
 		} else if (local448 == 3) {
-			local398.k(12288);
+			model.k(12288);
 		}
+
 		@Pc(490) short[] local490;
-		if (this.aShortArray15 != null) {
-			if (arg2 == null || arg2.aShortArray53 == null) {
-				local490 = this.aShortArray13;
+		if (this.recol_d != null) {
+			if (arg2 == null || arg2.recol_s == null) {
+				local490 = this.recol_s;
 			} else {
-				local490 = arg2.aShortArray53;
+				local490 = arg2.recol_s;
 			}
-			for (local193 = 0; local193 < this.aShortArray15.length; local193++) {
-				if (this.aByteArray14 == null || this.aByteArray14.length <= local193) {
-					local398.ia(this.aShortArray15[local193], local490[local193]);
+
+			for (local193 = 0; local193 < this.recol_d.length; local193++) {
+				if (this.recol_dpalette == null || this.recol_dpalette.length <= local193) {
+					model.ia(this.recol_d[local193], local490[local193]);
 				} else {
-					local398.ia(this.aShortArray15[local193], Static419.aShortArray96[this.aByteArray14[local193] & 0xFF]);
+					model.ia(this.recol_d[local193], Static419.aShortArray96[this.recol_dpalette[local193] & 0xFF]);
 				}
 			}
 		}
-		if (this.aShortArray14 != null) {
-			if (arg2 == null || arg2.aShortArray54 == null) {
-				local490 = this.aShortArray12;
+
+		if (this.retex_d != null) {
+			if (arg2 == null || arg2.retex_s == null) {
+				local490 = this.retex_s;
 			} else {
-				local490 = arg2.aShortArray54;
+				local490 = arg2.retex_s;
 			}
-			for (local193 = 0; local193 < this.aShortArray14.length; local193++) {
-				local398.aa(this.aShortArray14[local193], local490[local193]);
+
+			for (local193 = 0; local193 < this.retex_d.length; local193++) {
+				model.aa(this.retex_d[local193], local490[local193]);
 			}
 		}
-		if (this.aByte10 != 0) {
-			local398.method7488(this.aByte11, this.aByte13, this.aByte14, this.aByte10 & 0xFF);
+
+		if (this.weight != 0) {
+			model.a(this.hue, this.saturation, this.luminance, this.weight & 0xFF);
 		}
-		if (this.anInt1218 != 128 || this.anInt1220 != 128 || this.anInt1241 != 128) {
-			local398.O(this.anInt1218, this.anInt1220, this.anInt1241);
+
+		if (this.resizex != 128 || this.resizey != 128 || this.resizez != 128) {
+			model.O(this.resizex, this.resizey, this.resizez);
 		}
-		if (this.anInt1217 != 0 || this.anInt1259 != 0 || this.anInt1228 != 0) {
-			local398.H(this.anInt1217, this.anInt1259, this.anInt1228);
+
+		if (this.offsetx != 0 || this.offsety != 0 || this.offsetz != 0) {
+			model.H(this.offsetx, this.offsety, this.offsetz);
 		}
-		local398.s(local15);
-		return local398;
+
+		model.s(local15);
+		return model;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(BLclient!ge;)V")
-	private void method1315(@OriginalArg(1) Packet arg0) {
-		@Pc(12) int local12 = arg0.g1();
-		for (@Pc(14) int local14 = 0; local14 < local12; local14++) {
-			arg0.pos++;
-			@Pc(25) int local25 = arg0.g1();
-			arg0.pos += local25 * 2;
+	private void skipModels(@OriginalArg(1) Packet buf) {
+		@Pc(12) int shapeCount = buf.g1();
+		for (@Pc(14) int i = 0; i < shapeCount; i++) {
+			buf.pos++;
+
+			@Pc(25) int modelCount = buf.g1();
+			buf.pos += modelCount * 2;
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(III)I")
-	public int method1316(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		if (this.aHashTable10 == null) {
-			return arg0;
+	public int getParam(@OriginalArg(0) int defaultValue, @OriginalArg(2) int id) {
+		if (this.params == null) {
+			return defaultValue;
 		} else {
-			@Pc(17) IntNode local17 = (IntNode) this.aHashTable10.get((long) arg1);
-			return local17 == null ? arg0 : local17.value;
+			@Pc(17) IntNode node = (IntNode) this.params.get(id);
+			return node == null ? defaultValue : node.value;
 		}
 	}
 }

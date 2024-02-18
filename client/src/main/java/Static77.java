@@ -55,7 +55,7 @@ public final class Static77 {
 
 	@OriginalMember(owner = "client!ci", name = "b", descriptor = "(I)V")
 	public static void method1561() {
-		@Pc(8) int local8 = Static400.aClass2_Sub34_28.aClass57_Sub4_2.method2143();
+		@Pc(8) int local8 = Static400.aClass2_Sub34_28.aPreference_Sub4_2.method2143();
 		if (local8 == 0) {
 			Static328.aByteArrayArrayArray4 = null;
 			Static556.method7300(0);

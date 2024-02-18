@@ -127,7 +127,7 @@ public final class Linkable_Sub32 extends Linkable {
 			this.anInterface16_7 = null;
 			this.anInterface20_2 = null;
 		} else {
-			this.aHashTable25 = new HashTable(Static440.method5962(this.anInt5023));
+			this.aHashTable25 = new HashTable(IntUtils.clp2(this.anInt5023));
 			this.anInterface20_2 = this.aClass19_Sub1_11.method8122(false);
 			this.anInterface20_2.method8543(this.anInt5023);
 			@Pc(448) NativeHeapBuffer local448 = this.aClass19_Sub1_11.method8106(false, this.anInt5023 * 16);

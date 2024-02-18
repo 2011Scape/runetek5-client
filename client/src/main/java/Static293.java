@@ -166,7 +166,7 @@ public final class Static293 {
 			arg0.aServerProt_93 = null;
 			return true;
 		} else if (Static632.ServerProt229 == arg0.aServerProt_93) {
-			Static331.aString52 = arg0.anInt3648 <= 2 ? Static32.aLocalizedText26.method877(Static51.anInt1052) : local11.gjstr();
+			Static331.aString52 = arg0.anInt3648 <= 2 ? LocalizedText.WALK_HERE.get(Static51.anInt1052) : local11.gjstr();
 			Static331.anInt5439 = arg0.anInt3648 <= 0 ? -1 : local11.g2();
 			if (Static331.anInt5439 == 65535) {
 				Static331.anInt5439 = -1;
@@ -814,12 +814,12 @@ public final class Static293 {
 											@Pc(3044) byte[] local3044;
 											if (Static692.ServerProt251 == arg0.aServerProt_93) {
 												if (Static316.aFrame8 != null) {
-													Static409.method5657(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+													Static409.method5657(Static400.aClass2_Sub34_28.aPreference_Sub1_1.method1485(), -1, false, -1);
 												}
 												local3044 = new byte[arg0.anInt3648];
 												local11.pdataisaac(local3044, arg0.anInt3648);
 												local627 = Static350.method5126(0, local3044, arg0.anInt3648);
-												Static664.method8655(Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 1, local627, true, Static446.aSignlink6);
+												Static664.method8655(Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1, local627, true, Static446.aSignlink6);
 												arg0.aServerProt_93 = null;
 												return true;
 											} else if (arg0.aServerProt_93 == Static444.ServerProt169) {
@@ -1525,14 +1525,14 @@ public final class Static293 {
 																	return true;
 																} else if (Static272.ServerProt112 == arg0.aServerProt_93) {
 																	if (Static316.aFrame8 != null) {
-																		Static409.method5657(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+																		Static409.method5657(Static400.aClass2_Sub34_28.aPreference_Sub1_1.method1485(), -1, false, -1);
 																	}
 																	local3044 = new byte[arg0.anInt3648];
 																	local11.pdataisaac(local3044, arg0.anInt3648);
 																	local627 = Static350.method5126(0, local3044, arg0.anInt3648);
 																	local629 = "opensn";
 																	if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local627, local629, 1).anInt6789 == 2) {
-																		Static259.method3693(local627, local629, Static446.aSignlink6, Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 1, true);
+																		Static259.method3693(local627, local629, Static446.aSignlink6, Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1, true);
 																	}
 																	arg0.aServerProt_93 = null;
 																	return true;

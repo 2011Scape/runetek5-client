@@ -12,7 +12,7 @@ public final class Static371 {
 		local22.aPacketBit_1.p1(Static36.method978(3));
 		local22.aPacketBit_1.p2(Static680.anInt10289);
 		local22.aPacketBit_1.p2(Static380.anInt5979);
-		local22.aPacketBit_1.p1(Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4373());
+		local22.aPacketBit_1.p1(Static400.aClass2_Sub34_28.aPreference_Sub13_1.method4373());
 		Static405.aClass153_2.method3275(local22);
 	}
 }

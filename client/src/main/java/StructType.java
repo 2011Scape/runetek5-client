@@ -17,7 +17,7 @@ public final class StructType extends SecondaryLinkable {
 		@Pc(6) int local6 = arg1.g1();
 		@Pc(13) int local13;
 		if (this.aHashTable1 == null) {
-			local13 = Static440.method5962(local6);
+			local13 = IntUtils.clp2(local6);
 			this.aHashTable1 = new HashTable(local13);
 		}
 		for (local13 = 0; local13 < local6; local13++) {

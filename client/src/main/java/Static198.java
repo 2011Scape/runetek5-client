@@ -9,67 +9,67 @@ public final class Static198 {
 	private static Class aClass9;
 
 	@OriginalMember(owner = "client!gca", name = "D", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_1 = new Class140(0, Static32.aLocalizedText16, Static32.aLocalizedText16, 0, 1);
+	public static final Class140 aClass140_1 = new Class140(0, LocalizedText.CHECKING_FOR_UPDATES, LocalizedText.CHECKING_FOR_UPDATES, 0, 1);
 
 	@OriginalMember(owner = "client!gca", name = "q", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_2 = new Class140(1, Static32.aLocalizedText16, 2);
+	public static final Class140 aClass140_2 = new Class140(1, LocalizedText.CHECKING_FOR_UPDATES, 2);
 
 	@OriginalMember(owner = "client!gca", name = "H", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_3 = new Class140(2, Static32.aLocalizedText16, Static32.aLocalizedText16, 2, 3);
+	public static final Class140 aClass140_3 = new Class140(2, LocalizedText.CHECKING_FOR_UPDATES, LocalizedText.CHECKING_FOR_UPDATES, 2, 3);
 
 	@OriginalMember(owner = "client!gca", name = "B", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_4 = new Class140(3, Static32.aLocalizedText16, 3);
+	public static final Class140 aClass140_4 = new Class140(3, LocalizedText.CHECKING_FOR_UPDATES, 3);
 
 	@OriginalMember(owner = "client!gca", name = "t", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_5 = new Class140(4, Static32.aLocalizedText16, Static32.aLocalizedText16, 3, 4);
+	public static final Class140 aClass140_5 = new Class140(4, LocalizedText.CHECKING_FOR_UPDATES, LocalizedText.CHECKING_FOR_UPDATES, 3, 4);
 
 	@OriginalMember(owner = "client!gca", name = "f", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_6 = new Class140(5, Static32.aLocalizedText16, 4);
+	public static final Class140 aClass140_6 = new Class140(5, LocalizedText.CHECKING_FOR_UPDATES, 4);
 
 	@OriginalMember(owner = "client!gca", name = "b", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_7 = new Class140(6, Static32.aLocalizedText16, 4);
+	public static final Class140 aClass140_7 = new Class140(6, LocalizedText.CHECKING_FOR_UPDATES, 4);
 
 	@OriginalMember(owner = "client!gca", name = "F", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_8 = new Class140(7, Static32.aLocalizedText16, Static32.aLocalizedText16, 4, 5);
+	public static final Class140 aClass140_8 = new Class140(7, LocalizedText.CHECKING_FOR_UPDATES, LocalizedText.CHECKING_FOR_UPDATES, 4, 5);
 
 	@OriginalMember(owner = "client!gca", name = "z", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_9 = new Class140(8, Static32.aLocalizedText16, Static32.aLocalizedText16, 5, 98, true, true);
+	public static final Class140 aClass140_9 = new Class140(8, LocalizedText.CHECKING_FOR_UPDATES, LocalizedText.CHECKING_FOR_UPDATES, 5, 98, true, true);
 
 	@OriginalMember(owner = "client!gca", name = "a", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_10 = new Class140(9, Static32.aLocalizedText16, 99);
+	public static final Class140 aClass140_10 = new Class140(9, LocalizedText.CHECKING_FOR_UPDATES, 99);
 
 	@OriginalMember(owner = "client!gca", name = "u", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_11 = new Class140(10, Static32.aLocalizedText16, 100);
+	public static final Class140 aClass140_11 = new Class140(10, LocalizedText.CHECKING_FOR_UPDATES, 100);
 
 	@OriginalMember(owner = "client!gca", name = "K", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_12 = new Class140(11, Static32.aLocalizedText17, Static32.aLocalizedText17, 0, 92, true, true);
+	public static final Class140 aClass140_12 = new Class140(11, LocalizedText.FETCHING_UPDATES, LocalizedText.FETCHING_UPDATES, 0, 92, true, true);
 
 	@OriginalMember(owner = "client!gca", name = "o", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_13 = new Class140(12, Static32.aLocalizedText17, Static32.aLocalizedText17, 92, 92);
+	public static final Class140 aClass140_13 = new Class140(12, LocalizedText.FETCHING_UPDATES, LocalizedText.FETCHING_UPDATES, 92, 92);
 
 	@OriginalMember(owner = "client!gca", name = "c", descriptor = "Lclient!gca;")
-	private static final Class140 aClass140_14 = new Class140(13, Static32.aLocalizedText17, Static32.aLocalizedText17, 92, 93);
+	private static final Class140 aClass140_14 = new Class140(13, LocalizedText.FETCHING_UPDATES, LocalizedText.FETCHING_UPDATES, 92, 93);
 
 	@OriginalMember(owner = "client!gca", name = "k", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_15 = new Class140(14, Static32.aLocalizedText17, Static32.aLocalizedText17, 94, 95);
+	public static final Class140 aClass140_15 = new Class140(14, LocalizedText.FETCHING_UPDATES, LocalizedText.FETCHING_UPDATES, 94, 95);
 
 	@OriginalMember(owner = "client!gca", name = "x", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_16 = new Class140(15, Static32.aLocalizedText17, Static32.aLocalizedText17, 96, 97);
+	public static final Class140 aClass140_16 = new Class140(15, LocalizedText.FETCHING_UPDATES, LocalizedText.FETCHING_UPDATES, 96, 97);
 
 	@OriginalMember(owner = "client!gca", name = "j", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_17 = new Class140(16, Static32.aLocalizedText17, 97);
+	public static final Class140 aClass140_17 = new Class140(16, LocalizedText.FETCHING_UPDATES, 97);
 
 	@OriginalMember(owner = "client!gca", name = "n", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_18 = new Class140(17, Static32.aLocalizedText17, 97);
+	public static final Class140 aClass140_18 = new Class140(17, LocalizedText.FETCHING_UPDATES, 97);
 
 	@OriginalMember(owner = "client!gca", name = "m", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_19 = new Class140(18, Static32.aLocalizedText17, 100);
+	public static final Class140 aClass140_19 = new Class140(18, LocalizedText.FETCHING_UPDATES, 100);
 
 	@OriginalMember(owner = "client!gca", name = "I", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_20 = new Class140(19, Static32.aLocalizedText17, 100);
+	public static final Class140 aClass140_20 = new Class140(19, LocalizedText.FETCHING_UPDATES, 100);
 
 	@OriginalMember(owner = "client!gca", name = "C", descriptor = "Lclient!gca;")
-	public static final Class140 aClass140_21 = new Class140(20, Static32.aLocalizedText17, 100);
+	public static final Class140 aClass140_21 = new Class140(20, LocalizedText.FETCHING_UPDATES, 100);
 
 	@OriginalMember(owner = "client!gca", name = "e", descriptor = "I")
 	public static int anInt3276 = 0;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class272 {
 
 	@OriginalMember(owner = "client!od", name = "j", descriptor = "Lclient!ka;")
-	public Model aModel7;
+	public Model model;
 
 	@OriginalMember(owner = "client!od", name = "m", descriptor = "Lclient!r;")
 	public SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_5;

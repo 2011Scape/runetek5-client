@@ -134,7 +134,7 @@ public final class Linkable_Sub33 extends Linkable {
 		} else {
 			this.aPacket_8 = new Packet(this.anInt5447 * 2);
 			this.aClass2_Sub21_Sub1_2 = new PacketGl(this.anInt5447 * 16);
-			this.aHashTable26 = new HashTable(Static440.method5962(this.anInt5447));
+			this.aHashTable26 = new HashTable(IntUtils.clp2(this.anInt5447));
 			local148 = 0;
 			local121 = 0;
 			for (local178 = this.anInt5449; local178 <= this.anInt5454; local178++) {

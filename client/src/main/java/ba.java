@@ -2,6 +2,7 @@ import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
+// sw3d: do not rename!
 @OriginalClass("client!ba")
 public final class ba extends SecondaryLinkable_Sub9 implements Interface5 {
 

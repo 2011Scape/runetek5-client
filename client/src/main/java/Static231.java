@@ -177,7 +177,7 @@ public final class Static231 {
 				return;
 			}
 		} catch (@Pc(323) Exception local323) {
-			Static79.method1579(Static32.aLocalizedText2.method877(Static51.anInt1052));
+			Static79.method1579(LocalizedText.ERROR_EXECUTING.get(Static51.anInt1052));
 			return;
 		}
 		if (Static446.aClass355_5 != Static2.aClass355_1 || Static608.anInt9290 >= 2) {
@@ -341,9 +341,9 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("tk0")) {
 					Static32.method880(0, false);
-					if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 0) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 0) {
 						Static79.method1579("Entered tk0");
-						Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+						Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 						Static666.method8693(1);
 						Static503.aBoolean578 = false;
 						return;
@@ -353,9 +353,9 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("tk1")) {
 					Static32.method880(1, false);
-					if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 1) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1) {
 						Static79.method1579("Entered tk1");
-						Static400.aClass2_Sub34_28.method5104(1, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+						Static400.aClass2_Sub34_28.method5104(1, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 						Static666.method8693(1);
 						Static503.aBoolean578 = false;
 						return;
@@ -365,9 +365,9 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("tk2")) {
 					Static32.method880(2, false);
-					if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 2) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 2) {
 						Static79.method1579("Entered tk2");
-						Static400.aClass2_Sub34_28.method5104(2, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+						Static400.aClass2_Sub34_28.method5104(2, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 						Static666.method8693(1);
 						Static503.aBoolean578 = false;
 						return;
@@ -377,21 +377,21 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("tk3")) {
 					Static32.method880(3, false);
-					if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() != 3) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() != 3) {
 						Static79.method1579("Failed to enter tk3");
 						return;
 					}
 					Static79.method1579("Entered tk3");
-					Static400.aClass2_Sub34_28.method5104(3, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+					Static400.aClass2_Sub34_28.method5104(3, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 					Static666.method8693(1);
 					Static503.aBoolean578 = false;
 					return;
 				}
 				if (arg2.equalsIgnoreCase("tk5")) {
 					Static32.method880(5, false);
-					if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 5) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 5) {
 						Static79.method1579("Entered tk5");
-						Static400.aClass2_Sub34_28.method5104(5, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+						Static400.aClass2_Sub34_28.method5104(5, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 						Static666.method8693(1);
 						Static503.aBoolean578 = false;
 						return;
@@ -406,10 +406,10 @@ public final class Static231 {
 					}
 					local501 = Static647.method8473(arg2.substring(6));
 					if (local501 >= 0 && local501 <= Static461.method6268(Static369.anInt4265)) {
-						Static400.aClass2_Sub34_28.method5104(local501, Static400.aClass2_Sub34_28.aClass57_Sub5_1);
+						Static400.aClass2_Sub34_28.method5104(local501, Static400.aClass2_Sub34_28.aPreference_Sub5_1);
 						Static666.method8693(1);
 						Static503.aBoolean578 = false;
-						Static79.method1579("maxbuildarea=" + Static400.aClass2_Sub34_28.aClass57_Sub5_1.method2172());
+						Static79.method1579("maxbuildarea=" + Static400.aClass2_Sub34_28.aPreference_Sub5_1.method2172());
 						return;
 					}
 					Static79.method1579("Invalid buildarea value");
@@ -663,7 +663,7 @@ public final class Static231 {
 				}
 				if (arg2.equals("autosetup")) {
 					Static519.method6831();
-					Static79.method1579("Complete. Toolkit now: " + Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915());
+					Static79.method1579("Complete. Toolkit now: " + Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915());
 					return;
 				}
 				if (arg2.equals("errormessage")) {
@@ -699,11 +699,11 @@ public final class Static231 {
 						return;
 					}
 					local725 = Static647.method8473(arg2.substring(local501 + 1));
-					Static400.aClass2_Sub34_28.method5104(local725, Static400.aClass2_Sub34_28.aClass57_Sub3_1);
+					Static400.aClass2_Sub34_28.method5104(local725, Static400.aClass2_Sub34_28.aPreference_Sub3_1);
 					Static666.method8693(1);
 					Static503.aBoolean578 = false;
 					Static498.method6646();
-					if (local725 != Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2120()) {
+					if (local725 != Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2120()) {
 						Static79.method1579("Failed to change ortho mode");
 						return;
 					}
@@ -711,7 +711,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.startsWith("orthozoom ")) {
-					if (Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2120() == 0) {
+					if (Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2120() == 0) {
 						Static79.method1579("enable ortho mode first (use 'ortho <n>')");
 						return;
 					}
@@ -735,8 +735,8 @@ public final class Static231 {
 				}
 				if (arg2.startsWith("skydetail ")) {
 					local501 = Static647.method8473(arg2.substring(arg2.indexOf(32) + 1));
-					Static400.aClass2_Sub34_28.method5104(local501, Static400.aClass2_Sub34_28.aClass57_Sub2_1);
-					Static79.method1579("skydetail is " + (Static400.aClass2_Sub34_28.aClass57_Sub2_1.method1989() == 0 ? "low" : "high"));
+					Static400.aClass2_Sub34_28.method5104(local501, Static400.aClass2_Sub34_28.aPreference_Sub2_1);
+					Static79.method1579("skydetail is " + (Static400.aClass2_Sub34_28.aPreference_Sub2_1.method1989() == 0 ? "low" : "high"));
 					return;
 				}
 				@Pc(2592) File local2592;
@@ -817,12 +817,12 @@ public final class Static231 {
 					return;
 				}
 			} catch (@Pc(2894) Exception local2894) {
-				Static79.method1579(Static32.aLocalizedText2.method877(Static51.anInt1052));
+				Static79.method1579(LocalizedText.ERROR_EXECUTING.get(Static51.anInt1052));
 				return;
 			}
 		}
 		if (Static283.anInt4574 != 11) {
-			Static79.method1579(Static32.aLocalizedText3.method877(Static51.anInt1052) + arg2);
+			Static79.method1579(LocalizedText.UNKNOWN_COMMAND.get(Static51.anInt1052) + arg2);
 		}
 	}
 
@@ -832,7 +832,7 @@ public final class Static231 {
 			return;
 		}
 		if (Static436.anInt3849 >= 100) {
-			Static67.method6098(Static32.aLocalizedText39.method877(Static51.anInt1052));
+			Static67.method6098(LocalizedText.IGNORE_FULL.get(Static51.anInt1052));
 			return;
 		}
 		@Pc(27) String local27 = Static390.method5492(arg1);
@@ -843,13 +843,13 @@ public final class Static231 {
 		for (@Pc(33) int local33 = 0; local33 < Static436.anInt3849; local33++) {
 			@Pc(40) String local40 = Static390.method5492(Static632.aStringArray44[local33]);
 			if (local40 != null && local40.equals(local27)) {
-				Static67.method6098(arg1 + Static32.aLocalizedText40.method877(Static51.anInt1052));
+				Static67.method6098(arg1 + LocalizedText.IGNORE_ALREADY_ADDED.get(Static51.anInt1052));
 				return;
 			}
 			if (Static10.aStringArray1[local33] != null) {
 				local76 = Static390.method5492(Static10.aStringArray1[local33]);
 				if (local76 != null && local76.equals(local27)) {
-					Static67.method6098(arg1 + Static32.aLocalizedText40.method877(Static51.anInt1052));
+					Static67.method6098(arg1 + LocalizedText.IGNORE_ALREADY_ADDED.get(Static51.anInt1052));
 					return;
 				}
 			}
@@ -857,19 +857,19 @@ public final class Static231 {
 		for (@Pc(106) int local106 = 0; local106 < Static327.anInt5392; local106++) {
 			local76 = Static390.method5492(Static330.aStringArray25[local106]);
 			if (local76 != null && local76.equals(local27)) {
-				Static67.method6098(Static32.aLocalizedText45.method877(Static51.anInt1052) + arg1 + Static32.aLocalizedText46.method877(Static51.anInt1052));
+				Static67.method6098(LocalizedText.FRIEND_REMOVE_PRE.get(Static51.anInt1052) + arg1 + LocalizedText.FRIEND_REMOVE_POST.get(Static51.anInt1052));
 				return;
 			}
 			if (Static572.aStringArray42[local106] != null) {
 				@Pc(154) String local154 = Static390.method5492(Static572.aStringArray42[local106]);
 				if (local154 != null && local154.equals(local27)) {
-					Static67.method6098(Static32.aLocalizedText45.method877(Static51.anInt1052) + arg1 + Static32.aLocalizedText46.method877(Static51.anInt1052));
+					Static67.method6098(LocalizedText.FRIEND_REMOVE_PRE.get(Static51.anInt1052) + arg1 + LocalizedText.FRIEND_REMOVE_POST.get(Static51.anInt1052));
 					return;
 				}
 			}
 		}
 		if (Static390.method5492(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9).equals(local27)) {
-			Static67.method6098(Static32.aLocalizedText42.method877(Static51.anInt1052));
+			Static67.method6098(LocalizedText.IGNORE_CANNOT_ADD_SELF.get(Static51.anInt1052));
 			return;
 		}
 		@Pc(216) Class153 local216 = Static668.method8701();

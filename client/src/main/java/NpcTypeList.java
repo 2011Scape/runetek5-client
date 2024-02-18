@@ -47,8 +47,8 @@ public final class NpcTypeList {
 			@Pc(44) int local44 = this.aJs5101.method7597() - 1;
 			this.aJs5101.method7608(local44);
 		}
-		if (Static673.aModeGame8 == this.aModeGame6) {
-			this.aStringArray39 = new String[] { null, null, null, null, null, Static32.aLocalizedText22.method877(this.anInt8086) };
+		if (ModeGame.GAME_RUNESCAPE == this.aModeGame6) {
+			this.aStringArray39 = new String[] { null, null, null, null, null, LocalizedText.EXAMINE.get(this.anInt8086) };
 		} else {
 			this.aStringArray39 = new String[] { null, null, null, null, null, null };
 		}

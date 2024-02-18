@@ -17,7 +17,7 @@ public final class Static588 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(I)V")
 	public static void method7713() {
-		Static425.aClass19_13.xa(((float) Static400.aClass2_Sub34_28.aClass57_Sub22_1.method6769() * 0.1F + 0.7F) * Static318.aFloat210);
+		Static425.aClass19_13.xa(((float) Static400.aClass2_Sub34_28.aPreference_Sub22_1.method6769() * 0.1F + 0.7F) * Static318.aFloat210);
 		Static425.aClass19_13.ZA(Static448.anInt6801, Static688.aFloat216, Static683.aFloat215, (float) (Static344.anInt5617 << 2), (float) (Static417.anInt6400 << 2), (float) (Static331.anInt5441 << 2));
 		Static425.aClass19_13.method7973(Static425.aClass67_6);
 	}

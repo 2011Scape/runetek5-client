@@ -23,7 +23,7 @@ public final class Static574 {
 			}
 			Static163.aClass19_17.method8019(Static434.aCanvas7);
 		} else {
-			Static32.method880(Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915(), false);
+			Static32.method880(Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915(), false);
 		}
 		Static469.method6362();
 		Static75.aBoolean521 = true;

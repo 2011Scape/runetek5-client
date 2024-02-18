@@ -3584,7 +3584,7 @@ public final class Model_Sub1 extends Model {
 
 	@OriginalMember(owner = "client!eu", name = "a", descriptor = "(IIII)V")
 	@Override
-	public void method7488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(16) int local16;
 		for (@Pc(7) int local7 = 0; local7 < this.anInt2715; local7++) {
 			local16 = this.aShortArray40[local7] & 0xFFFF;

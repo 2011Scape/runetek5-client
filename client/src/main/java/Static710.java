@@ -32,7 +32,7 @@ public final class Static710 {
 		}
 		@Pc(36) int local36;
 		@Pc(38) int local38;
-		if (Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5960() == 1) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 1) {
 			local36 = 0;
 			local38 = 3;
 		} else {

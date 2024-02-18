@@ -22,17 +22,17 @@ public final class Static38 {
 			Static147.method2419(local17, arg2, 0, true, arg0, 0, local10, 0);
 			return;
 		}
-		@Pc(62) LocType local62 = Static354.aLocTypeList4.method3063(local29, 63);
+		@Pc(62) LocType local62 = Static354.aLocTypeList4.get(local29);
 		@Pc(75) int local75;
 		@Pc(78) int local78;
 		if (local17 == 0 || local17 == 2) {
-			local75 = local62.anInt1270;
-			local78 = local62.anInt1229;
+			local75 = local62.width;
+			local78 = local62.length;
 		} else {
-			local75 = local62.anInt1229;
-			local78 = local62.anInt1270;
+			local75 = local62.length;
+			local78 = local62.width;
 		}
-		@Pc(88) int local88 = local62.anInt1261;
+		@Pc(88) int local88 = local62.forceapproach;
 		if (local17 != 0) {
 			local88 = (local88 << local17 & 0xF) + (local88 >> 4 - local17);
 		}

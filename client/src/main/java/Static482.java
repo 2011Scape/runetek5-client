@@ -18,7 +18,7 @@ public final class Static482 {
 
 	@OriginalMember(owner = "client!pda", name = "a", descriptor = "(IIIB)V")
 	public static void method6481(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(12) int local12 = Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() * arg0 >> 8;
+		@Pc(12) int local12 = Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() * arg0 >> 8;
 		if (local12 == 0 || arg1 == -1) {
 			return;
 		}

@@ -65,7 +65,7 @@ public final class Class190 implements Runnable {
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(Z)V")
 	public void method4225() {
-		this.anInputStream1 = new InputStream_Sub1();
+		this.anInputStream1 = new BrokenInputStream2();
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(B)V")

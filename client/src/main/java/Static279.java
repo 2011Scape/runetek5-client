@@ -21,7 +21,7 @@ public final class Static279 {
 		for (@Pc(35) int local35 = 0; local35 < Static393.aStringArray32.length; local35++) {
 			Static393.aStringArray32[local35] = "";
 		}
-		Static79.method1579(Static32.aLocalizedText1.method877(Static51.anInt1052));
+		Static79.method1579(LocalizedText.DEVELOPER_HELP.get(Static51.anInt1052));
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(III)Z")

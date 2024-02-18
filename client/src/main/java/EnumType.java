@@ -101,7 +101,7 @@ public final class EnumType {
 			return;
 		}
 		@Pc(21) String[] local21 = (String[]) this.anObject3;
-		@Pc(26) int local26 = Static440.method5962(local21.length);
+		@Pc(26) int local26 = IntUtils.clp2(local21.length);
 		this.aHashTable9 = new HashTable(local26);
 		@Pc(37) HashTable local37 = new HashTable(local26);
 		for (@Pc(39) int local39 = 0; local39 < local21.length; local39++) {
@@ -204,7 +204,7 @@ public final class EnumType {
 			@Pc(69) int local69;
 			if (arg0 == 5 || arg0 == 6) {
 				this.anInt1144 = arg1.g2();
-				@Pc(62) HashTable local62 = new HashTable(Static440.method5962(this.anInt1144));
+				@Pc(62) HashTable local62 = new HashTable(IntUtils.clp2(this.anInt1144));
 				for (@Pc(64) int local64 = 0; local64 < this.anInt1144; local64++) {
 					local69 = arg1.g4();
 					@Pc(79) Linkable local79;
@@ -270,7 +270,7 @@ public final class EnumType {
 			return;
 		}
 		@Pc(140) Integer[] local140 = (Integer[]) this.anObject3;
-		@Pc(145) int local145 = Static440.method5962(local140.length);
+		@Pc(145) int local145 = IntUtils.clp2(local140.length);
 		this.aHashTable9 = new HashTable(local145);
 		@Pc(156) HashTable local156 = new HashTable(local145);
 		@Pc(168) int local168;

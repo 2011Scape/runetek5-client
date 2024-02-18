@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!gl")
-public final class Class147 implements Interface23 {
+public final class Class147 implements VarDomain {
 
 	@OriginalMember(owner = "client!gl", name = "a", descriptor = "(II)I")
 	@Override

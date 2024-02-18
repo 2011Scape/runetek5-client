@@ -146,7 +146,7 @@ public final class Static84 {
 	public static void method1655() {
 		@Pc(1) int local1 = Static338.anInt5564;
 		@Pc(3) int[] local3 = Static210.anIntArray280;
-		@Pc(8) int local8 = Static400.aClass2_Sub34_28.aClass57_Sub27_1.method7667();
+		@Pc(8) int local8 = Static400.aClass2_Sub34_28.aPreference_Sub27_1.method7667();
 		@Pc(30) boolean local30 = local8 == 1 && local1 > 200 || local8 == 0 && local1 > 50;
 		@Pc(103) int local103;
 		for (@Pc(32) int local32 = 0; local32 < local1; local32++) {
@@ -581,7 +581,7 @@ public final class Static84 {
 									if (local6.anInt3806 == Static188.anInt3104 || local6.anInt3806 == Static190.anInt3113) {
 										Static610.aComponent16 = local6;
 										if (Static456.aClass148_3 != null) {
-											Static456.aClass148_3.method3168(Static400.aClass2_Sub34_28.aClass57_Sub2_1.method1989(), local6.anInt3746, Static163.aClass19_17);
+											Static456.aClass148_3.method3168(Static400.aClass2_Sub34_28.aPreference_Sub2_1.method1989(), local6.anInt3746, Static163.aClass19_17);
 										}
 										if (local6.anInt3806 == Static188.anInt3104) {
 											if (Static400.aBoolean622 || arg10 < local30 || arg11 < local32 || arg10 >= local34 || arg11 >= local36) {
@@ -648,7 +648,7 @@ public final class Static84 {
 											continue;
 										}
 										if (Static392.aModeGame4 == Static723.aModeGame9) {
-											Static416.method5707(false, -1, 1L, local1191, local1199, Static32.aLocalizedText27.method877(Static51.anInt1052), 11, true, -1, "", 0L, true);
+											Static416.method5707(false, -1, 1L, local1191, local1199, LocalizedText.FACE_HERE.get(Static51.anInt1052), 11, true, -1, "", 0L, true);
 										}
 										Static416.method5707(false, -1, 1L, local1191, local1199, Static331.aString52, 58, true, Static331.anInt5439, "", 0L, true);
 										continue;
@@ -994,7 +994,7 @@ public final class Static84 {
 								}
 							}
 							if (local6.anInt3820 == 5 && local6.anInt3824 != -1) {
-								local6.method3405(Static99.aSkyBoxSphereTypeList1, Static324.aSkyBoxTypeList1).method3168(Static400.aClass2_Sub34_28.aClass57_Sub2_1.method1989(), local6.anInt3746, Static163.aClass19_17);
+								local6.method3405(Static99.aSkyBoxSphereTypeList1, Static324.aSkyBoxTypeList1).method3168(Static400.aClass2_Sub34_28.aPreference_Sub2_1.method1989(), local6.anInt3746, Static163.aClass19_17);
 							}
 							Static542.method7202(local6);
 							if (local6.anInt3820 == 0) {
@@ -1004,7 +1004,7 @@ public final class Static84 {
 								}
 								@Pc(2824) SubInterface local2824 = (SubInterface) Static548.aHashTable40.get((long) local6.anInt3812);
 								if (local2824 != null) {
-									if (Static392.aModeGame4 == Static673.aModeGame8 && local2824.anInt146 == 0 && !Static400.aBoolean622 && local310 && !Static103.aBoolean195) {
+									if (Static392.aModeGame4 == ModeGame.GAME_RUNESCAPE && local2824.anInt146 == 0 && !Static400.aBoolean622 && local310 && !Static103.aBoolean195) {
 										Static79.method1578();
 									}
 									Static431.method5822(local36, local24, local32, arg9, arg11, local34, local19, local2824.anInt147, arg8, arg10, local30);

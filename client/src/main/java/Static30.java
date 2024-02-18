@@ -11,7 +11,7 @@ public final class Static30 {
 	public static MsiTypeList aMsiTypeList3;
 
 	@OriginalMember(owner = "client!baa", name = "I", descriptor = "Lclient!uk;")
-	public static Interface23 anInterface23_3;
+	public static VarDomain aVarDomain3;
 
 	@OriginalMember(owner = "client!baa", name = "m", descriptor = "Lclient!ip;")
 	public static Map aClass2_Sub2_Sub13_3;
@@ -177,10 +177,10 @@ public final class Static30 {
 		for (@Pc(100) int local100 = 0; local100 < arg8.length; local100++) {
 			@Pc(107) int local107 = arg9[local100] & 0x3F;
 			if (local107 == 0 || local107 == 2 || local107 == 3 || local107 == 9) {
-				@Pc(127) LocType local127 = aLocTypeList3.method3063(arg8[local100] & 0xFFFF, 55);
-				if (local127.anInt1239 == -1) {
+				@Pc(127) LocType local127 = aLocTypeList3.get(arg8[local100] & 0xFFFF);
+				if (local127.mapscene == -1) {
 					@Pc(133) int local133 = -3355444;
-					if (local127.anInt1271 == 1) {
+					if (local127.active == 1) {
 						local133 = -3407872;
 					}
 					@Pc(147) int local147 = arg9[local100] >> 6 & 0x3;
@@ -253,17 +253,17 @@ public final class Static30 {
 			return;
 		}
 		for (@Pc(4) int local4 = 0; local4 < arg5.length; local4++) {
-			@Pc(14) LocType local14 = aLocTypeList3.method3063(arg5[local4] & 0xFFFF, 116);
-			@Pc(17) int local17 = local14.anInt1239;
+			@Pc(14) LocType local14 = aLocTypeList3.get(arg5[local4] & 0xFFFF);
+			@Pc(17) int local17 = local14.mapscene;
 			if (local17 != -1) {
 				@Pc(25) MsiType local25 = aMsiTypeList3.method8362(local17);
-				@Pc(49) SoftwareIndexedSprite local49 = local25.method3689(local14.aBoolean103 ? arg6[local4] >> 6 & 0x3 : 0, arg0, local14.aBoolean96 ? local14.aBoolean100 : false);
+				@Pc(49) SoftwareIndexedSprite local49 = local25.method3689(local14.mapscenerotates ? arg6[local4] >> 6 & 0x3 : 0, arg0, local14.mapsceneflipy ? local14.mirror : false);
 				if (local49 != null) {
 					@Pc(58) int local58 = arg3 * local49.method8203() >> 2;
 					@Pc(65) int local65 = arg4 * local49.method8192() >> 2;
 					if (local25.aBoolean329) {
-						@Pc(71) int local71 = local14.anInt1270;
-						@Pc(74) int local74 = local14.anInt1229;
+						@Pc(71) int local71 = local14.width;
+						@Pc(74) int local74 = local14.length;
 						if ((arg6[local4] >> 6 & 0x1) == 1) {
 							@Pc(85) int local85 = local71;
 							local71 = local74;
@@ -371,14 +371,14 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!sb;Lclient!ef;Lclient!dh;Lclient!gea;Lclient!ml;Lclient!u;Lclient!uk;)V")
-	public static void method5065(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) MelTypeList arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) Interface23 arg6) {
+	public static void method5065(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) MelTypeList arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) VarDomain arg6) {
 		aJs574 = arg0;
 		aFloTypeList2 = arg1;
 		aFluTypeList5 = arg2;
 		aLocTypeList3 = arg3;
 		aMelTypeList3 = arg4;
 		aMsiTypeList3 = arg5;
-		anInterface23_3 = arg6;
+		aVarDomain3 = arg6;
 		aHashTable27.clear();
 		@Pc(23) int local23 = aJs574.method7590("details");
 		@Pc(28) int[] local28 = aJs574.method7603(local23);
@@ -824,12 +824,12 @@ public final class Static30 {
 						@Pc(31) Linkable_Sub23 local31 = (Linkable_Sub23) aHashTable28.get((long) (local1 << 16 | local4));
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray59.length; local35++) {
-								@Pc(46) LocType local46 = aLocTypeList3.method3063(local31.aShortArray59[local35] & 0xFFFF, 115);
-								local49 = local46.anInt1233;
-								if (local46.anIntArray113 != null) {
-									local46 = local46.method1301(13, anInterface23_3);
+								@Pc(46) LocType local46 = aLocTypeList3.get(local31.aShortArray59[local35] & 0xFFFF);
+								local49 = local46.mel;
+								if (local46.multiloc != null) {
+									local46 = local46.getMultiLoc(aVarDomain3);
 									if (local46 != null) {
-										local49 = local46.anInt1233;
+										local49 = local46.mel;
 									}
 								}
 								if (local49 != -1) {
@@ -841,12 +841,12 @@ public final class Static30 {
 							}
 						}
 					} else {
-						@Pc(94) LocType local94 = aLocTypeList3.method3063(local15 - 1, 115);
-						local35 = local94.anInt1233;
-						if (local94.anIntArray113 != null) {
-							local94 = local94.method1301(13, anInterface23_3);
+						@Pc(94) LocType local94 = aLocTypeList3.get(local15 - 1);
+						local35 = local94.mel;
+						if (local94.multiloc != null) {
+							local94 = local94.getMultiLoc(aVarDomain3);
 							if (local94 != null) {
-								local35 = local94.anInt1233;
+								local35 = local94.mel;
 							}
 						}
 						if (local35 != -1) {
@@ -867,12 +867,12 @@ public final class Static30 {
 						for (@Pc(160) ParticleNode_Sub10 local160 = (ParticleNode_Sub10) local153.method2790(); local160 != null; local160 = (ParticleNode_Sub10) local153.method2785()) {
 							if (local160.aShortArray133 != null) {
 								for (local49 = 0; local49 < local160.aShortArray133.length; local49++) {
-									@Pc(177) LocType local177 = aLocTypeList3.method3063(local160.aShortArray133[local49] & 0xFFFF, 126);
-									@Pc(180) int local180 = local177.anInt1233;
-									if (local177.anIntArray113 != null) {
-										local177 = local177.method1301(13, anInterface23_3);
+									@Pc(177) LocType local177 = aLocTypeList3.get(local160.aShortArray133[local49] & 0xFFFF);
+									@Pc(180) int local180 = local177.mel;
+									if (local177.multiloc != null) {
+										local177 = local177.getMultiLoc(aVarDomain3);
 										if (local177 != null) {
-											local180 = local177.anInt1233;
+											local180 = local177.mel;
 										}
 									}
 									if (local180 != -1) {

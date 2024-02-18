@@ -47,7 +47,7 @@ public final class Static632 {
 			return;
 		}
 		@Pc(23) int local23 = 0;
-		@Pc(33) int local33 = arg1.anInt9358 * Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() >> 8;
+		@Pc(33) int local33 = arg1.anInt9358 * Static400.aClass2_Sub34_28.aPreference_Sub25_1.method7208() >> 8;
 		if (arg1.anInt9362 < arg3) {
 			local23 = arg3 - arg1.anInt9362;
 		} else if (arg1.anInt9357 > arg3) {
@@ -58,7 +58,7 @@ public final class Static632 {
 		} else if (arg1.anInt9352 > arg4) {
 			local23 += arg1.anInt9352 - arg4;
 		}
-		if (arg1.anInt9356 == 0 || arg1.anInt9356 < local23 - 256 || Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() == 0 || arg2 != arg1.anInt9350) {
+		if (arg1.anInt9356 == 0 || arg1.anInt9356 < local23 - 256 || Static400.aClass2_Sub34_28.aPreference_Sub25_1.method7208() == 0 || arg2 != arg1.anInt9350) {
 			if (arg1.aClass2_Sub6_Sub2_4 != null) {
 				Static336.aClass2_Sub6_Sub3_1.method5883(arg1.aClass2_Sub6_Sub2_4);
 				arg1.aClass2_Sub6_Sub2_4 = null;

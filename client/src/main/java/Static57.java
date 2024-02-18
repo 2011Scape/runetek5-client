@@ -103,7 +103,7 @@ public final class Static57 {
 			}
 		}
 		if (!local22) {
-			Static67.method6098(Static32.aLocalizedText21.method877(Static51.anInt1052) + arg0);
+			Static67.method6098(LocalizedText.FRIEND_UNABLE_TO_FIND.get(Static51.anInt1052) + arg0);
 		}
 		if (Static156.aBoolean223) {
 			Static470.method6384();

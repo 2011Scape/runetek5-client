@@ -32,7 +32,7 @@ public final class Static276 {
 
 	@OriginalMember(owner = "client!ila", name = "b", descriptor = "(I)V")
 	public static void method3988() {
-		if (Static400.aClass2_Sub34_28.aClass57_Sub4_2.method2143() != 2) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub4_2.method2143() != 2) {
 			return;
 		}
 		@Pc(21) byte local21 = (byte) (Static198.anInt3276 - 4 & 0xFF);

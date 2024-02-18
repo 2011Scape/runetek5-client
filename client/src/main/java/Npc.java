@@ -135,7 +135,7 @@ public final class Npc extends PathingEntity {
 		@Pc(118) NpcType local118 = this.aNpcType1.anIntArray532 == null ? this.aNpcType1 : this.aNpcType1.method5985(65535, Static34.aClass304_1);
 		super.aBoolean819 = false;
 		@Pc(123) ParticleNode_Sub7 local123 = null;
-		if (Static400.aClass2_Sub34_28.aClass57_Sub7_1.method2905() == 1 && local118.aBoolean506 && local104.aBoolean545) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub7_1.method2905() == 1 && local118.aBoolean506 && local104.aBoolean545) {
 			@Pc(159) Class152 local159 = super.aClass152_11.method9109() && super.aClass152_11.method9106() ? super.aClass152_11 : null;
 			@Pc(179) Class152 local179 = super.aClass152_10.method9109() && (!super.aBoolean817 || local159 == null) ? super.aClass152_10 : null;
 			@Pc(223) Model local223 = Static618.method8320(this.aNpcType1.aByte109 & 0xFF, super.aModelArray3[0], super.anInt10742, this.aNpcType1.aShort76 & 0xFFFF, super.anInt10716, this.aNpcType1.anInt6713, arg0, this.aNpcType1.aByte111 & 0xFF, local179 == null ? local159 : local179, super.anInt10746, local27, this.aNpcType1.aShort75 & 0xFFFF);
@@ -227,7 +227,7 @@ public final class Npc extends PathingEntity {
 			}
 		}
 		if (local100) {
-			local134.method7488(super.aByte150, super.aByte147, super.aByte148, super.aByte149 & 0xFF);
+			local134.a(super.aByte150, super.aByte147, super.aByte148, super.aByte149 & 0xFF);
 		}
 		this.method9297(local5, local53, arg1, local9, local111, local50);
 		return true;

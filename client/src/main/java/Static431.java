@@ -48,7 +48,7 @@ public final class Static431 {
 				}
 				Static186.method2818(local55, local61, local80, 0, local134, false);
 			}
-		} else if (Static400.aClass2_Sub34_28.aClass57_Sub25_1.method7208() != 0) {
+		} else if (Static400.aClass2_Sub34_28.aPreference_Sub25_1.method7208() != 0) {
 			@Pc(184) int local184 = arg2.anInt10690 - 256 >> 9;
 			@Pc(191) int local191 = arg2.anInt10694 - 256 >> 9;
 			@Pc(212) int local212 = arg2 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 ? 0 : local93 + (local191 << 8) + (local184 << 16) + (arg2.aByte144 << 24);

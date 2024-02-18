@@ -15,7 +15,7 @@ public final class Static54 {
 
 	@OriginalMember(owner = "client!bq", name = "a", descriptor = "(I)V")
 	public static void method1179() {
-		Static342.method4465(Static400.aClass2_Sub34_28.aClass57_Sub5_1.method2172());
+		Static342.method4465(Static400.aClass2_Sub34_28.aPreference_Sub5_1.method2172());
 		@Pc(19) int local19 = (Static691.anInt10367 >> 3) + (Static170.anInt2864 >> 12);
 		@Pc(28) int local28 = (Static110.anInt2186 >> 12) + (Static116.anInt2270 >> 3);
 		Static394.anInt6176 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 = 0;

@@ -107,7 +107,7 @@ public final class Static147 {
 					}
 				} else {
 					if (Static501.aBoolean576) {
-						Static416.method5707(false, -1, 0L, local140, local142, Static32.aLocalizedText27.method877(Static51.anInt1052), 11, true, -1, "", (long) (local142 | local140 << 0), true);
+						Static416.method5707(false, -1, 0L, local140, local142, LocalizedText.FACE_HERE.get(Static51.anInt1052), 11, true, -1, "", (long) (local142 | local140 << 0), true);
 					}
 					Static416.method5707(false, -1, 0L, local140, local142, Static331.aString52, 58, true, Static331.anInt5439, "", (long) (local142 | local140 << 0), true);
 				}
@@ -276,19 +276,19 @@ public final class Static147 {
 					}
 					if (local543.aClass8_Sub2_18 instanceof Interface25) {
 						@Pc(1654) Interface25 local1654 = (Interface25) local543.aClass8_Sub2_18;
-						@Pc(1661) LocType local1661 = Static354.aLocTypeList4.method3063(local1654.method6859(-32136), 102);
-						if (local1661.anIntArray113 != null) {
-							local1661 = local1661.method1301(13, Static34.aClass304_1);
+						@Pc(1661) LocType local1661 = Static354.aLocTypeList4.get(local1654.method6859(-32136));
+						if (local1661.multiloc != null) {
+							local1661 = local1661.getMultiLoc(Static34.aClass304_1);
 						}
 						if (local1661 != null) {
 							if (Static156.aBoolean223 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local543.aClass8_Sub2_18.aByte144) {
 								@Pc(1697) ParamType local1697 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
-								if ((Static717.anInt10822 & 0x4) != 0 && (local1697 == null || local1661.method1316(local1697.anInt7509, Static610.anInt9329) != local1697.anInt7509)) {
-									Static416.method5707(false, -1, Static277.method4042(local1654, local584, local186), local186, local584, Static153.aString27, 60, true, Static369.anInt4263, Static128.aString108 + " -> <col=00ffff>" + local1661.aString7, (long) local1654.hashCode(), false);
+								if ((Static717.anInt10822 & 0x4) != 0 && (local1697 == null || local1661.getParam(local1697.anInt7509, Static610.anInt9329) != local1697.anInt7509)) {
+									Static416.method5707(false, -1, Static277.method4042(local1654, local584, local186), local186, local584, Static153.aString27, 60, true, Static369.anInt4263, Static128.aString108 + " -> <col=00ffff>" + local1661.name, (long) local1654.hashCode(), false);
 								}
 							}
 							if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local543.aClass8_Sub2_18.aByte144) {
-								@Pc(1763) String[] local1763 = local1661.aStringArray6;
+								@Pc(1763) String[] local1763 = local1661.ops;
 								if (local1763 != null) {
 									for (local295 = local1763.length - 1; local295 >= 0; local295--) {
 										if (local1763[local295] != null) {
@@ -309,16 +309,16 @@ public final class Static147 {
 											if (local295 == 4) {
 												local1780 = 1010;
 											}
-											if (local295 == local1661.anInt1230) {
-												local317 = local1661.anInt1240;
+											if (local295 == local1661.cursor1op) {
+												local317 = local1661.cursor1;
 											}
 											if (local295 == 5) {
 												local1780 = 1008;
 											}
-											if (local1661.anInt1260 == local295) {
-												local317 = local1661.anInt1245;
+											if (local1661.cursor2op == local295) {
+												local317 = local1661.cursor2;
 											}
-											Static416.method5707(false, -1, Static277.method4042(local1654, local584, local186), local186, local584, local1763[local295], local1780, true, local317, "<col=00ffff>" + local1661.aString7, (long) local1654.hashCode(), false);
+											Static416.method5707(false, -1, Static277.method4042(local1654, local584, local186), local186, local584, local1763[local295], local1780, true, local317, "<col=00ffff>" + local1661.name, (long) local1654.hashCode(), false);
 										}
 									}
 								}

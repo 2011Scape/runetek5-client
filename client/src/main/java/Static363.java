@@ -52,15 +52,15 @@ public final class Static363 {
 		if (Static65.aClass3_1.anInt81 == -1) {
 			return 1;
 		}
-		if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915()) {
-			Static667.method8695(true, Static32.aLocalizedText13.method877(Static51.anInt1052), arg1);
-			if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915()) {
+		if (arg1 != Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915()) {
+			Static667.method8695(true, LocalizedText.PROFILING.get(Static51.anInt1052), arg1);
+			if (arg1 != Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915()) {
 				return -1;
 			}
 		}
 		try {
 			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
-			Static694.method9028(Static163.aClass19_17, Static32.aLocalizedText13.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
 			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, Static190.aJs538);
 			@Pc(70) long local70 = Static588.method7715();
 			Static163.aClass19_17.la();
@@ -111,7 +111,7 @@ public final class Static363 {
 			}
 		}
 		if (arg2 == 3 && Static316.aFrame8 == null) {
-			method6236(arg0, -1, Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, true);
+			method6236(arg0, -1, Static400.aClass2_Sub34_28.aPreference_Sub1_1.method1485(), -1, true);
 			return;
 		}
 		@Pc(95) Container local95;

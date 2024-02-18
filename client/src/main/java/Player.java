@@ -304,7 +304,7 @@ public final class Player extends PathingEntity {
 		local22.method7134(super.anInt10690, -super.anInt10732 + super.anInt10691 - 20, super.anInt10694);
 		super.aBoolean819 = false;
 		@Pc(114) ParticleNode_Sub7 local114 = null;
-		if (Static400.aClass2_Sub34_28.aClass57_Sub7_1.method2905() == 1) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub7_1.method2905() == 1) {
 			@Pc(126) BasType local126 = this.method9317();
 			if (local126.aBoolean545 && (this.aPlayerAppearance1.anInt5012 == -1 || Static690.aNpcTypeList2.method7092(this.aPlayerAppearance1.anInt5012).aBoolean506)) {
 				@Pc(166) Class152 local166 = super.aClass152_11.method9109() && super.aClass152_11.method9106() ? super.aClass152_11 : null;
@@ -614,7 +614,7 @@ public final class Player extends PathingEntity {
 			}
 		}
 		if (local119) {
-			local152.method7488(super.aByte150, super.aByte147, super.aByte148, super.aByte149 & 0xFF);
+			local152.a(super.aByte150, super.aByte147, super.aByte148, super.aByte149 & 0xFF);
 		}
 		if (!this.aBoolean129) {
 			this.method9297(local5, local64, arg1, local15, local95, local61);

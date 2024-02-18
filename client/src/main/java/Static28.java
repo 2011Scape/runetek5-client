@@ -55,14 +55,14 @@ public final class Static28 {
 		for (local190 = 0; local190 < Static536.anInt8148; local190++) {
 			local200 = Static566.anIntArray654[local190] * 4 + 2 - local90 / 128;
 			local211 = Static350.anIntArray433[local190] * 4 + 2 - local93 / 128;
-			@Pc(287) LocType local287 = Static354.aLocTypeList4.method3063(Static533.anIntArray628[local190], 105);
-			if (local287.anIntArray113 != null) {
-				local287 = local287.method1301(13, Static34.aClass304_1);
-				if (local287 == null || local287.anInt1233 == -1) {
+			@Pc(287) LocType local287 = Static354.aLocTypeList4.get(Static533.anIntArray628[local190]);
+			if (local287.multiloc != null) {
+				local287 = local287.getMultiLoc(Static34.aClass304_1);
+				if (local287 == null || local287.mel == -1) {
 					continue;
 				}
 			}
-			Static620.method8322(local211, arg3, local30, arg1, local287.anInt1233, arg0, local200, arg2);
+			Static620.method8322(local211, arg3, local30, arg1, local287.mel, arg0, local200, arg2);
 		}
 		@Pc(381) int local381;
 		@Pc(392) int local392;

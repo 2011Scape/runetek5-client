@@ -66,25 +66,25 @@ public final class Static605 {
 			if (local21 == 11) {
 				local21 = 10;
 			}
-			@Pc(210) LocType local210 = Static354.aLocTypeList4.method3063(local52, 87);
+			@Pc(210) LocType local210 = Static354.aLocTypeList4.get(local52);
 			local212 = 0;
-			if (local210.aByteArray13 != null) {
+			if (local210.shapes != null) {
 				local217 = -1;
-				for (local219 = 0; local219 < local210.aByteArray13.length; local219++) {
-					if (local210.aByteArray13[local219] == local21) {
+				for (local219 = 0; local219 < local210.shapes.length; local219++) {
+					if (local210.shapes[local219] == local21) {
 						local217 = local219;
 						break;
 					}
 				}
-				local212 = local210.anIntArrayArray30[local217].length;
+				local212 = local210.models[local217].length;
 			}
 			local217 = 0;
-			if (local210.aShortArray13 != null) {
-				local217 = local210.aShortArray13.length;
+			if (local210.recol_s != null) {
+				local217 = local210.recol_s.length;
 			}
 			local219 = 0;
-			if (local210.aShortArray12 != null) {
-				local219 = local210.aShortArray12.length;
+			if (local210.retex_s != null) {
+				local219 = local210.retex_s.length;
 			}
 			if ((local34 & 0x1) == 1) {
 				Static296.method4361((Class150) null, Static87.anInt1810, local25, local42, local46);
@@ -128,7 +128,7 @@ public final class Static605 {
 		} else if (arg0 == Static328.aClass287_10) {
 			local15 = local8.g2();
 			local21 = local8.g1();
-			Static354.aLocTypeList4.method3063(local15, 82).method1304(local21);
+			Static354.aLocTypeList4.get(local15).method1304(local21);
 		} else {
 			@Pc(537) int local537;
 			if (arg0 == Static481.aClass287_15) {

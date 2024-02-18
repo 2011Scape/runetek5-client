@@ -62,7 +62,7 @@ public final class Static323 {
 	public static void method4625() {
 		@Pc(5) int local5 = 0;
 		if (Static400.aClass2_Sub34_28 != null) {
-			local5 = Static400.aClass2_Sub34_28.aClass57_Sub18_1.method5767();
+			local5 = Static400.aClass2_Sub34_28.aPreference_Sub18_1.method5767();
 		}
 		@Pc(34) int local34;
 		@Pc(51) int local51;

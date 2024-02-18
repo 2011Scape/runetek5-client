@@ -27,7 +27,7 @@ public final class Static469 {
 		} else if (arg2.aBoolean595) {
 			return new Class93_Sub2_Sub1(arg2, 34037, 6406, arg3, arg0, false, arg1, 6406);
 		} else {
-			return new Class93_Sub2_Sub1(arg2, 6406, arg3, arg0, Static440.method5962(arg3), Static440.method5962(arg0), arg1, 6406);
+			return new Class93_Sub2_Sub1(arg2, 6406, arg3, arg0, IntUtils.clp2(arg3), IntUtils.clp2(arg0), arg1, 6406);
 		}
 	}
 

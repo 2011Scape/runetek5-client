@@ -41,20 +41,20 @@ public final class ParticleNode_Sub2_Sub3_Sub2 extends ParticleNode_Sub2_Sub3 im
 		super(arg4, arg5, arg6, arg2, arg3, Static490.method6553(arg9, arg8));
 		super.anInt10690 = arg4;
 		super.anInt10694 = arg6;
-		this.aBoolean379 = arg1.anInt1271 != 0 && !arg7;
-		this.aShort60 = (short) arg1.anInt1256;
+		this.aBoolean379 = arg1.active != 0 && !arg7;
+		this.aShort60 = (short) arg1.id;
 		this.aByte88 = (byte) arg8;
 		this.aBoolean376 = arg7;
 		this.aBoolean378 = arg10;
 		this.aByte87 = (byte) arg9;
-		this.aBoolean377 = arg0.method8006() && arg1.aBoolean89 && !this.aBoolean376 && Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4364() != 0;
+		this.aBoolean377 = arg0.method8006() && arg1.hardshadow && !this.aBoolean376 && Static400.aClass2_Sub34_28.aPreference_Sub12_1.method4364() != 0;
 		@Pc(77) int local77 = 2048;
 		if (this.aBoolean378) {
 			local77 |= 0x10000;
 		}
 		@Pc(92) Class272 local92 = this.method4475(arg0, local77, this.aBoolean377);
 		if (local92 != null) {
-			this.aModel5 = local92.aModel7;
+			this.aModel5 = local92.model;
 			this.aClass2_Sub2_Sub9_4 = local92.aClass2_Sub2_Sub9_5;
 			if (this.aBoolean378) {
 				this.aModel5 = this.aModel5.method7495((byte) 0, local77, false);
@@ -163,7 +163,7 @@ public final class ParticleNode_Sub2_Sub3_Sub2 extends ParticleNode_Sub2_Sub3 im
 			return this.aModel5;
 		} else {
 			@Pc(37) Class272 local37 = this.method4475(arg0, arg1, false);
-			return local37 == null ? null : local37.aModel7;
+			return local37 == null ? null : local37.model;
 		}
 	}
 
@@ -218,7 +218,7 @@ public final class ParticleNode_Sub2_Sub3_Sub2 extends ParticleNode_Sub2_Sub3 im
 
 	@OriginalMember(owner = "client!jn", name = "a", descriptor = "(Lclient!ha;ZIZ)Lclient!od;")
 	private Class272 method4475(@OriginalArg(0) Class19 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2) {
-		@Pc(11) LocType local11 = Static354.aLocTypeList4.method3063(this.aShort60 & 0xFFFF, 56);
+		@Pc(11) LocType local11 = Static354.aLocTypeList4.get(this.aShort60 & 0xFFFF);
 		@Pc(27) Class178 local27;
 		@Pc(38) Class178 local38;
 		if (this.aBoolean376) {

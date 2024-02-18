@@ -33,10 +33,10 @@ public final class Static60 {
 
 	@OriginalMember(owner = "client!bw", name = "a", descriptor = "(IZIII)V")
 	public static void method1293(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 0) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 0) {
 			Static668.method8700(false);
 		} else {
-			Static114.anInt2256 = Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915();
+			Static114.anInt2256 = Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915();
 			Static32.method880(0, true);
 		}
 		Static696.aBoolean784 = arg1;

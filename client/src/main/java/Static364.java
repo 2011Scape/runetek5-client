@@ -23,7 +23,7 @@ public final class Static364 {
 		}
 		for (@Pc(17) MapElement local17 = (MapElement) Static444.aClass191_1.method4342(); local17 != null; local17 = (MapElement) Static444.aClass191_1.method4342()) {
 			@Pc(30) MelType local30 = Static30.aMelTypeList3.method5584(local17.anInt3131);
-			if (local30 != null && local30.aBoolean217 && local30.method2425(Static30.anInterface23_3)) {
+			if (local30 != null && local30.aBoolean217 && local30.method2425(Static30.aVarDomain3)) {
 				return local17;
 			}
 		}
@@ -179,7 +179,7 @@ public final class Static364 {
 				Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 				@Pc(473) String local473 = "opensn";
 				if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local465, local473, 1).anInt6789 == 2) {
-					Static259.method3693(local465, local473, Static446.aSignlink6, Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 1, true);
+					Static259.method3693(local465, local473, Static446.aSignlink6, Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1, true);
 				}
 				Static135.anInt8223 = 6;
 			}
@@ -236,7 +236,7 @@ public final class Static364 {
 					local618.p1(Static36.method978(3));
 					local618.p2(Static680.anInt10289);
 					local618.p2(Static380.anInt5979);
-					local618.p1(Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4373());
+					local618.p1(Static400.aClass2_Sub34_28.aPreference_Sub13_1.method4373());
 					Static176.method6690(local618);
 					local618.pjstr(Static150.aString26);
 					local618.p4(Static323.anInt5121);
@@ -411,7 +411,7 @@ public final class Static364 {
 						Static106.anInt2153 = local1435.g3s();
 						Static174.aBoolean249 = local1435.g1() == 1;
 						Static416.aString71 = local1435.gjstr();
-						Static354.aLocTypeList4.method3059(Static174.aBoolean249);
+						Static354.aLocTypeList4.setMembers(Static174.aBoolean249);
 						Static419.aObjTypeList1.method2485(Static174.aBoolean249);
 						Static690.aNpcTypeList2.method7090(Static174.aBoolean249);
 					} else if (Static524.aClass153_3.aClass348_1.method7932(Static94.anInt1961)) {

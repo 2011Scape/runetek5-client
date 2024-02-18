@@ -62,12 +62,12 @@ public final class ObjTypeList {
 			@Pc(54) int local54 = this.aJs529.method7597() - 1;
 			this.anInt2670 = this.aJs529.method7608(local54) + local54 * 256;
 		}
-		if (this.aModeGame1 == Static673.aModeGame8) {
-			this.aStringArray11 = new String[] { null, null, Static32.aLocalizedText8.method877(this.anInt2662), null, null, Static32.aLocalizedText22.method877(this.anInt2662) };
+		if (this.aModeGame1 == ModeGame.GAME_RUNESCAPE) {
+			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.anInt2662), null, null, LocalizedText.EXAMINE.get(this.anInt2662) };
 		} else {
-			this.aStringArray11 = new String[] { null, null, Static32.aLocalizedText8.method877(this.anInt2662), null, null, null };
+			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.anInt2662), null, null, null };
 		}
-		this.aStringArray10 = new String[] { null, null, null, null, Static32.aLocalizedText9.method877(this.anInt2662) };
+		this.aStringArray10 = new String[] { null, null, null, null, LocalizedText.DROP.get(this.anInt2662) };
 	}
 
 	@OriginalMember(owner = "client!es", name = "b", descriptor = "(B)V")
@@ -239,7 +239,7 @@ public final class ObjTypeList {
 			local26.method8809(this.method2486(local26.anInt10144), this.method2486(local26.anInt10114));
 		}
 		if (!this.aBoolean222 && local26.aBoolean770) {
-			local26.aString118 = Static32.aLocalizedText5.method877(this.anInt2662);
+			local26.aString118 = LocalizedText.MEMBERS_OBJECT.get(this.anInt2662);
 			local26.aStringArray46 = this.aStringArray11;
 			local26.aStringArray45 = this.aStringArray10;
 			local26.anIntArray800 = null;

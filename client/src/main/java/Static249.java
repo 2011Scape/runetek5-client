@@ -54,12 +54,12 @@ public final class Static249 {
 				}
 			}
 		} else if (Static523.method3444(arg0.anInt7314)) {
-			@Pc(89) LocType local89 = Static354.aLocTypeList4.method3063((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL), 46);
-			if (local89.anIntArray113 != null) {
-				local89 = local89.method1301(13, Static34.aClass304_1);
+			@Pc(89) LocType local89 = Static354.aLocTypeList4.get((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL));
+			if (local89.multiloc != null) {
+				local89 = local89.getMultiLoc(Static34.aClass304_1);
 			}
 			if (local89 != null) {
-				local17 = local89.anIntArray112;
+				local17 = local89.quests;
 			}
 		}
 		if (local17 != null) {
@@ -86,7 +86,7 @@ public final class Static249 {
 		if (arg0 == local13) {
 			return false;
 		} else {
-			Static400.aClass2_Sub34_28.method5104(arg0 ? 1 : 0, Static400.aClass2_Sub34_28.aClass57_Sub20_1);
+			Static400.aClass2_Sub34_28.method5104(arg0 ? 1 : 0, Static400.aClass2_Sub34_28.aPreference_Sub20_1);
 			Static666.method8693(1);
 			return true;
 		}

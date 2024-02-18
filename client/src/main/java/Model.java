@@ -3,6 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+// don't rename anything here because sw3d inherits and makes native methods from them...
 @OriginalClass("client!ka")
 public abstract class Model {
 
@@ -75,9 +76,11 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(Lclient!tt;)V")
 	public abstract void method7476(@OriginalArg(0) Class73 arg0);
 
+	// setContrast
 	@OriginalMember(owner = "client!ka", name = "LA", descriptor = "(I)V")
 	public abstract void LA(@OriginalArg(0) int arg0);
 
+	// retexture
 	@OriginalMember(owner = "client!ka", name = "aa", descriptor = "(SS)V")
 	public abstract void aa(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1);
 
@@ -179,15 +182,18 @@ public abstract class Model {
 		this.method7494();
 	}
 
+	// translate
 	@OriginalMember(owner = "client!ka", name = "H", descriptor = "(III)V")
 	public abstract void H(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
+	// tint
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(IIII)V")
-	public abstract void method7488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public abstract void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!ka", name = "wa", descriptor = "()V")
 	protected abstract void wa();
 
+	// getContrast
 	@OriginalMember(owner = "client!ka", name = "da", descriptor = "()I")
 	public abstract int da();
 
@@ -197,6 +203,7 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(I)V")
 	public abstract void a(@OriginalArg(0) int arg0);
 
+	// flip
 	@OriginalMember(owner = "client!ka", name = "v", descriptor = "()V")
 	public abstract void v();
 
@@ -276,6 +283,7 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "g", descriptor = "()V")
 	protected abstract void method7491();
 
+	// recolor
 	@OriginalMember(owner = "client!ka", name = "ia", descriptor = "(SS)V")
 	public abstract void ia(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1);
 
@@ -316,6 +324,7 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(BIZ)Lclient!ka;")
 	public abstract Model method7495(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2);
 
+	// setAmbient
 	@OriginalMember(owner = "client!ka", name = "C", descriptor = "(I)V")
 	public abstract void C(@OriginalArg(0) int arg0);
 
@@ -498,12 +507,14 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "p", descriptor = "(IILclient!s;Lclient!s;III)V")
 	public abstract void p(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class178 arg2, @OriginalArg(3) Class178 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6);
 
+	// getAmbient
 	@OriginalMember(owner = "client!ka", name = "WA", descriptor = "()I")
 	public abstract int WA();
 
 	@OriginalMember(owner = "client!ka", name = "ma", descriptor = "()I")
 	public abstract int ma();
 
+	// resize
 	@OriginalMember(owner = "client!ka", name = "O", descriptor = "(III)V")
 	public abstract void O(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
@@ -513,6 +524,7 @@ public abstract class Model {
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(I[IIIIIZ)V")
 	protected abstract void method7499(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6);
 
+	// rotate
 	@OriginalMember(owner = "client!ka", name = "k", descriptor = "(I)V")
 	public abstract void k(@OriginalArg(0) int arg0);
 }

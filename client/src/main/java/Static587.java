@@ -64,7 +64,7 @@ public final class Static587 {
 			@Pc(20) Class273[] local20 = Static673.method8787(Static446.aSignlink6, true);
 			@Pc(24) Class273[] local24 = new Class273[local20.length];
 			@Pc(26) int local26 = 0;
-			@Pc(31) int local31 = Static400.aClass2_Sub34_28.aClass57_Sub18_1.method5767();
+			@Pc(31) int local31 = Static400.aClass2_Sub34_28.aPreference_Sub18_1.method5767();
 			@Pc(112) int local112;
 			@Pc(117) Class273 local117;
 			label69: for (@Pc(33) int local33 = 0; local33 < local20.length; local33++) {

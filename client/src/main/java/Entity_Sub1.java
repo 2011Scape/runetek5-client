@@ -38,22 +38,22 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 
 	@OriginalMember(owner = "client!jda", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIIIIIIZ)V")
 	public Entity_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) boolean arg14) {
-		super(arg2, arg3, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.lb == 1, Static194.method2904(arg12, arg13));
-		this.aBoolean364 = arg1.anInt1271 != 0 && !arg7;
+		super(arg2, arg3, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.raiseobject == 1, Static194.method2904(arg12, arg13));
+		this.aBoolean364 = arg1.active != 0 && !arg7;
 		this.aBoolean363 = arg7;
 		this.aByte83 = (byte) arg13;
-		this.aShort57 = (short) arg1.anInt1256;
+		this.aShort57 = (short) arg1.id;
 		this.aByte84 = (byte) arg12;
 		super.aByte143 = (byte) arg3;
 		this.aBoolean365 = arg14;
-		this.aBoolean362 = arg0.method8006() && arg1.aBoolean89 && !this.aBoolean363 && Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4364() != 0;
+		this.aBoolean362 = arg0.method8006() && arg1.hardshadow && !this.aBoolean363 && Static400.aClass2_Sub34_28.aPreference_Sub12_1.method4364() != 0;
 		@Pc(83) int local83 = 2048;
 		if (this.aBoolean365) {
 			local83 |= 0x10000;
 		}
 		@Pc(98) Class272 local98 = this.method4223(arg0, this.aBoolean362, local83);
 		if (local98 != null) {
-			this.aModel4 = local98.aModel7;
+			this.aModel4 = local98.model;
 			this.aClass2_Sub2_Sub9_3 = local98.aClass2_Sub2_Sub9_5;
 			if (this.aBoolean365) {
 				this.aModel4 = this.aModel4.method7495((byte) 0, local83, false);
@@ -132,7 +132,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			return this.aModel4;
 		} else {
 			@Pc(34) Class272 local34 = this.method4223(arg0, false, arg1);
-			return local34 == null ? null : local34.aModel7;
+			return local34 == null ? null : local34.model;
 		}
 	}
 
@@ -275,7 +275,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 
 	@OriginalMember(owner = "client!jda", name = "a", descriptor = "(Lclient!ha;BZI)Lclient!od;")
 	private Class272 method4223(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
-		@Pc(11) LocType local11 = Static354.aLocTypeList4.method3063(this.aShort57 & 0xFFFF, 73);
+		@Pc(11) LocType local11 = Static354.aLocTypeList4.get(this.aShort57 & 0xFFFF);
 		@Pc(27) Class178 local27;
 		@Pc(33) Class178 local33;
 		if (this.aBoolean363) {

@@ -136,6 +136,6 @@ public final class Class385 implements Runnable {
 
 	@OriginalMember(owner = "client!vja", name = "b", descriptor = "(I)V")
 	public void method8918() {
-		this.anOutputStream2 = new OutputStream_Sub1();
+		this.anOutputStream2 = new BrokenOutputStream2();
 	}
 }

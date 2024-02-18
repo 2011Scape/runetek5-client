@@ -19,6 +19,6 @@ public final class Static442 {
 
 	@OriginalMember(owner = "client!nv", name = "a", descriptor = "(Z)V")
 	public static void method5969() {
-		Static425.aClass19_13.L(Static251.anInt4037, Static400.aClass2_Sub34_28.aClass57_Sub16_1.method5507() == 1 ? Static171.anInt2882 + 256 << 2 : -1, 0);
+		Static425.aClass19_13.L(Static251.anInt4037, Static400.aClass2_Sub34_28.aPreference_Sub16_1.method5507() == 1 ? Static171.anInt2882 + 256 << 2 : -1, 0);
 	}
 }

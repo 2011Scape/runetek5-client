@@ -7,6 +7,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+// sw3d: do not rename!
 @OriginalClass("client!oa")
 public final class oa extends Class19 implements Interface5 {
 

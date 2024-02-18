@@ -3,6 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+// sw3d: do not rename!
 @OriginalClass("client!i")
 public final class i extends Model implements Interface5 {
 
@@ -122,7 +123,7 @@ public final class i extends Model implements Interface5 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(IIII)V")
 	@Override
-	public void method7488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 	}
 
 	@OriginalMember(owner = "client!i", name = "I", descriptor = "(I[IIIIZI[I)V")

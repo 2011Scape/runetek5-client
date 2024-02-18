@@ -267,7 +267,7 @@ public final class ObjType {
 				this.aStringArray45[local155] = arg0.aStringArray45[local155];
 			}
 		}
-		this.aStringArray45[4] = Static32.aLocalizedText6.method877(this.aObjTypeList2.anInt2662);
+		this.aStringArray45[4] = LocalizedText.DISCARD.get(this.aObjTypeList2.anInt2662);
 	}
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(Lclient!vfa;ILclient!vfa;)V")
@@ -474,7 +474,7 @@ public final class ObjType {
 			} else if (arg1 == 249) {
 				local202 = arg0.g1();
 				if (this.aHashTable44 == null) {
-					local212 = Static440.method5962(local202);
+					local212 = IntUtils.clp2(local202);
 					this.aHashTable44 = new HashTable(local212);
 				}
 				for (local212 = 0; local212 < local202; local212++) {
@@ -810,9 +810,9 @@ public final class ObjType {
 		if (arg0 < 100000) {
 			return "<col=ffff00>" + arg0 + "</col>";
 		} else if (arg0 < 10000000) {
-			return "<col=ffffff>" + arg0 / 1000 + Static32.aLocalizedText36.method877(this.aObjTypeList2.anInt2662) + "</col>";
+			return "<col=ffffff>" + arg0 / 1000 + LocalizedText.LETTER_K_DUPLICATE.get(this.aObjTypeList2.anInt2662) + "</col>";
 		} else {
-			return "<col=00ff80>" + arg0 / 1000000 + Static32.aLocalizedText34.method877(this.aObjTypeList2.anInt2662) + "</col>";
+			return "<col=00ff80>" + arg0 / 1000000 + LocalizedText.LETTER_M_DUPLICATE.get(this.aObjTypeList2.anInt2662) + "</col>";
 		}
 	}
 
@@ -1000,6 +1000,6 @@ public final class ObjType {
 				this.aStringArray45[local161] = arg1.aStringArray45[local161];
 			}
 		}
-		this.aStringArray45[4] = Static32.aLocalizedText7.method877(this.aObjTypeList2.anInt2662);
+		this.aStringArray45[4] = LocalizedText.DISCARD_2.get(this.aObjTypeList2.anInt2662);
 	}
 }

@@ -41,10 +41,10 @@ public final class Static296 {
 	@OriginalMember(owner = "client!jh", name = "b", descriptor = "(I)V")
 	public static void method4362() {
 		@Pc(5) int local5 = 0;
-		if (Static400.aClass2_Sub34_28.aClass57_Sub24_1.method7082() == 1) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub24_1.method7082() == 1) {
 			local5 = 55;
 		}
-		if (Static400.aClass2_Sub34_28.aClass57_Sub30_1.method8356() == 0) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub30_1.method8356() == 0) {
 			local5 |= 0x40;
 		}
 		Static335.method4945(local5);

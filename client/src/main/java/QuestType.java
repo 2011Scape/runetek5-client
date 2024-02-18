@@ -150,7 +150,7 @@ public final class QuestType {
 				} else if (arg0 == 249) {
 					local29 = arg1.g1();
 					if (this.aHashTable30 == null) {
-						local36 = Static440.method5962(local29);
+						local36 = IntUtils.clp2(local29);
 						this.aHashTable30 = new HashTable(local36);
 					}
 					for (local36 = 0; local36 < local29; local36++) {

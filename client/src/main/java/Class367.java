@@ -89,7 +89,7 @@ public final class Class367 {
 	@OriginalMember(owner = "client!uc", name = "b", descriptor = "(Lclient!ge;I)V")
 	public void method8386(@OriginalArg(0) Packet arg0) {
 		@Pc(7) int local7 = arg0.g1();
-		if (Static400.aClass2_Sub34_28.aClass57_Sub24_1.method7082() == 1 && Static425.aClass19_13.method7955() > 0) {
+		if (Static400.aClass2_Sub34_28.aPreference_Sub24_1.method7082() == 1 && Static425.aClass19_13.method7955() > 0) {
 			if ((local7 & 0x1) == 0) {
 				this.anInt9537 = Static68.anInt4096;
 			} else {

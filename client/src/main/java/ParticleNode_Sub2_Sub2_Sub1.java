@@ -35,15 +35,15 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 
 	@OriginalMember(owner = "client!cu", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIZ)V")
 	public ParticleNode_Sub2_Sub2_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
-		super(arg4, arg5, arg6, arg2, arg3, arg1.anInt1227);
-		this.aShort20 = (short) arg1.anInt1256;
+		super(arg4, arg5, arg6, arg2, arg3, arg1.decorheight);
+		this.aShort20 = (short) arg1.id;
 		super.anInt10694 = arg6;
 		this.aByte38 = (byte) arg8;
-		this.aBoolean182 = arg1.anInt1271 != 0 && !arg7;
+		this.aBoolean182 = arg1.active != 0 && !arg7;
 		super.anInt10690 = arg4;
 		this.aBoolean183 = arg7;
 		this.aBoolean180 = arg9;
-		this.aBoolean181 = arg0.method8006() && arg1.aBoolean89 && !this.aBoolean183 && Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4364() != 0;
+		this.aBoolean181 = arg0.method8006() && arg1.hardshadow && !this.aBoolean183 && Static400.aClass2_Sub34_28.aPreference_Sub12_1.method4364() != 0;
 		@Pc(68) int local68 = 2048;
 		if (this.aBoolean180) {
 			local68 |= 0x10000;
@@ -51,7 +51,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 		@Pc(83) Class272 local83 = this.method1831(local68, 20, arg0, this.aBoolean181);
 		if (local83 != null) {
 			this.aClass2_Sub2_Sub9_1 = local83.aClass2_Sub2_Sub9_5;
-			this.aModel1 = local83.aModel7;
+			this.aModel1 = local83.model;
 			if (this.aBoolean180) {
 				this.aModel1 = this.aModel1.method7495((byte) 0, local68, false);
 				return;
@@ -146,7 +146,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IILclient!ha;Z)Lclient!od;")
 	private Class272 method1831(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) boolean arg3) {
-		@Pc(13) LocType local13 = Static354.aLocTypeList4.method3063(this.aShort20 & 0xFFFF, arg1 + 35);
+		@Pc(13) LocType local13 = Static354.aLocTypeList4.get(this.aShort20 & 0xFFFF);
 		if (arg1 != 20) {
 			this.aShort20 = -113;
 		}
@@ -276,7 +276,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 			return this.aModel1;
 		} else {
 			@Pc(26) Class272 local26 = this.method1831(arg1, 20, arg0, false);
-			return local26 == null ? null : local26.aModel7;
+			return local26 == null ? null : local26.model;
 		}
 	}
 

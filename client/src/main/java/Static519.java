@@ -51,7 +51,7 @@ public final class Static519 {
 		if (local9) {
 			try {
 				local86 = Static363.method6235(1000, 3);
-				if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() == 3) {
+				if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 3) {
 					@Pc(114) Class84 local114 = Static163.aClass19_17.method7981();
 					@Pc(119) long local119 = local114.aLong91 & 0xFFFFFFFFFFFFL;
 					@Pc(122) int local122 = local114.anInt2329;

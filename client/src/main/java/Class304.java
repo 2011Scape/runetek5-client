@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qga")
-public final class Class304 implements Interface23 {
+public final class Class304 implements VarDomain {
 
 	@OriginalMember(owner = "client!qga", name = "b", descriptor = "Lclient!av;")
 	private HashTable aHashTable39 = new HashTable(128);

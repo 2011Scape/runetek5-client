@@ -34,8 +34,8 @@ public final class Static625 {
 				local10 = 2;
 			}
 		}
-		if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915() != 0) {
-			Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
+		if (Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() != 0) {
+			Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 			Static32.method880(0, false);
 		}
 		Static666.method8693(1);

@@ -985,7 +985,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;Lclient!gu;Lclient!qp;Lclient!kr;BLclient!bp;Lclient!ju;Lclient!uk;Lclient!ql;Lclient!es;ILclient!vk;)Lclient!ka;")
-	public Model method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(3) IdkTypeList arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) PlayerAppearance arg5, @OriginalArg(7) Interface23 arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) ObjTypeList arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class386 arg10) {
+	public Model method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(3) IdkTypeList arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) PlayerAppearance arg5, @OriginalArg(7) VarDomain arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) ObjTypeList arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class386 arg10) {
 		Static544.aBoolean624 = false;
 		if (this.anInt3823 == 0) {
 			return null;

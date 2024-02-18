@@ -33,25 +33,25 @@ public final class Static452 {
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(Lclient!c;BILclient!ha;II)V")
 	public static void method6173(@OriginalArg(0) LocType arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(9) MsiType local9 = Static720.aMsiTypeList4.method8362(arg0.anInt1239);
+		@Pc(9) MsiType local9 = Static720.aMsiTypeList4.method8362(arg0.mapscene);
 		if (local9.anInt4167 == -1) {
 			return;
 		}
-		if (arg0.aBoolean103) {
-			@Pc(24) int local24 = arg1 + arg0.anInt1210;
+		if (arg0.mapscenerotates) {
+			@Pc(24) int local24 = arg1 + arg0.mapsceneangle;
 			arg1 = local24 & 0x3;
 		} else {
 			arg1 = 0;
 		}
-		@Pc(39) SoftwareIndexedSprite local39 = local9.method3689(arg1, arg2, arg0.aBoolean96);
+		@Pc(39) SoftwareIndexedSprite local39 = local9.method3689(arg1, arg2, arg0.mapsceneflipy);
 		if (local39 == null) {
 			return;
 		}
-		@Pc(46) int local46 = arg0.anInt1270;
-		@Pc(49) int local49 = arg0.anInt1229;
+		@Pc(46) int local46 = arg0.width;
+		@Pc(49) int local49 = arg0.length;
 		if ((arg1 & 0x1) == 1) {
-			local46 = arg0.anInt1229;
-			local49 = arg0.anInt1270;
+			local46 = arg0.length;
+			local49 = arg0.width;
 		}
 		@Pc(72) int local72 = local39.method8203();
 		@Pc(75) int local75 = local39.method8192();

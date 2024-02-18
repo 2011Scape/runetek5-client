@@ -94,7 +94,7 @@ public final class Linkable_Sub51 extends Linkable {
 		@Pc(11) int local11 = this.anInt9353;
 		@Pc(14) boolean local14 = this.aBoolean714;
 		if (this.aLocType1 != null) {
-			@Pc(148) LocType local148 = this.aLocType1.method1301(13, Static1.anInt10798 == 3 ? Static298.anInterface23_2 : Static34.aClass304_1);
+			@Pc(148) LocType local148 = this.aLocType1.getMultiLoc(Static1.anInt10798 == 3 ? Static298.aVarDomain2 : Static34.aClass304_1);
 			if (local148 == null) {
 				this.anIntArray718 = null;
 				this.anInt9353 = -1;
@@ -109,15 +109,15 @@ public final class Linkable_Sub51 extends Linkable {
 				this.anInt9356 = 0;
 			} else {
 				this.aBoolean714 = local148.aBoolean88;
-				this.anInt9360 = local148.anInt1249;
-				this.anInt9359 = local148.anInt1268;
-				this.anInt9356 = local148.anInt1244 << 9;
-				this.anInt9358 = local148.anInt1253;
-				this.anInt9354 = local148.anInt1219;
-				this.anInt9353 = local148.anInt1246;
-				this.anIntArray718 = local148.anIntArray116;
+				this.anInt9360 = local148.bgsoundratemax;
+				this.anInt9359 = local148.bgsoundratemin;
+				this.anInt9356 = local148.bgsoundradius << 9;
+				this.anInt9358 = local148.bgsoundvol;
+				this.anInt9354 = local148.bgsoundmax;
+				this.anInt9353 = local148.bgsound;
+				this.anIntArray718 = local148.bgsounds;
 				this.aBoolean715 = local148.aBoolean92;
-				this.anInt9365 = local148.anInt1231;
+				this.anInt9365 = local148.bgsoundmin;
 			}
 		} else if (this.aClass8_Sub2_Sub1_Sub2_Sub2_3 != null) {
 			@Pc(27) int local27 = Static497.method6629(this.aClass8_Sub2_Sub1_Sub2_Sub2_3);

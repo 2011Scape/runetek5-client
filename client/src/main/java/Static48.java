@@ -51,7 +51,7 @@ public final class Static48 {
 			local7.aHashTableArray1 = new HashTable[local84];
 			for (local95 = 0; local95 < local84; local95++) {
 				local100 = local12.g2();
-				@Pc(107) HashTable local107 = new HashTable(Static440.method5962(local100));
+				@Pc(107) HashTable local107 = new HashTable(IntUtils.clp2(local100));
 				local7.aHashTableArray1[local95] = local107;
 				while (local100-- > 0) {
 					@Pc(117) int local117 = local12.g4();

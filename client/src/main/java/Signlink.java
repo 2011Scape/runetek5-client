@@ -61,7 +61,7 @@ public final class Signlink implements Runnable {
 	private Object anObject19;
 
 	@OriginalMember(owner = "client!vq", name = "k", descriptor = "Lclient!ow;")
-	private Callback_Sub1 aCallback_Sub1_1;
+	private Win32Callback aWin32Callback;
 
 	@OriginalMember(owner = "client!vq", name = "n", descriptor = "Ljava/lang/Object;")
 	private Object anObject20;
@@ -149,7 +149,7 @@ public final class Signlink implements Runnable {
 			}
 			try {
 				if (this.aBoolean779) {
-					this.aCallback_Sub1_1 = new Callback_Sub1();
+					this.aWin32Callback = new Win32Callback();
 				} else {
 					this.anObject20 = Class.forName("Class238").getDeclaredConstructor().newInstance();
 				}
@@ -441,7 +441,7 @@ public final class Signlink implements Runnable {
 								@Pc(460) int local460 = local15.anInt6788;
 								@Pc(463) int local463 = local15.anInt6787;
 								if (this.aBoolean779) {
-									this.aCallback_Sub1_1.method6431(local460, local463);
+									this.aWin32Callback.method6431(local460, local463);
 								} else {
 									Class.forName("Class238").getDeclaredMethod("movemouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
 								}
@@ -449,7 +449,7 @@ public final class Signlink implements Runnable {
 								@Pc(534) boolean local534 = local15.anInt6788 != 0;
 								@Pc(538) Component local538 = (Component) local15.anObject12;
 								if (this.aBoolean779) {
-									this.aCallback_Sub1_1.method6432(local534, local538);
+									this.aWin32Callback.method6432(local534, local538);
 								} else {
 									Class.forName("Class238").getDeclaredMethod("showcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
 								}
