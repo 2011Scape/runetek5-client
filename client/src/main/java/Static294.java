@@ -182,12 +182,12 @@ public final class Static294 {
 		Static359.anInt5801 = local204;
 		Static323.anInt5119 = local329;
 		Static288.aBoolean356 = false;
-		if (Static426.aBoolean72 && Static500.aClass295_3.method6622() == 0) {
+		if (Static426.aBoolean72 && Static500.aJs5NetQueue3.method6622() == 0) {
 			Static426.aBoolean72 = false;
 		}
 		if (Static426.aBoolean72) {
 			Static163.aClass19_17.method7971(local155, local161, local159, local153, -16777216);
-			Static694.method9028(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1052), false, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, Static32.aLocalizedText12.method877(Static51.anInt1052), false, Static694.aClass381_13, Static437.aClass14_9);
 		}
 		Static501.method6716(false);
 	}

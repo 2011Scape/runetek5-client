@@ -8,10 +8,10 @@ public final class Static312 {
 	public static int anInt5001;
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_106 = new Class82(50);
+	public static final SoftLruHashTable aSoftLruHashTable106 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!jt", name = "h", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_131 = new Class225(112, 6);
+	public static final ServerProt ServerProt131 = new ServerProt(112, 6);
 
 	@OriginalMember(owner = "client!jt", name = "g", descriptor = "I")
 	public static int anInt5000 = -1;
@@ -19,7 +19,7 @@ public final class Static312 {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(II)V")
 	public static void method4541() {
 		Static117.aClass2_Sub6_Sub1_2 = null;
-		Static676.aClass330_121 = null;
+		Static676.aJs5121 = null;
 		Static190.anInt3112 = 2;
 		Static497.aBoolean564 = false;
 		Static24.anInt595 = 0;
@@ -43,7 +43,7 @@ public final class Static312 {
 				Static472.method6420(local23);
 			}
 		}
-		@Pc(45) Linkable_Sub19 local45 = Static293.method4335(Static505.aClass345_119, Static405.aClass153_2.aIsaacRandom_1);
+		@Pc(45) OutboundPacket local45 = Static293.method4335(Static505.aClientProt119, Static405.aClass153_2.aIsaacRandom_1);
 		local45.aPacketBit_1.p4_alt2(arg0.anInt3812);
 		local45.aPacketBit_1.p2_alt2(Static162.anInt2799);
 		local45.aPacketBit_1.p2_alt3(Static77.anInt1614);

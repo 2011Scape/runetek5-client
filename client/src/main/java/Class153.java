@@ -11,7 +11,7 @@ public final class Class153 {
 	public Class348 aClass348_1;
 
 	@OriginalMember(owner = "client!gw", name = "r", descriptor = "Lclient!oba;")
-	public Class270 aClass270_1;
+	public PrivilegedRequest aPrivilegedRequest1;
 
 	@OriginalMember(owner = "client!gw", name = "l", descriptor = "Lclient!iv;")
 	public IsaacRandom aIsaacRandom_1;
@@ -20,10 +20,10 @@ public final class Class153 {
 	public int anInt3643;
 
 	@OriginalMember(owner = "client!gw", name = "z", descriptor = "Lclient!lga;")
-	public Class225 aClass225_91;
+	public ServerProt aServerProt_91;
 
 	@OriginalMember(owner = "client!gw", name = "o", descriptor = "Lclient!lga;")
-	public Class225 aClass225_92;
+	public ServerProt aServerProt_92;
 
 	@OriginalMember(owner = "client!gw", name = "B", descriptor = "I")
 	public int anInt3644;
@@ -32,7 +32,7 @@ public final class Class153 {
 	public int anInt3645;
 
 	@OriginalMember(owner = "client!gw", name = "e", descriptor = "Lclient!lga;")
-	public Class225 aClass225_94;
+	public ServerProt aServerProt_94;
 
 	@OriginalMember(owner = "client!gw", name = "w", descriptor = "I")
 	private int anInt3649;
@@ -50,7 +50,7 @@ public final class Class153 {
 	public final PacketBit aClass2_Sub21_Sub2_2 = new PacketBit(15000);
 
 	@OriginalMember(owner = "client!gw", name = "j", descriptor = "Lclient!lga;")
-	public Class225 aClass225_93 = null;
+	public ServerProt aServerProt_93 = null;
 
 	@OriginalMember(owner = "client!gw", name = "u", descriptor = "I")
 	public int anInt3648 = 0;
@@ -90,7 +90,7 @@ public final class Class153 {
 		}
 		this.aPacket_6.pos = 0;
 		while (true) {
-			@Pc(23) Linkable_Sub19 local23 = (Linkable_Sub19) this.aLinkedList17.head();
+			@Pc(23) OutboundPacket local23 = (OutboundPacket) this.aLinkedList17.head();
 			if (local23 == null || local23.anInt2989 > this.aPacket_6.data.length - this.aPacket_6.pos) {
 				this.aClass348_1.method7931(this.aPacket_6.data, this.aPacket_6.pos);
 				this.anInt3647 = 0;
@@ -114,7 +114,7 @@ public final class Class153 {
 	}
 
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
-	public void method3275(@OriginalArg(1) Linkable_Sub19 arg0) {
+	public void method3275(@OriginalArg(1) OutboundPacket arg0) {
 		this.aLinkedList17.addTail(arg0);
 		arg0.anInt2989 = arg0.aPacketBit_1.pos;
 		arg0.aPacketBit_1.pos = 0;

@@ -12,7 +12,7 @@ public final class Static668 {
 	public static Class229 aClass229_5;
 
 	@OriginalMember(owner = "client!vca", name = "o", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_119;
+	public static Js5 aJs5119;
 
 	@OriginalMember(owner = "client!vca", name = "i", descriptor = "Lclient!pc;")
 	public static final Class287 aClass287_16 = new Class287(12, 7);
@@ -38,24 +38,24 @@ public final class Static668 {
 		Static30.aClass255_3 = null;
 		Static651.aClass327_8 = null;
 		Static180.anInt3001 = -1;
-		Static13.aClass23_4 = null;
+		Static13.aSoftwareIndexedSprite4 = null;
 		Static142.aClass327_1 = null;
 		Static390.aClass327_5 = null;
 		Static559.aClass327_7 = null;
 		Static364.aClass327_4 = null;
 		Static275.aClass327_2 = null;
 		Static558.anInt3181 = -1;
-		if (Static30.aClass246_3 != null) {
-			Static30.aClass246_3.method5586();
-			Static30.aClass246_3.method5583(128, 64);
+		if (Static30.aMelTypeList3 != null) {
+			Static30.aMelTypeList3.method5586();
+			Static30.aMelTypeList3.method5583(128, 64);
 		}
-		if (Static30.aClass363_3 != null) {
-			Static30.aClass363_3.method8365(64, 64);
+		if (Static30.aMsiTypeList3 != null) {
+			Static30.aMsiTypeList3.method8365(64, 64);
 		}
-		if (Static30.aClass142_3 != null) {
-			Static30.aClass142_3.method3062(64);
+		if (Static30.aLocTypeList3 != null) {
+			Static30.aLocTypeList3.method3062(64);
 		}
-		Static529.aClass161_1.method3420(64);
+		Static529.aVarBitTypeList1.method3420(64);
 	}
 
 	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(B)Lclient!gw;")

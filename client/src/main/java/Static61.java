@@ -42,7 +42,7 @@ public final class Static61 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!vq;Ljava/lang/Object;B)V")
-	public static void method1312(@OriginalArg(0) Class390 arg0, @OriginalArg(1) Object arg1) {
+	public static void method1312(@OriginalArg(0) Signlink arg0, @OriginalArg(1) Object arg1) {
 		if (arg0.anEventQueue1 == null) {
 			return;
 		}

@@ -102,7 +102,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public final int anInt9277;
 
 	@OriginalMember(owner = "client!tca", name = "<init>", descriptor = "(Lclient!jaggl/OpenGL;Ljava/awt/Canvas;JLclient!d;Lclient!sb;I)V")
-	public Class19_Sub1_Sub2(@OriginalArg(0) OpenGL arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(2) long arg2, @OriginalArg(3) Interface4 arg3, @OriginalArg(4) Class330 arg4, @OriginalArg(5) int arg5) {
+	public Class19_Sub1_Sub2(@OriginalArg(0) OpenGL arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(2) long arg2, @OriginalArg(3) Interface4 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) int arg5) {
 		super(arg1, Long.valueOf(arg2), arg3, arg4, arg5, 1);
 		try {
 			this.anOpenGL2 = arg0;
@@ -315,7 +315,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
 	@Override
-	public Interface9 method7988(@OriginalArg(0) Interface6 arg0, @OriginalArg(1) Interface26 arg1) {
+	public Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1) {
 		return null;
 	}
 
@@ -330,11 +330,11 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected Class26 method8087(@OriginalArg(1) int arg0) {
 		if (arg0 == 3) {
-			return new Class26_Sub11(this, super.aClass330_112);
+			return new Class26_Sub11(this, super.aJs5112);
 		} else if (arg0 == 4) {
-			return new Class26_Sub1(this, super.aClass330_112, super.aClass7_8);
+			return new Class26_Sub1(this, super.aJs5112, super.aClass7_8);
 		} else if (arg0 == 8) {
-			return new Class26_Sub3(this, super.aClass330_112, super.aClass7_8);
+			return new Class26_Sub3(this, super.aJs5112, super.aClass7_8);
 		} else {
 			return super.method8087(arg0);
 		}
@@ -931,7 +931,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(II)Lclient!eca;")
 	@Override
-	public Interface6 method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public IndexedSprite method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return null;
 	}
 

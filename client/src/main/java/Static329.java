@@ -89,14 +89,14 @@ public final class Static329 {
 
 	@OriginalMember(owner = "client!kh", name = "g", descriptor = "(I)V")
 	public static void method1649() {
-		Static542.aClass23_33 = null;
-		Static608.aClass23_41 = null;
-		Static1.aClass23_42 = null;
-		Static561.aClass23_34 = null;
-		Static26.aClass23_5 = null;
-		Static459.aClass23_31 = null;
-		Static186.aClass23Array5 = null;
-		Static261.aClass23_18 = null;
-		Static63.aClass23_8 = null;
+		Static542.aSoftwareIndexedSprite33 = null;
+		Static608.aSoftwareIndexedSprite41 = null;
+		Static1.aSoftwareIndexedSprite42 = null;
+		Static561.aSoftwareIndexedSprite34 = null;
+		Static26.aSoftwareIndexedSprite5 = null;
+		Static459.aSoftwareIndexedSprite31 = null;
+		Static186.aSoftwareIndexedSpriteArray5 = null;
+		Static261.aSoftwareIndexedSprite18 = null;
+		Static63.aSoftwareIndexedSprite8 = null;
 	}
 }

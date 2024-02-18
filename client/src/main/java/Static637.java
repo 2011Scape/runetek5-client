@@ -10,7 +10,7 @@ public final class Static637 {
 	public static short[] aShortArray132;
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(Ljava/lang/String;IILclient!vq;)Lclient!oba;")
-	public static Class270 method8382(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class390 arg2) {
+	public static PrivilegedRequest method8382(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Signlink arg2) {
 		return Static36.method980(arg2, arg0, "openjs", arg1);
 	}
 

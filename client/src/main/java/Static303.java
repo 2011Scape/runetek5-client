@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static303 {
 
 	@OriginalMember(owner = "client!jka", name = "l", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_126 = new Class225(9, 10);
+	public static final ServerProt ServerProt126 = new ServerProt(9, 10);
 
 	@OriginalMember(owner = "client!jka", name = "r", descriptor = "I")
 	public static int anInt4868 = 0;
@@ -25,9 +25,9 @@ public final class Static303 {
 
 	@OriginalMember(owner = "client!jka", name = "g", descriptor = "(I)I")
 	public static int method4429() {
-		@Pc(13) Class82 local13 = Static580.aClass82_186;
-		synchronized (Static580.aClass82_186) {
-			return Static580.aClass82_186.method2148();
+		@Pc(13) SoftLruHashTable local13 = Static580.aSoftLruHashTable186;
+		synchronized (Static580.aSoftLruHashTable186) {
+			return Static580.aSoftLruHashTable186.method2148();
 		}
 	}
 

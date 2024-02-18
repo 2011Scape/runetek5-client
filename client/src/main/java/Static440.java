@@ -35,12 +35,12 @@ public final class Static440 {
 	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(ILclient!dea;)V")
-	public static void method5964(@OriginalArg(1) Linkable_Sub6 arg0) {
+	public static void method5964(@OriginalArg(1) PcmStream arg0) {
 		if (arg0.aClass2_Sub49_6 != null) {
 			arg0.aClass2_Sub49_6.anInt8817 = 0;
 		}
 		arg0.aBoolean793 = false;
-		for (@Pc(25) Linkable_Sub6 local25 = arg0.method9133(); local25 != null; local25 = arg0.method9135()) {
+		for (@Pc(25) PcmStream local25 = arg0.method9133(); local25 != null; local25 = arg0.method9135()) {
 			method5964(local25);
 		}
 	}

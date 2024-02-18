@@ -15,7 +15,7 @@ public final class Static114 {
 		}
 		@Pc(37) int local37 = Math.min(arg7.anInt3802 / 2, arg7.anInt3746 / 2);
 		if (local16 <= local37 * local37) {
-			Static6.method107(arg5, arg3, Static174.aClass23Array4[arg4], arg6, arg0, arg7, arg1);
+			Static6.method107(arg5, arg3, Static174.aSoftwareIndexedSpriteArray4[arg4], arg6, arg0, arg7, arg1);
 			return;
 		}
 		local37 -= 10;
@@ -36,7 +36,7 @@ public final class Static114 {
 		@Pc(129) double local129 = Math.atan2((double) local112, (double) local123);
 		@Pc(136) int local136 = (int) ((double) local37 * Math.sin(local129));
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
-		Static558.aClass23Array7[arg4].method8186((float) local136 + (float) arg7.anInt3802 / 2.0F + (float) arg1, (float) -local143 + (float) arg7.anInt3746 / 2.0F + (float) arg5, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
+		Static558.aSoftwareIndexedSpriteArray7[arg4].method8186((float) local136 + (float) arg7.anInt3802 / 2.0F + (float) arg1, (float) -local143 + (float) arg7.anInt3746 / 2.0F + (float) arg5, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
 	}
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(III)Lclient!tla;")

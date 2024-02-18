@@ -77,7 +77,7 @@ public final class Linkable_Sub53 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "([I)Lclient!sq;")
-	public Linkable_Sub49_Sub1 method8502(@OriginalArg(0) int[] arg0) {
+	public PcmSound method8502(@OriginalArg(0) int[] arg0) {
 		if (arg0 != null && arg0[0] <= 0) {
 			return null;
 		}
@@ -116,7 +116,7 @@ public final class Linkable_Sub53 extends Linkable {
 		this.aFloatArray77 = null;
 		@Pc(129) byte[] local129 = this.aByteArray102;
 		this.aByteArray102 = null;
-		return new Linkable_Sub49_Sub1(this.anInt9680, local129, this.anInt9685, this.anInt9679, this.aBoolean745);
+		return new PcmSound(this.anInt9680, local129, this.anInt9685, this.anInt9679, this.aBoolean745);
 	}
 
 	@OriginalMember(owner = "client!uj", name = "b", descriptor = "(I)[F")

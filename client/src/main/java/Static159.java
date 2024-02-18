@@ -33,9 +33,9 @@ public final class Static159 {
 			local9 = Static422.method5771();
 		}
 		Static97.method1905(Static84.anInt1775 + local9, Static71.anInt1576 - -local7, Static407.anInt6288, arg0, Static682.anInt10295);
-		Static180.aClass14_3.method8829(Static71.anInt1576 + local7 + 3, Static84.anInt1775 - (-local9 + -14), Static32.aClass32_24.method877(Static51.anInt1052), -1, -10660793);
-		@Pc(69) int local69 = Static189.aClass120_1.method8853() + local7;
-		@Pc(76) int local76 = Static189.aClass120_1.method8854() + local9;
+		Static180.aClass14_3.method8829(Static71.anInt1576 + local7 + 3, Static84.anInt1775 - (-local9 + -14), Static32.aLocalizedText24.method877(Static51.anInt1052), -1, -10660793);
+		@Pc(69) int local69 = Static189.aMouse1.method8853() + local7;
+		@Pc(76) int local76 = Static189.aMouse1.method8854() + local9;
 		@Pc(80) int local80;
 		@Pc(101) int local101;
 		if (Static236.aBoolean304) {

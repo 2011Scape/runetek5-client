@@ -13,16 +13,16 @@ public final class Static711 {
 
 	@OriginalMember(owner = "client!wia", name = "a", descriptor = "(B)V")
 	public static void method9272() {
-		if (Static236.aClass270_2 == null) {
+		if (Static236.aPrivilegedRequest2 == null) {
 			return;
 		}
-		if (Static236.aClass270_2.anInt6789 == 1) {
-			Static236.aClass270_2 = null;
+		if (Static236.aPrivilegedRequest2.anInt6789 == 1) {
+			Static236.aPrivilegedRequest2 = null;
 			return;
 		}
-		if (Static236.aClass270_2.anInt6789 == 2) {
-			Static637.method8382(Static340.aString53, 2, Static272.aClass390_3);
-			Static236.aClass270_2 = null;
+		if (Static236.aPrivilegedRequest2.anInt6789 == 2) {
+			Static637.method8382(Static340.aString53, 2, Static272.aSignlink3);
+			Static236.aPrivilegedRequest2 = null;
 			return;
 		}
 	}

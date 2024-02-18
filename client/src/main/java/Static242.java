@@ -36,7 +36,7 @@ public final class Static242 {
 
 	@OriginalMember(owner = "client!hj", name = "c", descriptor = "(I)V")
 	public static void method3502() {
-		Static525.aClass2_Sub2_Sub16_12 = new SecondaryLinkable_Sub16(Static32.aClass32_4.method877(Static51.anInt1052), "", Static442.anInt6699, 1012, -1, 0L, 0, 0, true, false, 0L, true);
+		Static525.aClass2_Sub2_Sub16_12 = new SecondaryLinkable_Sub16(Static32.aLocalizedText4.method877(Static51.anInt1052), "", Static442.anInt6699, 1012, -1, 0L, 0, 0, true, false, 0L, true);
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(IZ)I")
@@ -61,22 +61,22 @@ public final class Static242 {
 		for (@Pc(19) int local19 = 0; local19 < local5; local19++) {
 			@Pc(26) ParticleNode_Sub2_Sub1_Sub2_Sub1 local26 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local7[local19]];
 			if (local26 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local26 && local26.aString9 != null && local26.aString9.equalsIgnoreCase(arg0)) {
-				@Pc(47) Class345 local47 = null;
+				@Pc(47) ClientProt local47 = null;
 				if (arg1 == 1) {
-					local47 = Static424.aClass345_79;
+					local47 = Static424.aClientProt79;
 				} else if (arg1 == 4) {
-					local47 = Static587.aClass345_104;
+					local47 = Static587.aClientProt104;
 				} else if (arg1 == 5) {
-					local47 = Static675.aClass345_118;
+					local47 = Static675.aClientProt118;
 				} else if (arg1 == 6) {
-					local47 = Static173.aClass345_30;
+					local47 = Static173.aClientProt30;
 				} else if (arg1 == 7) {
-					local47 = Static273.aClass345_55;
+					local47 = Static273.aClientProt55;
 				} else if (arg1 == 9) {
-					local47 = Static571.aClass345_103;
+					local47 = Static571.aClientProt103;
 				}
 				if (local47 != null) {
-					@Pc(108) Linkable_Sub19 local108 = Static293.method4335(local47, Static405.aClass153_2.aIsaacRandom_1);
+					@Pc(108) OutboundPacket local108 = Static293.method4335(local47, Static405.aClass153_2.aIsaacRandom_1);
 					local108.aPacketBit_1.p1(0);
 					local108.aPacketBit_1.p2(local7[local19]);
 					Static405.aClass153_2.method3275(local108);
@@ -86,7 +86,7 @@ public final class Static242 {
 			}
 		}
 		if (!local9) {
-			Static67.method6098(Static32.aClass32_21.method877(Static51.anInt1052) + arg0);
+			Static67.method6098(Static32.aLocalizedText21.method877(Static51.anInt1052) + arg0);
 		}
 	}
 }

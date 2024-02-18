@@ -9,17 +9,17 @@ public final class Static314 {
 	public static int anInt5035;
 
 	@OriginalMember(owner = "client!jw", name = "D", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_132 = new Class225(27, 0);
+	public static final ServerProt ServerProt132 = new ServerProt(27, 0);
 
 	@OriginalMember(owner = "client!jw", name = "c", descriptor = "(B)V")
 	public static void method4560() {
-		@Pc(5) Class82 local5 = Static580.aClass82_186;
-		synchronized (Static580.aClass82_186) {
-			Static580.aClass82_186.method2157();
+		@Pc(5) SoftLruHashTable local5 = Static580.aSoftLruHashTable186;
+		synchronized (Static580.aSoftLruHashTable186) {
+			Static580.aSoftLruHashTable186.method2157();
 		}
-		local5 = Static54.aClass82_25;
-		synchronized (Static54.aClass82_25) {
-			Static54.aClass82_25.method2157();
+		local5 = Static54.aSoftLruHashTable25;
+		synchronized (Static54.aSoftLruHashTable25) {
+			Static54.aSoftLruHashTable25.method2157();
 		}
 	}
 
@@ -67,7 +67,7 @@ public final class Static314 {
 			}
 			local20.anInt3647 = 0;
 			if (!local20.aBoolean278 && local20.aClass348_1 != null) {
-				@Pc(59) Linkable_Sub19 local59 = Static293.method4335(Static415.aClass345_75, local20.aIsaacRandom_1);
+				@Pc(59) OutboundPacket local59 = Static293.method4335(Static415.aClientProt75, local20.aIsaacRandom_1);
 				local20.method3275(local59);
 				try {
 					local20.method3273();

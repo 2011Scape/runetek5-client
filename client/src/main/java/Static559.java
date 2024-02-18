@@ -7,20 +7,20 @@ public final class Static559 {
 	public static Class327 aClass327_7;
 
 	@OriginalMember(owner = "client!rka", name = "Qb", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_3;
+	public static AudioChannel aAudioChannel3;
 
 	@OriginalMember(owner = "client!rka", name = "Ob", descriptor = "I")
 	public static int anInt8410 = 0;
 
 	@OriginalMember(owner = "client!rka", name = "b", descriptor = "(ZI)V")
 	public static void method7414() {
-		@Pc(5) Class82 local5 = Static580.aClass82_186;
-		synchronized (Static580.aClass82_186) {
-			Static580.aClass82_186.method2147(5);
+		@Pc(5) SoftLruHashTable local5 = Static580.aSoftLruHashTable186;
+		synchronized (Static580.aSoftLruHashTable186) {
+			Static580.aSoftLruHashTable186.method2147(5);
 		}
-		local5 = Static54.aClass82_25;
-		synchronized (Static54.aClass82_25) {
-			Static54.aClass82_25.method2147(5);
+		local5 = Static54.aSoftLruHashTable25;
+		synchronized (Static54.aSoftLruHashTable25) {
+			Static54.aSoftLruHashTable25.method2147(5);
 		}
 	}
 

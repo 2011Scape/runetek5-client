@@ -25,6 +25,6 @@ public final class Static327 {
 
 	@OriginalMember(owner = "client!kg", name = "c", descriptor = "(B)V")
 	public static void method4895() {
-		Static166.aClass82_59.method2157();
+		Static166.aSoftLruHashTable59.method2157();
 	}
 }

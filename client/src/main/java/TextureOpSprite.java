@@ -59,7 +59,7 @@ public class TextureOpSprite extends TextureOp {
 		if (this.anIntArray641 != null) {
 			return true;
 		} else if (this.anInt8232 >= 0) {
-			@Pc(37) Class407 local37 = Static426.anInt940 >= 0 ? Static735.method9382(Static582.aClass330_108, Static426.anInt940, this.anInt8232) : Static735.method9379(Static582.aClass330_108, this.anInt8232);
+			@Pc(37) Class407 local37 = Static426.anInt940 >= 0 ? Static735.method9382(Static582.aJs5108, Static426.anInt940, this.anInt8232) : Static735.method9379(Static582.aJs5108, this.anInt8232);
 			local37.method9389();
 			this.anIntArray641 = local37.method9383();
 			this.anInt8231 = local37.anInt10850;

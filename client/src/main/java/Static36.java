@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static36 {
 
 	@OriginalMember(owner = "client!bda", name = "E", descriptor = "Lclient!nh;")
-	public static Class260 aClass260_1;
+	public static VarPlayerTypeList aVarPlayerTypeList1;
 
 	@OriginalMember(owner = "client!bda", name = "D", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_15 = new Class225(70, -2);
+	public static final ServerProt ServerProt15 = new ServerProt(70, -2);
 
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(IB)V")
 	public static void method977(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
@@ -17,7 +17,7 @@ public final class Static36 {
 		if (arg1 < 92) {
 			return;
 		}
-		@Pc(16) int local16 = aClass260_1.method5782(arg0).anInt8301;
+		@Pc(16) int local16 = aVarPlayerTypeList1.method5782(arg0).anInt8301;
 		if (local16 == 0) {
 			return;
 		}
@@ -43,33 +43,33 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(BLclient!vq;Ljava/lang/String;Ljava/lang/String;I)Lclient!oba;")
-	public static Class270 method980(@OriginalArg(1) Class390 arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
+	public static PrivilegedRequest method980(@OriginalArg(1) Signlink arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
 		if (arg3 == 0) {
 			return arg0.method8986(arg1);
 		}
-		@Pc(57) Class270 local57;
+		@Pc(57) PrivilegedRequest local57;
 		if (arg3 == 1) {
 			try {
 				@Pc(36) Object local36 = Static727.method96(Static166.anApplet1, arg2, new Object[] { (new URL(Static166.anApplet1.getCodeBase(), arg1)).toString() });
 				if (local36 == null) {
 					throw new RuntimeException();
 				}
-				@Pc(47) Class270 local47 = new Class270();
+				@Pc(47) PrivilegedRequest local47 = new PrivilegedRequest();
 				local47.anInt6789 = 1;
 				return local47;
 			} catch (@Pc(53) Throwable local53) {
-				local57 = new Class270();
+				local57 = new PrivilegedRequest();
 				local57.anInt6789 = 2;
 				return local57;
 			}
 		} else if (arg3 == 2) {
 			try {
 				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_blank");
-				local57 = new Class270();
+				local57 = new PrivilegedRequest();
 				local57.anInt6789 = 1;
 				return local57;
 			} catch (@Pc(94) Exception local94) {
-				local57 = new Class270();
+				local57 = new PrivilegedRequest();
 				local57.anInt6789 = 2;
 				return local57;
 			}
@@ -80,11 +80,11 @@ public final class Static36 {
 			}
 			try {
 				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_top");
-				local57 = new Class270();
+				local57 = new PrivilegedRequest();
 				local57.anInt6789 = 1;
 				return local57;
 			} catch (@Pc(137) Exception local137) {
-				local57 = new Class270();
+				local57 = new PrivilegedRequest();
 				local57.anInt6789 = 2;
 				return local57;
 			}

@@ -7,7 +7,7 @@ public final class Static514 {
 	public static int anInt7677;
 
 	@OriginalMember(owner = "client!qca", name = "z", descriptor = "Lclient!oba;")
-	public static Class270 aClass270_6;
+	public static PrivilegedRequest aPrivilegedRequest6;
 
 	@OriginalMember(owner = "client!qca", name = "x", descriptor = "Lclient!kn;")
 	public static final Class213 aClass213_3 = new Class213(false);
@@ -19,7 +19,7 @@ public final class Static514 {
 	public static int anInt7680 = -1;
 
 	@OriginalMember(owner = "client!qca", name = "a", descriptor = "(ZLclient!sb;)V")
-	public static void method6792(@OriginalArg(1) Class330 arg0) {
-		Static309.aClass330_62 = arg0;
+	public static void method6792(@OriginalArg(1) Js5 arg0) {
+		Static309.aJs562 = arg0;
 	}
 }

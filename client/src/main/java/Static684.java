@@ -29,7 +29,7 @@ public final class Static684 {
 			Static164.anInt2808 = 0;
 		}
 		Static81.method1586(arg2);
-		Static694.method9028(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+		Static694.method9028(Static163.aClass19_17, Static32.aLocalizedText12.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
 		@Pc(74) int local74 = Static691.anInt10367;
 		Static691.anInt10367 = (Static62.anInt1465 - (Static720.anInt10859 >> 4)) * 8;
 		@Pc(85) int local85 = Static116.anInt2270;
@@ -78,12 +78,12 @@ public final class Static684 {
 						if (local191) {
 							Static103.anIntArray187[Static390.anInt6126++] = local146.anInt10740;
 						} else {
-							local146.method9328((Class268) null);
+							local146.method9328((NpcType) null);
 							local120 = true;
 							local141.unlink();
 						}
 					} else {
-						local146.method9328((Class268) null);
+						local146.method9328((NpcType) null);
 						local120 = true;
 						local141.unlink();
 					}

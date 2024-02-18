@@ -14,7 +14,7 @@ public final class Static273 {
 	public static int anInt4403 = 0;
 
 	@OriginalMember(owner = "client!ik", name = "u", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_113 = new Class225(1, -1);
+	public static final ServerProt ServerProt113 = new ServerProt(1, -1);
 
 	@OriginalMember(owner = "client!ik", name = "I", descriptor = "Z")
 	public static boolean aBoolean339 = true;
@@ -23,7 +23,7 @@ public final class Static273 {
 	public static boolean aBoolean340 = true;
 
 	@OriginalMember(owner = "client!ik", name = "J", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_55 = new Class345(49, 3);
+	public static final ClientProt aClientProt55 = new ClientProt(49, 3);
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(II)V")
 	public static void method3959(@OriginalArg(0) int arg0) {
@@ -32,15 +32,15 @@ public final class Static273 {
 	}
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(Lclient!bd;ZIILclient!sb;II)V")
-	public static void method3961(@OriginalArg(0) Linkable_Sub6_Sub1 arg0, @OriginalArg(3) int arg1, @OriginalArg(4) Class330 arg2, @OriginalArg(5) int arg3) {
+	public static void method3961(@OriginalArg(0) MidiPcmStream arg0, @OriginalArg(3) int arg1, @OriginalArg(4) Js5 arg2, @OriginalArg(5) int arg3) {
 		Static611.method8229(arg1, arg3, arg2);
 		Static117.aClass2_Sub6_Sub1_2 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ik", name = "g", descriptor = "(I)Lclient!fk;")
-	public static Linkable_Sub19 method3962() {
-		@Pc(6) Linkable_Sub19 local6 = Static119.method2174();
-		local6.aClass345_32 = null;
+	public static OutboundPacket method3962() {
+		@Pc(6) OutboundPacket local6 = Static119.method2174();
+		local6.aClientProt_32 = null;
 		local6.anInt2986 = 0;
 		local6.aPacketBit_1 = new PacketBit(5000);
 		return local6;

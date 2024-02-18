@@ -7,13 +7,13 @@ public final class Static254 {
 	public static int anInt4115;
 
 	@OriginalMember(owner = "client!hr", name = "d", descriptor = "(I)[Lclient!hja;")
-	public static Class167[] method3604() {
-		return new Class167[] { Static572.aClass167_53, Static572.aClass167_54, Static572.aClass167_55, Static572.aClass167_56, Static572.aClass167_57, Static572.aClass167_58, Static572.aClass167_59, Static572.aClass167_60, Static572.aClass167_61, Static572.aClass167_62, Static572.aClass167_63, Static572.aClass167_64, Static572.aClass167_65 };
+	public static LoginProt[] method3604() {
+		return new LoginProt[] { Static572.aLoginProt53, Static572.aLoginProt54, Static572.aLoginProt55, Static572.aLoginProt56, Static572.aLoginProt57, Static572.aLoginProt58, Static572.aLoginProt59, Static572.aLoginProt60, Static572.aLoginProt61, Static572.aLoginProt62, Static572.aLoginProt63, Static572.aLoginProt64, Static572.aLoginProt65};
 	}
 
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
-		Static6.aClass330_1.anInt8555 = 1;
+		Static6.aJs51.anInt8555 = 1;
 		if (Static283.anInt4574 == 15) {
 			Static187.method2842();
 		}
@@ -105,7 +105,7 @@ public final class Static254 {
 		Static218.method3187();
 		Static273.aBoolean339 = true;
 		Static637.aShortArray132 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
-		Static331.aString52 = Static32.aClass32_26.method877(Static51.anInt1052);
+		Static331.aString52 = Static32.aLocalizedText26.method877(Static51.anInt1052);
 		Static400.aClass2_Sub34_28.method5104(Static400.aClass2_Sub34_28.aClass57_Sub4_1.method2143(), Static400.aClass2_Sub34_28.aClass57_Sub4_2);
 		Static400.aClass2_Sub34_28.method5104(Static400.aClass2_Sub34_28.aClass57_Sub19_1.method5960(), Static400.aClass2_Sub34_28.aClass57_Sub19_2);
 		Static334.anInt5456 = 0;
@@ -113,7 +113,7 @@ public final class Static254 {
 		Static371.method5284();
 		Static211.aClass2_Sub12_3 = null;
 		Static675.aLong307 = 0L;
-		Static6.aClass330_1.anInt8555 = 2;
+		Static6.aJs51.anInt8555 = 2;
 	}
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(I)V")

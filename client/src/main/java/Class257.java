@@ -24,7 +24,7 @@ public final class Class257 {
 	public boolean aBoolean481 = false;
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "(Lclient!bp;BLclient!cka;II[I)Z")
-	public boolean method5769(@OriginalArg(0) Class50 arg0, @OriginalArg(2) Class69 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4) {
+	public boolean method5769(@OriginalArg(0) SeqTypeList arg0, @OriginalArg(2) SeqType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4) {
 		if (this.aBoolean481) {
 			return true;
 		} else if (arg4.length <= arg3) {

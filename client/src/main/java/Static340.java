@@ -13,7 +13,7 @@ public final class Static340 {
 	public static int anInt5586;
 
 	@OriginalMember(owner = "client!kn", name = "g", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_69;
+	public static Js5 aJs569;
 
 	@OriginalMember(owner = "client!kn", name = "b", descriptor = "(III)Z")
 	public static boolean method5011(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {

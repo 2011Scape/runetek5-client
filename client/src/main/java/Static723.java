@@ -10,7 +10,7 @@ public final class Static723 {
 	public static int anInt10929;
 
 	@OriginalMember(owner = "client!wu", name = "E", descriptor = "Lclient!ul;")
-	public static final Class377 aClass377_9 = new Class377("stellardawn", "Stellar Dawn", 1);
+	public static final ModeGame aModeGame9 = new ModeGame("stellardawn", "Stellar Dawn", 1);
 
 	@OriginalMember(owner = "client!wu", name = "B", descriptor = "Z")
 	public static volatile boolean aBoolean827 = false;

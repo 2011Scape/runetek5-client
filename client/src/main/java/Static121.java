@@ -8,7 +8,7 @@ public final class Static121 {
 	public static int anInt2333;
 
 	@OriginalMember(owner = "client!dp", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_49 = new Class225(5, 7);
+	public static final ServerProt ServerProt49 = new ServerProt(5, 7);
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(II)V")
 	public static void method2199(@OriginalArg(0) int arg0) {
@@ -21,7 +21,7 @@ public final class Static121 {
 	}
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(IIILclient!sb;)Lclient!dv;")
-	public static Class88 method2201(@OriginalArg(0) int arg0, @OriginalArg(3) Class330 arg1) {
+	public static Class88 method2201(@OriginalArg(0) int arg0, @OriginalArg(3) Js5 arg1) {
 		@Pc(9) byte[] local9 = arg1.method7595(0, arg0);
 		return local9 == null ? null : new Class88(local9);
 	}

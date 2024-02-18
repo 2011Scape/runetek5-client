@@ -46,7 +46,7 @@ public final class Static213 {
 					@Pc(75) int local75 = arg1 + local65;
 					@Pc(79) int local79 = local59 + arg3;
 					if (local75 > 0 && local79 > 0 && arg2 - 1 > local75 && arg4 - 1 > local79) {
-						@Pc(111) Class54 local111 = Static354.aClass142_4.method3063(local12, 109);
+						@Pc(111) LocType local111 = Static354.aLocTypeList4.method3063(local12, 109);
 						if (local71 != 22 || Static400.aClass2_Sub34_28.aClass57_Sub6_1.method2714() != 0 || local111.anInt1271 != 0 || local111.anInt1242 == 1 || local111.aBoolean101) {
 							local26 = true;
 							if (!local111.method1302()) {

@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static367 {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "[Lclient!ok;")
-	public static final Class278[] aClass278Array1 = new Class278[16];
+	public static final ParticleEffectorType[] aParticleEffectorTypeArray1 = new ParticleEffectorType[16];
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	public static void method5267() {
-		@Pc(1) Class82 local1 = Static354.aClass82_120;
-		synchronized (Static354.aClass82_120) {
-			Static354.aClass82_120.method2157();
+		@Pc(1) SoftLruHashTable local1 = Static354.aSoftLruHashTable120;
+		synchronized (Static354.aSoftLruHashTable120) {
+			Static354.aSoftLruHashTable120.method2157();
 		}
 	}
 

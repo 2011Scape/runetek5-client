@@ -11,11 +11,11 @@ public final class Static479 {
 	public static int anInt7201 = 503;
 
 	@OriginalMember(owner = "client!pc", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_177 = new Class225(49, 1);
+	public static final ServerProt ServerProt177 = new ServerProt(49, 1);
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(IZI)V")
 	public static void method6461(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Linkable_Sub19 local13 = Static293.method4335(Static288.aClass345_58, Static405.aClass153_2.aIsaacRandom_1);
+		@Pc(13) OutboundPacket local13 = Static293.method4335(Static288.aClientProt58, Static405.aClass153_2.aIsaacRandom_1);
 		local13.aPacketBit_1.p4_alt3(arg1);
 		local13.aPacketBit_1.p2_alt3(arg0);
 		Static405.aClass153_2.method3275(local13);

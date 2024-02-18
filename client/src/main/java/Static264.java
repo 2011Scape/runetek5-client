@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static264 {
 
 	@OriginalMember(owner = "client!ie", name = "j", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_235 = new Class82(8);
+	public static final SoftLruHashTable aSoftLruHashTable235 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!ie", name = "b", descriptor = "[[I")
 	public static final int[][] anIntArrayArray267 = new int[][] { { 0, 1, 2, 3 }, { 1, 2, 3, 0 }, { 1, 2, -1, 0 }, { 2, 0, -1, 1 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 1, 3, -1 }, { -1, 0, 2, -1 }, { 3, 5, 2, 0 }, { 0, 2, 5, 3 }, { 0, 2, 3, 5 }, { 0, 1, 2, 3 } };

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static517 {
 
 	@OriginalMember(owner = "client!qea", name = "h", descriptor = "Lclient!st;")
-	public static Class23 aClass23_32;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite32;
 
 	@OriginalMember(owner = "client!qea", name = "c", descriptor = "Lclient!dfa;")
 	public static final Class77 aClass77_5 = new Class77();
@@ -14,9 +14,9 @@ public final class Static517 {
 	public static final Class155 aClass155_36 = new Class155(15);
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!sb;III)Lclient!ip;")
-	public static SecondaryLinkable_Sub13 method6820(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Map method6820(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(14) Packet local14 = new Packet(arg0.method7595(arg2, arg1));
-		@Pc(50) SecondaryLinkable_Sub13 local50 = new SecondaryLinkable_Sub13(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
+		@Pc(50) Map local50 = new Map(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(54) int local54 = local14.g1();
 		for (@Pc(56) int local56 = 0; local56 < local54; local56++) {
 			local50.aLinkedList26.addTail(new Linkable_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));

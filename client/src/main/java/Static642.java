@@ -11,9 +11,9 @@ public final class Static642 {
 	public static int anInt9599 = 1;
 
 	@OriginalMember(owner = "client!uea", name = "a", descriptor = "(Lclient!sb;IZLclient!sb;)V")
-	public static void method8440(@OriginalArg(0) Class330 arg0, @OriginalArg(3) Class330 arg1) {
-		Static509.aClass330_96 = arg1;
-		Static269.aClass330_58 = arg0;
+	public static void method8440(@OriginalArg(0) Js5 arg0, @OriginalArg(3) Js5 arg1) {
+		Static509.aJs596 = arg1;
+		Static269.aJs558 = arg0;
 	}
 
 	@OriginalMember(owner = "client!uea", name = "a", descriptor = "(ZBI)Lclient!pea;")

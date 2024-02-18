@@ -34,7 +34,7 @@ public final class ParticleNode_Sub2_Sub1_Sub1 extends ParticleNode_Sub2_Sub1 {
 	private double aDouble7;
 
 	@OriginalMember(owner = "client!b", name = "Ib", descriptor = "Lclient!hv;")
-	private ParticleNode_Sub5 aClass8_Sub5_1;
+	private ParticleSystem aClass8_Sub5_1;
 
 	@OriginalMember(owner = "client!b", name = "wb", descriptor = "D")
 	private double aDouble8;
@@ -102,7 +102,7 @@ public final class ParticleNode_Sub2_Sub1_Sub1 extends ParticleNode_Sub2_Sub1 {
 		this.anInt706 = arg10;
 		this.anInt705 = arg8;
 		this.anInt709 = arg9;
-		@Pc(82) int local82 = Static23.aClass128_1.method2694(this.anInt715).anInt5842;
+		@Pc(82) int local82 = Static23.aSpotAnimTypeList1.method2694(this.anInt715).anInt5842;
 		this.aClass152_1 = new Class152_Sub2(this, false);
 		this.aClass152_1.method9113(true, local82);
 	}
@@ -180,7 +180,7 @@ public final class ParticleNode_Sub2_Sub1_Sub1 extends ParticleNode_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(ILclient!ha;I)Lclient!ka;")
 	private Class114 method814(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2) {
-		@Pc(17) Class227 local17 = Static23.aClass128_1.method2694(this.anInt715);
+		@Pc(17) SpotAnimType local17 = Static23.aSpotAnimTypeList1.method2694(this.anInt715);
 		return local17.method5252(this.aClass152_1, (byte) 2, arg0, arg1);
 	}
 
@@ -231,7 +231,7 @@ public final class ParticleNode_Sub2_Sub1_Sub1 extends ParticleNode_Sub2_Sub1 {
 		if (this.anInt695 < 0) {
 			return;
 		}
-		@Pc(105) Class289 local105 = local21.method9317();
+		@Pc(105) BasType local105 = local21.method9317();
 		@Pc(107) int local107 = 0;
 		@Pc(109) int local109 = 0;
 		if (local105.anIntArrayArray181 != null && local105.anIntArrayArray181[this.anInt695] != null) {

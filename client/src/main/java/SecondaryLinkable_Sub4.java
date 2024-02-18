@@ -37,7 +37,7 @@ public final class SecondaryLinkable_Sub4 extends SecondaryLinkable {
 		this.unlink();
 		this.unlinkSecondary();
 		Static31.anInt767--;
-		Static717.aClass82_232.method2150(this, arg0.aLong234);
+		Static717.aSoftLruHashTable232.method2150(this, arg0.aLong234);
 		return false;
 	}
 

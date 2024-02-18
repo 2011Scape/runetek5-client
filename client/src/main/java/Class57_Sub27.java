@@ -3,15 +3,15 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!sga")
-public final class Class57_Sub27 extends Class57 {
+public final class Class57_Sub27 extends Preference {
 
 	@OriginalMember(owner = "client!sga", name = "<init>", descriptor = "(ILclient!kv;)V")
-	public Class57_Sub27(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub34 arg1) {
+	public Class57_Sub27(@OriginalArg(0) int arg0, @OriginalArg(1) Preferences arg1) {
 		super(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!sga", name = "<init>", descriptor = "(Lclient!kv;)V")
-	public Class57_Sub27(@OriginalArg(0) Linkable_Sub34 arg0) {
+	public Class57_Sub27(@OriginalArg(0) Preferences arg0) {
 		super(arg0);
 	}
 
@@ -30,7 +30,7 @@ public final class Class57_Sub27 extends Class57 {
 	@OriginalMember(owner = "client!sga", name = "a", descriptor = "(B)V")
 	@Override
 	public void method8350() {
-		if (super.aClass2_Sub34_34.method5105() == Static723.aClass377_9) {
+		if (super.aClass2_Sub34_34.method5105() == Static723.aModeGame9) {
 			super.anInt9489 = 2;
 		}
 		if (super.anInt9489 < 0 || super.anInt9489 > 2) {

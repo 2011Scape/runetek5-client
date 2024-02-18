@@ -16,7 +16,7 @@ public final class Static320 {
 	public static final Class172 aClass172_2 = new Class172();
 
 	@OriginalMember(owner = "client!kc", name = "d", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_135 = new Class225(85, -2);
+	public static final ServerProt ServerProt135 = new ServerProt(85, -2);
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Z)V")
 	public static void method4598() {
@@ -43,7 +43,7 @@ public final class Static320 {
 			Static470.aClass2_Sub2_Sub16_10 = null;
 			Static96.aClass2_Sub2_Sub16_13 = null;
 		} else {
-			if (Static209.aBoolean269 && Static334.aClass319_1.method8479(81) && Static594.anInt8777 > 2) {
+			if (Static209.aBoolean269 && Static334.aKeyboard1.method8479(81) && Static594.anInt8777 > 2) {
 				Static470.aClass2_Sub2_Sub16_10 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.sentinel.prev.prev;
 			} else {
 				Static470.aClass2_Sub2_Sub16_10 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.sentinel.prev;
@@ -84,8 +84,8 @@ public final class Static320 {
 		@Pc(426) int local426;
 		@Pc(428) int local428;
 		if (local64 == -1) {
-			local317 = Static189.aClass120_1.method8853();
-			local321 = Static189.aClass120_1.method8854();
+			local317 = Static189.aMouse1.method8853();
+			local321 = Static189.aMouse1.method8854();
 			@Pc(323) boolean local323 = false;
 			if (Static139.aClass2_Sub2_Sub4_1 != null) {
 				if (local317 >= Static692.anInt10375 - 10 && local317 <= Static692.anInt10375 + Static85.anInt10675 + 10 && Static493.anInt7364 - 10 <= local321 && local321 <= Static493.anInt7364 + Static25.anInt598 + 10) {

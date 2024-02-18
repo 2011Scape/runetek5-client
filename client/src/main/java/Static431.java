@@ -20,7 +20,7 @@ public final class Static431 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!cka;ILclient!eo;B)V")
-	public static void method5827(@OriginalArg(0) Class69 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ParticleNode_Sub2 arg2) {
+	public static void method5827(@OriginalArg(0) SeqType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ParticleNode_Sub2 arg2) {
 		if (Static33.anInt779 >= 50 || (arg0 == null || arg0.anIntArrayArray38 == null || arg0.anIntArrayArray38.length <= arg1 || arg0.anIntArrayArray38[arg1] == null)) {
 			return;
 		}

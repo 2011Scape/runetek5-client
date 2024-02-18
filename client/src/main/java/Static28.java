@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static28 {
 
 	@OriginalMember(owner = "client!aw", name = "a", descriptor = "[Lclient!st;")
-	public static Class23[] aClass23Array1;
+	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray1;
 
 	@OriginalMember(owner = "client!aw", name = "c", descriptor = "Z")
 	public static boolean aBoolean43 = false;
@@ -18,7 +18,7 @@ public final class Static28 {
 		}
 		@Pc(30) Class1 local30 = local23.aClass1_1;
 		arg1.KA(arg3, arg0, arg3 + arg2.anInt3802, arg0 - -arg2.anInt3746);
-		if (Static578.anInt8595 == 2 || Static578.anInt8595 == 5 || Static12.aClass23_26 == null) {
+		if (Static578.anInt8595 == 2 || Static578.anInt8595 == 5 || Static12.aSoftwareIndexedSprite26 == null) {
 			arg1.A(-16777216, local30, arg3, arg0);
 			return;
 		}
@@ -39,7 +39,7 @@ public final class Static28 {
 		}
 		@Pc(120) int local120 = local90 / 128 + 208 + 48 - Static720.anInt10859 * 2;
 		@Pc(137) int local137 = Static501.anInt7568 * 4 + 48 - local93 / 128 - (Static501.anInt7568 - 104) * 2;
-		Static12.aClass23_26.method8185((float) arg3 + (float) arg2.anInt3802 / 2.0F, (float) arg2.anInt3746 / 2.0F + (float) arg0, (float) local120, (float) local137, local79, local87 << 2, local30, arg3, arg0);
+		Static12.aSoftwareIndexedSprite26.method8185((float) arg3 + (float) arg2.anInt3802 / 2.0F, (float) arg2.anInt3746 / 2.0F + (float) arg0, (float) local120, (float) local137, local79, local87 << 2, local30, arg3, arg0);
 		@Pc(190) int local190;
 		@Pc(200) int local200;
 		@Pc(211) int local211;
@@ -55,7 +55,7 @@ public final class Static28 {
 		for (local190 = 0; local190 < Static536.anInt8148; local190++) {
 			local200 = Static566.anIntArray654[local190] * 4 + 2 - local90 / 128;
 			local211 = Static350.anIntArray433[local190] * 4 + 2 - local93 / 128;
-			@Pc(287) Class54 local287 = Static354.aClass142_4.method3063(Static533.anIntArray628[local190], 105);
+			@Pc(287) LocType local287 = Static354.aLocTypeList4.method3063(Static533.anIntArray628[local190], 105);
 			if (local287.anIntArray113 != null) {
 				local287 = local287.method1301(13, Static34.aClass304_1);
 				if (local287 == null || local287.anInt1233 == -1) {
@@ -73,7 +73,7 @@ public final class Static28 {
 				@Pc(370) int local370 = (int) (local334.id >> 14 & 0x3FFFL) - Static116.anInt2270;
 				local381 = local222 * 4 + 2 - local90 / 128;
 				local392 = local370 * 4 + 2 - local93 / 128;
-				Static6.method107(arg0, local30, Static471.aClass23Array11[0], local392, local381, arg2, arg3);
+				Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[0], local392, local381, arg2, arg3);
 			}
 		}
 		@Pc(490) int local490;
@@ -82,7 +82,7 @@ public final class Static28 {
 			if (local427 != null) {
 				@Pc(432) ParticleNode_Sub2_Sub1_Sub2_Sub2 local432 = local427.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				if (local432.method9322() && local432.aByte144 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
-					@Pc(446) Class268 local446 = local432.aClass268_1;
+					@Pc(446) NpcType local446 = local432.aNpcType1;
 					if (local446 != null && local446.anIntArray532 != null) {
 						local446 = local446.method5985(65535, Static34.aClass304_1);
 					}
@@ -90,7 +90,7 @@ public final class Static28 {
 						local392 = local432.anInt10690 / 128 - local90 / 128;
 						local490 = local432.anInt10694 / 128 - local93 / 128;
 						if (local446.anInt6733 == -1) {
-							Static6.method107(arg0, local30, Static471.aClass23Array11[1], local490, local392, arg2, arg3);
+							Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[1], local490, local392, arg2, arg3);
 						} else {
 							Static620.method8322(local490, arg3, local30, arg1, local446.anInt6733, arg0, local392, arg2);
 						}
@@ -127,17 +127,17 @@ public final class Static28 {
 					local652 = true;
 				}
 				if (local541.aBoolean128) {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[6], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[6], local585, local490, arg2, arg3);
 				} else if (local652) {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[4], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[4], local585, local490, arg2, arg3);
 				} else if (local541.aBoolean125) {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[7], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[7], local585, local490, arg2, arg3);
 				} else if (local587) {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[3], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[3], local585, local490, arg2, arg3);
 				} else if (local620) {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[5], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[5], local585, local490, arg2, arg3);
 				} else {
-					Static6.method107(arg0, local30, Static471.aClass23Array11[2], local585, local490, arg2, arg3);
+					Static6.method107(arg0, local30, Static471.aSoftwareIndexedSpriteArray11[2], local585, local490, arg2, arg3);
 				}
 			}
 		}
@@ -179,7 +179,7 @@ public final class Static28 {
 		if (Static675.anInt10156 != 0) {
 			local585 = Static675.anInt10156 * 4 + (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 50) + -1) * 2 + 2 - local90 / 128;
 			local878 = Static212.anInt3466 * 4 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 127) * 2 + 2 - local93 / 128 - 2;
-			Static6.method107(arg0, local30, Static691.aClass23Array15[Static266.aBoolean583 ? 1 : 0], local878, local585, arg2, arg3);
+			Static6.method107(arg0, local30, Static691.aSoftwareIndexedSpriteArray15[Static266.aBoolean583 ? 1 : 0], local878, local585, arg2, arg3);
 		}
 		if (!Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aBoolean124) {
 			arg1.method7971(3, 3, arg0 + arg2.anInt3746 / 2 - 1, arg2.anInt3802 / 2 + arg3 + -1, -1);

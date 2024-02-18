@@ -6,5 +6,5 @@ public final class Static627 {
 	public static Class407[] aClass407Array1;
 
 	@OriginalMember(owner = "client!ts", name = "k", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_200 = new Class82(20);
+	public static final SoftLruHashTable aSoftLruHashTable200 = new SoftLruHashTable(20);
 }

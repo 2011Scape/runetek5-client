@@ -5,9 +5,9 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static82 {
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(BLclient!sb;Lclient!sb;[I)V")
-	public static void method1592(@OriginalArg(1) Class330 arg0, @OriginalArg(2) Class330 arg1, @OriginalArg(3) int[] arg2) {
-		Static555.aClass330_106 = arg1;
-		Static237.aClass330_87 = arg0;
+	public static void method1592(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int[] arg2) {
+		Static555.aJs5106 = arg1;
+		Static237.aJs587 = arg0;
 		if (arg2 != null) {
 			Static552.anIntArray753 = arg2;
 		}

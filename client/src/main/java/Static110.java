@@ -47,8 +47,8 @@ public final class Static110 {
 	}
 
 	@OriginalMember(owner = "client!dha", name = "a", descriptor = "(Lclient!sb;I)V")
-	public static void method2081(@OriginalArg(0) Class330 arg0) {
-		Static331.aClass330_65 = arg0;
+	public static void method2081(@OriginalArg(0) Js5 arg0) {
+		Static331.aJs565 = arg0;
 	}
 
 	@OriginalMember(owner = "client!dha", name = "a", descriptor = "(Lclient!da;)V")

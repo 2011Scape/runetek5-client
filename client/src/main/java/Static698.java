@@ -81,7 +81,7 @@ public final class Static698 {
 			return;
 		}
 		@Pc(16) Class153 local16 = Static668.method8701();
-		@Pc(29) Linkable_Sub19 local29 = Static293.method4335(Static244.aClass345_53, local16.aIsaacRandom_1);
+		@Pc(29) OutboundPacket local29 = Static293.method4335(Static244.aClientProt53, local16.aIsaacRandom_1);
 		local29.aPacketBit_1.p1(Static231.method3379(arg0));
 		local29.aPacketBit_1.pjstr(arg0);
 		local16.method3275(local29);

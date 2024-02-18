@@ -407,7 +407,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	private final Class73_Sub1 aClass73_Sub1_21 = new Class73_Sub1();
 
 	@OriginalMember(owner = "client!am", name = "Td", descriptor = "Lclient!sb;")
-	protected final Class330 aClass330_112;
+	protected final Js5 aJs5112;
 
 	@OriginalMember(owner = "client!am", name = "T", descriptor = "Ljava/lang/Object;")
 	protected final Object anObject16;
@@ -446,10 +446,10 @@ public abstract class Class19_Sub1 extends Class19 {
 	private final Class334 aClass334_3;
 
 	@OriginalMember(owner = "client!am", name = "<init>", descriptor = "(Ljava/awt/Canvas;Ljava/lang/Object;Lclient!d;Lclient!sb;II)V")
-	protected Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) Interface4 arg2, @OriginalArg(3) Class330 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	protected Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) Interface4 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		super(arg2);
 		try {
-			this.aClass330_112 = arg3;
+			this.aJs5112 = arg3;
 			this.anObject15 = this.anObject16 = arg1;
 			this.anInt9158 = arg4;
 			this.aCanvas12 = this.aCanvas13 = arg0;
@@ -465,7 +465,7 @@ public abstract class Class19_Sub1 extends Class19 {
 				this.aClass334_3 = new Class334(this, super.anInterface4_10);
 				this.aNativeInterface3 = new NativeInterface(super.anInterface4_10.method6813(), this.anInt9178);
 				for (@Pc(371) int local371 = 0; local371 < super.anInterface4_10.method6813(); local371++) {
-					@Pc(378) Class118 local378 = super.anInterface4_10.method6817(local371);
+					@Pc(378) Material local378 = super.anInterface4_10.method6817(local371);
 					if (local378 != null) {
 						this.aNativeInterface3.initTextureMetrics(local371, local378.aByte58, local378.aByte57);
 					}
@@ -664,8 +664,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(IIZ)Lclient!st;")
 	@Override
-	public final Class23 method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
-		return new Class23_Sub3(this, arg0, arg1, arg2);
+	public final SoftwareIndexedSprite method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+		return new SoftwareIndexedSprite_Sub3(this, arg0, arg1, arg2);
 	}
 
 	@OriginalMember(owner = "client!am", name = "M", descriptor = "()I")
@@ -1028,8 +1028,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(IIIIZ)Lclient!st;")
 	@Override
-	public final Class23 method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		@Pc(11) Class23_Sub3 local11 = new Class23_Sub3(this, arg2, arg3, arg4);
+	public final SoftwareIndexedSprite method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+		@Pc(11) SoftwareIndexedSprite_Sub3 local11 = new SoftwareIndexedSprite_Sub3(this, arg2, arg3, arg4);
 		local11.method8201(0, 0, arg2, arg3, arg0, arg1);
 		return local11;
 	}
@@ -1434,8 +1434,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(Lclient!wp;Z)Lclient!st;")
 	@Override
-	public final Class23 method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
-		@Pc(141) Class23 local141;
+	public final SoftwareIndexedSprite method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
+		@Pc(141) SoftwareIndexedSprite local141;
 		if (arg0.anInt10847 == 0 || arg0.anInt10850 == 0) {
 			local141 = this.method7946(1, 1, 1, new int[1]);
 		} else {
@@ -2085,7 +2085,7 @@ public abstract class Class19_Sub1 extends Class19 {
 				this.method8031();
 			} else {
 				local29 = this.aClass334_3.method7654(arg1);
-				@Pc(60) Class118 local60 = super.anInterface4_10.method6817(arg1);
+				@Pc(60) Material local60 = super.anInterface4_10.method6817(arg1);
 				if (local60.aByte54 == 0 && local60.aByte52 == 0) {
 					this.method8031();
 				} else {
@@ -2368,8 +2368,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "([IIIIIZ)Lclient!st;")
 	@Override
-	public final Class23 method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
-		return new Class23_Sub3(this, arg2, arg3, arg0, 0, arg1);
+	public final SoftwareIndexedSprite method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
+		return new SoftwareIndexedSprite_Sub3(this, arg2, arg3, arg0, 0, arg1);
 	}
 
 	@OriginalMember(owner = "client!am", name = "z", descriptor = "(B)V")

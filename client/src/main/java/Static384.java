@@ -10,7 +10,7 @@ public final class Static384 {
 	public static final Class155 aClass155_26 = new Class155(14);
 
 	@OriginalMember(owner = "client!maa", name = "u", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_156 = new Class225(7, -2);
+	public static final ServerProt ServerProt156 = new ServerProt(7, -2);
 
 	@OriginalMember(owner = "client!maa", name = "r", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray31 = new String[] { "en", "de", "fr", "pt", "nl" };

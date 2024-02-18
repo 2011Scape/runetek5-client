@@ -91,12 +91,12 @@ public final class Class381 {
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(Ljava/lang/String;[Lclient!st;BI)I")
-	public int method8739(@OriginalArg(0) String arg0, @OriginalArg(1) Class23[] arg1, @OriginalArg(3) int arg2) {
+	public int method8739(@OriginalArg(0) String arg0, @OriginalArg(1) SoftwareIndexedSprite[] arg1, @OriginalArg(3) int arg2) {
 		return this.method8740(Static623.aStringArray43, new int[] { arg2 }, arg1, arg0);
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "([Ljava/lang/String;[II[Lclient!st;Ljava/lang/String;)I")
-	public int method8740(@OriginalArg(0) String[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) Class23[] arg2, @OriginalArg(4) String arg3) {
+	public int method8740(@OriginalArg(0) String[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) SoftwareIndexedSprite[] arg2, @OriginalArg(4) String arg3) {
 		if (arg3 == null) {
 			return 0;
 		}
@@ -248,7 +248,7 @@ public final class Class381 {
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "([Lclient!st;ILjava/lang/String;I)I")
-	public int method8741(@OriginalArg(0) Class23[] arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2) {
+	public int method8741(@OriginalArg(0) SoftwareIndexedSprite[] arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2) {
 		@Pc(16) int local16 = this.method8740(Static623.aStringArray43, new int[] { arg2 }, arg0, arg1);
 		@Pc(18) int local18 = 0;
 		for (@Pc(20) int local20 = 0; local20 < local16; local20++) {
@@ -261,7 +261,7 @@ public final class Class381 {
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(I[Lclient!st;Ljava/lang/String;)I")
-	public int method8742(@OriginalArg(1) Class23[] arg0, @OriginalArg(2) String arg1) {
+	public int method8742(@OriginalArg(1) SoftwareIndexedSprite[] arg0, @OriginalArg(2) String arg1) {
 		if (arg1 == null) {
 			return 0;
 		}
@@ -319,11 +319,11 @@ public final class Class381 {
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(Ljava/lang/String;[Lclient!st;II)Ljava/lang/String;")
-	public String method8743(@OriginalArg(0) String arg0, @OriginalArg(1) Class23[] arg1, @OriginalArg(2) int arg2) {
+	public String method8743(@OriginalArg(0) String arg0, @OriginalArg(1) SoftwareIndexedSprite[] arg1, @OriginalArg(2) int arg2) {
 		if (arg2 >= this.method8742(arg1, arg0)) {
 			return arg0;
 		}
-		@Pc(27) int local27 = arg2 - this.method8742((Class23[]) null, "...");
+		@Pc(27) int local27 = arg2 - this.method8742((SoftwareIndexedSprite[]) null, "...");
 		@Pc(29) int local29 = -1;
 		@Pc(31) int local31 = -1;
 		@Pc(33) int local33 = 0;
@@ -392,11 +392,11 @@ public final class Class381 {
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(BLjava/lang/String;)I")
 	public int method8744(@OriginalArg(1) String arg0) {
-		return this.method8742((Class23[]) null, arg0);
+		return this.method8742((SoftwareIndexedSprite[]) null, arg0);
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(IILjava/lang/String;[Lclient!st;B)I")
-	public int method8745(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class23[] arg3) {
+	public int method8745(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) SoftwareIndexedSprite[] arg3) {
 		if (arg1 == 0) {
 			arg1 = this.anInt10027;
 		}

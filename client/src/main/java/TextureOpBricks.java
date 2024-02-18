@@ -114,7 +114,7 @@ public final class TextureOpBricks extends TextureOp {
 			this.anInt4532 = arg1.g2();
 		}
 		if (arg0) {
-			Static278.aClass345_57 = null;
+			Static278.aClientProt_57 = null;
 		}
 	}
 

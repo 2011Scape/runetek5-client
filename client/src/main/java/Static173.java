@@ -9,18 +9,18 @@ public final class Static173 {
 	public static int[] anIntArray252;
 
 	@OriginalMember(owner = "client!fga", name = "o", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_30 = new Class345(82, 3);
+	public static final ClientProt aClientProt30 = new ClientProt(82, 3);
 
 	@OriginalMember(owner = "client!fga", name = "v", descriptor = "I")
 	public static int anInt2913 = -1;
 
 	@OriginalMember(owner = "client!fga", name = "b", descriptor = "(Z)V")
 	public static void method2690() {
-		if (Static719.aClass56_5 != null) {
-			Static719.aClass56_5.method3586();
+		if (Static719.aAudioChannel5 != null) {
+			Static719.aAudioChannel5.method3586();
 		}
-		if (Static559.aClass56_3 != null) {
-			Static559.aClass56_3.method3586();
+		if (Static559.aAudioChannel3 != null) {
+			Static559.aAudioChannel3.method3586();
 		}
 	}
 

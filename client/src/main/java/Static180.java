@@ -14,7 +14,7 @@ public final class Static180 {
 	public static int anInt2995 = 0;
 
 	@OriginalMember(owner = "client!fka", name = "j", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_33 = new Class345(2, 7);
+	public static final ClientProt aClientProt33 = new ClientProt(2, 7);
 
 	@OriginalMember(owner = "client!fka", name = "n", descriptor = "J")
 	public static long aLong108 = -1L;
@@ -32,7 +32,7 @@ public final class Static180 {
 			return;
 		}
 		@Pc(45) Class153 local45 = Static668.method8701();
-		@Pc(53) Linkable_Sub19 local53 = Static293.method4335(Static507.aClass345_95, local45.aIsaacRandom_1);
+		@Pc(53) OutboundPacket local53 = Static293.method4335(Static507.aClientProt95, local45.aIsaacRandom_1);
 		local53.aPacketBit_1.p1(Static231.method3379(local29.aString2) + 2);
 		local53.aPacketBit_1.p2(arg0);
 		local53.aPacketBit_1.pjstr(local29.aString2);

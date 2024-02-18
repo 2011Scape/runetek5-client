@@ -24,12 +24,12 @@ public final class SecondaryLinkable_Sub5 extends SecondaryLinkable {
 	public final Class249 aClass249_1;
 
 	@OriginalMember(owner = "client!co", name = "w", descriptor = "Lclient!ok;")
-	public final Class278 aClass278_1;
+	public final ParticleEffectorType aParticleEffectorType1;
 
 	@OriginalMember(owner = "client!co", name = "<init>", descriptor = "(Lclient!mn;Lclient!hv;)V")
-	public SecondaryLinkable_Sub5(@OriginalArg(0) Class249 arg0, @OriginalArg(1) ParticleNode_Sub5 arg1) {
+	public SecondaryLinkable_Sub5(@OriginalArg(0) Class249 arg0, @OriginalArg(1) ParticleSystem arg1) {
 		this.aClass249_1 = arg0;
-		this.aClass278_1 = this.aClass249_1.method5590();
+		this.aParticleEffectorType1 = this.aClass249_1.method5590();
 		this.method1707();
 	}
 
@@ -39,7 +39,7 @@ public final class SecondaryLinkable_Sub5 extends SecondaryLinkable {
 		this.anInt1824 = this.aClass249_1.anInt6250;
 		this.anInt1821 = this.aClass249_1.anInt6249;
 		if (this.aClass249_1.aClass73_6 != null) {
-			this.aClass249_1.aClass73_6.method7138(this.aClass278_1.anInt6979, this.aClass278_1.anInt6987, this.aClass278_1.anInt6975, Static485.anIntArray888);
+			this.aClass249_1.aClass73_6.method7138(this.aParticleEffectorType1.anInt6979, this.aParticleEffectorType1.anInt6987, this.aParticleEffectorType1.anInt6975, Static485.anIntArray888);
 		}
 		this.anInt1823 = Static485.anIntArray888[2];
 		this.anInt1825 = Static485.anIntArray888[0];

@@ -8,7 +8,7 @@ public final class Static259 {
 	public static final boolean[] aBooleanArray8 = new boolean[8];
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILjava/lang/String;Ljava/lang/String;Lclient!vq;ZZ)V")
-	public static void method3693(@OriginalArg(1) String arg0, @OriginalArg(2) String arg1, @OriginalArg(3) Class390 arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) boolean arg4) {
+	public static void method3693(@OriginalArg(1) String arg0, @OriginalArg(2) String arg1, @OriginalArg(3) Signlink arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) boolean arg4) {
 		if (!arg4) {
 			Static637.method8382(arg0, 3, arg2);
 			return;
@@ -20,10 +20,10 @@ public final class Static259 {
 				local31 = Static166.anApplet1.getParameter("haveie6");
 			}
 			if (local31 == null || !local31.equals("1")) {
-				@Pc(53) Class270 local53 = Static637.method8382(arg0, 0, arg2);
-				Static272.aClass390_3 = arg2;
+				@Pc(53) PrivilegedRequest local53 = Static637.method8382(arg0, 0, arg2);
+				Static272.aSignlink3 = arg2;
 				Static340.aString53 = arg0;
-				Static236.aClass270_2 = local53;
+				Static236.aPrivilegedRequest2 = local53;
 				return;
 			}
 		}

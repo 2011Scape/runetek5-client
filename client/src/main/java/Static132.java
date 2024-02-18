@@ -14,7 +14,7 @@ public final class Static132 {
 	public static boolean aBoolean208 = false;
 
 	@OriginalMember(owner = "client!ec", name = "A", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_54 = new Class225(91, -1);
+	public static final ServerProt ServerProt54 = new ServerProt(91, -1);
 
 	@OriginalMember(owner = "client!ec", name = "e", descriptor = "(I)V")
 	public static void method2312() {

@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static452 {
 
 	@OriginalMember(owner = "client!oea", name = "y", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_173 = new Class225(44, 10);
+	public static final ServerProt ServerProt173 = new ServerProt(44, 10);
 
 	@OriginalMember(owner = "client!oea", name = "v", descriptor = "I")
 	public static int anInt6869 = 0;
 
 	@OriginalMember(owner = "client!oea", name = "w", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_149 = new Class82(8);
+	public static final SoftLruHashTable aSoftLruHashTable149 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(ILclient!ge;)Lclient!fea;")
 	public static Class125 method6171(@OriginalArg(1) Packet arg0) {
@@ -32,8 +32,8 @@ public final class Static452 {
 	}
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(Lclient!c;BILclient!ha;II)V")
-	public static void method6173(@OriginalArg(0) Class54 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(9) Class173 local9 = Static720.aClass363_4.method8362(arg0.anInt1239);
+	public static void method6173(@OriginalArg(0) LocType arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+		@Pc(9) MsiType local9 = Static720.aMsiTypeList4.method8362(arg0.anInt1239);
 		if (local9.anInt4167 == -1) {
 			return;
 		}
@@ -43,7 +43,7 @@ public final class Static452 {
 		} else {
 			arg1 = 0;
 		}
-		@Pc(39) Class23 local39 = local9.method3689(arg1, arg2, arg0.aBoolean96);
+		@Pc(39) SoftwareIndexedSprite local39 = local9.method3689(arg1, arg2, arg0.aBoolean96);
 		if (local39 == null) {
 			return;
 		}

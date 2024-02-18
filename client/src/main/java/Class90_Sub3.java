@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class90_Sub3 extends Class90 {
 
 	@OriginalMember(owner = "client!lq", name = "t", descriptor = "Lclient!st;")
-	private Class23 aClass23_28;
+	private SoftwareIndexedSprite aSoftwareIndexedSprite28;
 
 	@OriginalMember(owner = "client!lq", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!gha;)V")
-	public Class90_Sub3(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class138_Sub2 arg2) {
+	public Class90_Sub3(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138_Sub2 arg2) {
 		super(arg0, arg1, arg2);
 	}
 
@@ -18,7 +18,7 @@ public final class Class90_Sub3 extends Class90 {
 	@Override
 	public void method7748() {
 		super.method7748();
-		this.aClass23_28 = Static652.method8533(((Class138_Sub2) super.aClass138_5).anInt3438, super.aClass330_109);
+		this.aSoftwareIndexedSprite28 = Static652.method8533(((Class138_Sub2) super.aClass138_5).anInt3438, super.aJs5109);
 	}
 
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(ZIBI)V")
@@ -31,7 +31,7 @@ public final class Class90_Sub3 extends Class90 {
 	@OriginalMember(owner = "client!lq", name = "b", descriptor = "(I)Z")
 	@Override
 	public boolean method7747() {
-		return super.method7747() ? super.aClass330_109.method7581(((Class138_Sub2) super.aClass138_5).anInt3438) : false;
+		return super.method7747() ? super.aJs5109.method7581(((Class138_Sub2) super.aClass138_5).anInt3438) : false;
 	}
 
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(IIZI)V")
@@ -41,7 +41,7 @@ public final class Class90_Sub3 extends Class90 {
 		@Pc(24) int[] local24 = new int[4];
 		Static163.aClass19_17.K(local24);
 		Static163.aClass19_17.KA(arg0, arg1 + 2, arg0 - -local13, arg1 + super.aClass138_5.anInt4413);
-		this.aClass23_28.method8198(arg0, arg1 + 2, super.aClass138_5.anInt4418, super.aClass138_5.anInt4413);
+		this.aSoftwareIndexedSprite28.method8198(arg0, arg1 + 2, super.aClass138_5.anInt4418, super.aClass138_5.anInt4413);
 		Static163.aClass19_17.KA(local24[0], local24[1], local24[2], local24[3]);
 	}
 }

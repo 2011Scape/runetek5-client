@@ -8,7 +8,7 @@ public final class Static591 {
 	public static final Interface27[] anInterface27Array2 = new Interface27[75];
 
 	@OriginalMember(owner = "client!sl", name = "B", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_107 = new Class345(92, 3);
+	public static final ClientProt aClientProt107 = new ClientProt(92, 3);
 
 	@OriginalMember(owner = "client!sl", name = "A", descriptor = "I")
 	public static int anInt8739 = 0;

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static372 {
 
 	@OriginalMember(owner = "client!ln", name = "m", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_69 = new Class345(20, 8);
+	public static final ClientProt aClientProt69 = new ClientProt(20, 8);
 
 	@OriginalMember(owner = "client!ln", name = "l", descriptor = "[Lclient!fk;")
-	public static final Linkable_Sub19[] aClass2_Sub19Array1 = new Linkable_Sub19[300];
+	public static final OutboundPacket[] aClass2_Sub19Array1 = new OutboundPacket[300];
 
 	@OriginalMember(owner = "client!ln", name = "a", descriptor = "(III)I")
 	public static int method5290(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -23,10 +23,10 @@ public final class Static372 {
 			@Pc(29) int local29 = 0;
 			for (@Pc(31) int local31 = 0; local31 < Static552.anIntArray753.length; local31++) {
 				@Pc(36) int local36 = Static552.anIntArray753[local31];
-				if (Static555.aClass330_106.method7581(local36)) {
+				if (Static555.aJs5106.method7581(local36)) {
 					local29++;
 				}
-				if (Static237.aClass330_87.method7581(local36)) {
+				if (Static237.aJs587.method7581(local36)) {
 					local29++;
 				}
 			}

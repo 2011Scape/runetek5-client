@@ -71,8 +71,8 @@ public final class Class73_Sub1 extends Class73 {
 	@Override
 	public void method7131(@OriginalArg(0) int arg0) {
 		this.aFloat42 = 1.0F;
-		this.aFloat39 = this.aFloat47 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		this.aFloat38 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		this.aFloat39 = this.aFloat47 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		this.aFloat38 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		this.aFloat45 = -this.aFloat38;
 		this.aFloat40 = this.aFloat46 = this.aFloat44 = this.aFloat41 = this.aFloat37 = this.aFloat36 = this.aFloat43 = 0.0F;
 	}
@@ -105,8 +105,8 @@ public final class Class73_Sub1 extends Class73 {
 	@OriginalMember(owner = "client!cw", name = "c", descriptor = "(I)V")
 	@Override
 	public void method7130(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		@Pc(9) float local9 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		@Pc(15) float local15 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat44;
 		@Pc(21) float local21 = this.aFloat42;
 		@Pc(24) float local24 = this.aFloat41;
@@ -153,8 +153,8 @@ public final class Class73_Sub1 extends Class73 {
 	@Override
 	public void method7132(@OriginalArg(0) int arg0) {
 		this.aFloat47 = 1.0F;
-		this.aFloat39 = this.aFloat42 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		this.aFloat44 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		this.aFloat39 = this.aFloat42 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		this.aFloat44 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		this.aFloat40 = -this.aFloat44;
 		this.aFloat38 = this.aFloat46 = this.aFloat41 = this.aFloat37 = this.aFloat45 = this.aFloat36 = this.aFloat43 = 0.0F;
 	}
@@ -213,8 +213,8 @@ public final class Class73_Sub1 extends Class73 {
 	@Override
 	public void method7136(@OriginalArg(0) int arg0) {
 		this.aFloat39 = 1.0F;
-		this.aFloat42 = this.aFloat47 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		this.aFloat36 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		this.aFloat42 = this.aFloat47 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		this.aFloat36 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		this.aFloat40 = this.aFloat38 = this.aFloat46 = this.aFloat44 = this.aFloat37 = this.aFloat45 = this.aFloat43 = 0.0F;
 		this.aFloat41 = -this.aFloat36;
 	}
@@ -318,12 +318,12 @@ public final class Class73_Sub1 extends Class73 {
 	@OriginalMember(owner = "client!cw", name = "a", descriptor = "(IIIIII)V")
 	@Override
 	public void method7135(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(9) float local9 = Class120.aFloatArray80[arg3 & 0x3FFF];
-		@Pc(15) float local15 = Class120.aFloatArray79[arg3 & 0x3FFF];
-		@Pc(21) float local21 = Class120.aFloatArray80[arg4 & 0x3FFF];
-		@Pc(27) float local27 = Class120.aFloatArray79[arg4 & 0x3FFF];
-		@Pc(33) float local33 = Class120.aFloatArray80[arg5 & 0x3FFF];
-		@Pc(39) float local39 = Class120.aFloatArray79[arg5 & 0x3FFF];
+		@Pc(9) float local9 = Mouse.aFloatArray80[arg3 & 0x3FFF];
+		@Pc(15) float local15 = Mouse.aFloatArray79[arg3 & 0x3FFF];
+		@Pc(21) float local21 = Mouse.aFloatArray80[arg4 & 0x3FFF];
+		@Pc(27) float local27 = Mouse.aFloatArray79[arg4 & 0x3FFF];
+		@Pc(33) float local33 = Mouse.aFloatArray80[arg5 & 0x3FFF];
+		@Pc(39) float local39 = Mouse.aFloatArray79[arg5 & 0x3FFF];
 		@Pc(43) float local43 = local33 * local15;
 		@Pc(47) float local47 = local15 * local39;
 		this.aFloat38 = local33 * -local27 + local47 * local21;
@@ -389,8 +389,8 @@ public final class Class73_Sub1 extends Class73 {
 	@OriginalMember(owner = "client!cw", name = "b", descriptor = "(I)V")
 	@Override
 	public void method7139(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		@Pc(9) float local9 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		@Pc(15) float local15 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat39;
 		@Pc(21) float local21 = this.aFloat40;
 		@Pc(24) float local24 = this.aFloat38;
@@ -438,8 +438,8 @@ public final class Class73_Sub1 extends Class73 {
 			this.aFloat42 = (float) (arg1 * 2);
 			return;
 		}
-		@Pc(59) float local59 = Class120.aFloatArray80[arg5 & 0x3FFF];
-		@Pc(65) float local65 = Class120.aFloatArray79[arg5 & 0x3FFF];
+		@Pc(59) float local59 = Mouse.aFloatArray80[arg5 & 0x3FFF];
+		@Pc(65) float local65 = Mouse.aFloatArray79[arg5 & 0x3FFF];
 		this.aFloat37 = arg3 + (-0.5F * local65 - local59 * 0.5F) * (float) (arg1 * 2);
 		this.aFloat40 = -2.0F * local65 * (float) arg1;
 		this.aFloat43 = arg0;
@@ -506,8 +506,8 @@ public final class Class73_Sub1 extends Class73 {
 	@OriginalMember(owner = "client!cw", name = "f", descriptor = "(I)V")
 	@Override
 	public void method7127(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Class120.aFloatArray80[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Class120.aFloatArray79[arg0 & 0x3FFF];
+		@Pc(9) float local9 = Mouse.aFloatArray80[arg0 & 0x3FFF];
+		@Pc(15) float local15 = Mouse.aFloatArray79[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat39;
 		@Pc(21) float local21 = this.aFloat40;
 		@Pc(24) float local24 = this.aFloat38;

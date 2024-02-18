@@ -23,19 +23,19 @@ public final class Static576 {
 		try {
 			if (Static96.anInt10171 == 2) {
 				if (Static62.aClass2_Sub8_3 == null) {
-					Static62.aClass2_Sub8_3 = Static728.method1153(Static676.aClass330_121, Static99.anInt2077, Static174.anInt2918);
+					Static62.aClass2_Sub8_3 = Static728.method1153(Static676.aJs5121, Static99.anInt2077, Static174.anInt2918);
 					if (Static62.aClass2_Sub8_3 == null) {
 						return false;
 					}
 				}
 				if (Static12.aClass123_4 == null) {
-					Static12.aClass123_4 = new Class123(Static91.aClass330_117, Static296.aClass330_61);
+					Static12.aClass123_4 = new Class123(Static91.aJs5117, Static296.aJs561);
 				}
-				@Pc(36) Linkable_Sub6_Sub1 local36 = Static581.aClass2_Sub6_Sub1_3;
+				@Pc(36) MidiPcmStream local36 = Static581.aClass2_Sub6_Sub1_3;
 				if (Static117.aClass2_Sub6_Sub1_2 != null) {
 					local36 = Static117.aClass2_Sub6_Sub1_2;
 				}
-				if (local36.method944(Static12.aClass123_4, Static86.aClass330_13, Static62.aClass2_Sub8_3)) {
+				if (local36.method944(Static12.aClass123_4, Static86.aJs513, Static62.aClass2_Sub8_3)) {
 					Static581.aClass2_Sub6_Sub1_3 = local36;
 					Static581.aClass2_Sub6_Sub1_3.method933();
 					@Pc(65) int local65;
@@ -61,14 +61,14 @@ public final class Static576 {
 							Static581.aClass2_Sub6_Sub1_3.method925(Static62.aClass2_Sub8_3, Static497.aBoolean564, Static146.aLong95);
 						}
 					}
-					if (Static426.aClass56_2 != null) {
-						Static426.aClass56_2.method3582(Static581.aClass2_Sub6_Sub1_3);
+					if (Static426.aAudioChannel2 != null) {
+						Static426.aAudioChannel2.method3582(Static581.aClass2_Sub6_Sub1_3);
 					}
 					Static146.aLong95 = 0L;
 					Static12.aClass123_4 = null;
 					Static62.aClass2_Sub8_3 = null;
 					Static117.aClass2_Sub6_Sub1_2 = null;
-					Static676.aClass330_121 = null;
+					Static676.aJs5121 = null;
 					return true;
 				}
 			}
@@ -77,7 +77,7 @@ public final class Static576 {
 			Static581.aClass2_Sub6_Sub1_3.method912();
 			Static12.aClass123_4 = null;
 			Static117.aClass2_Sub6_Sub1_2 = null;
-			Static676.aClass330_121 = null;
+			Static676.aJs5121 = null;
 			Static62.aClass2_Sub8_3 = null;
 			Static96.anInt10171 = 0;
 		}

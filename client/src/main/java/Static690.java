@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static690 {
 
 	@OriginalMember(owner = "client!vr", name = "b", descriptor = "Lclient!ql;")
-	public static Class308 aClass308_2;
+	public static NpcTypeList aNpcTypeList2;
 
 	@OriginalMember(owner = "client!vr", name = "e", descriptor = "J")
 	public static long aLong318;
 
 	@OriginalMember(owner = "client!vr", name = "d", descriptor = "Lclient!mj;")
-	public static Class243 aClass243_5;
+	public static BufferedFile aBufferedFile5;
 
 	@OriginalMember(owner = "client!vr", name = "c", descriptor = "Lclient!dfa;")
 	public static final Class77 aClass77_7 = new Class77();
@@ -21,7 +21,7 @@ public final class Static690 {
 			arg0 = 0;
 		}
 		Static507.anInt7618 = arg0;
-		Static81.aClass8_Sub5Array1 = new ParticleNode_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
+		Static81.aClass8_Sub5Array1 = new ParticleSystem[Static190.anIntArray265[Static507.anInt7618] + 1];
 		Static295.anInt4781 = 0;
 		Static349.anInt5693 = 0;
 	}

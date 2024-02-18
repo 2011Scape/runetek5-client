@@ -13,27 +13,27 @@ public final class Class123 {
 	private final HashTable aHashTable16 = new HashTable(256);
 
 	@OriginalMember(owner = "client!fca", name = "d", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_31;
+	private final Js5 aJs531;
 
 	@OriginalMember(owner = "client!fca", name = "i", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_32;
+	private final Js5 aJs532;
 
 	@OriginalMember(owner = "client!fca", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;)V")
-	public Class123(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class330 arg1) {
-		this.aClass330_31 = arg1;
-		this.aClass330_32 = arg0;
+	public Class123(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
+		this.aJs531 = arg1;
+		this.aJs532 = arg0;
 	}
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "(III[I)Lclient!sq;")
-	private Linkable_Sub49_Sub1 method2612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int[] arg2) {
+	private PcmSound method2612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int[] arg2) {
 		@Pc(15) int local15 = arg0 ^ (arg1 >>> 12 | (arg1 & 0x10000FFF) << 4);
 		@Pc(27) int local27 = local15 | arg1 << 16;
 		@Pc(30) long local30 = (long) local27;
-		@Pc(37) Linkable_Sub49_Sub1 local37 = (Linkable_Sub49_Sub1) this.aHashTable16.get(local30);
+		@Pc(37) PcmSound local37 = (PcmSound) this.aHashTable16.get(local30);
 		if (local37 != null) {
 			return local37;
 		} else if (arg2 == null || arg2[0] > 0) {
-			@Pc(62) Class89 local62 = Static729.method2245(this.aClass330_32, arg1, arg0);
+			@Pc(62) Class89 local62 = Static729.method2245(this.aJs532, arg1, arg0);
 			if (local62 == null) {
 				return null;
 			}
@@ -49,17 +49,17 @@ public final class Class123 {
 	}
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "([IIIB)Lclient!sq;")
-	private Linkable_Sub49_Sub1 method2613(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private PcmSound method2613(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(15) int local15 = (arg1 >>> 12 | (arg1 & 0xB0000FFF) << 4) ^ arg2;
 		@Pc(21) int local21 = local15 | arg1 << 16;
 		@Pc(26) long local26 = (long) local21 ^ 0x100000000L;
-		@Pc(33) Linkable_Sub49_Sub1 local33 = (Linkable_Sub49_Sub1) this.aHashTable16.get(local26);
+		@Pc(33) PcmSound local33 = (PcmSound) this.aHashTable16.get(local26);
 		if (local33 != null) {
 			return local33;
 		} else if (arg0 == null || arg0[0] > 0) {
 			@Pc(59) Linkable_Sub53 local59 = (Linkable_Sub53) this.aHashTable15.get(local26);
 			if (local59 == null) {
-				local59 = Static650.method8506(this.aClass330_31, arg1, arg2);
+				local59 = Static650.method8506(this.aJs531, arg1, arg2);
 				if (local59 == null) {
 					return null;
 				}
@@ -79,10 +79,10 @@ public final class Class123 {
 	}
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "(Z[II)Lclient!sq;")
-	public Linkable_Sub49_Sub1 method2614(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass330_32.method7597() == 1) {
+	public PcmSound method2614(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1) {
+		if (this.aJs532.method7597() == 1) {
 			return this.method2612(arg1, 0, arg0);
-		} else if (this.aClass330_32.method7608(arg1) == 1) {
+		} else if (this.aJs532.method7608(arg1) == 1) {
 			return this.method2612(0, arg1, arg0);
 		} else {
 			throw new RuntimeException();
@@ -90,10 +90,10 @@ public final class Class123 {
 	}
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "([IBI)Lclient!sq;")
-	public Linkable_Sub49_Sub1 method2615(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass330_31.method7597() == 1) {
+	public PcmSound method2615(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
+		if (this.aJs531.method7597() == 1) {
 			return this.method2613(arg0, 0, arg1);
-		} else if (this.aClass330_31.method7608(arg1) == 1) {
+		} else if (this.aJs531.method7608(arg1) == 1) {
 			return this.method2613(arg0, arg1, 0);
 		} else {
 			throw new RuntimeException();

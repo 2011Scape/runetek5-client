@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static25 {
 
 	@OriginalMember(owner = "client!as", name = "d", descriptor = "Lclient!bp;")
-	public static Class50 aClass50_1;
+	public static SeqTypeList aSeqTypeList1;
 
 	@OriginalMember(owner = "client!as", name = "g", descriptor = "I")
 	public static int anInt598;
 
 	@OriginalMember(owner = "client!as", name = "e", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_11 = new Class225(52, 6);
+	public static final ServerProt ServerProt11 = new ServerProt(52, 6);
 
 	@OriginalMember(owner = "client!as", name = "c", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable4 = new HashTable(32);

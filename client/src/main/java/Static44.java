@@ -26,7 +26,7 @@ public final class Static44 {
 	}
 
 	@OriginalMember(owner = "client!bia", name = "a", descriptor = "(Lclient!bp;I)V")
-	public static void method1074(@OriginalArg(0) Class50 arg0) {
-		Static692.aClass50_2 = arg0;
+	public static void method1074(@OriginalArg(0) SeqTypeList arg0) {
+		Static692.aSeqTypeList2 = arg0;
 	}
 }

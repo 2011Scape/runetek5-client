@@ -52,22 +52,22 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 	private final long aLong254;
 
 	@OriginalMember(owner = "client!rf", name = "k", descriptor = "Lclient!hv;")
-	public final ParticleNode_Sub5 aClass8_Sub5_6;
+	public final ParticleSystem aClass8_Sub5_6;
 
 	@OriginalMember(owner = "client!rf", name = "q", descriptor = "Lclient!vaa;")
-	public Class379 aClass379_1;
+	public ParticleEmitterType aParticleEmitterType1;
 
 	@OriginalMember(owner = "client!rf", name = "j", descriptor = "Lclient!fla;")
 	public final Class130 aClass130_11;
 
 	@OriginalMember(owner = "client!rf", name = "<init>", descriptor = "(Lclient!ha;Lclient!rv;Lclient!hv;J)V")
-	public ParticleNode_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class328 arg1, @OriginalArg(2) ParticleNode_Sub5 arg2, @OriginalArg(3) long arg3) {
+	public ParticleNode_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class328 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
 		this.aClass328_1 = arg1;
 		this.aLong254 = arg3;
 		this.aClass8_Sub5_6 = arg2;
-		this.aClass379_1 = this.aClass328_1.method7547();
-		if (!arg0.method7937() && this.aClass379_1.anInt9880 != -1) {
-			this.aClass379_1 = Static444.method5994(this.aClass379_1.anInt9880);
+		this.aParticleEmitterType1 = this.aClass328_1.method7547();
+		if (!arg0.method7937() && this.aParticleEmitterType1.anInt9880 != -1) {
+			this.aParticleEmitterType1 = Static444.method5994(this.aParticleEmitterType1.anInt9880);
 		}
 		this.aClass130_11 = new Class130();
 		this.anInt8264 = (int) ((double) this.anInt8264 + Math.random() * 64.0D);
@@ -88,23 +88,23 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 		@Pc(46) int local46;
 		if (this.aBoolean630) {
 			arg1 = false;
-		} else if (this.aClass379_1.anInt9896 > Static507.anInt7618) {
+		} else if (this.aParticleEmitterType1.anInt9896 > Static507.anInt7618) {
 			arg1 = false;
 		} else if (Static164.anIntArray246[Static507.anInt7618] < Static452.anInt6869) {
 			arg1 = false;
 		} else if (this.aBoolean631) {
 			arg1 = false;
-		} else if (this.aClass379_1.anInt9921 != -1) {
+		} else if (this.aParticleEmitterType1.anInt9921 != -1) {
 			local46 = (int) (arg2 - this.aLong254);
-			if (this.aClass379_1.aBoolean762 || this.aClass379_1.anInt9921 >= local46) {
-				local46 %= this.aClass379_1.anInt9921;
+			if (this.aParticleEmitterType1.aBoolean762 || this.aParticleEmitterType1.anInt9921 >= local46) {
+				local46 %= this.aParticleEmitterType1.anInt9921;
 			} else {
 				arg1 = false;
 			}
-			if (!this.aClass379_1.aBoolean761 && local46 < this.aClass379_1.anInt9885) {
+			if (!this.aParticleEmitterType1.aBoolean761 && local46 < this.aParticleEmitterType1.anInt9885) {
 				arg1 = false;
 			}
-			if (this.aClass379_1.aBoolean761 && this.aClass379_1.anInt9885 <= local46) {
+			if (this.aParticleEmitterType1.aBoolean761 && this.aParticleEmitterType1.anInt9885 <= local46) {
 				arg1 = false;
 			}
 		}
@@ -144,13 +144,13 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 						this.anInt8277 = this.anInt8277 * 32767 / local362;
 						this.anInt8275 = this.anInt8275 * 32767 / local362;
 						this.anInt8278 = this.anInt8278 * 32767 / local362;
-						if (this.aClass379_1.aShort125 > 0 || this.aClass379_1.aShort126 > 0) {
+						if (this.aParticleEmitterType1.aShort125 > 0 || this.aParticleEmitterType1.aShort126 > 0) {
 							local414 = (int) (Math.atan2((double) this.anInt8278, (double) this.anInt8275) * 2607.5945876176133D);
 							local435 = (int) (Math.atan2((double) this.anInt8277, Math.sqrt((double) (this.anInt8275 * this.anInt8275 + this.anInt8278 * this.anInt8278))) * 2607.5945876176133D);
-							this.anInt8273 = this.aClass379_1.aShort125 - this.aClass379_1.aShort124;
-							this.anInt8272 = this.aClass379_1.aShort124 + local414 - (this.anInt8273 >> 1);
-							this.anInt8274 = this.aClass379_1.aShort126 - this.aClass379_1.aShort127;
-							this.anInt8276 = this.aClass379_1.aShort127 + local435 - (this.anInt8274 >> 1);
+							this.anInt8273 = this.aParticleEmitterType1.aShort125 - this.aParticleEmitterType1.aShort124;
+							this.anInt8272 = this.aParticleEmitterType1.aShort124 + local414 - (this.anInt8273 >> 1);
+							this.anInt8274 = this.aParticleEmitterType1.aShort126 - this.aParticleEmitterType1.aShort127;
+							this.anInt8276 = this.aParticleEmitterType1.aShort127 + local435 - (this.anInt8274 >> 1);
 						}
 						break;
 					}
@@ -159,14 +159,14 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 					this.anInt8277 >>= 0x1;
 				}
 			}
-			this.anInt8264 += (int) (((double) this.aClass379_1.anInt9933 + Math.random() * (double) (this.aClass379_1.anInt9898 - this.aClass379_1.anInt9933)) * (double) arg0);
+			this.anInt8264 += (int) (((double) this.aParticleEmitterType1.anInt9933 + Math.random() * (double) (this.aParticleEmitterType1.anInt9898 - this.aParticleEmitterType1.anInt9933)) * (double) arg0);
 			if (this.anInt8264 > 63) {
 				local210 = this.anInt8264 >> 6;
 				this.anInt8264 &= 0x3F;
 				for (local244 = 0; local244 < local210; local244++) {
 					@Pc(577) int local577;
 					@Pc(581) int local581;
-					if (this.aClass379_1.aShort125 <= 0 && this.aClass379_1.aShort126 <= 0) {
+					if (this.aParticleEmitterType1.aShort125 <= 0 && this.aParticleEmitterType1.aShort126 <= 0) {
 						local218 = this.anInt8275;
 						local235 = this.anInt8278;
 						local226 = this.anInt8277;
@@ -202,26 +202,26 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 					@Pc(794) int local794 = (int) ((double) local776 * Math.random() + (double) local727);
 					@Pc(803) int local803 = (int) ((double) local749 + (double) local780 * Math.random());
 					@Pc(812) int local812 = (int) ((double) local771 + Math.random() * (double) local785);
-					@Pc(828) int local828 = (int) (Math.random() * (double) (this.aClass379_1.anInt9888 - this.aClass379_1.anInt9894)) + this.aClass379_1.anInt9894;
-					@Pc(845) int local845 = (int) (Math.random() * (double) (this.aClass379_1.anInt9902 - this.aClass379_1.anInt9912)) + this.aClass379_1.anInt9912;
-					@Pc(862) int local862 = (int) (Math.random() * (double) (this.aClass379_1.anInt9918 - this.aClass379_1.anInt9884)) + this.aClass379_1.anInt9884;
+					@Pc(828) int local828 = (int) (Math.random() * (double) (this.aParticleEmitterType1.anInt9888 - this.aParticleEmitterType1.anInt9894)) + this.aParticleEmitterType1.anInt9894;
+					@Pc(845) int local845 = (int) (Math.random() * (double) (this.aParticleEmitterType1.anInt9902 - this.aParticleEmitterType1.anInt9912)) + this.aParticleEmitterType1.anInt9912;
+					@Pc(862) int local862 = (int) (Math.random() * (double) (this.aParticleEmitterType1.anInt9918 - this.aParticleEmitterType1.anInt9884)) + this.aParticleEmitterType1.anInt9884;
 					@Pc(926) int local926;
-					if (this.aClass379_1.aBoolean763) {
+					if (this.aParticleEmitterType1.aBoolean763) {
 						@Pc(868) double local868 = Math.random();
-						local926 = (int) ((double) this.aClass379_1.anInt9903 + (double) this.aClass379_1.anInt9913 * local868) | (int) ((double) this.aClass379_1.anInt9914 + local868 * (double) this.aClass379_1.anInt9911) << 8 | (int) ((double) this.aClass379_1.anInt9899 + (double) this.aClass379_1.anInt9929 * local868) << 16 | (int) (Math.random() * (double) this.aClass379_1.anInt9878 + (double) this.aClass379_1.anInt9906) << 24;
+						local926 = (int) ((double) this.aParticleEmitterType1.anInt9903 + (double) this.aParticleEmitterType1.anInt9913 * local868) | (int) ((double) this.aParticleEmitterType1.anInt9914 + local868 * (double) this.aParticleEmitterType1.anInt9911) << 8 | (int) ((double) this.aParticleEmitterType1.anInt9899 + (double) this.aParticleEmitterType1.anInt9929 * local868) << 16 | (int) (Math.random() * (double) this.aParticleEmitterType1.anInt9878 + (double) this.aParticleEmitterType1.anInt9906) << 24;
 					} else {
-						local926 = (int) ((double) this.aClass379_1.anInt9903 + Math.random() * (double) this.aClass379_1.anInt9913) | (int) ((double) this.aClass379_1.anInt9914 + Math.random() * (double) this.aClass379_1.anInt9911) << 8 | (int) (Math.random() * (double) this.aClass379_1.anInt9929 + (double) this.aClass379_1.anInt9899) << 16 | (int) ((double) this.aClass379_1.anInt9906 + (double) this.aClass379_1.anInt9878 * Math.random()) << 24;
+						local926 = (int) ((double) this.aParticleEmitterType1.anInt9903 + Math.random() * (double) this.aParticleEmitterType1.anInt9913) | (int) ((double) this.aParticleEmitterType1.anInt9914 + Math.random() * (double) this.aParticleEmitterType1.anInt9911) << 8 | (int) (Math.random() * (double) this.aParticleEmitterType1.anInt9929 + (double) this.aParticleEmitterType1.anInt9899) << 16 | (int) ((double) this.aParticleEmitterType1.anInt9906 + (double) this.aParticleEmitterType1.anInt9878 * Math.random()) << 24;
 					}
-					@Pc(990) int local990 = this.aClass379_1.anInt9905;
-					if (!arg3.method7937() && !this.aClass379_1.aBoolean755) {
+					@Pc(990) int local990 = this.aParticleEmitterType1.anInt9905;
+					if (!arg3.method7937() && !this.aParticleEmitterType1.aBoolean755) {
 						local990 = -1;
 					}
 					if (Static600.anInt8880 == Static559.anInt8410) {
-						new ParticleNode_Sub4_Sub2_Sub1(this, local794, local803, local812, local218, local226, local235, local828, local845, local926, local862, local990, this.aClass379_1.aBoolean760, this.aClass379_1.aBoolean758);
+						new SecondaryParticleNode_Sub2_Sub1(this, local794, local803, local812, local218, local226, local235, local828, local845, local926, local862, local990, this.aParticleEmitterType1.aBoolean760, this.aParticleEmitterType1.aBoolean758);
 					} else {
-						@Pc(1032) ParticleNode_Sub4_Sub2_Sub1 local1032 = Static538.aClass8_Sub4_Sub2_Sub1Array2[Static600.anInt8880];
+						@Pc(1032) SecondaryParticleNode_Sub2_Sub1 local1032 = Static538.aClass8_Sub4_Sub2_Sub1Array2[Static600.anInt8880];
 						Static600.anInt8880 = Static600.anInt8880 + 1 & 0x3FF;
-						local1032.method6696(this, local794, local803, local812, local218, local226, local235, local828, local845, local926, local862, local990, this.aClass379_1.aBoolean760, this.aClass379_1.aBoolean758);
+						local1032.method6696(this, local794, local803, local812, local218, local226, local235, local828, local845, local926, local862, local990, this.aParticleEmitterType1.aBoolean760, this.aParticleEmitterType1.aBoolean758);
 					}
 				}
 			}
@@ -244,7 +244,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 			this.aClass177_1.anInt4269 = this.aClass328_1.anInt8503;
 		}
 		this.anInt8268 = 0;
-		for (@Pc(1171) ParticleNode_Sub4_Sub2_Sub1 local1171 = (ParticleNode_Sub4_Sub2_Sub1) this.aClass130_11.method2790(); local1171 != null; local1171 = (ParticleNode_Sub4_Sub2_Sub1) this.aClass130_11.method2785()) {
+		for (@Pc(1171) SecondaryParticleNode_Sub2_Sub1 local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2790(); local1171 != null; local1171 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2785()) {
 			local1171.method6694(arg2, arg0);
 			this.anInt8268++;
 		}
@@ -253,7 +253,7 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(JLclient!ha;I)V")
 	public void method7263(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1) {
-		for (@Pc(11) ParticleNode_Sub4_Sub2_Sub1 local11 = (ParticleNode_Sub4_Sub2_Sub1) this.aClass130_11.method2790(); local11 != null; local11 = (ParticleNode_Sub4_Sub2_Sub1) this.aClass130_11.method2785()) {
+		for (@Pc(11) SecondaryParticleNode_Sub2_Sub1 local11 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2790(); local11 != null; local11 = (SecondaryParticleNode_Sub2_Sub1) this.aClass130_11.method2785()) {
 			local11.method6695(arg1, arg0);
 		}
 	}

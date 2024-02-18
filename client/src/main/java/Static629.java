@@ -8,7 +8,7 @@ public final class Static629 {
 	public static Class14 aClass14_11;
 
 	@OriginalMember(owner = "client!tu", name = "j", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_228 = new Class225(94, -1);
+	public static final ServerProt ServerProt228 = new ServerProt(94, -1);
 
 	@OriginalMember(owner = "client!tu", name = "a", descriptor = "(BLjava/io/File;)[B")
 	public static byte[] method8348(@OriginalArg(1) File arg0) {

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static187 {
 
 	@OriginalMember(owner = "client!fp", name = "M", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_36 = new Class345(68, -1);
+	public static final ClientProt aClientProt36 = new ClientProt(68, -1);
 
 	@OriginalMember(owner = "client!fp", name = "S", descriptor = "[S")
 	public static final short[] aShortArray52 = new short[] { 2, 22, 52, 30, 53, 9, 51, 15 };
@@ -52,12 +52,12 @@ public final class Static187 {
 	}
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(Lclient!sb;I)V")
-	public static void method2844(@OriginalArg(0) Class330 arg0) {
+	public static void method2844(@OriginalArg(0) Js5 arg0) {
 		Static559.anInt8410 = 0;
 		Static600.anInt8880 = 0;
 		Static342.aClass130_7 = new Class130();
-		Static538.aClass8_Sub4_Sub2_Sub1Array2 = new ParticleNode_Sub4_Sub2_Sub1[1024];
-		Static81.aClass8_Sub5Array1 = new ParticleNode_Sub5[Static190.anIntArray265[Static507.anInt7618] + 1];
+		Static538.aClass8_Sub4_Sub2_Sub1Array2 = new SecondaryParticleNode_Sub2_Sub1[1024];
+		Static81.aClass8_Sub5Array1 = new ParticleSystem[Static190.anIntArray265[Static507.anInt7618] + 1];
 		Static349.anInt5693 = 0;
 		Static295.anInt4781 = 0;
 		Static703.method9169(arg0);

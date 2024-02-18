@@ -13,7 +13,7 @@ public final class Static256 {
 	public static final Class184 aClass184_10 = new Class184(14, 0, 4, 1);
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(IILclient!sb;Lclient!d;Ljava/awt/Canvas;)Lclient!ha;")
-	public static Class19 method3637(@OriginalArg(0) int arg0, @OriginalArg(2) Class330 arg1, @OriginalArg(3) Interface4 arg2, @OriginalArg(4) Canvas arg3) {
+	public static Class19 method3637(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Interface4 arg2, @OriginalArg(4) Canvas arg3) {
 		if (!Static651.method8516()) {
 			throw new RuntimeException("");
 		} else if (Static14.method179("jaggl")) {
@@ -32,7 +32,7 @@ public final class Static256 {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(ZLclient!cg;Z)V")
 	public static void method3638(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(9) Class289 local9 = arg0.method9317();
+		@Pc(9) BasType local9 = arg0.method9317();
 		if (arg0.anInt10764 == 0) {
 			arg0.anInt10763 = 0;
 			Static524.anInt8042 = 0;
@@ -40,7 +40,7 @@ public final class Static256 {
 			return;
 		}
 		if (arg0.aClass152_11.method9109() && !arg0.aClass152_11.method9106()) {
-			@Pc(41) Class69 local41 = arg0.aClass152_11.method9107();
+			@Pc(41) SeqType local41 = arg0.aClass152_11.method9107();
 			if (arg0.anInt10762 > 0 && local41.anInt1642 == 0) {
 				Static524.anInt8042 = 0;
 				Static521.anInt7756 = -1;
@@ -56,9 +56,9 @@ public final class Static256 {
 		}
 		for (@Pc(86) int local86 = 0; local86 < arg0.aClass199Array3.length; local86++) {
 			if (arg0.aClass199Array3[local86].anInt4930 != -1 && arg0.aClass199Array3[local86].aClass152_7.method9106()) {
-				@Pc(117) Class227 local117 = Static23.aClass128_1.method2694(arg0.aClass199Array3[local86].anInt4930);
+				@Pc(117) SpotAnimType local117 = Static23.aSpotAnimTypeList1.method2694(arg0.aClass199Array3[local86].anInt4930);
 				if (local117.aBoolean448 && local117.anInt5842 != -1) {
-					@Pc(133) Class69 local133 = Static25.aClass50_1.method1162(local117.anInt5842);
+					@Pc(133) SeqType local133 = Static25.aSeqTypeList1.method1162(local117.anInt5842);
 					if (arg0.anInt10762 > 0 && local133.anInt1642 == 0) {
 						Static521.anInt7756 = -1;
 						arg0.anInt10763++;
@@ -115,7 +115,7 @@ public final class Static256 {
 		@Pc(422) int local422 = 16;
 		@Pc(424) boolean local424 = true;
 		if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub2) {
-			local424 = ((ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0).aClass268_1.aBoolean501;
+			local424 = ((ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0).aNpcType1.aBoolean501;
 		}
 		@Pc(468) int local468;
 		if (local424) {
@@ -250,11 +250,11 @@ public final class Static256 {
 		}
 		@Pc(107) int local107 = local78 * arg10 + arg8 * local74 >> 14;
 		@Pc(118) int local118 = arg8 * local78 - arg10 * local74 >> 14;
-		@Pc(125) int local125 = arg2.method8741((Class23[]) null, arg1, 100);
+		@Pc(125) int local125 = arg2.method8741((SoftwareIndexedSprite[]) null, arg1, 100);
 		@Pc(131) int local131 = local107 - local125 / 2;
-		@Pc(139) int local139 = arg2.method8745(100, 0, arg1, (Class23[]) null);
+		@Pc(139) int local139 = arg2.method8745(100, 0, arg1, (SoftwareIndexedSprite[]) null);
 		if (local131 >= -arg6.anInt3802 && arg6.anInt3802 >= local131 && local118 >= -arg6.anInt3746 && arg6.anInt3746 >= local118) {
-			arg0.method8826(arg9, (int[]) null, arg4, arg1, arg7, (Class23[]) null, arg6.anInt3746 / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.anInt3802 / 2 + local131 + arg3, 0, 0, local125, 50);
+			arg0.method8826(arg9, (int[]) null, arg4, arg1, arg7, (SoftwareIndexedSprite[]) null, arg6.anInt3746 / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.anInt3802 / 2 + local131 + arg3, 0, 0, local125, 50);
 		}
 	}
 }

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!j")
-public final class j extends Class23 implements Interface5 {
+public final class j extends SoftwareIndexedSprite implements Interface5 {
 
 	@OriginalMember(owner = "client!j", name = "nativeid", descriptor = "J")
 	public long nativeid;

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class90_Sub1 extends Class90 {
 
 	@OriginalMember(owner = "client!gia", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!il;)V")
-	public Class90_Sub1(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class138_Sub3 arg2) {
+	public Class90_Sub1(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138_Sub3 arg2) {
 		super(arg0, arg1, arg2);
 	}
 

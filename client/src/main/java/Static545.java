@@ -45,7 +45,7 @@ public final class Static545 {
 				}
 				Static344.anInt5621 = Static642.anInt9599;
 				@Pc(118) Class153 local118 = Static668.method8701();
-				@Pc(124) Linkable_Sub19 local124 = Static293.method4335(Static86.aClass345_16, local118.aIsaacRandom_1);
+				@Pc(124) OutboundPacket local124 = Static293.method4335(Static86.aClientProt16, local118.aIsaacRandom_1);
 				local124.aPacketBit_1.p1(Static231.method3379(arg0));
 				local124.aPacketBit_1.pjstr(arg0);
 				local118.method3275(local124);

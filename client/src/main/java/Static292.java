@@ -15,31 +15,31 @@ public final class Static292 {
 
 	@OriginalMember(owner = "client!jea", name = "a", descriptor = "(ILclient!ha;IIIBI)V")
 	public static void method4604(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(6) int arg4) {
-		if ((Static26.aClass23_5 == null || Static63.aClass23_8 == null || Static261.aClass23_18 == null) && Static721.aClass330_128.method7581(Static337.anInt5561) && Static721.aClass330_128.method7581(Static176.anInt7532) && Static721.aClass330_128.method7581(Static282.anInt4419)) {
-			@Pc(46) Class407 local46 = Static735.method9382(Static721.aClass330_128, Static176.anInt7532, 0);
-			Static63.aClass23_8 = arg1.method7948(local46, true);
+		if ((Static26.aSoftwareIndexedSprite5 == null || Static63.aSoftwareIndexedSprite8 == null || Static261.aSoftwareIndexedSprite18 == null) && Static721.aJs5128.method7581(Static337.anInt5561) && Static721.aJs5128.method7581(Static176.anInt7532) && Static721.aJs5128.method7581(Static282.anInt4419)) {
+			@Pc(46) Class407 local46 = Static735.method9382(Static721.aJs5128, Static176.anInt7532, 0);
+			Static63.aSoftwareIndexedSprite8 = arg1.method7948(local46, true);
 			local46.method9388();
-			Static542.aClass23_33 = arg1.method7948(local46, true);
-			Static26.aClass23_5 = arg1.method7948(Static735.method9382(Static721.aClass330_128, Static337.anInt5561, 0), true);
-			@Pc(71) Class407 local71 = Static735.method9382(Static721.aClass330_128, Static282.anInt4419, 0);
-			Static261.aClass23_18 = arg1.method7948(local71, true);
+			Static542.aSoftwareIndexedSprite33 = arg1.method7948(local46, true);
+			Static26.aSoftwareIndexedSprite5 = arg1.method7948(Static735.method9382(Static721.aJs5128, Static337.anInt5561, 0), true);
+			@Pc(71) Class407 local71 = Static735.method9382(Static721.aJs5128, Static282.anInt4419, 0);
+			Static261.aSoftwareIndexedSprite18 = arg1.method7948(local71, true);
 			local71.method9388();
-			Static561.aClass23_34 = arg1.method7948(local71, true);
+			Static561.aSoftwareIndexedSprite34 = arg1.method7948(local71, true);
 		}
-		if (Static26.aClass23_5 == null || Static63.aClass23_8 == null || Static261.aClass23_18 == null) {
+		if (Static26.aSoftwareIndexedSprite5 == null || Static63.aSoftwareIndexedSprite8 == null || Static261.aSoftwareIndexedSprite18 == null) {
 			return;
 		}
-		@Pc(103) int local103 = (arg3 - Static261.aClass23_18.method8199() * 2) / Static26.aClass23_5.method8199();
+		@Pc(103) int local103 = (arg3 - Static261.aSoftwareIndexedSprite18.method8199() * 2) / Static26.aSoftwareIndexedSprite5.method8199();
 		for (@Pc(105) int local105 = 0; local105 < local103; local105++) {
-			Static26.aClass23_5.method8202(Static261.aClass23_18.method8199() + arg2 + Static26.aClass23_5.method8199() * local105, -Static26.aClass23_5.method8182() + arg4 + arg0);
+			Static26.aSoftwareIndexedSprite5.method8202(Static261.aSoftwareIndexedSprite18.method8199() + arg2 + Static26.aSoftwareIndexedSprite5.method8199() * local105, -Static26.aSoftwareIndexedSprite5.method8182() + arg4 + arg0);
 		}
-		@Pc(145) int local145 = (arg4 - Static261.aClass23_18.method8182() - 20) / Static63.aClass23_8.method8182();
+		@Pc(145) int local145 = (arg4 - Static261.aSoftwareIndexedSprite18.method8182() - 20) / Static63.aSoftwareIndexedSprite8.method8182();
 		for (@Pc(147) int local147 = 0; local147 < local145; local147++) {
-			Static63.aClass23_8.method8202(arg2, arg0 + Static63.aClass23_8.method8182() * local147 + 20);
-			Static542.aClass23_33.method8202(arg3 + arg2 - Static542.aClass23_33.method8199(), arg0 - -20 + Static63.aClass23_8.method8182() * local147);
+			Static63.aSoftwareIndexedSprite8.method8202(arg2, arg0 + Static63.aSoftwareIndexedSprite8.method8182() * local147 + 20);
+			Static542.aSoftwareIndexedSprite33.method8202(arg3 + arg2 - Static542.aSoftwareIndexedSprite33.method8199(), arg0 - -20 + Static63.aSoftwareIndexedSprite8.method8182() * local147);
 		}
-		Static261.aClass23_18.method8202(arg2, arg0 + arg4 - Static261.aClass23_18.method8182());
-		Static561.aClass23_34.method8202(arg3 + arg2 - Static261.aClass23_18.method8199(), arg4 + (arg0 - Static261.aClass23_18.method8182()));
+		Static261.aSoftwareIndexedSprite18.method8202(arg2, arg0 + arg4 - Static261.aSoftwareIndexedSprite18.method8182());
+		Static561.aSoftwareIndexedSprite34.method8202(arg3 + arg2 - Static261.aSoftwareIndexedSprite18.method8199(), arg4 + (arg0 - Static261.aSoftwareIndexedSprite18.method8182()));
 	}
 
 	@OriginalMember(owner = "client!jea", name = "b", descriptor = "(IIIIIIII)V")

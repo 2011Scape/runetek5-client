@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static354 {
 
 	@OriginalMember(owner = "client!ld", name = "i", descriptor = "Lclient!nv;")
-	public static Class267 aClass267_1;
+	public static CursorTypeList aCursorTypeList1;
 
 	@OriginalMember(owner = "client!ld", name = "m", descriptor = "I")
 	public static int anInt5759;
 
 	@OriginalMember(owner = "client!ld", name = "b", descriptor = "Lclient!gea;")
-	public static Class142 aClass142_4;
+	public static LocTypeList aLocTypeList4;
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "I")
 	public static int anInt5763;
 
 	@OriginalMember(owner = "client!ld", name = "p", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_120 = new Class82(32);
+	public static final SoftLruHashTable aSoftLruHashTable120 = new SoftLruHashTable(32);
 
 	@OriginalMember(owner = "client!ld", name = "k", descriptor = "Z")
 	public static boolean aBoolean439 = false;

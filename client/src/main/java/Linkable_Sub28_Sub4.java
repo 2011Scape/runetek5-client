@@ -30,7 +30,7 @@ public final class Linkable_Sub28_Sub4 extends Linkable_Sub28 {
 	private int anInt9764;
 
 	static {
-		new Class377("game5", "Game 5", 4);
+		new ModeGame("game5", "Game 5", 4);
 	}
 
 	@OriginalMember(owner = "client!un", name = "<init>", descriptor = "(Lclient!jagtheora/ogg/OggStreamState;)V")

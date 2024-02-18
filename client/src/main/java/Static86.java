@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static86 {
 
 	@OriginalMember(owner = "client!cma", name = "I", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_13;
+	public static Js5 aJs513;
 
 	@OriginalMember(owner = "client!cma", name = "L", descriptor = "I")
 	public static int anInt1803;
@@ -12,5 +12,5 @@ public final class Static86 {
 	public static int anInt1798 = 0;
 
 	@OriginalMember(owner = "client!cma", name = "H", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_16 = new Class345(8, -1);
+	public static final ClientProt aClientProt16 = new ClientProt(8, -1);
 }

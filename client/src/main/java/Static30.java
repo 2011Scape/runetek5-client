@@ -5,28 +5,28 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "w", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_74;
+	public static Js5 aJs574;
 
 	@OriginalMember(owner = "client!baa", name = "y", descriptor = "Lclient!u;")
-	public static Class363 aClass363_3;
+	public static MsiTypeList aMsiTypeList3;
 
 	@OriginalMember(owner = "client!baa", name = "I", descriptor = "Lclient!uk;")
 	public static Interface23 anInterface23_3;
 
 	@OriginalMember(owner = "client!baa", name = "m", descriptor = "Lclient!ip;")
-	public static SecondaryLinkable_Sub13 aClass2_Sub2_Sub13_3;
+	public static Map aClass2_Sub2_Sub13_3;
 
 	@OriginalMember(owner = "client!baa", name = "H", descriptor = "Lclient!gea;")
-	public static Class142 aClass142_3;
+	public static LocTypeList aLocTypeList3;
 
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "Lclient!ef;")
-	private static Class96 aClass96_2;
+	private static FloTypeList aFloTypeList2;
 
 	@OriginalMember(owner = "client!baa", name = "O", descriptor = "Lclient!dh;")
-	private static Class79 aClass79_5;
+	private static FluTypeList aFluTypeList5;
 
 	@OriginalMember(owner = "client!baa", name = "A", descriptor = "Lclient!ml;")
-	public static Class246 aClass246_3;
+	public static MelTypeList aMelTypeList3;
 
 	@OriginalMember(owner = "client!baa", name = "j", descriptor = "F")
 	public static float aFloat105;
@@ -128,8 +128,8 @@ public final class Static30 {
 	public static final LinkedList aLinkedList31 = new LinkedList();
 
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "(I)Lclient!ip;")
-	public static SecondaryLinkable_Sub13 method5059(@OriginalArg(0) int arg0) {
-		return (SecondaryLinkable_Sub13) aHashTable27.get((long) arg0);
+	public static Map method5059(@OriginalArg(0) int arg0) {
+		return (Map) aHashTable27.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;)V")
@@ -177,7 +177,7 @@ public final class Static30 {
 		for (@Pc(100) int local100 = 0; local100 < arg8.length; local100++) {
 			@Pc(107) int local107 = arg9[local100] & 0x3F;
 			if (local107 == 0 || local107 == 2 || local107 == 3 || local107 == 9) {
-				@Pc(127) Class54 local127 = aClass142_3.method3063(arg8[local100] & 0xFFFF, 55);
+				@Pc(127) LocType local127 = aLocTypeList3.method3063(arg8[local100] & 0xFFFF, 55);
 				if (local127.anInt1239 == -1) {
 					@Pc(133) int local133 = -3355444;
 					if (local127.anInt1271 == 1) {
@@ -253,11 +253,11 @@ public final class Static30 {
 			return;
 		}
 		for (@Pc(4) int local4 = 0; local4 < arg5.length; local4++) {
-			@Pc(14) Class54 local14 = aClass142_3.method3063(arg5[local4] & 0xFFFF, 116);
+			@Pc(14) LocType local14 = aLocTypeList3.method3063(arg5[local4] & 0xFFFF, 116);
 			@Pc(17) int local17 = local14.anInt1239;
 			if (local17 != -1) {
-				@Pc(25) Class173 local25 = aClass363_3.method8362(local17);
-				@Pc(49) Class23 local49 = local25.method3689(local14.aBoolean103 ? arg6[local4] >> 6 & 0x3 : 0, arg0, local14.aBoolean96 ? local14.aBoolean100 : false);
+				@Pc(25) MsiType local25 = aMsiTypeList3.method8362(local17);
+				@Pc(49) SoftwareIndexedSprite local49 = local25.method3689(local14.aBoolean103 ? arg6[local4] >> 6 & 0x3 : 0, arg0, local14.aBoolean96 ? local14.aBoolean100 : false);
 				if (local49 != null) {
 					@Pc(58) int local58 = arg3 * local49.method8203() >> 2;
 					@Pc(65) int local65 = arg4 * local49.method8192() >> 2;
@@ -296,12 +296,12 @@ public final class Static30 {
 			@Pc(25) int local25 = local16 - 5;
 			@Pc(41) int local41;
 			for (@Pc(27) int local27 = 0; local27 < anInt5644; local27++) {
-				@Pc(50) Class264 local50;
+				@Pc(50) FluType local50;
 				@Pc(86) int local86;
 				if (local21 < anInt5650) {
 					local41 = arg0[local21 + local27 * anInt5650] & 0xFF;
 					if (local41 > 0) {
-						local50 = aClass79_5.method2066(local41 - 1);
+						local50 = aFluTypeList5.method2066(local41 - 1);
 						local2[local27] += local50.anInt6630;
 						local5[local27] += local50.anInt6637;
 						local8[local27] += local50.anInt6639;
@@ -312,7 +312,7 @@ public final class Static30 {
 				if (local25 >= 0) {
 					local41 = arg0[local25 + local27 * anInt5650] & 0xFF;
 					if (local41 > 0) {
-						local50 = aClass79_5.method2066(local41 - 1);
+						local50 = aFluTypeList5.method2066(local41 - 1);
 						local2[local27] -= local50.anInt6630;
 						local5[local27] -= local50.anInt6637;
 						local8[local27] -= local50.anInt6639;
@@ -371,20 +371,20 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!sb;Lclient!ef;Lclient!dh;Lclient!gea;Lclient!ml;Lclient!u;Lclient!uk;)V")
-	public static void method5065(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class96 arg1, @OriginalArg(2) Class79 arg2, @OriginalArg(3) Class142 arg3, @OriginalArg(4) Class246 arg4, @OriginalArg(5) Class363 arg5, @OriginalArg(6) Interface23 arg6) {
-		aClass330_74 = arg0;
-		aClass96_2 = arg1;
-		aClass79_5 = arg2;
-		aClass142_3 = arg3;
-		aClass246_3 = arg4;
-		aClass363_3 = arg5;
+	public static void method5065(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) MelTypeList arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) Interface23 arg6) {
+		aJs574 = arg0;
+		aFloTypeList2 = arg1;
+		aFluTypeList5 = arg2;
+		aLocTypeList3 = arg3;
+		aMelTypeList3 = arg4;
+		aMsiTypeList3 = arg5;
 		anInterface23_3 = arg6;
 		aHashTable27.clear();
-		@Pc(23) int local23 = aClass330_74.method7590("details");
-		@Pc(28) int[] local28 = aClass330_74.method7603(local23);
+		@Pc(23) int local23 = aJs574.method7590("details");
+		@Pc(28) int[] local28 = aJs574.method7603(local23);
 		if (local28 != null) {
 			for (@Pc(32) int local32 = 0; local32 < local28.length; local32++) {
-				@Pc(41) SecondaryLinkable_Sub13 local41 = Static517.method6820(aClass330_74, local23, local28[local32]);
+				@Pc(41) Map local41 = Static517.method6820(aJs574, local23, local28[local32]);
 				aHashTable27.put((long) local41.anInt4563, local41);
 			}
 		}
@@ -443,7 +443,7 @@ public final class Static30 {
 								if (aClass2_Sub2_Sub13_3.anInt4561 != -1) {
 									local175 = aClass2_Sub2_Sub13_3.anInt4561 | 0xFF000000;
 								} else if ((local17 + anInt5652 & 0x4) == (local57 + anInt5645 & 0x4)) {
-									local175 = anIntArray419[aClass96_2.anInt2509 + 1];
+									local175 = anIntArray419[aFloTypeList2.anInt2509 + 1];
 								} else {
 									local175 = -11840664;
 								}
@@ -473,7 +473,7 @@ public final class Static30 {
 						if (aClass2_Sub2_Sub13_3.anInt4561 != -1) {
 							local93 = aClass2_Sub2_Sub13_3.anInt4561 | 0xFF000000;
 						} else if ((local17 + anInt5652 & 0x4) == (local57 + anInt5645 & 0x4)) {
-							local93 = anIntArray419[aClass96_2.anInt2509 + 1];
+							local93 = anIntArray419[aFloTypeList2.anInt2509 + 1];
 						} else {
 							local93 = -11840664;
 						}
@@ -581,14 +581,14 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!d;II)V")
 	public static void method5067(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(1) int local1 = 0; local1 < aClass96_2.anInt2506; local1++) {
+		for (@Pc(1) int local1 = 0; local1 < aFloTypeList2.anInt2506; local1++) {
 			anIntArray419[local1 + 1] = method5068(arg0, local1, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!d;III)I")
 	private static int method5068(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(4) Class318 local4 = aClass96_2.method2352(arg1);
+		@Pc(4) FloType local4 = aFloTypeList2.method2352(arg1);
 		if (local4 == null) {
 			return 0;
 		}
@@ -637,7 +637,7 @@ public final class Static30 {
 		aByteArray58 = new byte[anInt5650 * anInt5644];
 		aHashTable28 = new HashTable(1024);
 		aClass130ArrayArrayArray2 = new Class130[3][anInt5650 >> 6][anInt5644 >> 6];
-		anIntArray419 = new int[aClass96_2.anInt2506 + 1];
+		anIntArray419 = new int[aFloTypeList2.anInt2506 + 1];
 	}
 
 	@OriginalMember(owner = "client!baa", name = "d", descriptor = "()V")
@@ -655,7 +655,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;Lclient!fu;Lclient!el;)V")
-	public static void method5071(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Linkable_Sub20 arg1, @OriginalArg(2) Class105 arg2) {
+	public static void method5071(@OriginalArg(0) Class19 arg0, @OriginalArg(1) MapElement arg1, @OriginalArg(2) MelType arg2) {
 		if (arg2.anIntArray228 == null) {
 			return;
 		}
@@ -721,11 +721,11 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(I)V")
 	public static void method5072(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub13_3 = (SecondaryLinkable_Sub13) aHashTable27.get((long) arg0);
+		aClass2_Sub2_Sub13_3 = (Map) aHashTable27.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;Lclient!fu;IIII)V")
-	private static void method5073(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Linkable_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	private static void method5073(@OriginalArg(0) Class19 arg0, @OriginalArg(1) MapElement arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		arg1.anInt3130 = anInt5649 + (arg2 * (arg1.anInt3129 - anInt5652) >> 16);
 		arg1.anInt3122 = anInt5646 - (arg3 * (arg1.anInt3124 - anInt5654) >> 16);
 	}
@@ -824,7 +824,7 @@ public final class Static30 {
 						@Pc(31) Linkable_Sub23 local31 = (Linkable_Sub23) aHashTable28.get((long) (local1 << 16 | local4));
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray59.length; local35++) {
-								@Pc(46) Class54 local46 = aClass142_3.method3063(local31.aShortArray59[local35] & 0xFFFF, 115);
+								@Pc(46) LocType local46 = aLocTypeList3.method3063(local31.aShortArray59[local35] & 0xFFFF, 115);
 								local49 = local46.anInt1233;
 								if (local46.anIntArray113 != null) {
 									local46 = local46.method1301(13, anInterface23_3);
@@ -833,7 +833,7 @@ public final class Static30 {
 									}
 								}
 								if (local49 != -1) {
-									@Pc(70) Linkable_Sub20 local70 = new Linkable_Sub20(local49);
+									@Pc(70) MapElement local70 = new MapElement(local49);
 									local70.anInt3129 = local1;
 									local70.anInt3124 = local4;
 									aLinkedList31.addTail(local70);
@@ -841,7 +841,7 @@ public final class Static30 {
 							}
 						}
 					} else {
-						@Pc(94) Class54 local94 = aClass142_3.method3063(local15 - 1, 115);
+						@Pc(94) LocType local94 = aLocTypeList3.method3063(local15 - 1, 115);
 						local35 = local94.anInt1233;
 						if (local94.anIntArray113 != null) {
 							local94 = local94.method1301(13, anInterface23_3);
@@ -850,7 +850,7 @@ public final class Static30 {
 							}
 						}
 						if (local35 != -1) {
-							@Pc(118) Linkable_Sub20 local118 = new Linkable_Sub20(local35);
+							@Pc(118) MapElement local118 = new MapElement(local35);
 							local118.anInt3129 = local1;
 							local118.anInt3124 = local4;
 							aLinkedList31.addTail(local118);
@@ -867,7 +867,7 @@ public final class Static30 {
 						for (@Pc(160) ParticleNode_Sub10 local160 = (ParticleNode_Sub10) local153.method2790(); local160 != null; local160 = (ParticleNode_Sub10) local153.method2785()) {
 							if (local160.aShortArray133 != null) {
 								for (local49 = 0; local49 < local160.aShortArray133.length; local49++) {
-									@Pc(177) Class54 local177 = aClass142_3.method3063(local160.aShortArray133[local49] & 0xFFFF, 126);
+									@Pc(177) LocType local177 = aLocTypeList3.method3063(local160.aShortArray133[local49] & 0xFFFF, 126);
 									@Pc(180) int local180 = local177.anInt1233;
 									if (local177.anIntArray113 != null) {
 										local177 = local177.method1301(13, anInterface23_3);
@@ -876,7 +876,7 @@ public final class Static30 {
 										}
 									}
 									if (local180 != -1) {
-										@Pc(201) Linkable_Sub20 local201 = new Linkable_Sub20(local180);
+										@Pc(201) MapElement local201 = new MapElement(local180);
 										local201.anInt3129 = (local15 + (anInt5655 >> 6)) * 64 + local160.aByte138 - anInt5655;
 										local201.anInt3124 = (local144 + (anInt5648 >> 6)) * 64 + local160.aByte139 - anInt5648;
 										aLinkedList31.addTail(local201);
@@ -893,7 +893,7 @@ public final class Static30 {
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "(II)Lclient!jga;")
 	public static SecondaryLinkedList method5076(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) SecondaryLinkedList local3 = new SecondaryLinkedList();
-		for (@Pc(8) SecondaryLinkable_Sub13 local8 = (SecondaryLinkable_Sub13) aHashTable27.head(); local8 != null; local8 = (SecondaryLinkable_Sub13) aHashTable27.next()) {
+		for (@Pc(8) Map local8 = (Map) aHashTable27.head(); local8 != null; local8 = (Map) aHashTable27.next()) {
 			if (local8.aBoolean354 && local8.method4086(arg0, arg1)) {
 				local3.addTail(local8);
 			}
@@ -902,8 +902,8 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(II)Lclient!ip;")
-	public static SecondaryLinkable_Sub13 method5078(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		for (@Pc(4) SecondaryLinkable_Sub13 local4 = (SecondaryLinkable_Sub13) aHashTable27.head(); local4 != null; local4 = (SecondaryLinkable_Sub13) aHashTable27.next()) {
+	public static Map method5078(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		for (@Pc(4) Map local4 = (Map) aHashTable27.head(); local4 != null; local4 = (Map) aHashTable27.next()) {
 			if (local4.aBoolean354 && local4.method4086(arg0, arg1)) {
 				return local4;
 			}
@@ -917,7 +917,7 @@ public final class Static30 {
 		for (@Pc(4) int local4 = 0; local4 < aClass255_3.anInt6373; local4++) {
 			@Pc(32) boolean local32 = aClass2_Sub2_Sub13_3.method4088(local2, aClass255_3.anIntArray495[local4] & 0x3FFF, aClass255_3.anIntArray495[local4] >> 28 & 0x3, aClass255_3.anIntArray495[local4] >> 14 & 0x3FFF);
 			if (local32) {
-				@Pc(42) Linkable_Sub20 local42 = new Linkable_Sub20(aClass255_3.anIntArray496[local4]);
+				@Pc(42) MapElement local42 = new MapElement(aClass255_3.anIntArray496[local4]);
 				local42.anInt3129 = local2[1] - anInt5655;
 				local42.anInt3124 = local2[2] - anInt5648;
 				aLinkedList31.addTail(local42);
@@ -927,7 +927,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;II)V")
 	public static void method5080(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(11) Packet local11 = new Packet(aClass330_74.method7600(aClass2_Sub2_Sub13_3.aString48, "area"));
+		@Pc(11) Packet local11 = new Packet(aJs574.method7600(aClass2_Sub2_Sub13_3.aString48, "area"));
 		@Pc(15) int local15 = local11.g1();
 		@Pc(18) int[] local18 = new int[local15];
 		for (@Pc(20) int local20 = 0; local20 < local15; local20++) {
@@ -1019,7 +1019,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "(Lclient!ha;IIII)Lclient!sia;")
 	private static LinkedList method5082(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(4) Linkable_Sub20 local4 = (Linkable_Sub20) aLinkedList31.head(); local4 != null; local4 = (Linkable_Sub20) aLinkedList31.next()) {
+		for (@Pc(4) MapElement local4 = (MapElement) aLinkedList31.head(); local4 != null; local4 = (MapElement) aLinkedList31.next()) {
 			method5073(arg0, local4, arg1, arg2);
 		}
 		return aLinkedList31;

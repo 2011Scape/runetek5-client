@@ -9,11 +9,11 @@ public final class Static53 {
 	public static float aFloat28;
 
 	@OriginalMember(owner = "client!bp", name = "i", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_7 = new Class345(53, 3);
+	public static final ClientProt aClientProt7 = new ClientProt(53, 3);
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZLjava/lang/String;)I")
 	public static int method1168(@OriginalArg(1) String arg0) {
-		if (!Static93.aClass390_1.aBoolean781) {
+		if (!Static93.aSignlink1.aBoolean781) {
 			return -1;
 		} else if (Static154.aHashtable3.containsKey(arg0)) {
 			return 100;
@@ -23,10 +23,10 @@ public final class Static53 {
 				return -1;
 			}
 			@Pc(36) String local36 = Static185.aString34 + local22;
-			if (!Static442.aClass330_90.method7577(local36, "")) {
+			if (!Static442.aJs590.method7577(local36, "")) {
 				return -1;
-			} else if (Static442.aClass330_90.method7598(local36)) {
-				@Pc(62) byte[] local62 = Static442.aClass330_90.method7600(local36, "");
+			} else if (Static442.aJs590.method7598(local36)) {
+				@Pc(62) byte[] local62 = Static442.aJs590.method7600(local36, "");
 				@Pc(68) File local68;
 				try {
 					local68 = Static649.method8490(local22);
@@ -50,7 +50,7 @@ public final class Static53 {
 				}
 				try {
 					if (!local80) {
-						Static93.aClass390_1.method8987(local68, local62);
+						Static93.aSignlink1.method8987(local68, local62);
 					}
 				} catch (@Pc(145) Throwable local145) {
 					return -1;
@@ -58,7 +58,7 @@ public final class Static53 {
 				Static196.method2947(local68, arg0);
 				return 100;
 			} else {
-				return Static442.aClass330_90.method7593(local36);
+				return Static442.aJs590.method7593(local36);
 			}
 		}
 	}

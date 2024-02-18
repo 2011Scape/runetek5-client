@@ -25,13 +25,13 @@ public final class Static522 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(ILclient!bn;)V")
 	public static void method7041(@OriginalArg(1) Linkable_Sub8 arg0) {
 		Static581.aClass2_Sub6_Sub1_3.method934(arg0, false);
-		if (Static426.aClass56_2 != null) {
-			Static426.aClass56_2.method3582(Static581.aClass2_Sub6_Sub1_3);
+		if (Static426.aAudioChannel2 != null) {
+			Static426.aAudioChannel2.method3582(Static581.aClass2_Sub6_Sub1_3);
 		}
 		Static62.aClass2_Sub8_3 = null;
 		Static96.anInt10171 = 0;
 		Static117.aClass2_Sub6_Sub1_2 = null;
 		Static12.aClass123_4 = null;
-		Static676.aClass330_121 = null;
+		Static676.aJs5121 = null;
 	}
 }

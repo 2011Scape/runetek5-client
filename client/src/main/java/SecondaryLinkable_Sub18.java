@@ -28,15 +28,15 @@ public final class SecondaryLinkable_Sub18 extends SecondaryLinkable {
 		@Pc(36) int[] local36;
 		@Pc(43) int local43;
 		if (this.aByteArrayArray32 == null) {
-			@Pc(14) Class330 local14 = Static509.aClass330_96;
-			synchronized (Static509.aClass330_96) {
-				if (!Static509.aClass330_96.method7607(this.anInt8535)) {
+			@Pc(14) Js5 local14 = Static509.aJs596;
+			synchronized (Static509.aJs596) {
+				if (!Static509.aJs596.method7607(this.anInt8535)) {
 					return false;
 				}
-				local36 = Static509.aClass330_96.method7603(this.anInt8535);
+				local36 = Static509.aJs596.method7603(this.anInt8535);
 				this.aByteArrayArray32 = new byte[local36.length][];
 				for (local43 = 0; local43 < local36.length; local43++) {
-					this.aByteArrayArray32[local43] = Static509.aClass330_96.method7595(local36[local43], this.anInt8535);
+					this.aByteArrayArray32[local43] = Static509.aJs596.method7595(local36[local43], this.anInt8535);
 				}
 			}
 		}
@@ -46,20 +46,20 @@ public final class SecondaryLinkable_Sub18 extends SecondaryLinkable {
 			@Pc(82) Packet local82 = new Packet(local77);
 			local82.pos = 1;
 			local43 = local82.g2();
-			@Pc(91) Class330 local91 = Static269.aClass330_58;
-			synchronized (Static269.aClass330_58) {
-				local69 &= Static269.aClass330_58.method7581(local43);
+			@Pc(91) Js5 local91 = Static269.aJs558;
+			synchronized (Static269.aJs558) {
+				local69 &= Static269.aJs558.method7581(local43);
 			}
 		}
 		if (!local69) {
 			return false;
 		}
 		@Pc(123) LinkedList local123 = new LinkedList();
-		@Pc(125) Class330 local125 = Static509.aClass330_96;
-		synchronized (Static509.aClass330_96) {
-			@Pc(133) int local133 = Static509.aClass330_96.method7608(this.anInt8535);
+		@Pc(125) Js5 local125 = Static509.aJs596;
+		synchronized (Static509.aJs596) {
+			@Pc(133) int local133 = Static509.aJs596.method7608(this.anInt8535);
 			this.aClass253Array1 = new Class253[local133];
-			local36 = Static509.aClass330_96.method7603(this.anInt8535);
+			local36 = Static509.aJs596.method7603(this.anInt8535);
 		}
 		for (local43 = 0; local43 < local36.length; local43++) {
 			@Pc(167) byte[] local167 = this.aByteArrayArray32[local43];
@@ -74,9 +74,9 @@ public final class SecondaryLinkable_Sub18 extends SecondaryLinkable {
 				}
 			}
 			if (local181 == null) {
-				@Pc(209) Class330 local209 = Static269.aClass330_58;
-				synchronized (Static269.aClass330_58) {
-					local181 = new Linkable_Sub44(local179, Static269.aClass330_58.method7589(local179));
+				@Pc(209) Js5 local209 = Static269.aJs558;
+				synchronized (Static269.aJs558) {
+					local181 = new Linkable_Sub44(local179, Static269.aJs558.method7589(local179));
 				}
 				local123.addTail(local181);
 			}

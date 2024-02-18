@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class ParticleNode_Sub2_Sub1_Sub5 extends ParticleNode_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!pja", name = "qb", descriptor = "Lclient!hv;")
-	private ParticleNode_Sub5 aClass8_Sub5_5;
+	private ParticleSystem aClass8_Sub5_5;
 
 	@OriginalMember(owner = "client!pja", name = "O", descriptor = "I")
 	private int anInt7400 = 0;
@@ -32,7 +32,7 @@ public final class ParticleNode_Sub2_Sub1_Sub5 extends ParticleNode_Sub2_Sub1 {
 		super(arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, false, (byte) 0);
 		this.anInt7402 = arg0;
 		this.anInt7400 = arg11;
-		@Pc(36) Class227 local36 = Static23.aClass128_1.method2694(this.anInt7402);
+		@Pc(36) SpotAnimType local36 = Static23.aSpotAnimTypeList1.method2694(this.anInt7402);
 		@Pc(39) int local39 = local36.anInt5842;
 		if (local39 != -1) {
 			this.aClass152_8 = new Class152_Sub2(this, false);
@@ -60,7 +60,7 @@ public final class ParticleNode_Sub2_Sub1_Sub5 extends ParticleNode_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!pja", name = "a", descriptor = "(IILclient!ha;I)Lclient!ka;")
 	private Class114 method6594(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2) {
-		@Pc(8) Class227 local8 = Static23.aClass128_1.method2694(arg0);
+		@Pc(8) SpotAnimType local8 = Static23.aSpotAnimTypeList1.method2694(arg0);
 		@Pc(22) Class178 local22 = Static706.aClass178Array3[super.aByte144];
 		@Pc(36) Class178 local36 = super.aByte143 < 3 ? Static706.aClass178Array3[super.aByte143 + 1] : null;
 		return this.aClass152_8 == null || this.aClass152_8.method9102() ? local8.method5249((byte) 2, true, super.anInt10694, (Class152) null, local36, super.anInt10690, local22, arg2, super.anInt10691, arg1) : local8.method5249((byte) 2, true, super.anInt10694, this.aClass152_8, local36, super.anInt10690, local22, arg2, super.anInt10691, arg1);

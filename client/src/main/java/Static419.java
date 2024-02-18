@@ -8,13 +8,13 @@ public final class Static419 {
 	public static int[] anIntArray500;
 
 	@OriginalMember(owner = "client!ne", name = "n", descriptor = "Lclient!es;")
-	public static Class112 aClass112_1;
+	public static ObjTypeList aObjTypeList1;
 
 	@OriginalMember(owner = "client!ne", name = "u", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray33 = new String[200];
 
 	@OriginalMember(owner = "client!ne", name = "p", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_77 = new Class345(42, 15);
+	public static final ClientProt aClientProt77 = new ClientProt(42, 15);
 
 	@OriginalMember(owner = "client!ne", name = "w", descriptor = "I")
 	public static int anInt6434 = 0;

@@ -11,7 +11,7 @@ public final class Static247 {
 	public static void method3523(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0) {
 		@Pc(16) Linkable_Sub51 local16 = (Linkable_Sub51) Static113.aHashTable12.get((long) arg0.anInt10740);
 		if (local16 == null) {
-			Static89.method1714(arg0.aByte144, arg0, arg0.anIntArray879[0], arg0.anIntArray878[0], (ParticleNode_Sub2_Sub1_Sub2_Sub2) null, (Class54) null, 0);
+			Static89.method1714(arg0.aByte144, arg0, arg0.anIntArray879[0], arg0.anIntArray878[0], (ParticleNode_Sub2_Sub1_Sub2_Sub2) null, (LocType) null, 0);
 		} else {
 			local16.method8236();
 		}
@@ -24,7 +24,7 @@ public final class Static247 {
 		}
 		if (arg0.length > 136 && !Static132.aBoolean208) {
 			try {
-				@Pc(25) Class175 local25 = (Class175) Class.forName("Class175_Sub1").getDeclaredConstructor().newInstance();
+				@Pc(25) ByteArray local25 = (ByteArray) Class.forName("DirectByteArray").getDeclaredConstructor().newInstance();
 				local25.method3849(arg0);
 				return local25;
 			} catch (@Pc(32) Throwable local32) {

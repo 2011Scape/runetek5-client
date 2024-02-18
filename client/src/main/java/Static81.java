@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "x", descriptor = "[Lclient!hv;")
-	public static ParticleNode_Sub5[] aClass8_Sub5Array1;
+	public static ParticleSystem[] aClass8_Sub5Array1;
 
 	@OriginalMember(owner = "client!cka", name = "q", descriptor = "I")
 	public static int anInt1644;
@@ -34,13 +34,13 @@ public final class Static81 {
 			Static670.method8735();
 		}
 		if (Static594.method7782(Static283.anInt4574)) {
-			Static6.aClass330_1.anInt8555 = 2;
-			Static20.aClass330_3.anInt8555 = 2;
-			Static459.aClass330_91.anInt8555 = 2;
-			Static333.aClass330_66.anInt8555 = 2;
-			Static380.aClass330_79.anInt8555 = 2;
-			Static668.aClass330_119.anInt8555 = 2;
-			Static271.aClass330_59.anInt8555 = 2;
+			Static6.aJs51.anInt8555 = 2;
+			Static20.aJs53.anInt8555 = 2;
+			Static459.aJs591.anInt8555 = 2;
+			Static333.aJs566.anInt8555 = 2;
+			Static380.aJs579.anInt8555 = 2;
+			Static668.aJs5119.anInt8555 = 2;
+			Static271.aJs559.anInt8555 = 2;
 		}
 		if (Static594.method7782(arg0)) {
 			Static593.anInt8763 = 0;
@@ -49,13 +49,13 @@ public final class Static81 {
 			Static213.anInt3472 = 0;
 			Static13.anInt150 = 0;
 			Static668.method8700(true);
-			Static6.aClass330_1.anInt8555 = 1;
-			Static20.aClass330_3.anInt8555 = 1;
-			Static459.aClass330_91.anInt8555 = 1;
-			Static333.aClass330_66.anInt8555 = 1;
-			Static380.aClass330_79.anInt8555 = 1;
-			Static668.aClass330_119.anInt8555 = 1;
-			Static271.aClass330_59.anInt8555 = 1;
+			Static6.aJs51.anInt8555 = 1;
+			Static20.aJs53.anInt8555 = 1;
+			Static459.aJs591.anInt8555 = 1;
+			Static333.aJs566.anInt8555 = 1;
+			Static380.aJs579.anInt8555 = 1;
+			Static668.aJs5119.anInt8555 = 1;
+			Static271.aJs559.anInt8555 = 1;
 		}
 		if (arg0 == 12 || arg0 == 3) {
 			Static314.method4562();
@@ -68,13 +68,13 @@ public final class Static81 {
 				if (Static400.aClass2_Sub34_28.aClass57_Sub25_4.method7208() == 0) {
 					Static312.method4541();
 				} else {
-					Static57.method1225(Static597.anInt8821, Static400.aClass2_Sub34_28.aClass57_Sub25_4.method7208(), Static398.aClass330_81);
+					Static57.method1225(Static597.anInt8821, Static400.aClass2_Sub34_28.aClass57_Sub25_4.method7208(), Static398.aJs581);
 					Static550.method7266();
 				}
-				Static500.aClass295_3.method6626(false);
+				Static500.aJs5NetQueue3.method6626(false);
 			} else {
 				Static312.method4541();
-				Static500.aClass295_3.method6626(true);
+				Static500.aJs5NetQueue3.method6626(true);
 			}
 		}
 		if (Static594.method7782(arg0) || arg0 == 14 || arg0 == 15) {
@@ -112,8 +112,8 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
-		@Pc(8) Linkable_Sub19 local8 = Static273.method3962();
-		local8.aPacketBit_1.p1(Static572.aClass167_58.anInt3973);
+		@Pc(8) OutboundPacket local8 = Static273.method3962();
+		local8.aPacketBit_1.p1(Static572.aLoginProt58.anInt3973);
 		local8.aPacketBit_1.p2(0);
 		@Pc(25) int local25 = local8.aPacketBit_1.pos;
 		local8.aPacketBit_1.p2(667);
@@ -124,7 +124,7 @@ public final class Static81 {
 		local8.aPacketBit_1.pjstr(arg2);
 		local8.aPacketBit_1.p8(Static416.aLong208);
 		local8.aPacketBit_1.p1(Static51.anInt1052);
-		local8.aPacketBit_1.p1(Static392.aClass377_4.anInt9720);
+		local8.aPacketBit_1.p1(Static392.aModeGame4.anInt9720);
 		Static176.method6690(local8.aPacketBit_1);
 		@Pc(81) String local81 = Static389.aString64;
 		local8.aPacketBit_1.p1(local81 == null ? 0 : 1);

@@ -25,14 +25,14 @@ public final class Static35 {
 					local15 = true;
 				} else {
 					if (local13.aByte49 == 1 && local13.aClass89_1 == null) {
-						local13.aClass89_1 = Static729.method2245(Static281.aClass330_60, local13.anInt2580, 0);
+						local13.aClass89_1 = Static729.method2245(Static281.aJs560, local13.anInt2580, 0);
 						if (local13.aClass89_1 == null) {
 							continue;
 						}
 						local13.anInt2571 += local13.aClass89_1.method2248();
 					} else if (local13.method2418() && (local13.aClass2_Sub53_1 == null || local13.aClass2_Sub49_Sub1_2 == null)) {
 						if (local13.aClass2_Sub53_1 == null) {
-							local13.aClass2_Sub53_1 = Static650.method8498(Static147.aClass330_26, local13.anInt2580);
+							local13.aClass2_Sub53_1 = Static650.method8498(Static147.aJs526, local13.anInt2580);
 						}
 						if (local13.aClass2_Sub53_1 == null) {
 							continue;
@@ -91,13 +91,13 @@ public final class Static35 {
 							}
 						}
 						if (local179 > 0) {
-							@Pc(392) Linkable_Sub49_Sub1 local392 = null;
+							@Pc(392) PcmSound local392 = null;
 							if (local13.aByte49 == 1) {
 								local392 = local13.aClass89_1.method2247().method7821(Static681.aClass224_2);
 							} else if (local13.method2418()) {
 								local392 = local13.aClass2_Sub49_Sub1_2;
 							}
-							@Pc(422) Linkable_Sub6_Sub2 local422 = local13.aClass2_Sub6_Sub2_2 = Static730.method3346(local392, local13.anInt2573, local179, local154);
+							@Pc(422) SoundPcmStream local422 = local13.aClass2_Sub6_Sub2_2 = Static730.method3346(local392, local13.anInt2573, local179, local154);
 							local422.method3318(local13.anInt2574 - 1);
 							Static336.aClass2_Sub6_Sub3_1.method5882(local422);
 						}
@@ -117,15 +117,15 @@ public final class Static35 {
 		if (Static501.aBoolean575 && !Static52.method1157(126)) {
 			if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1) {
 				if (Static8.aClass2_Sub6_Sub1_1 == null) {
-					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208(), Static398.aClass330_81);
+					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208(), Static398.aJs581);
 				} else {
-					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, Static398.aClass330_81, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208());
+					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, Static398.aJs581, Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208());
 				}
 			}
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
 		} else if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
-			@Pc(551) Linkable_Sub19 local551 = Static293.method4335(Static235.aClass345_49, Static405.aClass153_2.aIsaacRandom_1);
+			@Pc(551) OutboundPacket local551 = Static293.method4335(Static235.aClientProt49, Static405.aClass153_2.aIsaacRandom_1);
 			local551.aPacketBit_1.p4(Static588.anInt8692);
 			Static405.aClass153_2.method3275(local551);
 			Static588.anInt8692 = -1;

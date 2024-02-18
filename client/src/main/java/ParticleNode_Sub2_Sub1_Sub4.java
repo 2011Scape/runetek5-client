@@ -19,7 +19,7 @@ public final class ParticleNode_Sub2_Sub1_Sub4 extends ParticleNode_Sub2_Sub1 im
 	private boolean aBoolean517;
 
 	@OriginalMember(owner = "client!oe", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIIIIIII)V")
-	public ParticleNode_Sub2_Sub1_Sub4(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14) {
+	public ParticleNode_Sub2_Sub1_Sub4(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14) {
 		super(arg2, arg3, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.lb == 1, Static609.method8215(arg12, arg13));
 		this.aClass337_3 = new Class337(arg0, arg1, arg12, arg13, super.aByte144, arg3, this, arg7, arg14);
 		this.aBoolean517 = arg1.anInt1271 != 0 && !arg7;
@@ -29,7 +29,7 @@ public final class ParticleNode_Sub2_Sub1_Sub4 extends ParticleNode_Sub2_Sub1 im
 	@Override
 	public void method9285(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) ParticleNode_Sub2 arg6) {
 		if (arg4 < 101) {
-			Static451.aClass225_171 = null;
+			Static451.aServerProt_171 = null;
 		}
 		throw new IllegalStateException();
 	}

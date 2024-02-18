@@ -3,8 +3,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static500 {
 
 	@OriginalMember(owner = "client!po", name = "h", descriptor = "Lclient!pla;")
-	public static Class295 aClass295_3;
+	public static Js5NetQueue aJs5NetQueue3;
 
 	@OriginalMember(owner = "client!po", name = "f", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_91 = new Class345(12, 5);
+	public static final ClientProt aClientProt91 = new ClientProt(12, 5);
 }

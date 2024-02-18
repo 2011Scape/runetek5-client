@@ -102,7 +102,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	private final boolean[] aBooleanArray16;
 
 	@OriginalMember(owner = "client!kea", name = "createToolkit", descriptor = "(Ljava/awt/Canvas;Lclient!d;Lclient!sb;Ljava/lang/Integer;)Lclient!ha;")
-	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Integer arg3) {
+	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Integer arg3) {
 		@Pc(1) Class19_Sub1_Sub1 local1 = null;
 		try {
 			@Pc(3) byte local3 = 0;
@@ -166,7 +166,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!kea", name = "<init>", descriptor = "(IILjava/awt/Canvas;Lclient!jaclib/peer/ti;Lclient!jagdx/IDirect3D;Lclient!jagdx/IDirect3DDevice;Lclient!tda;Lclient!jagdx/D3DPRESENT_PARAMETERS;Lclient!jagdx/D3DCAPS;Lclient!d;Lclient!sb;I)V")
-	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) ti arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class349 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Class330 arg10, @OriginalArg(11) int arg11) {
+	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) ti arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class349 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Js5 arg10, @OriginalArg(11) int arg11) {
 		super(arg2, arg6, arg9, arg10, arg11, 0);
 		try {
 			this.aD3DCAPS1 = arg8;
@@ -353,7 +353,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!kea", name = "a", descriptor = "(II)Lclient!eca;")
 	@Override
-	public Interface6 method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public IndexedSprite method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return null;
 	}
 
@@ -372,11 +372,11 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	@Override
 	protected Class26 method8087(@OriginalArg(1) int arg0) {
 		if (arg0 == 3) {
-			return new Class26_Sub8(this, this.aClass330_112);
+			return new Class26_Sub8(this, this.aJs5112);
 		} else if (arg0 == 4) {
-			return new Class26_Sub9(this, this.aClass330_112, this.aClass7_8);
+			return new Class26_Sub9(this, this.aJs5112, this.aClass7_8);
 		} else if (arg0 == 8) {
-			return new Class26_Sub10(this, this.aClass330_112, this.aClass7_8);
+			return new Class26_Sub10(this, this.aJs5112, this.aClass7_8);
 		} else {
 			return super.method8087(arg0);
 		}
@@ -658,7 +658,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!kea", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
 	@Override
-	public Interface9 method7988(@OriginalArg(0) Interface6 arg0, @OriginalArg(1) Interface26 arg1) {
+	public Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1) {
 		return null;
 	}
 

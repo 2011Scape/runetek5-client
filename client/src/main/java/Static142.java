@@ -8,7 +8,7 @@ public final class Static142 {
 	public static boolean[][] aBooleanArrayArray1;
 
 	@OriginalMember(owner = "client!eha", name = "c", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_25;
+	public static Js5 aJs525;
 
 	@OriginalMember(owner = "client!eha", name = "d", descriptor = "Lclient!rt;")
 	public static Class327 aClass327_1;

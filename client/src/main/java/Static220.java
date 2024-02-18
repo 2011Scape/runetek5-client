@@ -24,7 +24,7 @@ public final class Static220 {
 		@Pc(198) boolean local198;
 		for (@Pc(42) Linkable_Sub51 local42 = (Linkable_Sub51) Static717.aLinkedList81.head(); local42 != null; local42 = (Linkable_Sub51) Static717.aLinkedList81.next()) {
 			@Pc(46) byte local46 = 1;
-			@Pc(51) Class289 local51 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9317();
+			@Pc(51) BasType local51 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9317();
 			@Pc(57) int local57 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass152_10.method9114();
 			if (local57 == -1 || local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aBoolean817) {
 				local46 = 0;
@@ -35,7 +35,7 @@ public final class Static220 {
 			}
 			if (local42.anInt9364 != local46) {
 				local154 = Static497.method6629(local42.aClass8_Sub2_Sub1_Sub2_Sub2_3);
-				@Pc(158) Class268 local158 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass268_1;
+				@Pc(158) NpcType local158 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aNpcType1;
 				if (local158.anIntArray532 != null) {
 					local158 = local158.method5985(65535, Static34.aClass304_1);
 				}
@@ -76,7 +76,7 @@ public final class Static220 {
 		}
 		for (@Pc(329) Linkable_Sub51 local329 = (Linkable_Sub51) Static113.aHashTable12.head(); local329 != null; local329 = (Linkable_Sub51) Static113.aHashTable12.next()) {
 			@Pc(333) byte local333 = 1;
-			@Pc(338) Class289 local338 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.method9317();
+			@Pc(338) BasType local338 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.method9317();
 			local154 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.aClass152_10.method9114();
 			if (local154 == -1 || local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.aBoolean817) {
 				local333 = 0;
@@ -147,13 +147,13 @@ public final class Static220 {
 	}
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(Lclient!cd;Lclient!sb;Lclient!sb;Lclient!sb;ILclient!bd;)Z")
-	public static boolean method3201(@OriginalArg(0) Class56 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Class330 arg3, @OriginalArg(5) Linkable_Sub6_Sub1 arg4) {
+	public static boolean method3201(@OriginalArg(0) AudioChannel arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(5) MidiPcmStream arg4) {
 		Static581.aClass2_Sub6_Sub1_3 = arg4;
-		Static296.aClass330_61 = arg1;
-		Static91.aClass330_117 = arg2;
+		Static296.aJs561 = arg1;
+		Static91.aJs5117 = arg2;
 		Static286.anIntArray358 = new int[16];
-		Static426.aClass56_2 = arg0;
-		Static86.aClass330_13 = arg3;
+		Static426.aAudioChannel2 = arg0;
+		Static86.aJs513 = arg3;
 		for (@Pc(25) int local25 = 0; local25 < 16; local25++) {
 			Static286.anIntArray358[local25] = 255;
 		}

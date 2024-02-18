@@ -25,7 +25,7 @@ public final class Static260 {
 	public static Class21 method3828(@OriginalArg(0) Packet arg0) {
 		@Pc(14) Class21 local14 = new Class21();
 		local14.anInt521 = arg0.g2();
-		local14.aClass2_Sub2_Sub12_1 = Static288.aClass139_2.method2950(local14.anInt521);
+		local14.aClass2_Sub2_Sub12_1 = Static288.aQuickChatPhraseTypeList2.method2950(local14.anInt521);
 		return local14;
 	}
 }

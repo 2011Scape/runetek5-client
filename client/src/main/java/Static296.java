@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static296 {
 
 	@OriginalMember(owner = "client!jh", name = "n", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_61;
+	public static Js5 aJs561;
 
 	@OriginalMember(owner = "client!jh", name = "e", descriptor = "Lclient!om;")
 	public static final Class280 aClass280_5 = new Class280(2);
@@ -48,10 +48,10 @@ public final class Static296 {
 			local5 |= 0x40;
 		}
 		Static335.method4945(local5);
-		Static354.aClass142_4.method3065(local5);
-		Static419.aClass112_1.method2481(local5);
-		Static690.aClass308_2.method7093(local5);
-		Static23.aClass128_1.method2695(local5);
+		Static354.aLocTypeList4.method3065(local5);
+		Static419.aObjTypeList1.method2481(local5);
+		Static690.aNpcTypeList2.method7093(local5);
+		Static23.aSpotAnimTypeList1.method2695(local5);
 		Static41.method1029(local5);
 		Static298.method4388(local5);
 		Static534.method7122(local5);

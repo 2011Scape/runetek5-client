@@ -5,15 +5,15 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static443 {
 
 	@OriginalMember(owner = "client!nw", name = "k", descriptor = "Lclient!gh;")
-	public static final Class145 aClass145_1 = Static638.method8396();
+	public static final ReferenceNodeFactory aReferenceNodeFactory1 = Static638.method8396();
 
 	@OriginalMember(owner = "client!nw", name = "a", descriptor = "(Z)V")
 	public static void method5981() {
 		if (Static377.anInt5930 == -1) {
 			return;
 		}
-		@Pc(13) int local13 = Static189.aClass120_1.method8853();
-		@Pc(22) int local22 = Static189.aClass120_1.method8854();
+		@Pc(13) int local13 = Static189.aMouse1.method8853();
+		@Pc(22) int local22 = Static189.aMouse1.method8854();
 		@Pc(27) Linkable_Sub9 local27 = (Linkable_Sub9) Static226.aLinkedList58.head();
 		if (local27 != null) {
 			local13 = local27.method5331();

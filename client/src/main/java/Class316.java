@@ -9,13 +9,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class316 {
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "[[Lclient!up;")
-	private final ParticleNode_Sub4_Sub2[][] aClass8_Sub4_Sub2ArrayArray3 = new ParticleNode_Sub4_Sub2[1600][64];
+	private final SecondaryParticleNode_Sub2[][] aClass8_Sub4_Sub2ArrayArray3 = new SecondaryParticleNode_Sub2[1600][64];
 
 	@OriginalMember(owner = "client!rc", name = "s", descriptor = "[I")
 	private final int[] anIntArray634 = new int[64];
 
 	@OriginalMember(owner = "client!rc", name = "n", descriptor = "[[Lclient!up;")
-	private final ParticleNode_Sub4_Sub2[][] aClass8_Sub4_Sub2ArrayArray4 = new ParticleNode_Sub4_Sub2[64][768];
+	private final SecondaryParticleNode_Sub2[][] aClass8_Sub4_Sub2ArrayArray4 = new SecondaryParticleNode_Sub2[64][768];
 
 	@OriginalMember(owner = "client!rc", name = "g", descriptor = "I")
 	private int anInt8200 = 0;
@@ -137,11 +137,11 @@ public final class Class316 {
 			@Pc(39) int local39 = 0;
 			@Pc(41) int local41 = Integer.MAX_VALUE;
 			@Pc(43) int local43 = 0;
-			@Pc(47) ParticleNode_Sub4 local47 = arg0.aClass113_1.aClass8_Sub4_1;
-			@Pc(50) ParticleNode_Sub4 local50;
+			@Pc(47) SecondaryParticleNode local47 = arg0.aClass113_1.aClass8_Sub4_1;
+			@Pc(50) SecondaryParticleNode local50;
 			@Pc(81) int local81;
 			for (local50 = local47.aClass8_Sub4_10; local50 != local47; local50 = local50.aClass8_Sub4_10) {
-				@Pc(54) ParticleNode_Sub4_Sub2 local54 = (ParticleNode_Sub4_Sub2) local50;
+				@Pc(54) SecondaryParticleNode_Sub2 local54 = (SecondaryParticleNode_Sub2) local50;
 				local81 = (int) (local29 * (float) (local54.anInt7534 >> 12) + local25 * (float) (local54.anInt7537 >> 12) + local33 * (float) (local54.anInt7536 >> 12) + local37);
 				if (local81 < local41) {
 					local41 = local81;
@@ -173,7 +173,7 @@ public final class Class316 {
 					this.anIntArray634[local169] = 0;
 				}
 				while (local47 != local50) {
-					@Pc(184) ParticleNode_Sub4_Sub2 local184 = (ParticleNode_Sub4_Sub2) local50;
+					@Pc(184) SecondaryParticleNode_Sub2 local184 = (SecondaryParticleNode_Sub2) local50;
 					if (local151) {
 						local149 = local184.aBoolean574;
 						local151 = false;
@@ -274,7 +274,7 @@ public final class Class316 {
 		@Pc(97) int local97;
 		@Pc(114) int local114;
 		@Pc(123) int local123;
-		@Pc(131) ParticleNode_Sub4_Sub2 local131;
+		@Pc(131) SecondaryParticleNode_Sub2 local131;
 		@Pc(134) int local134;
 		@Pc(139) byte local139;
 		@Pc(144) byte local144;
@@ -287,7 +287,7 @@ public final class Class316 {
 		@Pc(449) float local449;
 		@Pc(454) int local454;
 		@Pc(395) int local395;
-		@Pc(410) ParticleNode_Sub4_Sub2 local410;
+		@Pc(410) SecondaryParticleNode_Sub2 local410;
 		@Pc(413) int local413;
 		@Pc(426) byte local426;
 		@Pc(431) byte local431;

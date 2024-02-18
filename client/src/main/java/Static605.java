@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static605 {
 
 	@OriginalMember(owner = "client!tba", name = "h", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_220 = new Class225(108, 12);
+	public static final ServerProt ServerProt220 = new ServerProt(108, 12);
 
 	@OriginalMember(owner = "client!tba", name = "g", descriptor = "Lclient!hda;")
 	public static Class158 aClass158_15 = null;
@@ -66,7 +66,7 @@ public final class Static605 {
 			if (local21 == 11) {
 				local21 = 10;
 			}
-			@Pc(210) Class54 local210 = Static354.aClass142_4.method3063(local52, 87);
+			@Pc(210) LocType local210 = Static354.aLocTypeList4.method3063(local52, 87);
 			local212 = 0;
 			if (local210.aByteArray13 != null) {
 				local217 = -1;
@@ -128,7 +128,7 @@ public final class Static605 {
 		} else if (arg0 == Static328.aClass287_10) {
 			local15 = local8.g2();
 			local21 = local8.g1();
-			Static354.aClass142_4.method3063(local15, 82).method1304(local21);
+			Static354.aLocTypeList4.method3063(local15, 82).method1304(local21);
 		} else {
 			@Pc(537) int local537;
 			if (arg0 == Static481.aClass287_15) {
@@ -218,7 +218,7 @@ public final class Static605 {
 								}
 							}
 							if (local948 != null) {
-								@Pc(991) Class289 local991 = local948.method9317();
+								@Pc(991) BasType local991 = local948.method9317();
 								if (local991.anIntArrayArray181 != null && local991.anIntArrayArray181[local46] != null) {
 									local812 -= local991.anIntArrayArray181[local46][1];
 								}

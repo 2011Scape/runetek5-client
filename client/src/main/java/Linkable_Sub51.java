@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Linkable_Sub51 extends Linkable {
 
 	@OriginalMember(owner = "client!tg", name = "y", descriptor = "Lclient!haa;")
-	public Linkable_Sub6_Sub2 aClass2_Sub6_Sub2_3;
+	public SoundPcmStream aClass2_Sub6_Sub2_3;
 
 	@OriginalMember(owner = "client!tg", name = "F", descriptor = "I")
 	public int anInt9349;
@@ -18,7 +18,7 @@ public final class Linkable_Sub51 extends Linkable {
 	public int anInt9351;
 
 	@OriginalMember(owner = "client!tg", name = "G", descriptor = "Lclient!c;")
-	public Class54 aClass54_1;
+	public LocType aLocType1;
 
 	@OriginalMember(owner = "client!tg", name = "C", descriptor = "I")
 	public int anInt9352;
@@ -36,7 +36,7 @@ public final class Linkable_Sub51 extends Linkable {
 	public int anInt9356;
 
 	@OriginalMember(owner = "client!tg", name = "M", descriptor = "Lclient!haa;")
-	public Linkable_Sub6_Sub2 aClass2_Sub6_Sub2_4;
+	public SoundPcmStream aClass2_Sub6_Sub2_4;
 
 	@OriginalMember(owner = "client!tg", name = "N", descriptor = "I")
 	public int anInt9357;
@@ -57,10 +57,10 @@ public final class Linkable_Sub51 extends Linkable {
 	public boolean aBoolean713;
 
 	@OriginalMember(owner = "client!tg", name = "K", descriptor = "Lclient!sq;")
-	public Linkable_Sub49_Sub1 aClass2_Sub49_Sub1_3;
+	public PcmSound aClass2_Sub49_Sub1_3;
 
 	@OriginalMember(owner = "client!tg", name = "q", descriptor = "Lclient!sq;")
-	public Linkable_Sub49_Sub1 aClass2_Sub49_Sub1_4;
+	public PcmSound aClass2_Sub49_Sub1_4;
 
 	@OriginalMember(owner = "client!tg", name = "s", descriptor = "Lclient!uj;")
 	public Linkable_Sub53 aClass2_Sub53_2;
@@ -93,8 +93,8 @@ public final class Linkable_Sub51 extends Linkable {
 	public void method8236() {
 		@Pc(11) int local11 = this.anInt9353;
 		@Pc(14) boolean local14 = this.aBoolean714;
-		if (this.aClass54_1 != null) {
-			@Pc(148) Class54 local148 = this.aClass54_1.method1301(13, Static1.anInt10798 == 3 ? Static298.anInterface23_2 : Static34.aClass304_1);
+		if (this.aLocType1 != null) {
+			@Pc(148) LocType local148 = this.aLocType1.method1301(13, Static1.anInt10798 == 3 ? Static298.anInterface23_2 : Static34.aClass304_1);
 			if (local148 == null) {
 				this.anIntArray718 = null;
 				this.anInt9353 = -1;
@@ -123,12 +123,12 @@ public final class Linkable_Sub51 extends Linkable {
 			@Pc(27) int local27 = Static497.method6629(this.aClass8_Sub2_Sub1_Sub2_Sub2_3);
 			if (local27 != local11) {
 				this.anInt9353 = local27;
-				@Pc(37) Class268 local37 = this.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass268_1;
+				@Pc(37) NpcType local37 = this.aClass8_Sub2_Sub1_Sub2_Sub2_3.aNpcType1;
 				if (local37.anIntArray532 != null) {
 					local37 = local37.method5985(65535, Static34.aClass304_1);
 				}
 				if (local37 == null) {
-					this.aBoolean714 = this.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass268_1.aBoolean508;
+					this.aBoolean714 = this.aClass8_Sub2_Sub1_Sub2_Sub2_3.aNpcType1.aBoolean508;
 					this.anInt9359 = 256;
 					this.anInt9360 = 256;
 					this.anInt9358 = this.anInt9356 = this.anInt9355 = 0;

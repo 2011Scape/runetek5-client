@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static291 {
 
 	@OriginalMember(owner = "client!je", name = "g", descriptor = "[Lclient!st;")
-	public static Class23[] aClass23Array8;
+	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray8;
 
 	@OriginalMember(owner = "client!je", name = "e", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_123 = new Class225(128, -2);
+	public static final ServerProt ServerProt123 = new ServerProt(128, -2);
 
 	@OriginalMember(owner = "client!je", name = "h", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable24 = new HashTable(512);

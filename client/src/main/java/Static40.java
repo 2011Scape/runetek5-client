@@ -4,16 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static40 {
 
 	@OriginalMember(owner = "client!bfa", name = "l", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_16 = new Class225(74, 11);
+	public static final ServerProt ServerProt16 = new ServerProt(74, 11);
 
 	@OriginalMember(owner = "client!bfa", name = "p", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_17 = new Class225(39, 6);
+	public static final ServerProt ServerProt17 = new ServerProt(39, 6);
 
 	@OriginalMember(owner = "client!bfa", name = "n", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_18 = new Class225(132, -2);
+	public static final ServerProt ServerProt18 = new ServerProt(132, -2);
 
 	@OriginalMember(owner = "client!bfa", name = "o", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_19 = new Class225(15, 0);
+	public static final ServerProt ServerProt19 = new ServerProt(15, 0);
 
 	@OriginalMember(owner = "client!bfa", name = "a", descriptor = "(IIIIIIB)J")
 	public static long method1026(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {

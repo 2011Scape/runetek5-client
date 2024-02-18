@@ -279,10 +279,10 @@ public final class Static434 {
 		for (local55 = (local28 - (Static720.anInt10859 >> 4)) / 8; local55 <= ((Static720.anInt10859 >> 4) + local28) / 8; local55++) {
 			for (@Pc(137) int local137 = (local32 - (Static501.anInt7568 >> 4)) / 8; local137 <= (local32 + (Static501.anInt7568 >> 4)) / 8; local137++) {
 				Static89.anIntArray169[local46] = (local55 << 8) + local137;
-				Static267.anIntArray329[local46] = Static93.aClass330_16.method7590("m" + local55 + "_" + local137);
-				Static266.anIntArray615[local46] = Static93.aClass330_16.method7590("l" + local55 + "_" + local137);
-				Static68.anIntArray316[local46] = Static93.aClass330_16.method7590("um" + local55 + "_" + local137);
-				Static298.anIntArray367[local46] = Static93.aClass330_16.method7590("ul" + local55 + "_" + local137);
+				Static267.anIntArray329[local46] = Static93.aJs516.method7590("m" + local55 + "_" + local137);
+				Static266.anIntArray615[local46] = Static93.aJs516.method7590("l" + local55 + "_" + local137);
+				Static68.anIntArray316[local46] = Static93.aJs516.method7590("um" + local55 + "_" + local137);
+				Static298.anIntArray367[local46] = Static93.aJs516.method7590("ul" + local55 + "_" + local137);
 				local46++;
 			}
 		}

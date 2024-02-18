@@ -20,7 +20,7 @@ public abstract class Class14 {
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "([Lclient!st;IIIILjava/lang/String;[IILjava/util/Random;I)I")
-	public final int method8816(@OriginalArg(0) Class23[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) String arg3, @OriginalArg(6) int[] arg4, @OriginalArg(8) Random arg5, @OriginalArg(9) int arg6) {
+	public final int method8816(@OriginalArg(0) SoftwareIndexedSprite[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) String arg3, @OriginalArg(6) int[] arg4, @OriginalArg(8) Random arg5, @OriginalArg(9) int arg6) {
 		if (arg3 == null) {
 			return 0;
 		}
@@ -58,11 +58,11 @@ public abstract class Class14 {
 		for (@Pc(46) int local46 = 0; local46 < local41; local46++) {
 			local44[local46] = (int) (Math.sin((double) arg2 + (double) local46 / 1.5D) * local32);
 		}
-		this.method8820((int[]) null, arg5, arg3, (Class23[]) null, arg1 - this.aClass381_12.method8744(arg5) / 2, local44, (int[]) null);
+		this.method8820((int[]) null, arg5, arg3, (SoftwareIndexedSprite[]) null, arg1 - this.aClass381_12.method8744(arg5) / 2, local44, (int[]) null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "([ILjava/lang/String;I[Lclient!st;I[IZ[I)V")
-	private void method8820(@OriginalArg(0) int[] arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class23[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(7) int[] arg6) {
+	private void method8820(@OriginalArg(0) int[] arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SoftwareIndexedSprite[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(7) int[] arg6) {
 		@Pc(7) int local7 = arg2 - this.aClass381_12.anInt10027;
 		@Pc(13) int local13 = -1;
 		@Pc(15) int local15 = -1;
@@ -108,7 +108,7 @@ public abstract class Class14 {
 									}
 									local17++;
 									@Pc(187) int local187 = Static647.method8473(local64.substring(4));
-									@Pc(191) Class23 local191 = arg3[local187];
+									@Pc(191) SoftwareIndexedSprite local191 = arg3[local187];
 									@Pc(201) int local201 = arg6 == null ? local191.method8192() : arg6[local187];
 									local191.method8197(local164 + arg4, local174 + -local201 + local7 + this.aClass381_12.anInt10027, 1, 0, 1);
 									local15 = -1;
@@ -183,7 +183,7 @@ public abstract class Class14 {
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "([Lclient!st;IILjava/lang/String;IZLclient!aa;I[I)V")
-	private void method8824(@OriginalArg(0) Class23[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class1 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int[] arg7) {
+	private void method8824(@OriginalArg(0) SoftwareIndexedSprite[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class1 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int[] arg7) {
 		@Pc(5) int local5 = arg6 - this.aClass381_12.anInt10027;
 		@Pc(11) int local11 = -1;
 		@Pc(18) int local18 = -1;
@@ -215,7 +215,7 @@ public abstract class Class14 {
 							if (local54.startsWith("img=")) {
 								try {
 									@Pc(136) int local136 = Static647.method8473(local54.substring(4));
-									@Pc(140) Class23 local140 = arg0[local136];
+									@Pc(140) SoftwareIndexedSprite local140 = arg0[local136];
 									@Pc(150) int local150 = arg7 == null ? local140.method8192() : arg7[local136];
 									if ((Static658.anInt9801 & 0xFF000000) == -16777216) {
 										local140.method8197(arg4, this.aClass381_12.anInt10027 + local5 - local150, 1, 0, 1);
@@ -285,7 +285,7 @@ public abstract class Class14 {
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(I[IILjava/lang/String;Lclient!aa;[Lclient!st;IIIIIIIIII)I")
-	public final int method8826(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) Class1 arg4, @OriginalArg(5) Class23[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int arg14) {
+	public final int method8826(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) Class1 arg4, @OriginalArg(5) SoftwareIndexedSprite[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int arg14) {
 		return this.method8830(arg11, arg2, arg7, arg5, 0, arg0, arg6, arg14, arg8, arg4, arg12, arg13, arg10, arg9, arg1, arg3);
 	}
 
@@ -293,7 +293,7 @@ public abstract class Class14 {
 	protected abstract void fa(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(IIILjava/lang/String;II[Lclient!st;[I)V")
-	public final void method8827(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class23[] arg4, @OriginalArg(7) int[] arg5) {
+	public final void method8827(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(5) int arg3, @OriginalArg(6) SoftwareIndexedSprite[] arg4, @OriginalArg(7) int[] arg5) {
 		if (arg2 != null) {
 			this.method8825(arg0, 0);
 			this.method8824(arg4, 0, 0, arg2, arg3, (Class1) null, arg1, arg5);
@@ -304,7 +304,7 @@ public abstract class Class14 {
 	public final void method8828(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (arg2 != null) {
 			this.method8825(arg4, arg0);
-			this.method8824((Class23[]) null, 0, 0, arg2, arg1 - this.aClass381_12.method8744(arg2) / 2, (Class1) null, arg3, (int[]) null);
+			this.method8824((SoftwareIndexedSprite[]) null, 0, 0, arg2, arg1 - this.aClass381_12.method8744(arg2) / 2, (Class1) null, arg3, (int[]) null);
 		}
 	}
 
@@ -312,12 +312,12 @@ public abstract class Class14 {
 	public final void method8829(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		if (arg2 != null) {
 			this.method8825(arg4, arg3);
-			this.method8824((Class23[]) null, 0, 0, arg2, arg0, (Class1) null, arg1, (int[]) null);
+			this.method8824((SoftwareIndexedSprite[]) null, 0, 0, arg2, arg0, (Class1) null, arg1, (int[]) null);
 		}
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(IIII[Lclient!st;IIIIILclient!aa;IIII[ILjava/lang/String;)I")
-	public final int method8830(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class23[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class1 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int[] arg14, @OriginalArg(16) String arg15) {
+	public final int method8830(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) SoftwareIndexedSprite[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class1 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int[] arg14, @OriginalArg(16) String arg15) {
 		if (arg15 == null) {
 			return 0;
 		}
@@ -432,7 +432,7 @@ public abstract class Class14 {
 			local20[local30] = (int) (Math.sin((double) local30 / 5.0D + (double) arg0 / 5.0D) * 5.0D);
 			local23[local30] = (int) (Math.sin((double) local30 / 3.0D + (double) arg0 / 5.0D) * 5.0D);
 		}
-		this.method8820(local20, arg1, arg4, (Class23[]) null, arg2 - this.aClass381_12.method8744(arg1) / 2, local23, (int[]) null);
+		this.method8820(local20, arg1, arg4, (SoftwareIndexedSprite[]) null, arg2 - this.aClass381_12.method8744(arg1) / 2, local23, (int[]) null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(IIILjava/lang/String;III)V")
@@ -446,19 +446,19 @@ public abstract class Class14 {
 		for (@Pc(27) int local27 = 0; local27 < local17; local27++) {
 			local25[local27] = (int) (Math.sin((double) local27 / 2.0D + (double) arg1 / 5.0D) * 5.0D);
 		}
-		this.method8820((int[]) null, arg2, arg4, (Class23[]) null, arg3 - this.aClass381_12.method8744(arg2) / 2, local25, (int[]) null);
+		this.method8820((int[]) null, arg2, arg4, (SoftwareIndexedSprite[]) null, arg3 - this.aClass381_12.method8744(arg2) / 2, local25, (int[]) null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(BILjava/lang/String;III)V")
 	public final void method8834(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (arg1 != null) {
 			this.method8825(arg2, arg3);
-			this.method8824((Class23[]) null, 0, 0, arg1, arg0 - this.aClass381_12.method8744(arg1), (Class1) null, arg4, (int[]) null);
+			this.method8824((SoftwareIndexedSprite[]) null, 0, 0, arg1, arg0 - this.aClass381_12.method8744(arg1), (Class1) null, arg4, (int[]) null);
 		}
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "([IIII[IIILjava/util/Random;Ljava/lang/String;II[Lclient!st;III)I")
-	public final int method8836(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Random arg6, @OriginalArg(8) String arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class23[] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {
+	public final int method8836(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int[] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Random arg6, @OriginalArg(8) String arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) SoftwareIndexedSprite[] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {
 		if (arg7 == null) {
 			return 0;
 		}

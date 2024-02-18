@@ -53,6 +53,6 @@ public final class Static584 {
 
 	@OriginalMember(owner = "client!sga", name = "b", descriptor = "(Z)V")
 	public static void method7666() {
-		Static186.aClass82_67.method2157();
+		Static186.aSoftLruHashTable67.method2157();
 	}
 }

@@ -53,9 +53,9 @@ public final class Static298 {
 	@OriginalMember(owner = "client!ji", name = "a", descriptor = "(II)V")
 	public static void method4388(@OriginalArg(1) int arg0) {
 		Static722.anInt10905 = arg0;
-		@Pc(14) Class82 local14 = Static354.aClass82_120;
-		synchronized (Static354.aClass82_120) {
-			Static354.aClass82_120.method2157();
+		@Pc(14) SoftLruHashTable local14 = Static354.aSoftLruHashTable120;
+		synchronized (Static354.aSoftLruHashTable120) {
+			Static354.aSoftLruHashTable120.method2157();
 		}
 	}
 }

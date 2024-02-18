@@ -20,7 +20,7 @@ public final class Class26_Sub3 extends Class26 {
 	private final boolean aBoolean243;
 
 	@OriginalMember(owner = "client!fd", name = "<init>", descriptor = "(Lclient!tca;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub3(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub3(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass7_4 = arg2;
 		if (arg1 != null && arg0.aBoolean703 && arg0.aBoolean707) {

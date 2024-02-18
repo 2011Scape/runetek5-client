@@ -11,16 +11,16 @@ public final class Static331 {
 	public static int anInt5440;
 
 	@OriginalMember(owner = "client!ki", name = "h", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_65;
+	public static Js5 aJs565;
 
 	@OriginalMember(owner = "client!ki", name = "e", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_138 = new Class225(36, 4);
+	public static final ServerProt ServerProt138 = new ServerProt(36, 4);
 
 	@OriginalMember(owner = "client!ki", name = "i", descriptor = "I")
 	public static int anInt5439 = -1;
 
 	@OriginalMember(owner = "client!ki", name = "g", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_139 = new Class225(118, -2);
+	public static final ServerProt ServerProt139 = new ServerProt(118, -2);
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "I")
 	public static int anInt5441 = -50;
@@ -34,15 +34,15 @@ public final class Static331 {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(B[Lclient!st;)V")
-	public static void method4925(@OriginalArg(1) Class23[] arg0) {
+	public static void method4925(@OriginalArg(1) SoftwareIndexedSprite[] arg0) {
 		anInt5440 = arg0.length;
-		Static186.aClass23Array5 = new Class23[anInt5440 + 10];
+		Static186.aSoftwareIndexedSpriteArray5 = new SoftwareIndexedSprite[anInt5440 + 10];
 		Static460.anIntArray554 = new int[anInt5440 + 10];
-		Static734.method7691(arg0, 0, Static186.aClass23Array5, 0, anInt5440);
+		Static734.method7691(arg0, 0, Static186.aSoftwareIndexedSpriteArray5, 0, anInt5440);
 		for (@Pc(32) int local32 = 0; local32 < anInt5440; local32++) {
-			Static460.anIntArray554[local32] = Static186.aClass23Array5[local32].method8192();
+			Static460.anIntArray554[local32] = Static186.aSoftwareIndexedSpriteArray5[local32].method8192();
 		}
-		for (@Pc(50) int local50 = anInt5440; local50 < Static186.aClass23Array5.length; local50++) {
+		for (@Pc(50) int local50 = anInt5440; local50 < Static186.aSoftwareIndexedSpriteArray5.length; local50++) {
 			Static460.anIntArray554[local50] = 12;
 		}
 	}

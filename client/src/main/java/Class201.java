@@ -103,7 +103,7 @@ public final class Class201 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!es;Lclient!gu;IZLclient!qp;Lclient!bp;I[ILclient!vl;Lclient!kr;Lclient!ha;Lclient!ql;[Lclient!gu;ILclient!gu;Lclient!uk;)Lclient!ka;")
-	public Class114 method4546(@OriginalArg(0) Class112 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(4) Class310 arg2, @OriginalArg(5) Class50 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) Class388 arg6, @OriginalArg(9) Class215 arg7, @OriginalArg(10) Class19 arg8, @OriginalArg(11) Class308 arg9, @OriginalArg(12) Class152[] arg10, @OriginalArg(13) int arg11, @OriginalArg(14) Class152 arg12, @OriginalArg(15) Interface23 arg13) {
+	public Class114 method4546(@OriginalArg(0) ObjTypeList arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(4) BasTypeList arg2, @OriginalArg(5) SeqTypeList arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) Class388 arg6, @OriginalArg(9) IdkTypeList arg7, @OriginalArg(10) Class19 arg8, @OriginalArg(11) NpcTypeList arg9, @OriginalArg(12) Class152[] arg10, @OriginalArg(13) int arg11, @OriginalArg(14) Class152 arg12, @OriginalArg(15) Interface23 arg13) {
 		if (this.anInt5012 != -1) {
 			return arg9.method7092(this.anInt5012).method5993(arg13, arg8, arg2, arg1, arg11, arg5, (Class386) null, arg12, arg4, arg10);
 		}
@@ -115,7 +115,7 @@ public final class Class201 {
 		@Pc(72) int local72;
 		@Pc(116) int local116;
 		if (arg1 != null) {
-			@Pc(50) Class69 local50 = arg1.method9107();
+			@Pc(50) SeqType local50 = arg1.method9107();
 			if (local50 != null && (local50.anInt1652 >= 0 || local50.anInt1651 >= 0)) {
 				local34 = new int[this.anIntArray381.length];
 				for (local72 = 0; local72 < local34.length; local72++) {
@@ -180,12 +180,12 @@ public final class Class201 {
 				}
 			}
 		}
-		@Pc(334) Class82 local334 = Static580.aClass82_186;
+		@Pc(334) SoftLruHashTable local334 = Static580.aSoftLruHashTable186;
 		@Pc(342) Class114 local342;
-		synchronized (Static580.aClass82_186) {
-			local342 = (Class114) Static580.aClass82_186.method2156(local31);
+		synchronized (Static580.aSoftLruHashTable186) {
+			local342 = (Class114) Static580.aSoftLruHashTable186.method2156(local31);
 		}
-		@Pc(350) Class289 local350 = null;
+		@Pc(350) BasType local350 = null;
 		if (this.anInt5007 != -1) {
 			local350 = arg2.method7118(this.anInt5007);
 		}
@@ -204,9 +204,9 @@ public final class Class201 {
 				if (local390 >= local34.length) {
 					if (local388) {
 						if (this.aLong159 != -1L) {
-							@Pc(552) Class82 local552 = Static580.aClass82_186;
-							synchronized (Static580.aClass82_186) {
-								local342 = (Class114) Static580.aClass82_186.method2156(this.aLong159);
+							@Pc(552) SoftLruHashTable local552 = Static580.aSoftLruHashTable186;
+							synchronized (Static580.aSoftLruHashTable186) {
+								local342 = (Class114) Static580.aSoftLruHashTable186.method2156(this.aLong159);
 							}
 						}
 						if (local342 == null || arg8.method7960(local342.ua(), local28) != 0) {
@@ -272,9 +272,9 @@ public final class Class201 {
 							}
 						}
 						local342.s(local28);
-						@Pc(903) Class82 local903 = Static580.aClass82_186;
-						synchronized (Static580.aClass82_186) {
-							Static580.aClass82_186.method2150(local342, local31);
+						@Pc(903) SoftLruHashTable local903 = Static580.aSoftLruHashTable186;
+						synchronized (Static580.aSoftLruHashTable186) {
+							Static580.aSoftLruHashTable186.method2150(local342, local31);
 						}
 						this.aLong159 = local31;
 					}
@@ -379,7 +379,7 @@ public final class Class201 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(IBLclient!kr;I)V")
-	public void method4548(@OriginalArg(0) int arg0, @OriginalArg(2) Class215 arg1, @OriginalArg(3) int arg2) {
+	public void method4548(@OriginalArg(0) int arg0, @OriginalArg(2) IdkTypeList arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = Static264.anIntArray891[arg2];
 		if (arg1.method5042(arg0) != null) {
 			this.anIntArray381[local7] = Integer.MIN_VALUE | arg0;
@@ -394,13 +394,13 @@ public final class Class201 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!gu;IILclient!bp;Lclient!ha;BLclient!kr;II)Lclient!ka;")
-	public Class114 method4550(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class50 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(6) Class215 arg5, @OriginalArg(7) int arg6) {
+	public Class114 method4550(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SeqTypeList arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(6) IdkTypeList arg5, @OriginalArg(7) int arg6) {
 		@Pc(16) int local16 = arg0 == null ? 2048 : arg0.method9101() | 0x800;
 		@Pc(29) long local29 = (long) arg1 | (long) arg2 << 32 | (long) (arg6 << 16);
-		@Pc(31) Class82 local31 = Static54.aClass82_25;
+		@Pc(31) SoftLruHashTable local31 = Static54.aSoftLruHashTable25;
 		@Pc(39) Class114 local39;
-		synchronized (Static54.aClass82_25) {
-			local39 = (Class114) Static54.aClass82_25.method2156(local29);
+		synchronized (Static54.aSoftLruHashTable25) {
+			local39 = (Class114) Static54.aSoftLruHashTable25.method2156(local29);
 		}
 		if (local39 == null || arg4.method7960(local39.ua(), local16) != 0) {
 			if (local39 != null) {
@@ -435,9 +435,9 @@ public final class Class201 {
 				}
 			}
 			local39.s(local16);
-			@Pc(228) Class82 local228 = Static54.aClass82_25;
-			synchronized (Static54.aClass82_25) {
-				Static54.aClass82_25.method2150(local39, local29);
+			@Pc(228) SoftLruHashTable local228 = Static54.aSoftLruHashTable25;
+			synchronized (Static54.aSoftLruHashTable25) {
+				Static54.aSoftLruHashTable25.method2150(local39, local29);
 			}
 		}
 		if (arg0 == null) {
@@ -450,7 +450,7 @@ public final class Class201 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(BIILclient!es;)V")
-	public void method4551(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class112 arg2) {
+	public void method4551(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) ObjTypeList arg2) {
 		if (arg0 == -1) {
 			this.anIntArray381[arg1] = 0;
 		} else if (arg2.method2486(arg0) != null) {
@@ -460,15 +460,15 @@ public final class Class201 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!kr;BLclient!bp;Lclient!uk;Lclient!gu;Lclient!es;Lclient!ql;Lclient!ha;I)Lclient!ka;")
-	public Class114 method4552(@OriginalArg(0) Class215 arg0, @OriginalArg(2) Class50 arg1, @OriginalArg(3) Interface23 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) Class112 arg4, @OriginalArg(6) Class308 arg5, @OriginalArg(7) Class19 arg6) {
+	public Class114 method4552(@OriginalArg(0) IdkTypeList arg0, @OriginalArg(2) SeqTypeList arg1, @OriginalArg(3) Interface23 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) ObjTypeList arg4, @OriginalArg(6) NpcTypeList arg5, @OriginalArg(7) Class19 arg6) {
 		if (this.anInt5012 != -1) {
 			return arg5.method7092(this.anInt5012).method5992(arg3, (Class386) null, arg6, arg2);
 		}
 		@Pc(35) int local35 = arg3 == null ? 2048 : arg3.method9101() | 0x800;
-		@Pc(37) Class82 local37 = Static54.aClass82_25;
+		@Pc(37) SoftLruHashTable local37 = Static54.aSoftLruHashTable25;
 		@Pc(48) Class114 local48;
-		synchronized (Static54.aClass82_25) {
-			local48 = (Class114) Static54.aClass82_25.method2156(this.aLong160);
+		synchronized (Static54.aSoftLruHashTable25) {
+			local48 = (Class114) Static54.aSoftLruHashTable25.method2156(this.aLong160);
 		}
 		if (local48 == null || arg6.method7960(local48.ua(), local35) != 0) {
 			if (local48 != null) {
@@ -524,9 +524,9 @@ public final class Class201 {
 				}
 			}
 			local48.s(local35);
-			@Pc(340) Class82 local340 = Static54.aClass82_25;
-			synchronized (Static54.aClass82_25) {
-				Static54.aClass82_25.method2150(local48, this.aLong160);
+			@Pc(340) SoftLruHashTable local340 = Static54.aSoftLruHashTable25;
+			synchronized (Static54.aSoftLruHashTable25) {
+				Static54.aSoftLruHashTable25.method2150(local48, this.aLong160);
 			}
 		}
 		if (arg3 == null) {

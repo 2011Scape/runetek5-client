@@ -31,7 +31,7 @@ public final class Static681 {
 	}
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(ILjava/awt/Component;)Lclient!rg;")
-	public static Class319 method8921(@OriginalArg(1) Component arg0) {
-		return new Class319_Sub1(arg0);
+	public static Keyboard method8921(@OriginalArg(1) Component arg0) {
+		return new JavaKeyboard(arg0);
 	}
 }

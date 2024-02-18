@@ -22,7 +22,7 @@ public final class Class148 {
 	private int anInt3506;
 
 	@OriginalMember(owner = "client!gm", name = "G", descriptor = "Lclient!st;")
-	private Class23 aClass23_10;
+	private SoftwareIndexedSprite aSoftwareIndexedSprite10;
 
 	@OriginalMember(owner = "client!gm", name = "E", descriptor = "I")
 	private int anInt3508;
@@ -128,18 +128,18 @@ public final class Class148 {
 			if (this.anInt3507 == -1 || this.anInt3518 == 0) {
 				arg3.aa(arg7, arg11, arg6, arg2, local10 << 24 | arg5, 1);
 			} else {
-				@Pc(74) Class118 local74 = Static708.anInterface4_12.method6817(this.anInt3507);
-				if (this.aClass23_10 == null && Static708.anInterface4_12.method6814(this.anInt3507)) {
+				@Pc(74) Material local74 = Static708.anInterface4_12.method6817(this.anInt3507);
+				if (this.aSoftwareIndexedSprite10 == null && Static708.anInterface4_12.method6814(this.anInt3507)) {
 					@Pc(120) int[] local120 = local74.anInt2796 == 2 ? Static708.anInterface4_12.method6815(0.7F, this.anInt3507, this.anInt3518, this.anInt3518) : Static708.anInterface4_12.method6818(this.anInt3518, false, this.anInt3518, this.anInt3507, 0.7F);
 					this.anInt3501 = local120[0];
 					this.anInt3511 = local120[local120.length - 1];
-					this.aClass23_10 = arg3.method7946(this.anInt3518, this.anInt3518, this.anInt3518, local120);
+					this.aSoftwareIndexedSprite10 = arg3.method7946(this.anInt3518, this.anInt3518, this.anInt3518, local120);
 				}
 				@Pc(161) int local161 = local10 == 255 ? (local74.anInt2796 == 2 ? 1 : 0) : 1;
 				if (local161 == 1 && arg4) {
 					arg3.aa(arg7, arg11, arg6, arg2, arg5, 0);
 				}
-				if (this.aClass23_10 != null) {
+				if (this.aSoftwareIndexedSprite10 != null) {
 					@Pc(187) int local187 = arg2 * arg10 / -4096;
 					@Pc(199) int local199;
 					for (local199 = arg8 * arg2 / 4096 + (arg6 - arg2) / 2; local199 > arg2; local199 -= arg2) {
@@ -150,7 +150,7 @@ public final class Class148 {
 					@Pc(233) int local233;
 					if (this.anInt3515 == 1) {
 						for (local233 = local199 - arg2; local233 < arg6; local233 += arg2) {
-							this.aClass23_10.method8205(arg7 + local233, local187 + arg11, arg2, arg2, 0, local10 << 24 | 0xFFFFFF, local161);
+							this.aSoftwareIndexedSprite10.method8205(arg7 + local233, local187 + arg11, arg2, arg2, 0, local10 << 24 | 0xFFFFFF, local161);
 						}
 						if ((this.anInt3501 & 0xFF000000) != 0) {
 							arg3.method7971(arg6, local187 + arg11 + 1, 0, 0, this.anInt3501);
@@ -167,7 +167,7 @@ public final class Class148 {
 						}
 						for (local233 = local199 - arg2; local233 < arg6; local233 += arg2) {
 							for (@Pc(360) int local360 = local187 - arg2; local360 < arg2; local360 += arg2) {
-								this.aClass23_10.method8205(arg7 + local233, local360 - -arg11, arg2, arg2, 0, local10 << 24 | 0xFFFFFF, local161);
+								this.aSoftwareIndexedSprite10.method8205(arg7 + local233, local360 - -arg11, arg2, arg2, 0, local10 << 24 | 0xFFFFFF, local161);
 							}
 						}
 					}
@@ -232,11 +232,11 @@ public final class Class148 {
 	@OriginalMember(owner = "client!gm", name = "a", descriptor = "(ILclient!ha;)V")
 	private void method3166(@OriginalArg(1) Class19 arg0) {
 		try {
-			@Pc(9) Class330 local9 = Static386.aClass330_80;
+			@Pc(9) Js5 local9 = Static386.aJs580;
 			@Pc(17) boolean local17 = local9.method7607(this.anInt3514);
 			if (local17) {
 				arg0.ZA(16777215, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F);
-				@Pc(36) Class88 local36 = Static121.method2201(this.anInt3514, Static386.aClass330_80);
+				@Pc(36) Class88 local36 = Static121.method2201(this.anInt3514, Static386.aJs580);
 				this.aClass114_2 = arg0.method7952(local36, 1099776, 0, 255, 1);
 				@Pc(49) byte[] local49 = this.aClass114_2.method7489();
 				if (local49 == null) {
@@ -268,7 +268,7 @@ public final class Class148 {
 			}
 			if (local16 != this.anInt3518) {
 				this.anInt3518 = local16;
-				this.aClass23_10 = null;
+				this.aSoftwareIndexedSprite10 = null;
 			}
 			if (this.aClass216Array1 != null) {
 				this.anInt3508 = 0;

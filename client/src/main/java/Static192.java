@@ -15,7 +15,7 @@ public final class Static192 {
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(Lclient!cba;I)I")
 	public static int method2875(@OriginalArg(0) SecondaryLinkable_Sub4 arg0) {
 		@Pc(14) String local14 = method2874(arg0);
-		return Static42.aClass381_4.method8742(Static186.aClass23Array5, local14);
+		return Static42.aClass381_4.method8742(Static186.aSoftwareIndexedSpriteArray5, local14);
 	}
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(I)Lclient!aea;")

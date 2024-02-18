@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static235 {
 
 	@OriginalMember(owner = "client!hf", name = "n", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_47 = new Class345(5, 4);
+	public static final ClientProt aClientProt47 = new ClientProt(5, 4);
 
 	@OriginalMember(owner = "client!hf", name = "h", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_48 = new Class345(45, 7);
+	public static final ClientProt aClientProt48 = new ClientProt(45, 7);
 
 	@OriginalMember(owner = "client!hf", name = "g", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_49 = new Class345(75, 4);
+	public static final ClientProt aClientProt49 = new ClientProt(75, 4);
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(IIIIIIIII)V")
 	public static void method3421(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7) {
@@ -42,7 +42,7 @@ public final class Static235 {
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
-		@Pc(19) Class54 local19 = Static354.aClass142_4.method3063(arg0, 61);
+		@Pc(19) LocType local19 = Static354.aLocTypeList4.method3063(arg0, 61);
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}

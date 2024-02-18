@@ -10,7 +10,7 @@ public final class h extends Class14 implements Interface5 {
 	private long nativeid;
 
 	@OriginalMember(owner = "client!h", name = "<init>", descriptor = "(Lclient!oa;Lclient!ya;Lclient!ve;[Lclient!wp;[Lclient!st;)V")
-	public h(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) Class381 arg2, @OriginalArg(3) Class407[] arg3, @OriginalArg(4) Class23[] arg4) {
+	public h(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) Class381 arg2, @OriginalArg(3) Class407[] arg3, @OriginalArg(4) SoftwareIndexedSprite[] arg4) {
 		super(arg0, arg2);
 		@Pc(7) byte[][] local7 = new byte[arg3.length][];
 		@Pc(11) int[] local11 = new int[arg3.length];

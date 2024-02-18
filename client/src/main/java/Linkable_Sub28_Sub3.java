@@ -24,7 +24,7 @@ public final class Linkable_Sub28_Sub3 extends Linkable_Sub28 {
 	private boolean aBoolean460;
 
 	@OriginalMember(owner = "client!mda", name = "D", descriptor = "Lclient!st;")
-	private Class23 aClass23_29;
+	private SoftwareIndexedSprite aSoftwareIndexedSprite29;
 
 	@OriginalMember(owner = "client!mda", name = "J", descriptor = "Z")
 	private boolean aBoolean461;
@@ -85,15 +85,15 @@ public final class Linkable_Sub28_Sub3 extends Linkable_Sub28 {
 	}
 
 	@OriginalMember(owner = "client!mda", name = "a", descriptor = "(Lclient!ha;I)Lclient!st;")
-	public Class23 method5491(@OriginalArg(0) Class19 arg0) {
+	public SoftwareIndexedSprite method5491(@OriginalArg(0) Class19 arg0) {
 		if (this.aFrame7 == null) {
 			return null;
-		} else if (this.aBoolean462 || this.aClass23_29 == null) {
-			this.aClass23_29 = arg0.method7958(this.aFrame7.pixels, this.aFrame7.b, this.aFrame7.b, this.aFrame7.a, false);
+		} else if (this.aBoolean462 || this.aSoftwareIndexedSprite29 == null) {
+			this.aSoftwareIndexedSprite29 = arg0.method7958(this.aFrame7.pixels, this.aFrame7.b, this.aFrame7.b, this.aFrame7.a, false);
 			this.aBoolean462 = false;
-			return this.aClass23_29;
+			return this.aSoftwareIndexedSprite29;
 		} else {
-			return this.aClass23_29;
+			return this.aSoftwareIndexedSprite29;
 		}
 	}
 

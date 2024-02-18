@@ -37,7 +37,7 @@ public final class ParticleNode_Sub2_Sub3_Sub2 extends ParticleNode_Sub2_Sub3 im
 	private SecondaryLinkable_Sub9 aClass2_Sub2_Sub9_4;
 
 	@OriginalMember(owner = "client!jn", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIIZ)V")
-	public ParticleNode_Sub2_Sub3_Sub2(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) boolean arg10) {
+	public ParticleNode_Sub2_Sub3_Sub2(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) boolean arg10) {
 		super(arg4, arg5, arg6, arg2, arg3, Static490.method6553(arg9, arg8));
 		super.anInt10690 = arg4;
 		super.anInt10694 = arg6;
@@ -218,7 +218,7 @@ public final class ParticleNode_Sub2_Sub3_Sub2 extends ParticleNode_Sub2_Sub3 im
 
 	@OriginalMember(owner = "client!jn", name = "a", descriptor = "(Lclient!ha;ZIZ)Lclient!od;")
 	private Class272 method4475(@OriginalArg(0) Class19 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2) {
-		@Pc(11) Class54 local11 = Static354.aClass142_4.method3063(this.aShort60 & 0xFFFF, 56);
+		@Pc(11) LocType local11 = Static354.aLocTypeList4.method3063(this.aShort60 & 0xFFFF, 56);
 		@Pc(27) Class178 local27;
 		@Pc(38) Class178 local38;
 		if (this.aBoolean376) {

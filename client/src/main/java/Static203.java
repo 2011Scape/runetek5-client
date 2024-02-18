@@ -32,23 +32,23 @@ public final class Static203 {
 
 	@OriginalMember(owner = "client!gf", name = "a", descriptor = "(B)V")
 	public static void method3068() {
-		Static441.aClass23Array10 = null;
-		Static558.aClass23Array7 = null;
-		Static174.aClass23Array4 = null;
+		Static441.aSoftwareIndexedSpriteArray10 = null;
+		Static558.aSoftwareIndexedSpriteArray7 = null;
+		Static174.aSoftwareIndexedSpriteArray4 = null;
 		Static665.aClass14_12 = null;
 		Static437.aClass14_9 = null;
-		Static12.aClass23_27 = null;
-		Static119.aClass23Array3 = null;
-		Static291.aClass23Array8 = null;
-		Static471.aClass23Array11 = null;
-		Static34.aClass23Array2 = null;
-		Static517.aClass23_32 = null;
-		Static355.aClass23Array9 = null;
+		Static12.aSoftwareIndexedSprite27 = null;
+		Static119.aSoftwareIndexedSpriteArray3 = null;
+		Static291.aSoftwareIndexedSpriteArray8 = null;
+		Static471.aSoftwareIndexedSpriteArray11 = null;
+		Static34.aSoftwareIndexedSpriteArray2 = null;
+		Static517.aSoftwareIndexedSprite32 = null;
+		Static355.aSoftwareIndexedSpriteArray9 = null;
 		Static180.aClass14_3 = null;
-		Static679.aClass23Array14 = null;
-		Static691.aClass23Array15 = null;
-		Static28.aClass23Array1 = null;
-		Static493.aClass23Array12 = null;
+		Static679.aSoftwareIndexedSpriteArray14 = null;
+		Static691.aSoftwareIndexedSpriteArray15 = null;
+		Static28.aSoftwareIndexedSpriteArray1 = null;
+		Static493.aSoftwareIndexedSpriteArray12 = null;
 	}
 
 	@OriginalMember(owner = "client!gf", name = "a", descriptor = "(IIIBI)V")

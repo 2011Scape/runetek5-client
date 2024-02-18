@@ -100,7 +100,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(III[III)Lclient!st;")
-	public final Class23 method7946(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3) {
+	public final SoftwareIndexedSprite method7946(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3) {
 		return this.method7958(arg3, arg1, arg0, arg2, true);
 	}
 
@@ -108,7 +108,7 @@ public abstract class Class19 {
 	public abstract void method7947(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!wp;Z)Lclient!st;")
-	public abstract Class23 method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1);
+	public abstract SoftwareIndexedSprite method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!ha", name = "k", descriptor = "()Z")
 	public abstract boolean method7949();
@@ -146,7 +146,7 @@ public abstract class Class19 {
 	public abstract void method7956(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "([IIIIIZ)Lclient!st;")
-	public abstract Class23 method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4);
+	public abstract SoftwareIndexedSprite method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(IIII)V")
 	public abstract void method7959(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
@@ -158,13 +158,13 @@ public abstract class Class19 {
 	public abstract Linkable_Sub13 method7961(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(II)Lclient!eca;")
-	public abstract Interface6 method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
+	public abstract IndexedSprite method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(IIZ)Lclient!st;")
-	public abstract Class23 method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2);
+	public abstract SoftwareIndexedSprite method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(IIIIZ)Lclient!st;")
-	public abstract Class23 method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
+	public abstract SoftwareIndexedSprite method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!ha", name = "ZA", descriptor = "(IFFFFF)V")
 	public abstract void ZA(@OriginalArg(0) int arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3, @OriginalArg(4) float arg4, @OriginalArg(5) float arg5);
@@ -266,7 +266,7 @@ public abstract class Class19 {
 	protected abstract void method7987();
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
-	public abstract Interface9 method7988(@OriginalArg(0) Interface6 arg0, @OriginalArg(1) Interface26 arg1);
+	public abstract Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1);
 
 	@OriginalMember(owner = "client!ha", name = "Y", descriptor = "()[I")
 	public abstract int[] Y();
@@ -321,7 +321,7 @@ public abstract class Class19 {
 	public abstract boolean method8001();
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!st;I)V")
-	public final void method8002(@OriginalArg(0) Class23 arg0) {
+	public final void method8002(@OriginalArg(0) SoftwareIndexedSprite arg0) {
 		this.method7939(this.method7988(arg0, this.method7986(arg0.method8199(), arg0.method8182())));
 	}
 

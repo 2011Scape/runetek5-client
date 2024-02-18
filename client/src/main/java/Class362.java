@@ -19,7 +19,7 @@ public final class Class362 implements Runnable {
 	private volatile boolean aBoolean730;
 
 	@OriginalMember(owner = "client!tu", name = "c", descriptor = "Lclient!oba;")
-	private Class270 aClass270_7;
+	private PrivilegedRequest aPrivilegedRequest7;
 
 	@OriginalMember(owner = "client!tu", name = "g", descriptor = "Ljava/lang/Thread;")
 	private Thread aThread5;
@@ -33,7 +33,7 @@ public final class Class362 implements Runnable {
 	@Override
 	public void run() {
 		try {
-			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aClass270_7.anObject13));
+			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aPrivilegedRequest7.anObject13));
 			@Pc(19) String local19 = local16.readLine();
 			@Pc(22) Class396 local22 = Static640.method8436();
 			while (local19 != null) {
@@ -58,17 +58,17 @@ public final class Class362 implements Runnable {
 		if (this.aBoolean730) {
 			return true;
 		}
-		if (this.aClass270_7 == null) {
+		if (this.aPrivilegedRequest7 == null) {
 			try {
 				@Pc(23) int local23 = Static446.aClass355_5 == Static2.aClass355_1 ? 80 : Static527.aClass229_3.anInt5856 + 7000;
-				this.aClass270_7 = Static446.aClass390_6.method8992(new URL("http://" + Static527.aClass229_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.aClass377_4.anInt9720));
+				this.aPrivilegedRequest7 = Static446.aSignlink6.method8992(new URL("http://" + Static527.aClass229_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.aModeGame4.anInt9720));
 			} catch (@Pc(54) MalformedURLException local54) {
 				return true;
 			}
 		}
-		if (this.aClass270_7 == null || this.aClass270_7.anInt6789 == 2) {
+		if (this.aPrivilegedRequest7 == null || this.aPrivilegedRequest7.anInt6789 == 2) {
 			return true;
-		} else if (this.aClass270_7.anInt6789 == 1) {
+		} else if (this.aPrivilegedRequest7.anInt6789 == 1) {
 			if (this.aThread5 == null) {
 				this.aThread5 = new Thread(this);
 				this.aThread5.start();

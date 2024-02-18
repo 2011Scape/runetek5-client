@@ -134,7 +134,7 @@ public final class Class364 implements Runnable {
 							@Pc(85) int local85 = local77 << 24 | 0xFFFFFF;
 							@Pc(91) int local91 = local72 << 24 | 0xFFFFFF;
 							Static163.aClass19_17.GA(0);
-							@Pc(100) Class23 local100 = Static163.aClass19_17.method7963(Static680.anInt10289, Static380.anInt5979, true);
+							@Pc(100) SoftwareIndexedSprite local100 = Static163.aClass19_17.method7963(Static680.anInt10289, Static380.anInt5979, true);
 							Static163.aClass19_17.method8002(local100);
 							this.anInterface22_2.method8465(true);
 							Static163.aClass19_17.method7943();
@@ -158,7 +158,7 @@ public final class Class364 implements Runnable {
 					if (Static353.aFrame10 != null) {
 						local245 = Static353.aFrame10;
 					} else if (Static166.anApplet1 == null) {
-						local245 = Static149.anApplet_Sub1_1;
+						local245 = Static149.aGameShell;
 					} else {
 						local245 = Static166.anApplet1;
 					}

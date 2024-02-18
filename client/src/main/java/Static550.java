@@ -8,7 +8,7 @@ public final class Static550 {
 	public static int anInt8271;
 
 	@OriginalMember(owner = "client!rf", name = "t", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_200 = new Class225(116, -1);
+	public static final ServerProt ServerProt200 = new ServerProt(116, -1);
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(BLclient!ca;II)V")
 	public static void method7260(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {

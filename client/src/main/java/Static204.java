@@ -11,7 +11,7 @@ public final class Static204 {
 	public static final LinkedList aLinkedList16 = new LinkedList();
 
 	@OriginalMember(owner = "client!gfa", name = "a", descriptor = "(Lclient!sb;I)V")
-	public static void method3079(@OriginalArg(0) Class330 arg0) {
+	public static void method3079(@OriginalArg(0) Js5 arg0) {
 		Static159.anInt2787 = arg0.method7590("hitbar_default");
 		Static434.anInt6579 = arg0.method7590("timerbar_default");
 		Static67.anInt6784 = arg0.method7590("headicons_pk");

@@ -18,7 +18,7 @@ public final class Class26_Sub9 extends Class26 {
 	private final IDirect3DVertexShader anIDirect3DVertexShader7;
 
 	@OriginalMember(owner = "client!qn", name = "<init>", descriptor = "(Lclient!kea;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub9(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub9(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass19_Sub1_Sub1_7 = arg0;
 		this.aClass7_6 = arg2;

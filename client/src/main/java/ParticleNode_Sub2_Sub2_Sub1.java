@@ -34,7 +34,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 	private Class114 aClass114_1;
 
 	@OriginalMember(owner = "client!cu", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIZ)V")
-	public ParticleNode_Sub2_Sub2_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
+	public ParticleNode_Sub2_Sub2_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
 		super(arg4, arg5, arg6, arg2, arg3, arg1.anInt1227);
 		this.aShort20 = (short) arg1.anInt1256;
 		super.anInt10694 = arg6;
@@ -116,7 +116,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 	@Override
 	public boolean method9279(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class19 arg3) {
 		if (arg2) {
-			Static93.aClass390_1 = null;
+			Static93.aSignlink1 = null;
 		}
 		@Pc(16) Class114 local16 = this.method1834(arg3, 131072);
 		if (local16 == null) {
@@ -146,7 +146,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IILclient!ha;Z)Lclient!od;")
 	private Class272 method1831(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) boolean arg3) {
-		@Pc(13) Class54 local13 = Static354.aClass142_4.method3063(this.aShort20 & 0xFFFF, arg1 + 35);
+		@Pc(13) LocType local13 = Static354.aLocTypeList4.method3063(this.aShort20 & 0xFFFF, arg1 + 35);
 		if (arg1 != 20) {
 			this.aShort20 = -113;
 		}
@@ -254,7 +254,7 @@ public final class ParticleNode_Sub2_Sub2_Sub1 extends ParticleNode_Sub2_Sub2 im
 	@Override
 	public void method9289(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != -5) {
-			Static93.aClass390_1 = null;
+			Static93.aSignlink1 = null;
 		}
 	}
 

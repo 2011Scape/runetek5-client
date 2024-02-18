@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!at", name = "j", descriptor = "Lclient!st;")
-	public static Class23 aClass23_5;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite5;
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
 	public static void method716(@OriginalArg(1) int arg0) {

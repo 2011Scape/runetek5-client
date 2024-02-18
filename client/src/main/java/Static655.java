@@ -9,7 +9,7 @@ public final class Static655 {
 	public static Class140[] aClass140Array1;
 
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_237 = new Class225(18, 4);
+	public static final ServerProt ServerProt237 = new ServerProt(18, 4);
 
 	@OriginalMember(owner = "client!un", name = "t", descriptor = "I")
 	public static int anInt9763 = -1;
@@ -18,15 +18,15 @@ public final class Static655 {
 	public static int anInt9766 = 0;
 
 	@OriginalMember(owner = "client!un", name = "u", descriptor = "Lclient!ul;")
-	public static final Class377 aClass377_7 = new Class377("game4", "Game 4", 3);
+	public static final ModeGame aModeGame7 = new ModeGame("game4", "Game 4", 3);
 
 	@OriginalMember(owner = "client!un", name = "B", descriptor = "I")
 	public static int anInt9767 = 0;
 
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(Lclient!vq;ILjava/awt/Frame;)V")
-	public static void method8562(@OriginalArg(0) Class390 arg0, @OriginalArg(2) Frame arg1) {
+	public static void method8562(@OriginalArg(0) Signlink arg0, @OriginalArg(2) Frame arg1) {
 		while (true) {
-			@Pc(10) Class270 local10 = arg0.method8989(arg1);
+			@Pc(10) PrivilegedRequest local10 = arg0.method8989(arg1);
 			while (local10.anInt6789 == 0) {
 				Static638.method8395(10L);
 			}

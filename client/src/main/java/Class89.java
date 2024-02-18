@@ -64,9 +64,9 @@ public final class Class89 {
 	}
 
 	@OriginalMember(owner = "client!dw", name = "c", descriptor = "()Lclient!sq;")
-	public Linkable_Sub49_Sub1 method2247() {
+	public PcmSound method2247() {
 		@Pc(2) byte[] local2 = this.method2246();
-		return new Linkable_Sub49_Sub1(22050, local2, this.anInt2381 * 22050 / 1000, this.anInt2382 * 22050 / 1000);
+		return new PcmSound(22050, local2, this.anInt2381 * 22050 / 1000, this.anInt2382 * 22050 / 1000);
 	}
 
 	@OriginalMember(owner = "client!dw", name = "a", descriptor = "()I")

@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class104 {
 
 	@OriginalMember(owner = "client!eka", name = "n", descriptor = "Lclient!sq;")
-	public Linkable_Sub49_Sub1 aClass2_Sub49_Sub1_2;
+	public PcmSound aClass2_Sub49_Sub1_2;
 
 	@OriginalMember(owner = "client!eka", name = "m", descriptor = "Lclient!haa;")
-	public Linkable_Sub6_Sub2 aClass2_Sub6_Sub2_2;
+	public SoundPcmStream aClass2_Sub6_Sub2_2;
 
 	@OriginalMember(owner = "client!eka", name = "a", descriptor = "Lclient!uj;")
 	public Linkable_Sub53 aClass2_Sub53_1;

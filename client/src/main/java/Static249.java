@@ -38,14 +38,14 @@ public final class Static249 {
 		@Pc(15) String local15 = Static518.method9293(arg0);
 		@Pc(17) int[] local17 = null;
 		if (Static245.method8635(arg0.anInt7314)) {
-			local17 = Static419.aClass112_1.method2486((int) arg0.aLong233).anIntArray800;
+			local17 = Static419.aObjTypeList1.method2486((int) arg0.aLong233).anIntArray800;
 		} else if (arg0.anInt7317 != -1) {
-			local17 = Static419.aClass112_1.method2486(arg0.anInt7317).anIntArray800;
+			local17 = Static419.aObjTypeList1.method2486(arg0.anInt7317).anIntArray800;
 		} else if (Static598.method7825(arg0.anInt7314)) {
 			@Pc(51) Linkable_Sub45 local51 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) arg0.aLong233);
 			if (local51 != null) {
 				@Pc(56) ParticleNode_Sub2_Sub1_Sub2_Sub2 local56 = local51.aClass8_Sub2_Sub1_Sub2_Sub2_2;
-				@Pc(59) Class268 local59 = local56.aClass268_1;
+				@Pc(59) NpcType local59 = local56.aNpcType1;
 				if (local59.anIntArray532 != null) {
 					local59 = local59.method5985(65535, Static34.aClass304_1);
 				}
@@ -54,7 +54,7 @@ public final class Static249 {
 				}
 			}
 		} else if (Static523.method3444(arg0.anInt7314)) {
-			@Pc(89) Class54 local89 = Static354.aClass142_4.method3063((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL), 46);
+			@Pc(89) LocType local89 = Static354.aLocTypeList4.method3063((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL), 46);
 			if (local89.anIntArray113 != null) {
 				local89 = local89.method1301(13, Static34.aClass304_1);
 			}
@@ -65,9 +65,9 @@ public final class Static249 {
 		if (local17 != null) {
 			local15 = local15 + Static72.method1527(local17);
 		}
-		@Pc(130) int local130 = Static42.aClass381_4.method8742(Static186.aClass23Array5, local15);
+		@Pc(130) int local130 = Static42.aClass381_4.method8742(Static186.aSoftwareIndexedSpriteArray5, local15);
 		if (arg0.aBoolean553) {
-			local130 += Static517.aClass23_32.method8199() + 4;
+			local130 += Static517.aSoftwareIndexedSprite32.method8199() + 4;
 		}
 		return local130;
 	}

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static284 {
 
 	@OriginalMember(owner = "client!iu", name = "h", descriptor = "Lclient!vq;")
-	public static Class390 aClass390_4;
+	public static Signlink aSignlink4;
 
 	@OriginalMember(owner = "client!iu", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_116 = new Class225(65, 6);
+	public static final ServerProt ServerProt116 = new ServerProt(65, 6);
 
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "I")
 	public static int anInt4583 = -2;
@@ -17,7 +17,7 @@ public final class Static284 {
 	public static boolean aBoolean355 = false;
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(ZILclient!sb;Ljava/lang/String;)Lclient!nc;")
-	public static Class255 method4103(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class330 arg1, @OriginalArg(3) String arg2) {
+	public static Class255 method4103(@OriginalArg(0) boolean arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) String arg2) {
 		@Pc(8) int local8 = arg1.method7590(arg2);
 		if (local8 == -1) {
 			return new Class255(0);

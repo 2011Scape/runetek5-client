@@ -8,7 +8,7 @@ public final class Static467 {
 	public static int[] anIntArray568;
 
 	@OriginalMember(owner = "client!oo", name = "p", descriptor = "Lclient!ef;")
-	public static Class96 aClass96_3;
+	public static FloTypeList aFloTypeList3;
 
 	@OriginalMember(owner = "client!oo", name = "q", descriptor = "Lclient!vn;")
 	public static Class348 aClass348_2;

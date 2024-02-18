@@ -11,10 +11,10 @@ public final class Static161 {
 	public static long[][][] aLongArrayArrayArray1;
 
 	@OriginalMember(owner = "client!fa", name = "n", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_62 = new Class225(22, 10);
+	public static final ServerProt ServerProt62 = new ServerProt(22, 10);
 
 	@OriginalMember(owner = "client!fa", name = "q", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_29 = new Class345(33, 0);
+	public static final ClientProt aClientProt29 = new ClientProt(33, 0);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ILclient!ca;ILclient!rka;I)V")
 	public static void method2585(@OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PacketBit arg2, @OriginalArg(4) int arg3) {
@@ -152,7 +152,7 @@ public final class Static161 {
 			@Pc(540) byte[] local540 = new byte[local15];
 			@Pc(545) Packet local545 = new Packet(local540);
 			arg2.gdata(local540, 0, local15);
-			Static462.A_PACKET_ARRAY_1[arg1] = local545;
+			Static462.aPacketArray1[arg1] = local545;
 			arg0.method1420(local545);
 		}
 		if ((arg3 & 0x4000) != 0) {
@@ -284,7 +284,7 @@ public final class Static161 {
 			local42 = local36.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			Static103.anIntArray187[Static390.anInt6126++] = local22;
 			local42.anInt10751 = Static572.anInt8896;
-			if (local42.aClass268_1 != null && local42.aClass268_1.method5984()) {
+			if (local42.aNpcType1 != null && local42.aNpcType1.method5984()) {
 				Static58.method1259(local42);
 			}
 			@Pc(108) int local108 = local8.gBit(3) + 4 << 11 & 0x3A6E;
@@ -297,20 +297,20 @@ public final class Static161 {
 				local131 -= 32;
 			}
 			@Pc(144) int local144 = local8.gBit(2);
-			local42.method9328(Static690.aClass308_2.method7092(local8.gBit(15)));
+			local42.method9328(Static690.aNpcTypeList2.method7092(local8.gBit(15)));
 			@Pc(159) int local159 = local8.gBit(5);
 			if (local159 > 15) {
 				local159 -= 32;
 			}
 			@Pc(170) int local170 = local8.gBit(1);
-			local42.method9310(local42.aClass268_1.anInt6713);
-			local42.anInt10757 = local42.aClass268_1.lb << 3;
+			local42.method9310(local42.aNpcType1.anInt6713);
+			local42.anInt10757 = local42.aNpcType1.lb << 3;
 			if (local29) {
 				local42.method9298(local108, true);
 			}
 			local42.method9326(local170 == 1, local131 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0], local159 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0], local144, local42.method9302((byte) 91));
-			if (local42.aClass268_1.method5984()) {
-				Static89.method1714(local42.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (Class54) null, 0);
+			if (local42.aNpcType1.method5984()) {
+				Static89.method1714(local42.aByte144, (ParticleNode_Sub2_Sub1_Sub2_Sub1) null, local42.anIntArray879[0], local42.anIntArray878[0], local42, (LocType) null, 0);
 			}
 		}
 		local8.bytes();

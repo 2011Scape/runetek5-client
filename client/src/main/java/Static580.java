@@ -8,7 +8,7 @@ public final class Static580 {
 	public static float aFloat176;
 
 	@OriginalMember(owner = "client!sea", name = "y", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_186 = new Class82(260);
+	public static final SoftLruHashTable aSoftLruHashTable186 = new SoftLruHashTable(260);
 
 	@OriginalMember(owner = "client!sea", name = "z", descriptor = "I")
 	public static int anInt8621 = -2;

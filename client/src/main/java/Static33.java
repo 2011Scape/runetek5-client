@@ -12,7 +12,7 @@ public final class Static33 {
 		Static421.aBoolean480 = false;
 		Static518.aPacket_18 = null;
 		Static298.method4385();
-		Static405.aClass153_2.method3275(Static293.method4335(Static45.aClass345_5, Static405.aClass153_2.aIsaacRandom_1));
+		Static405.aClass153_2.method3275(Static293.method4335(Static45.aClientProt5, Static405.aClass153_2.aIsaacRandom_1));
 	}
 
 	@OriginalMember(owner = "client!bc", name = "a", descriptor = "(I)[Lclient!wk;")

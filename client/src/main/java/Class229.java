@@ -36,7 +36,7 @@ public final class Class229 {
 	}
 
 	@OriginalMember(owner = "client!lja", name = "a", descriptor = "(BLclient!vq;)Lclient!oba;")
-	public Class270 method5263(@OriginalArg(1) Class390 arg0) {
+	public PrivilegedRequest method5263(@OriginalArg(1) Signlink arg0) {
 		return arg0.method8979(this.aString60, this.aBoolean449, this.aBoolean450 ? this.anInt5853 : this.anInt5854);
 	}
 

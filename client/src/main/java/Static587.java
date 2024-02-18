@@ -15,16 +15,16 @@ public final class Static587 {
 	public static boolean aBoolean663 = false;
 
 	@OriginalMember(owner = "client!sia", name = "w", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_216 = new Class225(82, 6);
+	public static final ServerProt ServerProt216 = new ServerProt(82, 6);
 
 	@OriginalMember(owner = "client!sia", name = "b", descriptor = "[I")
 	public static final int[] anIntArray689 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
 
 	@OriginalMember(owner = "client!sia", name = "i", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_104 = new Class345(46, 3);
+	public static final ClientProt aClientProt104 = new ClientProt(46, 3);
 
 	@OriginalMember(owner = "client!sia", name = "a", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_105 = new Class345(87, 6);
+	public static final ClientProt aClientProt105 = new ClientProt(87, 6);
 
 	@OriginalMember(owner = "client!sia", name = "a", descriptor = "(Lclient!d;IIILjava/awt/Canvas;)Lclient!ha;")
 	public static Class19 method7698(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Canvas arg3) {
@@ -61,7 +61,7 @@ public final class Static587 {
 	@OriginalMember(owner = "client!sia", name = "g", descriptor = "(I)[Lclient!oga;")
 	public static Class273[] method7710() {
 		if (Static679.aClass273Array1 == null) {
-			@Pc(20) Class273[] local20 = Static673.method8787(Static446.aClass390_6, true);
+			@Pc(20) Class273[] local20 = Static673.method8787(Static446.aSignlink6, true);
 			@Pc(24) Class273[] local24 = new Class273[local20.length];
 			@Pc(26) int local26 = 0;
 			@Pc(31) int local31 = Static400.aClass2_Sub34_28.aClass57_Sub18_1.method5767();

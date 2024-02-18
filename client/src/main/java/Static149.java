@@ -20,7 +20,7 @@ public final class Static149 {
 	public static boolean aBoolean221 = false;
 
 	@OriginalMember(owner = "client!ema", name = "j", descriptor = "Lclient!kh;")
-	public static Applet_Sub1 anApplet_Sub1_1 = null;
+	public static GameShell aGameShell = null;
 
 	@OriginalMember(owner = "client!ema", name = "a", descriptor = "(Lclient!ha;I)V")
 	public static void method2449(@OriginalArg(0) Class19 arg0) {
@@ -34,9 +34,9 @@ public final class Static149 {
 		@Pc(23) int local23 = local7 + Static84.anInt1775;
 		@Pc(25) int local25 = Static682.anInt10295;
 		@Pc(29) int local29 = Static407.anInt6288 - 3;
-		Static87.method1693(Static682.anInt10295, Static407.anInt6288, Static32.aClass32_24.method877(Static51.anInt1052), arg0, local7 + Static84.anInt1775, Static71.anInt1576 - -local5);
-		@Pc(55) int local55 = Static189.aClass120_1.method8853() + local5;
-		@Pc(66) int local66 = local7 + Static189.aClass120_1.method8854();
+		Static87.method1693(Static682.anInt10295, Static407.anInt6288, Static32.aLocalizedText24.method877(Static51.anInt1052), arg0, local7 + Static84.anInt1775, Static71.anInt1576 - -local5);
+		@Pc(55) int local55 = Static189.aMouse1.method8853() + local5;
+		@Pc(66) int local66 = local7 + Static189.aMouse1.method8854();
 		@Pc(70) int local70;
 		@Pc(77) SecondaryLinkable_Sub4 local77;
 		@Pc(89) int local89;
@@ -108,6 +108,6 @@ public final class Static149 {
 
 	@OriginalMember(owner = "client!ema", name = "a", descriptor = "(I)V")
 	public static void method2450() {
-		Static186.aClass82_67.method2151();
+		Static186.aSoftLruHashTable67.method2151();
 	}
 }

@@ -47,18 +47,18 @@ public final class Static76 {
 				Static720.anInt10865++;
 			}
 			if (Static6.anInt95 == 1) {
-				Static405.aClass153_1.aClass270_1 = Static660.aClass229_4.method5263(Static446.aClass390_6);
+				Static405.aClass153_1.aPrivilegedRequest1 = Static660.aClass229_4.method5263(Static446.aSignlink6);
 				Static6.anInt95 = 2;
 			}
 			if (Static6.anInt95 == 2) {
-				if (Static405.aClass153_1.aClass270_1.anInt6789 == 2) {
+				if (Static405.aClass153_1.aPrivilegedRequest1.anInt6789 == 2) {
 					throw new IOException();
 				}
-				if (Static405.aClass153_1.aClass270_1.anInt6789 != 1) {
+				if (Static405.aClass153_1.aPrivilegedRequest1.anInt6789 != 1) {
 					return;
 				}
-				Static405.aClass153_1.aClass348_1 = Static99.method1975((Socket) Static405.aClass153_1.aClass270_1.anObject13);
-				Static405.aClass153_1.aClass270_1 = null;
+				Static405.aClass153_1.aClass348_1 = Static99.method1975((Socket) Static405.aClass153_1.aPrivilegedRequest1.anObject13);
+				Static405.aClass153_1.aPrivilegedRequest1 = null;
 				Static405.aClass153_1.method3273();
 				Static6.anInt95 = 4;
 			}

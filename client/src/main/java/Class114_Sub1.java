@@ -200,7 +200,7 @@ public final class Class114_Sub1 extends Class114 {
 		for (@Pc(24) int local24 = 0; local24 < arg1.anInt2362; local24++) {
 			if (arg1.aByteArray25 == null || arg1.aByteArray25[local24] != 2) {
 				if (arg1.aShortArray25 != null && arg1.aShortArray25[local24] != -1) {
-					@Pc(65) Class118 local65 = local11.method6817(arg1.aShortArray25[local24] & 0xFFFF);
+					@Pc(65) Material local65 = local11.method6817(arg1.aShortArray25[local24] & 0xFFFF);
 					if (((this.anInt2765 & 0x40) == 0 || !local65.aBoolean240) && local65.aBoolean234) {
 						continue;
 					}
@@ -219,7 +219,7 @@ public final class Class114_Sub1 extends Class114 {
 		@Pc(375) int local375;
 		for (@Pc(159) int local159 = 0; local159 < this.anInt2715; local159++) {
 			@Pc(167) int local167 = local15[local159];
-			@Pc(169) Class118 local169 = null;
+			@Pc(169) Material local169 = null;
 			local171 = 0;
 			@Pc(173) byte local173 = 0;
 			@Pc(175) byte local175 = 0;
@@ -234,7 +234,7 @@ public final class Class114_Sub1 extends Class114 {
 							local182 = true;
 						}
 						if (local204.anInt9693 != -1) {
-							@Pc(220) Class118 local220 = local11.method6817(local204.anInt9693);
+							@Pc(220) Material local220 = local11.method6817(local204.anInt9693);
 							if (local220.anInt2796 == 2) {
 								this.aBoolean228 = true;
 							}
@@ -415,7 +415,7 @@ public final class Class114_Sub1 extends Class114 {
 			}
 			local1164 = arg1.aShortArray25 == null ? -1 : arg1.aShortArray25[local1120];
 			if (local1164 != -1 && (this.anInt2765 & 0x40) != 0) {
-				@Pc(1181) Class118 local1181 = local11.method6817(local1164 & 0xFFFF);
+				@Pc(1181) Material local1181 = local11.method6817(local1164 & 0xFFFF);
 				if (local1181.aBoolean240) {
 					local1164 = -1;
 				}
@@ -3239,14 +3239,14 @@ public final class Class114_Sub1 extends Class114 {
 		@Pc(39) byte local39 = 0;
 		@Pc(41) byte local41 = 0;
 		if (arg0 != -1) {
-			@Pc(53) Class118 local53 = local9.method6817(arg0 & 0xFFFF);
+			@Pc(53) Material local53 = local9.method6817(arg0 & 0xFFFF);
 			local41 = local53.aByte57;
 			local39 = local53.aByte58;
 		}
 		@Pc(61) byte local61 = 0;
 		@Pc(63) byte local63 = 0;
 		if (arg1 != -1) {
-			@Pc(74) Class118 local74 = local9.method6817(arg1 & 0xFFFF);
+			@Pc(74) Material local74 = local9.method6817(arg1 & 0xFFFF);
 			local63 = local74.aByte57;
 			if (local74.aByte54 != 0 || local74.aByte52 != 0) {
 				this.aBoolean230 = true;

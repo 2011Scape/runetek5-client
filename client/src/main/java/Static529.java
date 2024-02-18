@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static529 {
 
 	@OriginalMember(owner = "client!qla", name = "a", descriptor = "Lclient!hf;")
-	public static Class161 aClass161_1;
+	public static VarBitTypeList aVarBitTypeList1;
 
 	@OriginalMember(owner = "client!qla", name = "d", descriptor = "I")
 	public static int anInt8089 = -1;
@@ -21,10 +21,10 @@ public final class Static529 {
 	}
 
 	@OriginalMember(owner = "client!qla", name = "a", descriptor = "(ILclient!sb;Lclient!vq;)V")
-	public static void method7096(@OriginalArg(1) Class330 arg0, @OriginalArg(2) Class390 arg1) {
-		Static442.aClass330_90 = arg0;
+	public static void method7096(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Signlink arg1) {
+		Static442.aJs590 = arg0;
 		Static185.aString34 = "";
-		Static93.aClass390_1 = arg1;
+		Static93.aSignlink1 = arg1;
 		if (Class254.aString70.startsWith("win")) {
 			Static185.aString34 = Static185.aString34 + "windows/";
 		} else if (Class254.aString70.startsWith("linux")) {
@@ -32,7 +32,7 @@ public final class Static529 {
 		} else if (Class254.aString70.startsWith("mac")) {
 			Static185.aString34 = Static185.aString34 + "macos/";
 		}
-		if (Static93.aClass390_1.aBoolean779) {
+		if (Static93.aSignlink1.aBoolean779) {
 			Static185.aString34 = Static185.aString34 + "msjava/";
 		} else if (Class254.aString69.startsWith("amd64") || Class254.aString69.startsWith("x86_64")) {
 			Static185.aString34 = Static185.aString34 + "x86_64/";

@@ -103,7 +103,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "([IIIIIZ)Lclient!st;")
 	@Override
-	public Class23 method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
+	public SoftwareIndexedSprite method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		return new j(this, arg0, 0, arg1, arg2, arg3, false);
 	}
 
@@ -138,7 +138,7 @@ public final class oa extends Class19 implements Interface5 {
 		@Pc(3) int local3 = 0;
 		@Pc(5) int local5 = 0;
 		@Pc(7) int local7 = 0;
-		for (@Pc(15) ParticleNode_Sub4_Sub2 local15 = (ParticleNode_Sub4_Sub2) arg0.aClass113_1.method2491(); local15 != null; local15 = (ParticleNode_Sub4_Sub2) arg0.aClass113_1.method2490()) {
+		for (@Pc(15) SecondaryParticleNode_Sub2 local15 = (SecondaryParticleNode_Sub2) arg0.aClass113_1.method2491(); local15 != null; local15 = (SecondaryParticleNode_Sub2) arg0.aClass113_1.method2490()) {
 			Static445.anIntArray539[local1++] = local15.anInt7537;
 			Static445.anIntArray539[local1++] = local15.anInt7534;
 			Static445.anIntArray539[local1++] = local15.anInt7536;
@@ -150,7 +150,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(II)Lclient!eca;")
 	@Override
-	public Interface6 method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public IndexedSprite method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return this.method7963(arg0, arg1, false);
 	}
 
@@ -211,11 +211,11 @@ public final class oa extends Class19 implements Interface5 {
 			if (local9) {
 				throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
 			}
-			return new h(this, this.aYa2, arg0, arg1, (Class23[]) null);
+			return new h(this, this.aYa2, arg0, arg1, (SoftwareIndexedSprite[]) null);
 		} else if (local9) {
 			throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
 		} else {
-			return new n(this, this.aYa2, arg0, arg1, (Class23[]) null);
+			return new n(this, this.aYa2, arg0, arg1, (SoftwareIndexedSprite[]) null);
 		}
 	}
 
@@ -310,7 +310,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(S)Z")
 	private boolean c(@OriginalArg(0) short arg0) {
 		synchronized (this) {
-			@Pc(9) Class118 local9 = super.anInterface4_10.method6817(arg0);
+			@Pc(9) Material local9 = super.anInterface4_10.method6817(arg0);
 			if (local9 == null) {
 				return false;
 			} else {
@@ -521,7 +521,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(IIIIZ)Lclient!st;")
 	@Override
-	public Class23 method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+	public SoftwareIndexedSprite method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
 		return new j(this, arg0, arg1, arg2, arg3, !arg4);
 	}
 
@@ -541,7 +541,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(IIZ)Lclient!st;")
 	@Override
-	public Class23 method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+	public SoftwareIndexedSprite method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
 		return new j(this, arg0, arg1);
 	}
 
@@ -586,7 +586,7 @@ public final class oa extends Class19 implements Interface5 {
 			if (!super.anInterface4_10.method6814(arg0)) {
 				return false;
 			}
-			@Pc(22) Class118 local22 = super.anInterface4_10.method6817(arg0);
+			@Pc(22) Material local22 = super.anInterface4_10.method6817(arg0);
 			if (local22 == null) {
 				return false;
 			}
@@ -723,7 +723,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!wp;Z)Lclient!st;")
 	@Override
-	public Class23 method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
+	public SoftwareIndexedSprite method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(17) j local17 = new j(this, arg0.anIntArray882, arg0.aByteArray114, arg0.aByteArray115, 0, arg0.anInt10847, arg0.anInt10847, arg0.anInt10850);
 		local17.method8184(arg0.anInt10852, arg0.anInt10848, arg0.anInt10851, arg0.anInt10849);
 		return local17;
@@ -824,7 +824,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
 	@Override
-	public Interface9 method7988(@OriginalArg(0) Interface6 arg0, @OriginalArg(1) Interface26 arg1) {
+	public Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1) {
 		return new wa(this, (j) arg0, (xa) arg1);
 	}
 

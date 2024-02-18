@@ -14,7 +14,7 @@ public final class Static79 {
 		for (@Pc(10) SecondaryLinkable_Sub4 local10 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.head(); local10 != null; local10 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.next()) {
 			if (local10.anInt1534 > 1) {
 				local10.anInt1534 = 0;
-				Static717.aClass82_232.method2150(local10, ((SecondaryLinkable_Sub16) local10.aSecondaryLinkedList3.sentinel.secondaryPrev).aLong234);
+				Static717.aSoftLruHashTable232.method2150(local10, ((SecondaryLinkable_Sub16) local10.aSecondaryLinkedList3.sentinel.secondaryPrev).aLong234);
 				local10.aSecondaryLinkedList3.clear();
 			}
 		}

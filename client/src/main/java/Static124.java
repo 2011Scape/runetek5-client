@@ -4,11 +4,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static124 {
 
 	@OriginalMember(owner = "client!ds", name = "k", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_20;
+	public static Js5 aJs520;
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	public static void method2215() {
-		Static627.aClass82_200.method2157();
+		Static627.aSoftLruHashTable200.method2157();
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(IIIILclient!ek;IIIIILclient!wk;I)V")

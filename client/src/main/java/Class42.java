@@ -29,13 +29,13 @@ public final class Class42 {
 	private final int anInt998 = Static434.method5853(1600);
 
 	@OriginalMember(owner = "client!bj", name = "s", descriptor = "[[Lclient!up;")
-	private final ParticleNode_Sub4_Sub2[][] aClass8_Sub4_Sub2ArrayArray2 = new ParticleNode_Sub4_Sub2[64][768];
+	private final SecondaryParticleNode_Sub2[][] aClass8_Sub4_Sub2ArrayArray2 = new SecondaryParticleNode_Sub2[64][768];
 
 	@OriginalMember(owner = "client!bj", name = "n", descriptor = "[I")
 	private final int[] anIntArray74 = new int[1600];
 
 	@OriginalMember(owner = "client!bj", name = "j", descriptor = "[[Lclient!up;")
-	private final ParticleNode_Sub4_Sub2[][] aClass8_Sub4_Sub2ArrayArray1 = new ParticleNode_Sub4_Sub2[1600][64];
+	private final SecondaryParticleNode_Sub2[][] aClass8_Sub4_Sub2ArrayArray1 = new SecondaryParticleNode_Sub2[1600][64];
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "I")
 	private int anInt1000 = 0;
@@ -78,7 +78,7 @@ public final class Class42 {
 		@Pc(99) int local99;
 		@Pc(117) int local117;
 		@Pc(123) int local123;
-		@Pc(134) ParticleNode_Sub4_Sub2 local134;
+		@Pc(134) SecondaryParticleNode_Sub2 local134;
 		@Pc(137) int local137;
 		@Pc(142) byte local142;
 		@Pc(147) byte local147;
@@ -91,7 +91,7 @@ public final class Class42 {
 		@Pc(503) float local503;
 		@Pc(508) int local508;
 		@Pc(448) int local448;
-		@Pc(464) ParticleNode_Sub4_Sub2 local464;
+		@Pc(464) SecondaryParticleNode_Sub2 local464;
 		@Pc(467) int local467;
 		@Pc(480) byte local480;
 		@Pc(485) byte local485;
@@ -353,11 +353,11 @@ public final class Class42 {
 			@Pc(48) int local48 = 0;
 			@Pc(50) int local50 = Integer.MAX_VALUE;
 			@Pc(52) int local52 = 0;
-			@Pc(56) ParticleNode_Sub4 local56 = arg1.aClass113_1.aClass8_Sub4_1;
-			@Pc(59) ParticleNode_Sub4 local59;
+			@Pc(56) SecondaryParticleNode local56 = arg1.aClass113_1.aClass8_Sub4_1;
+			@Pc(59) SecondaryParticleNode local59;
 			@Pc(91) int local91;
 			for (local59 = local56.aClass8_Sub4_10; local59 != local56; local59 = local59.aClass8_Sub4_10) {
-				@Pc(64) ParticleNode_Sub4_Sub2 local64 = (ParticleNode_Sub4_Sub2) local59;
+				@Pc(64) SecondaryParticleNode_Sub2 local64 = (SecondaryParticleNode_Sub2) local59;
 				local91 = (int) (local46 + local42 * (float) (local64.anInt7536 >> 12) + (float) (local64.anInt7537 >> 12) * local34 + (float) (local64.anInt7534 >> 12) * local38);
 				if (local91 > local52) {
 					local52 = local91;
@@ -389,7 +389,7 @@ public final class Class42 {
 					this.anIntArray76[local184] = 0;
 				}
 				while (local59 != local56) {
-					@Pc(210) ParticleNode_Sub4_Sub2 local210 = (ParticleNode_Sub4_Sub2) local59;
+					@Pc(210) SecondaryParticleNode_Sub2 local210 = (SecondaryParticleNode_Sub2) local59;
 					if (local156) {
 						local154 = local210.aBoolean574;
 						local152 = local210.anInt7540;

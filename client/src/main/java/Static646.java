@@ -54,7 +54,7 @@ public final class Static646 {
 		if (Static578.anInt8595 >= 3) {
 			Static163.aClass19_17.A(-16777216, local8.aClass1_1, arg1, arg2);
 		} else {
-			Static12.aClass23_27.method8183((float) arg0.anInt3802 / 2.0F + (float) arg1, (float) arg0.anInt3746 / 2.0F + (float) arg2, ((int) -Static171.aFloat64 & 0x3FFF) << 2, local8.aClass1_1, arg1, arg2);
+			Static12.aSoftwareIndexedSprite27.method8183((float) arg0.anInt3802 / 2.0F + (float) arg1, (float) arg0.anInt3746 / 2.0F + (float) arg2, ((int) -Static171.aFloat64 & 0x3FFF) << 2, local8.aClass1_1, arg1, arg2);
 		}
 	}
 

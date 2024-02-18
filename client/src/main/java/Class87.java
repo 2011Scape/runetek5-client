@@ -25,15 +25,15 @@ public final class Class87 implements Interface9 {
 	public float[] aFloatArray16;
 
 	@OriginalMember(owner = "client!du", name = "<init>", descriptor = "(Lclient!iaa;Lclient!st;Lclient!hia;)V")
-	public Class87(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class23 arg1, @OriginalArg(2) Class165 arg2) {
+	public Class87(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) SoftwareIndexedSprite arg1, @OriginalArg(2) Class165 arg2) {
 		this.aClass19_Sub2_3 = arg0;
-		if (arg1 instanceof Class23_Sub1_Sub1) {
-			@Pc(35) Class23_Sub1_Sub1 local35 = (Class23_Sub1_Sub1) arg1;
+		if (arg1 instanceof SoftwareIndexedSprite_Sub1_Sub1) {
+			@Pc(35) SoftwareIndexedSprite_Sub1_Sub1 local35 = (SoftwareIndexedSprite_Sub1_Sub1) arg1;
 			this.anInt2357 = local35.anInt9302;
 			this.anInt2354 = local35.anInt9306;
 			this.anIntArray203 = local35.anIntArray32;
-		} else if (arg1 instanceof Class23_Sub1_Sub2) {
-			@Pc(13) Class23_Sub1_Sub2 local13 = (Class23_Sub1_Sub2) arg1;
+		} else if (arg1 instanceof SoftwareIndexedSprite_Sub1_Sub2) {
+			@Pc(13) SoftwareIndexedSprite_Sub1_Sub2 local13 = (SoftwareIndexedSprite_Sub1_Sub2) arg1;
 			this.anIntArray203 = local13.anIntArray528;
 			this.anInt2357 = local13.anInt9302;
 			this.anInt2354 = local13.anInt9306;

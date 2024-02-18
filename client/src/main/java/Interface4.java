@@ -18,7 +18,7 @@ public interface Interface4 {
 	float[] method6816(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float arg2, @OriginalArg(4) int arg3);
 
 	@OriginalMember(owner = "client!d", name = "b", descriptor = "(II)Lclient!fa;")
-	Class118 method6817(@OriginalArg(0) int arg0);
+    Material method6817(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!d", name = "a", descriptor = "(IZIIBF)[I")
 	int[] method6818(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) float arg4);

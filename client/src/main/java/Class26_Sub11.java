@@ -55,7 +55,7 @@ public final class Class26_Sub11 extends Class26 {
 	}
 
 	@OriginalMember(owner = "client!tj", name = "<init>", descriptor = "(Lclient!tca;Lclient!sb;)V")
-	public Class26_Sub11(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Class330 arg1) {
+	public Class26_Sub11(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Js5 arg1) {
 		super(arg0);
 		if (arg1 != null && arg0.aBoolean708) {
 			this.aClass135_2 = Static294.method4338(arg0, arg1.method7600("gl", "uw_ground_unlit"));

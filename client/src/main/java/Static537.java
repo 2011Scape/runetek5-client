@@ -11,27 +11,27 @@ public final class Static537 {
 	public static int anInt8170 = -1;
 
 	@OriginalMember(owner = "client!qu", name = "a", descriptor = "(Lclient!mia;III)Lclient!fj;")
-	public static SecondaryLinkable_Sub10 method7189(@OriginalArg(0) Class242 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static ClientScript method7189(@OriginalArg(0) Class242 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(10) int local10 = arg0.anInt6197 | arg1 << 10;
-		@Pc(19) SecondaryLinkable_Sub10 local19 = (SecondaryLinkable_Sub10) Static480.aLruHashTable2.method8342((long) local10 << 16);
+		@Pc(19) ClientScript local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
 		if (local19 != null) {
 			return local19;
 		}
-		@Pc(32) byte[] local32 = Static31.aClass330_6.method7589(Static31.aClass330_6.method7599(local10));
+		@Pc(32) byte[] local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
 		if (local32 == null) {
 			local10 = arg2 + 65536 << 10 | arg0.anInt6197;
-			local19 = (SecondaryLinkable_Sub10) Static480.aLruHashTable2.method8342((long) local10 << 16);
+			local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
 			if (local19 != null) {
 				return local19;
 			}
-			local32 = Static31.aClass330_6.method7589(Static31.aClass330_6.method7599(local10));
+			local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
 			if (local32 == null) {
 				local10 = arg0.anInt6197 | 0x3FFFC00;
-				local19 = (SecondaryLinkable_Sub10) Static480.aLruHashTable2.method8342((long) local10 << 16);
+				local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
 				if (local19 != null) {
 					return local19;
 				}
-				local32 = Static31.aClass330_6.method7589(Static31.aClass330_6.method7599(local10));
+				local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
 				if (local32 == null) {
 					return null;
 				} else if (local32.length <= 1) {

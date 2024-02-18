@@ -10,7 +10,7 @@ public final class Static688 {
 	public static int anInt10356;
 
 	@OriginalMember(owner = "client!vp", name = "B", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_250 = new Class225(88, -2);
+	public static final ServerProt ServerProt250 = new ServerProt(88, -2);
 
 	@OriginalMember(owner = "client!vp", name = "F", descriptor = "I")
 	public static int anInt10355 = 0;

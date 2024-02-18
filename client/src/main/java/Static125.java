@@ -8,13 +8,13 @@ public final class Static125 {
 	public static Class388 aClass388_1;
 
 	@OriginalMember(owner = "client!dt", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_52 = new Class225(60, 7);
+	public static final ServerProt ServerProt52 = new ServerProt(60, 7);
 
 	@OriginalMember(owner = "client!dt", name = "e", descriptor = "I")
 	public static int anInt2352 = 0;
 
 	@OriginalMember(owner = "client!dt", name = "b", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_53 = new Class225(75, 3);
+	public static final ServerProt ServerProt53 = new ServerProt(75, 3);
 
 	@OriginalMember(owner = "client!dt", name = "a", descriptor = "(IIB)Lclient!eq;")
 	public static Class110 method2219(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

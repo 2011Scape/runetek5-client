@@ -15,9 +15,9 @@ public final class Static667 {
 		Static158.method2569();
 		Static570.method7549(Static163.aClass19_17);
 		Static469.method6358(Static163.aClass19_17);
-		Static239.method3472(Static721.aClass330_128, Static163.aClass19_17);
+		Static239.method3472(Static721.aJs5128, Static163.aClass19_17);
 		Static329.method1649();
-		Static331.method4925(Static679.aClass23Array14);
+		Static331.method4925(Static679.aSoftwareIndexedSpriteArray14);
 		Static469.method6362();
 		Static296.method4362();
 		if (Static283.anInt4574 == 3) {

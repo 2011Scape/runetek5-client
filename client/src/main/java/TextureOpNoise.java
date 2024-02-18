@@ -23,7 +23,7 @@ public final class TextureOpNoise extends TextureOp {
 	public int[] method9411(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aMonochromeImageCache41.method3935(arg1);
 		if (arg0 <= 107) {
-			Static673.method8787((Class390) null, false);
+			Static673.method8787((Signlink) null, false);
 		}
 		if (super.aMonochromeImageCache41.aBoolean338) {
 			@Pc(28) int local28 = Static273.anIntArray341[arg1];

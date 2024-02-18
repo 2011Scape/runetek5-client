@@ -22,7 +22,7 @@ public final class Static38 {
 			Static147.method2419(local17, arg2, 0, true, arg0, 0, local10, 0);
 			return;
 		}
-		@Pc(62) Class54 local62 = Static354.aClass142_4.method3063(local29, 63);
+		@Pc(62) LocType local62 = Static354.aLocTypeList4.method3063(local29, 63);
 		@Pc(75) int local75;
 		@Pc(78) int local78;
 		if (local17 == 0 || local17 == 2) {

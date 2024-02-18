@@ -49,7 +49,7 @@ public final class TextureOpPolarDistortion extends TextureOp {
 			super.aBoolean824 = arg1.g1() == 1;
 		}
 		if (arg0) {
-			Static199.aClass330_42 = null;
+			Static199.aJs542 = null;
 		}
 	}
 

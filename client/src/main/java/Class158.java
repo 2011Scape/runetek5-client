@@ -40,7 +40,7 @@ public final class Class158 {
 	public int anInt3763;
 
 	@OriginalMember(owner = "client!hda", name = "mc", descriptor = "Lclient!hv;")
-	public ParticleNode_Sub5 aClass8_Sub5_4;
+	public ParticleSystem aClass8_Sub5_4;
 
 	@OriginalMember(owner = "client!hda", name = "bc", descriptor = "Z")
 	public boolean aBoolean291;
@@ -412,7 +412,7 @@ public final class Class158 {
 	public int anInt3823 = 1;
 
 	@OriginalMember(owner = "client!hda", name = "w", descriptor = "Lclient!ofa;")
-	public Linkable_Sub41 aClass2_Sub41_2 = Static93.aClass2_Sub41_1;
+	public ServerActiveProperties aClass2_Sub41_2 = Static93.aClass2_Sub41_1;
 
 	@OriginalMember(owner = "client!hda", name = "Ec", descriptor = "I")
 	public int anInt3806 = 0;
@@ -481,14 +481,14 @@ public final class Class158 {
 	public int anInt3819 = -1;
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(ZLclient!ha;)Lclient!st;")
-	public Class23 method3383(@OriginalArg(1) Class19 arg0) {
+	public SoftwareIndexedSprite method3383(@OriginalArg(1) Class19 arg0) {
 		Static544.aBoolean624 = false;
 		@Pc(54) long local54 = ((long) this.anInt3798 << 40) + (((this.aBoolean292 ? 1L : 0L) << 35) + (long) this.anInt3810 - (-((long) this.anInt3773 << 36) + -((this.aBoolean291 ? 1L : 0L) << 38)) + ((this.aBoolean293 ? 1L : 0L) << 39));
-		@Pc(60) Class23 local60 = (Class23) Static473.aClass82_157.method2156(local54);
+		@Pc(60) SoftwareIndexedSprite local60 = (SoftwareIndexedSprite) Static473.aSoftLruHashTable157.method2156(local54);
 		if (local60 != null) {
 			return local60;
 		}
-		@Pc(71) Class407 local71 = Static735.method9382(Static262.aClass330_56, this.anInt3810, 0);
+		@Pc(71) Class407 local71 = Static735.method9382(Static262.aJs556, this.anInt3810, 0);
 		if (local71 == null) {
 			Static544.aBoolean624 = true;
 			return null;
@@ -514,7 +514,7 @@ public final class Class158 {
 			local71.method9381(this.anInt3798 | 0xFF000000);
 		}
 		local60 = arg0.method7948(local71, true);
-		Static473.aClass82_157.method2153(local54, local60, local60.method8199() * local60.method8182() * 4);
+		Static473.aSoftLruHashTable157.method2153(local54, local60, local60.method8199() * local60.method8182() * 4);
 		return local60;
 	}
 
@@ -788,7 +788,7 @@ public final class Class158 {
 				this.anInt3783 = -1;
 			}
 		}
-		this.aClass2_Sub41_2 = new Linkable_Sub41(local191, local730);
+		this.aClass2_Sub41_2 = new ServerActiveProperties(local191, local730);
 		if (local7 >= 0) {
 			local767 = arg0.g1();
 			@Pc(929) int local929;
@@ -852,17 +852,17 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;I)Lclient!he;")
 	public Class159 method3393(@OriginalArg(0) Class19 arg0) {
 		@Pc(15) long local15 = (long) this.anInt3741 & 0xFFFFFFFFL | (long) this.anInt3812 << 32;
-		@Pc(21) Class159 local21 = (Class159) Static449.aClass82_146.method2156(local15);
+		@Pc(21) Class159 local21 = (Class159) Static449.aSoftLruHashTable146.method2156(local15);
 		if (local21 != null) {
 			if (local21.anInt3836 != this.anInt3810) {
 				local21 = null;
-				Static449.aClass82_146.method2154(local15);
+				Static449.aSoftLruHashTable146.method2154(local15);
 			}
 			if (local21 != null) {
 				return local21;
 			}
 		}
-		@Pc(53) Class407 local53 = Static735.method9382(Static262.aClass330_56, this.anInt3810, 0);
+		@Pc(53) Class407 local53 = Static735.method9382(Static262.aJs556, this.anInt3810, 0);
 		if (local53 == null) {
 			return null;
 		}
@@ -893,7 +893,7 @@ public final class Class158 {
 			return null;
 		} else {
 			local21 = new Class159(local77, local86, local92, local89, local180, this.anInt3810);
-			Static449.aClass82_146.method2150(local21, local15);
+			Static449.aSoftLruHashTable146.method2150(local21, local15);
 			return local21;
 		}
 	}
@@ -985,7 +985,7 @@ public final class Class158 {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;Lclient!gu;Lclient!qp;Lclient!kr;BLclient!bp;Lclient!ju;Lclient!uk;Lclient!ql;Lclient!es;ILclient!vk;)Lclient!ka;")
-	public Class114 method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) Class310 arg2, @OriginalArg(3) Class215 arg3, @OriginalArg(5) Class50 arg4, @OriginalArg(6) Class201 arg5, @OriginalArg(7) Interface23 arg6, @OriginalArg(8) Class308 arg7, @OriginalArg(9) Class112 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class386 arg10) {
+	public Class114 method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(3) IdkTypeList arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) Class201 arg5, @OriginalArg(7) Interface23 arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) ObjTypeList arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class386 arg10) {
 		Static544.aBoolean624 = false;
 		if (this.anInt3823 == 0) {
 			return null;
@@ -1017,12 +1017,12 @@ public final class Class158 {
 				arg9 |= 0x8000;
 			}
 			@Pc(271) long local271 = local53 & 0x3FFFFFFFFFL | (long) this.anInt3831 << 38 | (long) this.anInt3823 << 54 | (long) arg0.anInt8962 << 59;
-			@Pc(277) Class114 local277 = (Class114) Static312.aClass82_106.method2156(local271);
+			@Pc(277) Class114 local277 = (Class114) Static312.aSoftLruHashTable106.method2156(local271);
 			if (local277 == null || arg0.method7960(local277.ua(), arg9) != 0) {
 				if (local277 != null) {
 					arg9 = arg0.method8013(arg9, local277.ua());
 				}
-				@Pc(307) Class88 local307 = Static121.method2201(this.anInt3831, Static607.aClass330_113);
+				@Pc(307) Class88 local307 = Static121.method2201(this.anInt3831, Static607.aJs5113);
 				if (local307 == null) {
 					Static544.aBoolean624 = true;
 					return null;
@@ -1042,7 +1042,7 @@ public final class Class158 {
 						local277.aa(this.aShortArray58[local339], this.aShortArray56[local339]);
 					}
 				}
-				Static312.aClass82_106.method2150(local277, local271);
+				Static312.aSoftLruHashTable106.method2150(local277, local271);
 			}
 			if (arg1 != null) {
 				local277 = local277.method7495((byte) 1, arg9, true);
@@ -1072,7 +1072,7 @@ public final class Class158 {
 					return local438;
 				}
 			} else if (this.anInt3823 == 4) {
-				@Pc(489) Class382 local489 = arg8.method2486(this.anInt3831);
+				@Pc(489) ObjType local489 = arg8.method2486(this.anInt3831);
 				@Pc(498) Class114 local498 = local489.method8805(arg1, 2048, arg5, 10, arg0);
 				if (local498 == null) {
 					Static544.aBoolean624 = true;
@@ -1135,15 +1135,15 @@ public final class Class158 {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(ILclient!dg;Lclient!qk;)Lclient!gm;")
-	public Class148 method3405(@OriginalArg(1) Class78 arg0, @OriginalArg(2) Class307 arg1) {
+	public Class148 method3405(@OriginalArg(1) SkyBoxSphereTypeList arg0, @OriginalArg(2) SkyBoxTypeList arg1) {
 		if (this.anInt3824 == -1) {
 			return null;
 		}
 		@Pc(48) long local48 = (long) this.anInt3824 & 0xFFFFL | ((long) this.anInt3782 & 0xFFFFL) << 16 | ((long) this.anInt3763 & 0xFFFFL) << 48 | 0xFFFFL << 32 & (long) this.anInt3796 << 32;
-		@Pc(54) Class148 local54 = (Class148) Static444.aClass82_145.method2156(local48);
+		@Pc(54) Class148 local54 = (Class148) Static444.aSoftLruHashTable145.method2156(local48);
 		if (local54 == null) {
 			local54 = arg1.method7072(arg0, this.anInt3782, this.anInt3824, this.anInt3796, this.anInt3763);
-			Static444.aClass82_145.method2150(local54, local48);
+			Static444.aSoftLruHashTable145.method2150(local54, local48);
 		}
 		return local54;
 	}

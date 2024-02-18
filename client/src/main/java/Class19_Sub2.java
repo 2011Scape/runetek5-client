@@ -17,7 +17,7 @@ public final class Class19_Sub2 extends Class19 {
 	private Canvas aCanvas3;
 
 	@OriginalMember(owner = "client!iaa", name = "Q", descriptor = "Lclient!cda;")
-	public Linkable_Sub10 aClass2_Sub10_1;
+	public FrameBuffer aClass2_Sub10_1;
 
 	@OriginalMember(owner = "client!iaa", name = "gb", descriptor = "I")
 	private int anInt4185;
@@ -86,7 +86,7 @@ public final class Class19_Sub2 extends Class19 {
 	public int anInt4211;
 
 	@OriginalMember(owner = "client!iaa", name = "H", descriptor = "Lclient!st;")
-	private Class23 aClass23_17;
+	private SoftwareIndexedSprite aSoftwareIndexedSprite17;
 
 	@OriginalMember(owner = "client!iaa", name = "F", descriptor = "Z")
 	private boolean aBoolean331;
@@ -143,13 +143,13 @@ public final class Class19_Sub2 extends Class19 {
 	public int anInt4205;
 
 	@OriginalMember(owner = "client!iaa", name = "J", descriptor = "Lclient!dla;")
-	private final Class82 aClass82_88;
+	private final SoftLruHashTable aSoftLruHashTable88;
 
 	@OriginalMember(owner = "client!iaa", name = "G", descriptor = "I")
 	private int anInt4215;
 
 	@OriginalMember(owner = "client!iaa", name = "W", descriptor = "Lclient!dla;")
-	private final Class82 aClass82_89;
+	private final SoftLruHashTable aSoftLruHashTable89;
 
 	@OriginalMember(owner = "client!iaa", name = "db", descriptor = "Lclient!eaa;")
 	public Class73_Sub2 aClass73_Sub2_1;
@@ -178,10 +178,10 @@ public final class Class19_Sub2 extends Class19 {
 		this.anInt4213 = 0;
 		this.anInt4214 = 50;
 		this.anInt4205 = 512;
-		this.aClass82_88 = new Class82(16);
+		this.aSoftLruHashTable88 = new SoftLruHashTable(16);
 		this.anInt4215 = -1;
 		try {
-			this.aClass82_89 = new Class82(256);
+			this.aSoftLruHashTable89 = new SoftLruHashTable(256);
 			this.aClass73_Sub2_1 = new Class73_Sub2();
 			this.method7956(1);
 			this.method8020(0);
@@ -415,7 +415,7 @@ public final class Class19_Sub2 extends Class19 {
 			}
 			return;
 		}
-		@Pc(10) Linkable_Sub10 local10 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
+		@Pc(10) FrameBuffer local10 = (FrameBuffer) this.aHashTable20.get((long) arg0.hashCode());
 		if (local10 == null) {
 			return;
 		}
@@ -569,9 +569,9 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7967(@OriginalArg(0) Class230 arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) Class399 local3 = this.method3787(Thread.currentThread());
-		@Pc(7) ParticleNode_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
-		for (@Pc(10) ParticleNode_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
-			@Pc(14) ParticleNode_Sub4_Sub2 local14 = (ParticleNode_Sub4_Sub2) local10;
+		@Pc(7) SecondaryParticleNode local7 = arg0.aClass113_1.aClass8_Sub4_1;
+		for (@Pc(10) SecondaryParticleNode local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
+			@Pc(14) SecondaryParticleNode_Sub2 local14 = (SecondaryParticleNode_Sub2) local10;
 			@Pc(19) int local19 = local14.anInt7537 >> 12;
 			@Pc(24) int local24 = local14.anInt7534 >> 12;
 			@Pc(29) int local29 = local14.anInt7536 >> 12;
@@ -590,7 +590,7 @@ public final class Class19_Sub2 extends Class19 {
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Lclient!up;IIII)V")
-	private void method3784(@OriginalArg(0) ParticleNode_Sub4_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	private void method3784(@OriginalArg(0) SecondaryParticleNode_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(2) int local2 = arg0.anInt7540;
 		@Pc(8) int local8 = arg4 << 1;
 		if (local2 == -1) {
@@ -598,7 +598,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != local2) {
-			@Pc(34) Class23 local34 = (Class23) this.aClass82_88.method2156((long) local2);
+			@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) local2);
 			if (local34 == null) {
 				@Pc(40) int[] local40 = this.method3788(local2);
 				if (local40 == null) {
@@ -606,13 +606,13 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(54) int local54 = this.method3798(local2) ? 64 : this.lb;
 				local34 = this.method7946(local54, local54, local54, local40);
-				this.aClass82_88.method2150(local34, (long) local2);
+				this.aSoftLruHashTable88.method2150(local34, (long) local2);
 			}
 			this.anInt4215 = local2;
-			this.aClass23_17 = local34;
+			this.aSoftwareIndexedSprite17 = local34;
 		}
 		local8++;
-		((Class23_Sub1) this.aClass23_17).method8208(arg1 - arg4, arg2 - arg4, arg3, local8, local8, 0, arg0.anInt7539, 1);
+		((SoftwareIndexedSprite_Sub1) this.aSoftwareIndexedSprite17).method8208(arg1 - arg4, arg2 - arg4, arg3, local8, local8, 0, arg0.anInt7539, 1);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "F", descriptor = "(II)V")
@@ -906,7 +906,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7935(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Linkable_Sub10 local8 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
+		@Pc(8) FrameBuffer local8 = (FrameBuffer) this.aHashTable20.get((long) arg0.hashCode());
 		if (local8 == null) {
 			return;
 		}
@@ -1080,7 +1080,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7997(@OriginalArg(0) boolean arg0) {
 		this.aBoolean332 = arg0;
-		this.aClass82_89.method2157();
+		this.aSoftLruHashTable89.method2157();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "A", descriptor = "()Lclient!tt;")
@@ -1170,24 +1170,24 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "q", descriptor = "()V")
 	@Override
 	public void method8012() {
-		this.aClass82_89.method2157();
-		this.aClass82_88.method2157();
+		this.aSoftLruHashTable89.method2157();
+		this.aSoftLruHashTable88.method2157();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "o", descriptor = "(I)[I")
 	public int[] method3788(@OriginalArg(0) int arg0) {
-		@Pc(2) Class82 local2 = this.aClass82_89;
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable89;
 		@Pc(14) Linkable_Sub29 local14;
-		synchronized (this.aClass82_89) {
-			local14 = (Linkable_Sub29) this.aClass82_89.method2156((long) arg0 | Long.MIN_VALUE);
+		synchronized (this.aSoftLruHashTable89) {
+			local14 = (Linkable_Sub29) this.aSoftLruHashTable89.method2156((long) arg0 | Long.MIN_VALUE);
 			if (local14 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
 				}
-				@Pc(36) Class118 local36 = super.anInterface4_10.method6817(arg0);
+				@Pc(36) Material local36 = super.anInterface4_10.method6817(arg0);
 				@Pc(50) int local50 = local36.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
 				local14 = new Linkable_Sub29(arg0, local50, super.anInterface4_10.method6815(0.7F, arg0, local50, local50), local36.anInt2796 != 1);
-				this.aClass82_89.method2150(local14, (long) arg0 | Long.MIN_VALUE);
+				this.aSoftLruHashTable89.method2150(local14, (long) arg0 | Long.MIN_VALUE);
 			}
 		}
 		local14.aBoolean341 = true;
@@ -1401,7 +1401,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7989(@OriginalArg(0) int arg0) {
 		this.lb = arg0;
-		this.aClass82_89.method2157();
+		this.aSoftLruHashTable89.method2157();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "([Ljava/awt/Rectangle;III)V")
@@ -1468,7 +1468,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(II)Lclient!eca;")
 	@Override
-	public Interface6 method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public IndexedSprite method7962(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return this.method7963(arg0, arg1, false);
 	}
 
@@ -1832,7 +1832,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "([IIIIIZ)Lclient!st;")
 	@Override
-	public Class23 method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
+	public SoftwareIndexedSprite method7958(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		@Pc(1) boolean local1 = false;
 		@Pc(3) int local3 = 0;
 		for (@Pc(5) int local5 = 0; local5 < arg3; local5++) {
@@ -1840,11 +1840,11 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(16) int local16 = arg0[local3++] >>> 24;
 				if (local16 != 0 && local16 != 255) {
 					local1 = true;
-					return local1 ? new Class23_Sub1_Sub2(this, arg0, 0, arg1, arg2, arg3, arg4) : new Class23_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3, arg4);
+					return local1 ? new SoftwareIndexedSprite_Sub1_Sub2(this, arg0, 0, arg1, arg2, arg3, arg4) : new SoftwareIndexedSprite_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3, arg4);
 				}
 			}
 		}
-		return local1 ? new Class23_Sub1_Sub2(this, arg0, 0, arg1, arg2, arg3, arg4) : new Class23_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3, arg4);
+		return local1 ? new SoftwareIndexedSprite_Sub1_Sub2(this, arg0, 0, arg1, arg2, arg3, arg4) : new SoftwareIndexedSprite_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3, arg4);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "E", descriptor = "()I")
@@ -1868,13 +1868,13 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7977(@OriginalArg(0) int arg0) {
 		@Pc(4) int local4 = arg0 - this.anInt4184;
-		for (@Pc(9) Object local9 = this.aClass82_89.method2145(); local9 != null; local9 = this.aClass82_89.method2152()) {
+		for (@Pc(9) Object local9 = this.aSoftLruHashTable89.method2145(); local9 != null; local9 = this.aSoftLruHashTable89.method2152()) {
 			@Pc(13) Linkable_Sub29 local13 = (Linkable_Sub29) local9;
 			if (local13.aBoolean341) {
 				local13.anInt4409 += local4;
 				@Pc(27) int local27 = local13.anInt4409 / 20;
 				if (local27 > 0) {
-					@Pc(36) Class118 local36 = super.anInterface4_10.method6817(local13.anInt4408);
+					@Pc(36) Material local36 = super.anInterface4_10.method6817(local13.anInt4408);
 					local13.method3973(local36.aByte54 * local4 * 50 / 1000, local36.aByte52 * local4 * 50 / 1000);
 					local13.anInt4409 -= local27 * 20;
 				}
@@ -1882,8 +1882,8 @@ public final class Class19_Sub2 extends Class19 {
 			}
 		}
 		this.anInt4184 = arg0;
-		this.aClass82_88.method2147(5);
-		this.aClass82_89.method2147(5);
+		this.aSoftLruHashTable88.method2147(5);
+		this.aSoftLruHashTable89.method2147(5);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(FFF)V")
@@ -1901,7 +1901,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != arg6) {
-			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156((long) arg6);
+			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -1909,17 +1909,17 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.lb;
 				local33 = this.method7946(local53, local53, local53, local39);
-				this.aClass82_88.method2150(local33, (long) arg6);
+				this.aSoftLruHashTable88.method2150(local33, (long) arg6);
 			}
 			this.anInt4215 = arg6;
-			this.aClass23_17 = local33;
+			this.aSoftwareIndexedSprite17 = local33;
 		}
-		((Class23_Sub1) this.aClass23_17).method8208(arg0 - arg3, arg1 - arg4, arg2, arg3 << 1, arg4 << 1, arg8, arg7, arg9);
+		((SoftwareIndexedSprite_Sub1) this.aSoftwareIndexedSprite17).method8208(arg0 - arg3, arg1 - arg4, arg2, arg3 << 1, arg4 << 1, arg8, arg7, arg9);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(IIIIZ)Lclient!st;")
 	@Override
-	public Class23 method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+	public SoftwareIndexedSprite method7964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
 		@Pc(4) int[] local4 = new int[arg2 * arg3];
 		@Pc(11) int local11 = arg1 * this.anInt4207 + arg0;
 		@Pc(16) int local16 = this.anInt4207 - arg2;
@@ -1931,9 +1931,9 @@ public final class Class19_Sub2 extends Class19 {
 			local11 += local16;
 		}
 		if (arg4) {
-			return new Class23_Sub1_Sub2(this, local4, arg2, arg3);
+			return new SoftwareIndexedSprite_Sub1_Sub2(this, local4, arg2, arg3);
 		} else {
-			return new Class23_Sub1_Sub1(this, local4, arg2, arg3);
+			return new SoftwareIndexedSprite_Sub1_Sub1(this, local4, arg2, arg3);
 		}
 	}
 
@@ -1957,12 +1957,12 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Lclient!wp;Z)Lclient!st;")
 	@Override
-	public Class23 method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
+	public SoftwareIndexedSprite method7948(@OriginalArg(0) Class407 arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(2) int[] local2 = arg0.anIntArray882;
 		@Pc(5) byte[] local5 = arg0.aByteArray114;
 		@Pc(8) int local8 = arg0.anInt10847;
 		@Pc(11) int local11 = arg0.anInt10850;
-		@Pc(80) Class23_Sub1 local80;
+		@Pc(80) SoftwareIndexedSprite_Sub1 local80;
 		@Pc(22) int[] local22;
 		@Pc(27) byte[] local27;
 		@Pc(29) int local29;
@@ -1980,7 +1980,7 @@ public final class Class19_Sub2 extends Class19 {
 			for (local34 = 0; local34 < local2.length; local34++) {
 				local22[local34] = local2[local34];
 			}
-			local80 = new Class23_Sub1_Sub3(this, local27, local22, local8, local11);
+			local80 = new SoftwareIndexedSprite_Sub1_Sub3(this, local27, local22, local8, local11);
 		} else {
 			local22 = new int[local8 * local11];
 			local27 = arg0.aByteArray115;
@@ -1992,7 +1992,7 @@ public final class Class19_Sub2 extends Class19 {
 						local22[local34 + local36] = local162 == 0 ? 0 : local162 | 0xFF000000;
 					}
 				}
-				local80 = new Class23_Sub1_Sub1(this, local22, local8, local11);
+				local80 = new SoftwareIndexedSprite_Sub1_Sub1(this, local22, local8, local11);
 			} else {
 				for (local29 = 0; local29 < local11; local29++) {
 					local34 = local29 * local8;
@@ -2000,7 +2000,7 @@ public final class Class19_Sub2 extends Class19 {
 						local22[local34 + local36] = local2[local5[local34 + local36] & 0xFF] | local27[local34 + local36] << 24;
 					}
 				}
-				local80 = new Class23_Sub1_Sub2(this, local22, local8, local11);
+				local80 = new SoftwareIndexedSprite_Sub1_Sub2(this, local22, local8, local11);
 			}
 		}
 		local80.method8184(arg0.anInt10852, arg0.anInt10848, arg0.anInt10851, arg0.anInt10849);
@@ -2196,18 +2196,18 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "l", descriptor = "(I)[I")
 	public int[] method3792(@OriginalArg(0) int arg0) {
-		@Pc(2) Class82 local2 = this.aClass82_89;
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable89;
 		@Pc(12) Linkable_Sub29 local12;
-		synchronized (this.aClass82_89) {
-			local12 = (Linkable_Sub29) this.aClass82_89.method2156((long) arg0);
+		synchronized (this.aSoftLruHashTable89) {
+			local12 = (Linkable_Sub29) this.aSoftLruHashTable89.method2156((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
 				}
-				@Pc(34) Class118 local34 = super.anInterface4_10.method6817(arg0);
+				@Pc(34) Material local34 = super.anInterface4_10.method6817(arg0);
 				@Pc(48) int local48 = local34.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
 				local12 = new Linkable_Sub29(arg0, local48, super.anInterface4_10.method6818(local48, true, local48, arg0, 0.7F), local34.anInt2796 != 1);
-				this.aClass82_89.method2150(local12, (long) arg0);
+				this.aSoftLruHashTable89.method2150(local12, (long) arg0);
 			}
 		}
 		local12.aBoolean341 = true;
@@ -2624,8 +2624,8 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
 	@Override
-	public Interface9 method7988(@OriginalArg(0) Interface6 arg0, @OriginalArg(1) Interface26 arg1) {
-		return new Class87(this, (Class23) arg0, (Class165) arg1);
+	public Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1) {
+		return new Class87(this, (SoftwareIndexedSprite) arg0, (Class165) arg1);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "e", descriptor = "()I")
@@ -2642,8 +2642,8 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(IIZ)Lclient!st;")
 	@Override
-	public Class23 method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
-		return arg2 ? new Class23_Sub1_Sub2(this, arg0, arg1) : new Class23_Sub1_Sub1(this, arg0, arg1);
+	public SoftwareIndexedSprite method7963(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+		return arg2 ? new SoftwareIndexedSprite_Sub1_Sub2(this, arg0, arg1) : new SoftwareIndexedSprite_Sub1_Sub1(this, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "()Z")
@@ -2729,7 +2729,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != arg6) {
-			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156((long) arg6);
+			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -2737,12 +2737,12 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.lb;
 				local33 = this.method7946(local53, local53, local53, local39);
-				this.aClass82_88.method2150(local33, (long) arg6);
+				this.aSoftLruHashTable88.method2150(local33, (long) arg6);
 			}
 			this.anInt4215 = arg6;
-			this.aClass23_17 = local33;
+			this.aSoftwareIndexedSprite17 = local33;
 		}
-		((Class23_Sub1) this.aClass23_17).method8207(arg0 - arg3, arg1 - arg4, arg2, arg3 << 1, arg4 << 1, arg8, arg7, arg9);
+		((SoftwareIndexedSprite_Sub1) this.aSoftwareIndexedSprite17).method8207(arg0 - arg3, arg1 - arg4, arg2, arg3 << 1, arg4 << 1, arg8, arg7, arg9);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "la", descriptor = "()V")
@@ -2791,7 +2791,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8022(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Linkable_Sub10 local8 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
+		@Pc(8) FrameBuffer local8 = (FrameBuffer) this.aHashTable20.get((long) arg0.hashCode());
 		if (local8 == null) {
 			local8 = Static538.method7192(arg2, arg0, arg1);
 			this.aHashTable20.put((long) arg0.hashCode(), local8);
@@ -2824,9 +2824,9 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method8021(@OriginalArg(0) Class230 arg0) {
 		@Pc(3) Class399 local3 = this.method3787(Thread.currentThread());
-		@Pc(7) ParticleNode_Sub4 local7 = arg0.aClass113_1.aClass8_Sub4_1;
-		for (@Pc(10) ParticleNode_Sub4 local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
-			@Pc(14) ParticleNode_Sub4_Sub2 local14 = (ParticleNode_Sub4_Sub2) local10;
+		@Pc(7) SecondaryParticleNode local7 = arg0.aClass113_1.aClass8_Sub4_1;
+		for (@Pc(10) SecondaryParticleNode local10 = local7.aClass8_Sub4_10; local10 != local7; local10 = local10.aClass8_Sub4_10) {
+			@Pc(14) SecondaryParticleNode_Sub2 local14 = (SecondaryParticleNode_Sub2) local10;
 			@Pc(19) int local19 = local14.anInt7537 >> 12;
 			@Pc(24) int local24 = local14.anInt7534 >> 12;
 			@Pc(29) int local29 = local14.anInt7536 >> 12;
@@ -2856,7 +2856,7 @@ public final class Class19_Sub2 extends Class19 {
 		if (this.aCanvas3 == arg0) {
 			this.method8019((Canvas) null);
 		}
-		@Pc(17) Linkable_Sub10 local17 = (Linkable_Sub10) this.aHashTable20.get((long) arg0.hashCode());
+		@Pc(17) FrameBuffer local17 = (FrameBuffer) this.aHashTable20.get((long) arg0.hashCode());
 		if (local17 != null) {
 			local17.unlink();
 		}

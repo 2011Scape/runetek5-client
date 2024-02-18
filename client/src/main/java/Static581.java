@@ -6,7 +6,7 @@ public final class Static581 {
 	public static boolean aBoolean657;
 
 	@OriginalMember(owner = "client!sf", name = "a", descriptor = "Lclient!bd;")
-	public static Linkable_Sub6_Sub1 aClass2_Sub6_Sub1_3;
+	public static MidiPcmStream aClass2_Sub6_Sub1_3;
 
 	@OriginalMember(owner = "client!sf", name = "e", descriptor = "[I")
 	public static final int[] anIntArray687 = new int[1];

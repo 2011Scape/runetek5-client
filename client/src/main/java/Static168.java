@@ -32,8 +32,8 @@ public final class Static168 {
 		if (Static441.method5968(local20.anIntArray878[0], local20.anIntArray879[0])) {
 			local20.aByte143++;
 		}
-		if (Static462.A_PACKET_ARRAY_1[local10] != null) {
-			local20.method1420(Static462.A_PACKET_ARRAY_1[local10]);
+		if (Static462.aPacketArray1[local10] != null) {
+			local20.method1420(Static462.aPacketArray1[local10]);
 		}
 		Static338.anInt5564 = 0;
 		Static210.anIntArray280[Static338.anInt5564++] = local10;
@@ -59,7 +59,7 @@ public final class Static168 {
 	}
 
 	@OriginalMember(owner = "client!fda", name = "a", descriptor = "(I[B)Lclient!st;")
-	public static Class23 method2634(@OriginalArg(1) byte[] arg0) {
+	public static SoftwareIndexedSprite method2634(@OriginalArg(1) byte[] arg0) {
 		if (arg0 == null) {
 			throw new RuntimeException("");
 		}

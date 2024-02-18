@@ -20,12 +20,12 @@ public final class Static420 {
 	public static int anInt6436 = 1;
 
 	@OriginalMember(owner = "client!nea", name = "d", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_78 = new Class345(28, 3);
+	public static final ClientProt aClientProt78 = new ClientProt(28, 3);
 
 	@OriginalMember(owner = "client!nea", name = "a", descriptor = "(ILclient!hda;II)V")
 	public static void method5758(@OriginalArg(1) Class158 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (Static156.aBoolean223) {
-			@Pc(16) Class296 local16 = Static610.anInt9329 == -1 ? null : Static386.aClass49_2.method1161(Static610.anInt9329);
+			@Pc(16) ParamType local16 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
 			if (Static84.method1661(arg0).method6217() && (Static717.anInt10822 & 0x20) != 0 && (local16 == null || arg0.method3404(local16.anInt7509, Static610.anInt9329) != local16.anInt7509)) {
 				Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, Static153.aString27, 18, true, Static369.anInt4263, Static128.aString108 + " -> " + arg0.aString41, (long) (arg0.anInt3741 << 0 | arg0.anInt3812), false);
 			}
@@ -51,7 +51,7 @@ public final class Static420 {
 			return;
 		}
 		if (arg0.aString42 == null) {
-			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, Static32.aClass32_10.method877(Static51.anInt1052), 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, Static32.aLocalizedText10.method877(Static51.anInt1052), 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
 		} else {
 			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, arg0.aString42, 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
 		}

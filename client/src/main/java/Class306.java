@@ -16,7 +16,7 @@ public class Class306 {
 	private final int[] anIntArray707 = new int[] { 0, 256, 512, 512, 512, 256, 0, 0, 128, 256, 128, 384, 256 };
 
 	@OriginalMember(owner = "client!qja", name = "k", descriptor = "Lclient!dh;")
-	private final Class79 aClass79_8;
+	private final FluTypeList aFluTypeList8;
 
 	@OriginalMember(owner = "client!qja", name = "q", descriptor = "I")
 	protected final int anInt8904;
@@ -31,7 +31,7 @@ public class Class306 {
 	protected final int anInt8906;
 
 	@OriginalMember(owner = "client!qja", name = "l", descriptor = "Lclient!ef;")
-	private final Class96 aClass96_6;
+	private final FloTypeList aFloTypeList6;
 
 	@OriginalMember(owner = "client!qja", name = "x", descriptor = "[[[B")
 	private final byte[][][] aByteArrayArrayArray13;
@@ -52,13 +52,13 @@ public class Class306 {
 	public final int[][][] anIntArrayArrayArray17;
 
 	@OriginalMember(owner = "client!qja", name = "<init>", descriptor = "(IIIZLclient!ef;Lclient!dh;)V")
-	protected Class306(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) Class96 arg4, @OriginalArg(5) Class79 arg5) {
-		this.aClass79_8 = arg5;
+	protected Class306(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) FloTypeList arg4, @OriginalArg(5) FluTypeList arg5) {
+		this.aFluTypeList8 = arg5;
 		this.anInt8904 = arg2;
 		this.anInt8913 = arg0;
 		this.aBoolean673 = arg3;
 		this.anInt8906 = arg1;
-		this.aClass96_6 = arg4;
+		this.aFloTypeList6 = arg4;
 		this.aByteArrayArrayArray13 = new byte[this.anInt8913][this.anInt8906][this.anInt8904];
 		this.aByteArrayArrayArray17 = new byte[this.anInt8913][this.anInt8906][this.anInt8904];
 		this.aByteArrayArrayArray14 = new byte[this.anInt8913][this.anInt8906 + 1][this.anInt8904 + 1];
@@ -164,12 +164,12 @@ public class Class306 {
 					@Pc(37) byte local37 = this.aByteArrayArrayArray13[arg0][local1][local4];
 					@Pc(48) int local48 = this.aByteArrayArrayArray15[arg0][local1][local4] & 0xFF;
 					@Pc(59) int local59 = this.aByteArrayArrayArray17[arg0][local1][local4] & 0xFF;
-					@Pc(72) Class318 local72 = local48 == 0 ? null : this.aClass96_6.method2352(local48 - 1);
+					@Pc(72) FloType local72 = local48 == 0 ? null : this.aFloTypeList6.method2352(local48 - 1);
 					if (local28 == 0 && local72 == null) {
 						local28 = 12;
 					}
-					@Pc(93) Class264 local93 = local59 == 0 ? null : this.aClass79_8.method2066(local59 - 1);
-					@Pc(95) Class318 local95 = local72;
+					@Pc(93) FluType local93 = local59 == 0 ? null : this.aFluTypeList8.method2066(local59 - 1);
+					@Pc(95) FloType local95 = local72;
 					if (local72 != null && local72.anInt8249 == -1 && local72.anInt8248 == -1) {
 						local95 = local72;
 						local72 = null;
@@ -302,10 +302,10 @@ public class Class306 {
 	}
 
 	@OriginalMember(owner = "client!qja", name = "a", descriptor = "(ILclient!re;[[BIIIIILclient!ha;I[ZLclient!nq;[[B[[B)V")
-	private void method7883(@OriginalArg(0) int arg0, @OriginalArg(1) Class318 arg1, @OriginalArg(2) byte[][] arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class19 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) boolean[] arg9, @OriginalArg(11) Class264 arg10, @OriginalArg(12) byte[][] arg11, @OriginalArg(13) byte[][] arg12) {
+	private void method7883(@OriginalArg(0) int arg0, @OriginalArg(1) FloType arg1, @OriginalArg(2) byte[][] arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class19 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) boolean[] arg9, @OriginalArg(11) FluType arg10, @OriginalArg(12) byte[][] arg11, @OriginalArg(13) byte[][] arg12) {
 		@Pc(19) boolean[] local19 = arg1 != null && arg1.aBoolean628 ? Static463.aBooleanArrayArray6[arg0] : Static435.aBooleanArrayArray5[arg0];
 		@Pc(37) int local37;
-		@Pc(50) Class318 local50;
+		@Pc(50) FloType local50;
 		@Pc(70) byte local70;
 		@Pc(86) int local86;
 		@Pc(91) int local91;
@@ -313,7 +313,7 @@ public class Class306 {
 			if (arg4 > 0) {
 				local37 = arg12[arg4 - 1][arg8 - 1] & 0xFF;
 				if (local37 > 0) {
-					local50 = this.aClass96_6.method2352(local37 - 1);
+					local50 = this.aFloTypeList6.method2352(local37 - 1);
 					if (local50.anInt8249 != -1 && local50.aBoolean628) {
 						local70 = arg11[arg4 - 1][arg8 - 1];
 						local86 = arg2[arg4 - 1][arg8 - 1] * 2 + 4 & 0x7;
@@ -332,7 +332,7 @@ public class Class306 {
 			if (arg3 - 1 > arg4) {
 				local37 = arg12[arg4 + 1][arg8 - 1] & 0xFF;
 				if (local37 > 0) {
-					local50 = this.aClass96_6.method2352(local37 - 1);
+					local50 = this.aFloTypeList6.method2352(local37 - 1);
 					if (local50.anInt8249 != -1 && local50.aBoolean628) {
 						local70 = arg11[arg4 + 1][arg8 - 1];
 						local86 = arg2[arg4 + 1][arg8 - 1] * 2 + 6 & 0x7;
@@ -353,7 +353,7 @@ public class Class306 {
 			if (arg4 > 0) {
 				local37 = arg12[arg4 - 1][arg8 + 1] & 0xFF;
 				if (local37 > 0) {
-					local50 = this.aClass96_6.method2352(local37 - 1);
+					local50 = this.aFloTypeList6.method2352(local37 - 1);
 					if (local50.anInt8249 != -1 && local50.aBoolean628) {
 						local70 = arg11[arg4 - 1][arg8 + 1];
 						local86 = arg2[arg4 - 1][arg8 + 1] * 2 + 2 & 0x7;
@@ -372,7 +372,7 @@ public class Class306 {
 			if (arg3 - 1 > arg4) {
 				local37 = arg12[arg4 + 1][arg8 + 1] & 0xFF;
 				if (local37 > 0) {
-					local50 = this.aClass96_6.method2352(local37 - 1);
+					local50 = this.aFloTypeList6.method2352(local37 - 1);
 					if (local50.anInt8249 != -1 && local50.aBoolean628) {
 						local70 = arg11[arg4 + 1][arg8 + 1];
 						local86 = (arg2[arg4 + 1][arg8 + 1] * 2) & 0x7;
@@ -396,7 +396,7 @@ public class Class306 {
 		if (arg8 > 0) {
 			local37 = arg12[arg4][arg8 - 1] & 0xFF;
 			if (local37 > 0) {
-				local50 = this.aClass96_6.method2352(local37 - 1);
+				local50 = this.aFloTypeList6.method2352(local37 - 1);
 				if (local50.anInt8249 != -1) {
 					local70 = arg11[arg4][arg8 - 1];
 					local498 = arg2[arg4][arg8 - 1];
@@ -434,7 +434,7 @@ public class Class306 {
 		if (arg6 - 1 > arg8) {
 			local37 = arg12[arg4][arg8 + 1] & 0xFF;
 			if (local37 > 0) {
-				local50 = this.aClass96_6.method2352(local37 - 1);
+				local50 = this.aFloTypeList6.method2352(local37 - 1);
 				if (local50.anInt8249 != -1) {
 					local70 = arg11[arg4][arg8 + 1];
 					local498 = arg2[arg4][arg8 + 1];
@@ -472,7 +472,7 @@ public class Class306 {
 		if (arg4 > 0) {
 			local37 = arg12[arg4 - 1][arg8] & 0xFF;
 			if (local37 > 0) {
-				local50 = this.aClass96_6.method2352(local37 - 1);
+				local50 = this.aFloTypeList6.method2352(local37 - 1);
 				if (local50.anInt8249 != -1) {
 					local70 = arg11[arg4 - 1][arg8];
 					local498 = arg2[arg4 - 1][arg8];
@@ -510,7 +510,7 @@ public class Class306 {
 		if (arg4 < arg3 - 1) {
 			local37 = arg12[arg4 + 1][arg8] & 0xFF;
 			if (local37 > 0) {
-				local50 = this.aClass96_6.method2352(local37 - 1);
+				local50 = this.aFloTypeList6.method2352(local37 - 1);
 				if (local50.anInt8249 != -1) {
 					local70 = arg11[arg4 + 1][arg8];
 					local498 = arg2[arg4 + 1][arg8];
@@ -685,7 +685,7 @@ public class Class306 {
 					if (local86 < this.anInt8906) {
 						local101 = this.aByteArrayArrayArray17[local47][local86][local81] & 0xFF;
 						if (local101 > 0) {
-							@Pc(114) Class264 local114 = this.aClass79_8.method2066(local101 - 1);
+							@Pc(114) FluType local114 = this.aFluTypeList8.method2066(local101 - 1);
 							Static397.anIntArray482[local81] += local114.anInt6630;
 							Static467.anIntArray568[local81] += local114.anInt6637;
 							Static501.anIntArray606[local81] += local114.anInt6639;
@@ -697,7 +697,7 @@ public class Class306 {
 					if (local101 >= 0) {
 						local170 = this.aByteArrayArrayArray17[local47][local101][local81] & 0xFF;
 						if (local170 > 0) {
-							@Pc(180) Class264 local180 = this.aClass79_8.method2066(local170 - 1);
+							@Pc(180) FluType local180 = this.aFluTypeList8.method2066(local170 - 1);
 							Static397.anIntArray482[local81] -= local180.anInt6630;
 							Static467.anIntArray568[local81] -= local180.anInt6637;
 							Static501.anIntArray606[local81] -= local180.anInt6639;
@@ -836,12 +836,12 @@ public class Class306 {
 					@Pc(132) int local132 = local26[local47][local67] & 0xFF;
 					@Pc(140) int local140 = local26[local47][local49] & 0xFF;
 					if (local108 != 0 || local116 != 0) {
-						@Pc(164) Class318 local164 = local108 == 0 ? null : this.aClass96_6.method2352(local108 - 1);
-						@Pc(177) Class264 local177 = local116 == 0 ? null : this.aClass79_8.method2066(local116 - 1);
+						@Pc(164) FloType local164 = local108 == 0 ? null : this.aFloTypeList6.method2352(local108 - 1);
+						@Pc(177) FluType local177 = local116 == 0 ? null : this.aFluTypeList8.method2066(local116 - 1);
 						if (local94 == 0 && local164 == null) {
 							local94 = 12;
 						}
-						@Pc(187) Class318 local187 = local164;
+						@Pc(187) FloType local187 = local164;
 						if (local164 != null) {
 							if (local164.anInt8249 == -1 && local164.anInt8248 == -1) {
 								local187 = local164;
@@ -1143,10 +1143,10 @@ public class Class306 {
 								if (local124 == 0) {
 									local124 = local116;
 								}
-								@Pc(1750) Class264 local1750 = this.aClass79_8.method2066(local116 - 1);
-								@Pc(1758) Class264 local1758 = this.aClass79_8.method2066(local124 - 1);
-								@Pc(1766) Class264 local1766 = this.aClass79_8.method2066(local132 - 1);
-								@Pc(1774) Class264 local1774 = this.aClass79_8.method2066(local140 - 1);
+								@Pc(1750) FluType local1750 = this.aFluTypeList8.method2066(local116 - 1);
+								@Pc(1758) FluType local1758 = this.aFluTypeList8.method2066(local124 - 1);
+								@Pc(1766) FluType local1766 = this.aFluTypeList8.method2066(local132 - 1);
+								@Pc(1774) FluType local1774 = this.aFluTypeList8.method2066(local140 - 1);
 								for (local1425 = 0; local1425 < local391; local1425++) {
 									if (local88[-local100 & 0x3] && local911[0] == local1062) {
 										Static590.anIntArray695[0] = local917[local1062];

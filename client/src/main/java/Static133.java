@@ -6,13 +6,13 @@ public final class Static133 {
 	public static float aFloat63;
 
 	@OriginalMember(owner = "client!ed", name = "h", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_55 = new Class225(90, 17);
+	public static final ServerProt ServerProt55 = new ServerProt(90, 17);
 
 	@OriginalMember(owner = "client!ed", name = "g", descriptor = "Lclient!sia;")
 	public static final LinkedList aLinkedList13 = new LinkedList();
 
 	@OriginalMember(owner = "client!ed", name = "d", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_26 = new Class345(89, 4);
+	public static final ClientProt aClientProt26 = new ClientProt(89, 4);
 
 	@OriginalMember(owner = "client!ed", name = "b", descriptor = "I")
 	public static int anInt2458 = 0;

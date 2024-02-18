@@ -19,7 +19,7 @@ public final class Static351 {
 	}
 
 	@OriginalMember(owner = "client!laa", name = "a", descriptor = "(Lclient!ha;ILclient!el;ILclient!fu;I)Z")
-	public static boolean method5138(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class105 arg1, @OriginalArg(4) Linkable_Sub20 arg2) {
+	public static boolean method5138(@OriginalArg(0) Class19 arg0, @OriginalArg(2) MelType arg1, @OriginalArg(4) MapElement arg2) {
 		@Pc(7) int local7 = Integer.MAX_VALUE;
 		@Pc(9) int local9 = Integer.MIN_VALUE;
 		@Pc(11) int local11 = Integer.MAX_VALUE;
@@ -30,7 +30,7 @@ public final class Static351 {
 			local7 = Static30.anInt5649 + (Static30.anInt5651 - Static30.anInt5649) * (-Static30.anInt5652 + arg1.anInt2598 - -arg2.anInt3129) / (Static30.anInt5647 - Static30.anInt5652);
 			local9 = Static30.anInt5649 + (arg1.anInt2614 + arg2.anInt3129 - Static30.anInt5652) * (Static30.anInt5651 - Static30.anInt5649) / (Static30.anInt5647 - Static30.anInt5652);
 		}
-		@Pc(102) Class23 local102 = null;
+		@Pc(102) SoftwareIndexedSprite local102 = null;
 		@Pc(104) int local104 = 0;
 		@Pc(106) int local106 = 0;
 		@Pc(108) int local108 = 0;
@@ -73,7 +73,7 @@ public final class Static351 {
 		if (arg1.aString25 != null) {
 			local209 = Static390.method5493(arg1.anInt2615);
 			if (local209 != null) {
-				local211 = Static154.aClass381_6.method8740(Static37.aStringArray5, (int[]) null, (Class23[]) null, arg1.aString25);
+				local211 = Static154.aClass381_6.method8740(Static37.aStringArray5, (int[]) null, (SoftwareIndexedSprite[]) null, arg1.aString25);
 				local215 = arg2.anInt3122 - arg1.anInt2617 * (Static30.anInt5646 - Static30.anInt5653) / (Static30.anInt5645 - Static30.anInt5654);
 				local213 = arg1.anInt2600 * (Static30.anInt5651 - Static30.anInt5649) / (Static30.anInt5647 - Static30.anInt5652) + arg2.anInt3130;
 				if (local102 == null) {
@@ -133,7 +133,7 @@ public final class Static351 {
 			Static720.method9396(local211, arg2, local213, arg1, local209, local217, arg0, local215);
 		}
 		if (arg1.anInt2596 != -1 || arg1.aString25 != null) {
-			@Pc(612) Linkable_Sub37 local612 = new Linkable_Sub37(arg2);
+			@Pc(612) MapElementBounds local612 = new MapElementBounds(arg2);
 			local612.anInt6185 = local229;
 			local612.anInt6186 = local108;
 			local612.anInt6192 = local227;

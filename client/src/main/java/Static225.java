@@ -6,7 +6,7 @@ public final class Static225 {
 	public static int anInt3641;
 
 	@OriginalMember(owner = "client!gw", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_90 = new Class225(57, -2);
+	public static final ServerProt ServerProt90 = new ServerProt(57, -2);
 
 	@OriginalMember(owner = "client!gw", name = "b", descriptor = "Lclient!hh;")
 	public static final Class162 aClass162_1 = new Class162("WIP", 2);

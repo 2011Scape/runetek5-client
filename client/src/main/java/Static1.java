@@ -7,7 +7,7 @@ public final class Static1 {
 	public static int anInt10797;
 
 	@OriginalMember(owner = "client!aa", name = "b", descriptor = "Lclient!st;")
-	public static Class23 aClass23_42;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite42;
 
 	@OriginalMember(owner = "client!aa", name = "d", descriptor = "I")
 	public static int anInt10798 = 0;

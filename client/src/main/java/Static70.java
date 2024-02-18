@@ -17,12 +17,12 @@ public final class Static70 {
 	public static final int[] anIntArray147 = new int[50];
 
 	@OriginalMember(owner = "client!ce", name = "a", descriptor = "(Ljava/awt/Component;IZ)Lclient!fb;")
-	public static Class120 method1513(@OriginalArg(0) Component arg0) {
+	public static Mouse method1513(@OriginalArg(0) Component arg0) {
 		try {
-			@Pc(34) Constructor local34 = Class.forName("Class120_Sub1").getDeclaredConstructor(aClass4 == null ? (aClass4 = Class.forName("java.awt.Component")) : aClass4, Boolean.TYPE);
-			return (Class120) local34.newInstance(arg0, Boolean.valueOf(true));
+			@Pc(34) Constructor local34 = Class.forName("JavaMouse").getDeclaredConstructor(aClass4 == null ? (aClass4 = Class.forName("java.awt.Component")) : aClass4, Boolean.TYPE);
+			return (Mouse) local34.newInstance(arg0, Boolean.valueOf(true));
 		} catch (@Pc(52) Throwable local52) {
-			return new Class120_Sub2(arg0, true);
+			return new Mouse_Sub2(arg0, true);
 		}
 	}
 }

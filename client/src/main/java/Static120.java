@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static120 {
 
 	@OriginalMember(owner = "client!dn", name = "G", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_19;
+	public static Js5 aJs519;
 
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method2193(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
@@ -25,55 +25,55 @@ public final class Static120 {
 		if (Static283.anInt4574 != 11 || !Static84.method1661(local8).method6221(arg3 - 1)) {
 			return;
 		}
-		@Pc(64) Linkable_Sub19 local64;
+		@Pc(64) OutboundPacket local64;
 		if (arg3 == 1) {
-			local64 = Static293.method4335(Static546.aClass345_98, Static405.aClass153_2.aIsaacRandom_1);
+			local64 = Static293.method4335(Static546.aClientProt98, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
 		if (arg3 == 2) {
-			local64 = Static293.method4335(Static323.aClass345_65, Static405.aClass153_2.aIsaacRandom_1);
+			local64 = Static293.method4335(Static323.aClientProt65, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
 		if (arg3 == 3) {
-			local64 = Static293.method4335(Static255.aClass345_54, Static405.aClass153_2.aIsaacRandom_1);
+			local64 = Static293.method4335(Static255.aClientProt54, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
-		@Pc(148) Linkable_Sub19 local148;
+		@Pc(148) OutboundPacket local148;
 		if (arg3 == 4) {
-			local148 = Static293.method4335(Static710.aClass345_93, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static710.aClientProt93, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 5) {
-			local148 = Static293.method4335(Static693.aClass345_121, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static693.aClientProt121, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 6) {
-			local148 = Static293.method4335(Static126.aClass345_23, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static126.aClientProt23, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 7) {
-			local148 = Static293.method4335(Static358.aClass345_124, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static358.aClientProt124, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 8) {
-			local148 = Static293.method4335(Static700.aClass345_123, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static700.aClientProt123, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 9) {
-			local148 = Static293.method4335(Static372.aClass345_69, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static372.aClientProt69, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 10) {
-			local148 = Static293.method4335(Static713.aClass345_125, Static405.aClass153_2.aIsaacRandom_1);
+			local148 = Static293.method4335(Static713.aClientProt125, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}

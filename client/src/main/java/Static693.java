@@ -11,7 +11,7 @@ public final class Static693 {
 	public static int anInt10383;
 
 	@OriginalMember(owner = "client!vu", name = "h", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_121 = new Class345(81, 8);
+	public static final ClientProt aClientProt121 = new ClientProt(81, 8);
 
 	@OriginalMember(owner = "client!vu", name = "f", descriptor = "Lclient!sia;")
 	public static final LinkedList aLinkedList79 = new LinkedList();

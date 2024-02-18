@@ -11,7 +11,7 @@ public final class Static211 {
 	public static int anInt5574;
 
 	@OriginalMember(owner = "client!gj", name = "l", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_143 = new Class225(83, 7);
+	public static final ServerProt ServerProt143 = new ServerProt(83, 7);
 
 	@OriginalMember(owner = "client!gj", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method4998(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {

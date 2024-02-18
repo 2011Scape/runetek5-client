@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public class Class152 {
 
 	@OriginalMember(owner = "client!gu", name = "L", descriptor = "Lclient!cka;")
-	public Class69 aClass69_4;
+	public SeqType aSeqType4;
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "I")
 	private int anInt10469;
@@ -51,7 +51,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ILclient!cka;B)V")
-	protected void method9086(@OriginalArg(0) int arg0, @OriginalArg(1) Class69 arg1) {
+	protected void method9086(@OriginalArg(0) int arg0, @OriginalArg(1) SeqType arg1) {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(I)I")
@@ -61,12 +61,12 @@ public class Class152 {
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ILclient!ka;I)V")
 	public final void method9089(@OriginalArg(1) Class114 arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass69_4 == null || !this.method9111()) {
+		if (this.aSeqType4 == null || !this.method9111()) {
 			return;
 		}
-		arg0.method7487(this.aClass257_8.aClass2_Sub2_Sub18_1, this.anInt10478, this.aClass69_4.anIntArray157[this.anInt10489], this.aClass257_8.aClass2_Sub2_Sub18_2, this.aClass257_8.anInt6448, this.aClass257_8.anInt6450, arg1, this.aClass69_4.aBoolean140);
-		if (this.aBoolean790 && this.aClass69_4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
-			arg0.method7487(this.aClass257_7.aClass2_Sub2_Sub18_1, this.anInt10478, this.aClass69_4.anIntArray157[this.anInt10489], this.aClass257_7.aClass2_Sub2_Sub18_2, this.aClass257_7.anInt6448, this.aClass257_7.anInt6450, arg1, this.aClass69_4.aBoolean140);
+		arg0.method7487(this.aClass257_8.aClass2_Sub2_Sub18_1, this.anInt10478, this.aSeqType4.anIntArray157[this.anInt10489], this.aClass257_8.aClass2_Sub2_Sub18_2, this.aClass257_8.anInt6448, this.aClass257_8.anInt6450, arg1, this.aSeqType4.aBoolean140);
+		if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
+			arg0.method7487(this.aClass257_7.aClass2_Sub2_Sub18_1, this.anInt10478, this.aSeqType4.anIntArray157[this.anInt10489], this.aClass257_7.aClass2_Sub2_Sub18_2, this.aClass257_7.anInt6448, this.aClass257_7.anInt6450, arg1, this.aSeqType4.aBoolean140);
 			return;
 		}
 	}
@@ -74,7 +74,7 @@ public class Class152 {
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(BI)Z")
 	public final boolean method9090() {
 		@Pc(24) int local24;
-		return this.aClass69_4 == null | (local24 = 1 - this.anInt10469) <= 0 ? false : this.aClass69_4.aBoolean142 | this.anInt10478 + local24 > this.aClass69_4.anIntArray157[this.anInt10489];
+		return this.aSeqType4 == null | (local24 = 1 - this.anInt10469) <= 0 ? false : this.aSeqType4.aBoolean142 | this.anInt10478 + local24 > this.aSeqType4.anIntArray157[this.anInt10489];
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(II)V")
@@ -88,29 +88,29 @@ public class Class152 {
 			return;
 		}
 		if (arg0 == -1) {
-			this.aClass69_4 = null;
+			this.aSeqType4 = null;
 		} else {
-			if (this.aClass69_4 == null || arg0 != this.aClass69_4.anInt1650) {
-				this.aClass69_4 = Static692.aClass50_2.method1162(arg0);
-			} else if (this.aClass69_4.anInt1646 == 0) {
+			if (this.aSeqType4 == null || arg0 != this.aSeqType4.anInt1650) {
+				this.aSeqType4 = Static692.aSeqTypeList2.method1162(arg0);
+			} else if (this.aSeqType4.anInt1646 == 0) {
 				return;
 			}
 			this.anInt10469 = arg1;
 			this.anInt10483 = arg2;
 			this.anInt10485 = 0;
 			if (arg3) {
-				this.anInt10489 = (int) ((double) this.aClass69_4.anIntArray159.length * Math.random());
-				this.anInt10478 = (int) (Math.random() * (double) this.aClass69_4.anIntArray157[this.anInt10489]);
+				this.anInt10489 = (int) ((double) this.aSeqType4.anIntArray159.length * Math.random());
+				this.anInt10478 = (int) (Math.random() * (double) this.aSeqType4.anIntArray157[this.anInt10489]);
 			} else {
 				this.anInt10478 = 0;
 				this.anInt10489 = 0;
 			}
 			this.anInt10474 = this.anInt10489 + 1;
-			if (this.anInt10474 < 0 || this.anInt10474 >= this.aClass69_4.anIntArray159.length) {
+			if (this.anInt10474 < 0 || this.anInt10474 >= this.aSeqType4.anIntArray159.length) {
 				this.anInt10474 = -1;
 			}
 			if (this.anInt10469 == 0) {
-				this.method9086(this.anInt10489, this.aClass69_4);
+				this.method9086(this.anInt10489, this.aSeqType4);
 			}
 			this.aBoolean791 = false;
 		}
@@ -120,20 +120,20 @@ public class Class152 {
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(BI)V")
 	public final void method9093(@OriginalArg(1) int arg0) {
 		this.anInt10489 = 0;
-		this.anInt10474 = this.aClass69_4.anIntArray159.length <= 1 ? -1 : 1;
+		this.anInt10474 = this.aSeqType4.anIntArray159.length <= 1 ? -1 : 1;
 		this.anInt10478 = 0;
 		this.aBoolean791 = false;
 		this.anInt10469 = arg0;
 		this.anInt10485 = 0;
-		if (this.aClass69_4 != null) {
-			this.method9086(this.anInt10489, this.aClass69_4);
+		if (this.aSeqType4 != null) {
+			this.method9086(this.anInt10489, this.aSeqType4);
 			this.method9108();
 		}
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ILclient!gu;)V")
 	public final void method9096(@OriginalArg(1) Class152 arg0) {
-		this.aClass69_4 = arg0.aClass69_4;
+		this.aSeqType4 = arg0.aSeqType4;
 		this.aBoolean790 = arg0.aBoolean790;
 		this.aBoolean791 = arg0.aBoolean791;
 		this.anInt10469 = arg0.anInt10469;
@@ -162,7 +162,7 @@ public class Class152 {
 		@Pc(18) int local18 = 0;
 		if (this.method9111()) {
 			local18 = this.aClass257_8.anInt6452 | 0x0;
-			if (this.aBoolean790 && this.aClass69_4.anIntArray158 != null) {
+			if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null) {
 				local18 |= this.aClass257_7.anInt6452;
 			}
 		}
@@ -186,7 +186,7 @@ public class Class152 {
 	public final void method9105(@OriginalArg(0) Class114 arg0) {
 		if (this.method9111()) {
 			arg0.method7493(this.aClass257_8.anInt6448, this.aClass257_8.aClass2_Sub2_Sub18_1);
-			if (this.aBoolean790 && this.aClass69_4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
+			if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
 				arg0.method7493(this.aClass257_7.anInt6448, this.aClass257_7.aClass2_Sub2_Sub18_1);
 			}
 		}
@@ -198,8 +198,8 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(B)Lclient!cka;")
-	public final Class69 method9107() {
-		return this.aClass69_4;
+	public final SeqType method9107() {
+		return this.aSeqType4;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "c", descriptor = "(I)V")
@@ -212,34 +212,34 @@ public class Class152 {
 
 	@OriginalMember(owner = "client!gu", name = "e", descriptor = "(I)Z")
 	public final boolean method9109() {
-		return this.aClass69_4 != null;
+		return this.aSeqType4 != null;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIZLclient!ka;)V")
 	public final void method9110(@OriginalArg(0) int arg0, @OriginalArg(3) Class114 arg1) {
 		if (this.method9111()) {
-			arg1.method7496(this.anInt10478, this.aClass257_8.aClass2_Sub2_Sub18_1, this.aClass257_8.aClass2_Sub2_Sub18_2, this.aClass257_8.anInt6448, (int[]) null, this.aClass69_4.anIntArray157[this.anInt10489], this.aClass69_4.aBoolean140, this.aClass257_8.anInt6450, arg0);
-			if (this.aBoolean790 && this.aClass69_4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
-				arg1.method7496(this.anInt10478, this.aClass257_7.aClass2_Sub2_Sub18_1, this.aClass257_7.aClass2_Sub2_Sub18_2, this.aClass257_7.anInt6448, (int[]) null, this.aClass69_4.anIntArray157[this.anInt10489], this.aClass69_4.aBoolean140, this.aClass257_7.anInt6450, arg0);
+			arg1.method7496(this.anInt10478, this.aClass257_8.aClass2_Sub2_Sub18_1, this.aClass257_8.aClass2_Sub2_Sub18_2, this.aClass257_8.anInt6448, (int[]) null, this.aSeqType4.anIntArray157[this.anInt10489], this.aSeqType4.aBoolean140, this.aClass257_8.anInt6450, arg0);
+			if (this.aBoolean790 && this.aSeqType4.anIntArray158 != null && this.aClass257_7.aBoolean481) {
+				arg1.method7496(this.anInt10478, this.aClass257_7.aClass2_Sub2_Sub18_1, this.aClass257_7.aClass2_Sub2_Sub18_2, this.aClass257_7.anInt6448, (int[]) null, this.aSeqType4.anIntArray157[this.anInt10489], this.aSeqType4.aBoolean140, this.aClass257_7.anInt6450, arg0);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(I)Z")
 	public final boolean method9111() {
-		if (this.aClass69_4 == null) {
+		if (this.aSeqType4 == null) {
 			return false;
 		}
-		@Pc(30) boolean local30 = this.aClass257_8.method5769(Static692.aClass50_2, this.aClass69_4, this.anInt10474, this.anInt10489, this.aClass69_4.anIntArray159);
-		if (local30 && this.aBoolean790 && this.aClass69_4.anIntArray158 != null) {
-			this.aClass257_7.method5769(Static692.aClass50_2, this.aClass69_4, this.anInt10474, this.anInt10489, this.aClass69_4.anIntArray158);
+		@Pc(30) boolean local30 = this.aClass257_8.method5769(Static692.aSeqTypeList2, this.aSeqType4, this.anInt10474, this.anInt10489, this.aSeqType4.anIntArray159);
+		if (local30 && this.aBoolean790 && this.aSeqType4.anIntArray158 != null) {
+			this.aClass257_7.method5769(Static692.aSeqTypeList2, this.aSeqType4, this.anInt10474, this.anInt10489, this.aSeqType4.anIntArray158);
 		}
 		return local30;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(II)Z")
 	public final boolean method9112(@OriginalArg(1) int arg0) {
-		if (this.aClass69_4 == null || arg0 == 0) {
+		if (this.aSeqType4 == null || arg0 == 0) {
 			return false;
 		}
 		if (this.anInt10469 > 0) {
@@ -249,20 +249,20 @@ public class Class152 {
 			}
 			arg0 -= this.anInt10469;
 			this.anInt10469 = 0;
-			this.method9086(this.anInt10489, this.aClass69_4);
+			this.method9086(this.anInt10489, this.aSeqType4);
 		}
 		arg0 += this.anInt10478;
-		@Pc(68) boolean local68 = Static296.aBoolean367 | this.aClass69_4.aBoolean142;
-		if (arg0 > 100 && this.aClass69_4.anInt1640 > 0) {
-			@Pc(89) int local89 = this.aClass69_4.anIntArray159.length - this.aClass69_4.anInt1640;
-			while (this.anInt10489 < local89 && arg0 > this.aClass69_4.anIntArray157[this.anInt10489]) {
-				arg0 -= this.aClass69_4.anIntArray157[this.anInt10489];
+		@Pc(68) boolean local68 = Static296.aBoolean367 | this.aSeqType4.aBoolean142;
+		if (arg0 > 100 && this.aSeqType4.anInt1640 > 0) {
+			@Pc(89) int local89 = this.aSeqType4.anIntArray159.length - this.aSeqType4.anInt1640;
+			while (this.anInt10489 < local89 && arg0 > this.aSeqType4.anIntArray157[this.anInt10489]) {
+				arg0 -= this.aSeqType4.anIntArray157[this.anInt10489];
 				this.anInt10489++;
 			}
 			if (local89 <= this.anInt10489) {
 				@Pc(134) int local134 = 0;
-				for (@Pc(136) int local136 = local89; local136 < this.aClass69_4.anIntArray159.length; local136++) {
-					local134 += this.aClass69_4.anIntArray157[local136];
+				for (@Pc(136) int local136 = local89; local136 < this.aSeqType4.anIntArray159.length; local136++) {
+					local134 += this.aSeqType4.anIntArray157[local136];
 				}
 				if (this.anInt10483 == 0) {
 					this.anInt10485 += arg0 / local134;
@@ -271,33 +271,33 @@ public class Class152 {
 			}
 			this.anInt10474 = this.anInt10489 + 1;
 			local68 = true;
-			if (this.anInt10474 >= this.aClass69_4.anIntArray159.length) {
-				this.anInt10474 -= this.aClass69_4.anInt1640;
-				if (this.anInt10474 < 0 || this.aClass69_4.anIntArray159.length <= this.anInt10474) {
+			if (this.anInt10474 >= this.aSeqType4.anIntArray159.length) {
+				this.anInt10474 -= this.aSeqType4.anInt1640;
+				if (this.anInt10474 < 0 || this.aSeqType4.anIntArray159.length <= this.anInt10474) {
 					this.anInt10474 = -1;
 				}
 			}
 		}
-		while (this.aClass69_4.anIntArray157[this.anInt10489] < arg0) {
-			arg0 -= this.aClass69_4.anIntArray157[this.anInt10489++];
+		while (this.aSeqType4.anIntArray157[this.anInt10489] < arg0) {
+			arg0 -= this.aSeqType4.anIntArray157[this.anInt10489++];
 			local68 = true;
-			if (this.aClass69_4.anIntArray159.length <= this.anInt10489) {
-				if (this.aClass69_4.anInt1640 != -1 && this.anInt10483 != 2) {
-					this.anInt10489 -= this.aClass69_4.anInt1640;
+			if (this.aSeqType4.anIntArray159.length <= this.anInt10489) {
+				if (this.aSeqType4.anInt1640 != -1 && this.anInt10483 != 2) {
+					this.anInt10489 -= this.aSeqType4.anInt1640;
 					if (this.anInt10483 == 0) {
 						this.anInt10485++;
 					}
 				}
-				if (this.anInt10485 >= this.aClass69_4.anInt1647 || this.anInt10489 < 0 || this.anInt10489 >= this.aClass69_4.anIntArray159.length) {
+				if (this.anInt10485 >= this.aSeqType4.anInt1647 || this.anInt10489 < 0 || this.anInt10489 >= this.aSeqType4.anIntArray159.length) {
 					this.aBoolean791 = true;
 					break;
 				}
 			}
-			this.method9086(this.anInt10489, this.aClass69_4);
+			this.method9086(this.anInt10489, this.aSeqType4);
 			this.anInt10474 = this.anInt10489 + 1;
-			if (this.anInt10474 >= this.aClass69_4.anIntArray159.length) {
-				this.anInt10474 -= this.aClass69_4.anInt1640;
-				if (this.anInt10474 < 0 || this.anInt10474 >= this.aClass69_4.anIntArray159.length) {
+			if (this.anInt10474 >= this.aSeqType4.anIntArray159.length) {
+				this.anInt10474 -= this.aSeqType4.anInt1640;
+				if (this.anInt10474 < 0 || this.anInt10474 >= this.aSeqType4.anIntArray159.length) {
 					this.anInt10474 = -1;
 				}
 			}
@@ -319,7 +319,7 @@ public class Class152 {
 
 	@OriginalMember(owner = "client!gu", name = "c", descriptor = "(B)I")
 	public final int method9114() {
-		return this.aClass69_4 == null ? -1 : this.aClass69_4.anInt1650;
+		return this.aSeqType4 == null ? -1 : this.aSeqType4.anInt1650;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(Z)V")

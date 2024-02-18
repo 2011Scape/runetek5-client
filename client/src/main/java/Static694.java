@@ -15,7 +15,7 @@ public final class Static694 {
 	public static int anInt10411;
 
 	@OriginalMember(owner = "client!vv", name = "D", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_122 = new Class345(71, 4);
+	public static final ClientProt aClientProt122 = new ClientProt(71, 4);
 
 	@OriginalMember(owner = "client!vv", name = "F", descriptor = "Lclient!fma;")
 	public static final Class131 aClass131_6 = new Class131();
@@ -53,8 +53,8 @@ public final class Static694 {
 		if (Static483.aBoolean546 && local15) {
 			@Pc(27) Class381 local27 = Static16.aClass381_1;
 			@Pc(33) Class14 local33 = arg0.method8010(local27, Static627.aClass407Array1, true);
-			local40 = local27.method8741((Class23[]) null, arg1, 250);
-			local49 = local27.method8745(250, local27.anInt10027, arg1, (Class23[]) null);
+			local40 = local27.method8741((SoftwareIndexedSprite[]) null, arg1, 250);
+			local49 = local27.method8745(250, local27.anInt10027, arg1, (SoftwareIndexedSprite[]) null);
 			@Pc(52) int local52 = Static535.aClass407_3.anInt10847;
 			@Pc(56) int local56 = local52 + 4;
 			local40 += local56 * 2;
@@ -88,14 +88,14 @@ public final class Static694 {
 			Static535.aClass407_3.method9386();
 			arg0.method7948(Static535.aClass407_3, true).method8198(local92 + Static414.aClass407_2.anInt10847, local49 + (local101 - local52), local40 - Static414.aClass407_2.anInt10847 * 2, local52);
 			Static535.aClass407_3.method9386();
-			local33.method8826(0, (int[]) null, Static675.anInt10154 | 0xFF000000, arg1, (Class1) null, (Class23[]) null, local56 + local101, -1, 0, 1, local92 + local56, 1, 0, local40 - local56 * 2, -(local56 * 2) + local49);
+			local33.method8826(0, (int[]) null, Static675.anInt10154 | 0xFF000000, arg1, (Class1) null, (SoftwareIndexedSprite[]) null, local56 + local101, -1, 0, 1, local92 + local56, 1, 0, local40 - local56 * 2, -(local56 * 2) + local49);
 			Static585.method7670(local40, local92, local49, local101);
 		} else {
-			local40 = arg3.method8741((Class23[]) null, arg1, 250);
-			local49 = arg3.method8739(arg1, (Class23[]) null, 250) * 13;
+			local40 = arg3.method8741((SoftwareIndexedSprite[]) null, arg1, 250);
+			local49 = arg3.method8739(arg1, (SoftwareIndexedSprite[]) null, 250) * 13;
 			arg0.aa(6, 6, local40 + 4 + 4, local49 + 4 + 4, -16777216, 0);
 			arg0.method7976(6, 6, local40 + 8, 4 + 4 + local49, -1, 0);
-			arg4.method8826(0, (int[]) null, -1, arg1, (Class1) null, (Class23[]) null, 10, -1, 0, 1, 10, 1, 0, local40, local49);
+			arg4.method8826(0, (int[]) null, -1, arg1, (Class1) null, (SoftwareIndexedSprite[]) null, 10, -1, 0, 1, 10, 1, 0, local40, local49);
 			Static585.method7670(local40 + 8, 6, local49 + 4 + 4, 6);
 		}
 		if (!arg2) {

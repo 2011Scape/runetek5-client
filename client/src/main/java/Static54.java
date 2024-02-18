@@ -11,7 +11,7 @@ public final class Static54 {
 	public static int[] anIntArray92;
 
 	@OriginalMember(owner = "client!bq", name = "t", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_25 = new Class82(5);
+	public static final SoftLruHashTable aSoftLruHashTable25 = new SoftLruHashTable(5);
 
 	@OriginalMember(owner = "client!bq", name = "a", descriptor = "(I)V")
 	public static void method1179() {
@@ -38,11 +38,11 @@ public final class Static54 {
 			for (local99 = (local28 - (Static501.anInt7568 >> 4)) / 8; local99 <= ((Static501.anInt7568 >> 4) + local28) / 8; local99++) {
 				@Pc(107) int local107 = local99 + (local88 << 8);
 				Static89.anIntArray169[local79] = local107;
-				Static267.anIntArray329[local79] = Static93.aClass330_16.method7590("m" + local88 + "_" + local99);
-				Static266.anIntArray615[local79] = Static93.aClass330_16.method7590("l" + local88 + "_" + local99);
-				Static376.anIntArray458[local79] = Static93.aClass330_16.method7590("n" + local88 + "_" + local99);
-				Static68.anIntArray316[local79] = Static93.aClass330_16.method7590("um" + local88 + "_" + local99);
-				Static298.anIntArray367[local79] = Static93.aClass330_16.method7590("ul" + local88 + "_" + local99);
+				Static267.anIntArray329[local79] = Static93.aJs516.method7590("m" + local88 + "_" + local99);
+				Static266.anIntArray615[local79] = Static93.aJs516.method7590("l" + local88 + "_" + local99);
+				Static376.anIntArray458[local79] = Static93.aJs516.method7590("n" + local88 + "_" + local99);
+				Static68.anIntArray316[local79] = Static93.aJs516.method7590("um" + local88 + "_" + local99);
+				Static298.anIntArray367[local79] = Static93.aJs516.method7590("ul" + local88 + "_" + local99);
 				if (Static376.anIntArray458[local79] == -1) {
 					Static267.anIntArray329[local79] = -1;
 					Static266.anIntArray615[local79] = -1;

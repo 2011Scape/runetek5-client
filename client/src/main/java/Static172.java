@@ -8,7 +8,7 @@ public final class Static172 {
 	public static int anInt2888;
 
 	@OriginalMember(owner = "client!ffa", name = "e", descriptor = "Lclient!mj;")
-	public static Class243 aClass243_4;
+	public static BufferedFile aBufferedFile4;
 
 	@OriginalMember(owner = "client!ffa", name = "b", descriptor = "Z")
 	public static boolean aBoolean246 = false;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static50 {
 
 	@OriginalMember(owner = "client!bm", name = "b", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_90 = new Class345(85, 2);
+	public static final ClientProt aClientProt90 = new ClientProt(85, 2);
 
 	@OriginalMember(owner = "client!bm", name = "c", descriptor = "Z")
 	public static boolean aBoolean565 = true;
@@ -131,8 +131,8 @@ public final class Static50 {
 			if (arg0.aClass199Array3[local50].anInt4930 != -1) {
 				local75 = arg0.aClass199Array3[local50].aClass152_7;
 				if (local75.method9106()) {
-					@Pc(88) Class227 local88 = Static23.aClass128_1.method2694(arg0.aClass199Array3[local50].anInt4930);
-					@Pc(92) Class69 local92 = local75.method9107();
+					@Pc(88) SpotAnimType local88 = Static23.aSpotAnimTypeList1.method2694(arg0.aClass199Array3[local50].anInt4930);
+					@Pc(92) SeqType local92 = local75.method9107();
 					if (local88.aBoolean448) {
 						if (local92.anInt1642 == 3) {
 							if (arg0.anInt10762 > 0 && Static333.anInt5455 >= arg0.anInt10759 && arg0.anInt10755 < Static333.anInt5455) {
@@ -154,7 +154,7 @@ public final class Static50 {
 		local75 = arg0.aClass152_11;
 		if (local75.method9109()) {
 			label83: {
-				@Pc(214) Class69 local214 = local75.method9107();
+				@Pc(214) SeqType local214 = local75.method9107();
 				if (local214.anInt1642 == 3) {
 					if (arg0.anInt10762 > 0 && arg0.anInt10759 <= Static333.anInt5455 && Static333.anInt5455 > arg0.anInt10755) {
 						arg0.anIntArray869 = null;

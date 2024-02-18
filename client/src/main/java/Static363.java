@@ -53,15 +53,15 @@ public final class Static363 {
 			return 1;
 		}
 		if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915()) {
-			Static667.method8695(true, Static32.aClass32_13.method877(Static51.anInt1052), arg1);
+			Static667.method8695(true, Static32.aLocalizedText13.method877(Static51.anInt1052), arg1);
 			if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7915()) {
 				return -1;
 			}
 		}
 		try {
 			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
-			Static694.method9028(Static163.aClass19_17, Static32.aClass32_13.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
-			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, Static190.aClass330_38);
+			Static694.method9028(Static163.aClass19_17, Static32.aLocalizedText13.method877(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, Static190.aJs538);
 			@Pc(70) long local70 = Static588.method7715();
 			Static163.aClass19_17.la();
 			Static460.aClass73_10.method7125(0, Static247.anInt3993, 0);
@@ -99,11 +99,11 @@ public final class Static363 {
 	@OriginalMember(owner = "client!li", name = "a", descriptor = "(IIIIIZ)V")
 	public static void method6236(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		if (Static316.aFrame8 != null && (arg2 != 3 || arg3 != Static328.anInt5427 || Static110.anInt2189 != arg1)) {
-			Static655.method8562(Static446.aClass390_6, Static316.aFrame8);
+			Static655.method8562(Static446.aSignlink6, Static316.aFrame8);
 			Static316.aFrame8 = null;
 		}
 		if (arg2 == 3 && Static316.aFrame8 == null) {
-			Static316.aFrame8 = Static489.method6543(0, Static446.aClass390_6, arg1, arg3);
+			Static316.aFrame8 = Static489.method6543(0, Static446.aSignlink6, arg1, arg3);
 			if (Static316.aFrame8 != null) {
 				Static328.anInt5427 = arg3;
 				Static110.anInt2189 = arg1;
@@ -122,7 +122,7 @@ public final class Static363 {
 			local95 = Static316.aFrame8;
 		} else if (Static353.aFrame10 == null) {
 			if (Static166.anApplet1 == null) {
-				local95 = Static149.anApplet_Sub1_1;
+				local95 = Static149.aGameShell;
 			} else {
 				local95 = Static166.anApplet1;
 			}

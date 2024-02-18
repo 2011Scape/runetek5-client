@@ -11,7 +11,7 @@ public final class Class306_Sub1 extends Class306 {
 
 	@OriginalMember(owner = "client!taa", name = "<init>", descriptor = "(IIIZ)V")
 	public Class306_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
-		super(arg0, arg1, arg2, arg3, Static467.aClass96_3, Static540.aClass79_6);
+		super(arg0, arg1, arg2, arg3, Static467.aFloTypeList3, Static540.aFluTypeList6);
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(III[Lclient!eq;Lclient!ha;[B)V")
@@ -84,7 +84,7 @@ public final class Class306_Sub1 extends Class306 {
 										for (local504 = 0; local504 < local86; local504++) {
 											@Pc(512) Class353 local512 = new Class353(arg3, arg1, 2);
 											if (local512.anInt9380 == 31) {
-												@Pc(523) Class392 local523 = Static48.aClass384_1.method8814(arg1.g2());
+												@Pc(523) LightType local523 = Static48.aLightTypeList1.method8814(arg1.g2());
 												local512.method8244(local523.anInt10374, local523.anInt10372, local523.anInt10373, local523.anInt10377);
 											}
 											if (arg3.method7955() > 0) {
@@ -255,7 +255,7 @@ public final class Class306_Sub1 extends Class306 {
 		if (arg8 < this.anInt8919) {
 			this.anInt8919 = arg8;
 		}
-		@Pc(40) Class54 local40 = Static354.aClass142_4.method3063(arg1, 82);
+		@Pc(40) LocType local40 = Static354.aLocTypeList4.method3063(arg1, 82);
 		if (Static400.aClass2_Sub34_28.aClass57_Sub30_1.method8356() == 0 && local40.aBoolean90) {
 			return;
 		}
@@ -545,7 +545,7 @@ public final class Class306_Sub1 extends Class306 {
 								local1844 = 65;
 								local1850 = (Interface25) Static302.method4414(arg8, arg5, arg3);
 								if (local1850 != null) {
-									local1844 = Static354.aClass142_4.method3063(local1850.method6859(-32136), 32).anInt1243 + 1;
+									local1844 = Static354.aLocTypeList4.method3063(local1850.method6859(-32136), 32).anInt1243 + 1;
 								}
 								if (local248) {
 									local1916 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, Static609.anIntArray715[arg6] * local1844, arg0, arg6);
@@ -561,7 +561,7 @@ public final class Class306_Sub1 extends Class306 {
 								local1844 = 33;
 								local1850 = (Interface25) Static302.method4414(arg8, arg5, arg3);
 								if (local1850 != null) {
-									local1844 = Static354.aClass142_4.method3063(local1850.method6859(-32136), 115).anInt1243 / 2 + 1;
+									local1844 = Static354.aLocTypeList4.method3063(local1850.method6859(-32136), 115).anInt1243 / 2 + 1;
 								}
 								if (local248) {
 									local1916 = new ParticleNode_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean673, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6 + 4);
@@ -590,7 +590,7 @@ public final class Class306_Sub1 extends Class306 {
 								local495 = 33;
 								@Pc(2134) Interface25 local2134 = (Interface25) Static302.method4414(arg8, arg5, arg3);
 								if (local2134 != null) {
-									local495 = Static354.aClass142_4.method3063(local2134.method6859(-32136), 92).anInt1243 / 2 + 1;
+									local495 = Static354.aLocTypeList4.method3063(local2134.method6859(-32136), 92).anInt1243 / 2 + 1;
 								}
 								@Pc(2178) ParticleNode_Sub2_Sub4 local2178;
 								@Pc(2200) ParticleNode_Sub2_Sub4 local2200;
@@ -658,7 +658,7 @@ public final class Class306_Sub1 extends Class306 {
 							for (local70 = 0; local70 < local63; local70++) {
 								@Pc(78) Class353 local78 = new Class353(arg1, arg3, 2);
 								if (local78.anInt9380 == 31) {
-									@Pc(91) Class392 local91 = Static48.aClass384_1.method8814(arg3.g2());
+									@Pc(91) LightType local91 = Static48.aLightTypeList1.method8814(arg3.g2());
 									local78.method8244(local91.anInt10374, local91.anInt10372, local91.anInt10373, local91.anInt10377);
 								}
 								if (arg1.method7955() > 0) {
@@ -822,7 +822,7 @@ public final class Class306_Sub1 extends Class306 {
 				@Pc(77) int local77 = local73 >> 2;
 				@Pc(81) int local81 = local73 & 0x3;
 				if (arg8 == local69 && arg0 <= local65 && local65 < arg0 + 8 && arg9 <= local59 && local59 < arg9 + 8) {
-					@Pc(113) Class54 local113 = Static354.aClass142_4.method3063(local28, 89);
+					@Pc(113) LocType local113 = Static354.aLocTypeList4.method3063(local28, 89);
 					@Pc(130) int local130 = Static48.method1095(local113.anInt1270, local59 & 0x7, local113.anInt1229, local81, local65 & 0x7, arg7) + arg4;
 					@Pc(147) int local147 = Static521.method6874(arg7, local59 & 0x7, local113.anInt1229, local81, local113.anInt1270, local65 & 0x7) + arg5;
 					if (local130 > 0 && local147 > 0 && local130 < super.anInt8906 - 1 && local147 < super.anInt8904 - 1) {
@@ -913,7 +913,7 @@ public final class Class306_Sub1 extends Class306 {
 		if (local13 == null) {
 			return;
 		}
-		@Pc(22) Class54 local22 = Static354.aClass142_4.method3063(local13.method6859(-32136), 98);
+		@Pc(22) LocType local22 = Static354.aLocTypeList4.method3063(local13.method6859(-32136), 98);
 		@Pc(26) int local26 = local13.method6858();
 		@Pc(30) int local30 = local13.method6855(23796);
 		if (local22.method1303()) {

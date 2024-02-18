@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static41 {
 
 	@OriginalMember(owner = "client!bg", name = "d", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_20 = new Class225(96, 7);
+	public static final ServerProt ServerProt20 = new ServerProt(96, 7);
 
 	@OriginalMember(owner = "client!bg", name = "a", descriptor = "(II)Z")
 	public static boolean method1027(@OriginalArg(0) int arg0) {
@@ -80,6 +80,6 @@ public final class Static41 {
 	@OriginalMember(owner = "client!bg", name = "a", descriptor = "(BI)V")
 	public static void method1029(@OriginalArg(1) int arg0) {
 		Static391.anInt6133 = arg0;
-		Static186.aClass82_67.method2157();
+		Static186.aSoftLruHashTable67.method2157();
 	}
 }

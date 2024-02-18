@@ -8,7 +8,7 @@ public final class Static63 {
 	public static int anInt1474;
 
 	@OriginalMember(owner = "client!caa", name = "b", descriptor = "Lclient!st;")
-	public static Class23 aClass23_8;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite8;
 
 	@OriginalMember(owner = "client!caa", name = "a", descriptor = "(IIII)V")
 	public static void method1427(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
@@ -16,7 +16,7 @@ public final class Static63 {
 		if (arg1 == -1 && !Static501.aBoolean575) {
 			Static100.method1988();
 		} else if (arg1 != -1 && (Static588.anInt8692 != arg1 || !Static52.method1157(-122)) && local12 != 0 && !Static501.aBoolean575) {
-			Static618.method8318(Static398.aClass330_81, local12, arg1, arg2);
+			Static618.method8318(Static398.aJs581, local12, arg1, arg2);
 			Static550.method7266();
 		}
 		if (Static588.anInt8692 != arg1) {

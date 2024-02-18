@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static558 {
 
 	@OriginalMember(owner = "client!rk", name = "v", descriptor = "[Lclient!st;")
-	public static Class23[] aClass23Array7;
+	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray7;
 
 	@OriginalMember(owner = "client!rk", name = "w", descriptor = "I")
 	public static int anInt3181 = -1;

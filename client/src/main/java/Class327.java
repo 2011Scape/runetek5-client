@@ -29,7 +29,7 @@ public final class Class327 {
 	private final int[] anIntArray680 = new int[4];
 
 	@OriginalMember(owner = "client!rt", name = "b", descriptor = "[Lclient!st;")
-	private final Class23[] aClass23Array13;
+	private final SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray13;
 
 	@OriginalMember(owner = "client!rt", name = "h", descriptor = "[I")
 	private final int[] anIntArray678;
@@ -47,7 +47,7 @@ public final class Class327 {
 	@OriginalMember(owner = "client!rt", name = "<init>", descriptor = "(Lclient!ha;IZLjava/awt/Component;)V")
 	public Class327(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component arg3) {
 		this.aBoolean653 = false;
-		this.aClass23Array13 = new Class23[256];
+		this.aSoftwareIndexedSpriteArray13 = new SoftwareIndexedSprite[256];
 		this.anIntArray678 = new int[256];
 		@Pc(32) Font local32 = new Font("Helvetica", 1, arg1);
 		@Pc(36) FontMetrics local36 = arg3.getFontMetrics(local32);
@@ -84,9 +84,9 @@ public final class Class327 {
 		for (@Pc(9) int local9 = 0; local9 < arg1.length(); local9++) {
 			@Pc(16) int local16 = anIntArray679[arg1.charAt(local9)];
 			if (arg6) {
-				this.aClass23Array13[local16].method8197(arg3 + 1, arg4 + 1, 0, -16777216, 1);
+				this.aSoftwareIndexedSpriteArray13[local16].method8197(arg3 + 1, arg4 + 1, 0, -16777216, 1);
 			}
-			this.aClass23Array13[local16].method8197(arg3, arg4, 0, local7, 1);
+			this.aSoftwareIndexedSpriteArray13[local16].method8197(arg3, arg4, 0, local7, 1);
 			arg3 += this.anIntArray678[local16];
 		}
 	}
@@ -169,6 +169,6 @@ public final class Class327 {
 		this.anInt8496 = local67 - local143;
 		this.anInt8498 = local76;
 		this.anIntArray678[arg4] = local5;
-		this.aClass23Array13[arg4] = arg0.method7946(local3, local3, local73, local120);
+		this.aSoftwareIndexedSpriteArray13[arg4] = arg0.method7946(local3, local3, local73, local120);
 	}
 }

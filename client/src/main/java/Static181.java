@@ -8,7 +8,7 @@ public final class Static181 {
 	public static int anInt3003;
 
 	@OriginalMember(owner = "client!fl", name = "g", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_34 = new Class345(39, 12);
+	public static final ClientProt aClientProt34 = new ClientProt(39, 12);
 
 	@OriginalMember(owner = "client!fl", name = "c", descriptor = "I")
 	public static int anInt3006 = 0;

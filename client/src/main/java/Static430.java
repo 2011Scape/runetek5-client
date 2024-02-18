@@ -21,7 +21,7 @@ public final class Static430 {
 
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(IBLjava/lang/String;)Z")
 	public static boolean method5817(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		if (Static446.aClass390_6.aBoolean781) {
+		if (Static446.aSignlink6.aBoolean781) {
 			Static344.aClass229_1 = new Class229();
 			Static344.aClass229_1.anInt5856 = arg0;
 			Static344.aClass229_1.aString60 = arg1;
@@ -65,7 +65,7 @@ public final class Static430 {
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
 	public static void method5819(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Class153 local10 = Static668.method8701();
-		@Pc(16) Linkable_Sub19 local16 = Static293.method4335(Static425.aClass345_80, local10.aIsaacRandom_1);
+		@Pc(16) OutboundPacket local16 = Static293.method4335(Static425.aClientProt80, local10.aIsaacRandom_1);
 		local16.aPacketBit_1.p1(Static231.method3379(arg0) + 1);
 		local16.aPacketBit_1.pjstr(arg0);
 		local16.aPacketBit_1.p1_alt2(arg1);

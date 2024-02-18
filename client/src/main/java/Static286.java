@@ -10,10 +10,10 @@ public final class Static286 {
 	public static int[] anIntArray358;
 
 	@OriginalMember(owner = "client!iw", name = "e", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_117 = new Class225(32, -1);
+	public static final ServerProt ServerProt117 = new ServerProt(32, -1);
 
 	@OriginalMember(owner = "client!iw", name = "f", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_118 = new Class225(95, 6);
+	public static final ServerProt ServerProt118 = new ServerProt(95, 6);
 
 	@OriginalMember(owner = "client!iw", name = "c", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable23 = new HashTable(32);

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static442 {
 
 	@OriginalMember(owner = "client!nv", name = "a", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_90;
+	public static Js5 aJs590;
 
 	@OriginalMember(owner = "client!nv", name = "l", descriptor = "Z")
 	public static boolean aBoolean500;
@@ -12,7 +12,7 @@ public final class Static442 {
 	public static int anInt6699 = -1;
 
 	@OriginalMember(owner = "client!nv", name = "k", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_83 = new Class345(15, 4);
+	public static final ClientProt aClientProt83 = new ClientProt(15, 4);
 
 	@OriginalMember(owner = "client!nv", name = "h", descriptor = "Z")
 	public static boolean aBoolean499 = false;

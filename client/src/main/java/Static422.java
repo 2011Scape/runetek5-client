@@ -15,7 +15,7 @@ public final class Static422 {
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "(I)V")
 	public static void method5772() {
-		Static713.aClass82_231.method2157();
+		Static713.aSoftLruHashTable231.method2157();
 	}
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "(IIIII)V")

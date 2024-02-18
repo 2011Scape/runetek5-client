@@ -7,7 +7,7 @@ public final class Static153 {
 	public static final int[] anIntArray234 = new int[13];
 
 	@OriginalMember(owner = "client!eq", name = "w", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_56 = new Class82(64);
+	public static final SoftLruHashTable aSoftLruHashTable56 = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!eq", name = "o", descriptor = "[I")
 	public static int[] anIntArray235 = new int[2];

@@ -4,14 +4,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static244 {
 
 	@OriginalMember(owner = "client!hk", name = "n", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_55;
+	public static Js5 aJs555;
 
 	@OriginalMember(owner = "client!hk", name = "o", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_53 = new Class345(1, -1);
+	public static final ClientProt aClientProt53 = new ClientProt(1, -1);
 
 	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(I)V")
 	public static void method3512() {
-		Static12.aClass23_26 = null;
+		Static12.aSoftwareIndexedSprite26 = null;
 		Static643.anInt9604 = -1;
 	}
 

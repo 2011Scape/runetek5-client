@@ -17,7 +17,7 @@ public final class Static494 {
 	public static boolean aBoolean563 = false;
 
 	@OriginalMember(owner = "client!pja", name = "ib", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_89 = new Class345(62, 3);
+	public static final ClientProt aClientProt89 = new ClientProt(62, 3);
 
 	@OriginalMember(owner = "client!pja", name = "e", descriptor = "(I)V")
 	public static void method6596() {
@@ -50,10 +50,10 @@ public final class Static494 {
 		@Pc(9) short[] local9 = new short[16];
 		@Pc(11) int local11 = 0;
 		@Pc(18) int local18 = arg1 ? 32768 : 0;
-		@Pc(29) int local29 = (arg1 ? Static288.aClass139_2.anInt3261 : Static288.aClass139_2.anInt3264) + local18;
+		@Pc(29) int local29 = (arg1 ? Static288.aQuickChatPhraseTypeList2.anInt3261 : Static288.aQuickChatPhraseTypeList2.anInt3264) + local18;
 		@Pc(80) int local80;
 		for (@Pc(31) int local31 = local18; local31 < local29; local31++) {
-			@Pc(37) SecondaryLinkable_Sub12 local37 = Static288.aClass139_2.method2950(local31);
+			@Pc(37) QuickChatPhraseType local37 = Static288.aQuickChatPhraseTypeList2.method2950(local31);
 			if (local37.aBoolean334 && local37.method3906().toLowerCase().indexOf(local6) != -1) {
 				if (local11 >= 50) {
 					Static256.aShortArray63 = null;
@@ -75,7 +75,7 @@ public final class Static494 {
 		Static256.aShortArray63 = local9;
 		@Pc(120) String[] local120 = new String[Static606.anInt8947];
 		for (local80 = 0; local80 < Static606.anInt8947; local80++) {
-			local120[local80] = Static288.aClass139_2.method2950(local9[local80]).method3906();
+			local120[local80] = Static288.aQuickChatPhraseTypeList2.method2950(local9[local80]).method3906();
 		}
 		Static554.method7292(local120, Static256.aShortArray63);
 	}

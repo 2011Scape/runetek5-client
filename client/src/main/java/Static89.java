@@ -11,13 +11,13 @@ public final class Static89 {
 	public static final Class155 aClass155_9 = new Class155(2);
 
 	@OriginalMember(owner = "client!cp", name = "a", descriptor = "(ILclient!ca;IILclient!wj;Lclient!c;BI)V")
-	public static void method1714(@OriginalArg(0) int arg0, @OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg4, @OriginalArg(5) Class54 arg5, @OriginalArg(7) int arg6) {
+	public static void method1714(@OriginalArg(0) int arg0, @OriginalArg(1) ParticleNode_Sub2_Sub1_Sub2_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) ParticleNode_Sub2_Sub1_Sub2_Sub2 arg4, @OriginalArg(5) LocType arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Linkable_Sub51 local7 = new Linkable_Sub51();
 		local7.anInt9350 = arg0;
 		local7.anInt9357 = arg2 << 9;
 		local7.anInt9352 = arg3 << 9;
 		if (arg5 != null) {
-			local7.aClass54_1 = arg5;
+			local7.aLocType1 = arg5;
 			@Pc(173) int local173 = arg5.anInt1270;
 			@Pc(176) int local176 = arg5.anInt1229;
 			if (arg6 == 1 || arg6 == 3) {
@@ -49,7 +49,7 @@ public final class Static89 {
 		}
 		if (arg4 != null) {
 			local7.aClass8_Sub2_Sub1_Sub2_Sub2_3 = arg4;
-			@Pc(37) Class268 local37 = arg4.aClass268_1;
+			@Pc(37) NpcType local37 = arg4.aNpcType1;
 			if (local37.anIntArray532 != null) {
 				local7.aBoolean713 = true;
 				local37 = local37.method5985(65535, Static34.aClass304_1);

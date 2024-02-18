@@ -16,5 +16,5 @@ public abstract class Linkable_Sub3 extends Linkable {
 	public abstract void method113();
 
 	@OriginalMember(owner = "client!ada", name = "a", descriptor = "(Lclient!nn;)I")
-	public abstract int method114(@OriginalArg(0) Linkable_Sub6_Sub3 arg0);
+	public abstract int method114(@OriginalArg(0) MixerPcmStream arg0);
 }

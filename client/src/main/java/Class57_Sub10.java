@@ -3,15 +3,15 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!hl")
-public final class Class57_Sub10 extends Class57 {
+public final class Class57_Sub10 extends Preference {
 
 	@OriginalMember(owner = "client!hl", name = "<init>", descriptor = "(ILclient!kv;)V")
-	public Class57_Sub10(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub34 arg1) {
+	public Class57_Sub10(@OriginalArg(0) int arg0, @OriginalArg(1) Preferences arg1) {
 		super(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!hl", name = "<init>", descriptor = "(Lclient!kv;)V")
-	public Class57_Sub10(@OriginalArg(0) Linkable_Sub34 arg0) {
+	public Class57_Sub10(@OriginalArg(0) Preferences arg0) {
 		super(arg0);
 	}
 

@@ -68,7 +68,7 @@ public final class Static650 {
 	private static boolean aBoolean746 = false;
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;I)Lclient!uj;")
-	public static Linkable_Sub53 method8498(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1) {
+	public static Linkable_Sub53 method8498(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		if (method8505(arg0)) {
 			@Pc(14) byte[] local14 = arg0.method7589(arg1);
 			return local14 == null ? null : new Linkable_Sub53(local14);
@@ -188,7 +188,7 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;)Z")
-	private static boolean method8505(@OriginalArg(0) Class330 arg0) {
+	private static boolean method8505(@OriginalArg(0) Js5 arg0) {
 		if (!aBoolean746) {
 			@Pc(7) byte[] local7 = arg0.method7595(0, 0);
 			if (local7 == null) {
@@ -200,7 +200,7 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;II)Lclient!uj;")
-	public static Linkable_Sub53 method8506(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Linkable_Sub53 method8506(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method8505(arg0)) {
 			@Pc(16) byte[] local16 = arg0.method7595(arg2, arg1);
 			return local16 == null ? null : new Linkable_Sub53(local16);

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static616 {
 
 	@OriginalMember(owner = "client!tia", name = "L", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_223 = new Class225(40, -1);
+	public static final ServerProt ServerProt223 = new ServerProt(40, -1);
 
 	@OriginalMember(owner = "client!tia", name = "R", descriptor = "I")
 	public static int anInt9417 = 0;
@@ -23,7 +23,7 @@ public final class Static616 {
 	}
 
 	@OriginalMember(owner = "client!tia", name = "a", descriptor = "(BLclient!sb;)V")
-	public static void method8284(@OriginalArg(1) Class330 arg0) {
+	public static void method8284(@OriginalArg(1) Js5 arg0) {
 		Static662.anInt9845 = arg0.method7590("p11_full");
 		Static539.anInt8173 = arg0.method7590("p12_full");
 		Static634.anInt9519 = arg0.method7590("b12_full");

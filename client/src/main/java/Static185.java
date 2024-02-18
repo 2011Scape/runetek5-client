@@ -15,17 +15,17 @@ public final class Static185 {
 	public static final Class121 aClass121_3 = new Class121();
 
 	@OriginalMember(owner = "client!fn", name = "s", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_35 = new Class345(0, 7);
+	public static final ClientProt aClientProt35 = new ClientProt(0, 7);
 
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(Lclient!ha;IIIIIIII)V")
 	public static void method2814(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		@Pc(9) Interface25 local9 = (Interface25) Static302.method4414(arg6, arg2, arg3);
-		@Pc(20) Class54 local20;
+		@Pc(20) LocType local20;
 		@Pc(26) int local26;
 		@Pc(30) int local30;
 		@Pc(45) int local45;
 		if (local9 != null) {
-			local20 = Static354.aClass142_4.method3063(local9.method6859(-32136), 37);
+			local20 = Static354.aLocTypeList4.method3063(local9.method6859(-32136), 37);
 			local26 = local9.method6855(23796) & 0x3;
 			local30 = local9.method6858();
 			if (local20.anInt1239 == -1) {
@@ -72,7 +72,7 @@ public final class Static185 {
 		}
 		local9 = (Interface25) Static578.method7623(arg6, arg2, arg3, aClass8 == null ? (aClass8 = getClass("Interface25")) : aClass8);
 		if (local9 != null) {
-			local20 = Static354.aClass142_4.method3063(local9.method6859(-32136), 61);
+			local20 = Static354.aLocTypeList4.method3063(local9.method6859(-32136), 61);
 			local26 = local9.method6855(23796) & 0x3;
 			local30 = local9.method6858();
 			if (local20.anInt1239 != -1) {
@@ -93,7 +93,7 @@ public final class Static185 {
 		if (local9 == null) {
 			return;
 		}
-		local20 = Static354.aClass142_4.method3063(local9.method6859(-32136), 106);
+		local20 = Static354.aLocTypeList4.method3063(local9.method6859(-32136), 106);
 		local26 = local9.method6855(23796) & 0x3;
 		if (local20.anInt1239 != -1) {
 			Static452.method6173(local20, local26, arg0, arg4, arg5);

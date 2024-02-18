@@ -12,7 +12,7 @@ public final class Class152_Sub1 extends Class152 {
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(ILclient!cka;B)V")
 	@Override
-	protected void method9086(@OriginalArg(0) int arg0, @OriginalArg(1) Class69 arg1) {
+	protected void method9086(@OriginalArg(0) int arg0, @OriginalArg(1) SeqType arg1) {
 		Static315.method4577(arg0, arg1);
 	}
 }

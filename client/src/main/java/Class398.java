@@ -10,15 +10,15 @@ public final class Class398 {
 	private Class362 aClass362_2;
 
 	@OriginalMember(owner = "client!we", name = "d", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_124;
+	private final Js5 aJs5124;
 
 	@OriginalMember(owner = "client!we", name = "e", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_125;
+	private final Js5 aJs5125;
 
 	@OriginalMember(owner = "client!we", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;)V")
-	public Class398(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class330 arg1) {
-		this.aClass330_124 = arg1;
-		this.aClass330_125 = arg0;
+	public Class398(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
+		this.aJs5124 = arg1;
+		this.aJs5125 = arg0;
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(ILclient!gja;)Lclient!jd;")
@@ -32,21 +32,21 @@ public final class Class398 {
 		} else if (local18 == Static166.aClass204_6) {
 			return new Class290(this.method9170(), (Class235) arg0);
 		} else if (local18 == Static541.aClass204_12) {
-			return new Class37(this.aClass330_125, (Class160) arg0);
+			return new Class37(this.aJs5125, (Class160) arg0);
 		} else if (Static647.aClass204_13 == local18) {
-			return new Class37_Sub1(this.aClass330_125, (Class160_Sub1) arg0);
+			return new Class37_Sub1(this.aJs5125, (Class160_Sub1) arg0);
 		} else if (Static77.aClass204_1 == local18) {
-			return new Class90_Sub1(this.aClass330_125, this.aClass330_124, (Class138_Sub3) arg0);
+			return new Class90_Sub1(this.aJs5125, this.aJs5124, (Class138_Sub3) arg0);
 		} else if (Static565.aClass204_9 == local18) {
-			return new Class90_Sub3(this.aClass330_125, this.aClass330_124, (Class138_Sub2) arg0);
+			return new Class90_Sub3(this.aJs5125, this.aJs5124, (Class138_Sub2) arg0);
 		} else if (Static535.aClass204_11 == local18) {
-			return new Class90_Sub2(this.aClass330_125, this.aClass330_124, (Class138_Sub1) arg0);
+			return new Class90_Sub2(this.aJs5125, this.aJs5124, (Class138_Sub1) arg0);
 		} else if (local18 == Static189.aClass204_7) {
-			return new Class133(this.aClass330_125, this.aClass330_124, (Class125) arg0);
+			return new Class133(this.aJs5125, this.aJs5124, (Class125) arg0);
 		} else if (local18 == Static667.aClass204_15) {
-			return new Class109(this.aClass330_125, (Class200) arg0);
+			return new Class109(this.aJs5125, (Class200) arg0);
 		} else if (Static505.aClass204_16 == local18) {
-			return new Class90_Sub2_Sub1(this.aClass330_125, this.aClass330_124, (Class138_Sub1_Sub1) arg0);
+			return new Class90_Sub2_Sub1(this.aJs5125, this.aJs5124, (Class138_Sub1_Sub1) arg0);
 		} else {
 			return null;
 		}

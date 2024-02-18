@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static48 {
 
 	@OriginalMember(owner = "client!bka", name = "k", descriptor = "Lclient!vga;")
-	public static Class384 aClass384_1;
+	public static LightTypeList aLightTypeList1;
 
 	@OriginalMember(owner = "client!bka", name = "i", descriptor = "[Lclient!eo;")
 	public static ParticleNode_Sub2[] aClass8_Sub2Array3;
@@ -30,8 +30,8 @@ public final class Static48 {
 	}
 
 	@OriginalMember(owner = "client!bka", name = "a", descriptor = "([BZ)Lclient!fj;")
-	public static SecondaryLinkable_Sub10 method1097(@OriginalArg(0) byte[] arg0) {
-		@Pc(7) SecondaryLinkable_Sub10 local7 = new SecondaryLinkable_Sub10();
+	public static ClientScript method1097(@OriginalArg(0) byte[] arg0) {
+		@Pc(7) ClientScript local7 = new ClientScript();
 		@Pc(12) Packet local12 = new Packet(arg0);
 		local12.pos = local12.data.length - 2;
 		@Pc(23) int local23 = local12.g2();
@@ -92,8 +92,8 @@ public final class Static48 {
 	}
 
 	@OriginalMember(owner = "client!bka", name = "a", descriptor = "(Lclient!bd;I)Lclient!bd;")
-	public static Linkable_Sub6_Sub1 method1100(@OriginalArg(0) Linkable_Sub6_Sub1 arg0) {
-		@Pc(15) Linkable_Sub6_Sub1 local15 = arg0 == null ? new Linkable_Sub6_Sub1() : new Linkable_Sub6_Sub1(arg0);
+	public static MidiPcmStream method1100(@OriginalArg(0) MidiPcmStream arg0) {
+		@Pc(15) MidiPcmStream local15 = arg0 == null ? new MidiPcmStream() : new MidiPcmStream(arg0);
 		local15.method929();
 		return local15;
 	}

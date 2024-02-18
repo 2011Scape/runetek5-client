@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static426 {
 
 	@OriginalMember(owner = "client!nha", name = "e", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_2;
+	public static AudioChannel aAudioChannel2;
 
 	@OriginalMember(owner = "client!nha", name = "m", descriptor = "I")
 	public static final int anInt940 = -1;
@@ -37,7 +37,7 @@ public final class Static426 {
 	}
 
 	@OriginalMember(owner = "client!nha", name = "b", descriptor = "(B)Lclient!bd;")
-	public static Linkable_Sub6_Sub1 method1018() {
+	public static MidiPcmStream method1018() {
 		return Static581.aClass2_Sub6_Sub1_3;
 	}
 }

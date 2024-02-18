@@ -19,16 +19,16 @@ public abstract class Class90 implements Interface13 {
 	protected final Class138 aClass138_5;
 
 	@OriginalMember(owner = "client!ea", name = "h", descriptor = "Lclient!sb;")
-	protected final Class330 aClass330_109;
+	protected final Js5 aJs5109;
 
 	@OriginalMember(owner = "client!ea", name = "e", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_110;
+	private final Js5 aJs5110;
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!is;)V")
-	protected Class90(@OriginalArg(0) Class330 arg0, @OriginalArg(1) Class330 arg1, @OriginalArg(2) Class138 arg2) {
+	protected Class90(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138 arg2) {
 		this.aClass138_5 = arg2;
-		this.aClass330_109 = arg0;
-		this.aClass330_110 = arg1;
+		this.aJs5109 = arg0;
+		this.aJs5110 = arg1;
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(ZI)V")
@@ -79,18 +79,18 @@ public abstract class Class90 implements Interface13 {
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(I)V")
 	@Override
 	public void method7748() {
-		@Pc(21) Class381 local21 = Static238.method3468(this.aClass138_5.anInt4415, this.aClass330_110);
-		this.aClass14_10 = Static163.aClass19_17.method8010(local21, Static735.method9387(this.aClass330_109, this.aClass138_5.anInt4415), true);
+		@Pc(21) Class381 local21 = Static238.method3468(this.aClass138_5.anInt4415, this.aJs5110);
+		this.aClass14_10 = Static163.aClass19_17.method8010(local21, Static735.method9387(this.aJs5109, this.aClass138_5.anInt4415), true);
 	}
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "(I)Z")
 	@Override
 	public boolean method7747() {
 		@Pc(5) boolean local5 = true;
-		if (!this.aClass330_109.method7581(this.aClass138_5.anInt4415)) {
+		if (!this.aJs5109.method7581(this.aClass138_5.anInt4415)) {
 			local5 = false;
 		}
-		if (!this.aClass330_110.method7581(this.aClass138_5.anInt4415)) {
+		if (!this.aJs5110.method7581(this.aClass138_5.anInt4415)) {
 			local5 = false;
 		}
 		return local5;

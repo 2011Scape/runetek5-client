@@ -8,16 +8,16 @@ public final class Static122 {
 	public static int anInt2339 = 0;
 
 	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(B)Lclient!fu;")
-	public static Linkable_Sub20 method2207() {
+	public static MapElement method2207() {
 		if (Static30.aLinkedList31 == null || Static444.aClass191_1 == null) {
 			return null;
 		}
 		Static444.aClass191_1.method4344(Static30.aLinkedList31);
-		@Pc(23) Linkable_Sub20 local23 = (Linkable_Sub20) Static444.aClass191_1.method4343();
+		@Pc(23) MapElement local23 = (MapElement) Static444.aClass191_1.method4343();
 		if (local23 == null) {
 			return null;
 		} else {
-			@Pc(42) Class105 local42 = Static30.aClass246_3.method5584(local23.anInt3131);
+			@Pc(42) MelType local42 = Static30.aMelTypeList3.method5584(local23.anInt3131);
 			return local42 != null && local42.aBoolean217 && local42.method2425(Static30.anInterface23_3) ? local23 : Static364.method5248();
 		}
 	}

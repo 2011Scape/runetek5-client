@@ -58,12 +58,12 @@ public final class Static488 {
 	}
 
 	@OriginalMember(owner = "client!pga", name = "a", descriptor = "(II)Lclient!fj;")
-	public static SecondaryLinkable_Sub10 method6525(@OriginalArg(0) int arg0) {
-		@Pc(10) SecondaryLinkable_Sub10 local10 = (SecondaryLinkable_Sub10) Static480.aLruHashTable2.method8342((long) arg0);
+	public static ClientScript method6525(@OriginalArg(0) int arg0) {
+		@Pc(10) ClientScript local10 = (ClientScript) Static480.aLruHashTable2.method8342((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static31.aClass330_6.method7595(0, arg0);
+		@Pc(21) byte[] local21 = Static31.aJs56.method7595(0, arg0);
 		if (local21 == null || local21.length <= 1) {
 			return null;
 		}

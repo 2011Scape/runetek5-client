@@ -20,7 +20,7 @@ public final class Static418 {
 
 	@OriginalMember(owner = "client!nda", name = "e", descriptor = "(B)V")
 	public static void method7859() {
-		if (Static446.aClass390_6.aBoolean779) {
+		if (Static446.aSignlink6.aBoolean779) {
 			Static369.anInt4265 = 96;
 			return;
 		}

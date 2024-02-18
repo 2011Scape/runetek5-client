@@ -8,7 +8,7 @@ public final class Static281 {
 	public static int anInt4566;
 
 	@OriginalMember(owner = "client!iq", name = "a", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_60;
+	public static Js5 aJs560;
 
 	@OriginalMember(owner = "client!iq", name = "a", descriptor = "(ILclient!pea;)V")
 	public static void method4092(@OriginalArg(1) ParticleNode_Sub7 arg0) {

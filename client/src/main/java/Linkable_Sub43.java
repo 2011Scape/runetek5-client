@@ -75,7 +75,7 @@ public final class Linkable_Sub43 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!pw", name = "<init>", descriptor = "(ZLclient!vq;)V")
-	public Linkable_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class390 arg1) {
+	public Linkable_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) Signlink arg1) {
 		if (Static689.aString119.startsWith("win")) {
 			this.anInt7611 = 1;
 		} else if (Static689.aString119.startsWith("mac")) {

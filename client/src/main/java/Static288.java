@@ -8,13 +8,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static288 {
 
 	@OriginalMember(owner = "client!jb", name = "C", descriptor = "Lclient!gba;")
-	public static Class139 aClass139_2;
+	public static QuickChatPhraseTypeList aQuickChatPhraseTypeList2;
 
 	@OriginalMember(owner = "client!jb", name = "w", descriptor = "Z")
 	public static boolean aBoolean356 = false;
 
 	@OriginalMember(owner = "client!jb", name = "y", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_58 = new Class345(54, 6);
+	public static final ClientProt aClientProt58 = new ClientProt(54, 6);
 
 	@OriginalMember(owner = "client!jb", name = "t", descriptor = "F")
 	public static float aFloat83 = 0.0F;
@@ -42,7 +42,7 @@ public final class Static288 {
 			if (Static353.aFrame10 != null) {
 				local59 = Static353.aFrame10;
 			} else if (Static166.anApplet1 == null) {
-				local59 = Static149.anApplet_Sub1_1;
+				local59 = Static149.aGameShell;
 			} else {
 				local59 = Static166.anApplet1;
 			}

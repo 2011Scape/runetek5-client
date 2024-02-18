@@ -9,7 +9,7 @@ public final class Static356 {
 	public static int anInt5773;
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_149 = new Class225(2, 6);
+	public static final ServerProt ServerProt149 = new ServerProt(2, 6);
 
 	@OriginalMember(owner = "client!le", name = "h", descriptor = "J")
 	public static long aLong177 = 1L;
@@ -18,7 +18,7 @@ public final class Static356 {
 	public static int anInt5780 = -1;
 
 	@OriginalMember(owner = "client!le", name = "c", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_67 = new Class345(23, 1);
+	public static final ClientProt aClientProt67 = new ClientProt(23, 1);
 
 	@OriginalMember(owner = "client!le", name = "a", descriptor = "(IJ)V")
 	public static void method5196(@OriginalArg(1) long arg0) {

@@ -7,17 +7,17 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static93 {
 
 	@OriginalMember(owner = "client!cu", name = "Y", descriptor = "Lclient!vq;")
-	public static Class390 aClass390_1;
+	public static Signlink aSignlink1;
 
 	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_16;
+	public static Js5 aJs516;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!cu", name = "Q", descriptor = "Ljava/lang/Class;")
 	private static Class aClass6;
 
 	@OriginalMember(owner = "client!cu", name = "T", descriptor = "Lclient!ofa;")
-	public static final Linkable_Sub41 aClass2_Sub41_1 = new Linkable_Sub41(0, -1);
+	public static final ServerActiveProperties aClass2_Sub41_1 = new ServerActiveProperties(0, -1);
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIILclient!d;Lclient!ha;I)V")
 	public static void method1832(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Interface4 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5) {
@@ -33,7 +33,7 @@ public final class Static93 {
 			local57 = arg2 + arg0 / 2 - 20 - 18;
 			arg4.method7976(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.anInt5562].getRGB(), 0);
 			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4403 * 3, 30, Static718.aColorArray3[Static338.anInt5562].getRGB(), 0);
-			Static180.aClass14_3.method8828(-1, local38, Static32.aClass32_18.method877(Static51.anInt1052), local57 + 20, Static399.aColorArray2[Static338.anInt5562].getRGB());
+			Static180.aClass14_3.method8828(-1, local38, Static32.aLocalizedText18.method877(Static51.anInt1052), local57 + 20, Static399.aColorArray2[Static338.anInt5562].getRGB());
 			return;
 		}
 		@Pc(114) int local114 = Static164.anInt2809 - (int) ((float) arg5 / Static30.aFloat105);

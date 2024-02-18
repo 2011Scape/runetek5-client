@@ -5,15 +5,15 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static157 {
 
 	@OriginalMember(owner = "client!eu", name = "bb", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_61 = new Class225(46, 3);
+	public static final ServerProt ServerProt61 = new ServerProt(46, 3);
 
 	@OriginalMember(owner = "client!eu", name = "ic", descriptor = "I")
 	public static int anInt2777 = -1;
 
 	@OriginalMember(owner = "client!eu", name = "f", descriptor = "(I)V")
 	public static void method2560() {
-		Static264.aClass82_235.method2157();
-		Static123.aClass82_53.method2157();
+		Static264.aSoftLruHashTable235.method2157();
+		Static123.aSoftLruHashTable53.method2157();
 	}
 
 	@OriginalMember(owner = "client!eu", name = "a", descriptor = "(IIIILclient!nda;)V")

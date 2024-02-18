@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static719 {
 
 	@OriginalMember(owner = "client!wq", name = "V", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_5;
+	public static AudioChannel aAudioChannel5;
 
 	@OriginalMember(owner = "client!wq", name = "T", descriptor = "I")
 	public static int anInt10504;
@@ -19,8 +19,8 @@ public final class Static719 {
 			return;
 		}
 		if (Static273.anInt4403 < 10) {
-			if (!Static30.aClass330_74.method7598(Static30.aClass2_Sub2_Sub13_3.aString48)) {
-				Static273.anInt4403 = Static120.aClass330_19.method7593(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
+			if (!Static30.aJs574.method7598(Static30.aClass2_Sub2_Sub13_3.aString48)) {
+				Static273.anInt4403 = Static120.aJs519.method7593(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
 				return;
 			}
 			Static700.method9152();
@@ -96,10 +96,10 @@ public final class Static719 {
 				Static30.anInt5642 = 16;
 			}
 			Static30.method5067(arg0, Static30.anInt5641 >> 2 << 10, Static30.anInt5642 >> 1);
-			Static30.aClass246_3.method5583(1024, 256);
-			Static30.aClass363_3.method8365(256, 256);
-			Static30.aClass142_3.method3062(4096);
-			Static529.aClass161_1.method3420(256);
+			Static30.aMelTypeList3.method5583(1024, 256);
+			Static30.aMsiTypeList3.method8365(256, 256);
+			Static30.aLocTypeList3.method3062(4096);
+			Static529.aVarBitTypeList1.method3420(256);
 			Static273.anInt4403 = 20;
 		} else if (Static273.anInt4403 == 20) {
 			Static314.method4568(true);
@@ -108,11 +108,11 @@ public final class Static719 {
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 60) {
-			if (Static30.aClass330_74.method7587(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
-				if (!Static30.aClass330_74.method7598(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
+			if (Static30.aJs574.method7587(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
+				if (!Static30.aJs574.method7598(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
 					return;
 				}
-				Static30.aClass255_3 = Static284.method4103(Static174.aBoolean249, Static30.aClass330_74, Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements");
+				Static30.aClass255_3 = Static284.method4103(Static174.aBoolean249, Static30.aJs574, Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements");
 			} else {
 				Static30.aClass255_3 = new Class255(0);
 			}
@@ -167,7 +167,7 @@ public final class Static719 {
 	@OriginalMember(owner = "client!wq", name = "b", descriptor = "(III)I")
 	public static int method9118(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (arg1 != 16939) {
-			aClass56_5 = null;
+			aAudioChannel5 = null;
 		}
 		@Pc(18) int local18 = arg2 - 1 & arg0 >> 31;
 		return local18 + (arg0 + (arg0 >>> 31)) % arg2;

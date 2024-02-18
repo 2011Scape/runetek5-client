@@ -9,7 +9,7 @@ public final class Static699 {
 	public static int anInt10540;
 
 	@OriginalMember(owner = "client!wc", name = "D", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_252 = new Class225(0, 6);
+	public static final ServerProt ServerProt252 = new ServerProt(0, 6);
 
 	@OriginalMember(owner = "client!wc", name = "y", descriptor = "[F")
 	public static final float[] aFloatArray81 = new float[16];

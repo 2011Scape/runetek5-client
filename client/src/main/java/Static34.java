@@ -9,7 +9,7 @@ public final class Static34 {
 	public static Class304 aClass304_1;
 
 	@OriginalMember(owner = "client!bca", name = "f", descriptor = "[Lclient!st;")
-	public static Class23[] aClass23Array2;
+	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray2;
 
 	@OriginalMember(owner = "client!bca", name = "c", descriptor = "Z")
 	public static boolean aBoolean62 = false;

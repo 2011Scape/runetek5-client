@@ -14,7 +14,7 @@ public final class Static598 {
 	public static Class162 aClass162_5;
 
 	@OriginalMember(owner = "client!ss", name = "e", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_219 = new Class225(119, 6);
+	public static final ServerProt ServerProt219 = new ServerProt(119, 6);
 
 	@OriginalMember(owner = "client!ss", name = "i", descriptor = "S")
 	public static short aShort120 = 32767;

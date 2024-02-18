@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static6 {
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_1;
+	public static Js5 aJs51;
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "I")
 	public static int anInt94 = 0;
@@ -17,7 +17,7 @@ public final class Static6 {
 	public static int anInt95 = 0;
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(BILclient!aa;Lclient!st;IILclient!hda;I)V")
-	public static void method107(@OriginalArg(1) int arg0, @OriginalArg(2) Class1 arg1, @OriginalArg(3) Class23 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class158 arg5, @OriginalArg(7) int arg6) {
+	public static void method107(@OriginalArg(1) int arg0, @OriginalArg(2) Class1 arg1, @OriginalArg(3) SoftwareIndexedSprite arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class158 arg5, @OriginalArg(7) int arg6) {
 		if (arg2 == null) {
 			return;
 		}

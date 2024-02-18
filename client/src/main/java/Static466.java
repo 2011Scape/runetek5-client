@@ -11,7 +11,7 @@ public final class Static466 {
 	public static void method6322(@OriginalArg(0) ParticleNode_Sub2_Sub1_Sub2 arg0) {
 		if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub2) {
 			@Pc(5) ParticleNode_Sub2_Sub1_Sub2_Sub2 local5 = (ParticleNode_Sub2_Sub1_Sub2_Sub2) arg0;
-			if (local5.aClass268_1 != null) {
+			if (local5.aNpcType1 != null) {
 				Static651.method8517(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 != local5.aByte144, local5);
 			}
 		} else if (arg0 instanceof ParticleNode_Sub2_Sub1_Sub2_Sub1) {
@@ -389,10 +389,10 @@ public final class Static466 {
 							Static89.anIntArray169[local50] = local261;
 							@Pc(299) int local299 = local261 >> 8 & 0xFF;
 							@Pc(303) int local303 = local261 & 0xFF;
-							Static267.anIntArray329[local50] = Static93.aClass330_16.method7590("m" + local299 + "_" + local303);
-							Static266.anIntArray615[local50] = Static93.aClass330_16.method7590("l" + local299 + "_" + local303);
-							Static68.anIntArray316[local50] = Static93.aClass330_16.method7590("um" + local299 + "_" + local303);
-							Static298.anIntArray367[local50] = Static93.aClass330_16.method7590("ul" + local299 + "_" + local303);
+							Static267.anIntArray329[local50] = Static93.aJs516.method7590("m" + local299 + "_" + local303);
+							Static266.anIntArray615[local50] = Static93.aJs516.method7590("l" + local299 + "_" + local303);
+							Static68.anIntArray316[local50] = Static93.aJs516.method7590("um" + local299 + "_" + local303);
+							Static298.anIntArray367[local50] = Static93.aJs516.method7590("ul" + local299 + "_" + local303);
 							local50++;
 						}
 					}

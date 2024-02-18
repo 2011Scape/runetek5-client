@@ -26,17 +26,17 @@ public final class Static115 {
 			return;
 		}
 		if (arg0 != -1) {
-			@Pc(28) Class389 local28 = Static354.aClass267_1.method5973(arg0);
+			@Pc(28) CursorType local28 = Static354.aCursorTypeList1.method5973(arg0);
 			@Pc(32) Class407 local32 = local28.method8934();
 			if (local32 == null) {
 				arg0 = -1;
 			} else {
-				Static446.aClass390_6.method8995(local32.method9384(), local32.method9383(), Static434.aCanvas7, new Point(local28.anInt10303, local28.anInt10308), local32.method9378());
+				Static446.aSignlink6.method8995(local32.method9384(), local32.method9383(), Static434.aCanvas7, new Point(local28.anInt10303, local28.anInt10308), local32.method9378());
 				Static470.anInt7112 = arg0;
 			}
 		}
 		if (arg0 == -1 && Static470.anInt7112 != -1) {
-			Static446.aClass390_6.method8995(-1, (int[]) null, Static434.aCanvas7, new Point(), -1);
+			Static446.aSignlink6.method8995(-1, (int[]) null, Static434.aCanvas7, new Point(), -1);
 			Static470.anInt7112 = -1;
 		}
 	}

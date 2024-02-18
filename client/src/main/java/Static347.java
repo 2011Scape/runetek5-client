@@ -5,12 +5,12 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static347 {
 
 	@OriginalMember(owner = "client!ku", name = "n", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_146 = new Class225(47, 4);
+	public static final ServerProt ServerProt146 = new ServerProt(47, 4);
 
 	@OriginalMember(owner = "client!ku", name = "a", descriptor = "(IZ)V")
 	public static void method5094(@OriginalArg(0) int arg0) {
 		if (arg0 != -1 && Static132.aBooleanArray5[arg0]) {
-			Static666.aClass330_118.method7605(arg0);
+			Static666.aJs5118.method7605(arg0);
 			Static453.aClass158ArrayArray2[arg0] = null;
 			Static148.aClass158ArrayArray1[arg0] = null;
 			Static132.aBooleanArray5[arg0] = false;

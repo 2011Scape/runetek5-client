@@ -26,7 +26,7 @@ public final class Linkable_Sub16 extends Linkable {
 	public int anInt2191;
 
 	@OriginalMember(owner = "client!dha", name = "p", descriptor = "Lclient!sq;")
-	public Linkable_Sub49_Sub1 aClass2_Sub49_Sub1_1;
+	public PcmSound aClass2_Sub49_Sub1_1;
 
 	@OriginalMember(owner = "client!dha", name = "r", descriptor = "I")
 	public int anInt2193;
@@ -47,7 +47,7 @@ public final class Linkable_Sub16 extends Linkable {
 	public Class269 aClass269_1;
 
 	@OriginalMember(owner = "client!dha", name = "G", descriptor = "Lclient!haa;")
-	public Linkable_Sub6_Sub2 aClass2_Sub6_Sub2_1;
+	public SoundPcmStream aClass2_Sub6_Sub2_1;
 
 	@OriginalMember(owner = "client!dha", name = "k", descriptor = "I")
 	public int anInt2199;

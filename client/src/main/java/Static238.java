@@ -17,7 +17,7 @@ public final class Static238 {
 	public static final int[] anIntArray307 = new int[4];
 
 	@OriginalMember(owner = "client!hh", name = "a", descriptor = "(IILclient!sb;)Lclient!ve;")
-	public static Class381 method3468(@OriginalArg(1) int arg0, @OriginalArg(2) Class330 arg1) {
+	public static Class381 method3468(@OriginalArg(1) int arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(8) byte[] local8 = arg1.method7589(arg0);
 		return local8 == null ? null : new Class381(local8);
 	}

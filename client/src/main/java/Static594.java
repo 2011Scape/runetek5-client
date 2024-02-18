@@ -7,7 +7,7 @@ public final class Static594 {
 	public static int anInt8775;
 
 	@OriginalMember(owner = "client!sn", name = "g", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_193 = new Class82(128, 4);
+	public static final SoftLruHashTable aSoftLruHashTable193 = new SoftLruHashTable(128, 4);
 
 	@OriginalMember(owner = "client!sn", name = "h", descriptor = "I")
 	public static int anInt8776 = 0;

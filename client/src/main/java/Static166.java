@@ -9,13 +9,13 @@ public final class Static166 {
 	public static Applet anApplet1;
 
 	@OriginalMember(owner = "client!fca", name = "b", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_63 = new Class225(41, 7);
+	public static final ServerProt ServerProt63 = new ServerProt(41, 7);
 
 	@OriginalMember(owner = "client!fca", name = "h", descriptor = "[I")
 	public static final int[] anIntArray247 = new int[1];
 
 	@OriginalMember(owner = "client!fca", name = "g", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_59 = new Class82(10);
+	public static final SoftLruHashTable aSoftLruHashTable59 = new SoftLruHashTable(10);
 
 	@OriginalMember(owner = "client!fca", name = "n", descriptor = "Lclient!kda;")
 	public static final Class204 aClass204_6 = new Class204(4, 1);

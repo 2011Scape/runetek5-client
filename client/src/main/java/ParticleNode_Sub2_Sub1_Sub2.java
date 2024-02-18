@@ -76,7 +76,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 	public int anInt10761;
 
 	@OriginalMember(owner = "client!cg", name = "xc", descriptor = "Lclient!hv;")
-	protected ParticleNode_Sub5 aClass8_Sub5_8;
+	protected ParticleSystem aClass8_Sub5_8;
 
 	@OriginalMember(owner = "client!cg", name = "zc", descriptor = "[I")
 	public int[] anIntArray869;
@@ -278,7 +278,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 	}
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(IILclient!ha;Lclient!pda;III)V")
-	protected final void method9297(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) Class289 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	protected final void method9297(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) BasType arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		for (@Pc(13) int local13 = 0; local13 < this.aClass199Array3.length; local13++) {
 			@Pc(16) byte local16 = 0;
 			if (local13 == 0) {
@@ -294,7 +294,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 			if (local50.anInt4930 == -1 || local50.aClass152_7.method9106()) {
 				this.aClass114Array3[local13 + 1] = null;
 			} else {
-				@Pc(76) Class227 local76 = Static23.aClass128_1.method2694(local50.anInt4930);
+				@Pc(76) SpotAnimType local76 = Static23.aSpotAnimTypeList1.method2694(local50.anInt4930);
 				@Pc(95) boolean local95 = local76.aByte96 == 3 && (arg5 != 0 || arg1 != 0);
 				@Pc(97) int local97 = arg0;
 				if (local95) {
@@ -376,7 +376,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(IIZ)V")
 	public final void method9298(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(15) Class289 local15 = this.method9317();
+		@Pc(15) BasType local15 = this.method9317();
 		if (arg1 || local15.anInt7231 != 0 || this.anInt10757 != 0) {
 			this.anInt10756 = arg0 & 0x3FFF;
 			this.aClass126_7.method2675((byte) 83, this.anInt10756);
@@ -385,7 +385,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 
 	@OriginalMember(owner = "client!cg", name = "f", descriptor = "(B)I")
 	public int method9299() {
-		@Pc(17) Class289 local17 = this.method9317();
+		@Pc(17) BasType local17 = this.method9317();
 		@Pc(31) int local31;
 		if (local17.anInt7267 != -1) {
 			local31 = local17.anInt7267;
@@ -429,7 +429,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 		@Pc(50) int local50 = -1;
 		@Pc(52) int local52 = 0;
 		if (arg6 >= 0) {
-			@Pc(59) Class285 local59 = Static561.aClass220_2.method5186(arg6);
+			@Pc(59) HitmarkType local59 = Static561.aHitmarkTypeList2.method5186(arg6);
 			local50 = local59.anInt7195;
 			local52 = local59.anInt7192;
 		}
@@ -493,7 +493,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 
 	@OriginalMember(owner = "client!cg", name = "e", descriptor = "(I)I")
 	public final int method9303() {
-		@Pc(9) Class289 local9 = this.method9317();
+		@Pc(9) BasType local9 = this.method9317();
 		@Pc(13) int local13 = this.aClass126_7.anInt2889;
 		@Pc(30) boolean local30;
 		if (local9.anInt7231 == 0) {
@@ -539,7 +539,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(BI)V")
 	public final void method9305(@OriginalArg(1) int arg0) {
-		@Pc(15) Class289 local15 = this.method9317();
+		@Pc(15) BasType local15 = this.method9317();
 		if (local15.anInt7231 == 0 && this.anInt10757 == 0) {
 			return;
 		}
@@ -586,7 +586,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 				this.anIntArray877[local24] = -1;
 			}
 		}
-		@Pc(43) Class289 local43 = this.method9317();
+		@Pc(43) BasType local43 = this.method9317();
 		@Pc(45) int local45 = 256;
 		if (local43.anIntArray585 != null && local43.anIntArray585[arg0] > 0) {
 			local45 = local43.anIntArray585[arg0];
@@ -639,11 +639,11 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 		@Pc(16) Class199 local16 = this.aClass199Array3[arg0];
 		@Pc(19) int local19 = local16.anInt4930;
 		if (arg5 != -1 && local19 != -1) {
-			@Pc(38) Class227 local38;
+			@Pc(38) SpotAnimType local38;
 			if (local19 == arg5) {
-				local38 = Static23.aClass128_1.method2694(arg5);
+				local38 = Static23.aSpotAnimTypeList1.method2694(arg5);
 				if (local38.aBoolean448 && local38.anInt5842 != -1) {
-					@Pc(54) Class69 local54 = Static25.aClass50_1.method1162(local38.anInt5842);
+					@Pc(54) SeqType local54 = Static25.aSeqTypeList1.method1162(local38.anInt5842);
 					@Pc(57) int local57 = local54.anInt1646;
 					if (local57 == 0) {
 						return;
@@ -654,11 +654,11 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 					}
 				}
 			} else {
-				local38 = Static23.aClass128_1.method2694(arg5);
-				@Pc(86) Class227 local86 = Static23.aClass128_1.method2694(local19);
+				local38 = Static23.aSpotAnimTypeList1.method2694(arg5);
+				@Pc(86) SpotAnimType local86 = Static23.aSpotAnimTypeList1.method2694(local19);
 				if (local38.anInt5842 != -1 && local86.anInt5842 != -1) {
-					@Pc(103) Class69 local103 = Static25.aClass50_1.method1162(local38.anInt5842);
-					@Pc(109) Class69 local109 = Static25.aClass50_1.method1162(local86.anInt5842);
+					@Pc(103) SeqType local103 = Static25.aSeqTypeList1.method1162(local38.anInt5842);
+					@Pc(109) SeqType local109 = Static25.aSeqTypeList1.method1162(local86.anInt5842);
 					if (local103.anInt1649 < local109.anInt1649) {
 						return;
 					}
@@ -666,7 +666,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 			}
 		}
 		@Pc(118) byte local118 = 0;
-		if (arg5 != -1 && !Static23.aClass128_1.method2694(arg5).aBoolean448) {
+		if (arg5 != -1 && !Static23.aSpotAnimTypeList1.method2694(arg5).aBoolean448) {
 			local118 = 2;
 		}
 		local16.anInt4929 = arg1;
@@ -676,7 +676,7 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 		if (arg5 != -1 && arg2) {
 			local118 = 1;
 		}
-		local16.aClass152_7.method9092(arg5 == -1 ? -1 : Static23.aClass128_1.method2694(arg5).anInt5842, arg3 & 0xFFFF, local118, false);
+		local16.aClass152_7.method9092(arg5 == -1 ? -1 : Static23.aSpotAnimTypeList1.method2694(arg5).anInt5842, arg3 & 0xFFFF, local118, false);
 	}
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(II)V")
@@ -798,9 +798,9 @@ public abstract class ParticleNode_Sub2_Sub1_Sub2 extends ParticleNode_Sub2_Sub1
 	}
 
 	@OriginalMember(owner = "client!cg", name = "i", descriptor = "(B)Lclient!pda;")
-	public final Class289 method9317() {
+	public final BasType method9317() {
 		@Pc(13) int local13 = this.method9320(0);
-		return local13 == -1 ? Static636.aClass289_1 : Static574.aClass310_2.method7118(local13);
+		return local13 == -1 ? Static636.aBasType1 : Static574.aBasTypeList2.method7118(local13);
 	}
 
 	@OriginalMember(owner = "client!cg", name = "b", descriptor = "(B)Z")

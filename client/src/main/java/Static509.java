@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static509 {
 
 	@OriginalMember(owner = "client!qa", name = "q", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_96;
+	public static Js5 aJs596;
 
 	@OriginalMember(owner = "client!qa", name = "n", descriptor = "I")
 	public static final int anInt7634 = 4;
@@ -59,8 +59,8 @@ public final class Static509 {
 		if (!Static95.aBoolean184 || Static551.aLinkedList54 == null) {
 			return;
 		}
-		for (@Pc(197) Linkable_Sub37 local197 = (Linkable_Sub37) Static551.aLinkedList54.head(); local197 != null; local197 = (Linkable_Sub37) Static551.aLinkedList54.next()) {
-			@Pc(206) Class105 local206 = Static30.aClass246_3.method5584(local197.aClass2_Sub20_1.anInt3131);
+		for (@Pc(197) MapElementBounds local197 = (MapElementBounds) Static551.aLinkedList54.head(); local197 != null; local197 = (MapElementBounds) Static551.aLinkedList54.next()) {
+			@Pc(206) MelType local206 = Static30.aMelTypeList3.method5584(local197.aClass2_Sub20_1.anInt3131);
 			if (local197.method5553(arg0, arg1)) {
 				if (local206.aStringArray9 != null) {
 					if (local206.aStringArray9[4] != null) {

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static12 {
 
 	@OriginalMember(owner = "client!ah", name = "i", descriptor = "Lclient!st;")
-	public static Class23 aClass23_26;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite26;
 
 	@OriginalMember(owner = "client!ah", name = "e", descriptor = "Lclient!st;")
-	public static Class23 aClass23_27;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite27;
 
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "I")
 	public static int anInt5741;
@@ -20,7 +20,7 @@ public final class Static12 {
 	public static final Class155 aClass155_24 = new Class155(13);
 
 	@OriginalMember(owner = "client!ah", name = "d", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_147 = new Class225(51, 0);
+	public static final ServerProt ServerProt147 = new ServerProt(51, 0);
 
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Ljava/lang/String;IZ)I")
 	public static int method5162(@OriginalArg(0) String arg0) {

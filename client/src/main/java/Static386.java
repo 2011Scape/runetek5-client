@@ -8,10 +8,10 @@ public final class Static386 {
 	public static int anInt6062;
 
 	@OriginalMember(owner = "client!mba", name = "E", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_80;
+	public static Js5 aJs580;
 
 	@OriginalMember(owner = "client!mba", name = "F", descriptor = "Lclient!bo;")
-	public static Class49 aClass49_2;
+	public static ParamTypeList aParamTypeList2;
 
 	@OriginalMember(owner = "client!mba", name = "a", descriptor = "(II)Z")
 	public static boolean method5436(@OriginalArg(0) int arg0) {

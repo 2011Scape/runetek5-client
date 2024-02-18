@@ -11,11 +11,11 @@ public final class Static257 {
 	public static final boolean[] aBooleanArray7 = new boolean[32];
 
 	@OriginalMember(owner = "client!hv", name = "b", descriptor = "(IZ)Lclient!hv;")
-	public static ParticleNode_Sub5 method3654(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
+	public static ParticleSystem method3654(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
 		if (Static349.anInt5693 == Static295.anInt4781) {
-			return new ParticleNode_Sub5(arg0, arg1);
+			return new ParticleSystem(arg0, arg1);
 		} else {
-			@Pc(6) ParticleNode_Sub5 local6 = Static81.aClass8_Sub5Array1[Static295.anInt4781];
+			@Pc(6) ParticleSystem local6 = Static81.aClass8_Sub5Array1[Static295.anInt4781];
 			Static295.anInt4781 = Static295.anInt4781 + 1 & Static190.anIntArray265[Static507.anInt7618];
 			local6.method3657(arg0, arg1);
 			return local6;

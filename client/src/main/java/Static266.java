@@ -10,10 +10,10 @@ public final class Static266 {
 	public static final byte[][] aByteArrayArray27 = new byte[1000][];
 
 	@OriginalMember(owner = "client!ifa", name = "g", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_191 = new Class225(138, -1);
+	public static final ServerProt ServerProt191 = new ServerProt(138, -1);
 
 	@OriginalMember(owner = "client!ifa", name = "i", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_192 = new Class225(109, 10);
+	public static final ServerProt ServerProt192 = new ServerProt(109, 10);
 
 	@OriginalMember(owner = "client!ifa", name = "h", descriptor = "Z")
 	public static boolean aBoolean583 = true;
@@ -117,10 +117,10 @@ public final class Static266 {
 						}
 					}
 					Static89.anIntArray169[local22] = local113;
-					Static267.anIntArray329[local22] = Static93.aClass330_16.method7590("m" + local107 + "_" + local110);
-					anIntArray615[local22] = Static93.aClass330_16.method7590("l" + local107 + "_" + local110);
-					Static68.anIntArray316[local22] = Static93.aClass330_16.method7590("um" + local107 + "_" + local110);
-					Static298.anIntArray367[local22] = Static93.aClass330_16.method7590("ul" + local107 + "_" + local110);
+					Static267.anIntArray329[local22] = Static93.aJs516.method7590("m" + local107 + "_" + local110);
+					anIntArray615[local22] = Static93.aJs516.method7590("l" + local107 + "_" + local110);
+					Static68.anIntArray316[local22] = Static93.aJs516.method7590("um" + local107 + "_" + local110);
+					Static298.anIntArray367[local22] = Static93.aJs516.method7590("ul" + local107 + "_" + local110);
 					local22++;
 				}
 			}
@@ -132,7 +132,7 @@ public final class Static266 {
 
 	@OriginalMember(owner = "client!ifa", name = "a", descriptor = "(B)V")
 	public static void method6777() {
-		@Pc(5) Class83 local5 = null;
+		@Pc(5) FileOnDisk local5 = null;
 		try {
 			local5 = Static689.method8983("2");
 			@Pc(25) Packet local25 = new Packet(Static319.anInt5078 * 6 + 3);

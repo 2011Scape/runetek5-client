@@ -33,7 +33,7 @@ public final class Class249 {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(B)Lclient!ok;")
-	public Class278 method5590() {
+	public ParticleEffectorType method5590() {
 		return Static66.method1487(this.anInt6248);
 	}
 

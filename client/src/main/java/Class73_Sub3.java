@@ -50,8 +50,8 @@ public final class Class73_Sub3 extends Class73 {
 	@OriginalMember(owner = "client!qr", name = "f", descriptor = "(I)V")
 	@Override
 	public void method7127(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		@Pc(9) float local9 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		@Pc(15) float local15 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat153;
 		@Pc(21) float local21 = this.aFloat157;
 		@Pc(24) float local24 = this.aFloat160;
@@ -154,8 +154,8 @@ public final class Class73_Sub3 extends Class73 {
 	@OriginalMember(owner = "client!qr", name = "b", descriptor = "(I)V")
 	@Override
 	public void method7139(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		@Pc(9) float local9 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		@Pc(15) float local15 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat153;
 		@Pc(21) float local21 = this.aFloat157;
 		@Pc(24) float local24 = this.aFloat160;
@@ -201,12 +201,12 @@ public final class Class73_Sub3 extends Class73 {
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(IIIIII)V")
 	@Override
 	public void method7135(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(9) float local9 = Applet_Sub1.aFloatArray14[arg3 & 0x3FFF];
-		@Pc(15) float local15 = Applet_Sub1.aFloatArray15[arg3 & 0x3FFF];
-		@Pc(21) float local21 = Applet_Sub1.aFloatArray14[arg4 & 0x3FFF];
-		@Pc(27) float local27 = Applet_Sub1.aFloatArray15[arg4 & 0x3FFF];
-		@Pc(33) float local33 = Applet_Sub1.aFloatArray14[arg5 & 0x3FFF];
-		@Pc(39) float local39 = Applet_Sub1.aFloatArray15[arg5 & 0x3FFF];
+		@Pc(9) float local9 = GameShell.aFloatArray14[arg3 & 0x3FFF];
+		@Pc(15) float local15 = GameShell.aFloatArray15[arg3 & 0x3FFF];
+		@Pc(21) float local21 = GameShell.aFloatArray14[arg4 & 0x3FFF];
+		@Pc(27) float local27 = GameShell.aFloatArray15[arg4 & 0x3FFF];
+		@Pc(33) float local33 = GameShell.aFloatArray14[arg5 & 0x3FFF];
+		@Pc(39) float local39 = GameShell.aFloatArray15[arg5 & 0x3FFF];
 		@Pc(43) float local43 = local33 * local15;
 		@Pc(47) float local47 = local15 * local39;
 		this.aFloat151 = -local15;
@@ -231,8 +231,8 @@ public final class Class73_Sub3 extends Class73 {
 			this.aFloat161 = this.aFloat155 = this.aFloat157 = this.aFloat151 = this.aFloat160 = this.aFloat150 = 0.0F;
 			this.aFloat156 = (float) arg3;
 		} else {
-			@Pc(10) float local10 = Applet_Sub1.aFloatArray14[arg2 & 0x3FFF];
-			@Pc(16) float local16 = Applet_Sub1.aFloatArray15[arg2 & 0x3FFF];
+			@Pc(10) float local10 = GameShell.aFloatArray14[arg2 & 0x3FFF];
+			@Pc(16) float local16 = GameShell.aFloatArray15[arg2 & 0x3FFF];
 			this.aFloat156 = local10 * (float) arg3;
 			this.aFloat153 = (float) arg0 * local10;
 			this.aFloat161 = (float) arg0 * local16;
@@ -274,8 +274,8 @@ public final class Class73_Sub3 extends Class73 {
 	@Override
 	public void method7132(@OriginalArg(0) int arg0) {
 		this.aFloat154 = 1.0F;
-		this.aFloat153 = this.aFloat156 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		this.aFloat161 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		this.aFloat153 = this.aFloat156 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		this.aFloat161 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		this.aFloat160 = this.aFloat152 = this.aFloat150 = this.aFloat158 = this.aFloat155 = this.aFloat151 = this.aFloat159 = 0.0F;
 		this.aFloat157 = -this.aFloat161;
 	}
@@ -284,8 +284,8 @@ public final class Class73_Sub3 extends Class73 {
 	@Override
 	public void method7136(@OriginalArg(0) int arg0) {
 		this.aFloat153 = 1.0F;
-		this.aFloat156 = this.aFloat154 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		this.aFloat151 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		this.aFloat156 = this.aFloat154 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		this.aFloat151 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		this.aFloat150 = -this.aFloat151;
 		this.aFloat157 = this.aFloat160 = this.aFloat152 = this.aFloat161 = this.aFloat158 = this.aFloat155 = this.aFloat159 = 0.0F;
 	}
@@ -293,8 +293,8 @@ public final class Class73_Sub3 extends Class73 {
 	@OriginalMember(owner = "client!qr", name = "c", descriptor = "(I)V")
 	@Override
 	public void method7130(@OriginalArg(0) int arg0) {
-		@Pc(9) float local9 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		@Pc(15) float local15 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		@Pc(9) float local9 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		@Pc(15) float local15 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		@Pc(18) float local18 = this.aFloat161;
 		@Pc(21) float local21 = this.aFloat156;
 		@Pc(24) float local24 = this.aFloat150;
@@ -338,8 +338,8 @@ public final class Class73_Sub3 extends Class73 {
 	@Override
 	public void method7131(@OriginalArg(0) int arg0) {
 		this.aFloat156 = 1.0F;
-		this.aFloat153 = this.aFloat154 = Applet_Sub1.aFloatArray14[arg0 & 0x3FFF];
-		this.aFloat160 = Applet_Sub1.aFloatArray15[arg0 & 0x3FFF];
+		this.aFloat153 = this.aFloat154 = GameShell.aFloatArray14[arg0 & 0x3FFF];
+		this.aFloat160 = GameShell.aFloatArray15[arg0 & 0x3FFF];
 		this.aFloat157 = this.aFloat152 = this.aFloat161 = this.aFloat150 = this.aFloat158 = this.aFloat151 = this.aFloat159 = 0.0F;
 		this.aFloat155 = -this.aFloat160;
 	}

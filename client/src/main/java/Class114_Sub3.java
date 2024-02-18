@@ -283,7 +283,7 @@ public final class Class114_Sub3 extends Class114 {
 		@Pc(335) int local335;
 		for (@Pc(147) int local147 = 0; local147 < this.anInt8482; local147++) {
 			local152 = local119[local147];
-			@Pc(154) Class118 local154 = null;
+			@Pc(154) Material local154 = null;
 			@Pc(156) int local156 = 0;
 			@Pc(158) byte local158 = 0;
 			@Pc(160) byte local160 = 0;
@@ -298,7 +298,7 @@ public final class Class114_Sub3 extends Class114 {
 							local167 = true;
 						}
 						if (local184.anInt9693 != -1) {
-							@Pc(199) Class118 local199 = local47.method6817(local184.anInt9693);
+							@Pc(199) Material local199 = local47.method6817(local184.anInt9693);
 							if (local199.anInt2796 == 2) {
 								this.aBoolean647 = true;
 							}
@@ -358,7 +358,7 @@ public final class Class114_Sub3 extends Class114 {
 		@Pc(510) boolean local510 = false;
 		@Pc(517) int local517;
 		@Pc(539) short local539;
-		@Pc(555) Class118 local555;
+		@Pc(555) Material local555;
 		@Pc(616) int local616;
 		for (@Pc(512) int local512 = 0; local512 < this.anInt8482; local512++) {
 			local517 = local119[local512];
@@ -4180,7 +4180,7 @@ public final class Class114_Sub3 extends Class114 {
 			return;
 		}
 		if (!this.aBoolean651 && arg1 >= 0) {
-			@Pc(20) Class118 local20 = this.aClass19_Sub2_9.anInterface4_10.method6817(arg1 & 0xFFFF);
+			@Pc(20) Material local20 = this.aClass19_Sub2_9.anInterface4_10.method6817(arg1 & 0xFFFF);
 			if (local20.aByte54 != 0 || local20.aByte52 != 0) {
 				this.aBoolean651 = true;
 			}
@@ -4224,7 +4224,7 @@ public final class Class114_Sub3 extends Class114 {
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(ISI)I")
 	private int method7531(@OriginalArg(0) int arg0, @OriginalArg(1) short arg1, @OriginalArg(2) int arg2) {
 		@Pc(6) int local6 = Static154.anIntArray237[this.method7534(arg0, arg2)];
-		@Pc(15) Class118 local15 = this.aClass19_Sub2_9.anInterface4_10.method6817(arg1 & 0xFFFF);
+		@Pc(15) Material local15 = this.aClass19_Sub2_9.anInterface4_10.method6817(arg1 & 0xFFFF);
 		@Pc(20) int local20 = local15.aByte58 & 0xFF;
 		@Pc(26) int local26;
 		@Pc(38) int local38;

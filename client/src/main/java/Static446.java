@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static446 {
 
 	@OriginalMember(owner = "client!oaa", name = "b", descriptor = "Lclient!vq;")
-	public static Class390 aClass390_6;
+	public static Signlink aSignlink6;
 
 	@OriginalMember(owner = "client!oaa", name = "p", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray9;
@@ -19,7 +19,7 @@ public final class Static446 {
 	public static final Class355 aClass355_5 = new Class355("LIVE", "", "", 0);
 
 	@OriginalMember(owner = "client!oaa", name = "n", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_170 = new Class225(87, -2);
+	public static final ServerProt ServerProt170 = new ServerProt(87, -2);
 
 	@OriginalMember(owner = "client!oaa", name = "g", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray35 = new String[100];

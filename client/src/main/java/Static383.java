@@ -8,7 +8,7 @@ public final class Static383 {
 	public static int anInt6001 = -1;
 
 	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_155 = new Class225(50, -2);
+	public static final ServerProt ServerProt155 = new ServerProt(50, -2);
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!rka;I)Z")
 	public static boolean method5379(@OriginalArg(0) int arg0, @OriginalArg(1) PacketBit arg1) {
@@ -34,8 +34,8 @@ public final class Static383 {
 			@Pc(91) Class350 local91 = Static246.aClass350Array1[arg0];
 			@Pc(99) ParticleNode_Sub2_Sub1_Sub2_Sub1 local99 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0] = new ParticleNode_Sub2_Sub1_Sub2_Sub1();
 			local99.anInt10740 = arg0;
-			if (Static462.A_PACKET_ARRAY_1[arg0] != null) {
-				local99.method1420(Static462.A_PACKET_ARRAY_1[arg0]);
+			if (Static462.aPacketArray1[arg0] != null) {
+				local99.method1420(Static462.aPacketArray1[arg0]);
 			}
 			local99.method9298(local91.anInt9326, true);
 			local99.anInt10722 = local91.anInt9322;

@@ -8,7 +8,7 @@ public final class Static109 {
 	public static int anInt2178;
 
 	@OriginalMember(owner = "client!dh", name = "j", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_45 = new Class225(33, -2);
+	public static final ServerProt ServerProt45 = new ServerProt(33, -2);
 
 	@OriginalMember(owner = "client!dh", name = "f", descriptor = "Lclient!hda;")
 	public static Class158 aClass158_3 = null;
@@ -62,14 +62,14 @@ public final class Static109 {
 	}
 
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(ZIII)Lclient!sb;")
-	public static Class330 method2069(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) Class9 local5 = null;
-		if (Static172.aClass243_4 != null) {
-			local5 = new Class9(arg1, Static172.aClass243_4, Static208.aClass243Array1[arg1], 1000000);
+	public static Js5 method2069(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(5) Cache local5 = null;
+		if (Static172.aBufferedFile4 != null) {
+			local5 = new Cache(arg1, Static172.aBufferedFile4, Static208.aBufferedFileArray1[arg1], 1000000);
 		}
-		Static226.aClass47_Sub1Array8[arg1] = Static228.aClass262_1.method5801(local5, arg1, Static276.aClass9_1);
-		Static226.aClass47_Sub1Array8[arg1].method6654();
-		return new Class330(Static226.aClass47_Sub1Array8[arg1], arg0, arg2);
+		Static226.aJs5CachedResourceProviderArray8[arg1] = Static228.aJs5MasterIndex1.method5801(local5, arg1, Static276.aCache1);
+		Static226.aJs5CachedResourceProviderArray8[arg1].method6654();
+		return new Js5(Static226.aJs5CachedResourceProviderArray8[arg1], arg0, arg2);
 	}
 
 	@OriginalMember(owner = "client!dh", name = "b", descriptor = "(II)Z")

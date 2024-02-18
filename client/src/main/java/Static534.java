@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static534 {
 
 	@OriginalMember(owner = "client!qq", name = "g", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_104;
+	public static Js5 aJs5104;
 
 	@OriginalMember(owner = "client!qq", name = "c", descriptor = "I")
 	public static int anInt8111;
@@ -59,22 +59,22 @@ public final class Static534 {
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(IB)V")
 	public static void method7121() {
-		Static473.aClass82_157.method2147(50);
-		Static312.aClass82_106.method2147(50);
-		Static449.aClass82_146.method2147(50);
-		Static444.aClass82_145.method2147(50);
+		Static473.aSoftLruHashTable157.method2147(50);
+		Static312.aSoftLruHashTable106.method2147(50);
+		Static449.aSoftLruHashTable146.method2147(50);
+		Static444.aSoftLruHashTable145.method2147(50);
 	}
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(II)V")
 	public static void method7122(@OriginalArg(1) int arg0) {
 		Static294.anInt4766 = arg0;
-		@Pc(7) Class82 local7 = Static54.aClass82_25;
-		synchronized (Static54.aClass82_25) {
-			Static54.aClass82_25.method2157();
+		@Pc(7) SoftLruHashTable local7 = Static54.aSoftLruHashTable25;
+		synchronized (Static54.aSoftLruHashTable25) {
+			Static54.aSoftLruHashTable25.method2157();
 		}
-		local7 = Static580.aClass82_186;
-		synchronized (Static580.aClass82_186) {
-			Static580.aClass82_186.method2157();
+		local7 = Static580.aSoftLruHashTable186;
+		synchronized (Static580.aSoftLruHashTable186) {
+			Static580.aSoftLruHashTable186.method2157();
 		}
 	}
 }

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static561 {
 
 	@OriginalMember(owner = "client!rla", name = "e", descriptor = "Lclient!ld;")
-	public static Class220 aClass220_2;
+	public static HitmarkTypeList aHitmarkTypeList2;
 
 	@OriginalMember(owner = "client!rla", name = "f", descriptor = "Lclient!st;")
-	public static Class23 aClass23_34;
+	public static SoftwareIndexedSprite aSoftwareIndexedSprite34;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!rla", name = "o", descriptor = "Ljava/lang/Class;")
@@ -47,7 +47,7 @@ public final class Static561 {
 
 	@OriginalMember(owner = "client!rla", name = "b", descriptor = "(I)V")
 	public static void method7436() {
-		Static289.aClass82_100.method2157();
+		Static289.aSoftLruHashTable100.method2157();
 	}
 
 	@OriginalMember(owner = "client!rla", name = "a", descriptor = "(IIIIII)V")

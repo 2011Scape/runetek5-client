@@ -9,7 +9,7 @@ public final class Static392 {
 	public static int anInt6142;
 
 	@OriginalMember(owner = "client!mf", name = "c", descriptor = "Lclient!ul;")
-	public static Class377 aClass377_4 = null;
+	public static ModeGame aModeGame4 = null;
 
 	@OriginalMember(owner = "client!mf", name = "k", descriptor = "I")
 	public static int anInt6143 = 0;

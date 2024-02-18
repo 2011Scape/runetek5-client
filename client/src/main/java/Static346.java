@@ -17,7 +17,7 @@ public final class Static346 {
 	public static int[] anIntArray420 = new int[4];
 
 	@OriginalMember(owner = "client!kt", name = "S", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_145 = new Class225(124, 1);
+	public static final ServerProt ServerProt145 = new ServerProt(124, 1);
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(BB)C")
 	public static char method5084(@OriginalArg(0) byte arg0) {
@@ -53,10 +53,10 @@ public final class Static346 {
 				if (Static400.aBoolean622 && Static321.method4622(local33)) {
 					Static488.method6522();
 				}
-				if (local43.aClass268_1.method5984()) {
+				if (local43.aNpcType1.method5984()) {
 					Static58.method1259(local43);
 				}
-				local43.method9328((Class268) null);
+				local43.method9328((NpcType) null);
 				local40.unlink();
 				local23 = true;
 			}

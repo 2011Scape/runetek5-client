@@ -25,7 +25,7 @@ public final class Static65 {
 			@Pc(19) Canvas local19 = new Canvas();
 			local19.setSize(100, 100);
 			local7 = true;
-			local5 = Static255.method3612((Class330) null, (Interface4) null, 0, local19, 0);
+			local5 = Static255.method3612((Js5) null, (Interface4) null, 0, local19, 0);
 		}
 		@Pc(36) long local36 = Static588.method7715();
 		for (@Pc(38) int local38 = 0; local38 < 10000; local38++) {

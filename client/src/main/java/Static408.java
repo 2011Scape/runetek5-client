@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static408 {
 
 	@OriginalMember(owner = "client!ms", name = "d", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_162 = new Class225(102, -1);
+	public static final ServerProt ServerProt162 = new ServerProt(102, -1);
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(I)V")
 	public static void method5632() {
@@ -12,9 +12,9 @@ public final class Static408 {
 		Static524.aClass153_3.method3272();
 		Static524.aClass153_3.anInt3646 = 0;
 		Static249.anInt4008 = 0;
-		Static524.aClass153_3.aClass225_91 = null;
-		Static524.aClass153_3.aClass225_94 = null;
-		Static524.aClass153_3.aClass225_92 = null;
+		Static524.aClass153_3.aServerProt_91 = null;
+		Static524.aClass153_3.aServerProt_94 = null;
+		Static524.aClass153_3.aServerProt_92 = null;
 		Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 		Static102.method2022();
 		Static251.anInt4036 = 0;
@@ -27,7 +27,7 @@ public final class Static408 {
 	}
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(ZLclient!el;)Z")
-	public static boolean method5634(@OriginalArg(1) Class105 arg0) {
+	public static boolean method5634(@OriginalArg(1) MelType arg0) {
 		if (arg0 == null) {
 			return false;
 		} else if (!arg0.aBoolean214) {

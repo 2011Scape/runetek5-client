@@ -3,15 +3,15 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!fia")
-public final class Class57_Sub6 extends Class57 {
+public final class Class57_Sub6 extends Preference {
 
 	@OriginalMember(owner = "client!fia", name = "<init>", descriptor = "(Lclient!kv;)V")
-	public Class57_Sub6(@OriginalArg(0) Linkable_Sub34 arg0) {
+	public Class57_Sub6(@OriginalArg(0) Preferences arg0) {
 		super(arg0);
 	}
 
 	@OriginalMember(owner = "client!fia", name = "<init>", descriptor = "(ILclient!kv;)V")
-	public Class57_Sub6(@OriginalArg(0) int arg0, @OriginalArg(1) Linkable_Sub34 arg1) {
+	public Class57_Sub6(@OriginalArg(0) int arg0, @OriginalArg(1) Preferences arg1) {
 		super(arg0, arg1);
 	}
 
@@ -31,7 +31,7 @@ public final class Class57_Sub6 extends Class57 {
 	public int method8352(@OriginalArg(0) int arg0) {
 		if (super.aClass2_Sub34_34.method5111()) {
 			return 3;
-		} else if (super.aClass2_Sub34_34.method5105() == Static673.aClass377_8) {
+		} else if (super.aClass2_Sub34_34.method5105() == Static673.aModeGame8) {
 			return 1;
 		} else {
 			return 3;
@@ -43,7 +43,7 @@ public final class Class57_Sub6 extends Class57 {
 		if (super.aClass2_Sub34_34.method5111()) {
 			return false;
 		} else {
-			return super.aClass2_Sub34_34.method5105() == Static673.aClass377_8;
+			return super.aClass2_Sub34_34.method5105() == Static673.aModeGame8;
 		}
 	}
 
@@ -56,7 +56,7 @@ public final class Class57_Sub6 extends Class57 {
 	@OriginalMember(owner = "client!fia", name = "a", descriptor = "(B)V")
 	@Override
 	public void method8350() {
-		if (super.aClass2_Sub34_34.method5105() != Static673.aClass377_8) {
+		if (super.aClass2_Sub34_34.method5105() != Static673.aModeGame8) {
 			super.anInt9489 = 1;
 		} else if (super.aClass2_Sub34_34.method5111()) {
 			super.anInt9489 = 0;

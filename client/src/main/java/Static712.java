@@ -30,7 +30,7 @@ public final class Static712 {
 			if (Static353.aFrame10 != null) {
 				local22 = Static353.aFrame10;
 			} else if (Static166.anApplet1 == null) {
-				local22 = Static149.anApplet_Sub1_1;
+				local22 = Static149.aGameShell;
 			} else {
 				local22 = Static166.anApplet1;
 			}

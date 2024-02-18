@@ -17,7 +17,7 @@ public final class Static74 {
 	public static Class148 aClass148_1;
 
 	@OriginalMember(owner = "client!cga", name = "a", descriptor = "(IIILclient!sb;)Lclient!ve;")
-	public static Class381 method1535(@OriginalArg(2) int arg0, @OriginalArg(3) Class330 arg1) {
+	public static Class381 method1535(@OriginalArg(2) int arg0, @OriginalArg(3) Js5 arg1) {
 		@Pc(17) byte[] local17 = arg1.method7595(0, arg0);
 		return local17 == null ? null : new Class381(local17);
 	}

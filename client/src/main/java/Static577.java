@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static577 {
 
 	@OriginalMember(owner = "client!sca", name = "a", descriptor = "Lclient!ml;")
-	public static Class246 aClass246_4;
+	public static MelTypeList aMelTypeList4;
 
 	@OriginalMember(owner = "client!sca", name = "d", descriptor = "[Lclient!eq;")
 	public static final Class110[] aClass110Array1 = new Class110[4];

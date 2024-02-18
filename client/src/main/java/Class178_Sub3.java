@@ -1346,7 +1346,7 @@ public final class Class178_Sub3 extends Class178 {
 				}
 				local370 = arg11[local323];
 				if (local370 != -1) {
-					@Pc(490) Class118 local490 = this.aClass19_Sub2_8.anInterface4_10.method6817(local370);
+					@Pc(490) Material local490 = this.aClass19_Sub2_8.anInterface4_10.method6817(local370);
 					if (!local490.aBoolean240) {
 						local454 = true;
 						if (this.method7162(local490.aByte56) || local490.aByte54 != 0 || local490.aByte52 != 0) {
@@ -1408,7 +1408,7 @@ public final class Class178_Sub3 extends Class178 {
 			if (super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0 + 1][arg1] && super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0 + 1][arg1 + 1] && super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0][arg1 + 1]) {
 				local741.aByte59 = (byte) (local741.aByte59 | 0x1);
 			}
-			@Pc(849) Class118 local849 = null;
+			@Pc(849) Material local849 = null;
 			if (local85 != -1) {
 				local849 = this.aClass19_Sub2_8.anInterface4_10.method6817(local85);
 			}

@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static68 {
 
 	@OriginalMember(owner = "client!cd", name = "c", descriptor = "Lclient!gt;")
-	public static Class151 aClass151_3;
+	public static QuickChatCatTypeList aQuickChatCatTypeList3;
 
 	@OriginalMember(owner = "client!cd", name = "r", descriptor = "Lclient!kr;")
-	public static Class215 aClass215_3;
+	public static IdkTypeList aIdkTypeList3;
 
 	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
 	public static int[] anIntArray316;

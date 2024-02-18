@@ -9,10 +9,10 @@ public final class Static208 {
 	public static final Class184 aClass184_6 = new Class184(11, 0, 1, 2);
 
 	@OriginalMember(owner = "client!gha", name = "w", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_83 = new Class225(113, 3);
+	public static final ServerProt ServerProt83 = new ServerProt(113, 3);
 
 	@OriginalMember(owner = "client!gha", name = "t", descriptor = "[Lclient!mj;")
-	public static final Class243[] aClass243Array1 = new Class243[37];
+	public static final BufferedFile[] aBufferedFileArray1 = new BufferedFile[37];
 
 	@OriginalMember(owner = "client!gha", name = "b", descriptor = "(IIIII)V")
 	public static void method3105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -22,14 +22,14 @@ public final class Static208 {
 			local5 += Static130.method2283();
 			local7 += Static422.method5771();
 		}
-		@Pc(30) Class23 local30;
+		@Pc(30) SoftwareIndexedSprite local30;
 		if (Static616.anInt9417 == 1) {
-			local30 = Static355.aClass23Array9[Static481.anInt7215 / 100];
+			local30 = Static355.aSoftwareIndexedSpriteArray9[Static481.anInt7215 / 100];
 			local30.method8202(local5 - 8, local7 + -8);
 			Static682.method8927(local7 - 8, local7 - 8 - -local30.method8192(), local5 - 8, local30.method8203() + -8 + local5);
 		}
 		if (Static616.anInt9417 == 2) {
-			local30 = Static355.aClass23Array9[Static481.anInt7215 / 100 + 4];
+			local30 = Static355.aSoftwareIndexedSpriteArray9[Static481.anInt7215 / 100 + 4];
 			local30.method8202(local5 - 8, local7 + -8);
 			Static682.method8927(local7 - 8, local30.method8192() + -8 + local7, local5 - 8, local30.method8203() + local5 + -8);
 		}
@@ -38,13 +38,13 @@ public final class Static208 {
 
 	@OriginalMember(owner = "client!gha", name = "a", descriptor = "(Z)V")
 	public static void method3106() {
-		Static334.aClass319_1.method8482();
-		Static189.aClass120_1.method8848();
+		Static334.aKeyboard1.method8482();
+		Static189.aMouse1.method8848();
 		Static295.aClient1.method1641();
 		Static434.aCanvas7.setBackground(Color.black);
 		Static470.anInt7112 = -1;
-		Static334.aClass319_1 = Static681.method8921(Static434.aCanvas7);
-		Static189.aClass120_1 = Static70.method1513(Static434.aCanvas7);
+		Static334.aKeyboard1 = Static681.method8921(Static434.aCanvas7);
+		Static189.aMouse1 = Static70.method1513(Static434.aCanvas7);
 	}
 
 	@OriginalMember(owner = "client!gha", name = "a", descriptor = "(Lclient!eo;Z[[[BIB)Z")

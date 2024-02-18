@@ -36,7 +36,7 @@ public final class Static387 {
 				local7 = 32767;
 			}
 			@Pc(19) byte[] local19 = new byte[local7];
-			arg0.pos += Static636.aClass197_1.method4438(local19, arg0.data, local7, arg0.pos, 0);
+			arg0.pos += Static636.aHuffmanCodec1.method4438(local19, arg0.data, local7, arg0.pos, 0);
 			return Static350.method5126(0, local19, local7);
 		} catch (@Pc(53) Exception local53) {
 			return "Cabbage";

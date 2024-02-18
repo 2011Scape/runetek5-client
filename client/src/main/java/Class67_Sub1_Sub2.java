@@ -58,7 +58,7 @@ public final class Class67_Sub1_Sub2 extends Class67_Sub1 {
 				if (!local37.method6814(Static319.anIntArray384[local48])) {
 					return null;
 				}
-				@Pc(69) Class118 local69 = local37.method6817(Static319.anIntArray384[local48]);
+				@Pc(69) Material local69 = local37.method6817(Static319.anIntArray384[local48]);
 				@Pc(77) int local77 = local69.aBoolean233 ? 64 : 128;
 				if (local69.aByte53 > 0) {
 					local44 = true;

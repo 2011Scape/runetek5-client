@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class21 {
 
 	@OriginalMember(owner = "client!an", name = "d", descriptor = "Lclient!ih;")
-	public SecondaryLinkable_Sub12 aClass2_Sub2_Sub12_1;
+	public QuickChatPhraseType aClass2_Sub2_Sub12_1;
 
 	@OriginalMember(owner = "client!an", name = "a", descriptor = "[I")
 	public int[] anIntArray29;

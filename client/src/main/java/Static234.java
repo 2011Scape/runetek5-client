@@ -10,7 +10,7 @@ public final class Static234 {
 	public static boolean aBoolean303 = false;
 
 	@OriginalMember(owner = "client!hea", name = "o", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_46 = new Class345(79, -1);
+	public static final ClientProt aClientProt46 = new ClientProt(79, -1);
 
 	@OriginalMember(owner = "client!hea", name = "a", descriptor = "(BLjava/lang/String;)V")
 	public static void method3418(@OriginalArg(1) String arg0) {

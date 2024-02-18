@@ -190,7 +190,7 @@ public final class Linkable_Sub58 extends Linkable {
 		@Pc(31) int local31;
 		@Pc(57) int local57;
 		if (this.anInt10870 != -1) {
-			@Pc(26) Class118 local26 = this.aClass19_Sub1_23.anInterface4_10.method6817(this.anInt10870);
+			@Pc(26) Material local26 = this.aClass19_Sub1_23.anInterface4_10.method6817(this.anInt10870);
 			local31 = local26.aByte58 & 0xFF;
 			@Pc(83) int local83;
 			if (local31 != 0 && local26.aByte56 != 4) {

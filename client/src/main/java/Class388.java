@@ -22,7 +22,7 @@ public final class Class388 {
 	public int anInt10301 = -1;
 
 	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "(Lclient!sb;)V")
-	public Class388(@OriginalArg(0) Class330 arg0) {
+	public Class388(@OriginalArg(0) Js5 arg0) {
 		@Pc(12) byte[] local12 = arg0.method7589(6);
 		this.method8929(new Packet(local12));
 		if (this.anIntArray821 == null) {

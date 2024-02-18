@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static700 {
 
 	@OriginalMember(owner = "client!wca", name = "g", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_123 = new Class345(10, 8);
+	public static final ClientProt aClientProt123 = new ClientProt(10, 8);
 
 	@OriginalMember(owner = "client!wca", name = "a", descriptor = "(II[Ljava/awt/Rectangle;)V")
 	public static void method9148(@OriginalArg(1) int arg0, @OriginalArg(2) Rectangle[] arg1) throws Exception_Sub1 {

@@ -9,10 +9,10 @@ public final class Static236 {
 	public static int anInt3893;
 
 	@OriginalMember(owner = "client!hfa", name = "w", descriptor = "Lclient!oba;")
-	public static Class270 aClass270_2;
+	public static PrivilegedRequest aPrivilegedRequest2;
 
 	@OriginalMember(owner = "client!hfa", name = "v", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_50 = new Class345(69, 7);
+	public static final ClientProt aClientProt50 = new ClientProt(69, 7);
 
 	@OriginalMember(owner = "client!hfa", name = "r", descriptor = "Z")
 	public static boolean aBoolean304 = false;
@@ -39,7 +39,7 @@ public final class Static236 {
 				return true;
 			}
 		} catch (@Pc(29) Exception local29) {
-			@Pc(106) String local106 = "T2 - " + (arg0.aClass225_93 == null ? -1 : arg0.aClass225_93.method5239()) + "," + (arg0.aClass225_94 == null ? -1 : arg0.aClass225_94.method5239()) + "," + (arg0.aClass225_91 == null ? -1 : arg0.aClass225_91.method5239()) + " - " + arg0.anInt3648 + "," + (Static691.anInt10367 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2270 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
+			@Pc(106) String local106 = "T2 - " + (arg0.aServerProt_93 == null ? -1 : arg0.aServerProt_93.method5239()) + "," + (arg0.aServerProt_94 == null ? -1 : arg0.aServerProt_94.method5239()) + "," + (arg0.aServerProt_91 == null ? -1 : arg0.aServerProt_91.method5239()) + " - " + arg0.anInt3648 + "," + (Static691.anInt10367 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2270 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
 			for (@Pc(108) int local108 = 0; arg0.anInt3648 > local108 && local108 < 50; local108++) {
 				local106 = local106 + arg0.aClass2_Sub21_Sub2_2.data[local108] + ",";
 			}

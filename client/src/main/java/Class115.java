@@ -9,18 +9,18 @@ public final class Class115 implements Interface15 {
 	private final String aString29;
 
 	@OriginalMember(owner = "client!ev", name = "c", descriptor = "Lclient!sb;")
-	private final Class330 aClass330_30;
+	private final Js5 aJs530;
 
 	@OriginalMember(owner = "client!ev", name = "<init>", descriptor = "(Lclient!sb;Ljava/lang/String;)V")
-	public Class115(@OriginalArg(0) Class330 arg0, @OriginalArg(1) String arg1) {
+	public Class115(@OriginalArg(0) Js5 arg0, @OriginalArg(1) String arg1) {
 		this.aString29 = arg1;
-		this.aClass330_30 = arg0;
+		this.aJs530 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ev", name = "a", descriptor = "(I)I")
 	@Override
 	public int method6465() {
-		return this.aClass330_30.method7598(this.aString29) ? 100 : this.aClass330_30.method7593(this.aString29);
+		return this.aJs530.method7598(this.aString29) ? 100 : this.aJs530.method7593(this.aString29);
 	}
 
 	@OriginalMember(owner = "client!ev", name = "a", descriptor = "(B)Lclient!kf;")

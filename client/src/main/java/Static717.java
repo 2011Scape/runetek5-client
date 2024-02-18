@@ -12,7 +12,7 @@ public final class Static717 {
 	public static final Class280 aClass280_6 = new Class280(0);
 
 	@OriginalMember(owner = "client!wn", name = "k", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_232 = new Class82(30);
+	public static final SoftLruHashTable aSoftLruHashTable232 = new SoftLruHashTable(30);
 
 	@OriginalMember(owner = "client!wn", name = "f", descriptor = "Lclient!sia;")
 	public static final LinkedList aLinkedList81 = new LinkedList();

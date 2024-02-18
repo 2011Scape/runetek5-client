@@ -39,6 +39,6 @@ public final class Static553 {
 
 	@OriginalMember(owner = "client!rga", name = "c", descriptor = "(I)V")
 	public static void method7290() {
-		Static627.aClass82_200.method2151();
+		Static627.aSoftLruHashTable200.method2151();
 	}
 }

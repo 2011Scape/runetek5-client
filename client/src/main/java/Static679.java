@@ -17,13 +17,13 @@ public final class Static679 {
 	public static Class273[] aClass273Array1;
 
 	@OriginalMember(owner = "client!vj", name = "n", descriptor = "[Lclient!st;")
-	public static Class23[] aClass23Array14;
+	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray14;
 
 	@OriginalMember(owner = "client!vj", name = "s", descriptor = "Lclient!eba;")
 	public static final Class92 aClass92_15 = new Class92(1);
 
 	@OriginalMember(owner = "client!vj", name = "l", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_247 = new Class225(63, 5);
+	public static final ServerProt ServerProt247 = new ServerProt(63, 5);
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(Z)I")
 	public static int method8909() {
@@ -31,8 +31,8 @@ public final class Static679 {
 			if (!Static400.aBoolean622 && Static470.aClass2_Sub2_Sub16_10 != null) {
 				return Static470.aClass2_Sub2_Sub16_10.anInt7318;
 			}
-			@Pc(28) int local28 = Static189.aClass120_1.method8853();
-			@Pc(37) int local37 = Static189.aClass120_1.method8854();
+			@Pc(28) int local28 = Static189.aMouse1.method8853();
+			@Pc(37) int local37 = Static189.aMouse1.method8854();
 			@Pc(53) int local53;
 			@Pc(55) int local55;
 			@Pc(71) int local71;

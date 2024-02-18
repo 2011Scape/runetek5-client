@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static233 {
 
 	@OriginalMember(owner = "client!he", name = "k", descriptor = "Lclient!sb;")
-	public static Class330 aClass330_52;
+	public static Js5 aJs552;
 
 	@OriginalMember(owner = "client!he", name = "c", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_17 = new Class155(16);
@@ -14,7 +14,7 @@ public final class Static233 {
 	public static final int[][] anIntArrayArray90 = new int[][] { { 0, 2, 4, 6 }, { 6, 0, 2, 3, 5, 3 }, { 6, 0, 2, 4 }, { 2, 5, 6, 1 }, { 0, 2, 6 }, { 6, 0, 2 }, { 5, 6, 0, 1, 2, 4 }, { 7, 7, 1, 2, 4, 6 }, { 2, 4, 4, 7 }, { 6, 6, 4, 0, 1, 1, 3, 3 }, { 0, 2, 2, 6, 6, 4 }, { 0, 2, 2, 3, 7, 0, 4, 3 }, { 0, 2, 4, 6 } };
 
 	@OriginalMember(owner = "client!he", name = "g", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_104 = new Class225(115, 8);
+	public static final ServerProt ServerProt104 = new ServerProt(115, 8);
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "(IIIIIII)V")
 	public static void method3407(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
@@ -24,7 +24,7 @@ public final class Static233 {
 			if (local22 != null && local22.anInt6363 == 2) {
 				Static143.method3573(local22.anInt6365 * 2, local22.anInt6369, arg0 >> 1, local22.anInt6362, local22.anInt6368, arg3 >> 1);
 				if (Static215.anIntArray284[0] > -1 && Static333.anInt5455 % 20 < 10) {
-					@Pc(76) Class23 local76 = Static28.aClass23Array1[local22.anInt6367];
+					@Pc(76) SoftwareIndexedSprite local76 = Static28.aSoftwareIndexedSpriteArray1[local22.anInt6367];
 					@Pc(84) int local84 = arg2 + Static215.anIntArray284[0] - 12;
 					@Pc(92) int local92 = Static215.anIntArray284[1] + arg1 - 28;
 					local76.method8202(local84, local92);

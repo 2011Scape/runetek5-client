@@ -17,14 +17,14 @@ public final class Static638 {
 	}
 
 	@OriginalMember(owner = "client!uca", name = "a", descriptor = "(Lclient!vq;BIILjava/awt/Component;)Lclient!cd;")
-	public static Class56 method8394(@OriginalArg(0) Class390 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component arg3) {
+	public static AudioChannel method8394(@OriginalArg(0) Signlink arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component arg3) {
 		if (Static686.anInt8944 == 0) {
 			throw new IllegalStateException();
 		} else if (arg1 >= 2) {
 			throw new IllegalArgumentException();
 		} else {
 			try {
-				@Pc(41) Class56 local41 = (Class56) Class.forName("Class56_Sub1").getDeclaredConstructor().newInstance();
+				@Pc(41) AudioChannel local41 = (AudioChannel) Class.forName("JavaAudioChannel").getDeclaredConstructor().newInstance();
 				local41.anIntArray315 = new int[(Static316.aBoolean644 ? 2 : 1) * 256];
 				local41.anInt4098 = arg2;
 				local41.method3593(arg3);
@@ -33,40 +33,40 @@ public final class Static638 {
 					local41.anInt4097 = 16384;
 				}
 				local41.method3588(local41.anInt4097);
-				if (Static156.anInt2679 > 0 && Static232.aClass119_1 == null) {
-					Static232.aClass119_1 = new Class119();
-					Static232.aClass119_1.aClass390_2 = arg0;
-					arg0.method8991(Static232.aClass119_1, Static156.anInt2679);
+				if (Static156.anInt2679 > 0 && Static232.aAudioThread1 == null) {
+					Static232.aAudioThread1 = new AudioThread();
+					Static232.aAudioThread1.aSignlink2 = arg0;
+					arg0.method8991(Static232.aAudioThread1, Static156.anInt2679);
 				}
-				if (Static232.aClass119_1 != null) {
-					if (Static232.aClass119_1.aClass56Array1[arg1] != null) {
+				if (Static232.aAudioThread1 != null) {
+					if (Static232.aAudioThread1.aAudioChannelArray1[arg1] != null) {
 						throw new IllegalArgumentException();
 					}
-					Static232.aClass119_1.aClass56Array1[arg1] = local41;
+					Static232.aAudioThread1.aAudioChannelArray1[arg1] = local41;
 				}
 				return local41;
 			} catch (@Pc(135) Throwable local135) {
 				try {
-					@Pc(141) Class56_Sub2 local141 = new Class56_Sub2(arg0, arg1);
+					@Pc(141) SignLinkAudioChannel local141 = new SignLinkAudioChannel(arg0, arg1);
 					local141.anIntArray315 = new int[(Static316.aBoolean644 ? 2 : 1) * 256];
 					local141.anInt4098 = arg2;
 					local141.method3593(arg3);
 					local141.anInt4097 = 16384;
 					local141.method3588(local141.anInt4097);
-					if (Static156.anInt2679 > 0 && Static232.aClass119_1 == null) {
-						Static232.aClass119_1 = new Class119();
-						Static232.aClass119_1.aClass390_2 = arg0;
-						arg0.method8991(Static232.aClass119_1, Static156.anInt2679);
+					if (Static156.anInt2679 > 0 && Static232.aAudioThread1 == null) {
+						Static232.aAudioThread1 = new AudioThread();
+						Static232.aAudioThread1.aSignlink2 = arg0;
+						arg0.method8991(Static232.aAudioThread1, Static156.anInt2679);
 					}
-					if (Static232.aClass119_1 != null) {
-						if (Static232.aClass119_1.aClass56Array1[arg1] != null) {
+					if (Static232.aAudioThread1 != null) {
+						if (Static232.aAudioThread1.aAudioChannelArray1[arg1] != null) {
 							throw new IllegalArgumentException();
 						}
-						Static232.aClass119_1.aClass56Array1[arg1] = local141;
+						Static232.aAudioThread1.aAudioChannelArray1[arg1] = local141;
 					}
 					return local141;
 				} catch (@Pc(211) Throwable local211) {
-					return new Class56();
+					return new AudioChannel();
 				}
 			}
 		}
@@ -86,9 +86,9 @@ public final class Static638 {
 	}
 
 	@OriginalMember(owner = "client!uca", name = "b", descriptor = "(Z)Lclient!gh;")
-	public static Class145 method8396() {
+	public static ReferenceNodeFactory method8396() {
 		try {
-			return (Class145) Class.forName("Class145_Sub1").getDeclaredConstructor().newInstance();
+			return (ReferenceNodeFactory) Class.forName("SoftReferenceNodeFactory").getDeclaredConstructor().newInstance();
 		} catch (@Pc(16) Throwable local16) {
 			return null;
 		}

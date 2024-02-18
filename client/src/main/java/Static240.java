@@ -36,7 +36,7 @@ public final class Static240 {
 			local12 = Static232.method3395(local12, "&", "%26");
 			local12 = Static232.method3395(local12, "#", "%23");
 			if (Static631.anApplet4 != null) {
-				@Pc(131) Class270 local131 = Static284.aClass390_4.method8992(new URL(Static631.anApplet4.getCodeBase(), "clienterror.ws?c=" + Static373.anInt5905 + "&u=" + (Static515.aString96 == null ? String.valueOf(Static292.aLong163) : Static515.aString96) + "&v1=" + Static689.aString123 + "&v2=" + Static689.aString124 + "&e=" + local12));
+				@Pc(131) PrivilegedRequest local131 = Static284.aSignlink4.method8992(new URL(Static631.anApplet4.getCodeBase(), "clienterror.ws?c=" + Static373.anInt5905 + "&u=" + (Static515.aString96 == null ? String.valueOf(Static292.aLong163) : Static515.aString96) + "&v1=" + Static689.aString123 + "&v2=" + Static689.aString124 + "&e=" + local12));
 				while (local131.anInt6789 == 0) {
 					Static638.method8395(1L);
 				}

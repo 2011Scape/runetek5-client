@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static533 {
 
 	@OriginalMember(owner = "client!qp", name = "d", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_196 = new Class225(114, 4);
+	public static final ServerProt ServerProt196 = new ServerProt(114, 4);
 
 	@OriginalMember(owner = "client!qp", name = "f", descriptor = "[I")
 	public static final int[] anIntArray628 = new int[1000];
@@ -14,7 +14,7 @@ public final class Static533 {
 		for (@Pc(8) SecondaryLinkable_Sub4 local8 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.head(); local8 != null; local8 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.next()) {
 			if (local8.anInt1534 > 1) {
 				local8.anInt1534 = 0;
-				Static717.aClass82_232.method2150(local8, ((SecondaryLinkable_Sub16) local8.aSecondaryLinkedList3.sentinel.secondaryPrev).aLong234);
+				Static717.aSoftLruHashTable232.method2150(local8, ((SecondaryLinkable_Sub16) local8.aSecondaryLinkedList3.sentinel.secondaryPrev).aLong234);
 				local8.aSecondaryLinkedList3.clear();
 			}
 		}

@@ -6,5 +6,5 @@ public final class Static404 {
 	public static boolean aBoolean465;
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_161 = new Class225(126, 4);
+	public static final ServerProt ServerProt161 = new ServerProt(126, 4);
 }

@@ -8,7 +8,7 @@ public final class Static113 {
 	public static int anInt2238;
 
 	@OriginalMember(owner = "client!dja", name = "g", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_22 = new Class345(17, -1);
+	public static final ClientProt aClientProt22 = new ClientProt(17, -1);
 
 	@OriginalMember(owner = "client!dja", name = "h", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable12 = new HashTable(16);

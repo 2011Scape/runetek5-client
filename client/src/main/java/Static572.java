@@ -11,43 +11,43 @@ public final class Static572 {
 	public static final String[] aStringArray42 = new String[200];
 
 	@OriginalMember(owner = "client!s", name = "g", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_53 = new Class167(14, 0);
+	public static final LoginProt aLoginProt53 = new LoginProt(14, 0);
 
 	@OriginalMember(owner = "client!s", name = "y", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_54 = new Class167(15, 4);
+	public static final LoginProt aLoginProt54 = new LoginProt(15, 4);
 
 	@OriginalMember(owner = "client!s", name = "u", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_55 = new Class167(16, -2);
+	public static final LoginProt aLoginProt55 = new LoginProt(16, -2);
 
 	@OriginalMember(owner = "client!s", name = "z", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_56 = new Class167(17, 0);
+	public static final LoginProt aLoginProt56 = new LoginProt(17, 0);
 
 	@OriginalMember(owner = "client!s", name = "r", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_57 = new Class167(19, -2);
+	public static final LoginProt aLoginProt57 = new LoginProt(19, -2);
 
 	@OriginalMember(owner = "client!s", name = "q", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_58 = new Class167(22, -2);
+	public static final LoginProt aLoginProt58 = new LoginProt(22, -2);
 
 	@OriginalMember(owner = "client!s", name = "v", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_59 = new Class167(23, 4);
+	public static final LoginProt aLoginProt59 = new LoginProt(23, 4);
 
 	@OriginalMember(owner = "client!s", name = "p", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_60 = new Class167(24, -1);
+	public static final LoginProt aLoginProt60 = new LoginProt(24, -1);
 
 	@OriginalMember(owner = "client!s", name = "h", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_61 = new Class167(26, 0);
+	public static final LoginProt aLoginProt61 = new LoginProt(26, 0);
 
 	@OriginalMember(owner = "client!s", name = "m", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_62 = new Class167(27, 0);
+	public static final LoginProt aLoginProt62 = new LoginProt(27, 0);
 
 	@OriginalMember(owner = "client!s", name = "f", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_63 = new Class167(28, -2);
+	public static final LoginProt aLoginProt63 = new LoginProt(28, -2);
 
 	@OriginalMember(owner = "client!s", name = "l", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_64 = new Class167(29, -2);
+	public static final LoginProt aLoginProt64 = new LoginProt(29, -2);
 
 	@OriginalMember(owner = "client!s", name = "j", descriptor = "Lclient!hja;")
-	public static final Class167 aClass167_65 = new Class167(30, -2);
+	public static final LoginProt aLoginProt65 = new LoginProt(30, -2);
 
 	@OriginalMember(owner = "client!s", name = "o", descriptor = "I")
 	public static int anInt8896 = 0;
@@ -61,7 +61,7 @@ public final class Static572 {
 
 	@OriginalMember(owner = "client!s", name = "b", descriptor = "(III)V")
 	public static void method7876(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(11) int local11 = Static42.aClass381_4.method8744(Static32.aClass32_24.method877(Static51.anInt1052));
+		@Pc(11) int local11 = Static42.aClass381_4.method8744(Static32.aLocalizedText24.method877(Static51.anInt1052));
 		@Pc(68) int local68;
 		@Pc(27) int local27;
 		if (Static236.aBoolean304) {

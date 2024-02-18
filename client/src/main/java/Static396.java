@@ -14,7 +14,7 @@ public final class Static396 {
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(I)V")
 	public static void method5551() {
 		@Pc(10) Class153 local10 = Static668.method8701();
-		@Pc(18) Linkable_Sub19 local18 = Static293.method4335(Static244.aClass345_53, local10.aIsaacRandom_1);
+		@Pc(18) OutboundPacket local18 = Static293.method4335(Static244.aClientProt53, local10.aIsaacRandom_1);
 		local18.aPacketBit_1.p1(0);
 		local10.method3275(local18);
 	}

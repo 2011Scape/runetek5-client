@@ -7,10 +7,10 @@ public final class Static334 {
 	public static Class291[][][] aClass291ArrayArrayArray1;
 
 	@OriginalMember(owner = "client!kja", name = "b", descriptor = "Lclient!rg;")
-	public static Class319 aClass319_1;
+	public static Keyboard aKeyboard1;
 
 	@OriginalMember(owner = "client!kja", name = "c", descriptor = "Lclient!lga;")
-	public static final Class225 aClass225_140 = new Class225(71, 2);
+	public static final ServerProt ServerProt140 = new ServerProt(71, 2);
 
 	@OriginalMember(owner = "client!kja", name = "a", descriptor = "I")
 	public static int anInt5456 = 0;
@@ -65,7 +65,7 @@ public final class Static334 {
 			@Pc(416) int local416 = (int) local395;
 			Static485.anIntArray886[local389] = local416 | local416 << 8 | local416 << 16 | 0xFF000000;
 		}
-		@Pc(444) Class23 local444 = Static665.aClass19_15.method7946(Static228.anInt3709, Static228.anInt3709, Static624.anInt9461, Static485.anIntArray886);
+		@Pc(444) SoftwareIndexedSprite local444 = Static665.aClass19_15.method7946(Static228.anInt3709, Static228.anInt3709, Static624.anInt9461, Static485.anIntArray886);
 		local444.method8197(10, 170, 1, 0, 0);
 	}
 }

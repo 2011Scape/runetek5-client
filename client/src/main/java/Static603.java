@@ -12,7 +12,7 @@ public final class Static603 {
 	public static final int[][][] anIntArrayArrayArray18 = new int[2][][];
 
 	@OriginalMember(owner = "client!taa", name = "E", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_109 = new Class345(29, -1);
+	public static final ClientProt aClientProt109 = new ClientProt(29, -1);
 
 	@OriginalMember(owner = "client!taa", name = "b", descriptor = "(Z)V")
 	public static void method7899() {
@@ -25,8 +25,8 @@ public final class Static603 {
 				local30 = Static130.method2283();
 				local32 = Static422.method5771();
 			}
-			@Pc(46) int local46 = local30 + Static189.aClass120_1.method8853();
-			@Pc(52) int local52 = Static189.aClass120_1.method8854() + local32;
+			@Pc(46) int local46 = local30 + Static189.aMouse1.method8853();
+			@Pc(52) int local52 = Static189.aMouse1.method8854() + local32;
 			local46 -= Static378.anInt5941;
 			local52 -= Static150.anInt2631;
 			if (Static123.anInt2341 > local46) {
@@ -44,7 +44,7 @@ public final class Static603 {
 			@Pc(119) int local119 = Static354.aClass158_8.anInt3809 + local46 - Static123.anInt2341;
 			@Pc(127) int local127 = Static354.aClass158_8.anInt3768 + local52 - Static169.anInt2853;
 			@Pc(197) Linkable_Sub42 local197;
-			if (Static189.aClass120_1.method8844()) {
+			if (Static189.aMouse1.method8844()) {
 				if (Static109.aClass158_3.anInt3797 < Static181.anInt3003) {
 					@Pc(141) int local141 = local46 - Static655.anInt9763;
 					@Pc(146) int local146 = local52 - Static115.anInt2258;
@@ -89,8 +89,8 @@ public final class Static603 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(BLclient!fu;Lclient!ha;Lclient!el;)V")
-	public static void method7902(@OriginalArg(1) Linkable_Sub20 arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) Class105 arg2) {
-		@Pc(8) Class23 local8 = arg2.method2428(arg1);
+	public static void method7902(@OriginalArg(1) MapElement arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) MelType arg2) {
+		@Pc(8) SoftwareIndexedSprite local8 = arg2.method2428(arg1);
 		if (local8 == null) {
 			return;
 		}
@@ -106,7 +106,7 @@ public final class Static603 {
 		@Pc(56) int local56;
 		@Pc(78) int local78;
 		if (arg2.aString25 != null) {
-			local36 = Static154.aClass381_6.method8740(Static37.aStringArray5, (int[]) null, (Class23[]) null, arg2.aString25);
+			local36 = Static154.aClass381_6.method8740(Static37.aStringArray5, (int[]) null, (SoftwareIndexedSprite[]) null, arg2.aString25);
 			for (local56 = 0; local56 < local36; local56++) {
 				@Pc(61) String local61 = Static37.aStringArray5[local56];
 				if (local56 < local36 - 1) {
@@ -165,7 +165,7 @@ public final class Static603 {
 			return;
 		}
 		local15 >>= 0x1;
-		@Pc(393) Linkable_Sub37 local393 = new Linkable_Sub37(arg0);
+		@Pc(393) MapElementBounds local393 = new MapElementBounds(arg0);
 		local393.anInt6190 = local15 + local31;
 		local393.anInt6187 = local259;
 		local393.anInt6192 = local246;

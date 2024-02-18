@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static669 {
 
 	@OriginalMember(owner = "client!vd", name = "o", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_215 = new Class82(4);
+	public static final SoftLruHashTable aSoftLruHashTable215 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!vd", name = "k", descriptor = "Lclient!ss;")
-	public static final Class345 aClass345_116 = new Class345(51, -1);
+	public static final ClientProt aClientProt116 = new ClientProt(51, -1);
 
 	@OriginalMember(owner = "client!vd", name = "m", descriptor = "I")
 	public static int anInt9996 = -1;
