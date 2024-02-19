@@ -29,7 +29,7 @@ public final class Static700 {
 			Static577.aClass110Array1[local16].method2467();
 		}
 		Static244.method3512();
-		Static352.method5180();
+		Static352.resetCache();
 		Static46.method1084();
 		System.gc();
 		Static163.aClass19_17.ya();

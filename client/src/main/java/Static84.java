@@ -19,7 +19,7 @@ public final class Static84 {
 		if (Static1.anInt10798 == 3) {
 			local9 = Static219.aClass236Array1.length;
 		} else {
-			local9 = Static353.aBoolean734 ? local1 : local1 + Static390.anInt6126;
+			local9 = Static353.hideNpcs ? local1 : local1 + Static390.anInt6126;
 		}
 		for (@Pc(21) int local21 = 0; local21 < local9; local21++) {
 			@Pc(36) PathingEntity local36;
@@ -60,7 +60,7 @@ public final class Static84 {
 		if (Static1.anInt10798 == 3) {
 			local9 = Static219.aClass236Array1.length;
 		} else {
-			local9 = Static353.aBoolean734 ? local1 : local1 + Static390.anInt6126;
+			local9 = Static353.hideNpcs ? local1 : local1 + Static390.anInt6126;
 		}
 		for (@Pc(21) int local21 = 0; local21 < local9; local21++) {
 			@Pc(36) PathingEntity local36;

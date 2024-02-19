@@ -21,7 +21,7 @@ public final class Static342 {
 	public static void method4464(@OriginalArg(0) int arg0) {
 		if (ClientConfig.DISABLE_LOBBY) {
 			Static284.anInt4583 = arg0;
-			Static344.aClass229_1.anInt5856 = 15;
+			Static344.aClass229_1.worldId = 15;
 			Static344.aClass229_1.anInt5853 = 50015;
 			return;
 		}

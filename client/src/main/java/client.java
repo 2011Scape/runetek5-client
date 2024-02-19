@@ -113,9 +113,9 @@ public final class client extends GameShell {
 				Static426.method1016("Argument count");
 			}
 			Static527.aClass229_3 = new Class229();
-			Static527.aClass229_3.anInt5856 = Integer.parseInt(arg0[0]);
+			Static527.aClass229_3.worldId = Integer.parseInt(arg0[0]);
 			Static660.aClass229_4 = new Class229();
-			Static660.aClass229_4.anInt5856 = Integer.parseInt(arg0[1]);
+			Static660.aClass229_4.worldId = Integer.parseInt(arg0[1]);
 			Static2.aModeWhere1 = ModeWhere.LOCAL;
 			if (arg0[3].equals("live")) {
 				Static598.aClass162_5 = Static523.aClass162_3;
@@ -1093,7 +1093,7 @@ public final class client extends GameShell {
 					Static673.anInt10079 = Static356.anInt5780;
 					Static383.anInt6001 = Static329.anInt1749;
 					if (Static718.aBoolean823) {
-						Static430.method5817(Static459.aClass229_2.anInt5856, Static459.aClass229_2.aString60);
+						Static430.method5817(Static459.aClass229_2.worldId, Static459.aClass229_2.aString60);
 						Connection.gameConnection.aClass348_1 = null;
 						Static81.method1586(14);
 					} else {
@@ -1129,17 +1129,17 @@ public final class client extends GameShell {
 			Static527.aClass229_3.aString60 = this.getCodeBase().getHost();
 		} else if (Static179.method2769(Static2.aModeWhere1)) {
 			Static527.aClass229_3.aString60 = this.getCodeBase().getHost();
-			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.anInt5856 + 40000;
-			Static527.aClass229_3.anInt5853 = Static527.aClass229_3.anInt5856 + 50000;
-			Static660.aClass229_4.anInt5854 = Static660.aClass229_4.anInt5856 + 40000;
-			Static660.aClass229_4.anInt5853 = Static660.aClass229_4.anInt5856 + 50000;
+			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.worldId + 40000;
+			Static527.aClass229_3.anInt5853 = Static527.aClass229_3.worldId + 50000;
+			Static660.aClass229_4.anInt5854 = Static660.aClass229_4.worldId + 40000;
+			Static660.aClass229_4.anInt5853 = Static660.aClass229_4.worldId + 50000;
 		} else if (ModeWhere.LOCAL == Static2.aModeWhere1) {
 			Static527.aClass229_3.aString60 = "127.0.0.1";
-			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.anInt5856 + 40000;
+			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.worldId + 40000;
 			Static660.aClass229_4.aString60 = "127.0.0.1";
-			Static527.aClass229_3.anInt5853 = Static527.aClass229_3.anInt5856 + 50000;
-			Static660.aClass229_4.anInt5854 = Static660.aClass229_4.anInt5856 + 40000;
-			Static660.aClass229_4.anInt5853 = Static660.aClass229_4.anInt5856 + 50000;
+			Static527.aClass229_3.anInt5853 = Static527.aClass229_3.worldId + 50000;
+			Static660.aClass229_4.anInt5854 = Static660.aClass229_4.worldId + 40000;
+			Static660.aClass229_4.anInt5853 = Static660.aClass229_4.worldId + 50000;
 		}
 		Static344.aClass229_1 = Static527.aClass229_3;
 		Static637.aShortArray132 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
@@ -1242,9 +1242,9 @@ public final class client extends GameShell {
 			return;
 		}
 		Static527.aClass229_3 = new Class229();
-		Static527.aClass229_3.anInt5856 = Integer.parseInt(this.getParameter("worldid"));
+		Static527.aClass229_3.worldId = Integer.parseInt(this.getParameter("worldid"));
 		Static660.aClass229_4 = new Class229();
-		Static660.aClass229_4.anInt5856 = Integer.parseInt(this.getParameter("lobbyid"));
+		Static660.aClass229_4.worldId = Integer.parseInt(this.getParameter("lobbyid"));
 		Static660.aClass229_4.aString60 = this.getParameter("lobbyaddress");
 		Static2.aModeWhere1 = Static463.method6279(Integer.parseInt(this.getParameter("modewhere")));
 		if (ModeWhere.LOCAL == Static2.aModeWhere1) {

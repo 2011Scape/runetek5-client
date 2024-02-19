@@ -133,7 +133,7 @@ public final class Preferences extends Linkable {
 	@OriginalMember(owner = "client!kv", name = "<init>", descriptor = "(Lclient!ul;I)V")
 	public Preferences(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1) {
 		this.aModeGame3 = arg0;
-		this.aClass221_1 = new Class221(Static446.aSignlink6.aBoolean781, Static369.anInt4265, Static495.anInt7422, Static689.aString121.toLowerCase().indexOf("arm") != -1);
+		this.aClass221_1 = new Class221(Static446.aSignlink6.aBoolean781, Static369.anInt4265, Static495.anInt7422, Static689.osArch.toLowerCase().indexOf("arm") != -1);
 		this.aPreference_Sub29_1 = new Preference_Sub29(arg1, this);
 		this.method5103(true);
 	}
@@ -141,7 +141,7 @@ public final class Preferences extends Linkable {
 	@OriginalMember(owner = "client!kv", name = "<init>", descriptor = "(Lclient!ge;Lclient!ul;I)V")
 	public Preferences(@OriginalArg(0) Packet arg0, @OriginalArg(1) ModeGame arg1, @OriginalArg(2) int arg2) {
 		this.aModeGame3 = arg1;
-		this.aClass221_1 = new Class221(Static446.aSignlink6.aBoolean781, Static369.anInt4265, Static495.anInt7422, Static689.aString121.indexOf("arm") != -1);
+		this.aClass221_1 = new Class221(Static446.aSignlink6.aBoolean781, Static369.anInt4265, Static495.anInt7422, Static689.osArch.indexOf("arm") != -1);
 		this.aPreference_Sub29_1 = new Preference_Sub29(arg2, this);
 		this.method5102(arg0);
 	}

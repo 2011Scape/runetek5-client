@@ -50,7 +50,7 @@ public final class Static292 {
 		} else if (local7 > 100) {
 			local7 = 100;
 		}
-		@Pc(33) int local33 = local7 * (Static502.aShort97 - Static228.aShort45) / 100 + Static228.aShort45;
+		@Pc(33) int local33 = local7 * (Static502.zoom - Static228.aShort45) / 100 + Static228.aShort45;
 		Static582.anInt8627 = Static582.anInt8630 * local33 >> 8;
 		@Pc(45) int local45 = local33 * arg1 >> 8;
 		@Pc(52) int local52 = 16384 - arg0 & 0x3FFF;

@@ -25,7 +25,7 @@ public final class Static352 {
 	public static final int[] anIntArray446 = new int[anInt5752];
 
 	@OriginalMember(owner = "client!lc", name = "c", descriptor = "(B)V")
-	public static void method5180() {
+	public static void resetCache() {
 		Static467.aFloTypeList3.method2349();
 		Static540.aFluTypeList6.method2067();
 		Static68.aIdkTypeList3.method5044();

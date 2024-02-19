@@ -94,7 +94,7 @@ public final class Static484 {
 						}
 					}
 					Static706.aClass178Array3[local278].method7873(local218, local229, local238, local249, local206);
-					if (!Static113.aBoolean198) {
+					if (!Static113.showcolmap) {
 						for (local284 = -4; local284 < Static200.anInt3302; local284++) {
 							for (local331 = -4; local331 < Static200.anInt3302; local331++) {
 								local336 = local284 + local208;
@@ -112,7 +112,7 @@ public final class Static484 {
 						}
 					}
 				}
-				if (Static113.aBoolean198) {
+				if (Static113.showcolmap) {
 					@Pc(435) Class110 local435 = Static577.aClass110Array1[arg1];
 					for (local284 = 0; local284 < Static200.anInt3302; local284++) {
 						for (local331 = 0; local331 < Static200.anInt3302; local331++) {
@@ -142,7 +142,7 @@ public final class Static484 {
 		Static469.method6362();
 		Static536.anInt8148 = 0;
 		Static612.aLinkedList67.clear();
-		if (!Static113.aBoolean198) {
+		if (!Static113.showcolmap) {
 			for (local211 = local9; local211 < local9 + 104; local211++) {
 				for (local214 = local15; local214 < local15 + 104; local214++) {
 					for (local216 = arg1; local216 <= arg1 + 1 && local216 <= 3; local216++) {

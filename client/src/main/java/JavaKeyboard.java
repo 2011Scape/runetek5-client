@@ -123,8 +123,22 @@ public final class JavaKeyboard extends Keyboard implements KeyListener, FocusLi
 
 	@OriginalMember(owner = "client!ui", name = "keyPressed", descriptor = "(Ljava/awt/event/KeyEvent;)V")
 	@Override
-	public synchronized void keyPressed(@OriginalArg(0) KeyEvent arg0) {
-		this.method8487(0, arg0);
+	public synchronized void keyPressed(@OriginalArg(0) KeyEvent keyEvent) {
+		if (keyEvent.isShiftDown()) { // if shift is down
+
+			// Zoom out if page down is pressed.
+			if (keyEvent.getKeyCode() == KeyEvent.VK_PAGE_DOWN) {
+				Static502.zoom += 15;
+				System.out.println("Zoom: " + Static502.zoom);
+			}
+			// Zoom in if page up is pressed.
+			else if (keyEvent.getKeyCode() == KeyEvent.VK_PAGE_UP) {
+				Static502.zoom -= 15;
+				System.out.println("Zoom: " + Static502.zoom);
+			}
+		}
+
+		this.method8487(0, keyEvent);
 	}
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(BILjava/awt/event/KeyEvent;)V")

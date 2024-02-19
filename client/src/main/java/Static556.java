@@ -42,7 +42,7 @@ public final class Static556 {
 		@Pc(63) String local63;
 		if (Static156.aBoolean223 && Static594.anInt8777 < 2) {
 			local63 = Static153.aString27 + LocalizedText.SPACE.get(Static51.anInt1052) + Static128.aString108 + " ->";
-		} else if (Static209.aBoolean269 && Static334.aKeyboard1.method8479(81) && Static594.anInt8777 > 2) {
+		} else if (Static209.shiftClickEnabled && Static334.aKeyboard1.method8479(81) && Static594.anInt8777 > 2) {
 			local63 = Static518.method9293(Static470.aClass2_Sub2_Sub16_10);
 		} else {
 			@Pc(55) SecondaryLinkable_Sub16 local55 = Static470.aClass2_Sub2_Sub16_10;

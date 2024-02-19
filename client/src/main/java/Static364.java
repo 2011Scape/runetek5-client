@@ -444,14 +444,14 @@ public final class Static364 {
 						Static438.anInt6640 = local1435.g4();
 						Static587.aBoolean663 = local1435.g1() == 1;
 						Static668.aClass229_5 = new Class229();
-						Static668.aClass229_5.anInt5856 = local1435.g2();
-						if (Static668.aClass229_5.anInt5856 == 65535) {
-							Static668.aClass229_5.anInt5856 = -1;
+						Static668.aClass229_5.worldId = local1435.g2();
+						if (Static668.aClass229_5.worldId == 65535) {
+							Static668.aClass229_5.worldId = -1;
 						}
 						Static668.aClass229_5.aString60 = local1435.gjstr2();
 						if (ModeWhere.LIVE != Static2.aModeWhere1) {
-							Static668.aClass229_5.anInt5854 = Static668.aClass229_5.anInt5856 + 40000;
-							Static668.aClass229_5.anInt5853 = Static668.aClass229_5.anInt5856 + 50000;
+							Static668.aClass229_5.anInt5854 = Static668.aClass229_5.worldId + 40000;
+							Static668.aClass229_5.anInt5853 = Static668.aClass229_5.worldId + 50000;
 						}
 						if (ModeWhere.LOCAL != Static2.aModeWhere1 && (Static2.aModeWhere1 != ModeWhere.WTQA || Static608.anInt9290 < 2) && Static344.aClass229_1.method5265(Static527.aClass229_3)) {
 							Static152.method9273();

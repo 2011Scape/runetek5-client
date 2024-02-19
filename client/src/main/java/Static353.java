@@ -9,7 +9,7 @@ public final class Static353 {
 	public static Frame aFrame10;
 
 	@OriginalMember(owner = "client!lca", name = "k", descriptor = "Z")
-	public static boolean aBoolean734 = false;
+	public static boolean hideNpcs = false;
 
 	@OriginalMember(owner = "client!lca", name = "s", descriptor = "[I")
 	public static final int[] anIntArray748 = new int[] { 1, 2, 4, 8 };

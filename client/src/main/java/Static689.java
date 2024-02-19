@@ -10,13 +10,13 @@ public final class Static689 {
 	public static int anInt10357;
 
 	@OriginalMember(owner = "client!vq", name = "y", descriptor = "Ljava/lang/String;")
-	public static String aString119;
+	public static String osName;
 
 	@OriginalMember(owner = "client!vq", name = "C", descriptor = "Ljava/lang/String;")
-	public static String aString120;
+	public static String osVer;
 
 	@OriginalMember(owner = "client!vq", name = "c", descriptor = "Ljava/lang/String;")
-	public static String aString121;
+	public static String osArch;
 
 	@OriginalMember(owner = "client!vq", name = "f", descriptor = "Ljava/lang/String;")
 	public static String aString122;

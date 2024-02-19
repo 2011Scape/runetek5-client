@@ -252,7 +252,7 @@ public class Class152 {
 			this.method9086(this.anInt10489, this.aSeqType4);
 		}
 		arg0 += this.anInt10478;
-		@Pc(68) boolean local68 = Static296.aBoolean367 | this.aSeqType4.aBoolean142;
+		@Pc(68) boolean local68 = Static296.tweeningEnabled | this.aSeqType4.aBoolean142;
 		if (arg0 > 100 && this.aSeqType4.anInt1640 > 0) {
 			@Pc(89) int local89 = this.aSeqType4.anIntArray159.length - this.aSeqType4.anInt1640;
 			while (this.anInt10489 < local89 && arg0 > this.aSeqType4.anIntArray157[this.anInt10489]) {

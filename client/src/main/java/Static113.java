@@ -14,7 +14,7 @@ public final class Static113 {
 	public static final HashTable aHashTable12 = new HashTable(16);
 
 	@OriginalMember(owner = "client!dja", name = "n", descriptor = "Z")
-	public static boolean aBoolean198 = false;
+	public static boolean showcolmap = false;
 
 	@OriginalMember(owner = "client!dja", name = "b", descriptor = "(II)V")
 	public static void method2119(@OriginalArg(1) int arg0) {

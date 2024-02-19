@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class229 {
 
 	@OriginalMember(owner = "client!lja", name = "e", descriptor = "I")
-	public int anInt5856;
+	public int worldId;
 
 	@OriginalMember(owner = "client!lja", name = "i", descriptor = "Ljava/lang/String;")
 	public String aString60;
@@ -45,7 +45,7 @@ public final class Class229 {
 		if (arg0 == null) {
 			return false;
 		} else {
-			return arg0.anInt5856 == this.anInt5856 && this.aString60.equals(arg0.aString60);
+			return arg0.worldId == this.worldId && this.aString60.equals(arg0.aString60);
 		}
 	}
 }

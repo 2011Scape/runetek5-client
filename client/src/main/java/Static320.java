@@ -43,7 +43,7 @@ public final class Static320 {
 			Static470.aClass2_Sub2_Sub16_10 = null;
 			Static96.aClass2_Sub2_Sub16_13 = null;
 		} else {
-			if (Static209.aBoolean269 && Static334.aKeyboard1.method8479(81) && Static594.anInt8777 > 2) {
+			if (Static209.shiftClickEnabled && Static334.aKeyboard1.method8479(81) && Static594.anInt8777 > 2) {
 				Static470.aClass2_Sub2_Sub16_10 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.sentinel.prev.prev;
 			} else {
 				Static470.aClass2_Sub2_Sub16_10 = (SecondaryLinkable_Sub16) Static693.aLinkedList79.sentinel.prev;

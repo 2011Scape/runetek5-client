@@ -20,7 +20,7 @@ public final class Static519 {
 			if (Static292.aClass2_Sub43_2.anInt7610 < 512 && Static292.aClass2_Sub43_2.anInt7610 != 0) {
 				local5 = false;
 			}
-			if (Static689.aString119.startsWith("win")) {
+			if (Static689.osName.startsWith("win")) {
 				local9 = true;
 				local7 = true;
 			} else {

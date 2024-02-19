@@ -89,16 +89,16 @@ public final class Signlink implements Runnable {
 		} catch (@Pc(72) Exception local72) {
 			Static689.aString126 = "Unknown";
 		}
-		Static689.aString119 = Static689.aString126.toLowerCase();
+		Static689.osName = Static689.aString126.toLowerCase();
 		try {
-			Static689.aString121 = System.getProperty("os.arch").toLowerCase();
+			Static689.osArch = System.getProperty("os.arch").toLowerCase();
 		} catch (@Pc(87) Exception local87) {
-			Static689.aString121 = "";
+			Static689.osArch = "";
 		}
 		try {
-			Static689.aString120 = System.getProperty("os.version").toLowerCase();
+			Static689.osVer = System.getProperty("os.version").toLowerCase();
 		} catch (@Pc(97) Exception local97) {
-			Static689.aString120 = "";
+			Static689.osVer = "";
 		}
 		try {
 			Static689.aString125 = System.getProperty("user.home");
@@ -458,7 +458,7 @@ public final class Signlink implements Runnable {
 								Class.forName("Class238").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
 							} else if (local42 == 16) {
 								try {
-									if (!Static689.aString119.startsWith("win")) {
+									if (!Static689.osName.startsWith("win")) {
 										throw new Exception();
 									}
 									local220 = (String) local15.anObject12;

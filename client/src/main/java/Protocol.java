@@ -424,7 +424,7 @@ public class Protocol {
                                         local100--;
                                         for (local526 = 0; local526 < local100; local526++) {
                                             @Pc(1665) boolean local1665 = false;
-                                            if (Static344.aClass229_1.anInt5856 != Static371.anIntArray455[local526] && Static344.aClass229_1.anInt5856 == Static371.anIntArray455[local526 + 1]) {
+                                            if (Static344.aClass229_1.worldId != Static371.anIntArray455[local526] && Static344.aClass229_1.worldId == Static371.anIntArray455[local526 + 1]) {
                                                 local1665 = true;
                                             }
                                             if (!local1665 && Static371.anIntArray455[local526] == 0 && Static371.anIntArray455[local526 + 1] != 0) {

@@ -144,12 +144,22 @@ public final class JavaMouse extends Mouse implements MouseListener, MouseMotion
 
 	@OriginalMember(owner = "client!ht", name = "mouseWheelMoved", descriptor = "(Ljava/awt/event/MouseWheelEvent;)V")
 	@Override
-	public synchronized void mouseWheelMoved(@OriginalArg(0) MouseWheelEvent arg0) {
-		@Pc(2) int local2 = arg0.getX();
-		@Pc(5) int local5 = arg0.getY();
-		@Pc(8) int local8 = arg0.getWheelRotation();
-		this.method3627(local5, local2, 6, local8);
-		arg0.consume();
+	public synchronized void mouseWheelMoved(MouseWheelEvent mousewheelevent) {
+		@Pc(2) int mouseWheelX = mousewheelevent.getX();
+		@Pc(5) int mouseWheelY = mousewheelevent.getY();
+		@Pc(8) int wheelRotation = mousewheelevent.getWheelRotation();
+
+		// Scroll wheel zooming
+		if(mousewheelevent.isControlDown() && !mousewheelevent.isShiftDown()) {
+			if (Static502.zoom <= 150 && wheelRotation == -1 || Static502.zoom >= 400 && wheelRotation == 1) {
+				return;
+			}
+			int diff = wheelRotation == -1 ? -15 : 15;
+			Static502.zoom = (short) (Static502.zoom + diff);
+			return;
+		}
+		this.method3627(mouseWheelY, mouseWheelX, 6, wheelRotation);
+		mousewheelevent.consume();
 	}
 
 	@OriginalMember(owner = "client!ht", name = "mouseExited", descriptor = "(Ljava/awt/event/MouseEvent;)V")

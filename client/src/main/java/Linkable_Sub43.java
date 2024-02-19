@@ -76,44 +76,44 @@ public final class Linkable_Sub43 extends Linkable {
 
 	@OriginalMember(owner = "client!pw", name = "<init>", descriptor = "(ZLclient!vq;)V")
 	public Linkable_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) Signlink arg1) {
-		if (Static689.aString119.startsWith("win")) {
+		if (Static689.osName.startsWith("win")) {
 			this.anInt7611 = 1;
-		} else if (Static689.aString119.startsWith("mac")) {
+		} else if (Static689.osName.startsWith("mac")) {
 			this.anInt7611 = 2;
-		} else if (Static689.aString119.startsWith("linux")) {
+		} else if (Static689.osName.startsWith("linux")) {
 			this.anInt7611 = 3;
 		} else {
 			this.anInt7611 = 4;
 		}
-		if (Static689.aString121.startsWith("amd64") || Static689.aString121.startsWith("x86_64")) {
+		if (Static689.osArch.startsWith("amd64") || Static689.osArch.startsWith("x86_64")) {
 			this.aBoolean580 = true;
 		} else {
 			this.aBoolean580 = false;
 		}
 		if (this.anInt7611 == 1) {
-			if (Static689.aString120.indexOf("4.0") != -1) {
+			if (Static689.osVer.indexOf("4.0") != -1) {
 				this.anInt7612 = 1;
-			} else if (Static689.aString120.indexOf("4.1") != -1) {
+			} else if (Static689.osVer.indexOf("4.1") != -1) {
 				this.anInt7612 = 2;
-			} else if (Static689.aString120.indexOf("4.9") != -1) {
+			} else if (Static689.osVer.indexOf("4.9") != -1) {
 				this.anInt7612 = 3;
-			} else if (Static689.aString120.indexOf("5.0") != -1) {
+			} else if (Static689.osVer.indexOf("5.0") != -1) {
 				this.anInt7612 = 4;
-			} else if (Static689.aString120.indexOf("5.1") != -1) {
+			} else if (Static689.osVer.indexOf("5.1") != -1) {
 				this.anInt7612 = 5;
-			} else if (Static689.aString120.indexOf("6.0") != -1) {
+			} else if (Static689.osVer.indexOf("6.0") != -1) {
 				this.anInt7612 = 6;
-			} else if (Static689.aString120.indexOf("6.1") != -1) {
+			} else if (Static689.osVer.indexOf("6.1") != -1) {
 				this.anInt7612 = 7;
 			}
 		} else if (this.anInt7611 == 2) {
-			if (Static689.aString120.indexOf("10.4") != -1) {
+			if (Static689.osVer.indexOf("10.4") != -1) {
 				this.anInt7612 = 20;
-			} else if (Static689.aString120.indexOf("10.5") != -1) {
+			} else if (Static689.osVer.indexOf("10.5") != -1) {
 				this.anInt7612 = 21;
-			} else if (Static689.aString120.indexOf("10.6") != -1) {
+			} else if (Static689.osVer.indexOf("10.6") != -1) {
 				this.anInt7612 = 22;
-			} else if (Static689.aString120.indexOf("10.7") != -1) {
+			} else if (Static689.osVer.indexOf("10.7") != -1) {
 				this.anInt7612 = 23;
 			}
 		}

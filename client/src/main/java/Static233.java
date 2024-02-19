@@ -36,7 +36,7 @@ public final class Static233 {
 			local19.method3274();
 		}
 		Static707.method9227();
-		Static352.method5180();
+		Static352.resetCache();
 		Static563.method7461();
 		for (@Pc(36) int local36 = 0; local36 < 4; local36++) {
 			Static577.aClass110Array1[local36].method2467();

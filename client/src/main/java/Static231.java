@@ -56,7 +56,7 @@ public final class Static231 {
 		Static638.method8393();
 		Static65.method1472();
 		Static81.method1589();
-		Static352.method5180();
+		Static352.resetCache();
 		Static203.method3068();
 		Static143.method3572();
 		Static668.method8700(false);
@@ -436,23 +436,23 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("tween")) {
-					if (!Static296.aBoolean367) {
-						Static296.aBoolean367 = true;
+					if (!Static296.tweeningEnabled) {
+						Static296.tweeningEnabled = true;
 						Static79.method1579("Forced tweening ENABLED!");
 						return;
 					}
-					Static296.aBoolean367 = false;
+					Static296.tweeningEnabled = false;
 					Static79.method1579("Forced tweening disabled.");
 					return;
 				}
 				if (arg2.equalsIgnoreCase("shiftclick")) {
-					if (Static209.aBoolean269) {
+					if (Static209.shiftClickEnabled) {
 						Static79.method1579("Shift-click disabled.");
-						Static209.aBoolean269 = false;
+						Static209.shiftClickEnabled = false;
 						return;
 					}
 					Static79.method1579("Shift-click ENABLED!");
-					Static209.aBoolean269 = true;
+					Static209.shiftClickEnabled = true;
 					return;
 				}
 				if (arg2.equalsIgnoreCase("getcgcoord")) {
@@ -480,9 +480,9 @@ public final class Static231 {
 						} else if (local501 > 4) {
 							local501 = 4;
 						}
-						Static455.anInt6915 = local501;
+						Static455.availableRenderCores = local501;
 						Static449.method6116();
-						Static79.method1579("Render cores now: " + Static455.anInt6915);
+						Static79.method1579("Render cores now: " + Static455.availableRenderCores);
 						return;
 					}
 					Static79.method1579("Current toolkit doesn't support multiple cores");
@@ -532,8 +532,8 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("nonpcs")) {
-					Static353.aBoolean734 = !Static353.aBoolean734;
-					Static79.method1579("nonpcs=" + Static353.aBoolean734);
+					Static353.hideNpcs = !Static353.hideNpcs;
+					Static79.method1579("nonpcs=" + Static353.hideNpcs);
 					return;
 				}
 				if (arg2.equals("autoworld")) {
@@ -548,7 +548,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("getworld")) {
-					Static79.method1579("w: " + Static344.aClass229_1.anInt5856);
+					Static79.method1579("w: " + Static344.aClass229_1.worldId);
 					return;
 				}
 				if (arg2.startsWith("pc")) {
@@ -582,19 +582,19 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("showcolmap")) {
-					Static113.aBoolean198 = true;
+					Static113.showcolmap = true;
 					Static244.method3512();
 					Static79.method1579("colmap is shown");
 					return;
 				}
 				if (arg2.equals("hidecolmap")) {
-					Static113.aBoolean198 = false;
+					Static113.showcolmap = false;
 					Static244.method3512();
 					Static79.method1579("colmap is hidden");
 					return;
 				}
 				if (arg2.equals("resetcache")) {
-					Static352.method5180();
+					Static352.resetCache();
 					Static79.method1579("Caches reset");
 					return;
 				}
@@ -659,7 +659,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("heapdump")) {
-					if (Static689.aString119.startsWith("win")) {
+					if (Static689.osName.startsWith("win")) {
 						Static21.method8048(new File("C:\\Temp\\heap.dump"));
 					} else {
 						Static21.method8048(new File("/tmp/heap.dump"));
@@ -668,9 +668,9 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("os")) {
-					Static79.method1579("Name: " + Static689.aString119);
-					Static79.method1579("Arch: " + Static689.aString121);
-					Static79.method1579("Ver: " + Static689.aString120);
+					Static79.method1579("Name: " + Static689.osName);
+					Static79.method1579("Arch: " + Static689.osArch);
+					Static79.method1579("Ver: " + Static689.osVer);
 					return;
 				}
 				if (arg2.startsWith("w2debug")) {
@@ -773,10 +773,10 @@ public final class Static231 {
 					local1621 = Static189.method2861(Static366.method5261(Static620.method8323(local2712), ""), '\n');
 					Static363.method6234(local1621);
 				}
-				if (arg2.startsWith("zoom ")) {
+				if (arg2.startsWith("zoom")) {
 					@Pc(2748) short local2748 = (short) Static647.method8473(arg2.substring(5));
 					if (local2748 > 0) {
-						Static502.aShort97 = local2748;
+						Static502.zoom = local2748;
 					}
 					return;
 				}

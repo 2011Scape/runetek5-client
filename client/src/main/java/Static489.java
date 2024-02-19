@@ -189,7 +189,7 @@ public final class Static489 {
 			Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052) + "<br>(100%)", true, Static694.aClass381_13, Static437.aClass14_9);
 		}
 		Static557.method7331();
-		Static352.method5180();
+		Static352.resetCache();
 		Static46.method1084();
 		@Pc(430) boolean local430 = false;
 		if (Static163.aClass19_17.method7990() && Static400.aClass2_Sub34_28.aPreference_Sub26_1.method7463() == 2) {
@@ -208,7 +208,7 @@ public final class Static489 {
 		if (Static163.aClass19_17.method7968()) {
 			local310++;
 		}
-		Static21.method8043(Static163.aClass19_17, Static455.anInt6915, Static720.anInt10859, Static501.anInt7568, local310, local430, Static163.aClass19_17.method7955() > 0);
+		Static21.method8043(Static163.aClass19_17, Static455.availableRenderCores, Static720.anInt10859, Static501.anInt7568, local310, local430, Static163.aClass19_17.method7955() > 0);
 		Static483.method6490(Static699.anInt10539);
 		if (Static699.anInt10539 == 0) {
 			Static110.method2082((Class14) null);
@@ -266,7 +266,7 @@ public final class Static489 {
 			Static314.method4568(true);
 			Static101.method2001(Static118.aByteArrayArray3, Static2.aClass306_Sub1_1);
 		}
-		Static352.method5180();
+		Static352.resetCache();
 		if (Static369.anInt4265 < 96) {
 			Static358.method9191();
 		}
@@ -282,7 +282,7 @@ public final class Static489 {
 			} else {
 				Static101.method2001(Static421.aByteArrayArray19, Static134.aClass306_Sub1_3);
 			}
-			Static352.method5180();
+			Static352.resetCache();
 			Static314.method4568(true);
 			Static134.aClass306_Sub1_3.method7888(Static163.aClass19_17, (Class178) null, Static706.aClass178Array3[0]);
 			Static134.aClass306_Sub1_3.method7898(true, Static163.aClass19_17);
@@ -314,7 +314,7 @@ public final class Static489 {
 		Static77.method1561();
 		Static557.method7331();
 		Static197.method2949();
-		Static352.method5180();
+		Static352.resetCache();
 		Static442.method5969();
 		@Pc(920) OutboundPacket local920;
 		if (Static353.aFrame10 != null && Connection.gameConnection.aClass348_1 != null && Static283.gameState == 12) {
