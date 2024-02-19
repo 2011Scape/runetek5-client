@@ -27,7 +27,7 @@ public final class Static93 {
 			local57 = arg2 + arg0 / 2 - 20 - 18;
 			arg4.method7976(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.anInt5562].getRGB(), 0);
 			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4403 * 3, 30, Static718.aColorArray3[Static338.anInt5562].getRGB(), 0);
-			Static180.aClass14_3.method8828(-1, local38, LocalizedText.LOADING.get(Static51.anInt1052), local57 + 20, Static399.aColorArray2[Static338.anInt5562].getRGB());
+			Static180.aClass14_3.method8828(-1, local38, LocalizedText.LOADING.get(Static51.clientLanguageId), local57 + 20, Static399.aColorArray2[Static338.anInt5562].getRGB());
 			return;
 		}
 		@Pc(114) int local114 = Static164.anInt2809 - (int) ((float) arg5 / Static30.aFloat105);

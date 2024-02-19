@@ -159,9 +159,9 @@ public final class Static161 {
 			@Pc(574) String local574 = arg2.gjstr();
 			if (local574.charAt(0) == '~') {
 				local574 = local574.substring(1);
-				Static44.method1072(local574, arg0.method1424(false), 0, arg0.aString8, arg0.method1422(), 2);
+				Static44.method1072(local574, arg0.method1424(false), 0, arg0.name1, arg0.method1422(), 2);
 			} else if (arg0 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2) {
-				Static44.method1072(local574, arg0.method1424(false), 0, arg0.aString8, arg0.method1422(), 2);
+				Static44.method1072(local574, arg0.method1424(false), 0, arg0.name1, arg0.method1422(), 2);
 			}
 			arg0.method1413(0, 0, local574);
 		}

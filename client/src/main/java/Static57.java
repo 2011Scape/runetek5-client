@@ -86,7 +86,7 @@ public final class Static57 {
 		@Pc(26) int[] local26 = Static210.anIntArray280;
 		for (@Pc(28) int local28 = 0; local28 < local24; local28++) {
 			@Pc(35) Player local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
-			if (local35.aString9 != null && local35.aString9.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10822 & 0x10) != 0 || (Static717.anInt10822 & 0x8) != 0)) {
+			if (local35.name2 != null && local35.name2.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10822 & 0x10) != 0 || (Static717.anInt10822 & 0x8) != 0)) {
 				@Pc(75) OutboundPacket local75 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
 				local75.buffer.ip2(local26[local28]);
 				local75.buffer.p4_alt1(Static450.anInt6819);
@@ -100,7 +100,7 @@ public final class Static57 {
 			}
 		}
 		if (!local22) {
-			Static67.method6098(LocalizedText.FRIEND_UNABLE_TO_FIND.get(Static51.anInt1052) + arg0);
+			Static67.method6098(LocalizedText.FRIEND_UNABLE_TO_FIND.get(Static51.clientLanguageId) + arg0);
 		}
 		if (Static156.aBoolean223) {
 			Static470.method6384();

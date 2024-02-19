@@ -126,12 +126,12 @@ public final class client extends GameShell {
 			} else {
 				Static426.method1016("modewhat");
 			}
-			Static51.anInt1052 = Static541.method7198(arg0[4]);
-			if (Static51.anInt1052 == -1) {
+			Static51.clientLanguageId = Static541.method7198(arg0[4]);
+			if (Static51.clientLanguageId == -1) {
 				if (arg0[4].equals("english")) {
-					Static51.anInt1052 = 0;
+					Static51.clientLanguageId = 0;
 				} else if (arg0[4].equals("german")) {
-					Static51.anInt1052 = 1;
+					Static51.clientLanguageId = 1;
 				} else {
 					Static426.method1016("language");
 				}
@@ -139,13 +139,13 @@ public final class client extends GameShell {
 			Static464.aBoolean533 = false;
 			Static98.aBoolean191 = false;
 			if (arg0[5].equals("game0")) {
-				Static392.aModeGame4 = ModeGame.GAME_RUNESCAPE;
+				Static392.clientModeGame = ModeGame.GAME_RUNESCAPE;
 			} else if (arg0[5].equals("game1")) {
-				Static392.aModeGame4 = ModeGame.GAME_STELLARDAWN;
+				Static392.clientModeGame = ModeGame.GAME_STELLARDAWN;
 			} else if (arg0[5].equals("game2")) {
-				Static392.aModeGame4 = ModeGame.GAME_3;
+				Static392.clientModeGame = ModeGame.GAME_3;
 			} else if (arg0[5].equals("game3")) {
-				Static392.aModeGame4 = ModeGame.GAME_4;
+				Static392.clientModeGame = ModeGame.GAME_4;
 			} else {
 				Static426.method1016("game");
 			}
@@ -156,14 +156,14 @@ public final class client extends GameShell {
 			Static126.aBoolean200 = true;
 			Static473.aBoolean539 = false;
 			Static389.aString64 = null;
-			Static338.anInt5562 = Static392.aModeGame4.id;
+			Static338.anInt5562 = Static392.clientModeGame.id;
 			Static150.aString26 = "";
 			Static265.aByteArray44 = null;
 			Static584.anInt8634 = 0;
 			Static416.aLong208 = 0L;
 			@Pc(241) client local241 = new client();
 			Static295.aClient1 = local241;
-			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.name);
+			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.clientModeGame.name);
 			Static353.aFrame10.setLocation(40, 40);
 		} catch (@Pc(265) Exception local265) {
 			Static240.method3496(local265, (String) null);
@@ -237,7 +237,7 @@ public final class client extends GameShell {
 			Static466.loadingScreenChecksum = loadingScreen.getChecksum();
 			Static616.method8284(loadingSprites);
 			@Pc(250) int local250 = Static400.aClass2_Sub34_28.aPreference_Sub11_1.method3603();
-			Static333.aClass279_1 = new Class279(Static392.aModeGame4, Static51.anInt1052, loadingScreen);
+			Static333.aClass279_1 = new Class279(Static392.clientModeGame, Static51.clientLanguageId, loadingScreen);
 			@Pc(262) int[] local262 = Static333.aClass279_1.method6275(local250);
 			if (local262.length == 0) {
 				local262 = Static333.aClass279_1.method6275(0);
@@ -357,37 +357,37 @@ public final class client extends GameShell {
 				return 99;
 			}
 			Static56.anInterface4_3 = new Js5TextureProvider(materials, textures, sprites);
-			Static386.aParamTypeList2 = new ParamTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static574.aBasTypeList2 = new BasTypeList(Static392.aModeGame4, Static51.anInt1052, config, Static125.aClass388_1);
-			Static354.aCursorTypeList1 = new CursorTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
-			Static619.aEnumTypeList2 = new EnumTypeList(Static392.aModeGame4, Static51.anInt1052, configEnum);
-			Static467.aFloTypeList3 = new FloTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static540.aFluTypeList6 = new FluTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static561.aHitmarkTypeList2 = new HitmarkTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
-			Static68.aIdkTypeList3 = new IdkTypeList(Static392.aModeGame4, Static51.anInt1052, config, models);
-			Static503.aInvTypeList1 = new InvTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static48.aLightTypeList1 = new LightTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static354.aLocTypeList4 = new LocTypeList(Static392.aModeGame4, Static51.anInt1052, true, configLoc, models);
-			Static577.aMelTypeList4 = new MelTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
-			Static720.aMsiTypeList4 = new MsiTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
-			Static690.aNpcTypeList2 = new NpcTypeList(Static392.aModeGame4, Static51.anInt1052, true, configNpc, models);
-			ObjTypeList.objTypes = new ObjTypeList(Static392.aModeGame4, Static51.anInt1052, true, Static386.aParamTypeList2, configObj, models);
-			Static272.aQuestTypeList1 = new QuestTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static25.aSeqTypeList1 = new SeqTypeList(Static392.aModeGame4, Static51.anInt1052, configSeq, anims, bases);
-			Static324.aSkyBoxTypeList1 = new SkyBoxTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static99.aSkyBoxSphereTypeList1 = new SkyBoxSphereTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static23.aSpotAnimTypeList1 = new SpotAnimTypeList(Static392.aModeGame4, Static51.anInt1052, configSpot, models);
-			Static652.aStructTypeList1 = new StructTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static718.aVarClientStrTypeList1 = new VarClientStrTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static691.aVarClientTypeList1 = new VarClientTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static529.aVarBitTypeList1 = new VarBitTypeList(Static392.aModeGame4, Static51.anInt1052, configVarbit);
-			Static36.aVarPlayerTypeList1 = new VarPlayerTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static628.aVarClanTypeList5 = new VarClanTypeList(Static392.aModeGame4, Static51.anInt1052, config);
-			Static648.aVarClanSettingTypeList1 = new VarClanSettingTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static386.aParamTypeList2 = new ParamTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static574.aBasTypeList2 = new BasTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, Static125.aClass388_1);
+			Static354.aCursorTypeList1 = new CursorTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, sprites);
+			Static619.aEnumTypeList2 = new EnumTypeList(Static392.clientModeGame, Static51.clientLanguageId, configEnum);
+			Static467.aFloTypeList3 = new FloTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static540.aFluTypeList6 = new FluTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static561.aHitmarkTypeList2 = new HitmarkTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, sprites);
+			Static68.aIdkTypeList3 = new IdkTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, models);
+			Static503.aInvTypeList1 = new InvTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static48.aLightTypeList1 = new LightTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static354.aLocTypeList4 = new LocTypeList(Static392.clientModeGame, Static51.clientLanguageId, true, configLoc, models);
+			Static577.aMelTypeList4 = new MelTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, sprites);
+			Static720.aMsiTypeList4 = new MsiTypeList(Static392.clientModeGame, Static51.clientLanguageId, config, sprites);
+			Static690.aNpcTypeList2 = new NpcTypeList(Static392.clientModeGame, Static51.clientLanguageId, true, configNpc, models);
+			ObjTypeList.objTypes = new ObjTypeList(Static392.clientModeGame, Static51.clientLanguageId, true, Static386.aParamTypeList2, configObj, models);
+			Static272.aQuestTypeList1 = new QuestTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static25.aSeqTypeList1 = new SeqTypeList(Static392.clientModeGame, Static51.clientLanguageId, configSeq, anims, bases);
+			Static324.aSkyBoxTypeList1 = new SkyBoxTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static99.aSkyBoxSphereTypeList1 = new SkyBoxSphereTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static23.aSpotAnimTypeList1 = new SpotAnimTypeList(Static392.clientModeGame, Static51.clientLanguageId, configSpot, models);
+			Static652.aStructTypeList1 = new StructTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static718.aVarClientStrTypeList1 = new VarClientStrTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static691.aVarClientTypeList1 = new VarClientTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static529.aVarBitTypeList1 = new VarBitTypeList(Static392.clientModeGame, Static51.clientLanguageId, configVarbit);
+			Static36.aVarPlayerTypeList1 = new VarPlayerTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static628.aVarClanTypeList5 = new VarClanTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
+			Static648.aVarClanSettingTypeList1 = new VarClanSettingTypeList(Static392.clientModeGame, Static51.clientLanguageId, config);
 			Static444.method5987(interfaces, fontMetrics, sprites, models);
 			Static110.method2081(configBillboard);
-			Static68.aQuickChatCatTypeList3 = new QuickChatCatTypeList(Static51.anInt1052, quickchat, quickchatGlobal);
-			Static288.aQuickChatPhraseTypeList2 = new QuickChatPhraseTypeList(Static51.anInt1052, quickchat, quickchatGlobal, new Js5QuickChatCommandDecoder());
+			Static68.aQuickChatCatTypeList3 = new QuickChatCatTypeList(Static51.clientLanguageId, quickchat, quickchatGlobal);
+			Static288.aQuickChatPhraseTypeList2 = new QuickChatPhraseTypeList(Static51.clientLanguageId, quickchat, quickchatGlobal, new Js5QuickChatCommandDecoder());
 			Static412.method5693();
 			Static354.aLocTypeList4.setLowDetail(Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 0);
 			Static34.aClass304_1 = new Class304();
@@ -747,10 +747,10 @@ public final class client extends GameShell {
 											for (@Pc(672) SecondaryParticleNode_Sub1 local672 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2790(); local672 != null; local672 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2785()) {
 												if ((long) local672.anInt6433 < Static588.method7715() / 1000L - 5L) {
 													if (local672.aShort74 > 0) {
-														Static44.method1072(local672.aString72 + LocalizedText.FRIEND_LOGGED_IN.get(Static51.anInt1052), "", 0, "", "", 5);
+														Static44.method1072(local672.aString72 + LocalizedText.FRIEND_LOGGED_IN.get(Static51.clientLanguageId), "", 0, "", "", 5);
 													}
 													if (local672.aShort74 == 0) {
-														Static44.method1072(local672.aString72 + LocalizedText.FRIEND_LOGGED_OUT.get(Static51.anInt1052), "", 0, "", "", 5);
+														Static44.method1072(local672.aString72 + LocalizedText.FRIEND_LOGGED_OUT.get(Static51.clientLanguageId), "", 0, "", "", 5);
 													}
 													local672.method9274();
 												}
@@ -895,22 +895,22 @@ public final class client extends GameShell {
 					Static357.anInt6508 = Static593.anInt8763;
 				}
 				local110 = (Static357.anInt6508 - Static593.anInt8763) * 50 / Static357.anInt6508;
-				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052) + "<br>(" + local110 + "%)", true, Static694.aClass381_13, Static437.aClass14_9);
+				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId) + "<br>(" + local110 + "%)", true, Static694.aClass381_13, Static437.aClass14_9);
 			} else if (Static213.anInt3472 == 2) {
 				if (Static13.anInt150 > Static440.anInt6683) {
 					Static440.anInt6683 = Static13.anInt150;
 				}
 				local110 = (Static440.anInt6683 - Static13.anInt150) * 50 / Static440.anInt6683 + 50;
-				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052) + "<br>(" + local110 + "%)", true, Static694.aClass381_13, Static437.aClass14_9);
+				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId) + "<br>(" + local110 + "%)", true, Static694.aClass381_13, Static437.aClass14_9);
 			} else {
-				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+				Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
 			}
 		} else if (Static283.gameState == 11) {
 			Static686.method7930(local20);
 		} else if (Static283.gameState == 14) {
-			Static694.method9028(Static163.aClass19_17, LocalizedText.CONNECTION_LOST.get(Static51.anInt1052) + "<br>" + LocalizedText.CONNECTION_REESTABLISH.get(Static51.anInt1052), false, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, LocalizedText.CONNECTION_LOST.get(Static51.clientLanguageId) + "<br>" + LocalizedText.CONNECTION_REESTABLISH.get(Static51.clientLanguageId), false, Static694.aClass381_13, Static437.aClass14_9);
 		} else if (Static283.gameState == 15) {
-			Static694.method9028(Static163.aClass19_17, LocalizedText.PLEASE_WAIT.get(Static51.anInt1052), false, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, LocalizedText.PLEASE_WAIT.get(Static51.clientLanguageId), false, Static694.aClass381_13, Static437.aClass14_9);
 		}
 		if (Static18.anInt251 == 3) {
 			for (local110 = 0; local110 < Static122.anInt2339; local110++) {
@@ -1143,7 +1143,7 @@ public final class client extends GameShell {
 		}
 		Static344.aClass229_1 = Static527.aClass229_3;
 		Static637.aShortArray132 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
-		if (Static392.aModeGame4 == ModeGame.GAME_RUNESCAPE) {
+		if (Static392.clientModeGame == ModeGame.GAME_RUNESCAPE) {
 			Static273.aBoolean340 = false;
 		}
 		try {
@@ -1175,7 +1175,7 @@ public final class client extends GameShell {
 		if (ModeWhere.LIVE != Static2.aModeWhere1 && !ClientConfig.DISABLE_DEFAULT_FPSON) {
 			Static105.aBoolean196 = true;
 		}
-		Static484.aString85 = LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052);
+		Static484.aString85 = LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId);
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(I)Ljava/lang/String;")
@@ -1257,9 +1257,9 @@ public final class client extends GameShell {
 			Static598.aClass162_5 = Static523.aClass162_3;
 		}
 		try {
-			Static51.anInt1052 = Integer.parseInt(this.getParameter("lang"));
+			Static51.clientLanguageId = Integer.parseInt(this.getParameter("lang"));
 		} catch (@Pc(110) Exception local110) {
-			Static51.anInt1052 = 0;
+			Static51.clientLanguageId = 0;
 		}
 		@Pc(118) String local118 = this.getParameter("objecttag");
 		if (local118 != null && local118.equals("1")) {
@@ -1282,13 +1282,13 @@ public final class client extends GameShell {
 		@Pc(190) String local190 = this.getParameter("game");
 		if (local190 != null) {
 			if (local190.equals("0")) {
-				Static392.aModeGame4 = ModeGame.GAME_RUNESCAPE;
+				Static392.clientModeGame = ModeGame.GAME_RUNESCAPE;
 			} else if (local190.equals("1")) {
-				Static392.aModeGame4 = ModeGame.GAME_STELLARDAWN;
+				Static392.clientModeGame = ModeGame.GAME_STELLARDAWN;
 			} else if (local190.equals("2")) {
-				Static392.aModeGame4 = ModeGame.GAME_3;
+				Static392.clientModeGame = ModeGame.GAME_3;
 			} else if (local190.equals("3")) {
-				Static392.aModeGame4 = ModeGame.GAME_4;
+				Static392.clientModeGame = ModeGame.GAME_4;
 			}
 		}
 		try {
@@ -1351,10 +1351,10 @@ public final class client extends GameShell {
 		if (Static389.aString64 != null && Static389.aString64.length() > 50) {
 			Static389.aString64 = null;
 		}
-		if (ModeGame.GAME_RUNESCAPE == Static392.aModeGame4) {
+		if (ModeGame.GAME_RUNESCAPE == Static392.clientModeGame) {
 			Static302.anInt4851 = 765;
 			Static479.anInt7201 = 503;
-		} else if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
+		} else if (Static392.clientModeGame == ModeGame.GAME_STELLARDAWN) {
 			Static479.anInt7201 = 480;
 			Static302.anInt4851 = 640;
 		}
@@ -1363,7 +1363,7 @@ public final class client extends GameShell {
 			Static416.aBoolean473 = true;
 		}
 		Static295.aClient1 = this;
-		this.method1640(Static302.anInt4851, Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.name, Static479.anInt7201);
+		this.method1640(Static302.anInt4851, Static598.aClass162_5.method3469() + 32, Static392.clientModeGame.name, Static479.anInt7201);
 	}
 
 	@OriginalMember(owner = "client!client", name = "c", descriptor = "(I)V")

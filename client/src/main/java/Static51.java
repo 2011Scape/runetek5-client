@@ -11,7 +11,7 @@ public final class Static51 {
 	public static final ServerProt ServerProt30 = new ServerProt(54, -1);
 
 	@OriginalMember(owner = "client!bma", name = "c", descriptor = "I")
-	public static int anInt1052 = 0;
+	public static int clientLanguageId = 0;
 
 	@OriginalMember(owner = "client!bma", name = "b", descriptor = "I")
 	public static int anInt1053 = 0;

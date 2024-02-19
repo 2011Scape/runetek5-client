@@ -100,7 +100,7 @@ public final class Static254 {
 		Static218.method3187();
 		Static273.aBoolean339 = true;
 		Static637.aShortArray132 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
-		Static331.aString52 = LocalizedText.WALK_HERE.get(Static51.anInt1052);
+		Static331.aString52 = LocalizedText.WALK_HERE.get(Static51.clientLanguageId);
 		Static400.aClass2_Sub34_28.method5104(Static400.aClass2_Sub34_28.aPreference_Sub4_1.method2143(), Static400.aClass2_Sub34_28.aPreference_Sub4_2);
 		Static400.aClass2_Sub34_28.method5104(Static400.aClass2_Sub34_28.aPreference_Sub19_1.method5960(), Static400.aClass2_Sub34_28.aPreference_Sub19_2);
 		Static334.anInt5456 = 0;

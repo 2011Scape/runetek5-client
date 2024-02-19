@@ -106,7 +106,7 @@ public class Protocol {
             arg0.packetType = null;
             return true;
         } else if (Static632.ServerProt229 == arg0.packetType) {
-            Static331.aString52 = arg0.anInt3648 <= 2 ? LocalizedText.WALK_HERE.get(Static51.anInt1052) : local11.gjstr();
+            Static331.aString52 = arg0.anInt3648 <= 2 ? LocalizedText.WALK_HERE.get(Static51.clientLanguageId) : local11.gjstr();
             Static331.anInt5439 = arg0.anInt3648 <= 0 ? -1 : local11.g2();
             if (Static331.anInt5439 == 65535) {
                 Static331.anInt5439 = -1;
@@ -1794,7 +1794,7 @@ public class Protocol {
                                                                                         Static87.aClass241Array1[local1449].anInt6148 = local1409;
                                                                                         Static87.aClass241Array1[local1449].aByte99 = local7377;
                                                                                         Static87.aClass241Array1[local1449].aString65 = local1427;
-                                                                                        if (local627.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9)) {
+                                                                                        if (local627.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2)) {
                                                                                             Static682.aByte142 = local7377;
                                                                                         }
                                                                                         Static352.anInt5754 = Static642.anInt9599;
@@ -1817,7 +1817,7 @@ public class Protocol {
                                                                                 }
                                                                                 Static87.aClass241Array1[local1449 + 1] = local7394;
                                                                                 Static706.anInt10633++;
-                                                                                if (local627.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9)) {
+                                                                                if (local627.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2)) {
                                                                                     Static682.aByte142 = local7377;
                                                                                 }
                                                                             }
@@ -1849,12 +1849,12 @@ public class Protocol {
                                                                             local526 = local11.g2();
                                                                             local1409 = local11.g1();
                                                                             local6565 = (local526 & 0x8000) != 0;
-                                                                            if (local7724.aString9 != null && local7724.aPlayerAppearance1 != null) {
+                                                                            if (local7724.name2 != null && local7724.aPlayerAppearance1 != null) {
                                                                                 local1425 = false;
                                                                                 if (local1409 <= 1) {
                                                                                     if (!local6565 && (Static389.aBoolean459 && !Static34.aBoolean62 || Static617.aBoolean724)) {
                                                                                         local1425 = true;
-                                                                                    } else if (Static71.method1524(local7724.aString9)) {
+                                                                                    } else if (Static71.method1524(local7724.name2)) {
                                                                                         local1425 = true;
                                                                                     }
                                                                                 }
@@ -1875,11 +1875,11 @@ public class Protocol {
                                                                                         local1449 = local6565 ? 17 : 2;
                                                                                     }
                                                                                     if (local1409 == 2) {
-                                                                                        Static662.method8625("<img=1>" + local7724.method1422(), "<img=1>" + local7724.method1424(false), local996, local1427, (String) null, 0, local7724.aString8, local1449);
+                                                                                        Static662.method8625("<img=1>" + local7724.method1422(), "<img=1>" + local7724.method1424(false), local996, local1427, (String) null, 0, local7724.name1, local1449);
                                                                                     } else if (local1409 == 1) {
-                                                                                        Static662.method8625("<img=0>" + local7724.method1422(), "<img=0>" + local7724.method1424(false), local996, local1427, (String) null, 0, local7724.aString8, local1449);
+                                                                                        Static662.method8625("<img=0>" + local7724.method1422(), "<img=0>" + local7724.method1424(false), local996, local1427, (String) null, 0, local7724.name1, local1449);
                                                                                     } else {
-                                                                                        Static662.method8625(local7724.method1422(), local7724.method1424(false), local996, local1427, (String) null, 0, local7724.aString8, local1449);
+                                                                                        Static662.method8625(local7724.method1422(), local7724.method1424(false), local996, local1427, (String) null, 0, local7724.name1, local1449);
                                                                                     }
                                                                                 }
                                                                             }
@@ -2062,7 +2062,7 @@ public class Protocol {
                                                                                 local8611[local2098].anInt6148 = local11.g2();
                                                                                 local8611[local2098].aByte99 = local11.g1b();
                                                                                 local8611[local2098].aString65 = local11.gjstr();
-                                                                                if (local8611[local2098].aString66.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9)) {
+                                                                                if (local8611[local2098].aString66.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2)) {
                                                                                     Static682.aByte142 = local8611[local2098].aByte99;
                                                                                 }
                                                                             }

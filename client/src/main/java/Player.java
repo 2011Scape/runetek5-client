@@ -7,13 +7,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!ca", name = "Sc", descriptor = "Ljava/lang/String;")
-	public String aString8;
+	public String name1;
 
 	@OriginalMember(owner = "client!ca", name = "Mc", descriptor = "Lclient!ju;")
 	public PlayerAppearance aPlayerAppearance1;
 
 	@OriginalMember(owner = "client!ca", name = "xd", descriptor = "Ljava/lang/String;")
-	public String aString9;
+	public String name2;
 
 	@OriginalMember(owner = "client!ca", name = "bd", descriptor = "I")
 	public int anInt1441;
@@ -49,7 +49,7 @@ public final class Player extends PathingEntity {
 	public boolean aBoolean126 = false;
 
 	@OriginalMember(owner = "client!ca", name = "cd", descriptor = "I")
-	public int anInt1437 = 0;
+	public int combatLevel1 = 0;
 
 	@OriginalMember(owner = "client!ca", name = "Ad", descriptor = "I")
 	public int anInt1436 = 0;
@@ -67,7 +67,7 @@ public final class Player extends PathingEntity {
 	public boolean aBoolean129 = false;
 
 	@OriginalMember(owner = "client!ca", name = "Fd", descriptor = "I")
-	public int anInt1444 = 0;
+	public int combatLevel2 = 0;
 
 	@OriginalMember(owner = "client!ca", name = "zd", descriptor = "Z")
 	public boolean aBoolean128 = false;
@@ -202,7 +202,7 @@ public final class Player extends PathingEntity {
 	@Override
 	protected int method9320(@OriginalArg(0) int arg0) {
 		if (arg0 != 0) {
-			this.anInt1444 = -112;
+			this.combatLevel2 = -112;
 		}
 		return this.anInt1443;
 	}
@@ -485,22 +485,22 @@ public final class Player extends PathingEntity {
 			local332[local184] = local191;
 		}
 		this.anInt1443 = arg0.g2();
-		this.aString8 = arg0.gjstr();
+		this.name1 = arg0.gjstr();
 		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this) {
-			Static515.aString96 = this.aString8;
+			Static515.aString96 = this.name1;
 		}
-		this.aString9 = this.aString8;
-		this.anInt1444 = arg0.g1();
+		this.name2 = this.name1;
+		this.combatLevel2 = arg0.g1();
 		if (local40) {
 			this.anInt1436 = arg0.g2();
-			this.anInt1437 = this.anInt1444;
+			this.combatLevel1 = this.combatLevel2;
 			if (this.anInt1436 == 65535) {
 				this.anInt1436 = -1;
 			}
 			this.anInt1471 = -1;
 		} else {
 			this.anInt1436 = 0;
-			this.anInt1437 = arg0.g1();
+			this.combatLevel1 = arg0.g1();
 			this.anInt1471 = arg0.g1();
 			if (this.anInt1471 == 255) {
 				this.anInt1471 = -1;
@@ -630,7 +630,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(ZI)Ljava/lang/String;")
 	public String method1422() {
-		return this.aString9;
+		return this.name2;
 	}
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(ZZ)Ljava/lang/String;")
@@ -657,7 +657,7 @@ public final class Player extends PathingEntity {
 				local40[this.aByte31] = -1;
 			}
 		}
-		local5 = local5 + this.aString8;
+		local5 = local5 + this.name1;
 		if (Static377.aStringArray30 != null) {
 			local5 = local5 + Static377.aStringArray30[this.aByte31];
 		}
@@ -674,7 +674,7 @@ public final class Player extends PathingEntity {
 			if (super.aClass80_3.aString20 == null) {
 				return null;
 			}
-			if (Static133.anInt2458 == 0 || Static133.anInt2458 == 3 || Static133.anInt2458 == 1 && Static362.method5241(arg0 + 3109, this.aString9)) {
+			if (Static133.anInt2458 == 0 || Static133.anInt2458 == 3 || Static133.anInt2458 == 1 && Static362.method5241(arg0 + 3109, this.name2)) {
 				return super.aClass80_3;
 			}
 		}

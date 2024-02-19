@@ -104,7 +104,7 @@ public final class Static147 {
 					}
 				} else {
 					if (Static501.aBoolean576) {
-						Static416.method5707(false, -1, 0L, local140, local142, LocalizedText.FACE_HERE.get(Static51.anInt1052), 11, true, -1, "", (long) (local142 | local140 << 0), true);
+						Static416.method5707(false, -1, 0L, local140, local142, LocalizedText.FACE_HERE.get(Static51.clientLanguageId), 11, true, -1, "", (long) (local142 | local140 << 0), true);
 					}
 					Static416.method5707(false, -1, 0L, local140, local142, Static331.aString52, 58, true, Static331.anInt5439, "", (long) (local142 | local140 << 0), true);
 				}

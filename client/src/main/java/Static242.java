@@ -36,7 +36,7 @@ public final class Static242 {
 
 	@OriginalMember(owner = "client!hj", name = "c", descriptor = "(I)V")
 	public static void method3502() {
-		Static525.aClass2_Sub2_Sub16_12 = new SecondaryLinkable_Sub16(LocalizedText.CANCEL.get(Static51.anInt1052), "", Static442.anInt6699, 1012, -1, 0L, 0, 0, true, false, 0L, true);
+		Static525.aClass2_Sub2_Sub16_12 = new SecondaryLinkable_Sub16(LocalizedText.CANCEL.get(Static51.clientLanguageId), "", Static442.anInt6699, 1012, -1, 0L, 0, 0, true, false, 0L, true);
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(IZ)I")
@@ -60,7 +60,7 @@ public final class Static242 {
 		@Pc(9) boolean local9 = false;
 		for (@Pc(19) int local19 = 0; local19 < local5; local19++) {
 			@Pc(26) Player local26 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local7[local19]];
-			if (local26 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local26 && local26.aString9 != null && local26.aString9.equalsIgnoreCase(arg0)) {
+			if (local26 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local26 && local26.name2 != null && local26.name2.equalsIgnoreCase(arg0)) {
 				@Pc(47) ClientProt local47 = null;
 				if (arg1 == 1) {
 					local47 = Static424.aClientProt79;
@@ -86,7 +86,7 @@ public final class Static242 {
 			}
 		}
 		if (!local9) {
-			Static67.method6098(LocalizedText.FRIEND_UNABLE_TO_FIND.get(Static51.anInt1052) + arg0);
+			Static67.method6098(LocalizedText.FRIEND_UNABLE_TO_FIND.get(Static51.clientLanguageId) + arg0);
 		}
 	}
 }

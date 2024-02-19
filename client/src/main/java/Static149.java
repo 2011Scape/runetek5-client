@@ -34,7 +34,7 @@ public final class Static149 {
 		@Pc(23) int local23 = local7 + Static84.anInt1775;
 		@Pc(25) int local25 = Static682.anInt10295;
 		@Pc(29) int local29 = Static407.anInt6288 - 3;
-		Static87.method1693(Static682.anInt10295, Static407.anInt6288, LocalizedText.CHOOSE_OPTION.get(Static51.anInt1052), arg0, local7 + Static84.anInt1775, Static71.anInt1576 - -local5);
+		Static87.method1693(Static682.anInt10295, Static407.anInt6288, LocalizedText.CHOOSE_OPTION.get(Static51.clientLanguageId), arg0, local7 + Static84.anInt1775, Static71.anInt1576 - -local5);
 		@Pc(55) int local55 = Static189.aMouse1.method8853() + local5;
 		@Pc(66) int local66 = local7 + Static189.aMouse1.method8854();
 		@Pc(70) int local70;

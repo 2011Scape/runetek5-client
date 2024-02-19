@@ -110,14 +110,14 @@ public final class Static28 {
 				local585 = local541.anInt10694 / 128 - local93 / 128;
 				@Pc(587) boolean local587 = false;
 				for (local589 = 0; local589 < Static327.anInt5392; local589++) {
-					if (local541.aString9.equals(Static330.aStringArray25[local589]) && Static371.anIntArray455[local589] != 0) {
+					if (local541.name2.equals(Static330.aStringArray25[local589]) && Static371.anIntArray455[local589] != 0) {
 						local587 = true;
 						break;
 					}
 				}
 				@Pc(620) boolean local620 = false;
 				for (local622 = 0; local622 < Static706.anInt10633; local622++) {
-					if (local541.aString9.equals(Static87.aClass241Array1[local622].aString66)) {
+					if (local541.name2.equals(Static87.aClass241Array1[local622].aString66)) {
 						local620 = true;
 						break;
 					}
