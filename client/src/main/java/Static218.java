@@ -15,7 +15,7 @@ public final class Static218 {
 		if (arg1.length() > 320 || !Static470.method6387()) {
 			return;
 		}
-		Static405.aClass153_1.method3274();
+		Connection.lobbyConnection.method3274();
 		Static367.method5268();
 		Static59.aString63 = arg0;
 		Static449.aString75 = arg1;

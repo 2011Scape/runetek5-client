@@ -10,7 +10,7 @@ public final class Static261 {
 	public static void method3833() {
 		Static438.aComponentArray3 = null;
 		if (Static137.aBoolean210 && Static36.method978(3) != 1) {
-			Static294.method4339(0, Static283.anInt4574 == 3 || Static283.anInt4574 == 7, Static593.method7779(), Static58.method1260(), 0);
+			Static294.method4339(0, Static283.gameState == 3 || Static283.gameState == 7, Static593.method7779(), Static58.method1260(), 0);
 		}
 		@Pc(46) int local46 = 0;
 		@Pc(48) int local48 = 0;

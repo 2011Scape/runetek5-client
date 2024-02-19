@@ -13,10 +13,10 @@ public final class Static616 {
 	public static void method8283(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
 		Static470.anInt7113 = -1;
 		if (ClientConfig.DISABLE_LOBBY) {
-			Static524.aClass153_3 = Static405.aClass153_2;
+			Static524.aConnection3 = Connection.gameConnection;
 			Static299.anInt4825 = 2;
 		} else {
-			Static524.aClass153_3 = Static405.aClass153_1;
+			Static524.aConnection3 = Connection.lobbyConnection;
 			Static299.anInt4825 = 1;
 		}
 		Static238.method3471(false, arg1, false, arg0);

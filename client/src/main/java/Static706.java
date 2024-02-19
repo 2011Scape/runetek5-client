@@ -115,10 +115,10 @@ public final class Static706 {
 			Static67.method6098(LocalizedText.FRIEND_CANNOT_ADD_SELF.get(Static51.anInt1052));
 			return;
 		}
-		@Pc(230) Class153 local230 = Static668.method8701();
-		@Pc(236) OutboundPacket local236 = Static293.method4335(Static669.aClientProt116, local230.aIsaacRandom_1);
-		local236.aPacketBit_1.p1(Static231.method3379(arg0));
-		local236.aPacketBit_1.pjstr(arg0);
-		local230.method3275(local236);
+		@Pc(230) Connection local230 = Connection.getActiveConnection();
+		@Pc(236) OutboundPacket local236 = OutboundPacket.create(Static669.aClientProt116, local230.random);
+		local236.data.p1(Static231.method3379(arg0));
+		local236.data.pjstr(arg0);
+		local230.queue(local236);
 	}
 }

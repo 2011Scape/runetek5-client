@@ -30,13 +30,13 @@ public final class Static55 {
 				Static676.anInt10206 = arg2;
 				Static616.anInt9417 = 2;
 				Static305.anInt4882 = arg0;
-				@Pc(64) OutboundPacket local64 = Static293.method4335(Static664.aClientProt115, Static405.aClass153_2.aIsaacRandom_1);
-				local64.aPacketBit_1.ip2(local26);
-				local64.aPacketBit_1.p4_alt1(Static450.anInt6819);
-				local64.aPacketBit_1.p2(Static162.anInt2799);
-				local64.aPacketBit_1.p1_alt3(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-				local64.aPacketBit_1.p2_alt3(Static77.anInt1614);
-				Static405.aClass153_2.method3275(local64);
+				@Pc(64) OutboundPacket local64 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
+				local64.data.ip2(local26);
+				local64.data.p4_alt1(Static450.anInt6819);
+				local64.data.p2(Static162.anInt2799);
+				local64.data.p1_alt3(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+				local64.data.p2_alt3(Static77.anInt1614);
+				Connection.gameConnection.queue(local64);
 				Static147.method2419(0, local44.anIntArray878[0], local44.method9302((byte) 99), true, local44.anIntArray879[0], 0, -2, local44.method9302((byte) 110));
 			}
 		}
@@ -46,13 +46,13 @@ public final class Static55 {
 			Static305.anInt4882 = arg0;
 			Static481.anInt7215 = 0;
 			Static676.anInt10206 = arg2;
-			local147 = Static293.method4335(Static664.aClientProt115, Static405.aClass153_2.aIsaacRandom_1);
-			local147.aPacketBit_1.ip2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10740);
-			local147.aPacketBit_1.p4_alt1(Static450.anInt6819);
-			local147.aPacketBit_1.p2(Static162.anInt2799);
-			local147.aPacketBit_1.p1_alt3(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local147.aPacketBit_1.p2_alt3(Static77.anInt1614);
-			Static405.aClass153_2.method3275(local147);
+			local147 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
+			local147.data.ip2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10740);
+			local147.data.p4_alt1(Static450.anInt6819);
+			local147.data.p2(Static162.anInt2799);
+			local147.data.p1_alt3(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+			local147.data.p2_alt3(Static77.anInt1614);
+			Connection.gameConnection.queue(local147);
 		}
 		if (local22 == 12) {
 			@Pc(197) Component local197 = Static15.method186(local16, local19);
@@ -74,23 +74,23 @@ public final class Static55 {
 			} else {
 				local147 = Static32.method878(local16, local19, local26);
 				if (local26 == 1) {
-					local147.aPacketBit_1.p1(-1);
-					local147.aPacketBit_1.p1(-1);
-					local147.aPacketBit_1.p2((int) Static171.aFloat64);
-					local147.aPacketBit_1.p1(57);
-					local147.aPacketBit_1.p1(Static29.anInt723);
-					local147.aPacketBit_1.p1(Static660.anInt9835);
-					local147.aPacketBit_1.p1(89);
-					local147.aPacketBit_1.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690);
-					local147.aPacketBit_1.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694);
-					local147.aPacketBit_1.p1(63);
+					local147.data.p1(-1);
+					local147.data.p1(-1);
+					local147.data.p2((int) Static171.aFloat64);
+					local147.data.p1(57);
+					local147.data.p1(Static29.anInt723);
+					local147.data.p1(Static660.anInt9835);
+					local147.data.p1(89);
+					local147.data.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690);
+					local147.data.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694);
+					local147.data.p1(63);
 				} else {
 					Static305.anInt4882 = arg0;
 					Static616.anInt9417 = 1;
 					Static481.anInt7215 = 0;
 					Static676.anInt10206 = arg2;
 				}
-				Static405.aClass153_2.method3275(local147);
+				Connection.gameConnection.queue(local147);
 				Static147.method2419(0, local19, 1, true, local16, 0, -4, 1);
 			}
 		}
@@ -129,10 +129,10 @@ public final class Static55 {
 				Static305.anInt4882 = arg0;
 				Static616.anInt9417 = 2;
 				Static676.anInt10206 = arg2;
-				local494 = Static293.method4335(local389, Static405.aClass153_2.aIsaacRandom_1);
-				local494.aPacketBit_1.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-				local494.aPacketBit_1.p2(local26);
-				Static405.aClass153_2.method3275(local494);
+				local494 = OutboundPacket.create(local389, Connection.gameConnection.random);
+				local494.data.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+				local494.data.p2(local26);
+				Connection.gameConnection.queue(local494);
 				Static147.method2419(0, local474.anIntArray878[0], local474.method9302((byte) 125), true, local474.anIntArray879[0], 0, -2, local474.method9302((byte) 60));
 			}
 		}
@@ -155,12 +155,12 @@ public final class Static55 {
 			Static481.anInt7215 = 0;
 			Static616.anInt9417 = 2;
 			Static676.anInt10206 = arg2;
-			local494 = Static293.method4335(local548, Static405.aClass153_2.aIsaacRandom_1);
-			local494.aPacketBit_1.p2_alt2(local26);
-			local494.aPacketBit_1.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local494.aPacketBit_1.p2(local19 + Static116.anInt2270);
-			local494.aPacketBit_1.ip2(Static691.anInt10367 + local16);
-			Static405.aClass153_2.method3275(local494);
+			local494 = OutboundPacket.create(local548, Connection.gameConnection.random);
+			local494.data.p2_alt2(local26);
+			local494.data.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+			local494.data.p2(local19 + Static116.anInt2270);
+			local494.data.ip2(Static691.anInt10367 + local16);
+			Connection.gameConnection.queue(local494);
 			Static414.method5697(local19, local16);
 		}
 		if (local22 == 11) {
@@ -171,10 +171,10 @@ public final class Static55 {
 				Static676.anInt10206 = arg2;
 				Static616.anInt9417 = 1;
 				Static305.anInt4882 = arg0;
-				local494 = Static293.method4335(Static512.aClientProt96, Static405.aClass153_2.aIsaacRandom_1);
-				local494.aPacketBit_1.p2_alt3(local19 + Static116.anInt2270);
-				local494.aPacketBit_1.ip2(Static691.anInt10367 + local16);
-				Static405.aClass153_2.method3275(local494);
+				local494 = OutboundPacket.create(Static512.aClientProt96, Connection.gameConnection.random);
+				local494.data.p2_alt3(local19 + Static116.anInt2270);
+				local494.data.ip2(Static691.anInt10367 + local16);
+				Connection.gameConnection.queue(local494);
 			}
 		}
 		if (local22 == 18) {
@@ -205,26 +205,26 @@ public final class Static55 {
 				Static616.anInt9417 = 2;
 				Static305.anInt4882 = arg0;
 				Static481.anInt7215 = 0;
-				@Pc(831) OutboundPacket local831 = Static293.method4335(local750, Static405.aClass153_2.aIsaacRandom_1);
-				local831.aPacketBit_1.p1_alt1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-				local831.aPacketBit_1.p2_alt2(local26);
-				Static405.aClass153_2.method3275(local831);
+				@Pc(831) OutboundPacket local831 = OutboundPacket.create(local750, Connection.gameConnection.random);
+				local831.data.p1_alt1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+				local831.data.p2_alt2(local26);
+				Connection.gameConnection.queue(local831);
 				Static147.method2419(0, local813.anIntArray878[0], local813.method9302((byte) 76), true, local813.anIntArray879[0], 0, -2, local813.method9302((byte) 103));
 			}
 		}
 		@Pc(878) ClientProt local878 = null;
 		if (local22 == 19) {
-			local878 = Static57.aClientProt10;
+			local878 = ClientProt.OPLOC1;
 		} else if (local22 == 13) {
-			local878 = Static180.aClientProt33;
+			local878 = ClientProt.OPLOC2;
 		} else if (local22 == 46) {
-			local878 = Static402.aClientProt72;
+			local878 = ClientProt.OPLOC3;
 		} else if (local22 == 8) {
-			local878 = Static185.aClientProt35;
+			local878 = ClientProt.OPLOC4;
 		} else if (local22 == 1010) {
-			local878 = Static236.aClientProt50;
+			local878 = ClientProt.OPLOC5;
 		} else if (local22 == 1008) {
-			local878 = Static342.aClientProt61;
+			local878 = ClientProt.OPLOC6;
 		}
 		@Pc(949) OutboundPacket local949;
 		if (local878 != null) {
@@ -232,12 +232,12 @@ public final class Static55 {
 			Static616.anInt9417 = 2;
 			Static481.anInt7215 = 0;
 			Static676.anInt10206 = arg2;
-			local949 = Static293.method4335(local878, Static405.aClass153_2.aIsaacRandom_1);
-			local949.aPacketBit_1.p1_alt1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local949.aPacketBit_1.p2_alt2(Static691.anInt10367 + local16);
-			local949.aPacketBit_1.p2_alt3((int) (local35 >>> 32) & Integer.MAX_VALUE);
-			local949.aPacketBit_1.ip2(local19 + Static116.anInt2270);
-			Static405.aClass153_2.method3275(local949);
+			local949 = OutboundPacket.create(local878, Connection.gameConnection.random);
+			local949.data.p1_alt1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+			local949.data.p2_alt2(Static691.anInt10367 + local16);
+			local949.data.p2_alt3((int) (local35 >>> 32) & Integer.MAX_VALUE);
+			local949.data.ip2(local19 + Static116.anInt2270);
+			Connection.gameConnection.queue(local949);
 			Static38.method1001(local16, local35, local19);
 		}
 		if (local22 == 1003 || local22 == 1001 || local22 == 1006 || local22 == 1009 || local22 == 1004) {
@@ -248,13 +248,13 @@ public final class Static55 {
 			Static616.anInt9417 = 1;
 			Static305.anInt4882 = arg0;
 			Static481.anInt7215 = 0;
-			local949 = Static293.method4335(Static181.aClientProt34, Static405.aClass153_2.aIsaacRandom_1);
-			local949.aPacketBit_1.p2_alt2(Static691.anInt10367 + local16);
-			local949.aPacketBit_1.ip2(Static162.anInt2799);
-			local949.aPacketBit_1.p4_alt2(Static450.anInt6819);
-			local949.aPacketBit_1.p2_alt2(Static116.anInt2270 + local19);
-			local949.aPacketBit_1.p2(Static77.anInt1614);
-			Static405.aClass153_2.method3275(local949);
+			local949 = OutboundPacket.create(Static181.aClientProt34, Connection.gameConnection.random);
+			local949.data.p2_alt2(Static691.anInt10367 + local16);
+			local949.data.ip2(Static162.anInt2799);
+			local949.data.p4_alt2(Static450.anInt6819);
+			local949.data.p2_alt2(Static116.anInt2270 + local19);
+			local949.data.p2(Static77.anInt1614);
+			Connection.gameConnection.queue(local949);
 			Static147.method2419(0, local19, 1, true, local16, 0, -4, 1);
 		}
 		if (local22 == 17) {
@@ -262,15 +262,15 @@ public final class Static55 {
 			Static481.anInt7215 = 0;
 			Static305.anInt4882 = arg0;
 			Static676.anInt10206 = arg2;
-			local949 = Static293.method4335(Static175.aClientProt31, Static405.aClass153_2.aIsaacRandom_1);
-			local949.aPacketBit_1.p2(local16 + Static691.anInt10367);
-			local949.aPacketBit_1.p2(Static116.anInt2270 + local19);
-			local949.aPacketBit_1.p2_alt3(Static162.anInt2799);
-			local949.aPacketBit_1.p4_alt3(Static450.anInt6819);
-			local949.aPacketBit_1.ip2(Static77.anInt1614);
-			local949.aPacketBit_1.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local949.aPacketBit_1.ip2(local26);
-			Static405.aClass153_2.method3275(local949);
+			local949 = OutboundPacket.create(Static175.aClientProt31, Connection.gameConnection.random);
+			local949.data.p2(local16 + Static691.anInt10367);
+			local949.data.p2(Static116.anInt2270 + local19);
+			local949.data.p2_alt3(Static162.anInt2799);
+			local949.data.p4_alt3(Static450.anInt6819);
+			local949.data.ip2(Static77.anInt1614);
+			local949.data.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+			local949.data.ip2(local26);
+			Connection.gameConnection.queue(local949);
 			Static414.method5697(local19, local16);
 		}
 		if (local22 == 23) {
@@ -281,13 +281,13 @@ public final class Static55 {
 				Static616.anInt9417 = 2;
 				Static676.anInt10206 = arg2;
 				Static305.anInt4882 = arg0;
-				@Pc(1223) OutboundPacket local1223 = Static293.method4335(Static503.aClientProt94, Static405.aClass153_2.aIsaacRandom_1);
-				local1223.aPacketBit_1.p2_alt3(Static77.anInt1614);
-				local1223.aPacketBit_1.ip2(Static162.anInt2799);
-				local1223.aPacketBit_1.ip2(local26);
-				local1223.aPacketBit_1.p4_alt3(Static450.anInt6819);
-				local1223.aPacketBit_1.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-				Static405.aClass153_2.method3275(local1223);
+				@Pc(1223) OutboundPacket local1223 = OutboundPacket.create(Static503.aClientProt94, Connection.gameConnection.random);
+				local1223.data.p2_alt3(Static77.anInt1614);
+				local1223.data.ip2(Static162.anInt2799);
+				local1223.data.ip2(local26);
+				local1223.data.p4_alt3(Static450.anInt6819);
+				local1223.data.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+				Connection.gameConnection.queue(local1223);
 				Static147.method2419(0, local1205.anIntArray878[0], local1205.method9302((byte) 44), true, local1205.anIntArray879[0], 0, -2, local1205.method9302((byte) 50));
 			}
 		}
@@ -299,15 +299,15 @@ public final class Static55 {
 			Static481.anInt7215 = 0;
 			Static305.anInt4882 = arg0;
 			Static616.anInt9417 = 2;
-			local949 = Static293.method4335(Static419.aClientProt77, Static405.aClass153_2.aIsaacRandom_1);
-			local949.aPacketBit_1.p1_alt2(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local949.aPacketBit_1.ip2(Static116.anInt2270 + local19);
-			local949.aPacketBit_1.ip2(Static77.anInt1614);
-			local949.aPacketBit_1.p4_alt1(Static450.anInt6819);
-			local949.aPacketBit_1.p2_alt3(Static162.anInt2799);
-			local949.aPacketBit_1.ip2(local16 + Static691.anInt10367);
-			local949.aPacketBit_1.p2_alt2(Integer.MAX_VALUE & (int) (local35 >>> 32));
-			Static405.aClass153_2.method3275(local949);
+			local949 = OutboundPacket.create(Static419.aClientProt77, Connection.gameConnection.random);
+			local949.data.p1_alt2(Static334.aKeyboard1.method8479(82) ? 1 : 0);
+			local949.data.ip2(Static116.anInt2270 + local19);
+			local949.data.ip2(Static77.anInt1614);
+			local949.data.p4_alt1(Static450.anInt6819);
+			local949.data.p2_alt3(Static162.anInt2799);
+			local949.data.ip2(local16 + Static691.anInt10367);
+			local949.data.p2_alt2(Integer.MAX_VALUE & (int) (local35 >>> 32));
+			Connection.gameConnection.queue(local949);
 			Static38.method1001(local16, local35, local19);
 		}
 		if (Static156.aBoolean223) {

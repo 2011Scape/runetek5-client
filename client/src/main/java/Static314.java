@@ -55,20 +55,20 @@ public final class Static314 {
 	@OriginalMember(owner = "client!jw", name = "a", descriptor = "(ZI)V")
 	public static void method4568(@OriginalArg(0) boolean arg0) {
 		Static557.method7331();
-		if (!Static109.method2070(Static283.anInt4574)) {
+		if (!Static109.method2070(Static283.gameState)) {
 			return;
 		}
-		@Pc(13) Class153[] local13 = Static405.aClass153Array1;
+		@Pc(13) Connection[] local13 = Connection.connections;
 		for (@Pc(15) int local15 = 0; local15 < local13.length; local15++) {
-			@Pc(20) Class153 local20 = local13[local15];
+			@Pc(20) Connection local20 = local13[local15];
 			local20.anInt3647++;
 			if (local20.anInt3647 < 50 && !arg0) {
 				return;
 			}
 			local20.anInt3647 = 0;
 			if (!local20.aBoolean278 && local20.aClass348_1 != null) {
-				@Pc(59) OutboundPacket local59 = Static293.method4335(Static415.aClientProt75, local20.aIsaacRandom_1);
-				local20.method3275(local59);
+				@Pc(59) OutboundPacket local59 = OutboundPacket.create(Static415.aClientProt75, local20.random);
+				local20.queue(local59);
 				try {
 					local20.method3273();
 				} catch (@Pc(68) IOException local68) {

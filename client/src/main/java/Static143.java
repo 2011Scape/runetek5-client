@@ -18,9 +18,9 @@ public final class Static143 {
 
 	@OriginalMember(owner = "client!eia", name = "f", descriptor = "(B)V")
 	public static void method3571() {
-		@Pc(20) OutboundPacket local20 = Static293.method4335(Static442.aClientProt83, Static405.aClass153_2.aIsaacRandom_1);
-		local20.aPacketBit_1.p4(Static334.anInt5456);
-		Static405.aClass153_2.method3275(local20);
+		@Pc(20) OutboundPacket local20 = OutboundPacket.create(Static442.aClientProt83, Connection.gameConnection.random);
+		local20.data.p4(Static334.anInt5456);
+		Connection.gameConnection.queue(local20);
 	}
 
 	@OriginalMember(owner = "client!eia", name = "e", descriptor = "(B)V")

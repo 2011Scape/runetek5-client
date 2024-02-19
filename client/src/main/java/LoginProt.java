@@ -6,11 +6,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class LoginProt {
 
 	@OriginalMember(owner = "client!hja", name = "a", descriptor = "I")
-	public final int anInt3973;
+	public final int opcode;
 
 	@OriginalMember(owner = "client!hja", name = "<init>", descriptor = "(II)V")
-	public LoginProt(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt3973 = arg0;
+	public LoginProt(@OriginalArg(0) int opcode, @OriginalArg(1) int size) {
+		this.opcode = opcode;
 	}
 
 	@OriginalMember(owner = "client!hja", name = "toString", descriptor = "()Ljava/lang/String;")

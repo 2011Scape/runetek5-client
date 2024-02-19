@@ -27,7 +27,7 @@ public final class Static664 {
 		}
 		local8.p2((int) (Math.random() * 9.9999999E7D));
 		local8.rsaenc(ClientConfig.aBigInteger2, ClientConfig.aBigInteger1);
-		arg0.aPacketBit_1.pdata(local8.data, 0, local8.pos);
+		arg0.data.pdata(local8.data, 0, local8.pos);
 		return local11;
 	}
 

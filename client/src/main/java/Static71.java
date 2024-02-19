@@ -211,9 +211,9 @@ public final class Static71 {
 									}
 									Static437.aClass14_9.method8834(local317, "Mem:" + local777 + "k", local779, -1, local323);
 									local323 += 15;
-									Static437.aClass14_9.method8834(local317, "Game: In:" + Static405.aClass153_2.anInt3645 + "B/s Out:" + Static405.aClass153_2.anInt3643 + "B/s", -256, -1, local323);
+									Static437.aClass14_9.method8834(local317, "Game: In:" + Connection.gameConnection.inBytes + "B/s Out:" + Connection.gameConnection.outBytes + "B/s", -256, -1, local323);
 									local323 += 15;
-									Static437.aClass14_9.method8834(local317, "Lobby: In:" + Static405.aClass153_1.anInt3645 + "B/s Out:" + Static405.aClass153_1.anInt3643 + "B/s", -256, -1, local323);
+									Static437.aClass14_9.method8834(local317, "Lobby: In:" + Connection.lobbyConnection.inBytes + "B/s Out:" + Connection.lobbyConnection.outBytes + "B/s", -256, -1, local323);
 									local323 += 15;
 									local792 = Static163.aClass19_17.E() / 1024;
 									Static437.aClass14_9.method8834(local317, "Offheap:" + local792 + "k", local792 > 65536 ? -65536 : -256, -1, local323);

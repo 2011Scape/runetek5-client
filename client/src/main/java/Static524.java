@@ -6,7 +6,7 @@ public final class Static524 {
 	public static int anInt8042;
 
 	@OriginalMember(owner = "client!qia", name = "f", descriptor = "Lclient!gw;")
-	public static Class153 aClass153_3;
+	public static Connection aConnection3;
 
 	@OriginalMember(owner = "client!qia", name = "e", descriptor = "I")
 	public static int anInt8043;

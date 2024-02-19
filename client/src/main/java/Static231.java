@@ -249,10 +249,10 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("clientdrop")) {
 					Static79.method1579("Dropped client connection");
-					if (Static283.anInt4574 == 11) {
+					if (Static283.gameState == 11) {
 						Static370.method5279();
-					} else if (Static283.anInt4574 == 12) {
-						Static405.aClass153_2.aBoolean278 = true;
+					} else if (Static283.gameState == 12) {
+						Connection.gameConnection.aBoolean278 = true;
 						return;
 					}
 					return;
@@ -275,9 +275,9 @@ public final class Static231 {
 				@Pc(725) int local725;
 				if (arg2.equalsIgnoreCase("breakcon")) {
 					Static446.aSignlink6.method8994();
-					@Pc(723) Class153[] local723 = Static405.aClass153Array1;
+					@Pc(723) Connection[] local723 = Connection.connections;
 					for (local725 = 0; local725 < local723.length; local725++) {
-						@Pc(730) Class153 local730 = local723[local725];
+						@Pc(730) Connection local730 = local723[local725];
 						if (local730.aClass348_1 != null) {
 							local730.aClass348_1.method7927();
 						}
@@ -552,15 +552,15 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.startsWith("pc")) {
-					@Pc(1833) Class153 local1833 = Static668.method8701();
-					@Pc(1839) OutboundPacket local1839 = Static293.method4335(Static243.aClientProt52, local1833.aIsaacRandom_1);
-					local1839.aPacketBit_1.p1(0);
-					local521 = local1839.aPacketBit_1.pos;
+					@Pc(1833) Connection local1833 = Connection.getActiveConnection();
+					@Pc(1839) OutboundPacket local1839 = OutboundPacket.create(Static243.aClientProt52, local1833.random);
+					local1839.data.p1(0);
+					local521 = local1839.data.pos;
 					local582 = arg2.indexOf(" ", 4);
-					local1839.aPacketBit_1.pjstr(arg2.substring(3, local582));
-					Static523.method3446(local1839.aPacketBit_1, arg2.substring(local582));
-					local1839.aPacketBit_1.psize1(local1839.aPacketBit_1.pos - local521);
-					local1833.method3275(local1839);
+					local1839.data.pjstr(arg2.substring(3, local582));
+					Static523.method3446(local1839.data, arg2.substring(local582));
+					local1839.data.psize1(local1839.data.pos - local521);
+					local1833.queue(local1839);
 					return;
 				}
 				if (arg2.equals("savevarcs")) {
@@ -792,13 +792,13 @@ public final class Static231 {
 					Static79.method1579("cs2debug:" + Static472.aBoolean538);
 					return;
 				}
-				if (Static283.anInt4574 == 11) {
-					@Pc(2836) OutboundPacket local2836 = Static293.method4335(Static459.aClientProt87, Static405.aClass153_2.aIsaacRandom_1);
-					local2836.aPacketBit_1.p1(arg2.length() + 3);
-					local2836.aPacketBit_1.p1(arg0 ? 1 : 0);
-					local2836.aPacketBit_1.p1(arg1 ? 1 : 0);
-					local2836.aPacketBit_1.pjstr(arg2);
-					Static405.aClass153_2.method3275(local2836);
+				if (Static283.gameState == 11) {
+					@Pc(2836) OutboundPacket local2836 = OutboundPacket.create(Static459.aClientProt87, Connection.gameConnection.random);
+					local2836.data.p1(arg2.length() + 3);
+					local2836.data.p1(arg0 ? 1 : 0);
+					local2836.data.p1(arg1 ? 1 : 0);
+					local2836.data.pjstr(arg2);
+					Connection.gameConnection.queue(local2836);
 				}
 				if (arg2.startsWith("fps ") && Static2.aClass355_1 != Static446.aClass355_5) {
 					Static724.method9453(Static647.method8473(arg2.substring(4)));
@@ -809,7 +809,7 @@ public final class Static231 {
 				return;
 			}
 		}
-		if (Static283.anInt4574 != 11) {
+		if (Static283.gameState != 11) {
 			Static79.method1579(LocalizedText.UNKNOWN_COMMAND.get(Static51.anInt1052) + arg2);
 		}
 	}
@@ -860,11 +860,11 @@ public final class Static231 {
 			Static67.method6098(LocalizedText.IGNORE_CANNOT_ADD_SELF.get(Static51.anInt1052));
 			return;
 		}
-		@Pc(216) Class153 local216 = Static668.method8701();
-		@Pc(222) OutboundPacket local222 = Static293.method4335(Static113.aClientProt22, local216.aIsaacRandom_1);
-		local222.aPacketBit_1.p1(method3379(arg1) + 1);
-		local222.aPacketBit_1.pjstr(arg1);
-		local222.aPacketBit_1.p1(arg0 ? 1 : 0);
-		local216.method3275(local222);
+		@Pc(216) Connection local216 = Connection.getActiveConnection();
+		@Pc(222) OutboundPacket local222 = OutboundPacket.create(Static113.aClientProt22, local216.random);
+		local222.data.p1(method3379(arg1) + 1);
+		local222.data.pjstr(arg1);
+		local222.data.p1(arg0 ? 1 : 0);
+		local216.queue(local222);
 	}
 }

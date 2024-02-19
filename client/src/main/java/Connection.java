@@ -5,7 +5,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!gw")
-public final class Class153 {
+public final class Connection {
+
+	@OriginalMember(owner = "client!mn", name = "k", descriptor = "Lclient!gw;")
+	public static final Connection lobbyConnection = new Connection();
+
+	@OriginalMember(owner = "client!mn", name = "q", descriptor = "Lclient!gw;")
+	public static final Connection gameConnection = new Connection();
+
+	@OriginalMember(owner = "client!mn", name = "f", descriptor = "[Lclient!gw;")
+	public static final Connection[] connections = new Connection[] {gameConnection, lobbyConnection};
 
 	@OriginalMember(owner = "client!gw", name = "s", descriptor = "Lclient!vn;")
 	public Class348 aClass348_1;
@@ -14,10 +23,10 @@ public final class Class153 {
 	public PrivilegedRequest aPrivilegedRequest1;
 
 	@OriginalMember(owner = "client!gw", name = "l", descriptor = "Lclient!iv;")
-	public IsaacRandom aIsaacRandom_1;
+	public IsaacRandom random;
 
 	@OriginalMember(owner = "client!gw", name = "t", descriptor = "I")
-	public int anInt3643;
+	public int outBytes;
 
 	@OriginalMember(owner = "client!gw", name = "z", descriptor = "Lclient!lga;")
 	public ServerProt aServerProt_91;
@@ -29,7 +38,7 @@ public final class Class153 {
 	public int anInt3644;
 
 	@OriginalMember(owner = "client!gw", name = "A", descriptor = "I")
-	public int anInt3645;
+	public int inBytes;
 
 	@OriginalMember(owner = "client!gw", name = "e", descriptor = "Lclient!lga;")
 	public ServerProt aServerProt_94;
@@ -50,7 +59,7 @@ public final class Class153 {
 	public final PacketBit aClass2_Sub21_Sub2_2 = new PacketBit(15000);
 
 	@OriginalMember(owner = "client!gw", name = "j", descriptor = "Lclient!lga;")
-	public ServerProt aServerProt_93 = null;
+	public ServerProt packetType = null;
 
 	@OriginalMember(owner = "client!gw", name = "u", descriptor = "I")
 	public int anInt3648 = 0;
@@ -67,11 +76,16 @@ public final class Class153 {
 	@OriginalMember(owner = "client!gw", name = "n", descriptor = "I")
 	public int anInt3646 = 0;
 
+	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(B)Lclient!gw;")
+	public static Connection getActiveConnection() {
+		return Static620.isInLobby(Static283.gameState) ? lobbyConnection : gameConnection;
+	}
+
 	@OriginalMember(owner = "client!gw", name = "b", descriptor = "(I)V")
 	public void method3271() {
 		if (Static333.anInt5455 % 50 == 0) {
-			this.anInt3643 = this.anInt3649;
-			this.anInt3645 = this.anInt3644;
+			this.outBytes = this.anInt3649;
+			this.inBytes = this.anInt3644;
 			this.anInt3649 = 0;
 			this.anInt3644 = 0;
 		}
@@ -97,10 +111,10 @@ public final class Class153 {
 				this.anInt3649 += this.aPacket_6.pos;
 				break;
 			}
-			this.aPacket_6.pdata(local23.aPacketBit_1.data, 0, local23.anInt2989);
+			this.aPacket_6.pdata(local23.data.data, 0, local23.anInt2989);
 			this.anInt3640 -= local23.anInt2989;
 			local23.unlink();
-			local23.aPacketBit_1.release();
+			local23.data.release();
 			local23.method2768();
 		}
 	}
@@ -114,10 +128,10 @@ public final class Class153 {
 	}
 
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
-	public void method3275(@OriginalArg(1) OutboundPacket arg0) {
-		this.aLinkedList17.addTail(arg0);
-		arg0.anInt2989 = arg0.aPacketBit_1.pos;
-		arg0.aPacketBit_1.pos = 0;
-		this.anInt3640 += arg0.anInt2989;
+	public void queue(@OriginalArg(1) OutboundPacket out) {
+		this.aLinkedList17.addTail(out);
+		out.anInt2989 = out.data.pos;
+		out.data.pos = 0;
+		this.anInt3640 += out.anInt2989;
 	}
 }

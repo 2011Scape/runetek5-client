@@ -11,7 +11,7 @@ public final class Static620 {
 	public static Class286 aClass286_3;
 
 	@OriginalMember(owner = "client!tka", name = "a", descriptor = "(BI)Z")
-	public static boolean method8321(@OriginalArg(1) int arg0) {
+	public static boolean isInLobby(@OriginalArg(1) int arg0) {
 		return arg0 == 7 || arg0 == 8 || arg0 == 9 || arg0 == 10;
 	}
 

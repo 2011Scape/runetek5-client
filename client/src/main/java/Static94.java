@@ -23,15 +23,15 @@ public final class Static94 {
 
 	@OriginalMember(owner = "client!cv", name = "b", descriptor = "(I)V")
 	public static void method1841() {
-		Static524.aClass153_3.method3272();
-		Static524.aClass153_3.aServerProt_93 = null;
-		Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
-		Static524.aClass153_3.anInt3646 = 0;
-		Static524.aClass153_3.aServerProt_91 = null;
-		Static524.aClass153_3.aServerProt_94 = null;
-		Static524.aClass153_3.anInt3648 = 0;
+		Static524.aConnection3.method3272();
+		Static524.aConnection3.packetType = null;
+		Static524.aConnection3.aClass2_Sub21_Sub2_2.pos = 0;
+		Static524.aConnection3.anInt3646 = 0;
+		Static524.aConnection3.aServerProt_91 = null;
+		Static524.aConnection3.aServerProt_94 = null;
+		Static524.aConnection3.anInt3648 = 0;
 		Static249.anInt4008 = 0;
-		Static524.aClass153_3.aServerProt_92 = null;
+		Static524.aConnection3.aServerProt_92 = null;
 		Static533.method7119();
 		Static605.method7914();
 		for (@Pc(36) int local36 = 0; local36 < 2048; local36++) {

@@ -35,7 +35,7 @@ public final class Static76 {
 		}
 		try {
 			if (++Static654.anInt9739 > 2000) {
-				Static405.aClass153_1.method3274();
+				Connection.lobbyConnection.method3274();
 				if (Static720.anInt10865 >= 2) {
 					Static6.anInt95 = 0;
 					Static580.anInt8621 = -5;
@@ -47,30 +47,30 @@ public final class Static76 {
 				Static720.anInt10865++;
 			}
 			if (Static6.anInt95 == 1) {
-				Static405.aClass153_1.aPrivilegedRequest1 = Static660.aClass229_4.method5263(Static446.aSignlink6);
+				Connection.lobbyConnection.aPrivilegedRequest1 = Static660.aClass229_4.method5263(Static446.aSignlink6);
 				Static6.anInt95 = 2;
 			}
 			if (Static6.anInt95 == 2) {
-				if (Static405.aClass153_1.aPrivilegedRequest1.anInt6789 == 2) {
+				if (Connection.lobbyConnection.aPrivilegedRequest1.anInt6789 == 2) {
 					throw new IOException();
 				}
-				if (Static405.aClass153_1.aPrivilegedRequest1.anInt6789 != 1) {
+				if (Connection.lobbyConnection.aPrivilegedRequest1.anInt6789 != 1) {
 					return;
 				}
-				Static405.aClass153_1.aClass348_1 = Static99.method1975((Socket) Static405.aClass153_1.aPrivilegedRequest1.anObject13);
-				Static405.aClass153_1.aPrivilegedRequest1 = null;
-				Static405.aClass153_1.method3273();
+				Connection.lobbyConnection.aClass348_1 = Static99.method1975((Socket) Connection.lobbyConnection.aPrivilegedRequest1.anObject13);
+				Connection.lobbyConnection.aPrivilegedRequest1 = null;
+				Connection.lobbyConnection.method3273();
 				Static6.anInt95 = 4;
 			}
-			if (Static6.anInt95 == 4 && Static405.aClass153_1.aClass348_1.method7932(1)) {
-				Static405.aClass153_1.aClass348_1.method7929(Static405.aClass153_1.aClass2_Sub21_Sub2_2.data, 1, 0);
-				@Pc(139) int local139 = Static405.aClass153_1.aClass2_Sub21_Sub2_2.data[0] & 0xFF;
+			if (Static6.anInt95 == 4 && Connection.lobbyConnection.aClass348_1.method7932(1)) {
+				Connection.lobbyConnection.aClass348_1.method7929(Connection.lobbyConnection.aClass2_Sub21_Sub2_2.data, 1, 0);
+				@Pc(139) int local139 = Connection.lobbyConnection.aClass2_Sub21_Sub2_2.data[0] & 0xFF;
 				Static6.anInt95 = 0;
 				Static580.anInt8621 = local139;
-				Static405.aClass153_1.method3274();
+				Connection.lobbyConnection.method3274();
 			}
 		} catch (@Pc(148) IOException local148) {
-			Static405.aClass153_1.method3274();
+			Connection.lobbyConnection.method3274();
 			if (Static720.anInt10865 < 2) {
 				Static660.aClass229_4.method5260();
 				Static720.anInt10865++;

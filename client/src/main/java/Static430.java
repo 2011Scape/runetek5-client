@@ -64,11 +64,11 @@ public final class Static430 {
 
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
 	public static void method5819(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
-		@Pc(10) Class153 local10 = Static668.method8701();
-		@Pc(16) OutboundPacket local16 = Static293.method4335(Static425.aClientProt80, local10.aIsaacRandom_1);
-		local16.aPacketBit_1.p1(Static231.method3379(arg0) + 1);
-		local16.aPacketBit_1.pjstr(arg0);
-		local16.aPacketBit_1.p1_alt2(arg1);
-		local10.method3275(local16);
+		@Pc(10) Connection local10 = Connection.getActiveConnection();
+		@Pc(16) OutboundPacket local16 = OutboundPacket.create(Static425.aClientProt80, local10.random);
+		local16.data.p1(Static231.method3379(arg0) + 1);
+		local16.data.pjstr(arg0);
+		local16.data.p1_alt2(arg1);
+		local10.queue(local16);
 	}
 }

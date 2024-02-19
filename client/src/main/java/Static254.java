@@ -14,7 +14,7 @@ public final class Static254 {
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
 		Static6.aJs51.discardUnpacked = 1;
-		if (Static283.anInt4574 == 15) {
+		if (Static283.gameState == 15) {
 			Static187.method2842();
 		}
 		Static408.method5632();
@@ -23,7 +23,7 @@ public final class Static254 {
 		Static618.anInt9449 = 0;
 		Static674.anInt10128 = 0;
 		Static373.anInt5903 = 0;
-		Static405.aClass153_1.method3274();
+		Connection.lobbyConnection.method3274();
 		Static50.aBoolean565 = true;
 		Static91.aBoolean750 = true;
 		Static230.method3374();

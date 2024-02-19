@@ -18,11 +18,11 @@ public final class Static370 {
 
 	@OriginalMember(owner = "client!lm", name = "b", descriptor = "(Z)V")
 	public static void method5279() {
-		if (Static620.method8321(Static283.anInt4574)) {
+		if (Static620.isInLobby(Static283.gameState)) {
 			Static233.method3409(false);
 		} else {
-			Static467.aClass348_2 = Static405.aClass153_2.aClass348_1;
-			Static405.aClass153_2.aClass348_1 = null;
+			Static467.aClass348_2 = Connection.gameConnection.aClass348_1;
+			Connection.gameConnection.aClass348_1 = null;
 			Static81.method1586(14);
 		}
 	}

@@ -13,9 +13,6 @@ public final class Static180 {
 	@OriginalMember(owner = "client!fka", name = "q", descriptor = "I")
 	public static int anInt2995 = 0;
 
-	@OriginalMember(owner = "client!fka", name = "j", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt33 = new ClientProt(2, 7);
-
 	@OriginalMember(owner = "client!fka", name = "n", descriptor = "J")
 	public static long aLong108 = -1L;
 
@@ -31,12 +28,12 @@ public final class Static180 {
 		if (local29.aByte9 != -1) {
 			return;
 		}
-		@Pc(45) Class153 local45 = Static668.method8701();
-		@Pc(53) OutboundPacket local53 = Static293.method4335(Static507.aClientProt95, local45.aIsaacRandom_1);
-		local53.aPacketBit_1.p1(Static231.method3379(local29.aString2) + 2);
-		local53.aPacketBit_1.p2(arg0);
-		local53.aPacketBit_1.pjstr(local29.aString2);
-		local45.method3275(local53);
+		@Pc(45) Connection local45 = Connection.getActiveConnection();
+		@Pc(53) OutboundPacket local53 = OutboundPacket.create(Static507.aClientProt95, local45.random);
+		local53.data.p1(Static231.method3379(local29.aString2) + 2);
+		local53.data.p2(arg0);
+		local53.data.pjstr(local29.aString2);
+		local45.queue(local53);
 	}
 
 	@OriginalMember(owner = "client!fka", name = "a", descriptor = "(IIBIII)V")

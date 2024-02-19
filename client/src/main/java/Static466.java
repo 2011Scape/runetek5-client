@@ -324,7 +324,7 @@ public final class Static466 {
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Z)V")
 	public static void method6325() {
-		@Pc(8) PacketBit local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
 		@Pc(12) int local12 = local8.g2();
 		@Pc(16) int local16 = local8.g1();
 		@Pc(28) boolean local28 = local8.g1_alt3() == 1;
@@ -349,7 +349,7 @@ public final class Static466 {
 			}
 		}
 		local8.bytes();
-		local50 = (Static405.aClass153_2.anInt3648 - local8.pos) / 16;
+		local50 = (Connection.gameConnection.anInt3648 - local8.pos) / 16;
 		Static22.anIntArrayArray11 = new int[local50][4];
 		for (local54 = 0; local54 < local50; local54++) {
 			for (local61 = 0; local61 < 4; local61++) {

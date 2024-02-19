@@ -264,8 +264,8 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(I)V")
 	public static void method2588() {
-		@Pc(8) PacketBit local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
-		while (local8.availableBits(Static405.aClass153_2.anInt3648) >= 15) {
+		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
+		while (local8.availableBits(Connection.gameConnection.anInt3648) >= 15) {
 			@Pc(22) int local22 = local8.gBit(15);
 			if (local22 == 32767) {
 				break;

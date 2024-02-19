@@ -42,7 +42,7 @@ public final class Static273 {
 		@Pc(6) OutboundPacket local6 = Static119.method2174();
 		local6.aClientProt_32 = null;
 		local6.anInt2986 = 0;
-		local6.aPacketBit_1 = new PacketBit(5000);
+		local6.data = new PacketBit(5000);
 		return local6;
 	}
 

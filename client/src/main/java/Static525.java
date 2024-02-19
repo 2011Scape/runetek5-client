@@ -21,12 +21,12 @@ public final class Static525 {
 			return;
 		}
 		@Pc(53) String local53 = local43.aString2;
-		@Pc(56) Class153 local56 = Static668.method8701();
-		@Pc(62) OutboundPacket local62 = Static293.method4335(Static457.aClientProt86, local56.aIsaacRandom_1);
-		local62.aPacketBit_1.p1(Static231.method3379(local53) + 3);
-		local62.aPacketBit_1.p1(arg0 ? 1 : 0);
-		local62.aPacketBit_1.p2(arg1);
-		local62.aPacketBit_1.pjstr(local53);
-		local56.method3275(local62);
+		@Pc(56) Connection local56 = Connection.getActiveConnection();
+		@Pc(62) OutboundPacket local62 = OutboundPacket.create(Static457.aClientProt86, local56.random);
+		local62.data.p1(Static231.method3379(local53) + 3);
+		local62.data.p1(arg0 ? 1 : 0);
+		local62.data.p2(arg1);
+		local62.data.pjstr(local53);
+		local56.queue(local62);
 	}
 }

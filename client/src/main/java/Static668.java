@@ -58,11 +58,6 @@ public final class Static668 {
 		Static529.aVarBitTypeList1.method3420(64);
 	}
 
-	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(B)Lclient!gw;")
-	public static Class153 method8701() {
-		return Static620.method8321(Static283.anInt4574) ? Static405.aClass153_1 : Static405.aClass153_2;
-	}
-
 	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(II)I")
 	public static int method8702(@OriginalArg(0) int arg0) {
 		return arg0 & 0x7F;

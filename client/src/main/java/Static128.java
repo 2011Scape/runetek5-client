@@ -18,10 +18,10 @@ public final class Static128 {
 		if (Static87.aClass241Array1 == null) {
 			return;
 		}
-		@Pc(21) Class153 local21 = Static668.method8701();
-		@Pc(27) OutboundPacket local27 = Static293.method4335(Static436.aClientProt45, local21.aIsaacRandom_1);
-		local27.aPacketBit_1.p1(Static231.method3379(arg0));
-		local27.aPacketBit_1.pjstr(arg0);
-		local21.method3275(local27);
+		@Pc(21) Connection local21 = Connection.getActiveConnection();
+		@Pc(27) OutboundPacket local27 = OutboundPacket.create(Static436.aClientProt45, local21.random);
+		local27.data.p1(Static231.method3379(arg0));
+		local27.data.pjstr(arg0);
+		local21.queue(local27);
 	}
 }

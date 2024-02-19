@@ -5,21 +5,24 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!lga")
 public final class ServerProt {
 
+	@OriginalMember(owner = "client!ms", name = "d", descriptor = "Lclient!lga;")
+	public static final ServerProt MESSAGE_GAME = new ServerProt(102, -1);
+
 	@OriginalMember(owner = "client!lga", name = "e", descriptor = "I")
-	private final int anInt5824;
+	private final int opcode;
 
 	@OriginalMember(owner = "client!lga", name = "b", descriptor = "I")
-	public final int anInt5822;
+	public final int size;
 
 	@OriginalMember(owner = "client!lga", name = "<init>", descriptor = "(II)V")
-	public ServerProt(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt5824 = arg0;
-		this.anInt5822 = arg1;
+	public ServerProt(@OriginalArg(0) int opcode, @OriginalArg(1) int size) {
+		this.opcode = opcode;
+		this.size = size;
 	}
 
 	@OriginalMember(owner = "client!lga", name = "b", descriptor = "(I)I")
-	public int method5239() {
-		return this.anInt5824;
+	public int getOpcode() {
+		return this.opcode;
 	}
 
 	@OriginalMember(owner = "client!lga", name = "toString", descriptor = "()Ljava/lang/String;")

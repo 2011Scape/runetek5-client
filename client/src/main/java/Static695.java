@@ -16,7 +16,7 @@ public final class Static695 {
 	public static void method9266() {
 		Static470.anInt7113 = -1;
 		Static299.anInt4825 = 1;
-		Static524.aClass153_3 = Static405.aClass153_1;
+		Static524.aConnection3 = Connection.lobbyConnection;
 		Static238.method3471(Static319.aString51.equals(""), Static319.aString51, true, "");
 	}
 

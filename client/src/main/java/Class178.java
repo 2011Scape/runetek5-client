@@ -27,7 +27,7 @@ public abstract class Class178 {
 	static {
 		@Pc(140) LoginProt[] local140 = Static254.method3604();
 		for (@Pc(142) int local142 = 0; local142 < local140.length; local142++) {
-			A_LOGIN_PROT_ARRAY_5[local140[local142].anInt3973] = local140[local142];
+			A_LOGIN_PROT_ARRAY_5[local140[local142].opcode] = local140[local142];
 		}
 	}
 

@@ -249,14 +249,14 @@ public final class Static434 {
 	@OriginalMember(owner = "client!nla", name = "g", descriptor = "(I)V")
 	public static void method5855() {
 		Static117.anInt2282 = 0;
-		@Pc(8) PacketBit local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
 		@Pc(12) int local12 = local8.g1_alt2();
 		@Pc(24) boolean local24 = local8.g1() == 1;
 		@Pc(28) int local28 = local8.ig2();
 		@Pc(32) int local32 = local8.g2();
 		Static165.method2607();
 		Static342.method4465(local12);
-		@Pc(46) int local46 = (Static405.aClass153_2.anInt3648 - local8.pos) / 16;
+		@Pc(46) int local46 = (Connection.gameConnection.anInt3648 - local8.pos) / 16;
 		Static22.anIntArrayArray11 = new int[local46][4];
 		@Pc(55) int local55;
 		for (@Pc(52) int local52 = 0; local52 < local46; local52++) {

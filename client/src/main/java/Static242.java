@@ -76,10 +76,10 @@ public final class Static242 {
 					local47 = Static571.aClientProt103;
 				}
 				if (local47 != null) {
-					@Pc(108) OutboundPacket local108 = Static293.method4335(local47, Static405.aClass153_2.aIsaacRandom_1);
-					local108.aPacketBit_1.p1(0);
-					local108.aPacketBit_1.p2(local7[local19]);
-					Static405.aClass153_2.method3275(local108);
+					@Pc(108) OutboundPacket local108 = OutboundPacket.create(local47, Connection.gameConnection.random);
+					local108.data.p1(0);
+					local108.data.p2(local7[local19]);
+					Connection.gameConnection.queue(local108);
 				}
 				local9 = true;
 				break;

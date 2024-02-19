@@ -12,7 +12,7 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(IB)V")
 	public static void method1586(@OriginalArg(0) int arg0) {
-		if (Static283.anInt4574 == arg0) {
+		if (Static283.gameState == arg0) {
 			return;
 		}
 		if (arg0 == 14 || arg0 == 15) {
@@ -30,10 +30,10 @@ public final class Static81 {
 		}
 		if (arg0 == 5 || arg0 == 13) {
 			Static369.method3852();
-		} else if (arg0 == 6 || arg0 == 9 && Static283.anInt4574 != 10) {
+		} else if (arg0 == 6 || arg0 == 9 && Static283.gameState != 10) {
 			Static670.method8735();
 		}
-		if (Static594.method7782(Static283.anInt4574)) {
+		if (Static594.method7782(Static283.gameState)) {
 			Static6.aJs51.discardUnpacked = 2;
 			Static20.aJs53.discardUnpacked = 2;
 			Static459.aJs591.discardUnpacked = 2;
@@ -60,8 +60,8 @@ public final class Static81 {
 		if (arg0 == 12 || arg0 == 3) {
 			Static314.method4562();
 		}
-		@Pc(213) boolean local213 = arg0 == 2 || Static41.method1027(arg0) || Static620.method8321(arg0);
-		@Pc(235) boolean local235 = Static283.anInt4574 == 2 || Static41.method1027(Static283.anInt4574) || Static620.method8321(Static283.anInt4574);
+		@Pc(213) boolean local213 = arg0 == 2 || Static41.method1027(arg0) || Static620.isInLobby(arg0);
+		@Pc(235) boolean local235 = Static283.gameState == 2 || Static41.method1027(Static283.gameState) || Static620.isInLobby(Static283.gameState);
 		if (local235 != local213) {
 			if (local213) {
 				Static588.anInt8692 = Static597.anInt8821;
@@ -80,7 +80,7 @@ public final class Static81 {
 		if (Static594.method7782(arg0) || arg0 == 14 || arg0 == 15) {
 			Static163.aClass19_17.method7969();
 		}
-		Static283.anInt4574 = arg0;
+		Static283.gameState = arg0;
 	}
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(I)Lclient!aj;")
@@ -113,30 +113,30 @@ public final class Static81 {
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
 		@Pc(8) OutboundPacket local8 = Static273.method3962();
-		local8.aPacketBit_1.p1(Static572.aLoginProt58.anInt3973);
-		local8.aPacketBit_1.p2(0);
-		@Pc(25) int local25 = local8.aPacketBit_1.pos;
-		local8.aPacketBit_1.p2(667);
+		local8.data.p1(Static572.aLoginProt58.opcode);
+		local8.data.p2(0);
+		@Pc(25) int local25 = local8.data.pos;
+		local8.data.p2(667);
 		@Pc(38) int[] local38 = Static664.method8652(local8);
-		@Pc(42) int local42 = local8.aPacketBit_1.pos;
-		local8.aPacketBit_1.pjstr(arg0);
-		local8.aPacketBit_1.p2(Static323.anInt5121);
-		local8.aPacketBit_1.pjstr(arg2);
-		local8.aPacketBit_1.p8(Static416.aLong208);
-		local8.aPacketBit_1.p1(Static51.anInt1052);
-		local8.aPacketBit_1.p1(Static392.aModeGame4.id);
-		Static176.method6690(local8.aPacketBit_1);
+		@Pc(42) int local42 = local8.data.pos;
+		local8.data.pjstr(arg0);
+		local8.data.p2(Static323.anInt5121);
+		local8.data.pjstr(arg2);
+		local8.data.p8(Static416.aLong208);
+		local8.data.p1(Static51.anInt1052);
+		local8.data.p1(Static392.aModeGame4.id);
+		Static176.method6690(local8.data);
 		@Pc(81) String local81 = Static389.aString64;
-		local8.aPacketBit_1.p1(local81 == null ? 0 : 1);
+		local8.data.p1(local81 == null ? 0 : 1);
 		if (local81 != null) {
-			local8.aPacketBit_1.pjstr(local81);
+			local8.data.pjstr(local81);
 		}
-		local8.aPacketBit_1.p1(arg1);
-		local8.aPacketBit_1.p1(arg3 ? 1 : 0);
-		local8.aPacketBit_1.pos += 7;
-		local8.aPacketBit_1.tinyenc(local38, local42, local8.aPacketBit_1.pos);
-		local8.aPacketBit_1.psize2(local8.aPacketBit_1.pos - local25);
-		Static405.aClass153_1.method3275(local8);
+		local8.data.p1(arg1);
+		local8.data.p1(arg3 ? 1 : 0);
+		local8.data.pos += 7;
+		local8.data.tinyenc(local38, local42, local8.data.pos);
+		local8.data.psize2(local8.data.pos - local25);
+		Connection.lobbyConnection.queue(local8);
 		Static720.anInt10865 = 0;
 		Static580.anInt8621 = -3;
 		Static654.anInt9739 = 0;

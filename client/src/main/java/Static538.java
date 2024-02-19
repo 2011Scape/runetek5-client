@@ -27,7 +27,7 @@ public final class Static538 {
 
 	@OriginalMember(owner = "client!qv", name = "a", descriptor = "(Z)V")
 	public static void method7193() {
-		@Pc(15) PacketBit local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(15) PacketBit local15 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
 		for (@Pc(17) int local17 = 0; local17 < Static86.anInt1798; local17++) {
 			@Pc(23) int local23 = Static458.anIntArray553[local17];
 			@Pc(31) Npc local31 = ((Linkable_Sub45) Static18.aHashTable2.get((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;

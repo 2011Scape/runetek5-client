@@ -12,7 +12,7 @@ public final class Static605 {
 
 	@OriginalMember(owner = "client!tba", name = "a", descriptor = "(ILclient!pc;)V")
 	public static void method7912(@OriginalArg(1) Class287 arg0) {
-		@Pc(8) PacketBit local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
 		@Pc(15) int local15;
 		@Pc(21) int local21;
 		@Pc(25) int local25;

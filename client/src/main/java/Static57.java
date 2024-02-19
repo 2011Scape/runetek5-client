@@ -7,9 +7,6 @@ public final class Static57 {
 	@OriginalMember(owner = "client!bt", name = "q", descriptor = "F")
 	public static float aFloat29;
 
-	@OriginalMember(owner = "client!bt", name = "n", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt10 = new ClientProt(11, 7);
-
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(FIIFI[FIIIIIF[FI)V")
 	public static void method1224(@OriginalArg(0) float arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) float arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float[] arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) float arg10, @OriginalArg(12) float[] arg11, @OriginalArg(13) int arg12) {
 		@Pc(5) int local5 = arg6 - arg4;
@@ -90,13 +87,13 @@ public final class Static57 {
 		for (@Pc(28) int local28 = 0; local28 < local24; local28++) {
 			@Pc(35) Player local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
 			if (local35.aString9 != null && local35.aString9.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10822 & 0x10) != 0 || (Static717.anInt10822 & 0x8) != 0)) {
-				@Pc(75) OutboundPacket local75 = Static293.method4335(Static664.aClientProt115, Static405.aClass153_2.aIsaacRandom_1);
-				local75.aPacketBit_1.ip2(local26[local28]);
-				local75.aPacketBit_1.p4_alt1(Static450.anInt6819);
-				local75.aPacketBit_1.p2(Static162.anInt2799);
-				local75.aPacketBit_1.p1_alt3(0);
-				local75.aPacketBit_1.p2_alt3(Static77.anInt1614);
-				Static405.aClass153_2.method3275(local75);
+				@Pc(75) OutboundPacket local75 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
+				local75.data.ip2(local26[local28]);
+				local75.data.p4_alt1(Static450.anInt6819);
+				local75.data.p2(Static162.anInt2799);
+				local75.data.p1_alt3(0);
+				local75.data.p2_alt3(Static77.anInt1614);
+				Connection.gameConnection.queue(local75);
 				Static147.method2419(0, local35.anIntArray878[0], local35.method9302((byte) 65), true, local35.anIntArray879[0], 0, -2, local35.method9302((byte) 81));
 				local22 = true;
 				break;

@@ -73,7 +73,7 @@ public final class Static159 {
 
 	@OriginalMember(owner = "client!ew", name = "a", descriptor = "(Z)V")
 	public static void method2575() {
-		if (Static41.method1027(Static283.anInt4574) || Static620.method8321(Static283.anInt4574)) {
+		if (Static41.method1027(Static283.gameState) || Static620.isInLobby(Static283.gameState)) {
 			Static127.method2243(Static412.anInt6358, Static170.anInt2864 >> 12, Static110.anInt2186 >> 12);
 		} else {
 			@Pc(20) int local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] >> 3;

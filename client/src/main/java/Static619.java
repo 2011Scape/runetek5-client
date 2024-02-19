@@ -83,7 +83,7 @@ public final class Static619 {
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(II)V")
 	public static void method1512(@OriginalArg(0) int arg0) {
 		Static299.anInt4825 = 2;
-		Static524.aClass153_3 = Static405.aClass153_2;
+		Static524.aConnection3 = Connection.gameConnection;
 		Static470.anInt7113 = arg0;
 		@Pc(18) String local18 = null;
 		if (Static265.aByteArray44 != null) {

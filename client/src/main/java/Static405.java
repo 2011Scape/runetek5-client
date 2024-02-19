@@ -9,15 +9,6 @@ public final class Static405 {
 	@OriginalMember(owner = "client!mn", name = "m", descriptor = "I")
 	public static int anInt6255;
 
-	@OriginalMember(owner = "client!mn", name = "k", descriptor = "Lclient!gw;")
-	public static final Class153 aClass153_1 = new Class153();
-
-	@OriginalMember(owner = "client!mn", name = "q", descriptor = "Lclient!gw;")
-	public static final Class153 aClass153_2 = new Class153();
-
-	@OriginalMember(owner = "client!mn", name = "f", descriptor = "[Lclient!gw;")
-	public static final Class153[] aClass153Array1 = new Class153[] { aClass153_2, aClass153_1 };
-
 	@OriginalMember(owner = "client!mn", name = "p", descriptor = "Lclient!v;")
 	public static final MonochromeImageCacheEntry aClass2_Sub54_1 = new MonochromeImageCacheEntry(0, 0);
 

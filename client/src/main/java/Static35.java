@@ -125,9 +125,9 @@ public final class Static35 {
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
 		} else if (Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
-			@Pc(551) OutboundPacket local551 = Static293.method4335(Static235.aClientProt49, Static405.aClass153_2.aIsaacRandom_1);
-			local551.aPacketBit_1.p4(Static588.anInt8692);
-			Static405.aClass153_2.method3275(local551);
+			@Pc(551) OutboundPacket local551 = OutboundPacket.create(Static235.aClientProt49, Connection.gameConnection.random);
+			local551.data.p4(Static588.anInt8692);
+			Connection.gameConnection.queue(local551);
 			Static588.anInt8692 = -1;
 		}
 	}

@@ -80,10 +80,10 @@ public final class Static698 {
 		if (arg0.equals("")) {
 			return;
 		}
-		@Pc(16) Class153 local16 = Static668.method8701();
-		@Pc(29) OutboundPacket local29 = Static293.method4335(Static244.aClientProt53, local16.aIsaacRandom_1);
-		local29.aPacketBit_1.p1(Static231.method3379(arg0));
-		local29.aPacketBit_1.pjstr(arg0);
-		local16.method3275(local29);
+		@Pc(16) Connection local16 = Connection.getActiveConnection();
+		@Pc(29) OutboundPacket local29 = OutboundPacket.create(Static244.aClientProt53, local16.random);
+		local29.data.p1(Static231.method3379(arg0));
+		local29.data.pjstr(arg0);
+		local16.queue(local29);
 	}
 }

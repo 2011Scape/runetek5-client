@@ -7,9 +7,6 @@ public final class Static342 {
 	@OriginalMember(owner = "client!kp", name = "w", descriptor = "Lclient!fla;")
 	public static ParticleLinkedList aParticleLinkedList7;
 
-	@OriginalMember(owner = "client!kp", name = "A", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt61 = new ClientProt(47, 7);
-
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "(ILclient!jm;)V")
 	public static void method4462(@OriginalArg(1) HuffmanCodec arg0) {
 		Static636.aHuffmanCodec1 = arg0;

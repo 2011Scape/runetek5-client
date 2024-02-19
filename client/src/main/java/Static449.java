@@ -62,13 +62,13 @@ public final class Static449 {
 
 	@OriginalMember(owner = "client!od", name = "b", descriptor = "(I)V")
 	public static void method6116() {
-		if (Static283.anInt4574 == 3) {
+		if (Static283.gameState == 3) {
 			Static81.method1586(4);
-		} else if (Static283.anInt4574 == 7) {
+		} else if (Static283.gameState == 7) {
 			Static81.method1586(8);
-		} else if (Static283.anInt4574 == 9) {
+		} else if (Static283.gameState == 9) {
 			Static81.method1586(10);
-		} else if (Static283.anInt4574 == 11) {
+		} else if (Static283.gameState == 11) {
 			Static81.method1586(12);
 		}
 	}

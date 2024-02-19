@@ -175,7 +175,7 @@ public final class Static363 {
 		if (Static377.anInt5930 != -1) {
 			Static640.method8435(true);
 		}
-		if (Static405.aClass153_2.aClass348_1 != null && Static109.method2070(Static283.anInt4574)) {
+		if (Connection.gameConnection.aClass348_1 != null && Static109.method2070(Static283.gameState)) {
 			Static371.method5284();
 		}
 		for (@Pc(258) int local258 = 0; local258 < 100; local258++) {
