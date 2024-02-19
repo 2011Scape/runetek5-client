@@ -25,7 +25,7 @@ public final class Class39_Sub13 extends Class39 {
 	@Override
 	public boolean method9158() {
 		if (this.aClass2_Sub8_4 == null) {
-			this.aClass2_Sub8_4 = Static728.method1153(Static398.aJs581, this.anInt5431, 0);
+			this.aClass2_Sub8_4 = Static728.method1153(client.midiSongs, this.anInt5431, 0);
 		}
 		if (this.aClass2_Sub8_4 == null) {
 			return false;

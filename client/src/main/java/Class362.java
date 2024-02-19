@@ -60,7 +60,7 @@ public final class Class362 implements Runnable {
 		}
 		if (this.aPrivilegedRequest7 == null) {
 			try {
-				@Pc(23) int local23 = Static446.aClass355_5 == Static2.aClass355_1 ? 80 : Static527.aClass229_3.anInt5856 + 7000;
+				@Pc(23) int local23 = ModeWhere.LIVE == Static2.aModeWhere1 ? 80 : Static527.aClass229_3.anInt5856 + 7000;
 				this.aPrivilegedRequest7 = Static446.aSignlink6.method8992(new URL("http://" + Static527.aClass229_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.aModeGame4.id));
 			} catch (@Pc(54) MalformedURLException local54) {
 				return true;

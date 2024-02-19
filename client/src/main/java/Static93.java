@@ -9,15 +9,9 @@ public final class Static93 {
 	@OriginalMember(owner = "client!cu", name = "Y", descriptor = "Lclient!vq;")
 	public static Signlink aSignlink1;
 
-	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
-	public static Js5 aJs516;
-
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!cu", name = "Q", descriptor = "Ljava/lang/Class;")
 	private static Class aClass6;
-
-	@OriginalMember(owner = "client!cu", name = "T", descriptor = "Lclient!ofa;")
-	public static final ServerActiveProperties aClass2_Sub41_1 = new ServerActiveProperties(0, -1);
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIILclient!d;Lclient!ha;I)V")
 	public static void method1832(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Interface4 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5) {

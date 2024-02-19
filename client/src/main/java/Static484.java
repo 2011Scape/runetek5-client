@@ -213,7 +213,7 @@ public final class Static484 {
 				}
 			}
 			if (Static42.aClass255_2 != null) {
-				Static6.aJs51.discardUnpacked = 1;
+				client.config.discardUnpacked = 1;
 				Static577.aMelTypeList4.method5583(1024, 64);
 				for (local214 = 0; local214 < Static42.aClass255_2.anInt6373; local214++) {
 					local216 = Static42.aClass255_2.anIntArray495[local214];
@@ -231,8 +231,8 @@ public final class Static484 {
 					}
 				}
 				Static577.aMelTypeList4.method5583(128, 64);
-				Static6.aJs51.discardUnpacked = 2;
-				Static6.aJs51.discardUnpacked();
+				client.config.discardUnpacked = 2;
+				client.config.discardUnpacked();
 			}
 		}
 		return true;

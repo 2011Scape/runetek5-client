@@ -65,8 +65,8 @@ public final class Static346 {
 			Static416.anInt6378 = Static18.aHashTable2.size();
 			Static18.aHashTable2.toArray(Static592.aClass2_Sub45Array1);
 		}
-		if (Connection.gameConnection.aClass2_Sub21_Sub2_2.pos != Connection.gameConnection.anInt3648) {
-			throw new RuntimeException("gnp1 pos:" + Connection.gameConnection.aClass2_Sub21_Sub2_2.pos + " psize:" + Connection.gameConnection.anInt3648);
+		if (Connection.gameConnection.inboundPacket.pos != Connection.gameConnection.anInt3648) {
+			throw new RuntimeException("gnp1 pos:" + Connection.gameConnection.inboundPacket.pos + " psize:" + Connection.gameConnection.anInt3648);
 		}
 		for (local33 = 0; local33 < Static390.anInt6126; local33++) {
 			if (Static18.aHashTable2.get((long) Static103.anIntArray187[local33]) == null) {

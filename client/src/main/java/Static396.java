@@ -14,8 +14,8 @@ public final class Static396 {
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(I)V")
 	public static void method5551() {
 		@Pc(10) Connection local10 = Connection.getActiveConnection();
-		@Pc(18) OutboundPacket local18 = OutboundPacket.create(Static244.aClientProt53, local10.random);
-		local18.data.p1(0);
+		@Pc(18) OutboundPacket local18 = OutboundPacket.create(ClientProt.aClientProt53, local10.random);
+		local18.buffer.p1(0);
 		local10.queue(local18);
 	}
 

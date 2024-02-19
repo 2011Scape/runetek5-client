@@ -6,9 +6,6 @@ public final class Static210 {
 	@OriginalMember(owner = "client!gia", name = "s", descriptor = "Lclient!hda;")
 	public static Component aComponent4;
 
-	@OriginalMember(owner = "client!gia", name = "t", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_9 = new Class287(7, 2);
-
 	@OriginalMember(owner = "client!gia", name = "o", descriptor = "[I")
 	public static final int[] anIntArray280 = new int[2048];
 

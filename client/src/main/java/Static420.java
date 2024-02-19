@@ -13,14 +13,8 @@ public final class Static420 {
 	@OriginalMember(owner = "client!nea", name = "g", descriptor = "[[[Lclient!pha;")
 	public static Class291[][][] aClass291ArrayArrayArray2;
 
-	@OriginalMember(owner = "client!nea", name = "c", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_13 = new Class287(3, 4);
-
 	@OriginalMember(owner = "client!nea", name = "a", descriptor = "I")
 	public static int anInt6436 = 1;
-
-	@OriginalMember(owner = "client!nea", name = "d", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt78 = new ClientProt(28, 3);
 
 	@OriginalMember(owner = "client!nea", name = "a", descriptor = "(ILclient!hda;II)V")
 	public static void method5758(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {

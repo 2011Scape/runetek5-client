@@ -13,9 +13,6 @@ public final class Static226 {
 	@OriginalMember(owner = "client!ha", name = "q", descriptor = "Lclient!sia;")
 	public static final LinkedList aLinkedList58 = new LinkedList();
 
-	@OriginalMember(owner = "client!ha", name = "l", descriptor = "[Lclient!pm;")
-	public static final Js5CachedResourceProvider[] aJs5CachedResourceProviderArray8 = new Js5CachedResourceProvider[37];
-
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(ILjava/awt/Canvas;IILclient!d;ILclient!sb;I)Lclient!ha;")
 	public static synchronized Class19 method7982(@OriginalArg(1) Canvas arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Interface4 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Js5 arg5, @OriginalArg(7) int arg6) {
 		if (arg4 == 0) {

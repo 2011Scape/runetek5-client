@@ -16,7 +16,7 @@ public final class Static63 {
 		if (arg1 == -1 && !Static501.aBoolean575) {
 			Static100.method1988();
 		} else if (arg1 != -1 && (Static588.anInt8692 != arg1 || !Static52.method1157(-122)) && local12 != 0 && !Static501.aBoolean575) {
-			Static618.method8318(Static398.aJs581, local12, arg1, arg2);
+			Static618.method8318(client.midiSongs, local12, arg1, arg2);
 			Static550.method7266();
 		}
 		if (Static588.anInt8692 != arg1) {

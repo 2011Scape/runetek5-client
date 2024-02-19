@@ -114,7 +114,7 @@ public final class Static608 {
 					if (local267 != -1) {
 						local306 = (SoftwareIndexedSprite[]) Static230.aSoftLruHashTable81.get((long) local267);
 						if (local306 == null) {
-							local313 = Static735.method9375(Static721.aJs5128, local267);
+							local313 = Static735.method9375(client.sprites, local267);
 							if (local313 != null) {
 								local306 = new SoftwareIndexedSprite[local313.length];
 								for (local321 = 0; local321 < local313.length; local321++) {
@@ -163,7 +163,7 @@ public final class Static608 {
 						if (local504 != -1) {
 							local306 = (SoftwareIndexedSprite[]) Static669.aSoftLruHashTable215.get((long) local504);
 							if (local306 == null) {
-								local313 = Static735.method9375(Static721.aJs5128, local504);
+								local313 = Static735.method9375(client.sprites, local504);
 								if (local313 != null) {
 									local306 = new SoftwareIndexedSprite[local313.length];
 									for (local321 = 0; local321 < local313.length; local321++) {

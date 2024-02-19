@@ -25,7 +25,7 @@ public final class Static430 {
 			Static344.aClass229_1 = new Class229();
 			Static344.aClass229_1.anInt5856 = arg0;
 			Static344.aClass229_1.aString60 = arg1;
-			if (Static2.aClass355_1 != Static446.aClass355_5) {
+			if (Static2.aModeWhere1 != ModeWhere.LIVE) {
 				Static344.aClass229_1.anInt5854 = Static344.aClass229_1.anInt5856 + 40000;
 				Static344.aClass229_1.anInt5853 = Static344.aClass229_1.anInt5856 + 50000;
 			}
@@ -37,7 +37,7 @@ public final class Static430 {
 			return true;
 		}
 		@Pc(73) String local73 = "";
-		if (Static446.aClass355_5 != Static2.aClass355_1) {
+		if (ModeWhere.LIVE != Static2.aModeWhere1) {
 			local73 = ":" + (arg0 + 7000);
 		}
 		@Pc(88) String local88 = "";
@@ -65,10 +65,10 @@ public final class Static430 {
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
 	public static void method5819(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Connection local10 = Connection.getActiveConnection();
-		@Pc(16) OutboundPacket local16 = OutboundPacket.create(Static425.aClientProt80, local10.random);
-		local16.data.p1(Static231.method3379(arg0) + 1);
-		local16.data.pjstr(arg0);
-		local16.data.p1_alt2(arg1);
+		@Pc(16) OutboundPacket local16 = OutboundPacket.create(ClientProt.aClientProt80, local10.random);
+		local16.buffer.p1(Static231.method3379(arg0) + 1);
+		local16.buffer.pjstr(arg0);
+		local16.buffer.p1_alt2(arg1);
 		local10.queue(local16);
 	}
 }

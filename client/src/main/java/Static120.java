@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static120 {
 
-	@OriginalMember(owner = "client!dn", name = "G", descriptor = "Lclient!sb;")
-	public static Js5 aJs519;
-
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method2193(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
 		@Pc(8) Component local8 = Static15.method186(arg1, arg0);
@@ -73,7 +70,7 @@ public final class Static120 {
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 10) {
-			local148 = OutboundPacket.create(Static713.aClientProt125, Connection.gameConnection.random);
+			local148 = OutboundPacket.create(ClientProt.aClientProt125, Connection.gameConnection.random);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}

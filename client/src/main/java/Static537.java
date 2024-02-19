@@ -17,21 +17,21 @@ public final class Static537 {
 		if (local19 != null) {
 			return local19;
 		}
-		@Pc(32) byte[] local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
+		@Pc(32) byte[] local32 = client.clientscripts.fetchFile(client.clientscripts.getGroupId(local10));
 		if (local32 == null) {
 			local10 = arg2 + 65536 << 10 | arg0.anInt6197;
 			local19 = (ClientScript) Static480.aLruHashTable2.get((long) local10 << 16);
 			if (local19 != null) {
 				return local19;
 			}
-			local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
+			local32 = client.clientscripts.fetchFile(client.clientscripts.getGroupId(local10));
 			if (local32 == null) {
 				local10 = arg0.anInt6197 | 0x3FFFC00;
 				local19 = (ClientScript) Static480.aLruHashTable2.get((long) local10 << 16);
 				if (local19 != null) {
 					return local19;
 				}
-				local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
+				local32 = client.clientscripts.fetchFile(client.clientscripts.getGroupId(local10));
 				if (local32 == null) {
 					return null;
 				} else if (local32.length <= 1) {

@@ -249,7 +249,7 @@ public final class Static434 {
 	@OriginalMember(owner = "client!nla", name = "g", descriptor = "(I)V")
 	public static void method5855() {
 		Static117.anInt2282 = 0;
-		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.inboundPacket;
 		@Pc(12) int local12 = local8.g1_alt2();
 		@Pc(24) boolean local24 = local8.g1() == 1;
 		@Pc(28) int local28 = local8.ig2();
@@ -279,10 +279,10 @@ public final class Static434 {
 		for (local55 = (local28 - (Static720.anInt10859 >> 4)) / 8; local55 <= ((Static720.anInt10859 >> 4) + local28) / 8; local55++) {
 			for (@Pc(137) int local137 = (local32 - (Static501.anInt7568 >> 4)) / 8; local137 <= (local32 + (Static501.anInt7568 >> 4)) / 8; local137++) {
 				Static89.anIntArray169[local46] = (local55 << 8) + local137;
-				Static267.anIntArray329[local46] = Static93.aJs516.getGroupId("m" + local55 + "_" + local137);
-				Static266.anIntArray615[local46] = Static93.aJs516.getGroupId("l" + local55 + "_" + local137);
-				Static68.anIntArray316[local46] = Static93.aJs516.getGroupId("um" + local55 + "_" + local137);
-				Static298.anIntArray367[local46] = Static93.aJs516.getGroupId("ul" + local55 + "_" + local137);
+				Static267.anIntArray329[local46] = client.maps.getGroupId("m" + local55 + "_" + local137);
+				Static266.anIntArray615[local46] = client.maps.getGroupId("l" + local55 + "_" + local137);
+				Static68.anIntArray316[local46] = client.maps.getGroupId("um" + local55 + "_" + local137);
+				Static298.anIntArray367[local46] = client.maps.getGroupId("ul" + local55 + "_" + local137);
 				local46++;
 			}
 		}

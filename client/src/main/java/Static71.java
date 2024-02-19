@@ -222,10 +222,10 @@ public final class Static71 {
 									local938 = 0;
 									@Pc(940) int local940 = 0;
 									for (@Pc(942) int local942 = 0; local942 < 37; local942++) {
-										if (Static226.aJs5CachedResourceProviderArray8[local942] != null) {
-											local936 += Static226.aJs5CachedResourceProviderArray8[local942].method6645();
-											local938 += Static226.aJs5CachedResourceProviderArray8[local942].method6649();
-											local940 += Static226.aJs5CachedResourceProviderArray8[local942].method6647();
+										if (client.js5Providers[local942] != null) {
+											local936 += client.js5Providers[local942].method6645();
+											local938 += client.js5Providers[local942].method6649();
+											local940 += client.js5Providers[local942].method6647();
 										}
 									}
 									@Pc(986) int local986 = local940 * 100 / local936;
@@ -595,36 +595,36 @@ public final class Static71 {
 	public static boolean method1525() {
 		@Pc(5) boolean local5 = true;
 		if (Static414.aClass407_2 == null) {
-			if (Static721.aJs5128.isFileReady(Static456.anInt6929)) {
-				Static414.aClass407_2 = Static735.method9379(Static721.aJs5128, Static456.anInt6929);
+			if (client.sprites.isFileReady(Static456.anInt6929)) {
+				Static414.aClass407_2 = Static735.method9379(client.sprites, Static456.anInt6929);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static535.aClass407_3 == null) {
-			if (Static721.aJs5128.isFileReady(Static362.anInt5828)) {
-				Static535.aClass407_3 = Static735.method9379(Static721.aJs5128, Static362.anInt5828);
+			if (client.sprites.isFileReady(Static362.anInt5828)) {
+				Static535.aClass407_3 = Static735.method9379(client.sprites, Static362.anInt5828);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static74.aClass407_1 == null) {
-			if (Static721.aJs5128.isFileReady(Static11.anInt136)) {
-				Static74.aClass407_1 = Static735.method9379(Static721.aJs5128, Static11.anInt136);
+			if (client.sprites.isFileReady(Static11.anInt136)) {
+				Static74.aClass407_1 = Static735.method9379(client.sprites, Static11.anInt136);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static16.aClass381_1 == null) {
-			if (Static697.aJs5123.isFileReady(Static723.anInt10929)) {
-				Static16.aClass381_1 = Static238.method3468(Static723.anInt10929, Static697.aJs5123);
+			if (client.fontMetrics.isFileReady(Static723.anInt10929)) {
+				Static16.aClass381_1 = Static238.method3468(Static723.anInt10929, client.fontMetrics);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static627.aClass407Array1 == null) {
-			if (Static721.aJs5128.isFileReady(Static723.anInt10929)) {
-				Static627.aClass407Array1 = Static735.method9387(Static721.aJs5128, Static723.anInt10929);
+			if (client.sprites.isFileReady(Static723.anInt10929)) {
+				Static627.aClass407Array1 = Static735.method9387(client.sprites, Static723.anInt10929);
 			} else {
 				local5 = false;
 			}

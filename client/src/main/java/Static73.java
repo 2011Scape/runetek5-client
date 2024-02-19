@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static73 {
 
-	@OriginalMember(owner = "client!cg", name = "W", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_18 = new Class287(6, 16);
-
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(IIILclient!kp;I)Z")
 	public static boolean method9308(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) ParticleNode_Sub2_Sub3 arg2, @OriginalArg(4) int arg3) {
 		if (!Static18.aBoolean20 || !Static29.aBoolean60) {

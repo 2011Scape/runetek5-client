@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static124 {
 
-	@OriginalMember(owner = "client!ds", name = "k", descriptor = "Lclient!sb;")
-	public static Js5 aJs520;
-
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	public static void method2215() {
 		Static627.aSoftLruHashTable200.clear();

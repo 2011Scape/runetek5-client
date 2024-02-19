@@ -5,6 +5,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!ofa")
 public final class ServerActiveProperties extends Linkable {
 
+	@OriginalMember(owner = "client!cu", name = "T", descriptor = "Lclient!ofa;")
+	public static final ServerActiveProperties aClass2_Sub41_1 = new ServerActiveProperties(0, -1);
 	@OriginalMember(owner = "client!ofa", name = "r", descriptor = "I")
 	public final int anInt6904;
 

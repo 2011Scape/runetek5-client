@@ -22,8 +22,8 @@ public final class Static179 {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(ZLclient!tka;)Z")
-	public static boolean method2769(@OriginalArg(1) Class355 arg0) {
-		return Static704.aClass355_7 == arg0 || arg0 == Static713.aClass355_8 || arg0 == Static425.aClass355_4 || arg0 == Static280.aClass355_3 || arg0 == Static682.aClass355_6;
+	public static boolean method2769(@OriginalArg(1) ModeWhere arg0) {
+		return ModeWhere.WTRC == arg0 || arg0 == ModeWhere.WTQA || arg0 == ModeWhere.WTWIP || arg0 == ModeWhere.WTI || arg0 == ModeWhere.INTBETA;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIIZIII)V")

@@ -4,14 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static287 {
 
-	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt119 = new ServerProt(19, 8);
-
-	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "(I)[Lclient!tka;")
-	public static Class355[] method4153() {
-		return new Class355[] { Static446.aClass355_5, Static704.aClass355_7, Static713.aClass355_8, Static425.aClass355_4, Static16.aClass355_2, Static280.aClass355_3, Static682.aClass355_6 };
-	}
-
 	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "(JI)Ljava/lang/String;")
 	public static String method4154(@OriginalArg(0) long arg0) {
 		if (arg0 <= 0L || arg0 >= 6582952005840035281L) {

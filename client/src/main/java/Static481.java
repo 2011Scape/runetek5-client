@@ -9,12 +9,6 @@ public final class Static481 {
 	@OriginalMember(owner = "client!pd", name = "k", descriptor = "I")
 	public static int anInt7215 = 0;
 
-	@OriginalMember(owner = "client!pd", name = "A", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt178 = new ServerProt(17, 0);
-
-	@OriginalMember(owner = "client!pd", name = "p", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_15 = new Class287(1, 8);
-
 	@OriginalMember(owner = "client!pd", name = "r", descriptor = "I")
 	public static int anInt7222 = 0;
 

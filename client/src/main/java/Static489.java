@@ -106,35 +106,35 @@ public final class Static489 {
 		@Pc(10) boolean local10 = true;
 		for (@Pc(12) int local12 = 0; local12 < Static319.aByteArrayArray16.length; local12++) {
 			if (Static267.anIntArray329[local12] != -1 && Static319.aByteArrayArray16[local12] == null) {
-				Static319.aByteArrayArray16[local12] = Static93.aJs516.fetchFile(Static267.anIntArray329[local12], 0);
+				Static319.aByteArrayArray16[local12] = client.maps.fetchFile(Static267.anIntArray329[local12], 0);
 				if (Static319.aByteArrayArray16[local12] == null) {
 					Static593.anInt8763++;
 					local10 = false;
 				}
 			}
 			if (Static266.anIntArray615[local12] != -1 && Static118.aByteArrayArray3[local12] == null) {
-				Static118.aByteArrayArray3[local12] = Static93.aJs516.fetchFile(Static266.anIntArray615[local12], 0, Static22.anIntArrayArray11[local12]);
+				Static118.aByteArrayArray3[local12] = client.maps.fetchFile(Static266.anIntArray615[local12], 0, Static22.anIntArrayArray11[local12]);
 				if (Static118.aByteArrayArray3[local12] == null) {
 					local10 = false;
 					Static593.anInt8763++;
 				}
 			}
 			if (Static68.anIntArray316[local12] != -1 && Static177.aByteArrayArray5[local12] == null) {
-				Static177.aByteArrayArray5[local12] = Static93.aJs516.fetchFile(Static68.anIntArray316[local12], 0);
+				Static177.aByteArrayArray5[local12] = client.maps.fetchFile(Static68.anIntArray316[local12], 0);
 				if (Static177.aByteArrayArray5[local12] == null) {
 					Static593.anInt8763++;
 					local10 = false;
 				}
 			}
 			if (Static298.anIntArray367[local12] != -1 && Static421.aByteArrayArray19[local12] == null) {
-				Static421.aByteArrayArray19[local12] = Static93.aJs516.fetchFile(Static298.anIntArray367[local12], 0);
+				Static421.aByteArrayArray19[local12] = client.maps.fetchFile(Static298.anIntArray367[local12], 0);
 				if (Static421.aByteArrayArray19[local12] == null) {
 					Static593.anInt8763++;
 					local10 = false;
 				}
 			}
 			if (Static376.anIntArray458 != null && Static363.aByteArrayArray22[local12] == null && Static376.anIntArray458[local12] != -1) {
-				Static363.aByteArrayArray22[local12] = Static93.aJs516.fetchFile(Static376.anIntArray458[local12], 0, Static22.anIntArrayArray11[local12]);
+				Static363.aByteArrayArray22[local12] = client.maps.fetchFile(Static376.anIntArray458[local12], 0, Static22.anIntArrayArray11[local12]);
 				if (Static363.aByteArrayArray22[local12] == null) {
 					Static593.anInt8763++;
 					local10 = false;
@@ -142,10 +142,10 @@ public final class Static489 {
 			}
 		}
 		if (Static42.aClass255_2 == null) {
-			if (Static162.aClass2_Sub2_Sub13_2 == null || !Static120.aJs519.isGroupNameVaild(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
+			if (Static162.aClass2_Sub2_Sub13_2 == null || !client.worldMapData.isGroupNameVaild(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
 				Static42.aClass255_2 = new Class255(0);
-			} else if (Static120.aJs519.isGroupReady(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
-				Static42.aClass255_2 = Static284.method4103(Static174.aBoolean249, Static120.aJs519, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
+			} else if (client.worldMapData.isGroupReady(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
+				Static42.aClass255_2 = Static284.method4103(Static174.aBoolean249, client.worldMapData, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
 			} else {
 				local10 = false;
 				Static593.anInt8763++;
@@ -319,7 +319,7 @@ public final class Static489 {
 		@Pc(920) OutboundPacket local920;
 		if (Static353.aFrame10 != null && Connection.gameConnection.aClass348_1 != null && Static283.gameState == 12) {
 			local920 = OutboundPacket.create(Static694.aClientProt122, Connection.gameConnection.random);
-			local920.data.p4(1057001181);
+			local920.buffer.p4(1057001181);
 			Connection.gameConnection.queue(local920);
 		}
 		if (Static117.anInt2282 == 0) {
@@ -330,8 +330,8 @@ public final class Static489 {
 			for (@Pc(973) int local973 = local855 - 1; local973 <= local858 + 1; local973++) {
 				for (@Pc(978) int local978 = local961 - 1; local978 <= local969 + 1; local978++) {
 					if (local973 < local855 || local973 > local858 || local978 < local961 || local969 < local978) {
-						Static93.aJs516.prefetchGroup("m" + local973 + "_" + local978);
-						Static93.aJs516.prefetchGroup("l" + local973 + "_" + local978);
+						client.maps.prefetchGroup("m" + local973 + "_" + local978);
+						client.maps.prefetchGroup("l" + local973 + "_" + local978);
 					}
 				}
 			}

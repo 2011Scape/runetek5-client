@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static709 {
 
-	@OriginalMember(owner = "client!wh", name = "K", descriptor = "Lclient!sb;")
-	public static Js5 aJs5127;
-
 	@OriginalMember(owner = "client!wh", name = "N", descriptor = "I")
 	public static int anInt10667;
 
@@ -36,7 +33,7 @@ public final class Static709 {
 			Static229.method3368();
 		}
 		@Pc(27) Class140 local27 = Static473.aClass140_22;
-		@Pc(35) int local35 = Static523.method3448();
+		@Pc(35) int local35 = client.method3448();
 		if (Static473.aClass140_22 == local27) {
 			Static579.aString106 = Static473.aClass140_22.aLocalizedText_63.get(Static51.anInt1052);
 			if (Static473.aClass140_22.aBoolean264) {
@@ -106,10 +103,10 @@ public final class Static709 {
 		@Pc(80) int local80;
 		while (Static232.method3400()) {
 			local71 = OutboundPacket.create(Static632.aClientProt110, Connection.gameConnection.random);
-			local71.data.p1(0);
-			local80 = local71.data.pos;
-			Static437.method5915(local71.data);
-			local71.data.psize1(local71.data.pos - local80);
+			local71.buffer.p1(0);
+			local80 = local71.buffer.pos;
+			Static437.method5915(local71.buffer);
+			local71.buffer.psize1(local71.buffer.pos - local80);
 			Connection.gameConnection.queue(local71);
 		}
 		if (Static211.aClass2_Sub12_3 == null) {
@@ -118,7 +115,7 @@ public final class Static709 {
 			}
 		} else if (Static211.aClass2_Sub12_3.anInt1631 != -1) {
 			local71 = OutboundPacket.create(Static50.aClientProt90, Connection.gameConnection.random);
-			local71.data.p2(Static211.aClass2_Sub12_3.anInt1631);
+			local71.buffer.p2(Static211.aClass2_Sub12_3.anInt1631);
 			Connection.gameConnection.queue(local71);
 			Static211.aClass2_Sub12_3 = null;
 			Static675.aLong307 = Static588.method7715() + 30000L;
@@ -134,7 +131,7 @@ public final class Static709 {
 		if (local166 != null || Static56.aLong38 < Static588.method7715() - 2000L) {
 			local179 = null;
 			local181 = 0;
-			for (@Pc(186) Linkable_Sub9 local186 = (Linkable_Sub9) Static677.aLinkedList76.head(); local186 != null && (local179 == null || local179.data.pos - local181 < 240); local186 = (Linkable_Sub9) Static677.aLinkedList76.next()) {
+			for (@Pc(186) Linkable_Sub9 local186 = (Linkable_Sub9) Static677.aLinkedList76.head(); local186 != null && (local179 == null || local179.buffer.pos - local181 < 240); local186 = (Linkable_Sub9) Static677.aLinkedList76.next()) {
 				local186.unlink();
 				local208 = local186.method5333();
 				if (local208 < -1) {
@@ -151,8 +148,8 @@ public final class Static709 {
 				if (Static172.anInt2890 != local226 || local208 != Static634.anInt9516) {
 					if (local179 == null) {
 						local179 = OutboundPacket.create(Static603.aClientProt109, Connection.gameConnection.random);
-						local179.data.p1(0);
-						local181 = local179.data.pos;
+						local179.buffer.p1(0);
+						local181 = local179.buffer.pos;
 					}
 					local282 = local226 - Static172.anInt2890;
 					Static172.anInt2890 = local226;
@@ -162,32 +159,32 @@ public final class Static709 {
 					if (local300 < 8 && local282 >= -32 && local282 <= 31 && local288 >= -32 && local288 <= 31) {
 						local282 += 32;
 						local288 += 32;
-						local179.data.p2((local300 << 12) + (local282 << 6) + local288);
+						local179.buffer.p2((local300 << 12) + (local282 << 6) + local288);
 					} else if (local300 < 32 && local282 >= -128 && local282 <= 127 && local288 >= -128 && local288 <= 127) {
-						local179.data.p1(local300 + 128);
+						local179.buffer.p1(local300 + 128);
 						local282 += 128;
 						local288 += 128;
-						local179.data.p2(local288 + (local282 << 8));
+						local179.buffer.p2(local288 + (local282 << 8));
 					} else if (local300 >= 32) {
-						local179.data.p2(local300 + 57344);
+						local179.buffer.p2(local300 + 57344);
 						if (local226 == 1 || local208 == -1) {
-							local179.data.p4(Integer.MIN_VALUE);
+							local179.buffer.p4(Integer.MIN_VALUE);
 						} else {
-							local179.data.p4(local226 | local208 << 16);
+							local179.buffer.p4(local226 | local208 << 16);
 						}
 					} else {
-						local179.data.p1(local300 + 192);
+						local179.buffer.p1(local300 + 192);
 						if (local226 == 1 || local208 == -1) {
-							local179.data.p4(Integer.MIN_VALUE);
+							local179.buffer.p4(Integer.MIN_VALUE);
 						} else {
-							local179.data.p4(local208 << 16 | local226);
+							local179.buffer.p4(local208 << 16 | local226);
 						}
 					}
 					Static56.aLong38 = local186.method5334();
 				}
 			}
 			if (local179 != null) {
-				local179.data.psize1(local179.data.pos - local181);
+				local179.buffer.psize1(local179.buffer.pos - local181);
 				Connection.gameConnection.queue(local179);
 			}
 		}
@@ -216,14 +213,14 @@ public final class Static709 {
 			}
 			local282 = (int) local527;
 			@Pc(603) OutboundPacket local603 = OutboundPacket.create(ClientProt.OPCODE_84, Connection.gameConnection.random);
-			local603.data.p2_alt3(local581 << 15 | local282);
-			local603.data.p4_alt2(local208 | local541 << 16);
+			local603.buffer.p2_alt3(local581 << 15 | local282);
+			local603.buffer.p4_alt2(local208 | local541 << 16);
 			Connection.gameConnection.queue(local603);
 		}
 		@Pc(660) long local660;
 		if (Static216.anInt3530 > 0) {
 			local179 = OutboundPacket.create(Static187.aClientProt36, Connection.gameConnection.random);
-			local179.data.p1(Static216.anInt3530 * 3);
+			local179.buffer.p1(Static216.anInt3530 * 3);
 			for (local181 = 0; local181 < Static216.anInt3530; local181++) {
 				@Pc(652) Interface27 local652 = Static591.anInterface27Array2[local181];
 				local660 = (local652.method2665() - Static351.aLong173) / 50L;
@@ -231,8 +228,8 @@ public final class Static709 {
 					local660 = 65535L;
 				}
 				Static351.aLong173 = local652.method2665();
-				local179.data.p1(local652.method2664());
-				local179.data.p2((int) local660);
+				local179.buffer.p1(local652.method2664());
+				local179.buffer.p2((int) local660);
 			}
 			Connection.gameConnection.queue(local179);
 		}
@@ -243,23 +240,23 @@ public final class Static709 {
 			Static273.aBoolean339 = false;
 			Static232.anInt3764 = 20;
 			local179 = OutboundPacket.create(Static235.aClientProt47, Connection.gameConnection.random);
-			local179.data.p2((int) Static479.aFloat123 >> 3);
-			local179.data.p2((int) Static171.aFloat64 >> 3);
+			local179.buffer.p2((int) Static479.aFloat123 >> 3);
+			local179.buffer.p2((int) Static171.aFloat64 >> 3);
 			Connection.gameConnection.queue(local179);
 		}
 		if (Static91.aBoolean750 != Static50.aBoolean565) {
 			Static50.aBoolean565 = Static91.aBoolean750;
 			local179 = OutboundPacket.create(Static621.aClientProt113, Connection.gameConnection.random);
-			local179.data.p1(Static91.aBoolean750 ? 1 : 0);
+			local179.buffer.p1(Static91.aBoolean750 ? 1 : 0);
 			Connection.gameConnection.queue(local179);
 		}
 		if (!Static503.aBoolean578) {
 			local179 = OutboundPacket.create(Static600.aClientProt108, Connection.gameConnection.random);
-			local179.data.p1(0);
-			local181 = local179.data.pos;
+			local179.buffer.p1(0);
+			local181 = local179.buffer.pos;
 			@Pc(810) Packet local810 = Static400.aClass2_Sub34_28.method5110();
-			local179.data.pdata(local810.data, 0, local810.pos);
-			local179.data.psize1(local179.data.pos - local181);
+			local179.buffer.pdata(local810.data, 0, local810.pos);
+			local179.buffer.psize1(local179.buffer.pos - local181);
 			Connection.gameConnection.queue(local179);
 			Static503.aBoolean578 = true;
 		}
@@ -510,7 +507,7 @@ public final class Static709 {
 		Static642.anInt9599++;
 		if (Static118.aBoolean199) {
 			@Pc(1980) OutboundPacket local1980 = OutboundPacket.create(Static133.aClientProt26, Connection.gameConnection.random);
-			local1980.data.p4_alt3(Static614.anInt9373 | Static688.anInt10356 << 28 | Static503.anInt7582 << 14);
+			local1980.buffer.p4_alt3(Static614.anInt9373 | Static688.anInt10356 << 28 | Static503.anInt7582 << 14);
 			Connection.gameConnection.queue(local1980);
 			Static118.aBoolean199 = false;
 		}

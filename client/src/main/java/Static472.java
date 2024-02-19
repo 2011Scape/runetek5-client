@@ -1417,23 +1417,23 @@ public final class Static472 {
 											local21 = Static647.method8473(local4911);
 										}
 										@Pc(4974) OutboundPacket local4974 = OutboundPacket.create(Static330.aClientProt66, Connection.gameConnection.random);
-										local4974.data.p4(local21);
+										local4974.buffer.p4(local21);
 										Connection.gameConnection.queue(local4974);
 										return;
 									}
 									if (arg0 == 3105) {
 										local4911 = aStringArray37[--anInt7139];
 										local5005 = OutboundPacket.create(Static276.aClientProt56, Connection.gameConnection.random);
-										local5005.data.p1(local4911.length() + 1);
-										local5005.data.pjstr(local4911);
+										local5005.buffer.p1(local4911.length() + 1);
+										local5005.buffer.pjstr(local4911);
 										Connection.gameConnection.queue(local5005);
 										return;
 									}
 									if (arg0 == 3106) {
 										local4911 = aStringArray37[--anInt7139];
 										local5005 = OutboundPacket.create(Static137.aClientProt28, Connection.gameConnection.random);
-										local5005.data.p1(local4911.length() + 1);
-										local5005.data.pjstr(local4911);
+										local5005.buffer.p1(local4911.length() + 1);
+										local5005.buffer.pjstr(local4911);
 										Connection.gameConnection.queue(local5005);
 										return;
 									}
@@ -1463,7 +1463,7 @@ public final class Static472 {
 									if (arg0 == 3110) {
 										local15 = anIntArray578[--anInt7142];
 										local5005 = OutboundPacket.create(Static209.aClientProt37, Connection.gameConnection.random);
-										local5005.data.p2(local15);
+										local5005.buffer.p2(local15);
 										Connection.gameConnection.queue(local5005);
 										return;
 									}
@@ -1509,15 +1509,15 @@ public final class Static472 {
 									if (arg0 == 3116) {
 										local15 = anIntArray578[--anInt7142];
 										local5005 = OutboundPacket.create(Static436.aClientProt44, Connection.gameConnection.random);
-										local5005.data.p2(local15);
+										local5005.buffer.p2(local15);
 										Connection.gameConnection.queue(local5005);
 										return;
 									}
 									if (arg0 == 3117) {
 										local4911 = aStringArray37[--anInt7139];
 										local5005 = OutboundPacket.create(Static357.aClientProt82, Connection.gameConnection.random);
-										local5005.data.p1(local4911.length() + 1);
-										local5005.data.pjstr(local4911);
+										local5005.buffer.p1(local4911.length() + 1);
+										local5005.buffer.pjstr(local4911);
 										Connection.gameConnection.queue(local5005);
 										return;
 									}
@@ -2682,7 +2682,7 @@ public final class Static472 {
 												anInt7142 -= 2;
 												local21 = anIntArray578[anInt7142];
 												local27 = anIntArray578[anInt7142 + 1];
-												local10482 = Static74.method1535(local27, Static697.aJs5123);
+												local10482 = Static74.method1535(local27, client.fontMetrics);
 												anIntArray578[anInt7142++] = local10482.method8739(local4911, Static679.aSoftwareIndexedSpriteArray14, local21);
 												return;
 											}
@@ -2691,7 +2691,7 @@ public final class Static472 {
 												anInt7142 -= 2;
 												local21 = anIntArray578[anInt7142];
 												local27 = anIntArray578[anInt7142 + 1];
-												local10482 = Static74.method1535(local27, Static697.aJs5123);
+												local10482 = Static74.method1535(local27, client.fontMetrics);
 												anIntArray578[anInt7142++] = local10482.method8741(Static679.aSoftwareIndexedSpriteArray14, local4911, local21);
 												return;
 											}
@@ -2809,7 +2809,7 @@ public final class Static472 {
 											if (arg0 == 4125) {
 												local4911 = aStringArray37[--anInt7139];
 												local21 = anIntArray578[--anInt7142];
-												@Pc(11077) Class381 local11077 = Static74.method1535(local21, Static697.aJs5123);
+												@Pc(11077) Class381 local11077 = Static74.method1535(local21, client.fontMetrics);
 												anIntArray578[anInt7142++] = local11077.method8742(Static679.aSoftwareIndexedSpriteArray14, local4911);
 												return;
 											}
@@ -3034,10 +3034,10 @@ public final class Static472 {
 													}
 													Static486.aByte115 = -1;
 													local5005 = OutboundPacket.create(Static429.aClientProt81, Connection.lobbyConnection.random);
-													local5005.data.p1(0);
-													local27 = local5005.data.pos;
-													local5005.data.pjstr(local4911);
-													local5005.data.psize1(local5005.data.pos - local27);
+													local5005.buffer.p1(0);
+													local27 = local5005.buffer.pos;
+													local5005.buffer.pjstr(local4911);
+													local5005.buffer.psize1(local5005.buffer.pos - local27);
 													Connection.lobbyConnection.queue(local5005);
 													return;
 												}
@@ -3558,9 +3558,9 @@ public final class Static472 {
 				Static87.anInt1806 = anIntArray578[anInt7142 + 2];
 				local57 = Connection.getActiveConnection();
 				local63 = OutboundPacket.create(Static98.aClientProt20, local57.random);
-				local63.data.p1(Static133.anInt2458);
-				local63.data.p1(Static726.aClass280_7.anInt7039);
-				local63.data.p1(Static87.anInt1806);
+				local63.buffer.p1(Static133.anInt2458);
+				local63.buffer.p1(Static726.aClass280_7.anInt7039);
+				local63.buffer.p1(Static87.anInt1806);
 				local57.queue(local63);
 				return;
 			}
@@ -3579,11 +3579,11 @@ public final class Static472 {
 				}
 				@Pc(135) Connection local135 = Connection.getActiveConnection();
 				@Pc(141) OutboundPacket local141 = OutboundPacket.create(Static245.aClientProt114, local135.random);
-				local141.data.p1(Static231.method3379(local95) + Static231.method3379(local101) + 2);
-				local141.data.pjstr(local95);
-				local141.data.p1(local109 - 1);
-				local141.data.p1(local115);
-				local141.data.pjstr(local101);
+				local141.buffer.p1(Static231.method3379(local95) + Static231.method3379(local101) + 2);
+				local141.buffer.pjstr(local95);
+				local141.buffer.p1(local109 - 1);
+				local141.buffer.p1(local115);
+				local141.buffer.pjstr(local101);
 				local135.queue(local141);
 				return;
 			}
@@ -3621,8 +3621,8 @@ public final class Static472 {
 			if (arg0 == 5006) {
 				local192 = anIntArray578[--anInt7142];
 				local289 = Connection.getActiveConnection();
-				local295 = OutboundPacket.create(Static356.aClientProt67, local289.random);
-				local295.data.p1(local192);
+				local295 = OutboundPacket.create(ClientProt.aClientProt67, local289.random);
+				local295.buffer.p1(local192);
 				local289.queue(local295);
 				return;
 			}
@@ -3638,11 +3638,11 @@ public final class Static472 {
 				if (Static608.anInt9290 != 0 || (!Static389.aBoolean459 || Static34.aBoolean62) && !Static617.aBoolean724) {
 					@Pc(360) Connection local360 = Connection.getActiveConnection();
 					@Pc(366) OutboundPacket local366 = OutboundPacket.create(Static243.aClientProt52, local360.random);
-					local366.data.p2(0);
-					local375 = local366.data.pos;
-					local366.data.pjstr(local95);
-					Static523.method3446(local366.data, local101);
-					local366.data.psize2(local366.data.pos - local375);
+					local366.buffer.p2(0);
+					local375 = local366.buffer.pos;
+					local366.buffer.pjstr(local95);
+					Static523.method3446(local366.buffer, local101);
+					local366.buffer.psize2(local366.buffer.pos - local375);
 					local360.queue(local366);
 					return;
 				}
@@ -3828,12 +3828,12 @@ public final class Static472 {
 			if (arg0 == 5059) {
 				local57 = Connection.getActiveConnection();
 				local63 = OutboundPacket.create(Static456.aClientProt85, local57.random);
-				local63.data.p1(0);
-				local109 = local63.data.pos;
-				local63.data.p1(0);
-				local63.data.p2(aClass21_1.anInt521);
-				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.data, aClass21_1.anIntArray29);
-				local63.data.psize1(local63.data.pos - local109);
+				local63.buffer.p1(0);
+				local109 = local63.buffer.pos;
+				local63.buffer.p1(0);
+				local63.buffer.p2(aClass21_1.anInt521);
+				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.buffer, aClass21_1.anIntArray29);
+				local63.buffer.psize1(local63.buffer.pos - local109);
 				local57.queue(local63);
 				return;
 			}
@@ -3841,24 +3841,24 @@ public final class Static472 {
 				local95 = aStringArray37[--anInt7139];
 				local289 = Connection.getActiveConnection();
 				local295 = OutboundPacket.create(Static234.aClientProt46, local289.random);
-				local295.data.p1(0);
-				local115 = local295.data.pos;
-				local295.data.pjstr(local95);
-				local295.data.p2(aClass21_1.anInt521);
-				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local295.data, aClass21_1.anIntArray29);
-				local295.data.psize1(local295.data.pos - local115);
+				local295.buffer.p1(0);
+				local115 = local295.buffer.pos;
+				local295.buffer.pjstr(local95);
+				local295.buffer.p2(aClass21_1.anInt521);
+				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local295.buffer, aClass21_1.anIntArray29);
+				local295.buffer.psize1(local295.buffer.pos - local115);
 				local289.queue(local295);
 				return;
 			}
 			if (arg0 == 5061) {
 				local57 = Connection.getActiveConnection();
 				local63 = OutboundPacket.create(Static456.aClientProt85, local57.random);
-				local63.data.p1(0);
-				local109 = local63.data.pos;
-				local63.data.p1(1);
-				local63.data.p2(aClass21_1.anInt521);
-				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.data, aClass21_1.anIntArray29);
-				local63.data.psize1(local63.data.pos - local109);
+				local63.buffer.p1(0);
+				local109 = local63.buffer.pos;
+				local63.buffer.p1(1);
+				local63.buffer.p2(aClass21_1.anInt521);
+				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.buffer, aClass21_1.anIntArray29);
+				local63.buffer.psize1(local63.buffer.pos - local109);
 				local57.queue(local63);
 				return;
 			}
@@ -3959,24 +3959,24 @@ public final class Static472 {
 			if (arg0 == 5074) {
 				local57 = Connection.getActiveConnection();
 				local63 = OutboundPacket.create(Static456.aClientProt85, local57.random);
-				local63.data.p1(0);
-				local109 = local63.data.pos;
-				local63.data.p1(2);
-				local63.data.p2(aClass21_1.anInt521);
-				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.data, aClass21_1.anIntArray29);
-				local63.data.psize1(local63.data.pos - local109);
+				local63.buffer.p1(0);
+				local109 = local63.buffer.pos;
+				local63.buffer.p1(2);
+				local63.buffer.p2(aClass21_1.anInt521);
+				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.buffer, aClass21_1.anIntArray29);
+				local63.buffer.psize1(local63.buffer.pos - local109);
 				local57.queue(local63);
 				return;
 			}
 			if (arg0 == 5075) {
 				local57 = Connection.getActiveConnection();
 				local63 = OutboundPacket.create(Static456.aClientProt85, local57.random);
-				local63.data.p1(0);
-				local109 = local63.data.pos;
-				local63.data.p1(3);
-				local63.data.p2(aClass21_1.anInt521);
-				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.data, aClass21_1.anIntArray29);
-				local63.data.psize1(local63.data.pos - local109);
+				local63.buffer.p1(0);
+				local109 = local63.buffer.pos;
+				local63.buffer.p1(3);
+				local63.buffer.p2(aClass21_1.anInt521);
+				aClass21_1.aClass2_Sub2_Sub12_1.method3904(local63.buffer, aClass21_1.anIntArray29);
+				local63.buffer.psize1(local63.buffer.pos - local109);
 				local57.queue(local63);
 				return;
 			}
@@ -4390,10 +4390,10 @@ public final class Static472 {
 						local109 = anIntArray578[--anInt7142];
 						@Pc(3411) Connection local3411 = Connection.getActiveConnection();
 						@Pc(3417) OutboundPacket local3417 = OutboundPacket.create(Static563.aClientProt102, local3411.random);
-						local3417.data.p1(Static231.method3379(local95) + Static231.method3379(local101) + 1);
-						local3417.data.pjstr(local95);
-						local3417.data.pjstr(local101);
-						local3417.data.p1(local109);
+						local3417.buffer.p1(Static231.method3379(local95) + Static231.method3379(local101) + 1);
+						local3417.buffer.pjstr(local95);
+						local3417.buffer.pjstr(local101);
+						local3417.buffer.p1(local109);
 						local3411.queue(local3417);
 						return;
 					}
@@ -4510,11 +4510,11 @@ public final class Static472 {
 						Static282.anInt4419 = anIntArray578[anInt7142 + 8];
 						Static563.anInt8455 = anIntArray578[anInt7142 + 9];
 						Static634.anInt9510 = anIntArray578[anInt7142 + 10];
-						Static721.aJs5128.isFileReady(Static63.anInt1474);
-						Static721.aJs5128.isFileReady(Static282.anInt4417);
-						Static721.aJs5128.isFileReady(Static337.anInt5561);
-						Static721.aJs5128.isFileReady(Static176.anInt7532);
-						Static721.aJs5128.isFileReady(Static282.anInt4419);
+						client.sprites.isFileReady(Static63.anInt1474);
+						client.sprites.isFileReady(Static282.anInt4417);
+						client.sprites.isFileReady(Static337.anInt5561);
+						client.sprites.isFileReady(Static176.anInt7532);
+						client.sprites.isFileReady(Static282.anInt4419);
 						Static26.aSoftwareIndexedSprite5 = null;
 						Static561.aSoftwareIndexedSprite34 = null;
 						Static261.aSoftwareIndexedSprite18 = null;
@@ -5026,7 +5026,7 @@ public final class Static472 {
 						if (local192 != local834) {
 							if (Static109.method2070(Static283.gameState)) {
 								if (local834 == 0 && Static588.anInt8692 != -1) {
-									Static611.method8229(Static588.anInt8692, local192, Static398.aJs581);
+									Static611.method8229(Static588.anInt8692, local192, client.midiSongs);
 									Static550.method7266();
 									Static501.aBoolean575 = false;
 								} else if (local192 == 0) {
@@ -5153,7 +5153,7 @@ public final class Static472 {
 						if (local192 != local834 && Static588.anInt8692 == Static597.anInt8821) {
 							if (!Static109.method2070(Static283.gameState)) {
 								if (local834 == 0) {
-									Static611.method8229(Static588.anInt8692, local192, Static398.aJs581);
+									Static611.method8229(Static588.anInt8692, local192, client.midiSongs);
 									Static550.method7266();
 									Static501.aBoolean575 = false;
 								} else if (local192 == 0) {
@@ -5497,7 +5497,7 @@ public final class Static472 {
 							}
 							Static149.aBoolean221 = true;
 							@Pc(7662) OutboundPacket local7662 = OutboundPacket.create(Static231.aClientProt41, Connection.lobbyConnection.random);
-							local7662.data.p4(Static379.anInt5968);
+							local7662.buffer.p4(Static379.anInt5968);
 							Connection.lobbyConnection.queue(local7662);
 							anIntArray578[anInt7142++] = 0;
 							return;
@@ -6336,12 +6336,12 @@ public final class Static472 {
 		}
 		@Pc(650) Connection local650 = Connection.getActiveConnection();
 		@Pc(656) OutboundPacket local656 = OutboundPacket.create(Static278.aClientProt_57, local650.random);
-		local656.data.p1(0);
-		@Pc(665) int local665 = local656.data.pos;
-		local656.data.p1(local20);
-		local656.data.p1(local460);
-		Static523.method3446(local656.data, arg0);
-		local656.data.psize1(local656.data.pos - local665);
+		local656.buffer.p1(0);
+		@Pc(665) int local665 = local656.buffer.pos;
+		local656.buffer.p1(local20);
+		local656.buffer.p1(local460);
+		Static523.method3446(local656.buffer, arg0);
+		local656.buffer.psize1(local656.buffer.pos - local665);
 		local650.queue(local656);
 	}
 

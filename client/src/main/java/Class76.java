@@ -47,7 +47,7 @@ public final class Class76 {
 		this.anInt2140 = arg0.g3();
 		this.anInt2141 = arg0.g2();
 		this.anInterface10Array1 = new Interface10[arg0.g1()];
-		@Pc(31) Class204[] local31 = Static370.method5281();
+		@Pc(31) Class204[] local31 = Class204.method5281();
 		for (@Pc(33) int local33 = 0; local33 < this.anInterface10Array1.length; local33++) {
 			this.anInterface10Array1[local33] = this.method2030(arg0, local31[arg0.g1()]);
 		}

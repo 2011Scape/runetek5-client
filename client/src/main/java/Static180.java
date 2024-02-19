@@ -30,9 +30,9 @@ public final class Static180 {
 		}
 		@Pc(45) Connection local45 = Connection.getActiveConnection();
 		@Pc(53) OutboundPacket local53 = OutboundPacket.create(Static507.aClientProt95, local45.random);
-		local53.data.p1(Static231.method3379(local29.aString2) + 2);
-		local53.data.p2(arg0);
-		local53.data.pjstr(local29.aString2);
+		local53.buffer.p1(Static231.method3379(local29.aString2) + 2);
+		local53.buffer.p2(arg0);
+		local53.buffer.pjstr(local29.aString2);
 		local45.queue(local53);
 	}
 

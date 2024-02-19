@@ -117,8 +117,8 @@ public final class Static706 {
 		}
 		@Pc(230) Connection local230 = Connection.getActiveConnection();
 		@Pc(236) OutboundPacket local236 = OutboundPacket.create(Static669.aClientProt116, local230.random);
-		local236.data.p1(Static231.method3379(arg0));
-		local236.data.pjstr(arg0);
+		local236.buffer.p1(Static231.method3379(arg0));
+		local236.buffer.pjstr(arg0);
 		local230.queue(local236);
 	}
 }

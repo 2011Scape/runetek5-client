@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static66 {
 
-	@OriginalMember(owner = "client!cc", name = "h", descriptor = "Lclient!iba;")
-	public static Js5CacheQueue aJs5CacheQueue1;
-
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "(II)Lclient!ok;")
 	public static ParticleEffectorType method1487(@OriginalArg(1) int arg0) {
 		@Pc(10) ParticleEffectorType local10 = (ParticleEffectorType) Static713.aSoftLruHashTable231.get((long) arg0);

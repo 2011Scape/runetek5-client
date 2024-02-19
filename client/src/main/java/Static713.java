@@ -4,14 +4,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static713 {
 
-	@OriginalMember(owner = "client!wk", name = "b", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt125 = new ClientProt(25, 8);
-
 	@OriginalMember(owner = "client!wk", name = "h", descriptor = "Lclient!dla;")
 	public static final SoftLruHashTable aSoftLruHashTable231 = new SoftLruHashTable(64);
-
-	@OriginalMember(owner = "client!wk", name = "g", descriptor = "Lclient!tka;")
-	public static final Class355 aClass355_8 = new Class355("WTQA", "office", "_qa", 2);
 
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "(IZ)V")
 	public static void method9331(@OriginalArg(1) boolean arg0) {

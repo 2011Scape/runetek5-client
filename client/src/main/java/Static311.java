@@ -39,7 +39,7 @@ public final class Static311 {
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(ZBZIILjava/lang/String;Ljava/lang/String;)V")
 	public static void method4538(@OriginalArg(0) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) String arg4, @OriginalArg(6) String arg5) {
-		Static380.aJs579.discardUnpacked = 1;
+		client.configObj.discardUnpacked = 1;
 		@Pc(9) String local9 = arg4.toLowerCase();
 		@Pc(12) short[] local12 = new short[16];
 		@Pc(14) int local14 = -1;
@@ -91,7 +91,7 @@ public final class Static311 {
 			local203[local205] = ObjTypeList.objTypes.method2486(local12[local205]).aString118;
 		}
 		Static554.method7292(local203, Static256.aShortArray63);
-		Static380.aJs579.discardUnpacked();
-		Static380.aJs579.discardUnpacked = 2;
+		client.configObj.discardUnpacked();
+		client.configObj.discardUnpacked = 2;
 	}
 }

@@ -25,14 +25,14 @@ public final class Static35 {
 					local15 = true;
 				} else {
 					if (local13.aByte49 == 1 && local13.aSynthSound1 == null) {
-						local13.aSynthSound1 = Static729.method2245(Static281.aJs560, local13.anInt2580, 0);
+						local13.aSynthSound1 = Static729.method2245(client.synthSounds, local13.anInt2580, 0);
 						if (local13.aSynthSound1 == null) {
 							continue;
 						}
 						local13.anInt2571 += local13.aSynthSound1.method2248();
 					} else if (local13.method2418() && (local13.aClass2_Sub53_1 == null || local13.aClass2_Sub49_Sub1_2 == null)) {
 						if (local13.aClass2_Sub53_1 == null) {
-							local13.aClass2_Sub53_1 = Static650.method8498(Static147.aJs526, local13.anInt2580);
+							local13.aClass2_Sub53_1 = Static650.method8498(client.vorbis, local13.anInt2580);
 						}
 						if (local13.aClass2_Sub53_1 == null) {
 							continue;
@@ -117,16 +117,16 @@ public final class Static35 {
 		if (Static501.aBoolean575 && !Static52.method1157(126)) {
 			if (Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1) {
 				if (Static8.aClass2_Sub6_Sub1_1 == null) {
-					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208(), Static398.aJs581);
+					Static611.method8229(Static588.anInt8692, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208(), client.midiSongs);
 				} else {
-					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, Static398.aJs581, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208());
+					Static273.method3961(Static8.aClass2_Sub6_Sub1_1, Static588.anInt8692, client.midiSongs, Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208());
 				}
 			}
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
 		} else if (Static400.aClass2_Sub34_28.aPreference_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
 			@Pc(551) OutboundPacket local551 = OutboundPacket.create(Static235.aClientProt49, Connection.gameConnection.random);
-			local551.data.p4(Static588.anInt8692);
+			local551.buffer.p4(Static588.anInt8692);
 			Connection.gameConnection.queue(local551);
 			Static588.anInt8692 = -1;
 		}

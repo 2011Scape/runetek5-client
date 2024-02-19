@@ -8,9 +8,6 @@ public final class Static699 {
 	@OriginalMember(owner = "client!wc", name = "F", descriptor = "I")
 	public static int anInt10540;
 
-	@OriginalMember(owner = "client!wc", name = "D", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt252 = new ServerProt(0, 6);
-
 	@OriginalMember(owner = "client!wc", name = "y", descriptor = "[F")
 	public static final float[] aFloatArray81 = new float[16];
 

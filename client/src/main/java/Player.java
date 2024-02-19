@@ -425,7 +425,7 @@ public final class Player extends PathingEntity {
 		this.anInt1430 = arg0.g1b();
 		this.anInt1431 = arg0.g1b();
 		this.aBoolean124 = arg0.g1b() == 1;
-		if (Static446.aClass355_5 == Static2.aClass355_1 && Static608.anInt9290 >= 2) {
+		if (ModeWhere.LIVE == Static2.aModeWhere1 && Static608.anInt9290 >= 2) {
 			this.aBoolean124 = false;
 		}
 		this.anInt1433 = 0;
@@ -579,7 +579,7 @@ public final class Player extends PathingEntity {
 		if (Static369.anInt4265 < 96 && local155 > 50) {
 			Static358.method9191();
 		}
-		if (Static446.aClass355_5 != Static2.aClass355_1 && local155 < 50) {
+		if (ModeWhere.LIVE != Static2.aModeWhere1 && local155 < 50) {
 			@Pc(181) int local181 = 50 - local155;
 			while (Static107.anInt2161 < local181) {
 				Static163.aByteArrayArray36[Static107.anInt2161] = new byte[102400];
@@ -589,7 +589,7 @@ public final class Player extends PathingEntity {
 				Static107.anInt2161--;
 				Static163.aByteArrayArray36[Static107.anInt2161] = null;
 			}
-		} else if (Static446.aClass355_5 != Static2.aClass355_1) {
+		} else if (ModeWhere.LIVE != Static2.aModeWhere1) {
 			Static107.anInt2161 = 0;
 			Static163.aByteArrayArray36 = new byte[50][];
 		}

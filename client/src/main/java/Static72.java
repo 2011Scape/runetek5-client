@@ -19,7 +19,7 @@ public final class Static72 {
 			if (local19.anInt5704 != -1) {
 				@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) Static452.aSoftLruHashTable149.get((long) local19.anInt5704);
 				if (local34 == null) {
-					@Pc(42) Class407 local42 = Static735.method9382(Static721.aJs5128, local19.anInt5704, 0);
+					@Pc(42) Class407 local42 = Static735.method9382(client.sprites, local19.anInt5704, 0);
 					if (local42 != null) {
 						local34 = Static163.aClass19_17.method7948(local42, true);
 						Static452.aSoftLruHashTable149.put((long) local19.anInt5704, local34);

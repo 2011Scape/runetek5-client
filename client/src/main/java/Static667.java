@@ -15,7 +15,7 @@ public final class Static667 {
 		Static158.method2569();
 		Static570.method7549(Static163.aClass19_17);
 		Static469.method6358(Static163.aClass19_17);
-		Static239.method3472(Static721.aJs5128, Static163.aClass19_17);
+		Static239.method3472(client.sprites, Static163.aClass19_17);
 		Static329.method1649();
 		Static331.method4925(Static679.aSoftwareIndexedSpriteArray14);
 		Static469.method6362();

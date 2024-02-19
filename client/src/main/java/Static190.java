@@ -8,9 +8,6 @@ public final class Static190 {
 	@OriginalMember(owner = "client!fs", name = "h", descriptor = "I")
 	public static int anInt3112;
 
-	@OriginalMember(owner = "client!fs", name = "d", descriptor = "Lclient!sb;")
-	public static Js5 aJs538;
-
 	@OriginalMember(owner = "client!fs", name = "c", descriptor = "[I")
 	public static final int[] anIntArray265 = new int[] { 3, 7, 15 };
 
@@ -22,6 +19,6 @@ public final class Static190 {
 
 	@OriginalMember(owner = "client!fs", name = "a", descriptor = "(I)I")
 	public static int method2865() {
-		return Static324.anInt5129;
+		return Static324.loadingSpritesChecksum;
 	}
 }

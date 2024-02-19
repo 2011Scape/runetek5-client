@@ -88,11 +88,11 @@ public final class Static57 {
 			@Pc(35) Player local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
 			if (local35.aString9 != null && local35.aString9.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10822 & 0x10) != 0 || (Static717.anInt10822 & 0x8) != 0)) {
 				@Pc(75) OutboundPacket local75 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
-				local75.data.ip2(local26[local28]);
-				local75.data.p4_alt1(Static450.anInt6819);
-				local75.data.p2(Static162.anInt2799);
-				local75.data.p1_alt3(0);
-				local75.data.p2_alt3(Static77.anInt1614);
+				local75.buffer.ip2(local26[local28]);
+				local75.buffer.p4_alt1(Static450.anInt6819);
+				local75.buffer.p2(Static162.anInt2799);
+				local75.buffer.p1_alt3(0);
+				local75.buffer.p2_alt3(Static77.anInt1614);
 				Connection.gameConnection.queue(local75);
 				Static147.method2419(0, local35.anIntArray878[0], local35.method9302((byte) 65), true, local35.anIntArray879[0], 0, -2, local35.method9302((byte) 81));
 				local22 = true;

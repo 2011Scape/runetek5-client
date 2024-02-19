@@ -11,7 +11,7 @@ public final class Static262 {
 
 	@OriginalMember(owner = "client!ica", name = "c", descriptor = "(Z)V")
 	public static void method3839() {
-		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.inboundPacket;
 		local8.bits();
 		@Pc(16) int local16 = local8.gBit(8);
 		@Pc(21) int local21;

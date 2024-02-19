@@ -3,12 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static244 {
 
-	@OriginalMember(owner = "client!hk", name = "n", descriptor = "Lclient!sb;")
-	public static Js5 aJs555;
-
-	@OriginalMember(owner = "client!hk", name = "o", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt53 = new ClientProt(1, -1);
-
 	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(I)V")
 	public static void method3512() {
 		Static12.aSoftwareIndexedSprite26 = null;

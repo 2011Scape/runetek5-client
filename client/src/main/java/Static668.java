@@ -11,12 +11,6 @@ public final class Static668 {
 	@OriginalMember(owner = "client!vca", name = "r", descriptor = "Lclient!lja;")
 	public static Class229 aClass229_5;
 
-	@OriginalMember(owner = "client!vca", name = "o", descriptor = "Lclient!sb;")
-	public static Js5 aJs5119;
-
-	@OriginalMember(owner = "client!vca", name = "i", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_16 = new Class287(12, 7);
-
 	@OriginalMember(owner = "client!vca", name = "x", descriptor = "[[I")
 	public static final int[][] anIntArrayArray244 = new int[128][128];
 

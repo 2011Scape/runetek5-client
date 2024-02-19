@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static199 {
 
-	@OriginalMember(owner = "client!gd", name = "H", descriptor = "Lclient!sb;")
-	public static Js5 aJs542;
-
 	@OriginalMember(owner = "client!gd", name = "g", descriptor = "(I)V")
 	public static void method2977() {
 		Static600.aTimer1.method5597();

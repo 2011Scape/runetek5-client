@@ -7,9 +7,6 @@ public final class Static3 {
 	@OriginalMember(owner = "client!ab", name = "t", descriptor = "[I")
 	public static int[] anIntArray13;
 
-	@OriginalMember(owner = "client!ab", name = "u", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_1 = new Class287(10, 19);
-
 	@OriginalMember(owner = "client!ab", name = "w", descriptor = "Z")
 	public static boolean aBoolean4 = false;
 

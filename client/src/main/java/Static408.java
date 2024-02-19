@@ -9,10 +9,10 @@ public final class Static408 {
 		Static524.aConnection3.method3272();
 		Static524.aConnection3.anInt3646 = 0;
 		Static249.anInt4008 = 0;
-		Static524.aConnection3.aServerProt_91 = null;
-		Static524.aConnection3.aServerProt_94 = null;
+		Static524.aConnection3.lastPacketType2 = null;
+		Static524.aConnection3.lastPacketType = null;
 		Static524.aConnection3.aServerProt_92 = null;
-		Static524.aConnection3.aClass2_Sub21_Sub2_2.pos = 0;
+		Static524.aConnection3.inboundPacket.pos = 0;
 		Static102.method2022();
 		Static251.anInt4036 = 0;
 		Static723.aString129 = null;

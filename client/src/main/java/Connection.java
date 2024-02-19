@@ -29,7 +29,7 @@ public final class Connection {
 	public int outBytes;
 
 	@OriginalMember(owner = "client!gw", name = "z", descriptor = "Lclient!lga;")
-	public ServerProt aServerProt_91;
+	public ServerProt lastPacketType2;
 
 	@OriginalMember(owner = "client!gw", name = "o", descriptor = "Lclient!lga;")
 	public ServerProt aServerProt_92;
@@ -41,7 +41,7 @@ public final class Connection {
 	public int inBytes;
 
 	@OriginalMember(owner = "client!gw", name = "e", descriptor = "Lclient!lga;")
-	public ServerProt aServerProt_94;
+	public ServerProt lastPacketType;
 
 	@OriginalMember(owner = "client!gw", name = "w", descriptor = "I")
 	private int anInt3649;
@@ -56,7 +56,7 @@ public final class Connection {
 	private final Packet aPacket_6 = new Packet(1350);
 
 	@OriginalMember(owner = "client!gw", name = "y", descriptor = "Lclient!rka;")
-	public final PacketBit aClass2_Sub21_Sub2_2 = new PacketBit(15000);
+	public final PacketBit inboundPacket = new PacketBit(15000);
 
 	@OriginalMember(owner = "client!gw", name = "j", descriptor = "Lclient!lga;")
 	public ServerProt packetType = null;
@@ -111,10 +111,10 @@ public final class Connection {
 				this.anInt3649 += this.aPacket_6.pos;
 				break;
 			}
-			this.aPacket_6.pdata(local23.data.data, 0, local23.anInt2989);
+			this.aPacket_6.pdata(local23.buffer.data, 0, local23.anInt2989);
 			this.anInt3640 -= local23.anInt2989;
 			local23.unlink();
-			local23.data.release();
+			local23.buffer.release();
 			local23.method2768();
 		}
 	}
@@ -130,8 +130,8 @@ public final class Connection {
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
 	public void queue(@OriginalArg(1) OutboundPacket out) {
 		this.aLinkedList17.addTail(out);
-		out.anInt2989 = out.data.pos;
-		out.data.pos = 0;
+		out.anInt2989 = out.buffer.pos;
+		out.buffer.pos = 0;
 		this.anInt3640 += out.anInt2989;
 	}
 }

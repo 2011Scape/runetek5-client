@@ -98,7 +98,7 @@ public final class Static397 {
 		}
 		@Pc(27) SoftwareIndexedSprite local27 = (SoftwareIndexedSprite) Static541.aSoftLruHashTable174.get((long) local7);
 		if (local27 == null) {
-			@Pc(34) Class407[] local34 = Static735.method9375(Static721.aJs5128, local7);
+			@Pc(34) Class407[] local34 = Static735.method9375(client.sprites, local7);
 			if (local34 == null) {
 				return;
 			}

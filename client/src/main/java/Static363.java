@@ -61,7 +61,7 @@ public final class Static363 {
 		try {
 			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
 			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
-			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, Static190.aJs538);
+			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, client.models);
 			@Pc(70) long local70 = Static588.method7715();
 			Static163.aClass19_17.la();
 			Static460.aClass73_10.method7125(0, Static247.anInt3993, 0);
@@ -143,7 +143,7 @@ public final class Static363 {
 		} else {
 			Static323.method4625();
 		}
-		if (Static2.aClass355_1 != Static446.aClass355_5) {
+		if (Static2.aModeWhere1 != ModeWhere.LIVE) {
 			@Pc(178) boolean local178;
 			if (Static680.anInt10289 < 1024 && Static380.anInt5979 < 768) {
 				local178 = true;

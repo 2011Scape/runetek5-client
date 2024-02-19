@@ -16,8 +16,8 @@ public final class Static479 {
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(IZI)V")
 	public static void method6461(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) OutboundPacket local13 = OutboundPacket.create(Static288.aClientProt58, Connection.gameConnection.random);
-		local13.data.p4_alt3(arg1);
-		local13.data.p2_alt3(arg0);
+		local13.buffer.p4_alt3(arg1);
+		local13.buffer.p2_alt3(arg0);
 		Connection.gameConnection.queue(local13);
 	}
 

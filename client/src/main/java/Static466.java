@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static466 {
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "I")
-	public static int anInt7042;
+	public static int loadingScreenChecksum;
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!cg;I)V")
 	public static void method6322(@OriginalArg(0) PathingEntity arg0) {
@@ -324,7 +324,7 @@ public final class Static466 {
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Z)V")
 	public static void method6325() {
-		@Pc(8) PacketBit local8 = Connection.gameConnection.aClass2_Sub21_Sub2_2;
+		@Pc(8) PacketBit local8 = Connection.gameConnection.inboundPacket;
 		@Pc(12) int local12 = local8.g2();
 		@Pc(16) int local16 = local8.g1();
 		@Pc(28) boolean local28 = local8.g1_alt3() == 1;
@@ -389,10 +389,10 @@ public final class Static466 {
 							Static89.anIntArray169[local50] = local261;
 							@Pc(299) int local299 = local261 >> 8 & 0xFF;
 							@Pc(303) int local303 = local261 & 0xFF;
-							Static267.anIntArray329[local50] = Static93.aJs516.getGroupId("m" + local299 + "_" + local303);
-							Static266.anIntArray615[local50] = Static93.aJs516.getGroupId("l" + local299 + "_" + local303);
-							Static68.anIntArray316[local50] = Static93.aJs516.getGroupId("um" + local299 + "_" + local303);
-							Static298.anIntArray367[local50] = Static93.aJs516.getGroupId("ul" + local299 + "_" + local303);
+							Static267.anIntArray329[local50] = client.maps.getGroupId("m" + local299 + "_" + local303);
+							Static266.anIntArray615[local50] = client.maps.getGroupId("l" + local299 + "_" + local303);
+							Static68.anIntArray316[local50] = client.maps.getGroupId("um" + local299 + "_" + local303);
+							Static298.anIntArray367[local50] = client.maps.getGroupId("ul" + local299 + "_" + local303);
 							local50++;
 						}
 					}

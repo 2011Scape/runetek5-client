@@ -71,14 +71,14 @@ public final class Static242 {
 				} else if (arg1 == 6) {
 					local47 = Static173.aClientProt30;
 				} else if (arg1 == 7) {
-					local47 = Static273.aClientProt55;
+					local47 = ClientProt.aClientProt55;
 				} else if (arg1 == 9) {
 					local47 = Static571.aClientProt103;
 				}
 				if (local47 != null) {
 					@Pc(108) OutboundPacket local108 = OutboundPacket.create(local47, Connection.gameConnection.random);
-					local108.data.p1(0);
-					local108.data.p2(local7[local19]);
+					local108.buffer.p1(0);
+					local108.buffer.p2(local7[local19]);
 					Connection.gameConnection.queue(local108);
 				}
 				local9 = true;

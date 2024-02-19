@@ -39,9 +39,9 @@ public final class Static87 {
 	@OriginalMember(owner = "client!cn", name = "a", descriptor = "(IILjava/lang/String;Lclient!ha;BIII)V")
 	public static void method1693(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (Static459.aSoftwareIndexedSprite31 == null || Static1.aSoftwareIndexedSprite42 == null) {
-			if (Static721.aJs5128.isFileReady(Static63.anInt1474) && Static721.aJs5128.isFileReady(Static282.anInt4417)) {
-				Static459.aSoftwareIndexedSprite31 = arg3.method7948(Static735.method9382(Static721.aJs5128, Static63.anInt1474, 0), true);
-				@Pc(49) Class407 local49 = Static735.method9382(Static721.aJs5128, Static282.anInt4417, 0);
+			if (client.sprites.isFileReady(Static63.anInt1474) && client.sprites.isFileReady(Static282.anInt4417)) {
+				Static459.aSoftwareIndexedSprite31 = arg3.method7948(Static735.method9382(client.sprites, Static63.anInt1474, 0), true);
+				@Pc(49) Class407 local49 = Static735.method9382(client.sprites, Static282.anInt4417, 0);
 				Static1.aSoftwareIndexedSprite42 = arg3.method7948(local49, true);
 				local49.method9388();
 				Static608.aSoftwareIndexedSprite41 = arg3.method7948(local49, true);

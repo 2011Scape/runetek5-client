@@ -91,7 +91,7 @@ public final class Static515 {
 			return;
 		}
 		if (Static234.aBoolean303) {
-			@Pc(34) Linkable_Sub5 local34 = new Linkable_Sub5(arg1, new Class222_Sub1(4096, Static709.aJs5127, arg1), arg2, arg0);
+			@Pc(34) Linkable_Sub5 local34 = new Linkable_Sub5(arg1, new Class222_Sub1(4096, client.js5Archive36, arg1), arg2, arg0);
 			local34.aClass222_Sub1_1.method9183(Static384.aStringArray31[Static51.anInt1052]);
 			Static106.aHashTable11.put((long) arg1, local34);
 		} else {

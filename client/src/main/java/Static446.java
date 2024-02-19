@@ -15,12 +15,6 @@ public final class Static446 {
 	@OriginalMember(owner = "client!oaa", name = "p", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray9;
 
-	@OriginalMember(owner = "client!oaa", name = "c", descriptor = "Lclient!tka;")
-	public static final Class355 aClass355_5 = new Class355("LIVE", "", "", 0);
-
-	@OriginalMember(owner = "client!oaa", name = "n", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt170 = new ServerProt(87, -2);
-
 	@OriginalMember(owner = "client!oaa", name = "g", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray35 = new String[100];
 

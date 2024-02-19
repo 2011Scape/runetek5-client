@@ -31,14 +31,14 @@ public final class Class279 {
 			this.anIntArrayArray171 = new int[0][];
 		} else {
 			@Pc(33) int local33 = local22.g1();
-			@Pc(36) Class204[] local36 = Static370.method5281();
+			@Pc(36) Class204[] local36 = Class204.method5281();
 			@Pc(38) boolean local38 = true;
 			@Pc(44) int local44;
 			@Pc(50) int local50;
 			if (local33 == local36.length) {
 				for (local44 = 0; local44 < local36.length; local44++) {
 					local50 = local22.g1();
-					if (local50 != local36[local44].anInt5114) {
+					if (local50 != local36[local44].size) {
 						local38 = false;
 						break;
 					}

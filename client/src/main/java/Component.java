@@ -417,7 +417,7 @@ public final class Component {
 	public int anInt3823 = 1;
 
 	@OriginalMember(owner = "client!hda", name = "w", descriptor = "Lclient!ofa;")
-	public ServerActiveProperties aClass2_Sub41_2 = Static93.aClass2_Sub41_1;
+	public ServerActiveProperties aClass2_Sub41_2 = ServerActiveProperties.aClass2_Sub41_1;
 
 	@OriginalMember(owner = "client!hda", name = "Ec", descriptor = "I")
 	public int anInt3806 = 0;

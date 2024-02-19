@@ -31,8 +31,8 @@ public final class Static726 {
 				Static344.anInt5621 = Static642.anInt9599;
 				@Pc(101) Connection local101 = Connection.getActiveConnection();
 				@Pc(107) OutboundPacket local107 = OutboundPacket.create(Static8.aClientProt1, local101.random);
-				local107.data.p1(Static231.method3379(arg0));
-				local107.data.pjstr(arg0);
+				local107.buffer.p1(Static231.method3379(arg0));
+				local107.buffer.pjstr(arg0);
 				local101.queue(local107);
 				return;
 			}

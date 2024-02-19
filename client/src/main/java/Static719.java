@@ -20,7 +20,7 @@ public final class Static719 {
 		}
 		if (Static273.anInt4403 < 10) {
 			if (!Static30.aJs574.isGroupReady(Static30.aClass2_Sub2_Sub13_3.aString48)) {
-				Static273.anInt4403 = Static120.aJs519.getPercentageComplete(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
+				Static273.anInt4403 = client.worldMapData.getPercentageComplete(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
 				return;
 			}
 			Static700.method9152();

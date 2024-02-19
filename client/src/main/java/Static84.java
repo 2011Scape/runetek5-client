@@ -11,12 +11,6 @@ public final class Static84 {
 	@OriginalMember(owner = "client!client", name = "Eb", descriptor = "Ljava/lang/Class;")
 	public static Class aClass5;
 
-	@OriginalMember(owner = "client!client", name = "vb", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_6 = new Class287(11, 8);
-
-	@OriginalMember(owner = "client!client", name = "tb", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt36 = new ServerProt(28, 4);
-
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "()V")
 	public static void method1652() {
 		@Pc(1) int local1 = Static338.anInt5564;

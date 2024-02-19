@@ -27,7 +27,7 @@ public final class Static482 {
 			@Pc(52) MidiPcmStream local52 = Static48.method1100(Static8.aClass2_Sub6_Sub1_1);
 			Static697.method9120(local52);
 		}
-		Static611.method8229(arg1, local12, Static340.aJs569);
+		Static611.method8229(arg1, local12, client.midiJingles);
 		Static577.method7615(255, -1);
 		Static501.aBoolean575 = true;
 	}

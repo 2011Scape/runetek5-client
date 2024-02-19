@@ -50,7 +50,7 @@ public final class Static712 {
 			} else {
 				Static323.method4625();
 			}
-			if (Static2.aClass355_1 != Static446.aClass355_5) {
+			if (Static2.aModeWhere1 != ModeWhere.LIVE) {
 				@Pc(101) boolean local101;
 				if (Static680.anInt10289 < 1024 && Static380.anInt5979 < 768) {
 					local101 = true;

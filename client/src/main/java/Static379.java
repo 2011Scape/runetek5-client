@@ -6,9 +6,6 @@ public final class Static379 {
 	@OriginalMember(owner = "client!lu", name = "G", descriptor = "I")
 	public static int anInt5968;
 
-	@OriginalMember(owner = "client!lu", name = "I", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_12 = new Class287(2, -1);
-
 	@OriginalMember(owner = "client!lu", name = "a", descriptor = "(Z)V")
 	public static void method5355(@OriginalArg(0) boolean arg0) {
 		if (arg0) {

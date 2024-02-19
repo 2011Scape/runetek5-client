@@ -7,12 +7,6 @@ public final class Static344 {
 	@OriginalMember(owner = "client!kr", name = "f", descriptor = "Lclient!lja;")
 	public static Class229 aClass229_1;
 
-	@OriginalMember(owner = "client!kr", name = "g", descriptor = "Lclient!sb;")
-	public static Js5 aJs573;
-
-	@OriginalMember(owner = "client!kr", name = "m", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt144 = new ServerProt(92, 4);
-
 	@OriginalMember(owner = "client!kr", name = "i", descriptor = "I")
 	public static int anInt5617 = -50;
 

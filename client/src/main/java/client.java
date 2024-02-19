@@ -9,6 +9,8 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.GregorianCalendar;
 import java.util.Vector;
+
+import jagex3.jagmisc.jagmisc;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -16,6 +18,93 @@ import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!client")
 public final class client extends GameShell {
+
+	@OriginalMember(owner = "client!ha", name = "l", descriptor = "[Lclient!pm;")
+	public static final Js5CachedResourceProvider[] js5Providers = new Js5CachedResourceProvider[37];
+	@OriginalMember(owner = "client!gha", name = "t", descriptor = "[Lclient!mj;")
+	public static final BufferedFile[] cacheIndexes = new BufferedFile[37];
+	@OriginalMember(owner = "client!ffa", name = "e", descriptor = "Lclient!mj;")
+	public static BufferedFile cacheData;
+	@OriginalMember(owner = "client!hba", name = "n", descriptor = "Lclient!nj;")
+	public static Js5MasterIndex js5MasterIndex;
+	@OriginalMember(owner = "client!ila", name = "i", descriptor = "Lclient!af;")
+	public static Cache masterCache;
+	@OriginalMember(owner = "client!fia", name = "m", descriptor = "Lclient!sb;")
+	public static Js5 loadingSprites;
+	@OriginalMember(owner = "client!qe", name = "b", descriptor = "Lclient!sb;")
+	public static Js5 loadingScreen;
+	@OriginalMember(owner = "client!wb", name = "Y", descriptor = "Lclient!sb;")
+	public static Js5 fontMetrics;
+	@OriginalMember(owner = "client!po", name = "h", descriptor = "Lclient!pla;")
+	public static Js5NetQueue js5NetQueue;
+	@OriginalMember(owner = "client!cc", name = "h", descriptor = "Lclient!iba;")
+	public static Js5CacheQueue js5CacheQueue;
+	@OriginalMember(owner = "client!ws", name = "I", descriptor = "Lclient!sb;")
+	public static Js5 sprites;
+	@OriginalMember(owner = "client!kr", name = "g", descriptor = "Lclient!sb;")
+	public static Js5 anims;
+	@OriginalMember(owner = "client!eha", name = "c", descriptor = "Lclient!sb;")
+	public static Js5 bases;
+	@OriginalMember(owner = "client!ad", name = "b", descriptor = "Lclient!sb;")
+	public static Js5 config;
+	@OriginalMember(owner = "client!rha", name = "c", descriptor = "Lclient!sb;")
+	public static Js5 interfaces;
+	@OriginalMember(owner = "client!iq", name = "a", descriptor = "Lclient!sb;")
+	public static Js5 synthSounds;
+	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
+	public static Js5 maps;
+	@OriginalMember(owner = "client!mj", name = "u", descriptor = "Lclient!sb;")
+	public static Js5 midiSongs;
+	@OriginalMember(owner = "client!fs", name = "d", descriptor = "Lclient!sb;")
+	public static Js5 models;
+	@OriginalMember(owner = "client!qq", name = "g", descriptor = "Lclient!sb;")
+	public static Js5 textures;
+	@OriginalMember(owner = "client!oka", name = "l", descriptor = "Lclient!sb;")
+	public static Js5 binary;
+	@OriginalMember(owner = "client!kn", name = "g", descriptor = "Lclient!sb;")
+	public static Js5 midiJingles;
+	@OriginalMember(owner = "client!bb", name = "d", descriptor = "Lclient!sb;")
+	public static Js5 clientscripts;
+	@OriginalMember(owner = "client!eka", name = "l", descriptor = "Lclient!sb;")
+	public static Js5 vorbis;
+	@OriginalMember(owner = "client!mn", name = "b", descriptor = "Lclient!sb;")
+	public static Js5 midiInstruments;
+	@OriginalMember(owner = "client!oia", name = "r", descriptor = "Lclient!sb;")
+	public static Js5 configLoc;
+	@OriginalMember(owner = "client!ala", name = "b", descriptor = "Lclient!sb;")
+	public static Js5 configEnum;
+	@OriginalMember(owner = "client!kj", name = "a", descriptor = "Lclient!sb;")
+	public static Js5 configNpc;
+	@OriginalMember(owner = "client!lv", name = "e", descriptor = "Lclient!sb;")
+	public static Js5 configObj;
+	@OriginalMember(owner = "client!vca", name = "o", descriptor = "Lclient!sb;")
+	public static Js5 configSeq;
+	@OriginalMember(owner = "client!ij", name = "l", descriptor = "Lclient!sb;")
+	public static Js5 configSpot;
+	@OriginalMember(owner = "client!he", name = "k", descriptor = "Lclient!sb;")
+	public static Js5 configVarbit;
+	@OriginalMember(owner = "client!dn", name = "G", descriptor = "Lclient!sb;")
+	public static Js5 worldMapData;
+	@OriginalMember(owner = "client!bu", name = "O", descriptor = "Lclient!sb;")
+	public static Js5 quickchat;
+	@OriginalMember(owner = "client!hk", name = "n", descriptor = "Lclient!sb;")
+	public static Js5 quickchatGlobal;
+	@OriginalMember(owner = "client!gd", name = "H", descriptor = "Lclient!sb;")
+	public static Js5 materials;
+	@OriginalMember(owner = "client!co", name = "t", descriptor = "Lclient!sb;")
+	public static Js5 configParticle;
+	@OriginalMember(owner = "client!kka", name = "c", descriptor = "Lclient!sb;")
+	public static Js5 defaults;
+    @OriginalMember(owner = "client!ega", name = "p", descriptor = "Lclient!sb;")
+    public static Js5 configBillboard;
+	@OriginalMember(owner = "client!pt", name = "s", descriptor = "Lclient!sb;")
+	public static Js5 cutscenes;
+	@OriginalMember(owner = "client!th", name = "n", descriptor = "Lclient!sb;")
+	public static Js5 dlls;
+	@OriginalMember(owner = "client!ds", name = "k", descriptor = "Lclient!sb;")
+	public static Js5 shaders;
+	@OriginalMember(owner = "client!wh", name = "K", descriptor = "Lclient!sb;")
+	public static Js5 js5Archive36;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] arg0) {
@@ -27,7 +116,7 @@ public final class client extends GameShell {
 			Static527.aClass229_3.anInt5856 = Integer.parseInt(arg0[0]);
 			Static660.aClass229_4 = new Class229();
 			Static660.aClass229_4.anInt5856 = Integer.parseInt(arg0[1]);
-			Static2.aClass355_1 = Static16.aClass355_2;
+			Static2.aModeWhere1 = ModeWhere.LOCAL;
 			if (arg0[3].equals("live")) {
 				Static598.aClass162_5 = Static523.aClass162_3;
 			} else if (arg0[3].equals("rc")) {
@@ -81,6 +170,330 @@ public final class client extends GameShell {
 		}
 	}
 
+	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(ZIII)Lclient!sb;")
+	public static Js5 createJs5(@OriginalArg(0) boolean discardPacked, @OriginalArg(1) int archive, @OriginalArg(2) int discardUnpacked) {
+		@Pc(5) Cache cache = null;
+		if (cacheData != null) {
+			cache = new Cache(archive, cacheData, cacheIndexes[archive], 1000000);
+		}
+
+		js5Providers[archive] = js5MasterIndex.getResourceProvider(cache, archive, masterCache);
+		js5Providers[archive].prefetchAll();
+		return new Js5(js5Providers[archive], discardPacked, discardUnpacked);
+	}
+
+	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(I)I")
+	public static int method3448() {
+		@Pc(12) int local12;
+		if (Static400.aClass2_Sub34_28.aPreference_Sub10_1.method3519() == 0) {
+			for (local12 = 0; local12 < Static671.anInt10026; local12++) {
+				if (Static194.anInterface27Array1[local12].method2666() == 's' || Static194.anInterface27Array1[local12].method2666() == 'S') {
+					Static400.aClass2_Sub34_28.method5104(1, Static400.aClass2_Sub34_28.aPreference_Sub10_1);
+					Static416.aBoolean472 = true;
+					break;
+				}
+			}
+		}
+		@Pc(74) int local74;
+		if (Static198.aClass140_1 == Static473.aClass140_22) {
+			@Pc(65) Runtime local65 = Runtime.getRuntime();
+			local74 = (int) ((local65.totalMemory() - local65.freeMemory()) / 1024L);
+			@Pc(77) long local77 = Static588.method7715();
+			if (Static6.aLong8 == 0L) {
+				Static6.aLong8 = local77;
+			}
+			if (local74 > 16384 && local77 - Static6.aLong8 < 5000L) {
+				if (local77 - Static549.aLong282 > 1000L) {
+					System.gc();
+					Static549.aLong282 = local77;
+				}
+				return 0;
+			}
+		}
+		if (Static198.aClass140_2 == Static473.aClass140_22) {
+			if (js5MasterIndex == null) {
+				js5MasterIndex = new Js5MasterIndex(js5NetQueue, js5CacheQueue, ClientConfig.aBigInteger5, ClientConfig.aBigInteger6);
+			}
+			if (!js5MasterIndex.method5800()) {
+				return 0;
+			}
+			Static595.method7807((String) null, true, 0);
+			Static297.aBoolean368 = !Static589.method7721();
+			loadingSprites = createJs5(false, Static297.aBoolean368 ? 34 : 32, 1);
+			loadingScreen = createJs5(false, 33, 1);
+			fontMetrics = createJs5(false, 13, 1);
+		}
+		@Pc(184) boolean local184;
+		if (Static198.aClass140_3 == Static473.aClass140_22) {
+			local184 = loadingScreen.fetchAll();
+			local74 = js5Providers[33].method6644();
+			local74 += js5Providers[Static297.aBoolean368 ? 34 : 32].method6644();
+			local74 += js5Providers[13].method6644();
+			local74 += local184 ? 100 : loadingScreen.getPercentageComplete();
+			if (local74 != 400) {
+				return local74 / 4;
+			}
+			Static324.loadingSpritesChecksum = loadingSprites.getChecksum();
+			Static466.loadingScreenChecksum = loadingScreen.getChecksum();
+			Static616.method8284(loadingSprites);
+			@Pc(250) int local250 = Static400.aClass2_Sub34_28.aPreference_Sub11_1.method3603();
+			Static333.aClass279_1 = new Class279(Static392.aModeGame4, Static51.anInt1052, loadingScreen);
+			@Pc(262) int[] local262 = Static333.aClass279_1.method6275(local250);
+			if (local262.length == 0) {
+				local262 = Static333.aClass279_1.method6275(0);
+			}
+			@Pc(276) Class398 local276 = new Class398(loadingSprites, fontMetrics);
+			if (local262.length > 0) {
+				Static234.anInterface22Array1 = new Interface22[local262.length];
+				for (@Pc(285) int local285 = 0; local285 < Static234.anInterface22Array1.length; local285++) {
+					Static234.anInterface22Array1[local285] = new Class354(Static333.aClass279_1.method6277(local262[local285]), local276);
+				}
+			}
+		}
+		if (Static198.aClass140_4 == Static473.aClass140_22) {
+			Static82.method1592(fontMetrics, loadingSprites, Static52.method1159());
+		}
+		if (Static198.aClass140_5 == Static473.aClass140_22) {
+			local12 = Static359.method5226();
+			local74 = Static714.method9339();
+			if (local74 > local12) {
+				return local12 * 100 / local74;
+			}
+		}
+		if (Static198.aClass140_6 == Static473.aClass140_22) {
+			if (Static234.anInterface22Array1 != null && Static234.anInterface22Array1.length > 0) {
+				if (Static234.anInterface22Array1[0].method8460() < 100) {
+					return 0;
+				}
+				if (Static234.anInterface22Array1.length > 1 && Static333.aClass279_1.method6276() && Static234.anInterface22Array1[1].method8460() < 100) {
+					return 0;
+				}
+			}
+			Static570.method7549(Static163.aClass19_17);
+			Static469.method6358(Static163.aClass19_17);
+			Static81.method1586(1);
+		}
+		if (Static198.aClass140_7 == Static473.aClass140_22) {
+			for (local12 = 0; local12 < 4; local12++) {
+				Static577.aClass110Array1[local12] = Static125.method2219(Static720.anInt10859, Static501.anInt7568);
+			}
+		}
+		if (Static473.aClass140_22 == Static198.aClass140_8) {
+			sprites = createJs5(false, 8, 1);
+			anims = createJs5(false, 0, 1);
+			bases = createJs5(false, 1, 1);
+			config = createJs5(false, 2, 1);
+			interfaces = createJs5(false, 3, 1);
+			synthSounds = createJs5(false, 4, 1);
+			maps = createJs5(true, 5, 1);
+			midiSongs = createJs5(true, 6, 1);
+			models = createJs5(false, 7, 1);
+			textures = createJs5(false, 9, 1);
+			binary = createJs5(false, 10, 1);
+			midiJingles = createJs5(false, 11, 1);
+			clientscripts = createJs5(false, 12, 1);
+			vorbis = createJs5(false, 14, 1);
+			midiInstruments = createJs5(false, 15, 1);
+			configLoc = createJs5(false, 16, 1);
+			configEnum = createJs5(false, 17, 1);
+			configNpc = createJs5(false, 18, 1);
+			configObj = createJs5(false, 19, 1);
+			configSeq = createJs5(false, 20, 1);
+			configSpot = createJs5(false, 21, 1);
+			configVarbit = createJs5(false, 22, 1);
+			worldMapData = createJs5(true, 23, 1);
+			quickchat = createJs5(false, 24, 1);
+			quickchatGlobal = createJs5(false, 25, 1);
+			materials = createJs5(true, 26, 1);
+			configParticle = createJs5(false, 27, 1);
+			defaults = createJs5(true, 28, 1);
+			configBillboard = createJs5(false, 29, 1);
+			cutscenes = createJs5(true, 35, 1);
+			dlls = createJs5(true, 30, 1);
+			shaders = createJs5(true, 31, 1);
+			js5Archive36 = createJs5(true, 36, 2);
+		}
+		if (Static473.aClass140_22 == Static198.aClass140_9) {
+			local12 = 0;
+			for (local74 = 0; local74 < 37; local74++) {
+				if (js5Providers[local74] != null) {
+					local12 += js5Providers[local74].method6644() * Static462.anIntArray556[local74] / 100;
+				}
+			}
+			if (local12 != 100) {
+				if (Static669.anInt9996 < 0) {
+					Static669.anInt9996 = local12;
+				}
+				return (local12 - Static669.anInt9996) * 100 / (100 - Static669.anInt9996);
+			}
+			Static204.method3079(sprites);
+			Static82.method1592(fontMetrics, sprites, Static52.method1159());
+		}
+		if (Static473.aClass140_22 == Static198.aClass140_10) {
+			@Pc(746) byte[] local746 = defaults.fetchFile(4);
+			if (local746 == null) {
+				return 0;
+			}
+			Static9.method124(local746);
+			Static674.method8806();
+			Static81.method1586(2);
+		}
+		if (Static198.aClass140_11 == Static473.aClass140_22) {
+			Static529.method7096(dlls, Static446.aSignlink6);
+		}
+		if (Static198.aClass140_12 == Static473.aClass140_22) {
+			local12 = Static460.method6266();
+			if (local12 < 100) {
+				return local12;
+			}
+			Static502.method6721(defaults.fetchFile(1));
+			Static65.aClass3_1 = new Class3(defaults);
+			Static76.aShortArrayArray2 = Static65.aClass3_1.aShortArrayArray1;
+			Static339.aShortArrayArrayArray2 = Static65.aClass3_1.aShortArrayArrayArray1;
+			Static125.aClass388_1 = new Class388(defaults);
+		}
+		if (Static198.aClass140_13 == Static473.aClass140_22) {
+			if (Static65.aClass3_1.anInt81 != -1 && !models.isFileReady(Static65.aClass3_1.anInt81, 0)) {
+				return 99;
+			}
+			Static56.anInterface4_3 = new Js5TextureProvider(materials, textures, sprites);
+			Static386.aParamTypeList2 = new ParamTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static574.aBasTypeList2 = new BasTypeList(Static392.aModeGame4, Static51.anInt1052, config, Static125.aClass388_1);
+			Static354.aCursorTypeList1 = new CursorTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
+			Static619.aEnumTypeList2 = new EnumTypeList(Static392.aModeGame4, Static51.anInt1052, configEnum);
+			Static467.aFloTypeList3 = new FloTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static540.aFluTypeList6 = new FluTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static561.aHitmarkTypeList2 = new HitmarkTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
+			Static68.aIdkTypeList3 = new IdkTypeList(Static392.aModeGame4, Static51.anInt1052, config, models);
+			Static503.aInvTypeList1 = new InvTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static48.aLightTypeList1 = new LightTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static354.aLocTypeList4 = new LocTypeList(Static392.aModeGame4, Static51.anInt1052, true, configLoc, models);
+			Static577.aMelTypeList4 = new MelTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
+			Static720.aMsiTypeList4 = new MsiTypeList(Static392.aModeGame4, Static51.anInt1052, config, sprites);
+			Static690.aNpcTypeList2 = new NpcTypeList(Static392.aModeGame4, Static51.anInt1052, true, configNpc, models);
+			ObjTypeList.objTypes = new ObjTypeList(Static392.aModeGame4, Static51.anInt1052, true, Static386.aParamTypeList2, configObj, models);
+			Static272.aQuestTypeList1 = new QuestTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static25.aSeqTypeList1 = new SeqTypeList(Static392.aModeGame4, Static51.anInt1052, configSeq, anims, bases);
+			Static324.aSkyBoxTypeList1 = new SkyBoxTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static99.aSkyBoxSphereTypeList1 = new SkyBoxSphereTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static23.aSpotAnimTypeList1 = new SpotAnimTypeList(Static392.aModeGame4, Static51.anInt1052, configSpot, models);
+			Static652.aStructTypeList1 = new StructTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static718.aVarClientStrTypeList1 = new VarClientStrTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static691.aVarClientTypeList1 = new VarClientTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static529.aVarBitTypeList1 = new VarBitTypeList(Static392.aModeGame4, Static51.anInt1052, configVarbit);
+			Static36.aVarPlayerTypeList1 = new VarPlayerTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static628.aVarClanTypeList5 = new VarClanTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static648.aVarClanSettingTypeList1 = new VarClanSettingTypeList(Static392.aModeGame4, Static51.anInt1052, config);
+			Static444.method5987(interfaces, fontMetrics, sprites, models);
+			Static110.method2081(configBillboard);
+			Static68.aQuickChatCatTypeList3 = new QuickChatCatTypeList(Static51.anInt1052, quickchat, quickchatGlobal);
+			Static288.aQuickChatPhraseTypeList2 = new QuickChatPhraseTypeList(Static51.anInt1052, quickchat, quickchatGlobal, new Js5QuickChatCommandDecoder());
+			Static412.method5693();
+			Static354.aLocTypeList4.setLowDetail(Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 0);
+			Static34.aClass304_1 = new Class304();
+			Static296.method4362();
+			Static44.method1074(Static25.aSeqTypeList1);
+			Static187.method2844(configParticle);
+			Static405.method5592(Static56.anInterface4_3, models);
+			@Pc(1119) HuffmanCodec local1119 = new HuffmanCodec(binary.fetchFile("huffman", ""));
+			Static342.method4462(local1119);
+			try {
+				jagmisc.init();
+			} catch (@Pc(1126) Throwable local1126) {
+			}
+			Static600.aTimer1 = Static570.method7550();
+			Static292.aClass2_Sub43_2 = new Linkable_Sub43(true, Static446.aSignlink6);
+		}
+		if (Static198.aClass140_15 == Static473.aClass140_22) {
+			local12 = Static188.method2860(sprites) + Static372.method5291(true);
+			local74 = Static688.method8974() + Static714.method9339();
+			if (local12 < local74) {
+				return local12 * 100 / local74;
+			}
+		}
+		if (Static198.aClass140_16 == Static473.aClass140_22) {
+			Static30.method5065(worldMapData, Static467.aFloTypeList3, Static540.aFluTypeList6, Static354.aLocTypeList4, Static577.aMelTypeList4, Static720.aMsiTypeList4, Static34.aClass304_1);
+		}
+		if (Static198.aClass140_17 == Static473.aClass140_22) {
+			Static37.aStringArray4 = new String[Static718.aVarClientStrTypeList1.anInt4266];
+			Static511.anIntArray614 = new int[Static691.aVarClientTypeList1.anInt5473];
+			Static118.aBooleanArray4 = new boolean[Static691.aVarClientTypeList1.anInt5473];
+			for (local12 = 0; local12 < Static691.aVarClientTypeList1.anInt5473; local12++) {
+				if (Static691.aVarClientTypeList1.method4947(local12).anInt7174 == 0) {
+					Static118.aBooleanArray4[local12] = true;
+					Static319.anInt5078++;
+				}
+				Static511.anIntArray614[local12] = -1;
+			}
+			Static218.method3189();
+			maps.discardNames(false);
+			midiSongs.discardNames(true);
+			sprites.discardNames(true);
+			fontMetrics.discardNames(true);
+			binary.discardNames(true);
+			config.discardUnpacked = 2;
+			Static666.aBoolean766 = true;
+			configEnum.discardUnpacked = 2;
+			configLoc.discardUnpacked = 2;
+			configNpc.discardUnpacked = 2;
+			configObj.discardUnpacked = 2;
+			configSeq.discardUnpacked = 2;
+			configSpot.discardUnpacked = 2;
+		}
+		if (Static473.aClass140_22 == Static198.aClass140_18) {
+			if (!Static571.method7566(Static65.aClass3_1.anInt88)) {
+				return 0;
+			}
+			local184 = true;
+			for (local74 = 0; local74 < Static453.aComponentArrayArray2[Static65.aClass3_1.anInt88].length; local74++) {
+				@Pc(1315) Component local1315 = Static453.aComponentArrayArray2[Static65.aClass3_1.anInt88][local74];
+				if (local1315.anInt3820 == 5 && local1315.anInt3810 != -1 && !sprites.isFileReady(local1315.anInt3810, 0)) {
+					local184 = false;
+				}
+			}
+			if (!local184) {
+				return 0;
+			}
+		}
+		if (Static198.aClass140_19 == Static473.aClass140_22) {
+			Static456.method6228(true);
+		}
+		if (Static198.aClass140_20 == Static473.aClass140_22) {
+			Static449.aClass364_1.method8372();
+			try {
+				Static242.aThread1.join();
+			} catch (@Pc(1370) InterruptedException local1370) {
+				return 0;
+			}
+			Static234.anInterface22Array1 = null;
+			Static449.aClass364_1 = null;
+			loadingSprites = null;
+			loadingScreen = null;
+			Static242.aThread1 = null;
+			Static333.aClass279_1 = null;
+			Static9.method123();
+			Static3.aBoolean4 = Static400.aClass2_Sub34_28.aPreference_Sub10_1.method3519() == 1;
+			Static400.aClass2_Sub34_28.method5104(1, Static400.aClass2_Sub34_28.aPreference_Sub10_1);
+			if (Static3.aBoolean4) {
+				Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
+			} else if (Static400.aClass2_Sub34_28.aPreference_Sub29_2.aBoolean674 && Static292.aClass2_Sub43_2.anInt7610 < 512 && Static292.aClass2_Sub43_2.anInt7610 != 0) {
+				Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
+			}
+			Static666.method8693(1);
+			if (Static3.aBoolean4) {
+				Static32.method880(0, false);
+			} else {
+				Static32.method880(Static400.aClass2_Sub34_28.aPreference_Sub29_2.method7915(), false);
+			}
+			Static409.method5657(Static400.aClass2_Sub34_28.aPreference_Sub1_1.method1485(), -1, false, -1);
+			Static570.method7549(Static163.aClass19_17);
+			Static469.method6358(Static163.aClass19_17);
+			Static239.method3472(sprites, Static163.aClass19_17);
+			Static331.method4925(Static679.aSoftwareIndexedSpriteArray14);
+		}
+		return Static694.method9030();
+	}
+
 	@OriginalMember(owner = "client!client", name = "i", descriptor = "(I)V")
 	@Override
 	public synchronized void method1641() {
@@ -116,16 +529,16 @@ public final class client extends GameShell {
 		Connection.gameConnection.method3274();
 		Connection.lobbyConnection.method3274();
 		Static173.method2690();
-		Static500.aJs5NetQueue3.method6621();
-		Static66.aJs5CacheQueue1.method3826();
+		js5NetQueue.method6621();
+		js5CacheQueue.method3826();
 		if (Static151.aClass226_20 != null) {
 			Static151.aClass226_20.method5243();
 			Static151.aClass226_20 = null;
 		}
 		try {
-			Static172.aBufferedFile4.method5566();
+			cacheData.method5566();
 			for (@Pc(66) int local66 = 0; local66 < 37; local66++) {
-				Static208.aBufferedFileArray1[local66].method5566();
+				cacheIndexes[local66].method5566();
 			}
 			Static5.aBufferedFile1.method5566();
 			Static690.aBufferedFile5.method5566();
@@ -136,26 +549,26 @@ public final class client extends GameShell {
 
 	@OriginalMember(owner = "client!client", name = "q", descriptor = "(I)V")
 	private void method1656() {
-		if (Static522.anInt7900 < Static500.aJs5NetQueue3.anInt7453) {
+		if (Static522.anInt7900 < js5NetQueue.anInt7453) {
 			Static344.aClass229_1.method5260();
-			Static370.anInt5876 = (Static500.aJs5NetQueue3.anInt7453 * 50 - 50) * 5;
+			Static370.anInt5876 = (js5NetQueue.anInt7453 * 50 - 50) * 5;
 			if (Static370.anInt5876 > 3000) {
 				Static370.anInt5876 = 3000;
 			}
-			if (Static500.aJs5NetQueue3.anInt7453 >= 2 && Static500.aJs5NetQueue3.anInt7452 == 6) {
+			if (js5NetQueue.anInt7453 >= 2 && js5NetQueue.anInt7452 == 6) {
 				this.method1638("js5connect_outofdate");
 				Static283.gameState = 16;
 				return;
 			}
-			if (Static500.aJs5NetQueue3.anInt7453 >= 4 && Static500.aJs5NetQueue3.anInt7452 == -1) {
+			if (js5NetQueue.anInt7453 >= 4 && js5NetQueue.anInt7452 == -1) {
 				this.method1638("js5crc");
 				Static283.gameState = 16;
 				return;
 			}
-			if (Static500.aJs5NetQueue3.anInt7453 >= 4 && Static181.method2778(Static283.gameState)) {
-				if (Static500.aJs5NetQueue3.anInt7452 == 7 || Static500.aJs5NetQueue3.anInt7452 == 9) {
+			if (js5NetQueue.anInt7453 >= 4 && Static181.method2778(Static283.gameState)) {
+				if (js5NetQueue.anInt7452 == 7 || js5NetQueue.anInt7452 == 9) {
 					this.method1638("js5connect_full");
-				} else if (Static500.aJs5NetQueue3.anInt7452 <= 0) {
+				} else if (js5NetQueue.anInt7452 <= 0) {
 					this.method1638("js5io");
 				} else if (Static376.aString62 == null) {
 					this.method1638("js5connect");
@@ -166,7 +579,7 @@ public final class client extends GameShell {
 				return;
 			}
 		}
-		Static522.anInt7900 = Static500.aJs5NetQueue3.anInt7453;
+		Static522.anInt7900 = js5NetQueue.anInt7453;
 		if (Static370.anInt5876 > 0) {
 			Static370.anInt5876--;
 			return;
@@ -218,7 +631,7 @@ public final class client extends GameShell {
 				for (@Pc(378) int local378 = 0; local378 < local359.length; local378++) {
 					local359[local378].method7468(local367.g4());
 				}
-				Static500.aJs5NetQueue3.method6627(!local356, Static672.aClientStream2);
+				js5NetQueue.method6627(!local356, Static672.aClientStream2);
 				Static92.anInt1874 = 0;
 				Static672.aClientStream2 = null;
 				Static514.aPrivilegedRequest6 = null;
@@ -398,7 +811,7 @@ public final class client extends GameShell {
 
 	@OriginalMember(owner = "client!client", name = "m", descriptor = "(I)V")
 	private void method1659() {
-		@Pc(7) boolean local7 = Static500.aJs5NetQueue3.method6624();
+		@Pc(7) boolean local7 = js5NetQueue.method6624();
 		if (!local7) {
 			this.method1656();
 		}
@@ -568,9 +981,9 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(ZI)V")
 	private void method1667(@OriginalArg(1) int arg0) {
 		Static514.aPrivilegedRequest6 = null;
-		Static500.aJs5NetQueue3.anInt7452 = arg0;
+		js5NetQueue.anInt7452 = arg0;
 		Static672.aClientStream2 = null;
-		Static500.aJs5NetQueue3.anInt7453++;
+		js5NetQueue.anInt7453++;
 		Static92.anInt1874 = 0;
 	}
 
@@ -606,8 +1019,8 @@ public final class client extends GameShell {
 		Connection.gameConnection.method3271();
 		Connection.lobbyConnection.method3271();
 		this.method1659();
-		if (Static228.aJs5MasterIndex1 != null) {
-			Static228.aJs5MasterIndex1.cycle();
+		if (js5MasterIndex != null) {
+			js5MasterIndex.cycle();
 		}
 		Static601.method7865();
 		Static236.method3453();
@@ -705,22 +1118,22 @@ public final class client extends GameShell {
 		local18.pack();
 		local18.dispose();
 		Static712.method9329((byte) 11);
-		Static66.aJs5CacheQueue1 = new Js5CacheQueue(Static446.aSignlink6);
-		Static500.aJs5NetQueue3 = new Js5NetQueue();
+		js5CacheQueue = new Js5CacheQueue(Static446.aSignlink6);
+		js5NetQueue = new Js5NetQueue();
 		Static545.method7241(new int[] { 20, 260 }, new int[] { 1000, 100 });
-		if (Static446.aClass355_5 != Static2.aClass355_1) {
+		if (ModeWhere.LIVE != Static2.aModeWhere1) {
 			Static163.aByteArrayArray36 = new byte[50][];
 		}
 		Static400.aClass2_Sub34_28 = Static720.method9398();
-		if (Static2.aClass355_1 == Static446.aClass355_5) {
+		if (Static2.aModeWhere1 == ModeWhere.LIVE) {
 			Static527.aClass229_3.aString60 = this.getCodeBase().getHost();
-		} else if (Static179.method2769(Static2.aClass355_1)) {
+		} else if (Static179.method2769(Static2.aModeWhere1)) {
 			Static527.aClass229_3.aString60 = this.getCodeBase().getHost();
 			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.anInt5856 + 40000;
 			Static527.aClass229_3.anInt5853 = Static527.aClass229_3.anInt5856 + 50000;
 			Static660.aClass229_4.anInt5854 = Static660.aClass229_4.anInt5856 + 40000;
 			Static660.aClass229_4.anInt5853 = Static660.aClass229_4.anInt5856 + 50000;
-		} else if (Static16.aClass355_2 == Static2.aClass355_1) {
+		} else if (ModeWhere.LOCAL == Static2.aModeWhere1) {
 			Static527.aClass229_3.aString60 = "127.0.0.1";
 			Static527.aClass229_3.anInt5854 = Static527.aClass229_3.anInt5856 + 40000;
 			Static660.aClass229_4.aString60 = "127.0.0.1";
@@ -741,12 +1154,12 @@ public final class client extends GameShell {
 		Static189.aMouse1 = Static70.method1513(Static434.aCanvas7);
 		try {
 			if (Static446.aSignlink6.aFileOnDisk2 != null) {
-				Static172.aBufferedFile4 = new BufferedFile(Static446.aSignlink6.aFileOnDisk2, 5200, 0);
+				cacheData = new BufferedFile(Static446.aSignlink6.aFileOnDisk2, 5200, 0);
 				for (@Pc(205) int local205 = 0; local205 < 37; local205++) {
-					Static208.aBufferedFileArray1[local205] = new BufferedFile(Static446.aSignlink6.aFileOnDiskArray1[local205], 6000, 0);
+					cacheIndexes[local205] = new BufferedFile(Static446.aSignlink6.aFileOnDiskArray1[local205], 6000, 0);
 				}
 				Static5.aBufferedFile1 = new BufferedFile(Static446.aSignlink6.aFileOnDisk3, 6000, 0);
-				Static276.aCache1 = new Cache(255, Static172.aBufferedFile4, Static5.aBufferedFile1, 500000);
+				masterCache = new Cache(255, cacheData, Static5.aBufferedFile1, 500000);
 				Static690.aBufferedFile5 = new BufferedFile(Static446.aSignlink6.aFileOnDisk4, 24, 0);
 				Static446.aSignlink6.aFileOnDisk3 = null;
 				Static446.aSignlink6.aFileOnDiskArray1 = null;
@@ -755,11 +1168,11 @@ public final class client extends GameShell {
 			}
 		} catch (@Pc(275) IOException local275) {
 			Static5.aBufferedFile1 = null;
-			Static276.aCache1 = null;
+			masterCache = null;
 			Static690.aBufferedFile5 = null;
-			Static172.aBufferedFile4 = null;
+			cacheData = null;
 		}
-		if (Static446.aClass355_5 != Static2.aClass355_1 && !ClientConfig.DISABLE_DEFAULT_FPSON) {
+		if (ModeWhere.LIVE != Static2.aModeWhere1 && !ClientConfig.DISABLE_DEFAULT_FPSON) {
 			Static105.aBoolean196 = true;
 		}
 		Static484.aString85 = LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052);
@@ -833,11 +1246,11 @@ public final class client extends GameShell {
 		Static660.aClass229_4 = new Class229();
 		Static660.aClass229_4.anInt5856 = Integer.parseInt(this.getParameter("lobbyid"));
 		Static660.aClass229_4.aString60 = this.getParameter("lobbyaddress");
-		Static2.aClass355_1 = Static463.method6279(Integer.parseInt(this.getParameter("modewhere")));
-		if (Static16.aClass355_2 == Static2.aClass355_1) {
-			Static2.aClass355_1 = Static425.aClass355_4;
-		} else if (!Static179.method2769(Static2.aClass355_1) && Static446.aClass355_5 != Static2.aClass355_1) {
-			Static2.aClass355_1 = Static446.aClass355_5;
+		Static2.aModeWhere1 = Static463.method6279(Integer.parseInt(this.getParameter("modewhere")));
+		if (ModeWhere.LOCAL == Static2.aModeWhere1) {
+			Static2.aModeWhere1 = ModeWhere.WTWIP;
+		} else if (!Static179.method2769(Static2.aModeWhere1) && ModeWhere.LIVE != Static2.aModeWhere1) {
+			Static2.aModeWhere1 = ModeWhere.LIVE;
 		}
 		Static598.aClass162_5 = Static624.method8329(Integer.parseInt(this.getParameter("modewhat")));
 		if (Static225.aClass162_1 != Static598.aClass162_5 && Static598.aClass162_5 != Static519.aClass162_4 && Static523.aClass162_3 != Static598.aClass162_5) {

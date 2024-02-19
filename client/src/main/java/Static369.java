@@ -78,8 +78,8 @@ public final class Static369 {
 		if (Static158.aClass19_5 == null) {
 			@Pc(85) Canvas local85 = new Canvas();
 			local85.setSize(36, 32);
-			Static158.aClass19_5 = Static255.method3612(Static124.aJs520, Static56.anInterface4_3, 0, local85, 0);
-			Static629.aClass14_11 = Static158.aClass19_5.method8010(Static74.method1535(Static662.anInt9845, Static697.aJs5123), Static735.method9375(Static721.aJs5128, Static662.anInt9845), true);
+			Static158.aClass19_5 = Static255.method3612(client.shaders, Static56.anInterface4_3, 0, local85, 0);
+			Static629.aClass14_11 = Static158.aClass19_5.method8010(Static74.method1535(Static662.anInt9845, client.fontMetrics), Static735.method9375(client.sprites, Static662.anInt9845), true);
 		}
 		for (local31 = (Linkable_Sub36) Static133.aLinkedList13.head(); local31 != null; local31 = (Linkable_Sub36) Static133.aLinkedList13.next()) {
 			ObjTypeList.objTypes.method2478(local31.anInt5893, Static158.aClass19_5, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aPlayerAppearance1 : null, false, local31.anInt5891, local31.anInt5888, false, local31.anInt5890, Static629.aClass14_11, local31.anInt5895);

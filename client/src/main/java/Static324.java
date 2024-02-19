@@ -8,7 +8,7 @@ public final class Static324 {
 	public static SkyBoxTypeList aSkyBoxTypeList1;
 
 	@OriginalMember(owner = "client!ke", name = "l", descriptor = "I")
-	public static int anInt5129;
+	public static int loadingSpritesChecksum;
 
 	@OriginalMember(owner = "client!ke", name = "c", descriptor = "Z")
 	public static boolean aBoolean388 = true;

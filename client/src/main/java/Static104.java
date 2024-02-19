@@ -16,17 +16,17 @@ public final class Static104 {
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(BLjava/lang/String;)V")
 	public static void method2029(@OriginalArg(1) String arg0) {
 		@Pc(6) OutboundPacket local6 = Static273.method3962();
-		local6.data.p1(Static572.aLoginProt63.opcode);
-		local6.data.p2(0);
-		@Pc(28) int local28 = local6.data.pos;
-		local6.data.p2(667);
+		local6.buffer.p1(Static572.aLoginProt63.opcode);
+		local6.buffer.p2(0);
+		@Pc(28) int local28 = local6.buffer.pos;
+		local6.buffer.p2(667);
 		@Pc(39) int[] local39 = Static664.method8652(local6);
-		@Pc(43) int local43 = local6.data.pos;
-		local6.data.pjstr(arg0);
-		local6.data.p1(Static51.anInt1052);
-		local6.data.pos += 7;
-		local6.data.tinyenc(local39, local43, local6.data.pos);
-		local6.data.psize2(local6.data.pos - local28);
+		@Pc(43) int local43 = local6.buffer.pos;
+		local6.buffer.pjstr(arg0);
+		local6.buffer.p1(Static51.anInt1052);
+		local6.buffer.pos += 7;
+		local6.buffer.tinyenc(local39, local43, local6.buffer.pos);
+		local6.buffer.psize2(local6.buffer.pos - local28);
 		Connection.lobbyConnection.queue(local6);
 		Static580.anInt8621 = -3;
 		Static654.anInt9739 = 0;

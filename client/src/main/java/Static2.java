@@ -14,7 +14,7 @@ public final class Static2 {
 	public static Class306_Sub1 aClass306_Sub1_1;
 
 	@OriginalMember(owner = "client!aaa", name = "T", descriptor = "Lclient!tka;")
-	public static Class355 aClass355_1;
+	public static ModeWhere aModeWhere1;
 
 	@OriginalMember(owner = "client!aaa", name = "d", descriptor = "(III)V")
 	public static void method62(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {

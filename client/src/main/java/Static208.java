@@ -8,12 +8,6 @@ public final class Static208 {
 	@OriginalMember(owner = "client!gha", name = "u", descriptor = "Lclient!it;")
 	public static final Class184 aClass184_6 = new Class184(11, 0, 1, 2);
 
-	@OriginalMember(owner = "client!gha", name = "w", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt83 = new ServerProt(113, 3);
-
-	@OriginalMember(owner = "client!gha", name = "t", descriptor = "[Lclient!mj;")
-	public static final BufferedFile[] aBufferedFileArray1 = new BufferedFile[37];
-
 	@OriginalMember(owner = "client!gha", name = "b", descriptor = "(IIIII)V")
 	public static void method3105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(5) int local5 = Static676.anInt10206;

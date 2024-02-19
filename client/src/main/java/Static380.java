@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static380 {
 
-	@OriginalMember(owner = "client!lv", name = "e", descriptor = "Lclient!sb;")
-	public static Js5 aJs579;
-
 	@OriginalMember(owner = "client!lv", name = "b", descriptor = "I")
 	public static int anInt5979;
 

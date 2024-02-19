@@ -4,14 +4,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static370 {
 
-	@OriginalMember(owner = "client!lm", name = "l", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt152 = new ServerProt(4, 0);
-
 	@OriginalMember(owner = "client!lm", name = "r", descriptor = "I")
 	public static int anInt5876 = 0;
-
-	@OriginalMember(owner = "client!lm", name = "j", descriptor = "Lclient!pc;")
-	public static final Class287 aClass287_11 = new Class287(9, -1);
 
 	@OriginalMember(owner = "client!lm", name = "k", descriptor = "I")
 	public static int anInt5881 = 0;
@@ -53,11 +47,6 @@ public final class Static370 {
 		Static485.anIntArray886 = null;
 		Static624.anInt9461 = -1;
 		Static228.anInt3709 = -1;
-	}
-
-	@OriginalMember(owner = "client!lm", name = "c", descriptor = "(I)[Lclient!kda;")
-	public static Class204[] method5281() {
-		return new Class204[] { Static515.aClass204_10, Static77.aClass204_1, Static565.aClass204_9, Static535.aClass204_11, Static166.aClass204_6, Static541.aClass204_12, Static647.aClass204_13, Static189.aClass204_7, Static667.aClass204_15, Static505.aClass204_16 };
 	}
 
 	@OriginalMember(owner = "client!lm", name = "a", descriptor = "(BLclient!ep;Lclient!ep;)V")

@@ -24,11 +24,11 @@ public final class Static659 {
 	@OriginalMember(owner = "client!ut", name = "e", descriptor = "(B)Ljava/lang/String;")
 	public static String method8605() {
 		@Pc(15) String local15 = "www";
-		if (Static2.aClass355_1 == Static704.aClass355_7) {
+		if (Static2.aModeWhere1 == ModeWhere.WTRC) {
 			local15 = "www-wtrc";
-		} else if (Static2.aClass355_1 == Static713.aClass355_8) {
+		} else if (Static2.aModeWhere1 == ModeWhere.WTQA) {
 			local15 = "www-wtqa";
-		} else if (Static2.aClass355_1 == Static425.aClass355_4) {
+		} else if (Static2.aModeWhere1 == ModeWhere.WTWIP) {
 			local15 = "www-wtwip";
 		}
 		@Pc(44) String local44 = "";

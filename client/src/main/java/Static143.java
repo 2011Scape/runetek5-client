@@ -19,7 +19,7 @@ public final class Static143 {
 	@OriginalMember(owner = "client!eia", name = "f", descriptor = "(B)V")
 	public static void method3571() {
 		@Pc(20) OutboundPacket local20 = OutboundPacket.create(Static442.aClientProt83, Connection.gameConnection.random);
-		local20.data.p4(Static334.anInt5456);
+		local20.buffer.p4(Static334.anInt5456);
 		Connection.gameConnection.queue(local20);
 	}
 

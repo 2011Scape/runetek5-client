@@ -114,7 +114,7 @@ public final class Static632 {
 			local264 = arg1.anInt9360 == 256 && arg1.anInt9359 == 256 ? 256 : Static159.method2572(arg1.anInt9359, arg1.anInt9360);
 			if (arg1.aBoolean714) {
 				if (arg1.aClass2_Sub53_3 == null) {
-					arg1.aClass2_Sub53_3 = Static650.method8498(Static147.aJs526, arg1.anInt9353);
+					arg1.aClass2_Sub53_3 = Static650.method8498(client.vorbis, arg1.anInt9353);
 				}
 				if (arg1.aClass2_Sub53_3 != null) {
 					if (arg1.aClass2_Sub49_Sub1_4 == null) {
@@ -128,7 +128,7 @@ public final class Static632 {
 					}
 				}
 			} else {
-				@Pc(408) SynthSound local408 = Static729.method2245(Static281.aJs560, arg1.anInt9353, 0);
+				@Pc(408) SynthSound local408 = Static729.method2245(client.synthSounds, arg1.anInt9353, 0);
 				if (local408 != null) {
 					@Pc(415) PcmSound local415 = local408.method2247().method7821(Static681.aResampler2);
 					@Pc(423) SoundPcmStream local423 = Static730.method3346(local415, local264, local182 << 6, local214);
@@ -150,7 +150,7 @@ public final class Static632 {
 			local264 = arg1.anInt9360 == 256 && arg1.anInt9359 == 256 ? 256 : arg1.anInt9359 + (int) ((double) (arg1.anInt9360 - arg1.anInt9359) * Math.random());
 			if (!arg1.aBoolean715) {
 				local275 = (int) ((double) arg1.anIntArray718.length * Math.random());
-				@Pc(536) SynthSound local536 = Static729.method2245(Static281.aJs560, arg1.anIntArray718[local275], 0);
+				@Pc(536) SynthSound local536 = Static729.method2245(client.synthSounds, arg1.anIntArray718[local275], 0);
 				if (local536 != null) {
 					@Pc(543) PcmSound local543 = local536.method2247().method7821(Static681.aResampler2);
 					@Pc(551) SoundPcmStream local551 = Static730.method3346(local543, local264, local182 << 6, local214);
@@ -164,7 +164,7 @@ public final class Static632 {
 			}
 			if (arg1.aClass2_Sub53_2 == null) {
 				local275 = (int) (Math.random() * (double) arg1.anIntArray718.length);
-				arg1.aClass2_Sub53_2 = Static650.method8498(Static147.aJs526, arg1.anIntArray718[local275]);
+				arg1.aClass2_Sub53_2 = Static650.method8498(client.vorbis, arg1.anIntArray718[local275]);
 			}
 			if (arg1.aClass2_Sub53_2 != null) {
 				if (arg1.aClass2_Sub49_Sub1_3 == null) {

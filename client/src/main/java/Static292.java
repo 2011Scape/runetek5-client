@@ -15,13 +15,13 @@ public final class Static292 {
 
 	@OriginalMember(owner = "client!jea", name = "a", descriptor = "(ILclient!ha;IIIBI)V")
 	public static void method4604(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(6) int arg4) {
-		if ((Static26.aSoftwareIndexedSprite5 == null || Static63.aSoftwareIndexedSprite8 == null || Static261.aSoftwareIndexedSprite18 == null) && Static721.aJs5128.isFileReady(Static337.anInt5561) && Static721.aJs5128.isFileReady(Static176.anInt7532) && Static721.aJs5128.isFileReady(Static282.anInt4419)) {
-			@Pc(46) Class407 local46 = Static735.method9382(Static721.aJs5128, Static176.anInt7532, 0);
+		if ((Static26.aSoftwareIndexedSprite5 == null || Static63.aSoftwareIndexedSprite8 == null || Static261.aSoftwareIndexedSprite18 == null) && client.sprites.isFileReady(Static337.anInt5561) && client.sprites.isFileReady(Static176.anInt7532) && client.sprites.isFileReady(Static282.anInt4419)) {
+			@Pc(46) Class407 local46 = Static735.method9382(client.sprites, Static176.anInt7532, 0);
 			Static63.aSoftwareIndexedSprite8 = arg1.method7948(local46, true);
 			local46.method9388();
 			Static542.aSoftwareIndexedSprite33 = arg1.method7948(local46, true);
-			Static26.aSoftwareIndexedSprite5 = arg1.method7948(Static735.method9382(Static721.aJs5128, Static337.anInt5561, 0), true);
-			@Pc(71) Class407 local71 = Static735.method9382(Static721.aJs5128, Static282.anInt4419, 0);
+			Static26.aSoftwareIndexedSprite5 = arg1.method7948(Static735.method9382(client.sprites, Static337.anInt5561, 0), true);
+			@Pc(71) Class407 local71 = Static735.method9382(client.sprites, Static282.anInt4419, 0);
 			Static261.aSoftwareIndexedSprite18 = arg1.method7948(local71, true);
 			local71.method9388();
 			Static561.aSoftwareIndexedSprite34 = arg1.method7948(local71, true);

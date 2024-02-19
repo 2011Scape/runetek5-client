@@ -25,6 +25,22 @@ public final class ClientProt {
 
 	@OriginalMember(owner = "client!dia", name = "o", descriptor = "Lclient!ss;")
 	public static final ClientProt OPCODE_84 = new ClientProt(84, 6);
+	@OriginalMember(owner = "client!ik", name = "J", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt55 = new ClientProt(49, 3);
+	@OriginalMember(owner = "client!le", name = "c", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt67 = new ClientProt(23, 1);
+	@OriginalMember(owner = "client!nea", name = "d", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt78 = new ClientProt(28, 3);
+	@OriginalMember(owner = "client!wk", name = "b", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt125 = new ClientProt(25, 8);
+	@OriginalMember(owner = "client!nh", name = "l", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt80 = new ClientProt(41, -1);
+	@OriginalMember(owner = "client!mn", name = "i", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt73 = new ClientProt(55, 7);
+	@OriginalMember(owner = "client!oia", name = "y", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt87 = new ClientProt(70, -1);
+	@OriginalMember(owner = "client!hk", name = "o", descriptor = "Lclient!ss;")
+	public static final ClientProt aClientProt53 = new ClientProt(1, -1);
 
 	@OriginalMember(owner = "client!ss", name = "g", descriptor = "I")
 	private final int opcode;

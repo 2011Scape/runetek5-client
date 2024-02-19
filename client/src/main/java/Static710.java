@@ -16,12 +16,12 @@ public final class Static710 {
 	@OriginalMember(owner = "client!wha", name = "a", descriptor = "(ILclient!hda;Lclient!hda;)V")
 	public static void method6710(@OriginalArg(1) Component arg0, @OriginalArg(2) Component arg1) {
 		@Pc(15) OutboundPacket local15 = OutboundPacket.create(Static671.aClientProt117, Connection.gameConnection.random);
-		local15.data.p2(arg1.anInt3760);
-		local15.data.ip2(arg0.anInt3741);
-		local15.data.p2_alt2(arg0.anInt3760);
-		local15.data.p4_alt2(arg0.anInt3812);
-		local15.data.ip2(arg1.anInt3741);
-		local15.data.p4_alt3(arg1.anInt3812);
+		local15.buffer.p2(arg1.anInt3760);
+		local15.buffer.ip2(arg0.anInt3741);
+		local15.buffer.p2_alt2(arg0.anInt3760);
+		local15.buffer.p4_alt2(arg0.anInt3812);
+		local15.buffer.ip2(arg1.anInt3741);
+		local15.buffer.p4_alt3(arg1.anInt3812);
 		Connection.gameConnection.queue(local15);
 	}
 

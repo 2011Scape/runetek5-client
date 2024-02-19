@@ -182,7 +182,7 @@ public final class Static294 {
 		Static359.anInt5801 = local204;
 		Static323.anInt5119 = local329;
 		Static288.aBoolean356 = false;
-		if (Static426.aBoolean72 && Static500.aJs5NetQueue3.method6622() == 0) {
+		if (Static426.aBoolean72 && client.js5NetQueue.method6622() == 0) {
 			Static426.aBoolean72 = false;
 		}
 		if (Static426.aBoolean72) {

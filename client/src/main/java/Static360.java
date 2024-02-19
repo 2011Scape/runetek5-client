@@ -22,7 +22,7 @@ public final class Static360 {
 		}
 		@Pc(53) int local53;
 		if (Static403.aClass247_2 == Static178.aClass247_1) {
-			@Pc(36) byte[] local36 = Static504.aJs595.fetchFile(arg0);
+			@Pc(36) byte[] local36 = client.cutscenes.fetchFile(arg0);
 			if (local36 == null) {
 				return false;
 			}

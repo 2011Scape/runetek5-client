@@ -63,8 +63,8 @@ public final class Static76 {
 				Static6.anInt95 = 4;
 			}
 			if (Static6.anInt95 == 4 && Connection.lobbyConnection.aClass348_1.method7932(1)) {
-				Connection.lobbyConnection.aClass348_1.method7929(Connection.lobbyConnection.aClass2_Sub21_Sub2_2.data, 1, 0);
-				@Pc(139) int local139 = Connection.lobbyConnection.aClass2_Sub21_Sub2_2.data[0] & 0xFF;
+				Connection.lobbyConnection.aClass348_1.method7929(Connection.lobbyConnection.inboundPacket.data, 1, 0);
+				@Pc(139) int local139 = Connection.lobbyConnection.inboundPacket.data[0] & 0xFF;
 				Static6.anInt95 = 0;
 				Static580.anInt8621 = local139;
 				Connection.lobbyConnection.method3274();

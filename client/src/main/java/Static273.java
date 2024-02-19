@@ -13,17 +13,11 @@ public final class Static273 {
 	@OriginalMember(owner = "client!ik", name = "t", descriptor = "I")
 	public static int anInt4403 = 0;
 
-	@OriginalMember(owner = "client!ik", name = "u", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt113 = new ServerProt(1, -1);
-
 	@OriginalMember(owner = "client!ik", name = "I", descriptor = "Z")
 	public static boolean aBoolean339 = true;
 
 	@OriginalMember(owner = "client!ik", name = "w", descriptor = "Z")
 	public static boolean aBoolean340 = true;
-
-	@OriginalMember(owner = "client!ik", name = "J", descriptor = "Lclient!ss;")
-	public static final ClientProt aClientProt55 = new ClientProt(49, 3);
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(II)V")
 	public static void method3959(@OriginalArg(0) int arg0) {
@@ -40,9 +34,9 @@ public final class Static273 {
 	@OriginalMember(owner = "client!ik", name = "g", descriptor = "(I)Lclient!fk;")
 	public static OutboundPacket method3962() {
 		@Pc(6) OutboundPacket local6 = Static119.method2174();
-		local6.aClientProt_32 = null;
-		local6.anInt2986 = 0;
-		local6.data = new PacketBit(5000);
+		local6.packetType = null;
+		local6.size = 0;
+		local6.buffer = new PacketBit(5000);
 		return local6;
 	}
 

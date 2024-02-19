@@ -7,9 +7,6 @@ public final class Static142 {
 	@OriginalMember(owner = "client!eha", name = "a", descriptor = "[[Z")
 	public static boolean[][] aBooleanArrayArray1;
 
-	@OriginalMember(owner = "client!eha", name = "c", descriptor = "Lclient!sb;")
-	public static Js5 aJs525;
-
 	@OriginalMember(owner = "client!eha", name = "d", descriptor = "Lclient!rt;")
 	public static WorldMapFont aWorldMapFont1;
 

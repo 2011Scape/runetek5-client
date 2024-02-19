@@ -6,14 +6,9 @@ public final class Static254 {
 	@OriginalMember(owner = "client!hr", name = "i", descriptor = "I")
 	public static int anInt4115;
 
-	@OriginalMember(owner = "client!hr", name = "d", descriptor = "(I)[Lclient!hja;")
-	public static LoginProt[] method3604() {
-		return new LoginProt[] { Static572.aLoginProt53, Static572.aLoginProt54, Static572.aLoginProt55, Static572.aLoginProt56, Static572.aLoginProt57, Static572.aLoginProt58, Static572.aLoginProt59, Static572.aLoginProt60, Static572.aLoginProt61, Static572.aLoginProt62, Static572.aLoginProt63, Static572.aLoginProt64, Static572.aLoginProt65};
-	}
-
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
-		Static6.aJs51.discardUnpacked = 1;
+		client.config.discardUnpacked = 1;
 		if (Static283.gameState == 15) {
 			Static187.method2842();
 		}
@@ -113,7 +108,7 @@ public final class Static254 {
 		Static371.method5284();
 		Static211.aClass2_Sub12_3 = null;
 		Static675.aLong307 = 0L;
-		Static6.aJs51.discardUnpacked = 2;
+		client.config.discardUnpacked = 2;
 	}
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(I)V")

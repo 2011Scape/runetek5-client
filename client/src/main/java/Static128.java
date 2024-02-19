@@ -20,8 +20,8 @@ public final class Static128 {
 		}
 		@Pc(21) Connection local21 = Connection.getActiveConnection();
 		@Pc(27) OutboundPacket local27 = OutboundPacket.create(Static436.aClientProt45, local21.random);
-		local27.data.p1(Static231.method3379(arg0));
-		local27.data.pjstr(arg0);
+		local27.buffer.p1(Static231.method3379(arg0));
+		local27.buffer.pjstr(arg0);
 		local21.queue(local27);
 	}
 }

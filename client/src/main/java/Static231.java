@@ -168,7 +168,7 @@ public final class Static231 {
 			Static79.method1579(LocalizedText.ERROR_EXECUTING.get(Static51.anInt1052));
 			return;
 		}
-		if (Static446.aClass355_5 != Static2.aClass355_1 || Static608.anInt9290 >= 2) {
+		if (ModeWhere.LIVE != Static2.aModeWhere1 || Static608.anInt9290 >= 2) {
 			if (arg2.equalsIgnoreCase("errortest")) {
 				throw new RuntimeException();
 			}
@@ -263,12 +263,12 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("clientjs5drop")) {
-					Static500.aJs5NetQueue3.method6621();
+					client.js5NetQueue.method6621();
 					Static79.method1579("Dropped client js5 net queue");
 					return;
 				}
 				if (arg2.equalsIgnoreCase("serverjs5drop")) {
-					Static500.aJs5NetQueue3.method6628();
+					client.js5NetQueue.method6628();
 					Static79.method1579("Dropped server js5 net queue");
 					return;
 				}
@@ -282,7 +282,7 @@ public final class Static231 {
 							local730.aClass348_1.method7927();
 						}
 					}
-					Static500.aJs5NetQueue3.method6631();
+					client.js5NetQueue.method6631();
 					Static79.method1579("Breaking new connections for 5 seconds");
 					return;
 				}
@@ -464,8 +464,8 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("resetminimap")) {
-					Static721.aJs5128.discardPacked();
-					Static721.aJs5128.discardUnpacked();
+					client.sprites.discardPacked();
+					client.sprites.discardUnpacked();
 					Static720.aMsiTypeList4.method8361();
 					Static577.aMelTypeList4.method5586();
 					Static244.method3512();
@@ -554,12 +554,12 @@ public final class Static231 {
 				if (arg2.startsWith("pc")) {
 					@Pc(1833) Connection local1833 = Connection.getActiveConnection();
 					@Pc(1839) OutboundPacket local1839 = OutboundPacket.create(Static243.aClientProt52, local1833.random);
-					local1839.data.p1(0);
-					local521 = local1839.data.pos;
+					local1839.buffer.p1(0);
+					local521 = local1839.buffer.pos;
 					local582 = arg2.indexOf(" ", 4);
-					local1839.data.pjstr(arg2.substring(3, local582));
-					Static523.method3446(local1839.data, arg2.substring(local582));
-					local1839.data.psize1(local1839.data.pos - local521);
+					local1839.buffer.pjstr(arg2.substring(3, local582));
+					Static523.method3446(local1839.buffer, arg2.substring(local582));
+					local1839.buffer.psize1(local1839.buffer.pos - local521);
 					local1833.queue(local1839);
 					return;
 				}
@@ -793,14 +793,14 @@ public final class Static231 {
 					return;
 				}
 				if (Static283.gameState == 11) {
-					@Pc(2836) OutboundPacket local2836 = OutboundPacket.create(Static459.aClientProt87, Connection.gameConnection.random);
-					local2836.data.p1(arg2.length() + 3);
-					local2836.data.p1(arg0 ? 1 : 0);
-					local2836.data.p1(arg1 ? 1 : 0);
-					local2836.data.pjstr(arg2);
+					@Pc(2836) OutboundPacket local2836 = OutboundPacket.create(ClientProt.aClientProt87, Connection.gameConnection.random);
+					local2836.buffer.p1(arg2.length() + 3);
+					local2836.buffer.p1(arg0 ? 1 : 0);
+					local2836.buffer.p1(arg1 ? 1 : 0);
+					local2836.buffer.pjstr(arg2);
 					Connection.gameConnection.queue(local2836);
 				}
-				if (arg2.startsWith("fps ") && Static2.aClass355_1 != Static446.aClass355_5) {
+				if (arg2.startsWith("fps ") && Static2.aModeWhere1 != ModeWhere.LIVE) {
 					Static724.method9453(Static647.method8473(arg2.substring(4)));
 					return;
 				}
@@ -862,9 +862,9 @@ public final class Static231 {
 		}
 		@Pc(216) Connection local216 = Connection.getActiveConnection();
 		@Pc(222) OutboundPacket local222 = OutboundPacket.create(Static113.aClientProt22, local216.random);
-		local222.data.p1(method3379(arg1) + 1);
-		local222.data.pjstr(arg1);
-		local222.data.p1(arg0 ? 1 : 0);
+		local222.buffer.p1(method3379(arg1) + 1);
+		local222.buffer.pjstr(arg1);
+		local222.buffer.p1(arg0 ? 1 : 0);
 		local216.queue(local222);
 	}
 }

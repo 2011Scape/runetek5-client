@@ -38,11 +38,11 @@ public final class Static54 {
 			for (local99 = (local28 - (Static501.anInt7568 >> 4)) / 8; local99 <= ((Static501.anInt7568 >> 4) + local28) / 8; local99++) {
 				@Pc(107) int local107 = local99 + (local88 << 8);
 				Static89.anIntArray169[local79] = local107;
-				Static267.anIntArray329[local79] = Static93.aJs516.getGroupId("m" + local88 + "_" + local99);
-				Static266.anIntArray615[local79] = Static93.aJs516.getGroupId("l" + local88 + "_" + local99);
-				Static376.anIntArray458[local79] = Static93.aJs516.getGroupId("n" + local88 + "_" + local99);
-				Static68.anIntArray316[local79] = Static93.aJs516.getGroupId("um" + local88 + "_" + local99);
-				Static298.anIntArray367[local79] = Static93.aJs516.getGroupId("ul" + local88 + "_" + local99);
+				Static267.anIntArray329[local79] = client.maps.getGroupId("m" + local88 + "_" + local99);
+				Static266.anIntArray615[local79] = client.maps.getGroupId("l" + local88 + "_" + local99);
+				Static376.anIntArray458[local79] = client.maps.getGroupId("n" + local88 + "_" + local99);
+				Static68.anIntArray316[local79] = client.maps.getGroupId("um" + local88 + "_" + local99);
+				Static298.anIntArray367[local79] = client.maps.getGroupId("ul" + local88 + "_" + local99);
 				if (Static376.anIntArray458[local79] == -1) {
 					Static267.anIntArray329[local79] = -1;
 					Static266.anIntArray615[local79] = -1;
