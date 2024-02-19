@@ -174,7 +174,7 @@ public class Protocol {
                     @Pc(639) long local639;
                     @Pc(644) long local644;
                     @Pc(649) long local649;
-                    @Pc(653) int local653;
+                    @Pc(653) int playerPrivilege;
                     @Pc(627) String local627;
                     @Pc(657) int local657;
                     @Pc(665) boolean local665;
@@ -189,14 +189,14 @@ public class Protocol {
                         local639 = local11.g8();
                         local644 = (long) local11.g2();
                         local649 = (long) local11.g3();
-                        local653 = local11.g1();
+                        playerPrivilege = local11.g1();
                         local657 = local11.g2();
                         @Pc(663) long local663 = (local644 << 32) + local649;
                         local665 = false;
                         local667 = 0;
                         while (true) {
                             if (local667 >= 100) {
-                                if (local653 <= 1 && Static71.method1524(local629)) {
+                                if (playerPrivilege <= 1 && Static71.method1524(local629)) {
                                     local665 = true;
                                 }
                                 break;
@@ -211,9 +211,9 @@ public class Protocol {
                             Static511.aLongArray17[Static97.anInt2001] = local663;
                             Static97.anInt2001 = (Static97.anInt2001 + 1) % 100;
                             @Pc(737) String local737 = Static288.aQuickChatPhraseTypeList2.method2950(local657).method3903(local11);
-                            if (local653 == 2) {
+                            if (playerPrivilege == 2) {
                                 Static662.method8625("<img=1>" + local629, "<img=1>" + local627, local657, local737, Static99.method1977(local639), 0, local627, 20);
-                            } else if (local653 == 1) {
+                            } else if (playerPrivilege == 1) {
                                 Static662.method8625("<img=0>" + local629, "<img=0>" + local627, local657, local737, Static99.method1977(local639), 0, local627, 20);
                             } else {
                                 Static662.method8625(local629, local627, local657, local737, Static99.method1977(local639), 0, local627, 20);
@@ -1177,8 +1177,8 @@ public class Protocol {
                                                                     @Pc(4888) SpotAnimType local4888;
                                                                     @Pc(4905) SeqType local4905;
                                                                     if (local100 >> 29 != 0) {
-                                                                        local653 = local100 & 0xFFFF;
-                                                                        @Pc(5032) Linkable_Sub45 local5032 = (Linkable_Sub45) Static18.aHashTable2.get((long) local653);
+                                                                        playerPrivilege = local100 & 0xFFFF;
+                                                                        @Pc(5032) Linkable_Sub45 local5032 = (Linkable_Sub45) Static18.aHashTable2.get((long) playerPrivilege);
                                                                         if (local5032 != null) {
                                                                             @Pc(5037) Npc local5037 = local5032.aClass8_Sub2_Sub1_Sub2_Sub2_2;
                                                                             @Pc(5042) Class199 local5042 = local5037.aClass199Array3[local526];
@@ -1228,12 +1228,12 @@ public class Protocol {
                                                                             }
                                                                         }
                                                                     } else if (local100 >> 28 != 0) {
-                                                                        local653 = local100 & 0xFFFF;
+                                                                        playerPrivilege = local100 & 0xFFFF;
                                                                         @Pc(4839) Player local4839;
-                                                                        if (local653 == Static312.anInt5000) {
+                                                                        if (playerPrivilege == Static312.anInt5000) {
                                                                             local4839 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
                                                                         } else {
-                                                                            local4839 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local653];
+                                                                            local4839 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[playerPrivilege];
                                                                         }
                                                                         if (local4839 != null) {
                                                                             @Pc(4850) Class199 local4850 = local4839.aClass199Array3[local526];
@@ -1286,7 +1286,7 @@ public class Protocol {
                                                                         }
                                                                     }
                                                                 } else {
-                                                                    local653 = local100 >> 28 & 0x3;
+                                                                    playerPrivilege = local100 >> 28 & 0x3;
                                                                     local657 = (local100 >> 14 & 0x3FFF) - Static691.anInt10367;
                                                                     local3502 = (local100 & 0x3FFF) - Static116.anInt2270;
                                                                     if (local657 >= 0 && local3502 >= 0 && local657 < Static720.anInt10859 && local3502 < Static501.anInt7568) {
@@ -1299,11 +1299,11 @@ public class Protocol {
                                                                         } else {
                                                                             local1021 = local657 * 512 + 256;
                                                                             local1097 = local3502 * 512 + 256;
-                                                                            local667 = local653;
-                                                                            if (local653 < 3 && Static441.method5968(local3502, local657)) {
-                                                                                local667 = local653 + 1;
+                                                                            local667 = playerPrivilege;
+                                                                            if (playerPrivilege < 3 && Static441.method5968(local3502, local657)) {
+                                                                                local667 = playerPrivilege + 1;
                                                                             }
-                                                                            @Pc(5334) Entity_Sub3 local5334 = new Entity_Sub3(local2098, local277, local653, local667, local1021, Static102.method2025(local653, -29754, local1097, local1021) - local1413, local1097, local657, local657, local3502, local3502, local992, local4806);
+                                                                            @Pc(5334) Entity_Sub3 local5334 = new Entity_Sub3(local2098, local277, playerPrivilege, local667, local1021, Static102.method2025(playerPrivilege, -29754, local1097, local1021) - local1413, local1097, local657, local657, local3502, local3502, local992, local4806);
                                                                             Static346.aHashTable29.put((long) (local3502 | local657 << 16), new SecondaryLinkable_Sub20(local5334));
                                                                         }
                                                                     }
@@ -1789,8 +1789,8 @@ public class Protocol {
                                                                                 local7394.aString65 = local1427;
                                                                                 local7394.aByte99 = local7377;
                                                                                 for (local1449 = Static706.anInt10633 - 1; local1449 >= 0; local1449--) {
-                                                                                    local653 = Static87.aClass241Array1[local1449].aString68.compareTo(local7394.aString68);
-                                                                                    if (local653 == 0) {
+                                                                                    playerPrivilege = Static87.aClass241Array1[local1449].aString68.compareTo(local7394.aString68);
+                                                                                    if (playerPrivilege == 0) {
                                                                                         Static87.aClass241Array1[local1449].anInt6148 = local1409;
                                                                                         Static87.aClass241Array1[local1449].aByte99 = local7377;
                                                                                         Static87.aClass241Array1[local1449].aString65 = local1427;
@@ -1801,7 +1801,7 @@ public class Protocol {
                                                                                         arg0.packetType = null;
                                                                                         return true;
                                                                                     }
-                                                                                    if (local653 < 0) {
+                                                                                    if (playerPrivilege < 0) {
                                                                                         break;
                                                                                     }
                                                                                 }
@@ -1809,8 +1809,8 @@ public class Protocol {
                                                                                     arg0.packetType = null;
                                                                                     return true;
                                                                                 }
-                                                                                for (local653 = Static706.anInt10633 - 1; local653 > local1449; local653--) {
-                                                                                    Static87.aClass241Array1[local653 + 1] = Static87.aClass241Array1[local653];
+                                                                                for (playerPrivilege = Static706.anInt10633 - 1; playerPrivilege > local1449; playerPrivilege--) {
+                                                                                    Static87.aClass241Array1[playerPrivilege + 1] = Static87.aClass241Array1[playerPrivilege];
                                                                                 }
                                                                                 if (Static706.anInt10633 == 0) {
                                                                                     Static87.aClass241Array1 = new Class241[100];
@@ -2070,11 +2070,11 @@ public class Protocol {
                                                                             while (local1449 > 0) {
                                                                                 @Pc(8729) boolean local8729 = true;
                                                                                 local1449--;
-                                                                                for (local653 = 0; local653 < local1449; local653++) {
-                                                                                    if (local8611[local653].aString68.compareTo(local8611[local653 + 1].aString68) > 0) {
-                                                                                        local7394 = local8611[local653];
-                                                                                        local8611[local653] = local8611[local653 + 1];
-                                                                                        local8611[local653 + 1] = local7394;
+                                                                                for (playerPrivilege = 0; playerPrivilege < local1449; playerPrivilege++) {
+                                                                                    if (local8611[playerPrivilege].aString68.compareTo(local8611[playerPrivilege + 1].aString68) > 0) {
+                                                                                        local7394 = local8611[playerPrivilege];
+                                                                                        local8611[playerPrivilege] = local8611[playerPrivilege + 1];
+                                                                                        local8611[playerPrivilege + 1] = local7394;
                                                                                         local8729 = false;
                                                                                     }
                                                                                 }
@@ -2123,13 +2123,13 @@ public class Protocol {
                                                                             local639 = local11.g8();
                                                                             local644 = (long) local11.g2();
                                                                             local649 = (long) local11.g3();
-                                                                            local653 = local11.g1();
+                                                                            playerPrivilege = local11.g1();
                                                                             @Pc(8945) long local8945 = local649 + (local644 << 32);
                                                                             local4857 = false;
                                                                             local1097 = 0;
                                                                             while (true) {
                                                                                 if (local1097 >= 100) {
-                                                                                    if (local653 <= 1) {
+                                                                                    if (playerPrivilege <= 1) {
                                                                                         if (Static389.aBoolean459 && !Static34.aBoolean62 || Static617.aBoolean724) {
                                                                                             local4857 = true;
                                                                                         } else if (Static71.method1524(local629)) {
@@ -2148,9 +2148,9 @@ public class Protocol {
                                                                                 Static511.aLongArray17[Static97.anInt2001] = local8945;
                                                                                 Static97.anInt2001 = (Static97.anInt2001 + 1) % 100;
                                                                                 @Pc(9032) String local9032 = Static130.method2280(Static15.method189(local11));
-                                                                                if (local653 == 2 || local653 == 3) {
+                                                                                if (playerPrivilege == 2 || playerPrivilege == 3) {
                                                                                     Static662.method8625("<img=1>" + local629, "<img=1>" + local627, -1, local9032, Static99.method1977(local639), 0, local627, 9);
-                                                                                } else if (local653 == 1) {
+                                                                                } else if (playerPrivilege == 1) {
                                                                                     Static662.method8625("<img=0>" + local629, "<img=0>" + local627, -1, local9032, Static99.method1977(local639), 0, local627, 9);
                                                                                 } else {
                                                                                     Static662.method8625(local629, local627, -1, local9032, Static99.method1977(local639), 0, local627, 9);
