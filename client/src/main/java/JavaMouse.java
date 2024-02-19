@@ -43,7 +43,7 @@ public final class JavaMouse extends Mouse implements MouseListener, MouseMotion
 	private final boolean aBoolean321;
 
 	@OriginalMember(owner = "client!ht", name = "<init>", descriptor = "(Ljava/awt/Component;Z)V")
-	private JavaMouse(@OriginalArg(0) Component arg0, @OriginalArg(1) boolean arg1) {
+	public JavaMouse(@OriginalArg(0) Component arg0, @OriginalArg(1) boolean arg1) {
 		this.method3629(-30273, arg0);
 		this.aBoolean321 = arg1;
 	}
