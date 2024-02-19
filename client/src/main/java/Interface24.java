@@ -9,5 +9,5 @@ public interface Interface24 {
 	boolean method7432(@OriginalArg(1) Interface24 arg0);
 
 	@OriginalMember(owner = "client!uq", name = "a", descriptor = "(I)J")
-	long method7433();
+	long getKey();
 }

@@ -21,7 +21,7 @@ public final class VarPlayerTypeList {
 		if (this.aJs586 == null) {
 			this.anInt6462 = 0;
 		} else {
-			this.anInt6462 = this.aJs586.method7608(16);
+			this.anInt6462 = this.aJs586.getGroupCapacity(16);
 		}
 	}
 
@@ -29,7 +29,7 @@ public final class VarPlayerTypeList {
 	public void method5781() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable138;
 		synchronized (this.aSoftLruHashTable138) {
-			this.aSoftLruHashTable138.method2151();
+			this.aSoftLruHashTable138.removeSoft();
 		}
 	}
 
@@ -38,7 +38,7 @@ public final class VarPlayerTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable138;
 		@Pc(16) VarPlayerType local16;
 		synchronized (this.aSoftLruHashTable138) {
-			local16 = (VarPlayerType) this.aSoftLruHashTable138.method2156((long) arg0);
+			local16 = (VarPlayerType) this.aSoftLruHashTable138.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -46,7 +46,7 @@ public final class VarPlayerTypeList {
 		@Pc(30) Js5 local30 = this.aJs586;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs586) {
-			local39 = this.aJs586.method7595(arg0, 16);
+			local39 = this.aJs586.fetchFile(16, arg0);
 		}
 		local16 = new VarPlayerType();
 		if (local39 != null) {
@@ -54,7 +54,7 @@ public final class VarPlayerTypeList {
 		}
 		@Pc(63) SoftLruHashTable local63 = this.aSoftLruHashTable138;
 		synchronized (this.aSoftLruHashTable138) {
-			this.aSoftLruHashTable138.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable138.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -63,7 +63,7 @@ public final class VarPlayerTypeList {
 	public void method5784() {
 		@Pc(13) SoftLruHashTable local13 = this.aSoftLruHashTable138;
 		synchronized (this.aSoftLruHashTable138) {
-			this.aSoftLruHashTable138.method2157();
+			this.aSoftLruHashTable138.clear();
 		}
 	}
 
@@ -71,7 +71,7 @@ public final class VarPlayerTypeList {
 	public void method5785() {
 		@Pc(11) SoftLruHashTable local11 = this.aSoftLruHashTable138;
 		synchronized (this.aSoftLruHashTable138) {
-			this.aSoftLruHashTable138.method2147(5);
+			this.aSoftLruHashTable138.clean(5);
 		}
 	}
 }

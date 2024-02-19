@@ -14,9 +14,9 @@ public final class Static433 {
 	public static int anInt6262 = 0;
 
 	@OriginalMember(owner = "client!nl", name = "c", descriptor = "(I)Lclient!nka;")
-	public static Class22 method5595() {
+	public static ObjReferenceNodeFactory method5595() {
 		try {
-			return (Class22) Class.forName("Class22_Sub1").getDeclaredConstructor().newInstance();
+			return (ObjReferenceNodeFactory) Class.forName("ObjReferenceNodeFactory_Sub1").getDeclaredConstructor().newInstance();
 		} catch (@Pc(18) Throwable local18) {
 			return null;
 		}

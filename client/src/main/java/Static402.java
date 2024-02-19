@@ -22,21 +22,21 @@ public final class Static402 {
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(II)V")
 	public static void method5580() {
-		Static627.aSoftLruHashTable200.method2147(50);
+		Static627.aSoftLruHashTable200.clean(50);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(II)Lclient!uja;")
 	public static Class376 method5582(@OriginalArg(1) int arg0) {
-		@Pc(10) Class376 local10 = (Class376) Static153.aSoftLruHashTable56.method2156((long) arg0);
+		@Pc(10) Class376 local10 = (Class376) Static153.aSoftLruHashTable56.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static331.aJs565.method7595(arg0, 0);
+		@Pc(21) byte[] local21 = Static331.aJs565.fetchFile(0, arg0);
 		local10 = new Class376();
 		if (local21 != null) {
 			local10.method8511(arg0, new Packet(local21));
 		}
-		Static153.aSoftLruHashTable56.method2150(local10, (long) arg0);
+		Static153.aSoftLruHashTable56.put((long) arg0, local10);
 		return local10;
 	}
 

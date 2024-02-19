@@ -380,8 +380,8 @@ public final class Static30 {
 		aMsiTypeList3 = arg5;
 		aVarDomain3 = arg6;
 		aHashTable27.clear();
-		@Pc(23) int local23 = aJs574.method7590("details");
-		@Pc(28) int[] local28 = aJs574.method7603(local23);
+		@Pc(23) int local23 = aJs574.getGroupId("details");
+		@Pc(28) int[] local28 = aJs574.getFileIds(local23);
 		if (local28 != null) {
 			for (@Pc(32) int local32 = 0; local32 < local28.length; local32++) {
 				@Pc(41) Map local41 = Static517.method6820(aJs574, local23, local28[local32]);
@@ -927,7 +927,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;II)V")
 	public static void method5080(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(11) Packet local11 = new Packet(aJs574.method7600(aClass2_Sub2_Sub13_3.aString48, "area"));
+		@Pc(11) Packet local11 = new Packet(aJs574.fetchFile(aClass2_Sub2_Sub13_3.aString48, "area"));
 		@Pc(15) int local15 = local11.g1();
 		@Pc(18) int[] local18 = new int[local15];
 		for (@Pc(20) int local20 = 0; local20 < local15; local20++) {

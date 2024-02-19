@@ -24,8 +24,8 @@ public final class Class26_Sub3 extends Class26 {
 		super(arg0);
 		this.aClass7_4 = arg2;
 		if (arg1 != null && arg0.aBoolean703 && arg0.aBoolean707) {
-			@Pc(29) Class265 local29 = Static34.method884(35633, arg1.method7600("gl", "environment_mapped_water_v"), arg0);
-			@Pc(43) Class265 local43 = Static34.method884(35632, arg1.method7600("gl", "environment_mapped_water_f"), arg0);
+			@Pc(29) Class265 local29 = Static34.method884(35633, arg1.fetchFile("gl", "environment_mapped_water_v"), arg0);
+			@Pc(43) Class265 local43 = Static34.method884(35632, arg1.fetchFile("gl", "environment_mapped_water_f"), arg0);
 			this.aClass317_1 = Static223.method9088(new Class265[] { local29, local43 }, arg0);
 			this.aBoolean243 = this.aClass317_1 != null && this.aClass7_4.method115();
 		} else {

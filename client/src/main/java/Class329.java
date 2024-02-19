@@ -29,13 +29,13 @@ public final class Class329 {
 		this.aBoolean655 = arg0.aBoolean606;
 		Static491.method9159(arg0);
 		if (this.aBoolean655) {
-			@Pc(31) byte[] local31 = Static377.method5321(false, Static599.anObject14);
+			@Pc(31) byte[] local31 = ByteArray.unwrap(Static599.anObject14, false);
 			this.aClass93_Sub3_2 = new Class93_Sub3(arg0, 6410, 128, 128, 16, local31, 6410);
-			@Pc(48) byte[] local48 = Static377.method5321(false, Static158.anObject5);
+			@Pc(48) byte[] local48 = ByteArray.unwrap(Static158.anObject5, false);
 			this.aClass93_Sub3_1 = new Class93_Sub3(arg0, 6410, 128, 128, 16, local48, 6410);
 			@Pc(63) Class202 local63 = arg0.aClass202_1;
 			if (local63.method4582()) {
-				local31 = Static377.method5321(false, Static71.anObject4);
+				local31 = ByteArray.unwrap(Static71.anObject4, false);
 				this.aClass93_Sub3_3 = new Class93_Sub3(arg0, 6408, 128, 128, 16);
 				@Pc(93) Class93_Sub3 local93 = new Class93_Sub3(arg0, 6409, 128, 128, 16, local31, 6409);
 				if (local63.method4580(2.0F, this.aClass93_Sub3_3, local93)) {

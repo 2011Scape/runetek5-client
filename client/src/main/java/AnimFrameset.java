@@ -30,13 +30,13 @@ public final class AnimFrameset extends SecondaryLinkable {
 		if (this.aByteArrayArray32 == null) {
 			@Pc(14) Js5 local14 = Static509.aJs596;
 			synchronized (Static509.aJs596) {
-				if (!Static509.aJs596.method7607(this.anInt8535)) {
+				if (!Static509.aJs596.isGroupReady(this.anInt8535)) {
 					return false;
 				}
-				local36 = Static509.aJs596.method7603(this.anInt8535);
+				local36 = Static509.aJs596.getFileIds(this.anInt8535);
 				this.aByteArrayArray32 = new byte[local36.length][];
 				for (local43 = 0; local43 < local36.length; local43++) {
-					this.aByteArrayArray32[local43] = Static509.aJs596.method7595(local36[local43], this.anInt8535);
+					this.aByteArrayArray32[local43] = Static509.aJs596.fetchFile(this.anInt8535, local36[local43]);
 				}
 			}
 		}
@@ -48,7 +48,7 @@ public final class AnimFrameset extends SecondaryLinkable {
 			local43 = local82.g2();
 			@Pc(91) Js5 local91 = Static269.aJs558;
 			synchronized (Static269.aJs558) {
-				local69 &= Static269.aJs558.method7581(local43);
+				local69 &= Static269.aJs558.isFileReady(local43);
 			}
 		}
 		if (!local69) {
@@ -57,9 +57,9 @@ public final class AnimFrameset extends SecondaryLinkable {
 		@Pc(123) LinkedList local123 = new LinkedList();
 		@Pc(125) Js5 local125 = Static509.aJs596;
 		synchronized (Static509.aJs596) {
-			@Pc(133) int local133 = Static509.aJs596.method7608(this.anInt8535);
+			@Pc(133) int local133 = Static509.aJs596.getGroupCapacity(this.anInt8535);
 			this.aAnimFrameArray1 = new AnimFrame[local133];
-			local36 = Static509.aJs596.method7603(this.anInt8535);
+			local36 = Static509.aJs596.getFileIds(this.anInt8535);
 		}
 		for (local43 = 0; local43 < local36.length; local43++) {
 			@Pc(167) byte[] local167 = this.aByteArrayArray32[local43];
@@ -76,7 +76,7 @@ public final class AnimFrameset extends SecondaryLinkable {
 			if (local181 == null) {
 				@Pc(209) Js5 local209 = Static269.aJs558;
 				synchronized (Static269.aJs558) {
-					local181 = new AnimBase(local179, Static269.aJs558.method7589(local179));
+					local181 = new AnimBase(local179, Static269.aJs558.fetchFile(local179));
 				}
 				local123.addTail(local181);
 			}

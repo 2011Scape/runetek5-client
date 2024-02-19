@@ -510,7 +510,7 @@ public final class NpcType {
 			@Pc(84) SoftLruHashTable local84 = this.aNpcTypeList1.aSoftLruHashTable171;
 			@Pc(94) Model local94;
 			synchronized (this.aNpcTypeList1.aSoftLruHashTable171) {
-				local94 = (Model) this.aNpcTypeList1.aSoftLruHashTable171.method2156(local71);
+				local94 = (Model) this.aNpcTypeList1.aSoftLruHashTable171.get(local71);
 			}
 			if (local94 == null || (local94.ua() & local54) != local54) {
 				if (local94 != null) {
@@ -531,7 +531,7 @@ public final class NpcType {
 				@Pc(169) Js5 local169 = this.aNpcTypeList1.aJs5102;
 				synchronized (this.aNpcTypeList1.aJs5102) {
 					for (@Pc(173) int local173 = 0; local173 < local163.length; local173++) {
-						if (!this.aNpcTypeList1.aJs5102.method7586(0, local163[local173])) {
+						if (!this.aNpcTypeList1.aJs5102.isFileReady(local163[local173], 0)) {
 							local165 = true;
 						}
 					}
@@ -595,7 +595,7 @@ public final class NpcType {
 				local94.s(local54);
 				@Pc(469) SoftLruHashTable local469 = this.aNpcTypeList1.aSoftLruHashTable171;
 				synchronized (this.aNpcTypeList1.aSoftLruHashTable171) {
-					this.aNpcTypeList1.aSoftLruHashTable171.method2150(local94, local71);
+					this.aNpcTypeList1.aSoftLruHashTable171.put(local71, local94);
 				}
 			}
 			if (arg0 != null) {
@@ -643,7 +643,7 @@ public final class NpcType {
 		@Pc(129) SoftLruHashTable local129 = this.aNpcTypeList1.aSoftLruHashTable170;
 		@Pc(139) Model local139;
 		synchronized (this.aNpcTypeList1.aSoftLruHashTable170) {
-			local139 = (Model) this.aNpcTypeList1.aSoftLruHashTable170.method2156(local116);
+			local139 = (Model) this.aNpcTypeList1.aSoftLruHashTable170.get(local116);
 		}
 		@Pc(147) BasType local147 = null;
 		if (this.anInt6726 != -1) {
@@ -671,7 +671,7 @@ public final class NpcType {
 			@Pc(222) Js5 local222 = this.aNpcTypeList1.aJs5102;
 			synchronized (this.aNpcTypeList1.aJs5102) {
 				for (local226 = 0; local226 < local216.length; local226++) {
-					if (local216[local226] != -1 && !this.aNpcTypeList1.aJs5102.method7586(0, local216[local226])) {
+					if (local216[local226] != -1 && !this.aNpcTypeList1.aJs5102.isFileReady(local216[local226], 0)) {
 						local218 = true;
 					}
 				}
@@ -760,7 +760,7 @@ public final class NpcType {
 			local139.s(local32);
 			@Pc(685) SoftLruHashTable local685 = this.aNpcTypeList1.aSoftLruHashTable170;
 			synchronized (this.aNpcTypeList1.aSoftLruHashTable170) {
-				this.aNpcTypeList1.aSoftLruHashTable170.method2150(local139, local116);
+				this.aNpcTypeList1.aSoftLruHashTable170.put(local116, local139);
 			}
 		}
 		@Pc(706) Model local706 = local139.method7495((byte) 4, local32, true);

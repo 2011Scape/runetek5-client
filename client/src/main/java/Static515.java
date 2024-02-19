@@ -16,9 +16,6 @@ public final class Static515 {
 	@OriginalMember(owner = "client!qda", name = "x", descriptor = "Lclient!mia;")
 	public static final Class242 aClass242_12 = new Class242("", 13);
 
-	@OriginalMember(owner = "client!qda", name = "p", descriptor = "Lclient!nka;")
-	public static final Class22 aClass22_1 = Static433.method5595();
-
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(IIIIILclient!ha;IIIIILclient!cba;)V")
 	public static void method6799(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) SecondaryLinkable_Sub4 arg10) {
 		if (arg8 < arg5 && arg5 < arg1 + arg8 && arg2 - 13 < arg0 && arg0 < arg2 + 3) {
@@ -56,7 +53,7 @@ public final class Static515 {
 		@Pc(152) int local152 = Static534.anInt8111 * local46 / Static30.anInt5650 + local75;
 		@Pc(166) int local166 = local48 + local84 - local144 - Static510.anInt7639 * local48 / Static30.anInt5644;
 		@Pc(168) int local168 = -1996554240;
-		if (Static392.aModeGame4 == Static723.aModeGame9) {
+		if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
 			local168 = -1996488705;
 		}
 		arg1.aa(local152, local166, local138, local144, local168, 1);

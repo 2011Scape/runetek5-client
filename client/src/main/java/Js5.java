@@ -6,574 +6,599 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!sb")
 public final class Js5 {
 
+	@OriginalMember(owner = "client!pfa", name = "v", descriptor = "Z")
+	public static final boolean RAISE_EXCEPTIONS = false;
+
 	@OriginalMember(owner = "client!sb", name = "J", descriptor = "[Ljava/lang/Object;")
-	private Object[] anObjectArray37;
+	private Object[] packed;
 
 	@OriginalMember(owner = "client!sb", name = "K", descriptor = "[[Ljava/lang/Object;")
-	private Object[][] anObjectArrayArray1;
+	private Object[][] unpacked;
 
 	@OriginalMember(owner = "client!sb", name = "j", descriptor = "Lclient!pj;")
-	private Js5Index aJs5Index2 = null;
+	private Js5Index index = null;
 
 	@OriginalMember(owner = "client!sb", name = "H", descriptor = "Lclient!bm;")
-	private final Js5ResourceProvider aJs5ResourceProvider1;
+	private final Js5ResourceProvider provider;
 
 	@OriginalMember(owner = "client!sb", name = "y", descriptor = "Z")
-	private final boolean aBoolean656;
+	private final boolean discardPacked;
 
 	@OriginalMember(owner = "client!sb", name = "F", descriptor = "I")
-	public int anInt8555;
+	public int discardUnpacked;
 
 	@OriginalMember(owner = "client!sb", name = "<init>", descriptor = "(Lclient!bm;ZI)V")
-	public Js5(@OriginalArg(0) Js5ResourceProvider arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
-		if (arg2 < 0 || arg2 > 2) {
-			throw new IllegalArgumentException("js5: Invalid value " + arg2 + " supplied for discardunpacked");
+	public Js5(@OriginalArg(0) Js5ResourceProvider provider, @OriginalArg(1) boolean discardPacked, @OriginalArg(2) int discardUnpacked) {
+		if (discardUnpacked < 0 || discardUnpacked > 2) {
+			throw new IllegalArgumentException("js5: Invalid value " + discardUnpacked + " supplied for discardunpacked");
 		}
-		this.aJs5ResourceProvider1 = arg0;
-		this.aBoolean656 = arg1;
-		this.anInt8555 = arg2;
+
+		this.provider = provider;
+		this.discardPacked = discardPacked;
+		this.discardUnpacked = discardUnpacked;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZBZ)V")
-	public void method7575(@OriginalArg(0) boolean arg0) {
-		if (!this.method7601()) {
+	public void discardNames(@OriginalArg(0) boolean groups) {
+		if (!this.isIndexReady()) {
 			return;
 		}
-		if (arg0) {
-			this.aJs5Index2.aIntHashTable1 = null;
-			this.aJs5Index2.anIntArray596 = null;
+
+		if (groups) {
+			this.index.groupNameHashTable = null;
+			this.index.groupNameHashes = null;
 		}
-		this.aJs5Index2.anIntArrayArray186 = null;
-		this.aJs5Index2.aIntHashTableArray1 = null;
+
+		this.index.fileNameHashes = null;
+		this.index.fileNameHashTable = null;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Z)I")
-	public int method7576() {
-		if (!this.method7601()) {
+	public int getChecksum() {
+		if (!this.isIndexReady()) {
 			throw new IllegalStateException("");
 		}
-		return this.aJs5Index2.anInt7365;
+
+		return this.index.checksum;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Ljava/lang/String;ZLjava/lang/String;)Z")
 	public boolean method7577(@OriginalArg(0) String arg0, @OriginalArg(2) String arg1) {
-		if (!this.method7601()) {
+		if (!this.isIndexReady()) {
 			return false;
 		}
+
 		@Pc(13) String local13 = arg0.toLowerCase();
 		@Pc(16) String local16 = arg1.toLowerCase();
-		@Pc(25) int local25 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local13));
+		@Pc(25) int local25 = this.index.groupNameHashTable.get(StringUtils.hashCode(local13));
 		if (local25 < 0) {
 			return false;
 		} else {
-			@Pc(41) int local41 = this.aJs5Index2.aIntHashTableArray1[local25].method2382(Static95.method1894(local16));
+			@Pc(41) int local41 = this.index.fileNameHashTable[local25].get(StringUtils.hashCode(local16));
 			return local41 >= 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(BLjava/lang/String;)Z")
 	public boolean method7578(@OriginalArg(1) String arg0) {
-		@Pc(14) int local14 = this.method7590("");
-		return local14 == -1 ? this.method7604(arg0, "") : this.method7604("", arg0);
+		@Pc(14) int local14 = this.getGroupId("");
+		return local14 == -1 ? this.isFileReady(arg0, "") : this.isFileReady("", arg0);
 	}
 
 	@OriginalMember(owner = "client!sb", name = "e", descriptor = "(II)V")
-	private void method7579(@OriginalArg(0) int arg0) {
-		if (this.aBoolean656) {
-			this.anObjectArray37[arg0] = this.aJs5ResourceProvider1.method6641(arg0);
+	private void fetchGroup(@OriginalArg(0) int group) {
+		if (this.discardPacked) {
+			this.packed[group] = this.provider.fetchGroup(group);
 		} else {
-			this.anObjectArray37[arg0] = Static247.method3524(this.aJs5ResourceProvider1.method6641(arg0));
+			this.packed[group] = ByteArray.wrap(this.provider.fetchGroup(group));
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZI)I")
-	private int method7580(@OriginalArg(1) int arg0) {
-		if (this.method7596(arg0)) {
-			return this.anObjectArray37[arg0] == null ? this.aJs5ResourceProvider1.method6637(arg0) : 100;
+	private int getPercentageComplete(@OriginalArg(1) int group) {
+		if (this.isGroupValid(group)) {
+			return this.packed[group] == null ? this.provider.getPercentageComplete(group) : 100;
 		} else {
 			return 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(IB)Z")
-	public boolean method7581(@OriginalArg(0) int arg0) {
-		if (!this.method7601()) {
+	public boolean isFileReady(@OriginalArg(0) int id) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (this.aJs5Index2.anIntArray595.length == 1) {
-			return this.method7586(arg0, 0);
-		} else if (!this.method7596(arg0)) {
+		} else if (this.index.groupCapacities.length == 1) {
+			return this.isFileReady(0, id);
+		} else if (!this.isGroupValid(id)) {
 			return false;
-		} else if (this.aJs5Index2.anIntArray595[arg0] == 1) {
-			return this.method7586(0, arg0);
+		} else if (this.index.groupCapacities[id] == 1) {
+			return this.isFileReady(id, 0);
 		} else {
 			throw new RuntimeException();
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(I)I")
-	public int method7582() {
-		if (!this.method7601()) {
+	public int getPercentageComplete() {
+		if (!this.isIndexReady()) {
 			return 0;
 		}
-		@Pc(18) int local18 = 0;
-		@Pc(20) int local20 = 0;
-		for (@Pc(22) int local22 = 0; local22 < this.anObjectArray37.length; local22++) {
-			if (this.aJs5Index2.anIntArray598[local22] > 0) {
-				local18 += 100;
-				local20 += this.method7580(local22);
+
+		@Pc(18) int total = 0;
+		@Pc(20) int complete = 0;
+		for (@Pc(22) int i = 0; i < this.packed.length; i++) {
+			if (this.index.groupSizes[i] > 0) {
+				total += 100;
+				complete += this.getPercentageComplete(i);
 			}
 		}
-		if (local18 == 0) {
+
+		if (total == 0) {
 			return 100;
 		} else {
-			return local20 * 100 / local18;
+			return complete * 100 / total;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "([IIII)[B")
-	public byte[] method7583(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		if (!this.method7584(arg1, arg2)) {
+	public byte[] fetchFile(@OriginalArg(3) int group, @OriginalArg(1) int file, @OriginalArg(0) int[] key) {
+		if (!this.isFileValid(group, file)) {
 			return null;
 		}
-		if (this.anObjectArrayArray1[arg2] == null || this.anObjectArrayArray1[arg2][arg1] == null) {
-			@Pc(33) boolean local33 = this.method7585(arg0, arg1, arg2);
-			if (!local33) {
-				this.method7579(arg2);
-				local33 = this.method7585(arg0, arg1, arg2);
-				if (!local33) {
+
+		if (this.unpacked[group] == null || this.unpacked[group][file] == null) {
+			@Pc(33) boolean success = this.unpackGroup(key, file, group);
+			if (!success) {
+				this.fetchGroup(group);
+
+				success = this.unpackGroup(key, file, group);
+				if (!success) {
 					return null;
 				}
 			}
 		}
-		@Pc(61) byte[] local61 = Static377.method5321(false, this.anObjectArrayArray1[arg2][arg1]);
-		if (this.anInt8555 == 1) {
-			this.anObjectArrayArray1[arg2][arg1] = null;
-			if (this.aJs5Index2.anIntArray595[arg2] == 1) {
-				this.anObjectArrayArray1[arg2] = null;
+
+		@Pc(61) byte[] src = ByteArray.unwrap(this.unpacked[group][file], false);
+		if (this.discardUnpacked == 1) {
+			this.unpacked[group][file] = null;
+			if (this.index.groupCapacities[group] == 1) {
+				this.unpacked[group] = null;
 			}
-		} else if (this.anInt8555 == 2) {
-			this.anObjectArrayArray1[arg2] = null;
+		} else if (this.discardUnpacked == 2) {
+			this.unpacked[group] = null;
 		}
-		return local61;
+
+		return src;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(IIB)Z")
-	private boolean method7584(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (!this.method7601()) {
+	private boolean isFileValid(@OriginalArg(1) int group, @OriginalArg(0) int file) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (arg1 >= 0 && arg0 >= 0 && arg1 < this.aJs5Index2.anIntArray595.length && this.aJs5Index2.anIntArray595[arg1] > arg0) {
+		} else if (group >= 0 && file >= 0 && group < this.index.groupCapacities.length && this.index.groupCapacities[group] > file) {
 			return true;
-		} else if (Static486.aBoolean550) {
-			throw new IllegalArgumentException(arg1 + "," + arg0);
+		} else if (RAISE_EXCEPTIONS) {
+			throw new IllegalArgumentException(group + "," + file);
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(I[III)Z")
-	private boolean method7585(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (!this.method7596(arg2)) {
+	private boolean unpackGroup(@OriginalArg(1) int[] key, @OriginalArg(2) int arg1, @OriginalArg(3) int group) {
+		if (!this.isGroupValid(group)) {
 			return false;
-		} else if (this.anObjectArray37[arg2] == null) {
+		} else if (this.packed[group] == null) {
 			return false;
 		} else {
-			@Pc(32) int local32 = this.aJs5Index2.anIntArray598[arg2];
-			@Pc(38) int[] local38 = this.aJs5Index2.anIntArrayArray185[arg2];
-			if (this.anObjectArrayArray1[arg2] == null) {
-				this.anObjectArrayArray1[arg2] = new Object[this.aJs5Index2.anIntArray595[arg2]];
+			@Pc(32) int fileIds = this.index.groupSizes[group];
+			@Pc(38) int[] groupSize = this.index.fileIds[group];
+			if (this.unpacked[group] == null) {
+				this.unpacked[group] = new Object[this.index.groupCapacities[group]];
 			}
-			@Pc(60) Object[] local60 = this.anObjectArrayArray1[arg2];
-			@Pc(62) boolean local62 = true;
-			for (@Pc(64) int local64 = 0; local64 < local32; local64++) {
-				@Pc(71) int local71;
-				if (local38 == null) {
-					local71 = local64;
+
+			@Pc(60) Object[] unpacked = this.unpacked[group];
+			@Pc(62) boolean valid = true;
+			for (@Pc(64) int i = 0; i < fileIds; i++) {
+				@Pc(71) int fileId;
+				if (groupSize == null) {
+					fileId = i;
 				} else {
-					local71 = local38[local64];
+					fileId = groupSize[i];
 				}
-				if (local60[local71] == null) {
-					local62 = false;
+				if (unpacked[fileId] == null) {
+					valid = false;
 					break;
 				}
 			}
-			if (local62) {
+
+			if (valid) {
 				return true;
 			}
-			@Pc(138) byte[] local138;
-			if (arg0 == null || arg0[0] == 0 && arg0[1] == 0 && arg0[2] == 0 && arg0[3] == 0) {
-				local138 = Static377.method5321(false, this.anObjectArray37[arg2]);
+
+			@Pc(138) byte[] compressed;
+			if (key == null || key[0] == 0 && key[1] == 0 && key[2] == 0 && key[3] == 0) {
+				compressed = ByteArray.unwrap(this.packed[group], false);
 			} else {
-				local138 = Static377.method5321(true, this.anObjectArray37[arg2]);
-				@Pc(152) Packet local152 = new Packet(local138);
-				local152.tinydec(arg0, local152.data.length);
+				compressed = ByteArray.unwrap(this.packed[group], true);
+				@Pc(152) Packet buf = new Packet(compressed);
+				buf.tinydec(key, buf.data.length);
 			}
-			@Pc(164) byte[] local164;
+
+			@Pc(164) byte[] uncompressed;
 			try {
-				local164 = Static590.method7744(local138);
-			} catch (@Pc(166) RuntimeException local166) {
-				throw Static231.method3380(local166, "T3 - " + (arg0 != null) + "," + arg2 + "," + local138.length + "," + Static591.method7758(local138.length, local138) + "," + Static591.method7758(local138.length - 2, local138) + "," + this.aJs5Index2.anIntArray599[arg2] + "," + this.aJs5Index2.anInt7365);
+				uncompressed = Js5Compression.uncompress(compressed);
+			} catch (@Pc(166) RuntimeException ex) {
+				throw TracingException.report(ex, "T3 - " + (key != null) + "," + group + "," + compressed.length + "," + Static591.method7758(compressed.length, compressed) + "," + Static591.method7758(compressed.length - 2, compressed) + "," + this.index.groupChecksums[group] + "," + this.index.checksum);
 			}
-			if (this.aBoolean656) {
-				this.anObjectArray37[arg2] = null;
+
+			if (this.discardPacked) {
+				this.packed[group] = null;
 			}
+
 			@Pc(243) int local243;
-			if (local32 <= 1) {
-				if (local38 == null) {
-					local243 = 0;
-				} else {
-					local243 = local38[0];
-				}
-				if (this.anInt8555 == 0) {
-					local60[local243] = Static247.method3524(local164);
-				} else {
-					local60[local243] = local164;
-				}
-			} else {
-				@Pc(279) int local279;
-				@Pc(292) Packet local292;
-				@Pc(300) int local300;
-				@Pc(303) int local303;
-				@Pc(305) int local305;
-				@Pc(363) int local363;
-				@Pc(365) int local365;
-				@Pc(368) int local368;
-				@Pc(370) int local370;
-				if (this.anInt8555 == 2) {
-					local243 = local164.length;
-					local243--;
-					local279 = local164[local243] & 0xFF;
-					local243 -= local279 * local32 * 4;
-					local292 = new Packet(local164);
-					@Pc(474) int local474 = 0;
-					local292.pos = local243;
-					local300 = 0;
-					for (local303 = 0; local303 < local279; local303++) {
-						local305 = 0;
-						for (local363 = 0; local363 < local32; local363++) {
-							local305 += local292.g4();
-							if (local38 == null) {
-								local365 = local363;
-							} else {
-								local365 = local38[local363];
-							}
-							if (arg1 == local365) {
-								local300 = local365;
-								local474 += local305;
-							}
-						}
-					}
-					if (local474 == 0) {
-						return true;
-					}
-					@Pc(539) byte[] local539 = new byte[local474];
-					local292.pos = local243;
-					local474 = 0;
-					local363 = 0;
-					for (local365 = 0; local365 < local279; local365++) {
-						local368 = 0;
-						for (local370 = 0; local370 < local32; local370++) {
-							local368 += local292.g4();
-							@Pc(566) int local566;
-							if (local38 == null) {
-								local566 = local370;
-							} else {
-								local566 = local38[local370];
-							}
-							if (local566 == arg1) {
-								Static734.method7694(local164, local363, local539, local474, local368);
-								local474 += local368;
-							}
-							local363 += local368;
-						}
-					}
-					local60[local300] = local539;
-				} else {
-					local243 = local164.length;
-					local243--;
-					local279 = local164[local243] & 0xFF;
-					local243 -= local279 * local32 * 4;
-					local292 = new Packet(local164);
-					local292.pos = local243;
-					@Pc(298) int[] local298 = new int[local32];
-					for (local300 = 0; local300 < local279; local300++) {
-						local303 = 0;
-						for (local305 = 0; local305 < local32; local305++) {
-							local303 += local292.g4();
-							local298[local305] += local303;
-						}
-					}
-					@Pc(336) byte[][] local336 = new byte[local32][];
-					for (local305 = 0; local305 < local32; local305++) {
-						local336[local305] = new byte[local298[local305]];
-						local298[local305] = 0;
-					}
-					local292.pos = local243;
-					local363 = 0;
-					for (local365 = 0; local365 < local279; local365++) {
-						local368 = 0;
-						for (local370 = 0; local370 < local32; local370++) {
-							local368 += local292.g4();
-							Static734.method7694(local164, local363, local336[local370], local298[local370], local368);
-							local298[local370] += local368;
-							local363 += local368;
-						}
-					}
-					for (local368 = 0; local368 < local32; local368++) {
-						if (local38 == null) {
-							local370 = local368;
-						} else {
-							local370 = local38[local368];
-						}
-						if (this.anInt8555 == 0) {
-							local60[local370] = Static247.method3524(local336[local368]);
-						} else {
-							local60[local370] = local336[local368];
-						}
-					}
-				}
-			}
-			return true;
+            if (fileIds > 1) {
+                @Pc(279) int local279;
+                @Pc(292) Packet local292;
+                @Pc(300) int local300;
+                @Pc(303) int local303;
+                @Pc(305) int local305;
+                @Pc(363) int local363;
+                @Pc(365) int local365;
+                @Pc(368) int local368;
+                @Pc(370) int local370;
+                if (this.discardUnpacked == 2) {
+                    local243 = uncompressed.length;
+                    local243--;
+                    local279 = uncompressed[local243] & 0xFF;
+                    local243 -= local279 * fileIds * 4;
+                    local292 = new Packet(uncompressed);
+                    @Pc(474) int local474 = 0;
+                    local292.pos = local243;
+                    local300 = 0;
+                    for (local303 = 0; local303 < local279; local303++) {
+                        local305 = 0;
+                        for (local363 = 0; local363 < fileIds; local363++) {
+                            local305 += local292.g4();
+                            if (groupSize == null) {
+                                local365 = local363;
+                            } else {
+                                local365 = groupSize[local363];
+                            }
+                            if (arg1 == local365) {
+                                local300 = local365;
+                                local474 += local305;
+                            }
+                        }
+                    }
+                    if (local474 == 0) {
+                        return true;
+                    }
+                    @Pc(539) byte[] local539 = new byte[local474];
+                    local292.pos = local243;
+                    local474 = 0;
+                    local363 = 0;
+                    for (local365 = 0; local365 < local279; local365++) {
+                        local368 = 0;
+                        for (local370 = 0; local370 < fileIds; local370++) {
+                            local368 += local292.g4();
+                            @Pc(566) int local566;
+                            if (groupSize == null) {
+                                local566 = local370;
+                            } else {
+                                local566 = groupSize[local370];
+                            }
+                            if (local566 == arg1) {
+                                Static734.method7694(uncompressed, local363, local539, local474, local368);
+                                local474 += local368;
+                            }
+                            local363 += local368;
+                        }
+                    }
+                    unpacked[local300] = local539;
+                } else {
+                    local243 = uncompressed.length;
+                    local243--;
+                    local279 = uncompressed[local243] & 0xFF;
+                    local243 -= local279 * fileIds * 4;
+                    local292 = new Packet(uncompressed);
+                    local292.pos = local243;
+                    @Pc(298) int[] local298 = new int[fileIds];
+                    for (local300 = 0; local300 < local279; local300++) {
+                        local303 = 0;
+                        for (local305 = 0; local305 < fileIds; local305++) {
+                            local303 += local292.g4();
+                            local298[local305] += local303;
+                        }
+                    }
+                    @Pc(336) byte[][] local336 = new byte[fileIds][];
+                    for (local305 = 0; local305 < fileIds; local305++) {
+                        local336[local305] = new byte[local298[local305]];
+                        local298[local305] = 0;
+                    }
+                    local292.pos = local243;
+                    local363 = 0;
+                    for (local365 = 0; local365 < local279; local365++) {
+                        local368 = 0;
+                        for (local370 = 0; local370 < fileIds; local370++) {
+                            local368 += local292.g4();
+                            Static734.method7694(uncompressed, local363, local336[local370], local298[local370], local368);
+                            local298[local370] += local368;
+                            local363 += local368;
+                        }
+                    }
+                    for (local368 = 0; local368 < fileIds; local368++) {
+                        if (groupSize == null) {
+                            local370 = local368;
+                        } else {
+                            local370 = groupSize[local368];
+                        }
+                        if (this.discardUnpacked == 0) {
+                            unpacked[local370] = ByteArray.wrap(local336[local368]);
+                        } else {
+                            unpacked[local370] = local336[local368];
+                        }
+                    }
+                }
+            } else {
+                if (groupSize == null) {
+                    local243 = 0;
+                } else {
+                    local243 = groupSize[0];
+                }
+                if (this.discardUnpacked == 0) {
+                    unpacked[local243] = ByteArray.wrap(uncompressed);
+                } else {
+                    unpacked[local243] = uncompressed;
+                }
+            }
+            return true;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(III)Z")
-	public boolean method7586(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (!this.method7584(arg0, arg1)) {
+	public boolean isFileReady(@OriginalArg(1) int group, @OriginalArg(0) int file) {
+		if (!this.isFileValid(group, file)) {
 			return false;
-		} else if (this.anObjectArrayArray1[arg1] != null && this.anObjectArrayArray1[arg1][arg0] != null) {
+		} else if (this.unpacked[group] != null && this.unpacked[group][file] != null) {
 			return true;
-		} else if (this.anObjectArray37[arg1] == null) {
-			this.method7579(arg1);
-			return this.anObjectArray37[arg1] != null;
+		} else if (this.packed[group] == null) {
+			this.fetchGroup(group);
+			return this.packed[group] != null;
 		} else {
 			return true;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(Ljava/lang/String;I)Z")
-	public boolean method7587(@OriginalArg(0) String arg0) {
-		if (this.method7601()) {
-			@Pc(21) String local21 = arg0.toLowerCase();
-			@Pc(30) int local30 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local21));
-			return local30 >= 0;
+	public boolean isGroupNameVaild(@OriginalArg(0) String group) {
+		if (this.isIndexReady()) {
+			@Pc(21) String lower = group.toLowerCase();
+			@Pc(30) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(lower));
+			return groupId >= 0;
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(II)V")
-	private void method7588(@OriginalArg(1) int arg0) {
-		this.aJs5ResourceProvider1.method6636(arg0);
+	private void prefetchGroup(@OriginalArg(1) int group) {
+		this.provider.prefetchGroup(group);
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(BI)[B")
-	public byte[] method7589(@OriginalArg(1) int arg0) {
-		if (!this.method7601()) {
+	public byte[] fetchFile(@OriginalArg(1) int id) {
+		if (!this.isIndexReady()) {
 			return null;
-		} else if (this.aJs5Index2.anIntArray595.length == 1) {
-			return this.method7595(arg0, 0);
-		} else if (!this.method7596(arg0)) {
+		} else if (this.index.groupCapacities.length == 1) {
+			return this.fetchFile(0, id);
+		} else if (!this.isGroupValid(id)) {
 			return null;
-		} else if (this.aJs5Index2.anIntArray595[arg0] == 1) {
-			return this.method7595(0, arg0);
+		} else if (this.index.groupCapacities[id] == 1) {
+			return this.fetchFile(id, 0);
 		} else {
 			throw new RuntimeException();
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Ljava/lang/String;B)I")
-	public int method7590(@OriginalArg(0) String arg0) {
-		if (this.method7601()) {
-			@Pc(19) String local19 = arg0.toLowerCase();
-			@Pc(28) int local28 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local19));
-			return this.method7596(local28) ? local28 : -1;
+	public int getGroupId(@OriginalArg(0) String group) {
+		if (this.isIndexReady()) {
+			@Pc(19) String lower = group.toLowerCase();
+			@Pc(28) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(lower));
+			return this.isGroupValid(groupId) ? groupId : -1;
 		} else {
 			return -1;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(B)Z")
-	public boolean method7591() {
-		if (!this.method7601()) {
+	public boolean fetchAll() {
+		if (!this.isIndexReady()) {
 			return false;
 		}
-		@Pc(24) boolean local24 = true;
-		for (@Pc(26) int local26 = 0; local26 < this.aJs5Index2.anIntArray600.length; local26++) {
-			@Pc(36) int local36 = this.aJs5Index2.anIntArray600[local26];
-			if (this.anObjectArray37[local36] == null) {
-				this.method7579(local36);
-				if (this.anObjectArray37[local36] == null) {
-					local24 = false;
+
+		@Pc(24) boolean success = true;
+		for (@Pc(26) int i = 0; i < this.index.groupIds.length; i++) {
+			@Pc(36) int groupId = this.index.groupIds[i];
+			if (this.packed[groupId] == null) {
+				this.fetchGroup(groupId);
+
+				if (this.packed[groupId] == null) {
+					success = false;
 				}
 			}
 		}
-		return local24;
+
+		return success;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(B)V")
-	public void method7592() {
-		if (this.anObjectArrayArray1 != null) {
-			for (@Pc(4) int local4 = 0; local4 < this.anObjectArrayArray1.length; local4++) {
-				this.anObjectArrayArray1[local4] = null;
+	public void discardUnpacked() {
+		if (this.unpacked != null) {
+			for (@Pc(4) int i = 0; i < this.unpacked.length; i++) {
+				this.unpacked[i] = null;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(BLjava/lang/String;)I")
-	public int method7593(@OriginalArg(1) String arg0) {
-		if (this.method7601()) {
-			@Pc(24) String local24 = arg0.toLowerCase();
-			@Pc(33) int local33 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local24));
-			return this.method7580(local33);
+	public int getPercentageComplete(@OriginalArg(1) String group) {
+		if (this.isIndexReady()) {
+			@Pc(24) String lwoer = group.toLowerCase();
+			@Pc(33) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(lwoer));
+			return this.getPercentageComplete(groupId);
 		} else {
 			return 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(B)V")
-	public void method7594() {
-		if (this.anObjectArray37 != null) {
-			for (@Pc(18) int local18 = 0; local18 < this.anObjectArray37.length; local18++) {
-				this.anObjectArray37[local18] = null;
+	public void discardPacked() {
+		if (this.packed != null) {
+			for (@Pc(18) int i = 0; i < this.packed.length; i++) {
+				this.packed[i] = null;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZII)[B")
-	public byte[] method7595(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		return this.method7583((int[]) null, arg0, arg1);
+	public byte[] fetchFile(@OriginalArg(2) int group, @OriginalArg(1) int file) {
+		return this.fetchFile(group, file, null);
 	}
 
 	@OriginalMember(owner = "client!sb", name = "d", descriptor = "(BI)Z")
-	private boolean method7596(@OriginalArg(1) int arg0) {
-		if (!this.method7601()) {
+	private boolean isGroupValid(@OriginalArg(1) int group) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (arg0 >= 0 && arg0 < this.aJs5Index2.anIntArray595.length && this.aJs5Index2.anIntArray595[arg0] != 0) {
+		} else if (group >= 0 && group < this.index.groupCapacities.length && this.index.groupCapacities[group] != 0) {
 			return true;
-		} else if (Static486.aBoolean550) {
-			throw new IllegalArgumentException(Integer.toString(arg0));
+		} else if (RAISE_EXCEPTIONS) {
+			throw new IllegalArgumentException(Integer.toString(group));
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(I)I")
-	public int method7597() {
-		return this.method7601() ? this.aJs5Index2.anIntArray595.length : -1;
+	public int capacity() {
+		return this.isIndexReady() ? this.index.groupCapacities.length : -1;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Ljava/lang/String;I)Z")
-	public boolean method7598(@OriginalArg(0) String arg0) {
-		if (this.method7601()) {
-			@Pc(13) String local13 = arg0.toLowerCase();
-			@Pc(22) int local22 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local13));
-			return this.method7607(local22);
+	public boolean isGroupReady(@OriginalArg(0) String group) {
+		if (this.isIndexReady()) {
+			@Pc(13) String lower = group.toLowerCase();
+			@Pc(22) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(lower));
+			return this.isGroupReady(groupId);
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(BI)I")
-	public int method7599(@OriginalArg(1) int arg0) {
-		if (this.method7601()) {
-			@Pc(17) int local17 = this.aJs5Index2.aIntHashTable1.method2382(arg0);
-			return this.method7596(local17) ? local17 : -1;
+	public int getGroupId(@OriginalArg(1) int groupNameHash) {
+		if (this.isIndexReady()) {
+			@Pc(17) int groupId = this.index.groupNameHashTable.get(groupNameHash);
+			return this.isGroupValid(groupId) ? groupId : -1;
 		} else {
 			return -1;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;I)[B")
-	public byte[] method7600(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
-		if (!this.method7601()) {
+	public byte[] fetchFile(@OriginalArg(0) String group, @OriginalArg(1) String file) {
+		if (!this.isIndexReady()) {
 			return null;
 		}
-		@Pc(13) String local13 = arg0.toLowerCase();
-		@Pc(16) String local16 = arg1.toLowerCase();
-		@Pc(25) int local25 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local13));
-		if (this.method7596(local25)) {
-			@Pc(53) int local53 = this.aJs5Index2.aIntHashTableArray1[local25].method2382(Static95.method1894(local16));
-			return this.method7595(local53, local25);
+
+		@Pc(13) String groupLower = group.toLowerCase();
+		@Pc(16) String fileLower = file.toLowerCase();
+		@Pc(25) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(groupLower));
+		if (this.isGroupValid(groupId)) {
+			@Pc(53) int fileId = this.index.fileNameHashTable[groupId].get(StringUtils.hashCode(fileLower));
+			return this.fetchFile(groupId, fileId);
 		} else {
 			return null;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(I)Z")
-	private boolean method7601() {
-		if (this.aJs5Index2 == null) {
-			this.aJs5Index2 = this.aJs5ResourceProvider1.method6642();
-			if (this.aJs5Index2 == null) {
+	private boolean isIndexReady() {
+		if (this.index == null) {
+			this.index = this.provider.fetchIndex();
+			if (this.index == null) {
 				return false;
 			}
-			this.anObjectArrayArray1 = new Object[this.aJs5Index2.anInt7368][];
-			this.anObjectArray37 = new Object[this.aJs5Index2.anInt7368];
+			this.unpacked = new Object[this.index.capacity][];
+			this.packed = new Object[this.index.capacity];
 		}
 		return true;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(Ljava/lang/String;I)V")
-	public void method7602(@OriginalArg(0) String arg0) {
-		if (this.method7601()) {
-			@Pc(12) String local12 = arg0.toLowerCase();
-			@Pc(29) int local29 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local12));
-			this.method7588(local29);
+	public void prefetchGroup(@OriginalArg(0) String group) {
+		if (this.isIndexReady()) {
+			@Pc(12) String groupLower = group.toLowerCase();
+			@Pc(29) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(groupLower));
+			this.prefetchGroup(groupId);
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "d", descriptor = "(II)[I")
-	public int[] method7603(@OriginalArg(0) int arg0) {
-		if (!this.method7596(arg0)) {
+	public int[] getFileIds(@OriginalArg(0) int group) {
+		if (!this.isGroupValid(group)) {
 			return null;
 		}
-		@Pc(17) int[] local17 = this.aJs5Index2.anIntArrayArray185[arg0];
-		if (local17 == null) {
-			local17 = new int[this.aJs5Index2.anIntArray598[arg0]];
-			@Pc(28) int local28 = 0;
-			while (local28 < local17.length) {
-				local17[local28] = local28++;
+		@Pc(17) int[] fileIds = this.index.fileIds[group];
+		if (fileIds == null) {
+			fileIds = new int[this.index.groupSizes[group]];
+			@Pc(28) int i = 0;
+			while (i < fileIds.length) {
+				fileIds[i] = i++;
 			}
 		}
-		return local17;
+		return fileIds;
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZLjava/lang/String;Ljava/lang/String;)Z")
-	private boolean method7604(@OriginalArg(1) String arg0, @OriginalArg(2) String arg1) {
-		if (!this.method7601()) {
+	private boolean isFileReady(@OriginalArg(1) String group, @OriginalArg(2) String file) {
+		if (!this.isIndexReady()) {
 			return false;
 		}
-		@Pc(13) String local13 = arg0.toLowerCase();
-		@Pc(16) String local16 = arg1.toLowerCase();
-		@Pc(25) int local25 = this.aJs5Index2.aIntHashTable1.method2382(Static95.method1894(local13));
-		if (this.method7596(local25)) {
-			@Pc(44) int local44 = this.aJs5Index2.aIntHashTableArray1[local25].method2382(Static95.method1894(local16));
-			return this.method7586(local44, local25);
+
+		@Pc(13) String groupLower = group.toLowerCase();
+		@Pc(16) String fileLower = file.toLowerCase();
+		@Pc(25) int groupId = this.index.groupNameHashTable.get(StringUtils.hashCode(groupLower));
+		if (this.isGroupValid(groupId)) {
+			@Pc(44) int fileId = this.index.fileNameHashTable[groupId].get(StringUtils.hashCode(fileLower));
+			return this.isFileReady(groupId, fileId);
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "c", descriptor = "(BI)V")
-	public void method7605(@OriginalArg(1) int arg0) {
-		if (this.method7596(arg0) && this.anObjectArrayArray1 != null) {
-			this.anObjectArrayArray1[arg0] = null;
+	public void discardUnpacked(@OriginalArg(1) int group) {
+		if (this.isGroupValid(group) && this.unpacked != null) {
+			this.unpacked[group] = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "b", descriptor = "(II)Z")
-	public boolean method7607(@OriginalArg(1) int arg0) {
-		if (!this.method7596(arg0)) {
+	public boolean isGroupReady(@OriginalArg(1) int group) {
+		if (!this.isGroupValid(group)) {
 			return false;
-		} else if (this.anObjectArray37[arg0] == null) {
-			this.method7579(arg0);
-			return this.anObjectArray37[arg0] != null;
+		} else if (this.packed[group] == null) {
+			this.fetchGroup(group);
+			return this.packed[group] != null;
 		} else {
 			return true;
 		}
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(II)I")
-	public int method7608(@OriginalArg(1) int arg0) {
-		return this.method7596(arg0) ? this.aJs5Index2.anIntArray595[arg0] : 0;
+	public int getGroupCapacity(@OriginalArg(1) int group) {
+		return this.isGroupValid(group) ? this.index.groupCapacities[group] : 0;
 	}
 }

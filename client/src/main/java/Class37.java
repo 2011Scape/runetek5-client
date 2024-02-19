@@ -38,6 +38,6 @@ public class Class37 implements Interface13 {
 	@OriginalMember(owner = "client!nha", name = "b", descriptor = "(I)Z")
 	@Override
 	public final boolean method7747() {
-		return this.aJs58.method7581(this.aClass160_2.anInt3851);
+		return this.aJs58.isFileReady(this.aClass160_2.anInt3851);
 	}
 }

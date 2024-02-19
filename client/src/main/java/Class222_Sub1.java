@@ -41,8 +41,8 @@ public final class Class222_Sub1 extends Class222 {
 			return;
 		}
 		for (@Pc(12) int local12 = 0; local12 < 10 && local12 + this.anInt10596 < this.anIntArray834.length; local12++) {
-			if (this.aByteArrayArray37[local12] == null && this.aJs5126.method7586(0, this.anIntArray834[this.anInt10596 + local12])) {
-				this.aByteArrayArray37[local12] = this.aJs5126.method7595(0, this.anIntArray834[this.anInt10596 + local12]);
+			if (this.aByteArrayArray37[local12] == null && this.aJs5126.isFileReady(this.anIntArray834[this.anInt10596 + local12], 0)) {
+				this.aByteArrayArray37[local12] = this.aJs5126.fetchFile(this.anIntArray834[this.anInt10596 + local12], 0);
 			}
 		}
 		if (arg0 < 93) {
@@ -56,10 +56,10 @@ public final class Class222_Sub1 extends Class222 {
 		@Pc(50) int local50;
 		@Pc(56) int local56;
 		if (this.anIntArray834 == null) {
-			if (!this.aJs5126.method7586(0, this.anInt10594)) {
+			if (!this.aJs5126.isFileReady(this.anInt10594, 0)) {
 				return 0;
 			}
-			@Pc(29) byte[] local29 = this.aJs5126.method7595(0, this.anInt10594);
+			@Pc(29) byte[] local29 = this.aJs5126.fetchFile(this.anInt10594, 0);
 			if (local29 == null) {
 				throw new IllegalStateException("");
 			}

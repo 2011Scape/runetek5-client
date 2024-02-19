@@ -80,6 +80,6 @@ public final class Static41 {
 	@OriginalMember(owner = "client!bg", name = "a", descriptor = "(BI)V")
 	public static void method1029(@OriginalArg(1) int arg0) {
 		Static391.anInt6133 = arg0;
-		Static186.aSoftLruHashTable67.method2157();
+		Static186.aSoftLruHashTable67.clear();
 	}
 }

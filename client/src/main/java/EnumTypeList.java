@@ -16,8 +16,8 @@ public final class EnumTypeList {
 	public EnumTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5122 = arg2;
 		if (this.aJs5122 != null) {
-			@Pc(20) int local20 = this.aJs5122.method7597() - 1;
-			this.aJs5122.method7608(local20);
+			@Pc(20) int local20 = this.aJs5122.capacity() - 1;
+			this.aJs5122.getGroupCapacity(local20);
 		}
 	}
 
@@ -26,19 +26,19 @@ public final class EnumTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable223;
 		@Pc(16) EnumType local16;
 		synchronized (this.aSoftLruHashTable223) {
-			local16 = (EnumType) this.aSoftLruHashTable223.method2156((long) arg0);
+			local16 = (EnumType) this.aSoftLruHashTable223.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(40) byte[] local40 = this.aJs5122.method7595(Static61.method1313(arg0), Static188.method2857(arg0));
+		@Pc(40) byte[] local40 = this.aJs5122.fetchFile(Static188.method2857(arg0), Static61.method1313(arg0));
 		local16 = new EnumType();
 		if (local40 != null) {
 			local16.method1222(new Packet(local40));
 		}
 		@Pc(66) SoftLruHashTable local66 = this.aSoftLruHashTable223;
 		synchronized (this.aSoftLruHashTable223) {
-			this.aSoftLruHashTable223.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable223.put((long) arg0, local16);
 			return local16;
 		}
 	}

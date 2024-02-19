@@ -25,7 +25,7 @@ public final class Js5TextureProvider implements Interface4 {
 	public Js5TextureProvider(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs599 = arg2;
 		this.aJs598 = arg1;
-		@Pc(24) Packet local24 = new Packet(arg0.method7595(0, 0));
+		@Pc(24) Packet local24 = new Packet(arg0.fetchFile(0, 0));
 		this.anInt7709 = local24.g2();
 		this.aMaterialArray1 = new Material[this.anInt7709];
 		for (@Pc(36) int local36 = 0; local36 < this.anInt7709; local36++) {
@@ -132,16 +132,16 @@ public final class Js5TextureProvider implements Interface4 {
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(IB)Lclient!vm;")
 	private SecondaryLinkable_Sub21 method6819(@OriginalArg(0) int arg0) {
-		@Pc(10) SecondaryLinkable local10 = this.aLruHashTable3.method8342((long) arg0);
+		@Pc(10) SecondaryLinkable local10 = this.aLruHashTable3.get((long) arg0);
 		if (local10 != null) {
 			return (SecondaryLinkable_Sub21) local10;
 		}
-		@Pc(30) byte[] local30 = this.aJs598.method7589(arg0);
+		@Pc(30) byte[] local30 = this.aJs598.fetchFile(arg0);
 		if (local30 == null) {
 			return null;
 		} else {
 			@Pc(43) SecondaryLinkable_Sub21 local43 = new SecondaryLinkable_Sub21(new Packet(local30));
-			this.aLruHashTable3.method8341(local43, (long) arg0);
+			this.aLruHashTable3.method8341((long) arg0, local43);
 			return local43;
 		}
 	}

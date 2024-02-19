@@ -44,8 +44,8 @@ public final class NpcTypeList {
 		this.anInt8086 = arg1;
 		this.aModeGame6 = arg0;
 		if (this.aJs5101 != null) {
-			@Pc(44) int local44 = this.aJs5101.method7597() - 1;
-			this.aJs5101.method7608(local44);
+			@Pc(44) int local44 = this.aJs5101.capacity() - 1;
+			this.aJs5101.getGroupCapacity(local44);
 		}
 		if (ModeGame.GAME_RUNESCAPE == this.aModeGame6) {
 			this.aStringArray39 = new String[] { null, null, null, null, null, LocalizedText.EXAMINE.get(this.anInt8086) };
@@ -58,15 +58,15 @@ public final class NpcTypeList {
 	public void method7085() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable169;
 		synchronized (this.aSoftLruHashTable169) {
-			this.aSoftLruHashTable169.method2147(5);
+			this.aSoftLruHashTable169.clean(5);
 		}
 		local2 = this.aSoftLruHashTable170;
 		synchronized (this.aSoftLruHashTable170) {
-			this.aSoftLruHashTable170.method2147(5);
+			this.aSoftLruHashTable170.clean(5);
 		}
 		local2 = this.aSoftLruHashTable171;
 		synchronized (this.aSoftLruHashTable171) {
-			this.aSoftLruHashTable171.method2147(5);
+			this.aSoftLruHashTable171.clean(5);
 		}
 	}
 
@@ -74,15 +74,15 @@ public final class NpcTypeList {
 	public void method7086() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable169;
 		synchronized (this.aSoftLruHashTable169) {
-			this.aSoftLruHashTable169.method2157();
+			this.aSoftLruHashTable169.clear();
 		}
 		local2 = this.aSoftLruHashTable170;
 		synchronized (this.aSoftLruHashTable170) {
-			this.aSoftLruHashTable170.method2157();
+			this.aSoftLruHashTable170.clear();
 		}
 		local2 = this.aSoftLruHashTable171;
 		synchronized (this.aSoftLruHashTable171) {
-			this.aSoftLruHashTable171.method2157();
+			this.aSoftLruHashTable171.clear();
 		}
 	}
 
@@ -90,15 +90,15 @@ public final class NpcTypeList {
 	public void method7089() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable169;
 		synchronized (this.aSoftLruHashTable169) {
-			this.aSoftLruHashTable169.method2151();
+			this.aSoftLruHashTable169.removeSoft();
 		}
 		local2 = this.aSoftLruHashTable170;
 		synchronized (this.aSoftLruHashTable170) {
-			this.aSoftLruHashTable170.method2151();
+			this.aSoftLruHashTable170.removeSoft();
 		}
 		local2 = this.aSoftLruHashTable171;
 		synchronized (this.aSoftLruHashTable171) {
-			this.aSoftLruHashTable171.method2151();
+			this.aSoftLruHashTable171.removeSoft();
 		}
 	}
 
@@ -114,11 +114,11 @@ public final class NpcTypeList {
 	public void method7091() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable170;
 		synchronized (this.aSoftLruHashTable170) {
-			this.aSoftLruHashTable170.method2157();
+			this.aSoftLruHashTable170.clear();
 		}
 		local2 = this.aSoftLruHashTable171;
 		synchronized (this.aSoftLruHashTable171) {
-			this.aSoftLruHashTable171.method2157();
+			this.aSoftLruHashTable171.clear();
 		}
 	}
 
@@ -127,7 +127,7 @@ public final class NpcTypeList {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable169;
 		@Pc(24) NpcType local24;
 		synchronized (this.aSoftLruHashTable169) {
-			local24 = (NpcType) this.aSoftLruHashTable169.method2156((long) arg0);
+			local24 = (NpcType) this.aSoftLruHashTable169.get((long) arg0);
 		}
 		if (local24 != null) {
 			return local24;
@@ -135,7 +135,7 @@ public final class NpcTypeList {
 		@Pc(38) Js5 local38 = this.aJs5101;
 		@Pc(51) byte[] local51;
 		synchronized (this.aJs5101) {
-			local51 = this.aJs5101.method7595(Static612.method8237(arg0), Static713.method9336(arg0));
+			local51 = this.aJs5101.fetchFile(Static713.method9336(arg0), Static612.method8237(arg0));
 		}
 		local24 = new NpcType();
 		local24.aNpcTypeList1 = this;
@@ -147,7 +147,7 @@ public final class NpcTypeList {
 		local24.method5983();
 		@Pc(90) SoftLruHashTable local90 = this.aSoftLruHashTable169;
 		synchronized (this.aSoftLruHashTable169) {
-			this.aSoftLruHashTable169.method2150(local24, (long) arg0);
+			this.aSoftLruHashTable169.put((long) arg0, local24);
 			return local24;
 		}
 	}
@@ -157,11 +157,11 @@ public final class NpcTypeList {
 		this.anInt8088 = arg0;
 		@Pc(9) SoftLruHashTable local9 = this.aSoftLruHashTable170;
 		synchronized (this.aSoftLruHashTable170) {
-			this.aSoftLruHashTable170.method2157();
+			this.aSoftLruHashTable170.clear();
 		}
 		local9 = this.aSoftLruHashTable171;
 		synchronized (this.aSoftLruHashTable171) {
-			this.aSoftLruHashTable171.method2157();
+			this.aSoftLruHashTable171.clear();
 		}
 	}
 }

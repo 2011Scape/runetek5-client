@@ -17,12 +17,12 @@ public final class Static72 {
 		for (@Pc(11) int local11 = 0; local11 < arg0.length; local11++) {
 			@Pc(19) QuestType local19 = Static272.aQuestTypeList1.method1094(arg0[local11]);
 			if (local19.anInt5704 != -1) {
-				@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) Static452.aSoftLruHashTable149.method2156((long) local19.anInt5704);
+				@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) Static452.aSoftLruHashTable149.get((long) local19.anInt5704);
 				if (local34 == null) {
 					@Pc(42) Class407 local42 = Static735.method9382(Static721.aJs5128, local19.anInt5704, 0);
 					if (local42 != null) {
 						local34 = Static163.aClass19_17.method7948(local42, true);
-						Static452.aSoftLruHashTable149.method2150(local34, (long) local19.anInt5704);
+						Static452.aSoftLruHashTable149.put((long) local19.anInt5704, local34);
 					}
 				}
 				if (local34 != null) {

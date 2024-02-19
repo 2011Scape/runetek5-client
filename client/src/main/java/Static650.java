@@ -70,10 +70,10 @@ public final class Static650 {
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;I)Lclient!uj;")
 	public static VorbisSound method8498(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		if (method8505(arg0)) {
-			@Pc(14) byte[] local14 = arg0.method7589(arg1);
+			@Pc(14) byte[] local14 = arg0.fetchFile(arg1);
 			return local14 == null ? null : new VorbisSound(local14);
 		} else {
-			arg0.method7581(arg1);
+			arg0.isFileReady(arg1);
 			return null;
 		}
 	}
@@ -190,7 +190,7 @@ public final class Static650 {
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;)Z")
 	private static boolean method8505(@OriginalArg(0) Js5 arg0) {
 		if (!aBoolean746) {
-			@Pc(7) byte[] local7 = arg0.method7595(0, 0);
+			@Pc(7) byte[] local7 = arg0.fetchFile(0, 0);
 			if (local7 == null) {
 				return false;
 			}
@@ -202,10 +202,10 @@ public final class Static650 {
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;II)Lclient!uj;")
 	public static VorbisSound method8506(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method8505(arg0)) {
-			@Pc(16) byte[] local16 = arg0.method7595(arg2, arg1);
+			@Pc(16) byte[] local16 = arg0.fetchFile(arg1, arg2);
 			return local16 == null ? null : new VorbisSound(local16);
 		} else {
-			arg0.method7586(arg2, arg1);
+			arg0.isFileReady(arg1, arg2);
 			return null;
 		}
 	}

@@ -229,7 +229,7 @@ public final class Static147 {
 						if (local1406 != null) {
 							local295 = 0;
 							for (@Pc(1416) Linkable_Sub15 local1416 = (Linkable_Sub15) local1406.aLinkedList12.tail(); local1416 != null; local1416 = (Linkable_Sub15) local1406.aLinkedList12.prev()) {
-								@Pc(1424) ObjType local1424 = Static419.aObjTypeList1.method2486(local1416.anInt1958);
+								@Pc(1424) ObjType local1424 = ObjTypeList.objTypes.method2486(local1416.anInt1958);
 								if (Static156.aBoolean223 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local543.aClass8_Sub2_18.aByte144) {
 									@Pc(1451) ParamType local1451 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
 									if ((Static717.anInt10822 & 0x1) != 0 && (local1451 == null || local1424.method8794(Static610.anInt9329, local1451.anInt7509) != local1451.anInt7509)) {

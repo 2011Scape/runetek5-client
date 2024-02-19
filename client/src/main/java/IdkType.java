@@ -28,50 +28,50 @@ public final class IdkType {
 	private final int[] anIntArray603 = new int[] { -1, -1, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!pka", name = "a", descriptor = "(BILclient!ge;)V")
-	private void method6612(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
-		if (arg0 == 1) {
-			arg1.g1();
+	private void deccode(@OriginalArg(2) Packet buf, @OriginalArg(1) int opcode) {
+		if (opcode == 1) {
+			buf.g1();
 			return;
 		}
 		@Pc(59) int local59;
 		@Pc(69) int local69;
-		if (arg0 == 2) {
-			local59 = arg1.g1();
+		if (opcode == 2) {
+			local59 = buf.g1();
 			this.anIntArray602 = new int[local59];
 			for (local69 = 0; local69 < local59; local69++) {
-				this.anIntArray602[local69] = arg1.g2();
+				this.anIntArray602[local69] = buf.g2();
 			}
-		} else if (arg0 != 3) {
-			if (arg0 == 40) {
-				local59 = arg1.g1();
+		} else if (opcode != 3) {
+			if (opcode == 40) {
+				local59 = buf.g1();
 				this.aShortArray108 = new short[local59];
 				this.aShortArray105 = new short[local59];
 				for (local69 = 0; local69 < local59; local69++) {
-					this.aShortArray105[local69] = (short) arg1.g2();
-					this.aShortArray108[local69] = (short) arg1.g2();
+					this.aShortArray105[local69] = (short) buf.g2();
+					this.aShortArray108[local69] = (short) buf.g2();
 				}
-			} else if (arg0 == 41) {
-				local59 = arg1.g1();
+			} else if (opcode == 41) {
+				local59 = buf.g1();
 				this.aShortArray106 = new short[local59];
 				this.aShortArray107 = new short[local59];
 				for (local69 = 0; local69 < local59; local69++) {
-					this.aShortArray107[local69] = (short) arg1.g2();
-					this.aShortArray106[local69] = (short) arg1.g2();
+					this.aShortArray107[local69] = (short) buf.g2();
+					this.aShortArray106[local69] = (short) buf.g2();
 				}
-			} else if (arg0 >= 60 && arg0 < 70) {
-				this.anIntArray603[arg0 - 60] = arg1.g2();
+			} else if (opcode >= 60 && opcode < 70) {
+				this.anIntArray603[opcode - 60] = buf.g2();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!pka", name = "a", descriptor = "(Lclient!ge;B)V")
-	public void method6613(@OriginalArg(0) Packet arg0) {
+	public void decode(@OriginalArg(0) Packet buf) {
 		while (true) {
-			@Pc(9) int local9 = arg0.g1();
-			if (local9 == 0) {
+			@Pc(9) int opcode = buf.g1();
+			if (opcode == 0) {
 				return;
 			}
-			this.method6612(local9, arg0);
+			this.deccode(buf, opcode);
 		}
 	}
 
@@ -118,7 +118,7 @@ public final class IdkType {
 		@Pc(11) Js5 local11 = this.aIdkTypeList4.aJs572;
 		synchronized (this.aIdkTypeList4.aJs572) {
 			for (@Pc(15) int local15 = 0; local15 < 5; local15++) {
-				if (this.anIntArray603[local15] != -1 && !this.aIdkTypeList4.aJs572.method7586(0, this.anIntArray603[local15])) {
+				if (this.anIntArray603[local15] != -1 && !this.aIdkTypeList4.aJs572.isFileReady(this.anIntArray603[local15], 0)) {
 					local7 = false;
 				}
 			}
@@ -135,7 +135,7 @@ public final class IdkType {
 		@Pc(15) Js5 local15 = this.aIdkTypeList4.aJs572;
 		synchronized (this.aIdkTypeList4.aJs572) {
 			for (@Pc(19) int local19 = 0; local19 < this.anIntArray602.length; local19++) {
-				if (!this.aIdkTypeList4.aJs572.method7586(0, this.anIntArray602[local19])) {
+				if (!this.aIdkTypeList4.aJs572.isFileReady(this.anIntArray602[local19], 0)) {
 					local11 = false;
 				}
 			}

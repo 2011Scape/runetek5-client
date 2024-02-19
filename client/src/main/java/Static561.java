@@ -47,7 +47,7 @@ public final class Static561 {
 
 	@OriginalMember(owner = "client!rla", name = "b", descriptor = "(I)V")
 	public static void method7436() {
-		Static289.aSoftLruHashTable100.method2157();
+		Static289.aSoftLruHashTable100.clear();
 	}
 
 	@OriginalMember(owner = "client!rla", name = "a", descriptor = "(IIIIII)V")

@@ -93,16 +93,16 @@ public class Class90_Sub2 extends Class90 {
 			return false;
 		}
 		@Pc(14) Class138_Sub1 local14 = (Class138_Sub1) super.aClass138_5;
-		if (!super.aJs5109.method7581(local14.anInt3188)) {
+		if (!super.aJs5109.isFileReady(local14.anInt3188)) {
 			return false;
-		} else if (!super.aJs5109.method7581(local14.anInt3190)) {
+		} else if (!super.aJs5109.isFileReady(local14.anInt3190)) {
 			return false;
-		} else if (!super.aJs5109.method7581(local14.anInt3189)) {
+		} else if (!super.aJs5109.isFileReady(local14.anInt3189)) {
 			return false;
-		} else if (!super.aJs5109.method7581(local14.anInt3185)) {
+		} else if (!super.aJs5109.isFileReady(local14.anInt3185)) {
 			return false;
-		} else if (super.aJs5109.method7581(local14.anInt3183)) {
-			return super.aJs5109.method7581(local14.anInt3182);
+		} else if (super.aJs5109.isFileReady(local14.anInt3183)) {
+			return super.aJs5109.isFileReady(local14.anInt3182);
 		} else {
 			return false;
 		}

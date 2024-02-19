@@ -127,7 +127,7 @@ public final class Static364 {
 						local229.p4((int) (Math.random() * 9.9999999E7D));
 					}
 					local229.p8(Static571.aLong269);
-					local229.p1(Static392.aModeGame4.anInt9720);
+					local229.p1(Static392.aModeGame4.id);
 					local229.p1((int) (Math.random() * 9.9999999E7D));
 					local229.rsaenc(ClientConfig.aBigInteger2, ClientConfig.aBigInteger1);
 					local186.aPacketBit_1.pdata(local229.data, 0, local229.pos);
@@ -276,7 +276,7 @@ public final class Static364 {
 						local646 = local618.pos;
 						local618.pjstr(Static449.aString75);
 					}
-					local618.p1(Static392.aModeGame4.anInt9720);
+					local618.p1(Static392.aModeGame4.id);
 					local618.p1(Static51.anInt1052);
 					Static176.method6690(local618);
 					local618.pjstr(Static150.aString26);
@@ -412,7 +412,7 @@ public final class Static364 {
 						Static174.aBoolean249 = local1435.g1() == 1;
 						Static416.aString71 = local1435.gjstr();
 						Static354.aLocTypeList4.setMembers(Static174.aBoolean249);
-						Static419.aObjTypeList1.method2485(Static174.aBoolean249);
+						ObjTypeList.objTypes.method2485(Static174.aBoolean249);
 						Static690.aNpcTypeList2.method7090(Static174.aBoolean249);
 					} else if (Static524.aClass153_3.aClass348_1.method7932(Static94.anInt1961)) {
 						Static524.aClass153_3.aClass348_1.method7929(local1435.data, Static94.anInt1961, 0);

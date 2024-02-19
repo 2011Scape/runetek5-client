@@ -23,7 +23,7 @@ public final class Class26_Sub9 extends Class26 {
 		this.aClass19_Sub1_Sub1_7 = arg0;
 		this.aClass7_6 = arg2;
 		if (arg1 != null && this.aClass7_6.method116() && (this.aClass19_Sub1_Sub1_7.aD3DCAPS1.VertexShaderVersion & 0xFFFF) >= 257) {
-			this.anIDirect3DVertexShader7 = this.aClass19_Sub1_Sub1_7.anIDirect3DDevice1.b(arg1.method7600("dx", "transparent_water"));
+			this.anIDirect3DVertexShader7 = this.aClass19_Sub1_Sub1_7.anIDirect3DDevice1.b(arg1.fetchFile("dx", "transparent_water"));
 		} else {
 			this.anIDirect3DVertexShader7 = null;
 		}

@@ -59,10 +59,10 @@ public final class Static534 {
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(IB)V")
 	public static void method7121() {
-		Static473.aSoftLruHashTable157.method2147(50);
-		Static312.aSoftLruHashTable106.method2147(50);
-		Static449.aSoftLruHashTable146.method2147(50);
-		Static444.aSoftLruHashTable145.method2147(50);
+		Component.spriteCache.clean(50);
+		Component.modelCache.clean(50);
+		Static449.aSoftLruHashTable146.clean(50);
+		Static444.aSoftLruHashTable145.clean(50);
 	}
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(II)V")
@@ -70,11 +70,11 @@ public final class Static534 {
 		Static294.anInt4766 = arg0;
 		@Pc(7) SoftLruHashTable local7 = Static54.aSoftLruHashTable25;
 		synchronized (Static54.aSoftLruHashTable25) {
-			Static54.aSoftLruHashTable25.method2157();
+			Static54.aSoftLruHashTable25.clear();
 		}
 		local7 = Static580.aSoftLruHashTable186;
 		synchronized (Static580.aSoftLruHashTable186) {
-			Static580.aSoftLruHashTable186.method2157();
+			Static580.aSoftLruHashTable186.clear();
 		}
 	}
 }

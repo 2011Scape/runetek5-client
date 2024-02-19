@@ -15,7 +15,7 @@ public final class Static517 {
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!sb;III)Lclient!ip;")
 	public static Map method6820(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(14) Packet local14 = new Packet(arg0.method7595(arg2, arg1));
+		@Pc(14) Packet local14 = new Packet(arg0.fetchFile(arg1, arg2));
 		@Pc(50) Map local50 = new Map(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(54) int local54 = local14.g1();
 		for (@Pc(56) int local56 = 0; local56 < local54; local56++) {

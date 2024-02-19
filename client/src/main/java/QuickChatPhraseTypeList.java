@@ -30,10 +30,10 @@ public final class QuickChatPhraseTypeList {
 		this.aJs540 = arg1;
 		this.aJs541 = arg2;
 		if (this.aJs540 != null) {
-			this.anInt3264 = this.aJs540.method7608(1);
+			this.anInt3264 = this.aJs540.getGroupCapacity(1);
 		}
 		if (this.aJs541 != null) {
-			this.anInt3261 = this.aJs541.method7608(1);
+			this.anInt3261 = this.aJs541.getGroupCapacity(1);
 		}
 	}
 
@@ -50,15 +50,15 @@ public final class QuickChatPhraseTypeList {
 
 	@OriginalMember(owner = "client!gba", name = "a", descriptor = "(IZ)Lclient!ih;")
 	public QuickChatPhraseType method2950(@OriginalArg(0) int arg0) {
-		@Pc(11) QuickChatPhraseType local11 = (QuickChatPhraseType) this.aSoftLruHashTable70.method2156((long) arg0);
+		@Pc(11) QuickChatPhraseType local11 = (QuickChatPhraseType) this.aSoftLruHashTable70.get((long) arg0);
 		if (local11 != null) {
 			return local11;
 		}
 		@Pc(28) byte[] local28;
 		if (arg0 >= 32768) {
-			local28 = this.aJs541.method7595(arg0 & 0x7FFF, 1);
+			local28 = this.aJs541.fetchFile(1, arg0 & 0x7FFF);
 		} else {
-			local28 = this.aJs540.method7595(arg0, 1);
+			local28 = this.aJs540.fetchFile(1, arg0);
 		}
 		local11 = new QuickChatPhraseType();
 		local11.aQuickChatPhraseTypeList1 = this;
@@ -68,7 +68,7 @@ public final class QuickChatPhraseTypeList {
 		if (arg0 >= 32768) {
 			local11.method3902();
 		}
-		this.aSoftLruHashTable70.method2150(local11, (long) arg0);
+		this.aSoftLruHashTable70.put((long) arg0, local11);
 		return local11;
 	}
 }

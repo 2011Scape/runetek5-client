@@ -84,7 +84,7 @@ public final class SpotAnimType {
 		@Pc(65) SoftLruHashTable local65 = this.aSpotAnimTypeList2.aSoftLruHashTable62;
 		@Pc(85) Model local85;
 		synchronized (this.aSpotAnimTypeList2.aSoftLruHashTable62) {
-			local85 = (Model) this.aSpotAnimTypeList2.aSoftLruHashTable62.method2156((long) (this.anInt5833 |= arg9.anInt8962 << 29));
+			local85 = (Model) this.aSpotAnimTypeList2.aSoftLruHashTable62.get((long) (this.anInt5833 |= arg9.anInt8962 << 29));
 		}
 		if (local85 == null || arg9.method7960(local85.ua(), local15) != 0) {
 			if (local85 != null) {
@@ -119,7 +119,7 @@ public final class SpotAnimType {
 			local85.s(local15);
 			@Pc(232) SoftLruHashTable local232 = this.aSpotAnimTypeList2.aSoftLruHashTable62;
 			synchronized (this.aSpotAnimTypeList2.aSoftLruHashTable62) {
-				this.aSpotAnimTypeList2.aSoftLruHashTable62.method2150(local85, (long) (this.anInt5833 |= arg9.anInt8962 << 29));
+				this.aSpotAnimTypeList2.aSoftLruHashTable62.put((long) (this.anInt5833 |= arg9.anInt8962 << 29), local85);
 			}
 		}
 		@Pc(263) Model local263 = local85.method7495(arg0, local15, true);

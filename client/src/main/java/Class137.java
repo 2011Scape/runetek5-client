@@ -16,7 +16,7 @@ public final class Class137 implements Interface15 {
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(I)I")
 	@Override
 	public int method6465() {
-		return this.aJs539.method7591() ? 100 : this.aJs539.method7582();
+		return this.aJs539.fetchAll() ? 100 : this.aJs539.getPercentageComplete();
 	}
 
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(B)Lclient!kf;")

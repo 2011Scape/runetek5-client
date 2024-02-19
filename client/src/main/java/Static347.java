@@ -10,7 +10,7 @@ public final class Static347 {
 	@OriginalMember(owner = "client!ku", name = "a", descriptor = "(IZ)V")
 	public static void method5094(@OriginalArg(0) int arg0) {
 		if (arg0 != -1 && Static132.aBooleanArray5[arg0]) {
-			Static666.aJs5118.method7605(arg0);
+			Static666.aJs5118.discardUnpacked(arg0);
 			Static453.aComponentArrayArray2[arg0] = null;
 			Static148.aComponentArrayArray1[arg0] = null;
 			Static132.aBooleanArray5[arg0] = false;

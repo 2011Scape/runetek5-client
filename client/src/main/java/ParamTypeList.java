@@ -16,7 +16,7 @@ public final class ParamTypeList {
 	public ParamTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs510 = arg2;
 		if (this.aJs510 != null) {
-			this.aJs510.method7608(11);
+			this.aJs510.getGroupCapacity(11);
 		}
 	}
 
@@ -24,7 +24,7 @@ public final class ParamTypeList {
 	public void method1156() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable21;
 		synchronized (this.aSoftLruHashTable21) {
-			this.aSoftLruHashTable21.method2151();
+			this.aSoftLruHashTable21.removeSoft();
 		}
 	}
 
@@ -32,7 +32,7 @@ public final class ParamTypeList {
 	public void method1158() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable21;
 		synchronized (this.aSoftLruHashTable21) {
-			this.aSoftLruHashTable21.method2147(5);
+			this.aSoftLruHashTable21.clean(5);
 		}
 	}
 
@@ -40,7 +40,7 @@ public final class ParamTypeList {
 	public void method1160() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable21;
 		synchronized (this.aSoftLruHashTable21) {
-			this.aSoftLruHashTable21.method2157();
+			this.aSoftLruHashTable21.clear();
 		}
 	}
 
@@ -49,7 +49,7 @@ public final class ParamTypeList {
 		@Pc(13) SoftLruHashTable local13 = this.aSoftLruHashTable21;
 		@Pc(23) ParamType local23;
 		synchronized (this.aSoftLruHashTable21) {
-			local23 = (ParamType) this.aSoftLruHashTable21.method2156((long) arg0);
+			local23 = (ParamType) this.aSoftLruHashTable21.get((long) arg0);
 		}
 		if (local23 != null) {
 			return local23;
@@ -57,7 +57,7 @@ public final class ParamTypeList {
 		@Pc(37) Js5 local37 = this.aJs510;
 		@Pc(46) byte[] local46;
 		synchronized (this.aJs510) {
-			local46 = this.aJs510.method7595(arg0, 11);
+			local46 = this.aJs510.fetchFile(11, arg0);
 		}
 		local23 = new ParamType();
 		if (local46 != null) {
@@ -65,7 +65,7 @@ public final class ParamTypeList {
 		}
 		@Pc(70) SoftLruHashTable local70 = this.aSoftLruHashTable21;
 		synchronized (this.aSoftLruHashTable21) {
-			this.aSoftLruHashTable21.method2150(local23, (long) arg0);
+			this.aSoftLruHashTable21.put((long) arg0, local23);
 			return local23;
 		}
 	}

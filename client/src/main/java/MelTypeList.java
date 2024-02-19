@@ -22,18 +22,18 @@ public final class MelTypeList {
 	public MelTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs583 = arg3;
 		this.aJs582 = arg2;
-		this.aJs582.method7608(36);
+		this.aJs582.getGroupCapacity(36);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(II)V")
 	public void method5581() {
 		@Pc(12) SoftLruHashTable local12 = this.aSoftLruHashTable134;
 		synchronized (this.aSoftLruHashTable134) {
-			this.aSoftLruHashTable134.method2147(5);
+			this.aSoftLruHashTable134.clean(5);
 		}
 		local12 = this.aSoftLruHashTable135;
 		synchronized (this.aSoftLruHashTable135) {
-			this.aSoftLruHashTable135.method2147(5);
+			this.aSoftLruHashTable135.clean(5);
 		}
 	}
 
@@ -48,7 +48,7 @@ public final class MelTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable134;
 		@Pc(16) MelType local16;
 		synchronized (this.aSoftLruHashTable134) {
-			local16 = (MelType) this.aSoftLruHashTable134.method2156((long) arg0);
+			local16 = (MelType) this.aSoftLruHashTable134.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -56,7 +56,7 @@ public final class MelTypeList {
 		@Pc(30) Js5 local30 = this.aJs582;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs582) {
-			local39 = this.aJs582.method7595(arg0, 36);
+			local39 = this.aJs582.fetchFile(36, arg0);
 		}
 		local16 = new MelType();
 		local16.aMelTypeList2 = this;
@@ -67,7 +67,7 @@ public final class MelTypeList {
 		local16.method2430();
 		@Pc(72) SoftLruHashTable local72 = this.aSoftLruHashTable134;
 		synchronized (this.aSoftLruHashTable134) {
-			this.aSoftLruHashTable134.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable134.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -76,11 +76,11 @@ public final class MelTypeList {
 	public void method5585() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable134;
 		synchronized (this.aSoftLruHashTable134) {
-			this.aSoftLruHashTable134.method2151();
+			this.aSoftLruHashTable134.removeSoft();
 		}
 		local6 = this.aSoftLruHashTable135;
 		synchronized (this.aSoftLruHashTable135) {
-			this.aSoftLruHashTable135.method2151();
+			this.aSoftLruHashTable135.removeSoft();
 		}
 	}
 
@@ -88,11 +88,11 @@ public final class MelTypeList {
 	public void method5586() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable134;
 		synchronized (this.aSoftLruHashTable134) {
-			this.aSoftLruHashTable134.method2157();
+			this.aSoftLruHashTable134.clear();
 		}
 		local6 = this.aSoftLruHashTable135;
 		synchronized (this.aSoftLruHashTable135) {
-			this.aSoftLruHashTable135.method2157();
+			this.aSoftLruHashTable135.clear();
 		}
 	}
 }

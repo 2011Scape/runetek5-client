@@ -6,7 +6,7 @@ public final class Static735 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;II)[Lclient!wp;")
 	public static Class407[] method9375(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
-		@Pc(5) byte[] local5 = arg0.method7595(0, arg1);
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, 0);
 		return local5 == null ? null : method9376(local5);
 	}
 
@@ -106,19 +106,19 @@ public final class Static735 {
 
 	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;I)Lclient!wp;")
 	public static Class407 method9379(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) byte[] local4 = arg0.method7589(arg1);
+		@Pc(4) byte[] local4 = arg0.fetchFile(arg1);
 		return local4 == null ? null : method9376(local4)[0];
 	}
 
 	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;II)Lclient!wp;")
 	public static Class407 method9382(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) byte[] local5 = arg0.method7595(arg2, arg1);
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, arg2);
 		return local5 == null ? null : method9376(local5)[0];
 	}
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;I)[Lclient!wp;")
 	public static Class407[] method9387(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) byte[] local4 = arg0.method7589(arg1);
+		@Pc(4) byte[] local4 = arg0.fetchFile(arg1);
 		return local4 == null ? null : method9376(local4);
 	}
 }

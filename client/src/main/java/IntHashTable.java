@@ -7,40 +7,40 @@ import org.openrs2.deob.annotation.Pc;
 public final class IntHashTable {
 
 	@OriginalMember(owner = "client!eha", name = "b", descriptor = "[I")
-	private final int[] anIntArray224;
+	private final int[] buckets;
 
 	@OriginalMember(owner = "client!eha", name = "<init>", descriptor = "([I)V")
-	public IntHashTable(@OriginalArg(0) int[] arg0) {
-		@Pc(5) int local5;
-		for (local5 = 1; local5 <= arg0.length + (arg0.length >> 1); local5 <<= 0x1) {
+	public IntHashTable(@OriginalArg(0) int[] keys) {
+		@Pc(5) int bucketCount;
+		for (bucketCount = 1; bucketCount <= keys.length + (keys.length >> 1); bucketCount <<= 0x1) {
 		}
-		this.anIntArray224 = new int[local5 + local5];
-		for (@Pc(34) int local34 = 0; local34 < local5 + local5; local34++) {
-			this.anIntArray224[local34] = -1;
+		this.buckets = new int[bucketCount + bucketCount];
+		for (@Pc(34) int i = 0; i < bucketCount + bucketCount; i++) {
+			this.buckets[i] = -1;
 		}
-		@Pc(52) int local52 = 0;
-		while (local52 < arg0.length) {
-			@Pc(64) int local64;
-			for (local64 = local5 - 1 & arg0[local52]; this.anIntArray224[local64 + local64 + 1] != -1; local64 = local5 - 1 & local64 - -1) {
+		@Pc(52) int value = 0;
+		while (value < keys.length) {
+			@Pc(64) int hash;
+			for (hash = bucketCount - 1 & keys[value]; this.buckets[hash + hash + 1] != -1; hash = bucketCount - 1 & hash - -1) {
 			}
-			this.anIntArray224[local64 + local64] = arg0[local52];
-			this.anIntArray224[local64 + local64 + 1] = local52++;
+			this.buckets[hash + hash] = keys[value];
+			this.buckets[hash + hash + 1] = value++;
 		}
 	}
 
 	@OriginalMember(owner = "client!eha", name = "a", descriptor = "(II)I")
-	public int method2382(@OriginalArg(1) int arg0) {
-		@Pc(11) int local11 = (this.anIntArray224.length >> 1) - 1;
-		@Pc(15) int local15 = local11 & arg0;
+	public int get(@OriginalArg(1) int key) {
+		@Pc(11) int mask = (this.buckets.length >> 1) - 1;
+		@Pc(15) int hash = mask & key;
 		while (true) {
-			@Pc(25) int local25 = this.anIntArray224[local15 + local15 + 1];
-			if (local25 == -1) {
+			@Pc(25) int value = this.buckets[hash + hash + 1];
+			if (value == -1) {
 				return -1;
 			}
-			if (arg0 == this.anIntArray224[local15 + local15]) {
-				return local25;
+			if (key == this.buckets[hash + hash]) {
+				return value;
 			}
-			local15 = local11 & local15 + 1;
+			hash = mask & hash + 1;
 		}
 	}
 }

@@ -74,7 +74,7 @@ public final class ParticleEffectorType {
 
 	@OriginalMember(owner = "client!ok", name = "b", descriptor = "(B)V")
 	public void method6273() {
-		this.anInt6976 = LruHashTable.anIntArray740[this.anInt6988 << 3];
+		this.anInt6976 = Model.anIntArray740[this.anInt6988 << 3];
 		@Pc(15) long local15 = (long) this.anInt6979;
 		@Pc(19) long local19 = (long) this.anInt6987;
 		@Pc(23) long local23 = (long) this.anInt6975;

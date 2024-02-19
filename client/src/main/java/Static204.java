@@ -12,21 +12,21 @@ public final class Static204 {
 
 	@OriginalMember(owner = "client!gfa", name = "a", descriptor = "(Lclient!sb;I)V")
 	public static void method3079(@OriginalArg(0) Js5 arg0) {
-		Static159.anInt2787 = arg0.method7590("hitbar_default");
-		Static434.anInt6579 = arg0.method7590("timerbar_default");
-		Static67.anInt6784 = arg0.method7590("headicons_pk");
-		Static304.anInt4876 = arg0.method7590("headicons_prayer");
-		Static644.anInt9607 = arg0.method7590("hint_headicons");
-		Static699.anInt10540 = arg0.method7590("hint_mapmarkers");
-		Static132.anInt2451 = arg0.method7590("mapflag");
-		Static270.anInt4355 = arg0.method7590("cross");
-		Static598.anInt8828 = arg0.method7590("mapdots");
-		Static305.anInt4883 = arg0.method7590("scrollbar");
-		Static548.anInt8259 = arg0.method7590("name_icons");
-		Static113.anInt2238 = arg0.method7590("floorshadows");
-		Static670.anInt10024 = arg0.method7590("compass");
-		Static286.anInt4592 = arg0.method7590("otherlevel");
-		Static665.anInt9943 = arg0.method7590("hint_mapedge");
+		Static159.anInt2787 = arg0.getGroupId("hitbar_default");
+		Static434.anInt6579 = arg0.getGroupId("timerbar_default");
+		Static67.anInt6784 = arg0.getGroupId("headicons_pk");
+		Static304.anInt4876 = arg0.getGroupId("headicons_prayer");
+		Static644.anInt9607 = arg0.getGroupId("hint_headicons");
+		Static699.anInt10540 = arg0.getGroupId("hint_mapmarkers");
+		Static132.anInt2451 = arg0.getGroupId("mapflag");
+		Static270.anInt4355 = arg0.getGroupId("cross");
+		Static598.anInt8828 = arg0.getGroupId("mapdots");
+		Static305.anInt4883 = arg0.getGroupId("scrollbar");
+		Static548.anInt8259 = arg0.getGroupId("name_icons");
+		Static113.anInt2238 = arg0.getGroupId("floorshadows");
+		Static670.anInt10024 = arg0.getGroupId("compass");
+		Static286.anInt4592 = arg0.getGroupId("otherlevel");
+		Static665.anInt9943 = arg0.getGroupId("hint_mapedge");
 	}
 
 	@OriginalMember(owner = "client!gfa", name = "a", descriptor = "(BC)I")

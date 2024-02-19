@@ -26,14 +26,14 @@ public final class Static652 {
 
 	@OriginalMember(owner = "client!uka", name = "a", descriptor = "(BILclient!sb;)Lclient!st;")
 	public static SoftwareIndexedSprite method8533(@OriginalArg(1) int arg0, @OriginalArg(2) Js5 arg1) {
-		@Pc(16) SoftwareIndexedSprite local16 = (SoftwareIndexedSprite) Static594.aSoftLruHashTable193.method2156((long) arg0);
+		@Pc(16) SoftwareIndexedSprite local16 = (SoftwareIndexedSprite) Static594.aSoftLruHashTable193.get((long) arg0);
 		if (local16 == null) {
 			if (Static297.aBoolean368) {
 				local16 = Static163.aClass19_17.method7948(Static735.method9379(arg1, arg0), true);
 			} else {
-				local16 = Static168.method2634(arg1.method7589(arg0));
+				local16 = Static168.method2634(arg1.fetchFile(arg0));
 			}
-			Static594.aSoftLruHashTable193.method2150(local16, (long) arg0);
+			Static594.aSoftLruHashTable193.put((long) arg0, local16);
 		}
 		return local16;
 	}

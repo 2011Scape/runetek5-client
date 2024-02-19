@@ -19,7 +19,7 @@ public final class Static502 {
 				}
 			}
 		}
-		@Pc(54) Class70 local54 = (Class70) Static627.aSoftLruHashTable200.method2156((long) ((arg0 ? 1 : 0) | arg3 << 1));
+		@Pc(54) Class70 local54 = (Class70) Static627.aSoftLruHashTable200.get((long) ((arg0 ? 1 : 0) | arg3 << 1));
 		if (local54 != null) {
 			if (arg2 && local54.aClass381_5 == null) {
 				@Pc(70) Class381 local70 = Static238.method3468(arg3, Static237.aJs587);
@@ -43,7 +43,7 @@ public final class Static502 {
 		} else {
 			local54 = new Class70(arg1.method8010(local94, local84, arg0));
 		}
-		Static627.aSoftLruHashTable200.method2150(local54, (long) (arg3 << 1 | (arg0 ? 1 : 0)));
+		Static627.aSoftLruHashTable200.put((long) (arg3 << 1 | (arg0 ? 1 : 0)), local54);
 		return local54;
 	}
 

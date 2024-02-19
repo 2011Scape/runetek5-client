@@ -22,9 +22,9 @@ public final class Static675 {
 
 	@OriginalMember(owner = "client!vga", name = "c", descriptor = "(I)V")
 	public static void method8811() {
-		Static473.aSoftLruHashTable157.method2157();
-		Static312.aSoftLruHashTable106.method2157();
-		Static449.aSoftLruHashTable146.method2157();
-		Static444.aSoftLruHashTable145.method2157();
+		Component.spriteCache.clear();
+		Component.modelCache.clear();
+		Static449.aSoftLruHashTable146.clear();
+		Static444.aSoftLruHashTable145.clear();
 	}
 }

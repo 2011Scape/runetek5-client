@@ -57,7 +57,7 @@ public final class Linkable_Sub22 extends Linkable {
 		}
 		@Pc(116) long local116 = this.method3077(arg2, arg0, local23, arg4 == null ? null : arg4.anIntArray380);
 		if (Static166.aSoftLruHashTable59 != null) {
-			local7 = (Model) Static166.aSoftLruHashTable59.method2156(local116);
+			local7 = (Model) Static166.aSoftLruHashTable59.get(local116);
 		}
 		if (local7 == null || arg1.method7960(local7.ua(), local9) != 0) {
 			if (local7 != null) {
@@ -66,7 +66,7 @@ public final class Linkable_Sub22 extends Linkable {
 			@Pc(151) int local151 = local9;
 			@Pc(153) boolean local153 = false;
 			for (@Pc(155) int local155 = 0; local155 < local23.length; local155++) {
-				if (local23[local155] != -1 && !Static419.aObjTypeList1.method2486(local23[local155]).method8802(arg2, (Class52) null)) {
+				if (local23[local155] != -1 && !ObjTypeList.objTypes.method2486(local23[local155]).method8802(arg2, (Class52) null)) {
 					local153 = true;
 				}
 			}
@@ -76,7 +76,7 @@ public final class Linkable_Sub22 extends Linkable {
 			@Pc(203) Class88[] local203 = new Class88[local23.length];
 			for (@Pc(205) int local205 = 0; local205 < local23.length; local205++) {
 				if (local23[local205] != -1) {
-					local203[local205] = Static419.aObjTypeList1.method2486(local23[local205]).method8799((Class52) null, arg2);
+					local203[local205] = ObjTypeList.objTypes.method2486(local23[local205]).method8799((Class52) null, arg2);
 				}
 			}
 			@Pc(278) int local278;
@@ -115,7 +115,7 @@ public final class Linkable_Sub22 extends Linkable {
 			}
 			if (Static166.aSoftLruHashTable59 != null) {
 				local7.s(local9);
-				Static166.aSoftLruHashTable59.method2150(local7, local116);
+				Static166.aSoftLruHashTable59.put(local116, local7);
 			}
 		}
 		if (arg3 == null) {

@@ -21,8 +21,8 @@ public final class Static444 {
 		Static262.aJs556 = arg2;
 		Static666.aJs5118 = arg0;
 		Static607.aJs5113 = arg3;
-		Static453.aComponentArrayArray2 = new Component[Static666.aJs5118.method7597()][];
-		Static132.aBooleanArray5 = new boolean[Static666.aJs5118.method7597()];
+		Static453.aComponentArrayArray2 = new Component[Static666.aJs5118.capacity()][];
+		Static132.aBooleanArray5 = new boolean[Static666.aJs5118.capacity()];
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(B)V")
@@ -33,17 +33,17 @@ public final class Static444 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BI)Lclient!vaa;")
 	public static ParticleEmitterType method5994(@OriginalArg(1) int arg0) {
-		@Pc(10) ParticleEmitterType local10 = (ParticleEmitterType) Static289.aSoftLruHashTable100.method2156((long) arg0);
+		@Pc(10) ParticleEmitterType local10 = (ParticleEmitterType) Static289.aSoftLruHashTable100.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static409.aJs585.method7595(arg0, 0);
+		@Pc(21) byte[] local21 = Static409.aJs585.fetchFile(0, arg0);
 		local10 = new ParticleEmitterType();
 		if (local21 != null) {
 			local10.method8656(new Packet(local21));
 		}
 		local10.method8654();
-		Static289.aSoftLruHashTable100.method2150(local10, (long) arg0);
+		Static289.aSoftLruHashTable100.put((long) arg0, local10);
 		return local10;
 	}
 }

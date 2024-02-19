@@ -44,10 +44,10 @@ public final class Class133 implements Interface13 {
 	@Override
 	public boolean method7747() {
 		@Pc(11) boolean local11 = true;
-		if (!this.aJs537.method7581(this.aClass125_1.anInt2858)) {
+		if (!this.aJs537.isFileReady(this.aClass125_1.anInt2858)) {
 			local11 = false;
 		}
-		if (!this.aJs536.method7581(this.aClass125_1.anInt2858)) {
+		if (!this.aJs536.isFileReady(this.aClass125_1.anInt2858)) {
 			local11 = false;
 		}
 		return local11;

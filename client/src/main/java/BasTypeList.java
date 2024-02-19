@@ -18,7 +18,7 @@ public final class BasTypeList {
 	@OriginalMember(owner = "client!qp", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;Lclient!vl;)V")
 	public BasTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Class388 arg3) {
 		this.aJs5103 = arg2;
-		this.aJs5103.method7608(32);
+		this.aJs5103.getGroupCapacity(32);
 		this.aClass388_2 = arg3;
 	}
 
@@ -26,7 +26,7 @@ public final class BasTypeList {
 	public void method7114() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable172;
 		synchronized (this.aSoftLruHashTable172) {
-			this.aSoftLruHashTable172.method2157();
+			this.aSoftLruHashTable172.clear();
 		}
 	}
 
@@ -34,7 +34,7 @@ public final class BasTypeList {
 	public void method7115() {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable172;
 		synchronized (this.aSoftLruHashTable172) {
-			this.aSoftLruHashTable172.method2147(5);
+			this.aSoftLruHashTable172.clean(5);
 		}
 	}
 
@@ -42,7 +42,7 @@ public final class BasTypeList {
 	public void method7117() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable172;
 		synchronized (this.aSoftLruHashTable172) {
-			this.aSoftLruHashTable172.method2151();
+			this.aSoftLruHashTable172.removeSoft();
 		}
 	}
 
@@ -51,7 +51,7 @@ public final class BasTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable172;
 		@Pc(16) BasType local16;
 		synchronized (this.aSoftLruHashTable172) {
-			local16 = (BasType) this.aSoftLruHashTable172.method2156((long) arg0);
+			local16 = (BasType) this.aSoftLruHashTable172.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -59,7 +59,7 @@ public final class BasTypeList {
 		@Pc(30) Js5 local30 = this.aJs5103;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs5103) {
-			local39 = this.aJs5103.method7595(arg0, 32);
+			local39 = this.aJs5103.fetchFile(32, arg0);
 		}
 		local16 = new BasType();
 		local16.aBasTypeList1 = this;
@@ -68,7 +68,7 @@ public final class BasTypeList {
 		}
 		@Pc(66) SoftLruHashTable local66 = this.aSoftLruHashTable172;
 		synchronized (this.aSoftLruHashTable172) {
-			this.aSoftLruHashTable172.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable172.put((long) arg0, local16);
 			return local16;
 		}
 	}

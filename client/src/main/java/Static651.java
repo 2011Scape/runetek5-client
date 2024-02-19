@@ -187,7 +187,7 @@ public final class Static651 {
 			return;
 		}
 		if (arg1.anInt10791 != 0) {
-			@Pc(67) String local67 = Static723.aModeGame9 == Static392.aModeGame4 ? LocalizedText.RATING.get(Static51.anInt1052) : LocalizedText.LEVEL.get(Static51.anInt1052);
+			@Pc(67) String local67 = ModeGame.GAME_STELLARDAWN == Static392.aModeGame4 ? LocalizedText.RATING.get(Static51.anInt1052) : LocalizedText.LEVEL.get(Static51.anInt1052);
 			local24 = local24 + Static693.method9009(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1444, arg1.anInt10791) + " (" + local67 + arg1.anInt10791 + ")";
 		}
 		if (Static156.aBoolean223 && !arg0) {

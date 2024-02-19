@@ -23,7 +23,7 @@ public final class Class388 {
 
 	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "(Lclient!sb;)V")
 	public Class388(@OriginalArg(0) Js5 arg0) {
-		@Pc(12) byte[] local12 = arg0.method7589(6);
+		@Pc(12) byte[] local12 = arg0.fetchFile(6);
 		this.method8929(new Packet(local12));
 		if (this.anIntArray821 == null) {
 			throw new RuntimeException("");

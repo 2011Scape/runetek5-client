@@ -13,7 +13,7 @@ public final class Static254 {
 
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
-		Static6.aJs51.anInt8555 = 1;
+		Static6.aJs51.discardUnpacked = 1;
 		if (Static283.anInt4574 == 15) {
 			Static187.method2842();
 		}
@@ -113,7 +113,7 @@ public final class Static254 {
 		Static371.method5284();
 		Static211.aClass2_Sub12_3 = null;
 		Static675.aLong307 = 0L;
-		Static6.aJs51.anInt8555 = 2;
+		Static6.aJs51.discardUnpacked = 2;
 	}
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(I)V")

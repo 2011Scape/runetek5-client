@@ -16,8 +16,8 @@ public final class VarBitTypeList {
 	public VarBitTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs553 = arg2;
 		if (this.aJs553 != null) {
-			@Pc(20) int local20 = this.aJs553.method7597() - 1;
-			this.aJs553.method7608(local20);
+			@Pc(20) int local20 = this.aJs553.capacity() - 1;
+			this.aJs553.getGroupCapacity(local20);
 		}
 	}
 
@@ -25,7 +25,7 @@ public final class VarBitTypeList {
 	public void method3420(@OriginalArg(1) int arg0) {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable82;
 		synchronized (this.aSoftLruHashTable82) {
-			this.aSoftLruHashTable82.method2157();
+			this.aSoftLruHashTable82.clear();
 			this.aSoftLruHashTable82 = new SoftLruHashTable(arg0);
 		}
 	}
@@ -34,7 +34,7 @@ public final class VarBitTypeList {
 	public void method3423() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable82;
 		synchronized (this.aSoftLruHashTable82) {
-			this.aSoftLruHashTable82.method2151();
+			this.aSoftLruHashTable82.removeSoft();
 		}
 	}
 
@@ -43,7 +43,7 @@ public final class VarBitTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable82;
 		@Pc(16) VarBitType local16;
 		synchronized (this.aSoftLruHashTable82) {
-			local16 = (VarBitType) this.aSoftLruHashTable82.method2156((long) arg0);
+			local16 = (VarBitType) this.aSoftLruHashTable82.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -51,7 +51,7 @@ public final class VarBitTypeList {
 		@Pc(40) Js5 local40 = this.aJs553;
 		@Pc(53) byte[] local53;
 		synchronized (this.aJs553) {
-			local53 = this.aJs553.method7595(Static322.method9443(arg0), Static516.method6806(arg0));
+			local53 = this.aJs553.fetchFile(Static516.method6806(arg0), Static322.method9443(arg0));
 		}
 		local16 = new VarBitType();
 		if (local53 != null) {
@@ -59,7 +59,7 @@ public final class VarBitTypeList {
 		}
 		@Pc(77) SoftLruHashTable local77 = this.aSoftLruHashTable82;
 		synchronized (this.aSoftLruHashTable82) {
-			this.aSoftLruHashTable82.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable82.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -68,7 +68,7 @@ public final class VarBitTypeList {
 	public void method3428() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable82;
 		synchronized (this.aSoftLruHashTable82) {
-			this.aSoftLruHashTable82.method2147(5);
+			this.aSoftLruHashTable82.clean(5);
 		}
 	}
 
@@ -76,7 +76,7 @@ public final class VarBitTypeList {
 	public void method3429() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable82;
 		synchronized (this.aSoftLruHashTable82) {
-			this.aSoftLruHashTable82.method2157();
+			this.aSoftLruHashTable82.clear();
 		}
 	}
 }

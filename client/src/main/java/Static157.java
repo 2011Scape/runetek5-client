@@ -12,8 +12,8 @@ public final class Static157 {
 
 	@OriginalMember(owner = "client!eu", name = "f", descriptor = "(I)V")
 	public static void method2560() {
-		Static264.aSoftLruHashTable235.method2157();
-		Static123.aSoftLruHashTable53.method2157();
+		Static264.aSoftLruHashTable235.clear();
+		Static123.aSoftLruHashTable53.clear();
 	}
 
 	@OriginalMember(owner = "client!eu", name = "a", descriptor = "(IIIILclient!nda;)V")

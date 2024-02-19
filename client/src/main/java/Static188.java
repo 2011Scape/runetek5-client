@@ -181,49 +181,49 @@ public final class Static188 {
 	@OriginalMember(owner = "client!fq", name = "a", descriptor = "(ILclient!sb;)I")
 	public static int method2860(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
-		if (arg0.method7581(Static159.anInt2787)) {
+		if (arg0.isFileReady(Static159.anInt2787)) {
 			local5++;
 		}
-		if (arg0.method7581(Static434.anInt6579)) {
+		if (arg0.isFileReady(Static434.anInt6579)) {
 			local5++;
 		}
-		if (arg0.method7581(Static67.anInt6784)) {
+		if (arg0.isFileReady(Static67.anInt6784)) {
 			local5++;
 		}
-		if (arg0.method7581(Static304.anInt4876)) {
+		if (arg0.isFileReady(Static304.anInt4876)) {
 			local5++;
 		}
-		if (arg0.method7581(Static644.anInt9607)) {
+		if (arg0.isFileReady(Static644.anInt9607)) {
 			local5++;
 		}
-		if (arg0.method7581(Static699.anInt10540)) {
+		if (arg0.isFileReady(Static699.anInt10540)) {
 			local5++;
 		}
-		if (arg0.method7581(Static132.anInt2451)) {
+		if (arg0.isFileReady(Static132.anInt2451)) {
 			local5++;
 		}
-		if (arg0.method7581(Static270.anInt4355)) {
+		if (arg0.isFileReady(Static270.anInt4355)) {
 			local5++;
 		}
-		if (arg0.method7581(Static598.anInt8828)) {
+		if (arg0.isFileReady(Static598.anInt8828)) {
 			local5++;
 		}
-		if (arg0.method7581(Static305.anInt4883)) {
+		if (arg0.isFileReady(Static305.anInt4883)) {
 			local5++;
 		}
-		if (arg0.method7581(Static548.anInt8259)) {
+		if (arg0.isFileReady(Static548.anInt8259)) {
 			local5++;
 		}
-		if (arg0.method7581(Static113.anInt2238)) {
+		if (arg0.isFileReady(Static113.anInt2238)) {
 			local5++;
 		}
-		if (arg0.method7581(Static670.anInt10024)) {
+		if (arg0.isFileReady(Static670.anInt10024)) {
 			local5++;
 		}
-		if (arg0.method7581(Static286.anInt4592)) {
+		if (arg0.isFileReady(Static286.anInt4592)) {
 			local5++;
 		}
-		if (arg0.method7581(Static665.anInt9943)) {
+		if (arg0.isFileReady(Static665.anInt9943)) {
 			local5++;
 		}
 		return local5;

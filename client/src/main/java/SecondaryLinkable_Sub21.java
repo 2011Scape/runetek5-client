@@ -153,13 +153,13 @@ public final class SecondaryLinkable_Sub21 extends SecondaryLinkable {
 		@Pc(12) int local12;
 		if (Static426.anInt940 < 0) {
 			for (local12 = 0; local12 < this.anIntArray824.length; local12++) {
-				if (!arg0.method7581(this.anIntArray824[local12])) {
+				if (!arg0.isFileReady(this.anIntArray824[local12])) {
 					return false;
 				}
 			}
 		} else {
 			for (local12 = 0; local12 < this.anIntArray824.length; local12++) {
-				if (!arg0.method7586(this.anIntArray824[local12], Static426.anInt940)) {
+				if (!arg0.isFileReady(Static426.anInt940, this.anIntArray824[local12])) {
 					return false;
 				}
 			}

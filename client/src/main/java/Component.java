@@ -6,6 +6,11 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!hda")
 public final class Component {
 
+	@OriginalMember(owner = "client!ov", name = "c", descriptor = "Lclient!dla;")
+	public static final SoftLruHashTable spriteCache = new SoftLruHashTable(3000000, 200);
+	@OriginalMember(owner = "client!jt", name = "a", descriptor = "Lclient!dla;")
+	public static final SoftLruHashTable modelCache = new SoftLruHashTable(50);
+
 	@OriginalMember(owner = "client!hda", name = "M", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray1;
 
@@ -484,7 +489,7 @@ public final class Component {
 	public SoftwareIndexedSprite method3383(@OriginalArg(1) Class19 arg0) {
 		Static544.aBoolean624 = false;
 		@Pc(54) long local54 = ((long) this.anInt3798 << 40) + (((this.aBoolean292 ? 1L : 0L) << 35) + (long) this.anInt3810 - (-((long) this.anInt3773 << 36) + -((this.aBoolean291 ? 1L : 0L) << 38)) + ((this.aBoolean293 ? 1L : 0L) << 39));
-		@Pc(60) SoftwareIndexedSprite local60 = (SoftwareIndexedSprite) Static473.aSoftLruHashTable157.method2156(local54);
+		@Pc(60) SoftwareIndexedSprite local60 = (SoftwareIndexedSprite) spriteCache.get(local54);
 		if (local60 != null) {
 			return local60;
 		}
@@ -514,7 +519,7 @@ public final class Component {
 			local71.method9381(this.anInt3798 | 0xFF000000);
 		}
 		local60 = arg0.method7948(local71, true);
-		Static473.aSoftLruHashTable157.method2153(local54, local60, local60.method8199() * local60.method8182() * 4);
+		spriteCache.put(local54, local60, local60.method8199() * local60.method8182() * 4);
 		return local60;
 	}
 
@@ -852,11 +857,11 @@ public final class Component {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;I)Lclient!he;")
 	public Class159 method3393(@OriginalArg(0) Class19 arg0) {
 		@Pc(15) long local15 = (long) this.anInt3741 & 0xFFFFFFFFL | (long) this.anInt3812 << 32;
-		@Pc(21) Class159 local21 = (Class159) Static449.aSoftLruHashTable146.method2156(local15);
+		@Pc(21) Class159 local21 = (Class159) Static449.aSoftLruHashTable146.get(local15);
 		if (local21 != null) {
 			if (local21.anInt3836 != this.anInt3810) {
 				local21 = null;
-				Static449.aSoftLruHashTable146.method2154(local15);
+				Static449.aSoftLruHashTable146.remove(local15);
 			}
 			if (local21 != null) {
 				return local21;
@@ -893,7 +898,7 @@ public final class Component {
 			return null;
 		} else {
 			local21 = new Class159(local77, local86, local92, local89, local180, this.anInt3810);
-			Static449.aSoftLruHashTable146.method2150(local21, local15);
+			Static449.aSoftLruHashTable146.put(local15, local21);
 			return local21;
 		}
 	}
@@ -1017,7 +1022,7 @@ public final class Component {
 				arg9 |= 0x8000;
 			}
 			@Pc(271) long local271 = local53 & 0x3FFFFFFFFFL | (long) this.anInt3831 << 38 | (long) this.anInt3823 << 54 | (long) arg0.anInt8962 << 59;
-			@Pc(277) Model local277 = (Model) Static312.aSoftLruHashTable106.method2156(local271);
+			@Pc(277) Model local277 = (Model) modelCache.get(local271);
 			if (local277 == null || arg0.method7960(local277.ua(), arg9) != 0) {
 				if (local277 != null) {
 					arg9 = arg0.method8013(arg9, local277.ua());
@@ -1042,7 +1047,7 @@ public final class Component {
 						local277.aa(this.aShortArray58[local339], this.aShortArray56[local339]);
 					}
 				}
-				Static312.aSoftLruHashTable106.method2150(local277, local271);
+				modelCache.put(local271, local277);
 			}
 			if (arg1 != null) {
 				local277 = local277.method7495((byte) 1, arg9, true);
@@ -1140,10 +1145,10 @@ public final class Component {
 			return null;
 		}
 		@Pc(48) long local48 = (long) this.anInt3824 & 0xFFFFL | ((long) this.anInt3782 & 0xFFFFL) << 16 | ((long) this.anInt3763 & 0xFFFFL) << 48 | 0xFFFFL << 32 & (long) this.anInt3796 << 32;
-		@Pc(54) Class148 local54 = (Class148) Static444.aSoftLruHashTable145.method2156(local48);
+		@Pc(54) Class148 local54 = (Class148) Static444.aSoftLruHashTable145.get(local48);
 		if (local54 == null) {
 			local54 = arg1.method7072(arg0, this.anInt3782, this.anInt3824, this.anInt3796, this.anInt3763);
-			Static444.aSoftLruHashTable145.method2150(local54, local48);
+			Static444.aSoftLruHashTable145.put(local48, local54);
 		}
 		return local54;
 	}

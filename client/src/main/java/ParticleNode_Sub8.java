@@ -173,12 +173,12 @@ public final class ParticleNode_Sub8 extends ParticleNode {
 					} else {
 						local252 = (int) ((double) this.anInt8273 * Math.random()) + this.anInt8272;
 						local252 &= 0x3FFF;
-						local362 = LruHashTable.anIntArray741[local252];
-						local414 = LruHashTable.anIntArray740[local252];
+						local362 = Model.anIntArray741[local252];
+						local414 = Model.anIntArray740[local252];
 						local435 = this.anInt8276 + (int) ((double) this.anInt8274 * Math.random());
 						local435 &= 0x1FFF;
-						local577 = LruHashTable.anIntArray741[local435];
-						local581 = LruHashTable.anIntArray740[local435];
+						local577 = Model.anIntArray741[local435];
+						local581 = Model.anIntArray740[local435];
 						local218 = local414 * local577 >> 13;
 						local226 = (local581 << 1) * -1;
 						local235 = local577 * local362 >> 13;

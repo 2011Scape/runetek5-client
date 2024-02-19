@@ -51,8 +51,8 @@ public final class LocTypeList {
 		this.members = members;
 
 		if (this.configLocArchive != null) {
-			@Pc(53) int max = this.configLocArchive.method7597() - 1;
-			this.configLocArchive.method7608(max);
+			@Pc(53) int max = this.configLocArchive.capacity() - 1;
+			this.configLocArchive.getGroupCapacity(max);
 		}
 
 		if (ModeGame.GAME_RUNESCAPE == this.modeGame) {
@@ -66,22 +66,22 @@ public final class LocTypeList {
 	public void method3058() {
 		@Pc(2) SoftLruHashTable cache = this.locCache;
 		synchronized (cache) {
-			this.locCache.method2151();
+			this.locCache.removeSoft();
 		}
 
 		cache = this.aSoftLruHashTable74;
 		synchronized (cache) {
-			this.aSoftLruHashTable74.method2151();
+			this.aSoftLruHashTable74.removeSoft();
 		}
 
 		cache = this.aSoftLruHashTable75;
 		synchronized (cache) {
-			this.aSoftLruHashTable75.method2151();
+			this.aSoftLruHashTable75.removeSoft();
 		}
 
 		cache = this.aSoftLruHashTable76;
 		synchronized (cache) {
-			this.aSoftLruHashTable76.method2151();
+			this.aSoftLruHashTable76.removeSoft();
 		}
 	}
 
@@ -89,30 +89,30 @@ public final class LocTypeList {
 	public void setMembers(@OriginalArg(0) boolean members) {
 		if (members != this.members) {
 			this.members = members;
-			this.method3060();
+			this.clearCaches();
 		}
 	}
 
 	@OriginalMember(owner = "client!gea", name = "b", descriptor = "(I)V")
-	public void method3060() {
+	public void clearCaches() {
 		@Pc(14) SoftLruHashTable cache = this.locCache;
 		synchronized (cache) {
-			this.locCache.method2157();
+			this.locCache.clear();
 		}
 
 		cache = this.aSoftLruHashTable74;
 		synchronized (cache) {
-			this.aSoftLruHashTable74.method2157();
+			this.aSoftLruHashTable74.clear();
 		}
 
 		cache = this.aSoftLruHashTable75;
 		synchronized (cache) {
-			this.aSoftLruHashTable75.method2157();
+			this.aSoftLruHashTable75.clear();
 		}
 
 		cache = this.aSoftLruHashTable76;
 		synchronized (cache) {
-			this.aSoftLruHashTable76.method2157();
+			this.aSoftLruHashTable76.clear();
 		}
 	}
 
@@ -120,12 +120,12 @@ public final class LocTypeList {
 	public void setLowDetail(@OriginalArg(1) boolean lowDetail) {
 		if (lowDetail != this.lowDetail) {
 			this.lowDetail = lowDetail;
-			this.method3060();
+			this.clearCaches();
 		}
 	}
 
 	@OriginalMember(owner = "client!gea", name = "a", descriptor = "(II)V")
-	public void method3062(@OriginalArg(1) int capacity) {
+	public void initCache(@OriginalArg(1) int capacity) {
 		this.locCache = new SoftLruHashTable(capacity);
 	}
 
@@ -135,7 +135,7 @@ public final class LocTypeList {
 
 		@Pc(22) LocType type;
 		synchronized (locCache) {
-			type = (LocType) this.locCache.method2156(id);
+			type = (LocType) this.locCache.get(id);
 		}
 
 		if (type != null) {
@@ -145,7 +145,7 @@ public final class LocTypeList {
 		@Pc(36) Js5 configLocArchive = this.configLocArchive;
 		@Pc(49) byte[] data;
 		synchronized (configLocArchive) {
-			data = this.configLocArchive.method7595(Static570.method7551(id), Static705.method9197(id));
+			data = this.configLocArchive.fetchFile(Static705.method9197(id), Static570.method7551(id));
 		}
 
 		type = new LocType();
@@ -170,51 +170,51 @@ public final class LocTypeList {
 		}
 
 		synchronized (locCache) {
-			this.locCache.method2150(type, id);
+			this.locCache.put(id, type);
 			return type;
 		}
 	}
 
 	@OriginalMember(owner = "client!gea", name = "c", descriptor = "(II)V")
-	public void method3064() {
+	public void cleanCaches() {
 		@Pc(11) SoftLruHashTable cache = this.locCache;
 		synchronized (cache) {
-			this.locCache.method2147(5);
+			this.locCache.clean(5);
 		}
 
 		cache = this.aSoftLruHashTable74;
 		synchronized (cache) {
-			this.aSoftLruHashTable74.method2147(5);
+			this.aSoftLruHashTable74.clean(5);
 		}
 
 		cache = this.aSoftLruHashTable75;
 		synchronized (cache) {
-			this.aSoftLruHashTable75.method2147(5);
+			this.aSoftLruHashTable75.clean(5);
 		}
 
 		cache = this.aSoftLruHashTable76;
 		synchronized (cache) {
-			this.aSoftLruHashTable76.method2147(5);
+			this.aSoftLruHashTable76.clean(5);
 		}
 	}
 
 	@OriginalMember(owner = "client!gea", name = "b", descriptor = "(II)V")
-	public void method3065(@OriginalArg(0) int arg0) {
+	public void clearCaches(@OriginalArg(0) int arg0) {
 		this.anInt3390 = arg0;
 
 		@Pc(9) SoftLruHashTable cache = this.aSoftLruHashTable74;
 		synchronized (cache) {
-			this.aSoftLruHashTable74.method2157();
+			this.aSoftLruHashTable74.clear();
 		}
 
 		cache = this.aSoftLruHashTable75;
 		synchronized (cache) {
-			this.aSoftLruHashTable75.method2157();
+			this.aSoftLruHashTable75.clear();
 		}
 
 		cache = this.aSoftLruHashTable76;
 		synchronized (cache) {
-			this.aSoftLruHashTable76.method2157();
+			this.aSoftLruHashTable76.clear();
 		}
 	}
 }

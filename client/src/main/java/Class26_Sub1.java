@@ -22,7 +22,7 @@ public final class Class26_Sub1 extends Class26 {
 		this.aClass19_Sub1_Sub2_1 = arg0;
 		this.aClass7_2 = arg2;
 		if (arg1 != null && this.aClass7_2.method116() && this.aClass19_Sub1_Sub2_1.aBoolean708) {
-			this.aClass135_1 = Static294.method4338(this.aClass19_Sub1_Sub2_1, arg1.method7600("gl", "transparent_water"));
+			this.aClass135_1 = Static294.method4338(this.aClass19_Sub1_Sub2_1, arg1.fetchFile("gl", "transparent_water"));
 		} else {
 			this.aClass135_1 = null;
 		}

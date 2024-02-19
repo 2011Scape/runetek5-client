@@ -44,7 +44,7 @@ public final class Class3 {
 
 	@OriginalMember(owner = "client!aba", name = "<init>", descriptor = "(Lclient!sb;)V")
 	public Class3(@OriginalArg(0) Js5 arg0) {
-		@Pc(30) byte[] local30 = arg0.method7589(3);
+		@Pc(30) byte[] local30 = arg0.fetchFile(3);
 		this.method93(new Packet(local30));
 	}
 

@@ -7,189 +7,199 @@ import org.openrs2.deob.annotation.Pc;
 public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!dla", name = "j", descriptor = "Lclient!jga;")
-	private final SecondaryLinkedList aSecondaryLinkedList5;
+	private final SecondaryLinkedList queue;
 
 	@OriginalMember(owner = "client!dla", name = "h", descriptor = "I")
-	private int anInt2281;
+	private int available;
 
 	@OriginalMember(owner = "client!dla", name = "r", descriptor = "Lclient!av;")
-	private final HashTable aHashTable13;
+	private final HashTable table;
 
 	@OriginalMember(owner = "client!dla", name = "c", descriptor = "I")
-	private final int anInt2285;
+	private final int capacity;
 
 	@OriginalMember(owner = "client!dla", name = "<init>", descriptor = "(I)V")
-	public SoftLruHashTable(@OriginalArg(0) int arg0) {
-		this(arg0, arg0);
+	public SoftLruHashTable(@OriginalArg(0) int capacity) {
+		this(capacity, capacity);
 	}
 
 	@OriginalMember(owner = "client!dla", name = "<init>", descriptor = "(II)V")
-	public SoftLruHashTable(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.aSecondaryLinkedList5 = new SecondaryLinkedList();
-		this.anInt2285 = arg0;
-		this.anInt2281 = arg0;
-		@Pc(14) int local14;
-		for (local14 = 1; arg0 > local14 + local14 && local14 < arg1; local14 += local14) {
+	public SoftLruHashTable(@OriginalArg(0) int capacity, @OriginalArg(1) int initial) {
+		this.queue = new SecondaryLinkedList();
+		this.capacity = capacity;
+		this.available = capacity;
+		@Pc(14) int bucketCount;
+		for (bucketCount = 1; capacity > bucketCount + bucketCount && bucketCount < initial; bucketCount += bucketCount) {
 		}
-		this.aHashTable13 = new HashTable(local14);
+		this.table = new HashTable(bucketCount);
 	}
 
 	@OriginalMember(owner = "client!dla", name = "c", descriptor = "(I)I")
-	public int method2144() {
-		return this.anInt2281;
+	public int getAvailable() {
+		return this.available;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "b", descriptor = "(I)Ljava/lang/Object;")
-	public Object method2145() {
-		@Pc(19) ReferenceNode local19 = (ReferenceNode) this.aHashTable13.head();
-		while (local19 != null) {
-			@Pc(25) Object local25 = local19.method9268();
-			if (local25 != null) {
-				return local25;
+	public Object clean() {
+		@Pc(19) ReferenceNode node = (ReferenceNode) this.table.head();
+		while (node != null) {
+			@Pc(25) Object value = node.get();
+			if (value != null) {
+				return value;
 			}
-			@Pc(29) ReferenceNode local29 = local19;
-			local19 = (ReferenceNode) this.aHashTable13.next();
-			local29.unlink();
-			local29.unlinkSecondary();
-			this.anInt2281 += local29.anInt10683;
+
+			@Pc(29) ReferenceNode reference = node;
+			node = (ReferenceNode) this.table.next();
+			reference.unlink();
+			reference.unlinkSecondary();
+			this.available += reference.size;
 		}
+
 		return null;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "d", descriptor = "(I)I")
-	public int method2146() {
-		return this.anInt2285;
+	public int getCapacity() {
+		return this.capacity;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(II)V")
-	public void method2147(@OriginalArg(0) int arg0) {
-		if (Static443.aReferenceNodeFactory1 == null) {
+	public void clean(@OriginalArg(0) int maxAge) {
+		if (ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY == null) {
 			return;
 		}
-		for (@Pc(15) ReferenceNode local15 = (ReferenceNode) this.aSecondaryLinkedList5.head(); local15 != null; local15 = (ReferenceNode) this.aSecondaryLinkedList5.next()) {
-			if (local15.method9270()) {
-				if (local15.method9268() == null) {
-					local15.unlink();
-					local15.unlinkSecondary();
-					this.anInt2281 += local15.anInt10683;
+
+		for (@Pc(15) ReferenceNode node = (ReferenceNode) this.queue.head(); node != null; node = (ReferenceNode) this.queue.next()) {
+			if (node.isSoft()) {
+				if (node.get() == null) {
+					node.unlink();
+					node.unlinkSecondary();
+					this.available += node.size;
 				}
-			} else if (++local15.secondaryKey > (long) arg0) {
-				@Pc(42) ReferenceNode local42 = Static443.aReferenceNodeFactory1.method4433(local15);
-				this.aHashTable13.put(local15.id, local42);
-				Static409.method5654(local15, local42);
-				local15.unlink();
-				local15.unlinkSecondary();
+			} else if (++node.secondaryKey > (long) maxAge) {
+				@Pc(42) ReferenceNode softNode = ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY.create(node);
+				this.table.put(node.id, softNode);
+				SecondaryLinkedList.insertAfter(node, softNode);
+				node.unlink();
+				node.unlinkSecondary();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!dla", name = "b", descriptor = "(B)I")
-	public int method2148() {
-		@Pc(5) int local5 = 0;
-		for (@Pc(11) ReferenceNode local11 = (ReferenceNode) this.aSecondaryLinkedList5.head(); local11 != null; local11 = (ReferenceNode) this.aSecondaryLinkedList5.next()) {
-			if (!local11.method9270()) {
-				local5++;
+	public int size() {
+		@Pc(5) int size = 0;
+		for (@Pc(11) ReferenceNode node = (ReferenceNode) this.queue.head(); node != null; node = (ReferenceNode) this.queue.next()) {
+			if (!node.isSoft()) {
+				size++;
 			}
 		}
-		return local5;
+		return size;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(ILclient!vw;)V")
-	private void method2149(@OriginalArg(1) ReferenceNode arg0) {
-		if (arg0 != null) {
-			arg0.unlink();
-			arg0.unlinkSecondary();
-			this.anInt2281 += arg0.anInt10683;
+	private void remove(@OriginalArg(1) ReferenceNode node) {
+		if (node != null) {
+			node.unlink();
+			node.unlinkSecondary();
+			this.available += node.size;
 		}
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(Ljava/lang/Object;IJ)V")
-	public void method2150(@OriginalArg(0) Object arg0, @OriginalArg(2) long arg1) {
-		this.method2153(arg1, arg0, 1);
+	public void put(@OriginalArg(2) long key, @OriginalArg(0) Object value) {
+		this.put(key, value, 1);
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(B)V")
-	public void method2151() {
-		for (@Pc(14) ReferenceNode local14 = (ReferenceNode) this.aSecondaryLinkedList5.head(); local14 != null; local14 = (ReferenceNode) this.aSecondaryLinkedList5.next()) {
-			if (local14.method9270()) {
-				local14.unlink();
-				local14.unlinkSecondary();
-				this.anInt2281 += local14.anInt10683;
+	public void removeSoft() {
+		for (@Pc(14) ReferenceNode node = (ReferenceNode) this.queue.head(); node != null; node = (ReferenceNode) this.queue.next()) {
+			if (node.isSoft()) {
+				node.unlink();
+				node.unlinkSecondary();
+				this.available += node.size;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!dla", name = "c", descriptor = "(B)Ljava/lang/Object;")
 	public Object method2152() {
-		@Pc(19) ReferenceNode local19 = (ReferenceNode) this.aHashTable13.next();
-		while (local19 != null) {
-			@Pc(25) Object local25 = local19.method9268();
-			if (local25 != null) {
-				return local25;
+		@Pc(19) ReferenceNode node = (ReferenceNode) this.table.next();
+		while (node != null) {
+			@Pc(25) Object value = node.get();
+			if (value != null) {
+				return value;
 			}
-			@Pc(29) ReferenceNode local29 = local19;
-			local19 = (ReferenceNode) this.aHashTable13.next();
-			local29.unlink();
-			local29.unlinkSecondary();
-			this.anInt2281 += local29.anInt10683;
+
+			@Pc(29) ReferenceNode refNode = node;
+			node = (ReferenceNode) this.table.next();
+			refNode.unlink();
+			refNode.unlinkSecondary();
+			this.available += refNode.size;
 		}
+
 		return null;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(JLjava/lang/Object;II)V")
-	public void method2153(@OriginalArg(0) long arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) int arg2) {
-		if (arg2 > this.anInt2285) {
+	public void put(@OriginalArg(0) long key, @OriginalArg(1) Object value, @OriginalArg(2) int size) {
+		if (size > this.capacity) {
 			throw new IllegalStateException("s>cs");
 		}
-		this.method2154(arg0);
-		this.anInt2281 -= arg2;
-		while (this.anInt2281 < 0) {
-			@Pc(32) ReferenceNode local32 = (ReferenceNode) this.aSecondaryLinkedList5.removeTail();
-			this.method2149(local32);
+
+		this.remove(key);
+		this.available -= size;
+		while (this.available < 0) {
+			@Pc(32) ReferenceNode ref = (ReferenceNode) this.queue.removeTail();
+			this.remove(ref);
 		}
-		@Pc(48) HardReferenceNode local48 = new HardReferenceNode(arg1, arg2);
-		this.aHashTable13.put(arg0, local48);
-		this.aSecondaryLinkedList5.addTail(local48);
-		local48.secondaryKey = 0L;
+
+		@Pc(48) HardReferenceNode hardRef = new HardReferenceNode(value, size);
+		this.table.put(key, hardRef);
+		this.queue.addTail(hardRef);
+		hardRef.secondaryKey = 0L;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(JI)V")
-	public void method2154(@OriginalArg(0) long arg0) {
-		@Pc(15) ReferenceNode local15 = (ReferenceNode) this.aHashTable13.get(arg0);
-		this.method2149(local15);
+	public void remove(@OriginalArg(0) long key) {
+		@Pc(15) ReferenceNode node = (ReferenceNode) this.table.get(key);
+		this.remove(node);
 	}
 
 	@OriginalMember(owner = "client!dla", name = "b", descriptor = "(JI)Ljava/lang/Object;")
-	public Object method2156(@OriginalArg(0) long arg0) {
-		@Pc(12) ReferenceNode local12 = (ReferenceNode) this.aHashTable13.get(arg0);
-		if (local12 == null) {
+	public Object get(@OriginalArg(0) long key) {
+		@Pc(12) ReferenceNode node = (ReferenceNode) this.table.get(key);
+		if (node == null) {
 			return null;
 		}
-		@Pc(26) Object local26 = local12.method9268();
-		if (local26 == null) {
-			local12.unlink();
-			local12.unlinkSecondary();
-			this.anInt2281 += local12.anInt10683;
+
+		@Pc(26) Object value = node.get();
+		if (value == null) {
+			node.unlink();
+			node.unlinkSecondary();
+			this.available += node.size;
 			return null;
 		}
-		if (local12.method9270()) {
-			@Pc(65) HardReferenceNode local65 = new HardReferenceNode(local26, local12.anInt10683);
-			this.aHashTable13.put(local12.id, local65);
-			this.aSecondaryLinkedList5.addTail(local65);
-			local65.secondaryKey = 0L;
-			local12.unlink();
-			local12.unlinkSecondary();
+
+		if (node.isSoft()) {
+			@Pc(65) HardReferenceNode hardNode = new HardReferenceNode(value, node.size);
+			this.table.put(node.id, hardNode);
+			this.queue.addTail(hardNode);
+			hardNode.secondaryKey = 0L;
+			node.unlink();
+			node.unlinkSecondary();
 		} else {
-			this.aSecondaryLinkedList5.addTail(local12);
-			local12.secondaryKey = 0L;
+			this.queue.addTail(node);
+			node.secondaryKey = 0L;
 		}
-		return local26;
+
+		return value;
 	}
 
 	@OriginalMember(owner = "client!dla", name = "a", descriptor = "(Z)V")
-	public void method2157() {
-		this.aSecondaryLinkedList5.clear();
-		this.aHashTable13.clear();
-		this.anInt2281 = this.anInt2285;
+	public void clear() {
+		this.queue.clear();
+		this.table.clear();
+		this.available = this.capacity;
 	}
 }

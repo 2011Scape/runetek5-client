@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static443 {
 
-	@OriginalMember(owner = "client!nw", name = "k", descriptor = "Lclient!gh;")
-	public static final ReferenceNodeFactory aReferenceNodeFactory1 = Static638.method8396();
-
 	@OriginalMember(owner = "client!nw", name = "a", descriptor = "(Z)V")
 	public static void method5981() {
 		if (Static377.anInt5930 == -1) {

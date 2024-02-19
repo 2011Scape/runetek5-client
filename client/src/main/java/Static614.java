@@ -39,9 +39,9 @@ public final class Static614 {
 		Static467.aFloTypeList3.method2355();
 		Static540.aFluTypeList6.method2073();
 		Static68.aIdkTypeList3.method5045();
-		Static354.aLocTypeList4.method3064();
+		Static354.aLocTypeList4.cleanCaches();
 		Static690.aNpcTypeList2.method7085();
-		Static419.aObjTypeList1.method2479();
+		ObjTypeList.objTypes.method2479();
 		Static25.aSeqTypeList1.method1163();
 		Static23.aSpotAnimTypeList1.method2698();
 		Static529.aVarBitTypeList1.method3428();
@@ -64,10 +64,10 @@ public final class Static614 {
 		Static402.method5580();
 		Static198.method2951();
 		Static194.method2907();
-		Static230.aSoftLruHashTable81.method2147(5);
-		Static669.aSoftLruHashTable215.method2147(5);
-		Static541.aSoftLruHashTable174.method2147(5);
-		Static452.aSoftLruHashTable149.method2147(5);
-		Static472.aSoftLruHashTable156.method2147(5);
+		Static230.aSoftLruHashTable81.clean(5);
+		Static669.aSoftLruHashTable215.clean(5);
+		Static541.aSoftLruHashTable174.clean(5);
+		Static452.aSoftLruHashTable149.clean(5);
+		Static472.aSoftLruHashTable156.clean(5);
 	}
 }

@@ -7,23 +7,24 @@ import org.openrs2.deob.annotation.Pc;
 public final class InvType extends SecondaryLinkable {
 
 	@OriginalMember(owner = "client!dba", name = "v", descriptor = "I")
-	public int anInt2072 = 0;
+	public int size = 0;
 
 	@OriginalMember(owner = "client!dba", name = "a", descriptor = "(ILclient!ge;B)V")
-	private void method1978(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
-		if (arg0 == 2) {
-			this.anInt2072 = arg1.g2();
+	private void decode(@OriginalArg(1) Packet buf, @OriginalArg(0) int opcode) {
+		if (opcode == 2) {
+			this.size = buf.g2();
 		}
 	}
 
 	@OriginalMember(owner = "client!dba", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method1979(@OriginalArg(0) Packet arg0) {
+	public void decode(@OriginalArg(0) Packet buf) {
 		while (true) {
-			@Pc(11) int local11 = arg0.g1();
-			if (local11 == 0) {
+			@Pc(11) int opcode = buf.g1();
+			if (opcode == 0) {
 				return;
 			}
-			this.method1978(local11, arg0);
+
+			this.decode(buf, opcode);
 		}
 	}
 }

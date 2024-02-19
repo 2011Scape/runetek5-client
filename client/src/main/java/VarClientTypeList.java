@@ -18,7 +18,7 @@ public final class VarClientTypeList {
 	@OriginalMember(owner = "client!kka", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public VarClientTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs567 = arg2;
-		this.anInt5473 = this.aJs567.method7608(19);
+		this.anInt5473 = this.aJs567.getGroupCapacity(19);
 	}
 
 	@OriginalMember(owner = "client!kka", name = "a", descriptor = "(II)Lclient!paa;")
@@ -26,7 +26,7 @@ public final class VarClientTypeList {
 		@Pc(12) SoftLruHashTable local12 = this.aSoftLruHashTable112;
 		@Pc(22) VarClientType local22;
 		synchronized (this.aSoftLruHashTable112) {
-			local22 = (VarClientType) this.aSoftLruHashTable112.method2156((long) arg0);
+			local22 = (VarClientType) this.aSoftLruHashTable112.get((long) arg0);
 		}
 		if (local22 != null) {
 			return local22;
@@ -34,7 +34,7 @@ public final class VarClientTypeList {
 		@Pc(36) Js5 local36 = this.aJs567;
 		@Pc(45) byte[] local45;
 		synchronized (this.aJs567) {
-			local45 = this.aJs567.method7595(arg0, 19);
+			local45 = this.aJs567.fetchFile(19, arg0);
 		}
 		local22 = new VarClientType();
 		if (local45 != null) {
@@ -42,7 +42,7 @@ public final class VarClientTypeList {
 		}
 		@Pc(69) SoftLruHashTable local69 = this.aSoftLruHashTable112;
 		synchronized (this.aSoftLruHashTable112) {
-			this.aSoftLruHashTable112.method2150(local22, (long) arg0);
+			this.aSoftLruHashTable112.put((long) arg0, local22);
 			return local22;
 		}
 	}

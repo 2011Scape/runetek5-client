@@ -31,7 +31,7 @@ public final class Class90_Sub3 extends Class90 {
 	@OriginalMember(owner = "client!lq", name = "b", descriptor = "(I)Z")
 	@Override
 	public boolean method7747() {
-		return super.method7747() ? super.aJs5109.method7581(((Class138_Sub2) super.aClass138_5).anInt3438) : false;
+		return super.method7747() ? super.aJs5109.isFileReady(((Class138_Sub2) super.aClass138_5).anInt3438) : false;
 	}
 
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(IIZI)V")

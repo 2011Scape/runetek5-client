@@ -80,7 +80,7 @@ public final class Static385 {
 		for (@Pc(21) SecondaryLinkable_Sub4 local21 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.head(); local21 != null; local21 = (SecondaryLinkable_Sub4) Static350.aSecondaryLinkedList8.next()) {
 			if (Static546.method7250(arg0.method1468(), local21.method1468())) {
 				local5 = true;
-				Static409.method5654(local21, arg0);
+				SecondaryLinkedList.insertAfter(local21, arg0);
 				break;
 			}
 		}

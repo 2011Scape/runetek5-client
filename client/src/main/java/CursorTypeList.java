@@ -22,18 +22,18 @@ public final class CursorTypeList {
 	public CursorTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs588 = arg3;
 		this.aJs589 = arg2;
-		this.aJs589.method7608(33);
+		this.aJs589.getGroupCapacity(33);
 	}
 
 	@OriginalMember(owner = "client!nv", name = "b", descriptor = "(II)V")
 	public void method5970() {
 		@Pc(11) SoftLruHashTable local11 = this.aSoftLruHashTable142;
 		synchronized (this.aSoftLruHashTable142) {
-			this.aSoftLruHashTable142.method2147(5);
+			this.aSoftLruHashTable142.clean(5);
 		}
 		local11 = this.aSoftLruHashTable143;
 		synchronized (this.aSoftLruHashTable143) {
-			this.aSoftLruHashTable143.method2147(5);
+			this.aSoftLruHashTable143.clean(5);
 		}
 	}
 
@@ -41,11 +41,11 @@ public final class CursorTypeList {
 	public void method5972() {
 		@Pc(9) SoftLruHashTable local9 = this.aSoftLruHashTable142;
 		synchronized (this.aSoftLruHashTable142) {
-			this.aSoftLruHashTable142.method2151();
+			this.aSoftLruHashTable142.removeSoft();
 		}
 		local9 = this.aSoftLruHashTable143;
 		synchronized (this.aSoftLruHashTable143) {
-			this.aSoftLruHashTable143.method2151();
+			this.aSoftLruHashTable143.removeSoft();
 		}
 	}
 
@@ -54,7 +54,7 @@ public final class CursorTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable142;
 		@Pc(18) CursorType local18;
 		synchronized (this.aSoftLruHashTable142) {
-			local18 = (CursorType) this.aSoftLruHashTable142.method2156((long) arg0);
+			local18 = (CursorType) this.aSoftLruHashTable142.get((long) arg0);
 		}
 		if (local18 != null) {
 			return local18;
@@ -62,7 +62,7 @@ public final class CursorTypeList {
 		@Pc(32) Js5 local32 = this.aJs589;
 		@Pc(41) byte[] local41;
 		synchronized (this.aJs589) {
-			local41 = this.aJs589.method7595(arg0, 33);
+			local41 = this.aJs589.fetchFile(33, arg0);
 		}
 		local18 = new CursorType();
 		local18.aCursorTypeList2 = this;
@@ -71,7 +71,7 @@ public final class CursorTypeList {
 		}
 		@Pc(70) SoftLruHashTable local70 = this.aSoftLruHashTable142;
 		synchronized (this.aSoftLruHashTable142) {
-			this.aSoftLruHashTable142.method2150(local18, (long) arg0);
+			this.aSoftLruHashTable142.put((long) arg0, local18);
 			return local18;
 		}
 	}
@@ -80,11 +80,11 @@ public final class CursorTypeList {
 	public void method5974() {
 		@Pc(7) SoftLruHashTable local7 = this.aSoftLruHashTable142;
 		synchronized (this.aSoftLruHashTable142) {
-			this.aSoftLruHashTable142.method2157();
+			this.aSoftLruHashTable142.clear();
 		}
 		local7 = this.aSoftLruHashTable143;
 		synchronized (this.aSoftLruHashTable143) {
-			this.aSoftLruHashTable143.method2157();
+			this.aSoftLruHashTable143.clear();
 		}
 	}
 }

@@ -10,7 +10,7 @@ public final class Static170 {
 	@OriginalMember(owner = "client!fea", name = "a", descriptor = "(IB)V")
 	public static void method2651(@OriginalArg(0) int arg0) {
 		Static584.anInt8635 = arg0;
-		Static166.aSoftLruHashTable59.method2157();
+		Static166.aSoftLruHashTable59.clear();
 	}
 
 	@OriginalMember(owner = "client!fea", name = "a", descriptor = "(BI)V")

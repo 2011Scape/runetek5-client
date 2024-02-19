@@ -572,7 +572,7 @@ public final class ObjType {
 		@Pc(414) Class73 local414 = arg6.method7985();
 		local414.method7132(-this.anInt10094 << 3);
 		local414.method7127(this.anInt10096 << 3);
-		local414.method7134(this.anInt10126 << 2, (LruHashTable.anIntArray741[this.anInt10107 << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (LruHashTable.anIntArray740[this.anInt10107 << 3] * local363 >> 14) - -(this.anInt10099 << 2));
+		local414.method7134(this.anInt10126 << 2, (Model.anIntArray741[this.anInt10107 << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (Model.anIntArray740[this.anInt10107 << 3] * local363 >> 14) - -(this.anInt10099 << 2));
 		local414.method7130(this.anInt10107 << 3);
 		@Pc(480) int local480 = arg6.i();
 		@Pc(483) int local483 = arg6.XA();
@@ -793,13 +793,13 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(88) boolean local88 = true;
-		if (!this.aObjTypeList2.aJs528.method7586(0, local17)) {
+		if (!this.aObjTypeList2.aJs528.isFileReady(local17, 0)) {
 			local88 = false;
 		}
-		if (local23 != -1 && !this.aObjTypeList2.aJs528.method7586(0, local23)) {
+		if (local23 != -1 && !this.aObjTypeList2.aJs528.isFileReady(local23, 0)) {
 			local88 = false;
 		}
-		if (local20 != -1 && !this.aObjTypeList2.aJs528.method7586(0, local20)) {
+		if (local20 != -1 && !this.aObjTypeList2.aJs528.isFileReady(local20, 0)) {
 			local88 = false;
 		}
 		return local88;
@@ -850,7 +850,7 @@ public final class ObjType {
 		@Pc(87) SoftLruHashTable local87 = this.aObjTypeList2.aSoftLruHashTable58;
 		@Pc(104) Model local104;
 		synchronized (this.aObjTypeList2.aSoftLruHashTable58) {
-			local104 = (Model) this.aObjTypeList2.aSoftLruHashTable58.method2156((long) (this.anInt10134 | arg4.anInt8962 << 29));
+			local104 = (Model) this.aObjTypeList2.aSoftLruHashTable58.get((long) (this.anInt10134 | arg4.anInt8962 << 29));
 		}
 		if (local104 == null || arg4.method7960(local104.ua(), local17) != 0) {
 			if (local104 != null) {
@@ -910,7 +910,7 @@ public final class ObjType {
 			local104.s(local17);
 			@Pc(426) SoftLruHashTable local426 = this.aObjTypeList2.aSoftLruHashTable58;
 			synchronized (this.aObjTypeList2.aSoftLruHashTable58) {
-				this.aObjTypeList2.aSoftLruHashTable58.method2150(local104, (long) (this.anInt10134 | arg4.anInt8962 << 29));
+				this.aObjTypeList2.aSoftLruHashTable58.put((long) (this.anInt10134 | arg4.anInt8962 << 29), local104);
 			}
 		}
 		if (arg0 != null) {
@@ -948,10 +948,10 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(71) boolean local71 = true;
-		if (!this.aObjTypeList2.aJs528.method7586(0, local19)) {
+		if (!this.aObjTypeList2.aJs528.isFileReady(local19, 0)) {
 			local71 = false;
 		}
-		if (local22 != -1 && !this.aObjTypeList2.aJs528.method7586(0, local22)) {
+		if (local22 != -1 && !this.aObjTypeList2.aJs528.isFileReady(local22, 0)) {
 			local71 = false;
 		}
 		return local71;

@@ -117,10 +117,10 @@ public final class Static266 {
 						}
 					}
 					Static89.anIntArray169[local22] = local113;
-					Static267.anIntArray329[local22] = Static93.aJs516.method7590("m" + local107 + "_" + local110);
-					anIntArray615[local22] = Static93.aJs516.method7590("l" + local107 + "_" + local110);
-					Static68.anIntArray316[local22] = Static93.aJs516.method7590("um" + local107 + "_" + local110);
-					Static298.anIntArray367[local22] = Static93.aJs516.method7590("ul" + local107 + "_" + local110);
+					Static267.anIntArray329[local22] = Static93.aJs516.getGroupId("m" + local107 + "_" + local110);
+					anIntArray615[local22] = Static93.aJs516.getGroupId("l" + local107 + "_" + local110);
+					Static68.anIntArray316[local22] = Static93.aJs516.getGroupId("um" + local107 + "_" + local110);
+					Static298.anIntArray367[local22] = Static93.aJs516.getGroupId("ul" + local107 + "_" + local110);
 					local22++;
 				}
 			}

@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class DirectByteArray extends ByteArray {
 
 	@OriginalMember(owner = "client!id", name = "g", descriptor = "Ljava/nio/ByteBuffer;")
-	private ByteBuffer aByteBuffer1;
+	private ByteBuffer buffer;
 
 	@OriginalMember(owner = "client!id", name = "<init>", descriptor = "()V")
 	private DirectByteArray() {
@@ -16,27 +16,27 @@ public final class DirectByteArray extends ByteArray {
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "([BI)V")
 	@Override
-	public void method3849(@OriginalArg(0) byte[] arg0) {
-		this.aByteBuffer1 = ByteBuffer.allocateDirect(arg0.length);
-		this.aByteBuffer1.position(0);
-		this.aByteBuffer1.put(arg0);
+	public void set(@OriginalArg(0) byte[] src) {
+		this.buffer = ByteBuffer.allocateDirect(src.length);
+		this.buffer.position(0);
+		this.buffer.put(src);
 	}
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(BII)[B")
 	@Override
-	public byte[] method3848(@OriginalArg(2) int arg0) {
-		@Pc(2) byte[] local2 = new byte[32768];
-		this.aByteBuffer1.position(arg0);
-		this.aByteBuffer1.get(local2, 0, 32768);
-		return local2;
+	public byte[] method3848(@OriginalArg(2) int pos) {
+		@Pc(2) byte[] src = new byte[32768];
+		this.buffer.position(pos);
+		this.buffer.get(src, 0, 32768);
+		return src;
 	}
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(B)[B")
 	@Override
-	public byte[] method3850() {
-		@Pc(4) byte[] local4 = new byte[this.aByteBuffer1.capacity()];
-		this.aByteBuffer1.position(0);
-		this.aByteBuffer1.get(local4);
-		return local4;
+	public byte[] get() {
+		@Pc(4) byte[] src = new byte[this.buffer.capacity()];
+		this.buffer.position(0);
+		this.buffer.get(src);
+		return src;
 	}
 }

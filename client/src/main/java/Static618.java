@@ -93,7 +93,7 @@ public final class Static618 {
 		@Pc(60) SoftLruHashTable local60 = Static354.aSoftLruHashTable120;
 		@Pc(68) Model local68;
 		synchronized (Static354.aSoftLruHashTable120) {
-			local68 = (Model) Static354.aSoftLruHashTable120.method2156(local58);
+			local68 = (Model) Static354.aSoftLruHashTable120.get(local58);
 		}
 		if (local68 == null || arg6.method7960(local68.ua(), local12) != 0) {
 			if (local68 != null) {
@@ -124,8 +124,8 @@ public final class Static618 {
 				local185 = local143[local175];
 				for (local187 = 0; local187 < local106; local187++) {
 					@Pc(195) int local195 = (local187 << 14) / local106;
-					@Pc(203) int local203 = LruHashTable.anIntArray741[local195] * local181 >> 14;
-					local211 = local185 * LruHashTable.anIntArray740[local195] >> 14;
+					@Pc(203) int local203 = Model.anIntArray741[local195] * local181 >> 14;
+					local211 = local185 * Model.anIntArray740[local195] >> 14;
 					local173[local175][local187] = local162.method2230(local211, 0, local203);
 				}
 			}
@@ -146,7 +146,7 @@ public final class Static618 {
 			local68 = arg6.method7952(local162, local12, Static722.anInt10905, 64, 768);
 			@Pc(440) SoftLruHashTable local440 = Static354.aSoftLruHashTable120;
 			synchronized (Static354.aSoftLruHashTable120) {
-				Static354.aSoftLruHashTable120.method2150(local68, local58);
+				Static354.aSoftLruHashTable120.put(local58, local68);
 			}
 		}
 		@Pc(456) int local456 = arg1.V();

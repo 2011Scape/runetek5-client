@@ -78,7 +78,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 			if (local14 == null) {
 				if (this.aBoolean795) {
 					this.unlink();
-					Static341.aLruHashTable1.method8345();
+					Static341.aLruHashTable1.clear();
 				}
 				return;
 			}
@@ -94,12 +94,12 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(IDI)Lclient!dk;")
 	public SecondaryLinkable_Sub8 method9142(@OriginalArg(0) int arg0, @OriginalArg(1) double arg1) {
 		@Pc(11) long local11 = (long) (arg0 | this.anInt10521 << 0);
-		@Pc(17) SecondaryLinkable_Sub8 local17 = (SecondaryLinkable_Sub8) Static341.aLruHashTable1.method8342(local11);
+		@Pc(17) SecondaryLinkable_Sub8 local17 = (SecondaryLinkable_Sub8) Static341.aLruHashTable1.get(local11);
 		if (local17 == null) {
 			local17 = new SecondaryLinkable_Sub8(new short[this.anInt10521][arg0], arg1);
 		} else {
 			local17.aDouble10 = arg1;
-			Static341.aLruHashTable1.method8344(local11);
+			Static341.aLruHashTable1.remove(local11);
 		}
 		return local17;
 	}
@@ -124,7 +124,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 			local7.unlink();
 			this.anInt10535--;
 			this.anInt10536 = 0;
-			Static341.aLruHashTable1.method8341(local7, local7.method2133());
+			Static341.aLruHashTable1.method8341(local7.method2133(), local7);
 		}
 	}
 
@@ -193,7 +193,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 			}
 		} else if (this.aBoolean795) {
 			this.unlink();
-			Static341.aLruHashTable1.method8345();
+			Static341.aLruHashTable1.clear();
 		}
 	}
 }

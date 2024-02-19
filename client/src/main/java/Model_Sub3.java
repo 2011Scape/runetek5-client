@@ -720,8 +720,8 @@ public final class Model_Sub3 extends Model {
 		} else if (arg0 == 12288) {
 			this.method7515();
 		} else {
-			@Pc(35) int local35 = LruHashTable.anIntArray741[arg0];
-			@Pc(39) int local39 = LruHashTable.anIntArray740[arg0];
+			@Pc(35) int local35 = Model.anIntArray741[arg0];
+			@Pc(39) int local39 = Model.anIntArray740[arg0];
 			synchronized (this) {
 				for (@Pc(45) int local45 = 0; local45 < this.anInt8483; local45++) {
 					@Pc(62) int local62 = this.anIntArray658[local45] * local35 + this.anIntArray666[local45] * local39 >> 14;
@@ -1029,22 +1029,22 @@ public final class Model_Sub3 extends Model {
 								this.anIntArray675[local86] -= this.anInt8490;
 								this.anIntArray658[local86] -= this.anInt8487;
 								if (arg4 != 0) {
-									local91 = LruHashTable.anIntArray741[arg4];
-									local506 = LruHashTable.anIntArray740[arg4];
+									local91 = Model.anIntArray741[arg4];
+									local506 = Model.anIntArray740[arg4];
 									local531 = this.anIntArray675[local86] * local91 + this.anIntArray666[local86] * local506 + 16383 >> 14;
 									this.anIntArray675[local86] = this.anIntArray675[local86] * local506 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 									this.anIntArray666[local86] = local531;
 								}
 								if (arg2 != 0) {
-									local91 = LruHashTable.anIntArray741[arg2];
-									local506 = LruHashTable.anIntArray740[arg2];
+									local91 = Model.anIntArray741[arg2];
+									local506 = Model.anIntArray740[arg2];
 									local531 = this.anIntArray675[local86] * local506 + 16383 - this.anIntArray658[local86] * local91 >> 14;
 									this.anIntArray658[local86] = this.anIntArray675[local86] * local91 + this.anIntArray658[local86] * local506 + 16383 >> 14;
 									this.anIntArray675[local86] = local531;
 								}
 								if (arg3 != 0) {
-									local91 = LruHashTable.anIntArray741[arg3];
-									local506 = LruHashTable.anIntArray740[arg3];
+									local91 = Model.anIntArray741[arg3];
+									local506 = Model.anIntArray740[arg3];
 									local531 = this.anIntArray658[local86] * local91 + this.anIntArray666[local86] * local506 + 16383 >> 14;
 									this.anIntArray658[local86] = this.anIntArray658[local86] * local506 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 									this.anIntArray666[local86] = local531;
@@ -1084,12 +1084,12 @@ public final class Model_Sub3 extends Model {
 					this.aBoolean649 = false;
 				}
 				@Pc(583) int[] local583 = new int[9];
-				local531 = LruHashTable.anIntArray740[arg2];
-				local556 = LruHashTable.anIntArray741[arg2];
-				local595 = LruHashTable.anIntArray740[arg3];
-				local599 = LruHashTable.anIntArray741[arg3];
-				local603 = LruHashTable.anIntArray740[arg4];
-				local607 = LruHashTable.anIntArray741[arg4];
+				local531 = Model.anIntArray740[arg2];
+				local556 = Model.anIntArray741[arg2];
+				local595 = Model.anIntArray740[arg3];
+				local599 = Model.anIntArray741[arg3];
+				local603 = Model.anIntArray740[arg4];
+				local607 = Model.anIntArray741[arg4];
 				local615 = local556 * local603 + 8192 >> 14;
 				local623 = local556 * local607 + 8192 >> 14;
 				local583[0] = local595 * local603 + local599 * local623 + 8192 >> 14;
@@ -1604,22 +1604,22 @@ public final class Model_Sub3 extends Model {
 					this.anIntArray675[local3] -= this.anInt8490;
 					this.anIntArray658[local3] -= this.anInt8487;
 					if (arg3 != 0) {
-						local14 = LruHashTable.anIntArray741[arg3];
-						local168 = LruHashTable.anIntArray740[arg3];
+						local14 = Model.anIntArray741[arg3];
+						local168 = Model.anIntArray740[arg3];
 						local186 = this.anIntArray675[local3] * local14 + this.anIntArray666[local3] * local168 + 16383 >> 14;
 						this.anIntArray675[local3] = this.anIntArray675[local3] * local168 + 16383 - this.anIntArray666[local3] * local14 >> 14;
 						this.anIntArray666[local3] = local186;
 					}
 					if (arg1 != 0) {
-						local14 = LruHashTable.anIntArray741[arg1];
-						local168 = LruHashTable.anIntArray740[arg1];
+						local14 = Model.anIntArray741[arg1];
+						local168 = Model.anIntArray740[arg1];
 						local186 = this.anIntArray675[local3] * local168 + 16383 - this.anIntArray658[local3] * local14 >> 14;
 						this.anIntArray658[local3] = this.anIntArray675[local3] * local14 + this.anIntArray658[local3] * local168 + 16383 >> 14;
 						this.anIntArray675[local3] = local186;
 					}
 					if (arg2 != 0) {
-						local14 = LruHashTable.anIntArray741[arg2];
-						local168 = LruHashTable.anIntArray740[arg2];
+						local14 = Model.anIntArray741[arg2];
+						local168 = Model.anIntArray740[arg2];
 						local186 = this.anIntArray658[local3] * local14 + this.anIntArray666[local3] * local168 + 16383 >> 14;
 						this.anIntArray658[local3] = this.anIntArray658[local3] * local168 + 16383 - this.anIntArray666[local3] * local14 >> 14;
 						this.anIntArray666[local3] = local186;
@@ -2212,22 +2212,22 @@ public final class Model_Sub3 extends Model {
 							this.anIntArray675[local86] -= this.anInt8490;
 							this.anIntArray658[local86] -= this.anInt8487;
 							if (arg4 != 0) {
-								local91 = LruHashTable.anIntArray741[arg4];
-								local354 = LruHashTable.anIntArray740[arg4];
+								local91 = Model.anIntArray741[arg4];
+								local354 = Model.anIntArray740[arg4];
 								local372 = this.anIntArray675[local86] * local91 + this.anIntArray666[local86] * local354 + 16383 >> 14;
 								this.anIntArray675[local86] = this.anIntArray675[local86] * local354 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 								this.anIntArray666[local86] = local372;
 							}
 							if (arg2 != 0) {
-								local91 = LruHashTable.anIntArray741[arg2];
-								local354 = LruHashTable.anIntArray740[arg2];
+								local91 = Model.anIntArray741[arg2];
+								local354 = Model.anIntArray740[arg2];
 								local372 = this.anIntArray675[local86] * local354 + 16383 - this.anIntArray658[local86] * local91 >> 14;
 								this.anIntArray658[local86] = this.anIntArray675[local86] * local91 + this.anIntArray658[local86] * local354 + 16383 >> 14;
 								this.anIntArray675[local86] = local372;
 							}
 							if (arg3 != 0) {
-								local91 = LruHashTable.anIntArray741[arg3];
-								local354 = LruHashTable.anIntArray740[arg3];
+								local91 = Model.anIntArray741[arg3];
+								local354 = Model.anIntArray740[arg3];
 								local372 = this.anIntArray658[local86] * local91 + this.anIntArray666[local86] * local354 + 16383 >> 14;
 								this.anIntArray658[local86] = this.anIntArray658[local86] * local354 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 								this.anIntArray666[local86] = local372;
@@ -2243,22 +2243,22 @@ public final class Model_Sub3 extends Model {
 							this.anIntArray675[local86] -= this.anInt8490;
 							this.anIntArray658[local86] -= this.anInt8487;
 							if (arg2 != 0) {
-								local91 = LruHashTable.anIntArray741[arg2];
-								local354 = LruHashTable.anIntArray740[arg2];
+								local91 = Model.anIntArray741[arg2];
+								local354 = Model.anIntArray740[arg2];
 								local372 = this.anIntArray675[local86] * local354 + 16383 - this.anIntArray658[local86] * local91 >> 14;
 								this.anIntArray658[local86] = this.anIntArray675[local86] * local91 + this.anIntArray658[local86] * local354 + 16383 >> 14;
 								this.anIntArray675[local86] = local372;
 							}
 							if (arg4 != 0) {
-								local91 = LruHashTable.anIntArray741[arg4];
-								local354 = LruHashTable.anIntArray740[arg4];
+								local91 = Model.anIntArray741[arg4];
+								local354 = Model.anIntArray740[arg4];
 								local372 = this.anIntArray675[local86] * local91 + this.anIntArray666[local86] * local354 + 16383 >> 14;
 								this.anIntArray675[local86] = this.anIntArray675[local86] * local354 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 								this.anIntArray666[local86] = local372;
 							}
 							if (arg3 != 0) {
-								local91 = LruHashTable.anIntArray741[arg3];
-								local354 = LruHashTable.anIntArray740[arg3];
+								local91 = Model.anIntArray741[arg3];
+								local354 = Model.anIntArray740[arg3];
 								local372 = this.anIntArray658[local86] * local91 + this.anIntArray666[local86] * local354 + 16383 >> 14;
 								this.anIntArray658[local86] = this.anIntArray658[local86] * local354 + 16383 - this.anIntArray666[local86] * local91 >> 14;
 								this.anIntArray666[local86] = local372;
@@ -3002,8 +3002,8 @@ public final class Model_Sub3 extends Model {
 		} else if (arg0 == 12288) {
 			this.method7532();
 		} else {
-			@Pc(40) int local40 = LruHashTable.anIntArray741[arg0];
-			@Pc(44) int local44 = LruHashTable.anIntArray740[arg0];
+			@Pc(40) int local40 = Model.anIntArray741[arg0];
+			@Pc(44) int local44 = Model.anIntArray740[arg0];
 			synchronized (this) {
 				@Pc(67) int local67;
 				for (@Pc(50) int local50 = 0; local50 < this.anInt8491; local50++) {
@@ -3592,8 +3592,8 @@ public final class Model_Sub3 extends Model {
 		if ((this.anInt8489 & 0x6) != 6) {
 			throw new IllegalStateException();
 		}
-		@Pc(14) int local14 = LruHashTable.anIntArray741[arg0];
-		@Pc(18) int local18 = LruHashTable.anIntArray740[arg0];
+		@Pc(14) int local14 = Model.anIntArray741[arg0];
+		@Pc(18) int local18 = Model.anIntArray740[arg0];
 		synchronized (this) {
 			for (@Pc(24) int local24 = 0; local24 < this.anInt8483; local24++) {
 				@Pc(41) int local41 = this.anIntArray675[local24] * local18 - this.anIntArray658[local24] * local14 >> 14;
@@ -4263,8 +4263,8 @@ public final class Model_Sub3 extends Model {
 		if ((this.anInt8489 & 0x3) != 3) {
 			throw new IllegalStateException();
 		}
-		@Pc(14) int local14 = LruHashTable.anIntArray741[arg0];
-		@Pc(18) int local18 = LruHashTable.anIntArray740[arg0];
+		@Pc(14) int local14 = Model.anIntArray741[arg0];
+		@Pc(18) int local18 = Model.anIntArray740[arg0];
 		synchronized (this) {
 			for (@Pc(24) int local24 = 0; local24 < this.anInt8483; local24++) {
 				@Pc(41) int local41 = this.anIntArray675[local24] * local14 + this.anIntArray666[local24] * local18 >> 14;

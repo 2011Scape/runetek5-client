@@ -22,18 +22,18 @@ public final class MsiTypeList {
 	public MsiTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5116 = arg3;
 		this.aJs5115 = arg2;
-		this.aJs5115.method7608(34);
+		this.aJs5115.getGroupCapacity(34);
 	}
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(B)V")
 	public void method8360() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable201;
 		synchronized (this.aSoftLruHashTable201) {
-			this.aSoftLruHashTable201.method2151();
+			this.aSoftLruHashTable201.removeSoft();
 		}
 		local2 = this.aSoftLruHashTable202;
 		synchronized (this.aSoftLruHashTable202) {
-			this.aSoftLruHashTable202.method2151();
+			this.aSoftLruHashTable202.removeSoft();
 		}
 	}
 
@@ -41,11 +41,11 @@ public final class MsiTypeList {
 	public void method8361() {
 		@Pc(10) SoftLruHashTable local10 = this.aSoftLruHashTable201;
 		synchronized (this.aSoftLruHashTable201) {
-			this.aSoftLruHashTable201.method2157();
+			this.aSoftLruHashTable201.clear();
 		}
 		local10 = this.aSoftLruHashTable202;
 		synchronized (this.aSoftLruHashTable202) {
-			this.aSoftLruHashTable202.method2157();
+			this.aSoftLruHashTable202.clear();
 		}
 	}
 
@@ -54,7 +54,7 @@ public final class MsiTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable201;
 		@Pc(16) MsiType local16;
 		synchronized (this.aSoftLruHashTable201) {
-			local16 = (MsiType) this.aSoftLruHashTable201.method2156((long) arg0);
+			local16 = (MsiType) this.aSoftLruHashTable201.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -62,7 +62,7 @@ public final class MsiTypeList {
 		@Pc(30) Js5 local30 = this.aJs5115;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs5115) {
-			local39 = this.aJs5115.method7595(arg0, 34);
+			local39 = this.aJs5115.fetchFile(34, arg0);
 		}
 		local16 = new MsiType();
 		local16.aMsiTypeList2 = this;
@@ -71,7 +71,7 @@ public final class MsiTypeList {
 		}
 		@Pc(68) SoftLruHashTable local68 = this.aSoftLruHashTable201;
 		synchronized (this.aSoftLruHashTable201) {
-			this.aSoftLruHashTable201.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable201.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -86,11 +86,11 @@ public final class MsiTypeList {
 	public void method8367() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable201;
 		synchronized (this.aSoftLruHashTable201) {
-			this.aSoftLruHashTable201.method2147(5);
+			this.aSoftLruHashTable201.clean(5);
 		}
 		local6 = this.aSoftLruHashTable202;
 		synchronized (this.aSoftLruHashTable202) {
-			this.aSoftLruHashTable202.method2147(5);
+			this.aSoftLruHashTable202.clean(5);
 		}
 	}
 }

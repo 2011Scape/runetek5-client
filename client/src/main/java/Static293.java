@@ -796,7 +796,7 @@ public final class Static293 {
 											Static607.anInt9251 = -1;
 											Static717.anInt10817 = local277;
 											Static1.anInt10798 = 1;
-											Static504.aJs595.method7581(Static717.anInt10817);
+											Static504.aJs595.isFileReady(Static717.anInt10817);
 											local100 = local11.g2();
 											Static322.anIntArrayArray265 = new int[local100][4];
 											for (local526 = 0; local526 < local100; local526++) {
@@ -1019,7 +1019,7 @@ public final class Static293 {
 													local526 = local11.g4_alt3();
 													Static574.method7573();
 													Static301.method4394(local526, local100, local277);
-													@Pc(4005) ObjType local4005 = Static419.aObjTypeList1.method2486(local277);
+													@Pc(4005) ObjType local4005 = ObjTypeList.objTypes.method2486(local277);
 													Static231.method3378(local4005.anInt10107, local4005.anInt10098, local526, local4005.anInt10096);
 													Static528.method7087(local4005.anInt10094, local526, local4005.anInt10099, local4005.anInt10126);
 													arg0.aServerProt_93 = null;

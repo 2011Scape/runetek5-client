@@ -29,7 +29,7 @@ public final class Static414 {
 						local63 = false;
 					}
 				}
-				@Pc(129) String local129 = Static723.aModeGame9 == Static392.aModeGame4 ? LocalizedText.RATING.get(Static51.anInt1052) : LocalizedText.LEVEL.get(Static51.anInt1052);
+				@Pc(129) String local129 = ModeGame.GAME_STELLARDAWN == Static392.aModeGame4 ? LocalizedText.RATING.get(Static51.anInt1052) : LocalizedText.LEVEL.get(Static51.anInt1052);
 				if (arg1.anInt1444 >= arg1.anInt1437) {
 					local177 = arg1.method1424(false) + (local63 ? Static693.method9009(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1444, arg1.anInt1444) : "<col=ffffff>") + " (" + local129 + arg1.anInt1444 + ")";
 				} else {
@@ -86,7 +86,7 @@ public final class Static414 {
 
 	@OriginalMember(owner = "client!nba", name = "a", descriptor = "(III)V")
 	public static void method5697(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (Static392.aModeGame4 == Static723.aModeGame9) {
+		if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
 			if (!Static147.method2419(0, arg0, 1, false, arg1, 0, -2, 1)) {
 				Static147.method2419(0, arg0, 1, false, arg1, 0, -3, 1);
 			}

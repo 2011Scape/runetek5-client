@@ -13,25 +13,25 @@ public final class Static537 {
 	@OriginalMember(owner = "client!qu", name = "a", descriptor = "(Lclient!mia;III)Lclient!fj;")
 	public static ClientScript method7189(@OriginalArg(0) Class242 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(10) int local10 = arg0.anInt6197 | arg1 << 10;
-		@Pc(19) ClientScript local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
+		@Pc(19) ClientScript local19 = (ClientScript) Static480.aLruHashTable2.get((long) local10 << 16);
 		if (local19 != null) {
 			return local19;
 		}
-		@Pc(32) byte[] local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
+		@Pc(32) byte[] local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
 		if (local32 == null) {
 			local10 = arg2 + 65536 << 10 | arg0.anInt6197;
-			local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
+			local19 = (ClientScript) Static480.aLruHashTable2.get((long) local10 << 16);
 			if (local19 != null) {
 				return local19;
 			}
-			local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
+			local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
 			if (local32 == null) {
 				local10 = arg0.anInt6197 | 0x3FFFC00;
-				local19 = (ClientScript) Static480.aLruHashTable2.method8342((long) local10 << 16);
+				local19 = (ClientScript) Static480.aLruHashTable2.get((long) local10 << 16);
 				if (local19 != null) {
 					return local19;
 				}
-				local32 = Static31.aJs56.method7589(Static31.aJs56.method7599(local10));
+				local32 = Static31.aJs56.fetchFile(Static31.aJs56.getGroupId(local10));
 				if (local32 == null) {
 					return null;
 				} else if (local32.length <= 1) {
@@ -43,7 +43,7 @@ public final class Static537 {
 						throw new RuntimeException(local211.getMessage() + " S: " + local10);
 					}
 					local19.aClass242_5 = arg0;
-					Static480.aLruHashTable2.method8341(local19, (long) local10 << 16);
+					Static480.aLruHashTable2.method8341((long) local10 << 16, local19);
 					return local19;
 				}
 			} else if (local32.length <= 1) {
@@ -55,7 +55,7 @@ public final class Static537 {
 					throw new RuntimeException(local135.getMessage() + " S: " + local10);
 				}
 				local19.aClass242_5 = arg0;
-				Static480.aLruHashTable2.method8341(local19, (long) local10 << 16);
+				Static480.aLruHashTable2.method8341((long) local10 << 16, local19);
 				return local19;
 			}
 		} else if (local32.length <= 1) {
@@ -67,7 +67,7 @@ public final class Static537 {
 				throw new RuntimeException(local51.getMessage() + " S: " + local10);
 			}
 			local19.aClass242_5 = arg0;
-			Static480.aLruHashTable2.method8341(local19, (long) local10 << 16);
+			Static480.aLruHashTable2.method8341((long) local10 << 16, local19);
 			return local19;
 		}
 	}

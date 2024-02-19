@@ -52,11 +52,11 @@ public final class client extends GameShell {
 			if (arg0[5].equals("game0")) {
 				Static392.aModeGame4 = ModeGame.GAME_RUNESCAPE;
 			} else if (arg0[5].equals("game1")) {
-				Static392.aModeGame4 = Static723.aModeGame9;
+				Static392.aModeGame4 = ModeGame.GAME_STELLARDAWN;
 			} else if (arg0[5].equals("game2")) {
-				Static392.aModeGame4 = Static465.aModeGame5;
+				Static392.aModeGame4 = ModeGame.GAME_3;
 			} else if (arg0[5].equals("game3")) {
-				Static392.aModeGame4 = Static655.aModeGame7;
+				Static392.aModeGame4 = ModeGame.GAME_4;
 			} else {
 				Static426.method1016("game");
 			}
@@ -67,14 +67,14 @@ public final class client extends GameShell {
 			Static126.aBoolean200 = true;
 			Static473.aBoolean539 = false;
 			Static389.aString64 = null;
-			Static338.anInt5562 = Static392.aModeGame4.anInt9720;
+			Static338.anInt5562 = Static392.aModeGame4.id;
 			Static150.aString26 = "";
 			Static265.aByteArray44 = null;
 			Static584.anInt8634 = 0;
 			Static416.aLong208 = 0L;
 			@Pc(241) client local241 = new client();
 			Static295.aClient1 = local241;
-			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.aString114);
+			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.name);
 			Static353.aFrame10.setLocation(40, 40);
 		} catch (@Pc(265) Exception local265) {
 			Static240.method3496(local265, (String) null);
@@ -607,7 +607,7 @@ public final class client extends GameShell {
 		Static405.aClass153_1.method3271();
 		this.method1659();
 		if (Static228.aJs5MasterIndex1 != null) {
-			Static228.aJs5MasterIndex1.method5804();
+			Static228.aJs5MasterIndex1.cycle();
 		}
 		Static601.method7865();
 		Static236.method3453();
@@ -871,11 +871,11 @@ public final class client extends GameShell {
 			if (local190.equals("0")) {
 				Static392.aModeGame4 = ModeGame.GAME_RUNESCAPE;
 			} else if (local190.equals("1")) {
-				Static392.aModeGame4 = Static723.aModeGame9;
+				Static392.aModeGame4 = ModeGame.GAME_STELLARDAWN;
 			} else if (local190.equals("2")) {
-				Static392.aModeGame4 = Static465.aModeGame5;
+				Static392.aModeGame4 = ModeGame.GAME_3;
 			} else if (local190.equals("3")) {
-				Static392.aModeGame4 = Static655.aModeGame7;
+				Static392.aModeGame4 = ModeGame.GAME_4;
 			}
 		}
 		try {
@@ -941,7 +941,7 @@ public final class client extends GameShell {
 		if (ModeGame.GAME_RUNESCAPE == Static392.aModeGame4) {
 			Static302.anInt4851 = 765;
 			Static479.anInt7201 = 503;
-		} else if (Static392.aModeGame4 == Static723.aModeGame9) {
+		} else if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
 			Static479.anInt7201 = 480;
 			Static302.anInt4851 = 640;
 		}
@@ -950,7 +950,7 @@ public final class client extends GameShell {
 			Static416.aBoolean473 = true;
 		}
 		Static295.aClient1 = this;
-		this.method1640(Static302.anInt4851, Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.aString114, Static479.anInt7201);
+		this.method1640(Static302.anInt4851, Static598.aClass162_5.method3469() + 32, Static392.aModeGame4.name, Static479.anInt7201);
 	}
 
 	@OriginalMember(owner = "client!client", name = "c", descriptor = "(I)V")

@@ -183,7 +183,7 @@ public final class PlayerAppearance {
 		@Pc(334) SoftLruHashTable local334 = Static580.aSoftLruHashTable186;
 		@Pc(342) Model local342;
 		synchronized (Static580.aSoftLruHashTable186) {
-			local342 = (Model) Static580.aSoftLruHashTable186.method2156(local31);
+			local342 = (Model) Static580.aSoftLruHashTable186.get(local31);
 		}
 		@Pc(350) BasType local350 = null;
 		if (this.anInt5007 != -1) {
@@ -206,7 +206,7 @@ public final class PlayerAppearance {
 						if (this.aLong159 != -1L) {
 							@Pc(552) SoftLruHashTable local552 = Static580.aSoftLruHashTable186;
 							synchronized (Static580.aSoftLruHashTable186) {
-								local342 = (Model) Static580.aSoftLruHashTable186.method2156(this.aLong159);
+								local342 = (Model) Static580.aSoftLruHashTable186.get(this.aLong159);
 							}
 						}
 						if (local342 == null || arg8.method7960(local342.ua(), local28) != 0) {
@@ -274,7 +274,7 @@ public final class PlayerAppearance {
 						local342.s(local28);
 						@Pc(903) SoftLruHashTable local903 = Static580.aSoftLruHashTable186;
 						synchronized (Static580.aSoftLruHashTable186) {
-							Static580.aSoftLruHashTable186.method2150(local342, local31);
+							Static580.aSoftLruHashTable186.put(local31, local342);
 						}
 						this.aLong159 = local31;
 					}
@@ -400,7 +400,7 @@ public final class PlayerAppearance {
 		@Pc(31) SoftLruHashTable local31 = Static54.aSoftLruHashTable25;
 		@Pc(39) Model local39;
 		synchronized (Static54.aSoftLruHashTable25) {
-			local39 = (Model) Static54.aSoftLruHashTable25.method2156(local29);
+			local39 = (Model) Static54.aSoftLruHashTable25.get(local29);
 		}
 		if (local39 == null || arg4.method7960(local39.ua(), local16) != 0) {
 			if (local39 != null) {
@@ -437,7 +437,7 @@ public final class PlayerAppearance {
 			local39.s(local16);
 			@Pc(228) SoftLruHashTable local228 = Static54.aSoftLruHashTable25;
 			synchronized (Static54.aSoftLruHashTable25) {
-				Static54.aSoftLruHashTable25.method2150(local39, local29);
+				Static54.aSoftLruHashTable25.put(local29, local39);
 			}
 		}
 		if (arg0 == null) {
@@ -468,7 +468,7 @@ public final class PlayerAppearance {
 		@Pc(37) SoftLruHashTable local37 = Static54.aSoftLruHashTable25;
 		@Pc(48) Model local48;
 		synchronized (Static54.aSoftLruHashTable25) {
-			local48 = (Model) Static54.aSoftLruHashTable25.method2156(this.aLong160);
+			local48 = (Model) Static54.aSoftLruHashTable25.get(this.aLong160);
 		}
 		if (local48 == null || arg6.method7960(local48.ua(), local35) != 0) {
 			if (local48 != null) {
@@ -526,7 +526,7 @@ public final class PlayerAppearance {
 			local48.s(local35);
 			@Pc(340) SoftLruHashTable local340 = Static54.aSoftLruHashTable25;
 			synchronized (Static54.aSoftLruHashTable25) {
-				Static54.aSoftLruHashTable25.method2150(local48, this.aLong160);
+				Static54.aSoftLruHashTable25.put(this.aLong160, local48);
 			}
 		}
 		if (arg3 == null) {

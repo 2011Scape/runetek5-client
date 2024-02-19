@@ -67,7 +67,7 @@ public final class Static109 {
 		if (Static172.aBufferedFile4 != null) {
 			local5 = new Cache(arg1, Static172.aBufferedFile4, Static208.aBufferedFileArray1[arg1], 1000000);
 		}
-		Static226.aJs5CachedResourceProviderArray8[arg1] = Static228.aJs5MasterIndex1.method5801(local5, arg1, Static276.aCache1);
+		Static226.aJs5CachedResourceProviderArray8[arg1] = Static228.aJs5MasterIndex1.getResourceProvider(local5, arg1, Static276.aCache1);
 		Static226.aJs5CachedResourceProviderArray8[arg1].method6654();
 		return new Js5(Static226.aJs5CachedResourceProviderArray8[arg1], arg0, arg2);
 	}

@@ -33,17 +33,17 @@ public final class Static345 {
 		local8.method2230(0, -128, 0);
 		for (@Pc(37) int local37 = 0; local37 <= 24; local37++) {
 			@Pc(44) int local44 = local37 * 8192 / 24;
-			@Pc(48) int local48 = LruHashTable.anIntArray741[local44];
-			@Pc(52) int local52 = LruHashTable.anIntArray740[local44];
+			@Pc(48) int local48 = Model.anIntArray741[local44];
+			@Pc(52) int local52 = Model.anIntArray740[local44];
 			@Pc(61) int local61;
 			@Pc(67) int local67;
 			@Pc(75) int local75;
 			@Pc(83) int local83;
 			for (@Pc(54) int local54 = 1; local54 < 24; local54++) {
 				local61 = local54 * 8192 / 24;
-				local67 = LruHashTable.anIntArray740[local61] >> 7;
-				local75 = LruHashTable.anIntArray741[local61] * local48 >> 21;
-				local83 = LruHashTable.anIntArray741[local61] * local52 >> 21;
+				local67 = Model.anIntArray740[local61] >> 7;
+				local75 = Model.anIntArray741[local61] * local48 >> 21;
+				local83 = Model.anIntArray741[local61] * local52 >> 21;
 				local8.method2230(-local75, local67, local83);
 			}
 			if (local37 > 0) {

@@ -15,14 +15,14 @@ public final class Js5CacheRequest extends Js5Request {
 
 	@OriginalMember(owner = "client!vp", name = "c", descriptor = "(B)I")
 	@Override
-	public int method8972() {
-		return super.aBoolean778 ? 0 : 100;
+	public int getPercentageComplete() {
+		return super.incomplete ? 0 : 100;
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)[B")
 	@Override
-	public byte[] method8971() {
-		if (super.aBoolean778) {
+	public byte[] getData() {
+		if (super.incomplete) {
 			throw new RuntimeException();
 		}
 		return this.aByteArray109;

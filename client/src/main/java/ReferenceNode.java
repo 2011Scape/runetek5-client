@@ -10,7 +10,7 @@ public abstract class ReferenceNode extends SecondaryLinkable {
 	public static final long[] aLongArray21 = new long[256];
 
 	@OriginalMember(owner = "client!vw", name = "w", descriptor = "I")
-	public final int anInt10683;
+	public final int size;
 
 	static {
 		for (@Pc(49) int local49 = 0; local49 < 256; local49++) {
@@ -28,12 +28,12 @@ public abstract class ReferenceNode extends SecondaryLinkable {
 
 	@OriginalMember(owner = "client!vw", name = "<init>", descriptor = "(I)V")
 	protected ReferenceNode(@OriginalArg(0) int arg0) {
-		this.anInt10683 = arg0;
+		this.size = arg0;
 	}
 
 	@OriginalMember(owner = "client!vw", name = "c", descriptor = "(B)Ljava/lang/Object;")
-	public abstract Object method9268();
+	public abstract Object get();
 
 	@OriginalMember(owner = "client!vw", name = "d", descriptor = "(I)Z")
-	public abstract boolean method9270();
+	public abstract boolean isSoft();
 }

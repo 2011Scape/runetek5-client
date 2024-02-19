@@ -55,7 +55,7 @@ public final class Static298 {
 		Static722.anInt10905 = arg0;
 		@Pc(14) SoftLruHashTable local14 = Static354.aSoftLruHashTable120;
 		synchronized (Static354.aSoftLruHashTable120) {
-			Static354.aSoftLruHashTable120.method2157();
+			Static354.aSoftLruHashTable120.clear();
 		}
 	}
 }

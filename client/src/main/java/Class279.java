@@ -22,8 +22,8 @@ public final class Class279 {
 	@OriginalMember(owner = "client!oka", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public Class279(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs592 = arg2;
-		this.aJs592.method7608(1);
-		@Pc(22) Packet local22 = new Packet(this.aJs592.method7595(0, 0));
+		this.aJs592.getGroupCapacity(1);
+		@Pc(22) Packet local22 = new Packet(this.aJs592.fetchFile(0, 0));
 		@Pc(26) int local26 = local22.g1();
 		if (local26 > 3) {
 			this.aBooleanArray22 = new boolean[0];
@@ -120,7 +120,7 @@ public final class Class279 {
 
 	@OriginalMember(owner = "client!oka", name = "a", descriptor = "(IZ)Lclient!de;")
 	public Class76 method6277(@OriginalArg(0) int arg0) {
-		@Pc(10) byte[] local10 = this.aJs592.method7595(arg0, 1);
+		@Pc(10) byte[] local10 = this.aJs592.fetchFile(1, arg0);
 		@Pc(14) Class76 local14 = new Class76();
 		local14.method2032(new Packet(local10));
 		return local14;

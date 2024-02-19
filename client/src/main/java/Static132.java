@@ -10,9 +10,6 @@ public final class Static132 {
 	@OriginalMember(owner = "client!ec", name = "G", descriptor = "[Z")
 	public static boolean[] aBooleanArray5;
 
-	@OriginalMember(owner = "client!ec", name = "H", descriptor = "Z")
-	public static boolean aBoolean208 = false;
-
 	@OriginalMember(owner = "client!ec", name = "A", descriptor = "Lclient!lga;")
 	public static final ServerProt ServerProt54 = new ServerProt(91, -1);
 
@@ -22,12 +19,12 @@ public final class Static132 {
 		if (Static177.anObject6 == null) {
 			@Pc(9) Class35_Sub2_Sub1 local9 = new Class35_Sub2_Sub1();
 			local16 = local9.method4596();
-			Static177.anObject6 = Static247.method3524(local16);
+			Static177.anObject6 = ByteArray.wrap(local16);
 		}
 		if (Static644.anObject18 == null) {
 			@Pc(31) Class35_Sub1_Sub2 local31 = new Class35_Sub1_Sub2();
 			local16 = local31.method5438();
-			Static644.anObject18 = Static247.method3524(local16);
+			Static644.anObject18 = ByteArray.wrap(local16);
 		}
 	}
 

@@ -48,8 +48,8 @@ public final class Static296 {
 			local5 |= 0x40;
 		}
 		Static335.method4945(local5);
-		Static354.aLocTypeList4.method3065(local5);
-		Static419.aObjTypeList1.method2481(local5);
+		Static354.aLocTypeList4.clearCaches(local5);
+		ObjTypeList.objTypes.method2481(local5);
 		Static690.aNpcTypeList2.method7093(local5);
 		Static23.aSpotAnimTypeList1.method2695(local5);
 		Static41.method1029(local5);

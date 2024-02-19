@@ -598,7 +598,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != local2) {
-			@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) local2);
+			@Pc(34) SoftwareIndexedSprite local34 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.get((long) local2);
 			if (local34 == null) {
 				@Pc(40) int[] local40 = this.method3788(local2);
 				if (local40 == null) {
@@ -606,7 +606,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(54) int local54 = this.method3798(local2) ? 64 : this.lb;
 				local34 = this.method7946(local54, local54, local54, local40);
-				this.aSoftLruHashTable88.method2150(local34, (long) local2);
+				this.aSoftLruHashTable88.put((long) local2, local34);
 			}
 			this.anInt4215 = local2;
 			this.aSoftwareIndexedSprite17 = local34;
@@ -1080,7 +1080,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7997(@OriginalArg(0) boolean arg0) {
 		this.aBoolean332 = arg0;
-		this.aSoftLruHashTable89.method2157();
+		this.aSoftLruHashTable89.clear();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "A", descriptor = "()Lclient!tt;")
@@ -1170,8 +1170,8 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "q", descriptor = "()V")
 	@Override
 	public void method8012() {
-		this.aSoftLruHashTable89.method2157();
-		this.aSoftLruHashTable88.method2157();
+		this.aSoftLruHashTable89.clear();
+		this.aSoftLruHashTable88.clear();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "o", descriptor = "(I)[I")
@@ -1179,7 +1179,7 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable89;
 		@Pc(14) Linkable_Sub29 local14;
 		synchronized (this.aSoftLruHashTable89) {
-			local14 = (Linkable_Sub29) this.aSoftLruHashTable89.method2156((long) arg0 | Long.MIN_VALUE);
+			local14 = (Linkable_Sub29) this.aSoftLruHashTable89.get((long) arg0 | Long.MIN_VALUE);
 			if (local14 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
@@ -1187,7 +1187,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(36) Material local36 = super.anInterface4_10.method6817(arg0);
 				@Pc(50) int local50 = local36.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
 				local14 = new Linkable_Sub29(arg0, local50, super.anInterface4_10.method6815(0.7F, arg0, local50, local50), local36.anInt2796 != 1);
-				this.aSoftLruHashTable89.method2150(local14, (long) arg0 | Long.MIN_VALUE);
+				this.aSoftLruHashTable89.put((long) arg0 | Long.MIN_VALUE, local14);
 			}
 		}
 		local14.aBoolean341 = true;
@@ -1401,7 +1401,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7989(@OriginalArg(0) int arg0) {
 		this.lb = arg0;
-		this.aSoftLruHashTable89.method2157();
+		this.aSoftLruHashTable89.clear();
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "([Ljava/awt/Rectangle;III)V")
@@ -1868,7 +1868,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7977(@OriginalArg(0) int arg0) {
 		@Pc(4) int local4 = arg0 - this.anInt4184;
-		for (@Pc(9) Object local9 = this.aSoftLruHashTable89.method2145(); local9 != null; local9 = this.aSoftLruHashTable89.method2152()) {
+		for (@Pc(9) Object local9 = this.aSoftLruHashTable89.clean(); local9 != null; local9 = this.aSoftLruHashTable89.method2152()) {
 			@Pc(13) Linkable_Sub29 local13 = (Linkable_Sub29) local9;
 			if (local13.aBoolean341) {
 				local13.anInt4409 += local4;
@@ -1882,8 +1882,8 @@ public final class Class19_Sub2 extends Class19 {
 			}
 		}
 		this.anInt4184 = arg0;
-		this.aSoftLruHashTable88.method2147(5);
-		this.aSoftLruHashTable89.method2147(5);
+		this.aSoftLruHashTable88.clean(5);
+		this.aSoftLruHashTable89.clean(5);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(FFF)V")
@@ -1901,7 +1901,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != arg6) {
-			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) arg6);
+			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.get((long) arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -1909,7 +1909,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.lb;
 				local33 = this.method7946(local53, local53, local53, local39);
-				this.aSoftLruHashTable88.method2150(local33, (long) arg6);
+				this.aSoftLruHashTable88.put((long) arg6, local33);
 			}
 			this.anInt4215 = arg6;
 			this.aSoftwareIndexedSprite17 = local33;
@@ -2199,7 +2199,7 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable89;
 		@Pc(12) Linkable_Sub29 local12;
 		synchronized (this.aSoftLruHashTable89) {
-			local12 = (Linkable_Sub29) this.aSoftLruHashTable89.method2156((long) arg0);
+			local12 = (Linkable_Sub29) this.aSoftLruHashTable89.get((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface4_10.method6814(arg0)) {
 					return null;
@@ -2207,7 +2207,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(34) Material local34 = super.anInterface4_10.method6817(arg0);
 				@Pc(48) int local48 = local34.aBoolean233 || this.aBoolean332 ? 64 : this.lb;
 				local12 = new Linkable_Sub29(arg0, local48, super.anInterface4_10.method6818(local48, true, local48, arg0, 0.7F), local34.anInt2796 != 1);
-				this.aSoftLruHashTable89.method2150(local12, (long) arg0);
+				this.aSoftLruHashTable89.put((long) arg0, local12);
 			}
 		}
 		local12.aBoolean341 = true;
@@ -2729,7 +2729,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4215 != arg6) {
-			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.method2156((long) arg6);
+			@Pc(33) SoftwareIndexedSprite local33 = (SoftwareIndexedSprite) this.aSoftLruHashTable88.get((long) arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -2737,7 +2737,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.lb;
 				local33 = this.method7946(local53, local53, local53, local39);
-				this.aSoftLruHashTable88.method2150(local33, (long) arg6);
+				this.aSoftLruHashTable88.put((long) arg6, local33);
 			}
 			this.anInt4215 = arg6;
 			this.aSoftwareIndexedSprite17 = local33;

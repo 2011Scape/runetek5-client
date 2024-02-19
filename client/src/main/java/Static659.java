@@ -35,7 +35,7 @@ public final class Static659 {
 		if (Static150.aString26 != null) {
 			local44 = "/p=" + Static150.aString26;
 		}
-		return "http://" + local15 + "." + Static392.aModeGame4.aString114 + ".com/l=" + Static51.anInt1052 + "/a=" + Static323.anInt5121 + local44 + "/";
+		return "http://" + local15 + "." + Static392.aModeGame4.name + ".com/l=" + Static51.anInt1052 + "/a=" + Static323.anInt5121 + local44 + "/";
 	}
 
 	@OriginalMember(owner = "client!ut", name = "d", descriptor = "(B)Lclient!ge;")

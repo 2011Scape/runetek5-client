@@ -108,6 +108,6 @@ public final class Static149 {
 
 	@OriginalMember(owner = "client!ema", name = "a", descriptor = "(I)V")
 	public static void method2450() {
-		Static186.aSoftLruHashTable67.method2151();
+		Static186.aSoftLruHashTable67.removeSoft();
 	}
 }

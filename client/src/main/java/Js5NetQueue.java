@@ -215,7 +215,7 @@ public final class Js5NetQueue {
 					this.aClass2_Sub2_Sub17_Sub1_2.anInt8331 += local260;
 					if (local236 == this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos) {
 						this.aClass2_Sub2_Sub17_Sub1_2.unlinkSecondary();
-						this.aClass2_Sub2_Sub17_Sub1_2.aBoolean778 = false;
+						this.aClass2_Sub2_Sub17_Sub1_2.incomplete = false;
 						this.aClass2_Sub2_Sub17_Sub1_2 = null;
 					} else if (this.aClass2_Sub2_Sub17_Sub1_2.anInt8331 == 512) {
 						this.aClass2_Sub2_Sub17_Sub1_2.anInt8331 = 0;
@@ -331,7 +331,7 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(I)Z")
-	public boolean method6630() {
+	public boolean isUrgentRequestQueueFull() {
 		return this.method6622() >= 20;
 	}
 
@@ -348,10 +348,10 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(IIBZB)Lclient!rja;")
-	public Js5NetRequest method6633(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte arg3) {
+	public Js5NetRequest read(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte arg3) {
 		@Pc(19) long local19 = (long) ((arg0 << 16) + arg1);
 		@Pc(23) Js5NetRequest local23 = new Js5NetRequest();
-		local23.aBoolean777 = arg2;
+		local23.urgent = arg2;
 		local23.aByte129 = arg3;
 		local23.secondaryKey = local19;
 		if (arg2) {

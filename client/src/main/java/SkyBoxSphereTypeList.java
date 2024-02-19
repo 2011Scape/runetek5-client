@@ -15,7 +15,7 @@ public final class SkyBoxSphereTypeList {
 	@OriginalMember(owner = "client!dg", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public SkyBoxSphereTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs517 = arg2;
-		this.aJs517.method7608(30);
+		this.aJs517.getGroupCapacity(30);
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(II)Lclient!afa;")
@@ -23,7 +23,7 @@ public final class SkyBoxSphereTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable45;
 		@Pc(16) SkyBoxSphereType local16;
 		synchronized (this.aSoftLruHashTable45) {
-			local16 = (SkyBoxSphereType) this.aSoftLruHashTable45.method2156((long) arg0);
+			local16 = (SkyBoxSphereType) this.aSoftLruHashTable45.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -31,7 +31,7 @@ public final class SkyBoxSphereTypeList {
 		@Pc(30) Js5 local30 = this.aJs517;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs517) {
-			local39 = this.aJs517.method7595(arg0, 30);
+			local39 = this.aJs517.fetchFile(30, arg0);
 		}
 		local16 = new SkyBoxSphereType();
 		if (local39 != null) {
@@ -39,7 +39,7 @@ public final class SkyBoxSphereTypeList {
 		}
 		@Pc(63) SoftLruHashTable local63 = this.aSoftLruHashTable45;
 		synchronized (this.aSoftLruHashTable45) {
-			this.aSoftLruHashTable45.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable45.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -48,7 +48,7 @@ public final class SkyBoxSphereTypeList {
 	public void method2052() {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable45;
 		synchronized (this.aSoftLruHashTable45) {
-			this.aSoftLruHashTable45.method2157();
+			this.aSoftLruHashTable45.clear();
 		}
 	}
 
@@ -56,7 +56,7 @@ public final class SkyBoxSphereTypeList {
 	public void method2053() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable45;
 		synchronized (this.aSoftLruHashTable45) {
-			this.aSoftLruHashTable45.method2151();
+			this.aSoftLruHashTable45.removeSoft();
 		}
 	}
 
@@ -64,7 +64,7 @@ public final class SkyBoxSphereTypeList {
 	public void method2055() {
 		@Pc(9) SoftLruHashTable local9 = this.aSoftLruHashTable45;
 		synchronized (this.aSoftLruHashTable45) {
-			this.aSoftLruHashTable45.method2147(5);
+			this.aSoftLruHashTable45.clean(5);
 		}
 	}
 }

@@ -117,18 +117,6 @@ public final class Static231 {
 		return arg0.length() + 1;
 	}
 
-	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!fl;")
-	public static TracingException method3380(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		@Pc(12) TracingException local12;
-		if (arg0 instanceof TracingException) {
-			local12 = (TracingException) arg0;
-			local12.aString32 = local12.aString32 + ' ' + arg1;
-		} else {
-			local12 = new TracingException(arg0, arg1);
-		}
-		return local12;
-	}
-
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(IZZLjava/lang/String;)V")
 	public static void method3381(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) String arg2) {
 		try {
@@ -476,8 +464,8 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("resetminimap")) {
-					Static721.aJs5128.method7594();
-					Static721.aJs5128.method7592();
+					Static721.aJs5128.discardPacked();
+					Static721.aJs5128.discardUnpacked();
 					Static720.aMsiTypeList4.method8361();
 					Static577.aMelTypeList4.method5586();
 					Static244.method3512();
@@ -501,9 +489,9 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.startsWith("cachespace")) {
-					Static79.method1579("I(s): " + Static473.aSoftLruHashTable157.method2144() + "/" + Static473.aSoftLruHashTable157.method2146());
-					Static79.method1579("I(m): " + Static312.aSoftLruHashTable106.method2144() + "/" + Static312.aSoftLruHashTable106.method2146());
-					Static79.method1579("O(s): " + Static419.aObjTypeList1.aObjLruHashTable1.method257() + "/" + Static419.aObjTypeList1.aObjLruHashTable1.method256());
+					Static79.method1579("I(s): " + Component.spriteCache.getAvailable() + "/" + Component.spriteCache.getCapacity());
+					Static79.method1579("I(m): " + Component.modelCache.getAvailable() + "/" + Component.modelCache.getCapacity());
+					Static79.method1579("O(s): " + ObjTypeList.objTypes.spriteCache.getAvailable() + "/" + ObjTypeList.objTypes.spriteCache.getCapacity());
 					return;
 				}
 				if (arg2.equals("renderprofile") || arg2.equals("rp")) {

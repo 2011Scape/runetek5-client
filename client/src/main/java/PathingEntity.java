@@ -335,8 +335,8 @@ public abstract class PathingEntity extends Entity {
 							if (local299 != 0) {
 								local146.a(local299);
 							}
-							@Pc(310) int local310 = LruHashTable.anIntArray741[local299];
-							@Pc(314) int local314 = LruHashTable.anIntArray740[local299];
+							@Pc(310) int local310 = Model.anIntArray741[local299];
+							@Pc(314) int local314 = Model.anIntArray740[local299];
 							@Pc(324) int local324 = local310 * local175 + local171 * local314 >> 14;
 							local175 = local175 * local314 - local171 * local310 >> 14;
 							local171 = local324;
@@ -702,8 +702,8 @@ public abstract class PathingEntity extends Entity {
 	protected final void method9314(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(11) int local11 = super.aShort134 + super.aShort131 >> 1;
 		@Pc(20) int local20 = super.aShort133 + super.aShort132 >> 1;
-		@Pc(24) int local24 = LruHashTable.anIntArray741[arg0];
-		@Pc(28) int local28 = LruHashTable.anIntArray740[arg0];
+		@Pc(24) int local24 = Model.anIntArray741[arg0];
+		@Pc(28) int local28 = Model.anIntArray740[arg0];
 		@Pc(33) int local33 = -arg3 / 2;
 		@Pc(38) int local38 = -arg4 / 2;
 		@Pc(48) int local48 = local24 * local38 + local33 * local28 >> 14;

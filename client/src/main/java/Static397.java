@@ -96,14 +96,14 @@ public final class Static397 {
 		if (local7 == -1) {
 			return;
 		}
-		@Pc(27) SoftwareIndexedSprite local27 = (SoftwareIndexedSprite) Static541.aSoftLruHashTable174.method2156((long) local7);
+		@Pc(27) SoftwareIndexedSprite local27 = (SoftwareIndexedSprite) Static541.aSoftLruHashTable174.get((long) local7);
 		if (local27 == null) {
 			@Pc(34) Class407[] local34 = Static735.method9375(Static721.aJs5128, local7);
 			if (local34 == null) {
 				return;
 			}
 			local27 = Static163.aClass19_17.method7948(local34[0], true);
-			Static541.aSoftLruHashTable174.method2150(local27, (long) local7);
+			Static541.aSoftLruHashTable174.put((long) local7, local27);
 		}
 		Static418.method7860(arg1.aByte144, arg1.anInt10694, 0, arg1.anInt10690, arg1.method9302((byte) 55) * 256);
 		@Pc(75) int local75 = arg0 + Static215.anIntArray284[0] - 18;

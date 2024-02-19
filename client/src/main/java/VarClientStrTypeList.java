@@ -15,6 +15,6 @@ public final class VarClientStrTypeList {
 	public VarClientStrTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		new SoftLruHashTable(64);
 		this.aJs557 = arg2;
-		this.anInt4266 = this.aJs557.method7608(15);
+		this.anInt4266 = this.aJs557.getGroupCapacity(15);
 	}
 }

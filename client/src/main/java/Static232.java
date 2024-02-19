@@ -29,9 +29,9 @@ public final class Static232 {
 		}
 		@Pc(49) int[] local49 = null;
 		if (Static245.method8635(arg6.anInt7314)) {
-			local49 = Static419.aObjTypeList1.method2486((int) arg6.aLong233).anIntArray800;
+			local49 = ObjTypeList.objTypes.method2486((int) arg6.aLong233).anIntArray800;
 		} else if (arg6.anInt7317 != -1) {
-			local49 = Static419.aObjTypeList1.method2486(arg6.anInt7317).anIntArray800;
+			local49 = ObjTypeList.objTypes.method2486(arg6.anInt7317).anIntArray800;
 		} else if (Static598.method7825(arg6.anInt7314)) {
 			@Pc(110) Linkable_Sub45 local110 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) arg6.aLong233);
 			if (local110 != null) {

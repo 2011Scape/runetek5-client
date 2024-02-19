@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!fja")
-public final class SecondaryLinkable_Sub11_Sub1 extends SecondaryLinkable_Sub11 {
+public final class SecondaryLinkable_Sub11_Sub1 extends ObjReferenceNode {
 
 	@OriginalMember(owner = "client!fja", name = "y", descriptor = "Ljava/lang/ref/SoftReference;")
 	private final SoftReference aSoftReference1;
@@ -17,13 +17,13 @@ public final class SecondaryLinkable_Sub11_Sub1 extends SecondaryLinkable_Sub11 
 
 	@OriginalMember(owner = "client!fja", name = "a", descriptor = "(I)Ljava/lang/Object;")
 	@Override
-	public Object method8311() {
+	public Object get() {
 		return this.aSoftReference1.get();
 	}
 
 	@OriginalMember(owner = "client!fja", name = "c", descriptor = "(B)Z")
 	@Override
-	public boolean method8314() {
+	public boolean isSoft() {
 		return true;
 	}
 }

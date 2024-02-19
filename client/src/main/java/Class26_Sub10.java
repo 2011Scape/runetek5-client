@@ -33,8 +33,8 @@ public final class Class26_Sub10 extends Class26 {
 		this.aClass19_Sub1_Sub1_8 = arg0;
 		this.aClass7_7 = arg2;
 		if (arg1 != null && this.aClass19_Sub1_21.aBoolean685 && this.aClass19_Sub1_21.aBoolean696 && (this.aClass19_Sub1_Sub1_8.aD3DCAPS1.VertexShaderVersion & 0xFFFF) >= 257) {
-			this.anIDirect3DVertexShader8 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.b(arg1.method7600("dx", "environment_mapped_water_v"));
-			this.anIDirect3DPixelShader1 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.a(arg1.method7600("dx", "environment_mapped_water_f"));
+			this.anIDirect3DVertexShader8 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.b(arg1.fetchFile("dx", "environment_mapped_water_v"));
+			this.anIDirect3DPixelShader1 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.a(arg1.fetchFile("dx", "environment_mapped_water_f"));
 			this.aBoolean642 = this.anIDirect3DVertexShader8 != null && this.anIDirect3DPixelShader1 != null && this.aClass7_7.method115();
 		} else {
 			this.aBoolean642 = false;

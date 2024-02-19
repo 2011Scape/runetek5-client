@@ -92,7 +92,7 @@ public final class Static664 {
 		Static68.aIdkTypeList3.method5041();
 		Static354.aLocTypeList4.method3058();
 		Static690.aNpcTypeList2.method7089();
-		Static419.aObjTypeList1.method2480();
+		ObjTypeList.objTypes.method2480();
 		Static25.aSeqTypeList1.method1164();
 		Static23.aSpotAnimTypeList1.method2697();
 		Static529.aVarBitTypeList1.method3423();
@@ -115,10 +115,10 @@ public final class Static664 {
 		Static553.method7290();
 		Static149.method2450();
 		Static126.method2229();
-		Static230.aSoftLruHashTable81.method2151();
-		Static669.aSoftLruHashTable215.method2151();
-		Static541.aSoftLruHashTable174.method2151();
-		Static452.aSoftLruHashTable149.method2151();
-		Static472.aSoftLruHashTable156.method2151();
+		Static230.aSoftLruHashTable81.removeSoft();
+		Static669.aSoftLruHashTable215.removeSoft();
+		Static541.aSoftLruHashTable174.removeSoft();
+		Static452.aSoftLruHashTable149.removeSoft();
+		Static472.aSoftLruHashTable156.removeSoft();
 	}
 }

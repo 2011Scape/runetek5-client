@@ -80,9 +80,9 @@ public final class SoundBank {
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "(Z[II)Lclient!sq;")
 	public PcmSound method2614(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1) {
-		if (this.aJs532.method7597() == 1) {
+		if (this.aJs532.capacity() == 1) {
 			return this.method2612(arg1, 0, arg0);
-		} else if (this.aJs532.method7608(arg1) == 1) {
+		} else if (this.aJs532.getGroupCapacity(arg1) == 1) {
 			return this.method2612(0, arg1, arg0);
 		} else {
 			throw new RuntimeException();
@@ -91,9 +91,9 @@ public final class SoundBank {
 
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "([IBI)Lclient!sq;")
 	public PcmSound method2615(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
-		if (this.aJs531.method7597() == 1) {
+		if (this.aJs531.capacity() == 1) {
 			return this.method2613(arg0, 0, arg1);
-		} else if (this.aJs531.method7608(arg1) == 1) {
+		} else if (this.aJs531.getGroupCapacity(arg1) == 1) {
 			return this.method2613(arg0, arg1, 0);
 		} else {
 			throw new RuntimeException();

@@ -34,9 +34,9 @@ public final class Class7 {
 		if (this.aBoolean7 || this.aClass19_Sub1_1.method8071(Static482.aClass92_13, Static702.aClass397_16)) {
 			Static132.method2312();
 			if (this.aBoolean7) {
-				@Pc(60) byte[] local60 = Static377.method5321(false, Static177.anObject6);
+				@Pc(60) byte[] local60 = ByteArray.unwrap(Static177.anObject6, false);
 				this.anInterface2_2 = this.aClass19_Sub1_1.method8038(Static482.aClass92_13, local60);
-				@Pc(76) byte[] local76 = Static377.method5321(false, Static644.anObject18);
+				@Pc(76) byte[] local76 = ByteArray.unwrap(Static644.anObject18, false);
 				this.aClass19_Sub1_1.method8038(Static482.aClass92_13, local76);
 			} else {
 				this.anInterface18Array2 = new Interface18[16];
@@ -59,9 +59,9 @@ public final class Class7 {
 			@Pc(26) byte[] local26;
 			if (Static186.anObject7 == null) {
 				local26 = Static448.method6106(4.0F, 4.0F, 0.5F, 16.0F, 0.6F, new Class59_Sub1(419684));
-				Static186.anObject7 = Static247.method3524(local26);
+				Static186.anObject7 = ByteArray.wrap(local26);
 			}
-			local26 = Static377.method5321(false, Static186.anObject7);
+			local26 = ByteArray.unwrap(Static186.anObject7, false);
 			@Pc(42) byte[] local42 = new byte[local26.length * 4];
 			@Pc(44) int local44 = 0;
 			for (@Pc(46) int local46 = 0; local46 < 16; local46++) {

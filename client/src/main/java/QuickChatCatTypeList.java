@@ -20,24 +20,24 @@ public final class QuickChatCatTypeList {
 		this.aJs551 = arg2;
 		this.aJs550 = arg1;
 		if (this.aJs550 != null) {
-			this.aJs550.method7608(0);
+			this.aJs550.getGroupCapacity(0);
 		}
 		if (this.aJs551 != null) {
-			this.aJs551.method7608(0);
+			this.aJs551.getGroupCapacity(0);
 		}
 	}
 
 	@OriginalMember(owner = "client!gt", name = "a", descriptor = "(BI)Lclient!bq;")
 	public QuickChatCatType method3234(@OriginalArg(1) int arg0) {
-		@Pc(11) QuickChatCatType local11 = (QuickChatCatType) this.aSoftLruHashTable79.method2156((long) arg0);
+		@Pc(11) QuickChatCatType local11 = (QuickChatCatType) this.aSoftLruHashTable79.get((long) arg0);
 		if (local11 != null) {
 			return local11;
 		}
 		@Pc(28) byte[] local28;
 		if (arg0 < 32768) {
-			local28 = this.aJs550.method7595(arg0, 0);
+			local28 = this.aJs550.fetchFile(0, arg0);
 		} else {
-			local28 = this.aJs551.method7595(arg0 & 0x7FFF, 0);
+			local28 = this.aJs551.fetchFile(0, arg0 & 0x7FFF);
 		}
 		local11 = new QuickChatCatType();
 		if (local28 != null) {
@@ -46,7 +46,7 @@ public final class QuickChatCatTypeList {
 		if (arg0 >= 32768) {
 			local11.method1186();
 		}
-		this.aSoftLruHashTable79.method2150(local11, (long) arg0);
+		this.aSoftLruHashTable79.put((long) arg0, local11);
 		return local11;
 	}
 }

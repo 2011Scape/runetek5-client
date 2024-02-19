@@ -8,7 +8,7 @@ public final class Static124 {
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	public static void method2215() {
-		Static627.aSoftLruHashTable200.method2157();
+		Static627.aSoftLruHashTable200.clear();
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(IIIILclient!ek;IIIIILclient!wk;I)V")

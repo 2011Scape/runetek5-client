@@ -453,7 +453,7 @@ public final class Player extends PathingEntity {
 					if (local191 >= 32768) {
 						local191 = Static349.anIntArray426[local191 - 32768];
 						local139[local151] = local191 | 0x40000000;
-						local149[local151] = Static419.aObjTypeList1.method2486(local191);
+						local149[local151] = ObjTypeList.objTypes.method2486(local191);
 						local240 = local149[local151].anInt10121;
 						if (local240 != 0) {
 							this.anInt1433 = local240;
@@ -539,7 +539,7 @@ public final class Player extends PathingEntity {
 		if (Static312.anInt5000 == super.anInt10740 && local603 != null) {
 			for (local490 = 0; local490 < local332.length; local490++) {
 				if (local332[local490] != local603[local490]) {
-					Static419.aObjTypeList1.method2484();
+					ObjTypeList.objTypes.method2484();
 					break;
 				}
 			}
@@ -574,7 +574,7 @@ public final class Player extends PathingEntity {
 		if (local119) {
 			arg0 |= 0x80000;
 		}
-		@Pc(152) Model local152 = super.aModelArray3[0] = this.aPlayerAppearance1.method4546(Static419.aObjTypeList1, local33, Static574.aBasTypeList2, Static25.aSeqTypeList1, arg0, super.anIntArray877, Static125.aClass388_1, Static68.aIdkTypeList3, arg1, Static690.aNpcTypeList2, super.aClass152_Sub2_Sub1Array3, local95, local58, Static34.aClass304_1);
+		@Pc(152) Model local152 = super.aModelArray3[0] = this.aPlayerAppearance1.method4546(ObjTypeList.objTypes, local33, Static574.aBasTypeList2, Static25.aSeqTypeList1, arg0, super.anIntArray877, Static125.aClass388_1, Static68.aIdkTypeList3, arg1, Static690.aNpcTypeList2, super.aClass152_Sub2_Sub1Array3, local95, local58, Static34.aClass304_1);
 		@Pc(155) int local155 = Static303.method4429();
 		if (Static369.anInt4265 < 96 && local155 > 50) {
 			Static358.method9191();

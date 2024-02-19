@@ -30,7 +30,7 @@ public final class Preference_Sub27 extends Preference {
 	@OriginalMember(owner = "client!sga", name = "a", descriptor = "(B)V")
 	@Override
 	public void method8350() {
-		if (super.aClass2_Sub34_34.method5105() == Static723.aModeGame9) {
+		if (super.aClass2_Sub34_34.method5105() == ModeGame.GAME_STELLARDAWN) {
 			super.anInt9489 = 2;
 		}
 		if (super.anInt9489 < 0 || super.anInt9489 > 2) {

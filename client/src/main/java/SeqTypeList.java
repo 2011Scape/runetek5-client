@@ -19,8 +19,8 @@ public final class SeqTypeList {
 	public SeqTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aJs511 = arg2;
 		if (this.aJs511 != null) {
-			@Pc(26) int local26 = this.aJs511.method7597() - 1;
-			this.aJs511.method7608(local26);
+			@Pc(26) int local26 = this.aJs511.capacity() - 1;
+			this.aJs511.getGroupCapacity(local26);
 		}
 		Static642.method8440(arg4, arg3);
 	}
@@ -30,7 +30,7 @@ public final class SeqTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable22;
 		@Pc(16) SeqType local16;
 		synchronized (this.aSoftLruHashTable22) {
-			local16 = (SeqType) this.aSoftLruHashTable22.method2156((long) arg0);
+			local16 = (SeqType) this.aSoftLruHashTable22.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -38,7 +38,7 @@ public final class SeqTypeList {
 		@Pc(30) Js5 local30 = this.aJs511;
 		@Pc(43) byte[] local43;
 		synchronized (this.aJs511) {
-			local43 = this.aJs511.method7595(Static668.method8702(arg0), Static291.method4226(arg0));
+			local43 = this.aJs511.fetchFile(Static291.method4226(arg0), Static668.method8702(arg0));
 		}
 		local16 = new SeqType();
 		local16.anInt1650 = arg0;
@@ -48,7 +48,7 @@ public final class SeqTypeList {
 		local16.method1584();
 		@Pc(73) SoftLruHashTable local73 = this.aSoftLruHashTable22;
 		synchronized (this.aSoftLruHashTable22) {
-			this.aSoftLruHashTable22.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable22.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -57,11 +57,11 @@ public final class SeqTypeList {
 	public void method1163() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable22;
 		synchronized (this.aSoftLruHashTable22) {
-			this.aSoftLruHashTable22.method2147(5);
+			this.aSoftLruHashTable22.clean(5);
 		}
 		local6 = this.aSoftLruHashTable23;
 		synchronized (this.aSoftLruHashTable23) {
-			this.aSoftLruHashTable23.method2147(5);
+			this.aSoftLruHashTable23.clean(5);
 		}
 	}
 
@@ -69,11 +69,11 @@ public final class SeqTypeList {
 	public void method1164() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable22;
 		synchronized (this.aSoftLruHashTable22) {
-			this.aSoftLruHashTable22.method2151();
+			this.aSoftLruHashTable22.removeSoft();
 		}
 		local2 = this.aSoftLruHashTable23;
 		synchronized (this.aSoftLruHashTable23) {
-			this.aSoftLruHashTable23.method2151();
+			this.aSoftLruHashTable23.removeSoft();
 		}
 	}
 
@@ -81,11 +81,11 @@ public final class SeqTypeList {
 	public void method1165() {
 		@Pc(7) SoftLruHashTable local7 = this.aSoftLruHashTable22;
 		synchronized (this.aSoftLruHashTable22) {
-			this.aSoftLruHashTable22.method2157();
+			this.aSoftLruHashTable22.clear();
 		}
 		local7 = this.aSoftLruHashTable23;
 		synchronized (this.aSoftLruHashTable23) {
-			this.aSoftLruHashTable23.method2157();
+			this.aSoftLruHashTable23.clear();
 		}
 	}
 
@@ -93,10 +93,10 @@ public final class SeqTypeList {
 	public AnimFrameset method1166(@OriginalArg(0) int arg0) {
 		@Pc(12) SoftLruHashTable local12 = this.aSoftLruHashTable23;
 		synchronized (this.aSoftLruHashTable23) {
-			@Pc(22) AnimFrameset local22 = (AnimFrameset) this.aSoftLruHashTable23.method2156((long) arg0);
+			@Pc(22) AnimFrameset local22 = (AnimFrameset) this.aSoftLruHashTable23.get((long) arg0);
 			if (local22 == null) {
 				local22 = new AnimFrameset(arg0);
-				this.aSoftLruHashTable23.method2150(local22, (long) arg0);
+				this.aSoftLruHashTable23.put((long) arg0, local22);
 			}
 			return local22.method7565() ? local22 : null;
 		}

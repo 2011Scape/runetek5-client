@@ -19,17 +19,6 @@ public final class Static409 {
 	@OriginalMember(owner = "client!mt", name = "G", descriptor = "I")
 	public static int anInt6318 = -1;
 
-	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(ILclient!cm;Lclient!cm;)V")
-	public static void method5654(@OriginalArg(1) SecondaryLinkable arg0, @OriginalArg(2) SecondaryLinkable arg1) {
-		if (arg1.secondaryNext != null) {
-			arg1.unlinkSecondary();
-		}
-		arg1.secondaryPrev = arg0.secondaryPrev;
-		arg1.secondaryNext = arg0;
-		arg1.secondaryNext.secondaryPrev = arg1;
-		arg1.secondaryPrev.secondaryNext = arg1;
-	}
-
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(II[[[Lclient!pha;IIZ)Z")
 	public static boolean method5656(@OriginalArg(1) int arg0, @OriginalArg(2) Class291[][][] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		@Pc(21) byte local21 = arg4 ? 1 : (byte) (Static198.anInt3276 & 0xFF);

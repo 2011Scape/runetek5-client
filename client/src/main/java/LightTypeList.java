@@ -15,14 +15,14 @@ public final class LightTypeList {
 	@OriginalMember(owner = "client!vga", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public LightTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5120 = arg2;
-		this.aJs5120.method7608(31);
+		this.aJs5120.getGroupCapacity(31);
 	}
 
 	@OriginalMember(owner = "client!vga", name = "b", descriptor = "(I)V")
 	public void method8812() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable219;
 		synchronized (this.aSoftLruHashTable219) {
-			this.aSoftLruHashTable219.method2157();
+			this.aSoftLruHashTable219.clear();
 		}
 	}
 
@@ -30,7 +30,7 @@ public final class LightTypeList {
 	public void method8813() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable219;
 		synchronized (this.aSoftLruHashTable219) {
-			this.aSoftLruHashTable219.method2147(5);
+			this.aSoftLruHashTable219.clean(5);
 		}
 	}
 
@@ -39,7 +39,7 @@ public final class LightTypeList {
 		@Pc(13) SoftLruHashTable local13 = this.aSoftLruHashTable219;
 		@Pc(23) LightType local23;
 		synchronized (this.aSoftLruHashTable219) {
-			local23 = (LightType) this.aSoftLruHashTable219.method2156((long) arg0);
+			local23 = (LightType) this.aSoftLruHashTable219.get((long) arg0);
 		}
 		if (local23 != null) {
 			return local23;
@@ -47,7 +47,7 @@ public final class LightTypeList {
 		@Pc(37) Js5 local37 = this.aJs5120;
 		@Pc(46) byte[] local46;
 		synchronized (this.aJs5120) {
-			local46 = this.aJs5120.method7595(arg0, 31);
+			local46 = this.aJs5120.fetchFile(31, arg0);
 		}
 		local23 = new LightType();
 		if (local46 != null) {
@@ -55,7 +55,7 @@ public final class LightTypeList {
 		}
 		@Pc(70) SoftLruHashTable local70 = this.aSoftLruHashTable219;
 		synchronized (this.aSoftLruHashTable219) {
-			this.aSoftLruHashTable219.method2150(local23, (long) arg0);
+			this.aSoftLruHashTable219.put((long) arg0, local23);
 			return local23;
 		}
 	}
@@ -64,7 +64,7 @@ public final class LightTypeList {
 	public void method8815() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable219;
 		synchronized (this.aSoftLruHashTable219) {
-			this.aSoftLruHashTable219.method2151();
+			this.aSoftLruHashTable219.removeSoft();
 		}
 	}
 }

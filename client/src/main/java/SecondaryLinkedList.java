@@ -18,7 +18,18 @@ public final class SecondaryLinkedList {
 		this.sentinel.secondaryNext = this.sentinel;
 	}
 
-	@OriginalMember(owner = "client!jga", name = "c", descriptor = "(I)Lclient!cm;")
+    @OriginalMember(owner = "client!mt", name = "a", descriptor = "(ILclient!cm;Lclient!cm;)V")
+    public static void insertAfter(@OriginalArg(1) SecondaryLinkable arg0, @OriginalArg(2) SecondaryLinkable arg1) {
+        if (arg1.secondaryNext != null) {
+            arg1.unlinkSecondary();
+        }
+        arg1.secondaryPrev = arg0.secondaryPrev;
+        arg1.secondaryNext = arg0;
+        arg1.secondaryNext.secondaryPrev = arg1;
+        arg1.secondaryPrev.secondaryNext = arg1;
+    }
+
+    @OriginalMember(owner = "client!jga", name = "c", descriptor = "(I)Lclient!cm;")
 	public SecondaryLinkable removeTail() {
 		@Pc(7) SecondaryLinkable node = this.sentinel.secondaryPrev;
 		if (this.sentinel == node) {

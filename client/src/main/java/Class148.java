@@ -233,7 +233,7 @@ public final class Class148 {
 	private void method3166(@OriginalArg(1) Class19 arg0) {
 		try {
 			@Pc(9) Js5 local9 = Static386.aJs580;
-			@Pc(17) boolean local17 = local9.method7607(this.anInt3514);
+			@Pc(17) boolean local17 = local9.isGroupReady(this.anInt3514);
 			if (local17) {
 				arg0.ZA(16777215, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F);
 				@Pc(36) Class88 local36 = Static121.method2201(this.anInt3514, Static386.aJs580);

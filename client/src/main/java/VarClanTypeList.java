@@ -21,7 +21,7 @@ public final class VarClanTypeList {
 		if (this.aJs5111 == null) {
 			this.anInt8769 = 0;
 		} else {
-			this.anInt8769 = this.aJs5111.method7608(47);
+			this.anInt8769 = this.aJs5111.getGroupCapacity(47);
 		}
 	}
 
@@ -29,7 +29,7 @@ public final class VarClanTypeList {
 	public void method7783() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable192;
 		synchronized (this.aSoftLruHashTable192) {
-			this.aSoftLruHashTable192.method2157();
+			this.aSoftLruHashTable192.clear();
 		}
 	}
 
@@ -37,7 +37,7 @@ public final class VarClanTypeList {
 	public void method7784() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable192;
 		synchronized (this.aSoftLruHashTable192) {
-			this.aSoftLruHashTable192.method2147(5);
+			this.aSoftLruHashTable192.clean(5);
 		}
 	}
 
@@ -46,7 +46,7 @@ public final class VarClanTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable192;
 		@Pc(16) VarClanType local16;
 		synchronized (this.aSoftLruHashTable192) {
-			local16 = (VarClanType) this.aSoftLruHashTable192.method2156((long) arg0);
+			local16 = (VarClanType) this.aSoftLruHashTable192.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -54,7 +54,7 @@ public final class VarClanTypeList {
 		@Pc(30) Js5 local30 = this.aJs5111;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs5111) {
-			local39 = this.aJs5111.method7595(arg0, 47);
+			local39 = this.aJs5111.fetchFile(47, arg0);
 		}
 		local16 = new VarClanType();
 		if (local39 != null) {
@@ -62,7 +62,7 @@ public final class VarClanTypeList {
 		}
 		@Pc(63) SoftLruHashTable local63 = this.aSoftLruHashTable192;
 		synchronized (this.aSoftLruHashTable192) {
-			this.aSoftLruHashTable192.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable192.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -71,7 +71,7 @@ public final class VarClanTypeList {
 	public void method7787() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable192;
 		synchronized (this.aSoftLruHashTable192) {
-			this.aSoftLruHashTable192.method2151();
+			this.aSoftLruHashTable192.removeSoft();
 		}
 	}
 }

@@ -15,14 +15,14 @@ public final class SkyBoxTypeList {
 	@OriginalMember(owner = "client!qk", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public SkyBoxTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5100 = arg2;
-		this.aJs5100.method7608(29);
+		this.aJs5100.getGroupCapacity(29);
 	}
 
 	@OriginalMember(owner = "client!qk", name = "b", descriptor = "(II)V")
 	public void method7068() {
 		@Pc(13) SoftLruHashTable local13 = this.aSoftLruHashTable168;
 		synchronized (this.aSoftLruHashTable168) {
-			this.aSoftLruHashTable168.method2147(5);
+			this.aSoftLruHashTable168.clean(5);
 		}
 	}
 
@@ -30,7 +30,7 @@ public final class SkyBoxTypeList {
 	public void method7069() {
 		@Pc(10) SoftLruHashTable local10 = this.aSoftLruHashTable168;
 		synchronized (this.aSoftLruHashTable168) {
-			this.aSoftLruHashTable168.method2151();
+			this.aSoftLruHashTable168.removeSoft();
 		}
 	}
 
@@ -39,7 +39,7 @@ public final class SkyBoxTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable168;
 		@Pc(22) SkyBoxType local22;
 		synchronized (this.aSoftLruHashTable168) {
-			local22 = (SkyBoxType) this.aSoftLruHashTable168.method2156((long) arg0);
+			local22 = (SkyBoxType) this.aSoftLruHashTable168.get((long) arg0);
 		}
 		if (local22 != null) {
 			return local22;
@@ -47,7 +47,7 @@ public final class SkyBoxTypeList {
 		@Pc(36) Js5 local36 = this.aJs5100;
 		@Pc(45) byte[] local45;
 		synchronized (this.aJs5100) {
-			local45 = this.aJs5100.method7595(arg0, 29);
+			local45 = this.aJs5100.fetchFile(29, arg0);
 		}
 		local22 = new SkyBoxType();
 		if (local45 != null) {
@@ -55,7 +55,7 @@ public final class SkyBoxTypeList {
 		}
 		@Pc(69) SoftLruHashTable local69 = this.aSoftLruHashTable168;
 		synchronized (this.aSoftLruHashTable168) {
-			this.aSoftLruHashTable168.method2150(local22, (long) arg0);
+			this.aSoftLruHashTable168.put((long) arg0, local22);
 			return local22;
 		}
 	}
@@ -64,7 +64,7 @@ public final class SkyBoxTypeList {
 	public void method7071() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable168;
 		synchronized (this.aSoftLruHashTable168) {
-			this.aSoftLruHashTable168.method2157();
+			this.aSoftLruHashTable168.clear();
 		}
 	}
 

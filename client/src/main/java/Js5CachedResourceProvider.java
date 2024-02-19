@@ -90,8 +90,8 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 
 	@OriginalMember(owner = "client!pm", name = "c", descriptor = "(I)I")
 	public int method6644() {
-		if (this.method6642() == null) {
-			return this.aClass2_Sub2_Sub17_1 == null ? 0 : this.aClass2_Sub2_Sub17_1.method8972();
+		if (this.fetchIndex() == null) {
+			return this.aClass2_Sub2_Sub17_1 == null ? 0 : this.aClass2_Sub2_Sub17_1.getPercentageComplete();
 		} else {
 			return 100;
 		}
@@ -99,12 +99,12 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 
 	@OriginalMember(owner = "client!pm", name = "f", descriptor = "(I)I")
 	public int method6645() {
-		return this.aJs5Index1 == null ? 0 : this.aJs5Index1.anInt7367;
+		return this.aJs5Index1 == null ? 0 : this.aJs5Index1.size;
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(II)V")
 	@Override
-	public void method6636(@OriginalArg(1) int arg0) {
+	public void prefetchGroup(@OriginalArg(1) int arg0) {
 		if (this.aCache3 == null) {
 			return;
 		}
@@ -126,14 +126,14 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			@Pc(29) Linkable local29 = this.aLinkedList42.head();
 			return local29 == null ? 0 : (int) local29.id;
 		} else {
-			return this.aJs5Index1.anInt7367;
+			return this.aJs5Index1.size;
 		}
 	}
 
 	@OriginalMember(owner = "client!pm", name = "d", descriptor = "(I)V")
-	public void method6648() {
+	public void cycle() {
 		if (this.aLinkedList42 != null) {
-			if (this.method6642() == null) {
+			if (this.fetchIndex() == null) {
 				return;
 			}
 			@Pc(33) boolean local33;
@@ -153,8 +153,8 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 						local38.unlink();
 					}
 				}
-				while (this.aJs5Index1.anIntArray598.length > this.anInt7475) {
-					if (this.aJs5Index1.anIntArray598[this.anInt7475] == 0) {
+				while (this.aJs5Index1.groupSizes.length > this.anInt7475) {
+					if (this.aJs5Index1.groupSizes[this.anInt7475] == 0) {
 						this.anInt7475++;
 					} else {
 						if (this.aJs5CacheQueue3.anInt4243 >= 250) {
@@ -190,8 +190,8 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 						local33 = false;
 					}
 				}
-				while (this.aJs5Index1.anIntArray598.length > this.anInt7475) {
-					if (this.aJs5Index1.anIntArray598[this.anInt7475] == 0) {
+				while (this.aJs5Index1.groupSizes.length > this.anInt7475) {
+					if (this.aJs5Index1.groupSizes[this.anInt7475] == 0) {
 						this.anInt7475++;
 					} else {
 						if (this.aJs5NetQueue2.method6625()) {
@@ -222,14 +222,14 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			return;
 		}
 		for (@Pc(366) Js5Request local366 = (Js5Request) this.aHashTable36.head(); local366 != null; local366 = (Js5Request) this.aHashTable36.next()) {
-			if (!local366.aBoolean778) {
-				if (local366.aBoolean776) {
-					if (!local366.aBoolean777) {
+			if (!local366.incomplete) {
+				if (local366.orphan) {
+					if (!local366.urgent) {
 						throw new RuntimeException();
 					}
 					local366.unlink();
 				} else {
-					local366.aBoolean776 = true;
+					local366.orphan = true;
 				}
 			}
 		}
@@ -243,12 +243,12 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(IB)[B")
 	@Override
-	public byte[] method6641(@OriginalArg(0) int arg0) {
+	public byte[] fetchGroup(@OriginalArg(0) int arg0) {
 		@Pc(9) Js5Request local9 = this.method6651(arg0, 0);
 		if (local9 == null) {
 			return null;
 		} else {
-			@Pc(26) byte[] local26 = local9.method8971();
+			@Pc(26) byte[] local26 = local9.getData();
 			local9.unlink();
 			return local26;
 		}
@@ -257,17 +257,17 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(III)Lclient!tw;")
 	private Js5Request method6651(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(19) Js5Request local19 = (Js5Request) this.aHashTable36.get((long) arg0);
-		if (local19 != null && arg1 == 0 && !local19.aBoolean777 && local19.aBoolean778) {
+		if (local19 != null && arg1 == 0 && !local19.urgent && local19.incomplete) {
 			local19.unlink();
 			local19 = null;
 		}
 		if (local19 == null) {
 			if (arg1 == 0) {
 				if (this.aCache3 == null || this.aByteArray88[arg0] == -1) {
-					if (this.aJs5NetQueue2.method6630()) {
+					if (this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
 						return null;
 					}
-					local19 = this.aJs5NetQueue2.method6633(this.anInt7465, arg0, true, (byte) 2);
+					local19 = this.aJs5NetQueue2.read(this.anInt7465, arg0, true, (byte) 2);
 				} else {
 					local19 = this.aJs5CacheQueue3.method3825(this.aCache3, arg0);
 				}
@@ -286,16 +286,16 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 				if (this.aJs5NetQueue2.method6625()) {
 					return null;
 				}
-				local19 = this.aJs5NetQueue2.method6633(this.anInt7465, arg0, false, (byte) 2);
+				local19 = this.aJs5NetQueue2.read(this.anInt7465, arg0, false, (byte) 2);
 			} else {
 				throw new RuntimeException();
 			}
 			this.aHashTable36.put((long) arg0, local19);
 		}
-		if (local19.aBoolean778) {
+		if (local19.incomplete) {
 			return null;
 		}
-		@Pc(194) byte[] local194 = local19.method8971();
+		@Pc(194) byte[] local194 = local19.getData();
 		@Pc(224) int local224;
 		@Pc(254) byte[] local254;
 		@Pc(263) byte[] local263;
@@ -308,13 +308,13 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 						Static10.aCRC32_1.reset();
 						Static10.aCRC32_1.update(local194, 0, local194.length - 2);
 						local224 = (int) Static10.aCRC32_1.getValue();
-						if (this.aJs5Index1.anIntArray599[arg0] != local224) {
+						if (this.aJs5Index1.groupChecksums[arg0] != local224) {
 							throw new RuntimeException();
 						}
-						if (this.aJs5Index1.aByteArrayArray24 == null || this.aJs5Index1.aByteArrayArray24[arg0] == null) {
+						if (this.aJs5Index1.groupDigests == null || this.aJs5Index1.groupDigests[arg0] == null) {
 							break label157;
 						}
-						local254 = this.aJs5Index1.aByteArrayArray24[arg0];
+						local254 = this.aJs5Index1.groupDigests[arg0];
 						local263 = Static607.method8161(local194, local194.length - 2, 0);
 						local265 = 0;
 						while (true) {
@@ -334,14 +334,14 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			} catch (@Pc(498) RuntimeException local498) {
 				this.aJs5NetQueue2.method6619();
 				local19.unlink();
-				if (local19.aBoolean777 && !this.aJs5NetQueue2.method6630()) {
-					local383 = this.aJs5NetQueue2.method6633(this.anInt7465, arg0, true, (byte) 2);
+				if (local19.urgent && !this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
+					local383 = this.aJs5NetQueue2.read(this.anInt7465, arg0, true, (byte) 2);
 					this.aHashTable36.put((long) arg0, local383);
 				}
 				return null;
 			}
-			local194[local194.length - 2] = (byte) (this.aJs5Index1.anIntArray597[arg0] >>> 8);
-			local194[local194.length - 1] = (byte) this.aJs5Index1.anIntArray597[arg0];
+			local194[local194.length - 2] = (byte) (this.aJs5Index1.groupVersions[arg0] >>> 8);
+			local194[local194.length - 1] = (byte) this.aJs5Index1.groupVersions[arg0];
 			if (this.aCache3 != null) {
 				this.aJs5CacheQueue3.method3829(local194, arg0, this.aCache3);
 				if (this.aByteArray88[arg0] != 1) {
@@ -349,7 +349,7 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 					this.aByteArray88[arg0] = 1;
 				}
 			}
-			if (!local19.aBoolean777) {
+			if (!local19.urgent) {
 				local19.unlink();
 			}
 			return local19;
@@ -361,11 +361,11 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			Static10.aCRC32_1.reset();
 			Static10.aCRC32_1.update(local194, 0, local194.length - 2);
 			local224 = (int) Static10.aCRC32_1.getValue();
-			if (local224 != this.aJs5Index1.anIntArray599[arg0]) {
+			if (local224 != this.aJs5Index1.groupChecksums[arg0]) {
 				throw new RuntimeException();
 			}
-			if (this.aJs5Index1.aByteArrayArray24 != null && this.aJs5Index1.aByteArrayArray24[arg0] != null) {
-				local254 = this.aJs5Index1.aByteArrayArray24[arg0];
+			if (this.aJs5Index1.groupDigests != null && this.aJs5Index1.groupDigests[arg0] != null) {
+				local254 = this.aJs5Index1.groupDigests[arg0];
 				local263 = Static607.method8161(local194, local194.length - 2, 0);
 				for (local265 = 0; local265 < 64; local265++) {
 					if (local263[local265] != local254[local265]) {
@@ -374,22 +374,22 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 				}
 			}
 			@Pc(307) int local307 = (local194[local194.length - 1] & 0xFF) + ((local194[local194.length - 2] & 0xFF) << 8);
-			if (local307 != (this.aJs5Index1.anIntArray597[arg0] & 0xFFFF)) {
+			if (local307 != (this.aJs5Index1.groupVersions[arg0] & 0xFFFF)) {
 				throw new RuntimeException();
 			}
 			if (this.aByteArray88[arg0] != 1) {
 				this.anInt7473++;
 				this.aByteArray88[arg0] = 1;
 			}
-			if (!local19.aBoolean777) {
+			if (!local19.urgent) {
 				local19.unlink();
 			}
 			return local19;
 		} catch (@Pc(355) Exception local355) {
 			this.aByteArray88[arg0] = -1;
 			local19.unlink();
-			if (local19.aBoolean777 && !this.aJs5NetQueue2.method6630()) {
-				local383 = this.aJs5NetQueue2.method6633(this.anInt7465, arg0, true, (byte) 2);
+			if (local19.urgent && !this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
+				local383 = this.aJs5NetQueue2.read(this.anInt7465, arg0, true, (byte) 2);
 				this.aHashTable36.put((long) arg0, local383);
 			}
 			return null;
@@ -398,19 +398,19 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(BI)I")
 	@Override
-	public int method6637(@OriginalArg(1) int arg0) {
+	public int getPercentageComplete(@OriginalArg(1) int arg0) {
 		@Pc(19) Js5Request local19 = (Js5Request) this.aHashTable36.get((long) arg0);
-		return local19 == null ? 0 : local19.method8972();
+		return local19 == null ? 0 : local19.getPercentageComplete();
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(Z)V")
-	public void method6653() {
-		if (this.aLinkedList42 == null || this.method6642() == null) {
+	public void processPrefetchQueue() {
+		if (this.aLinkedList42 == null || this.fetchIndex() == null) {
 			return;
 		}
 		for (@Pc(21) Linkable local21 = this.aLinkedList41.head(); local21 != null; local21 = this.aLinkedList41.next()) {
 			@Pc(29) int local29 = (int) local21.id;
-			if (local29 < 0 || local29 >= this.aJs5Index1.anInt7368 || this.aJs5Index1.anIntArray598[local29] == 0) {
+			if (local29 < 0 || local29 >= this.aJs5Index1.capacity || this.aJs5Index1.groupSizes[local29] == 0) {
 				local21.unlink();
 			} else {
 				if (this.aByteArray88[local29] == 0) {
@@ -431,35 +431,35 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 
 	@OriginalMember(owner = "client!pm", name = "b", descriptor = "(B)Lclient!pj;")
 	@Override
-	public Js5Index method6642() {
+	public Js5Index fetchIndex() {
 		if (this.aJs5Index1 != null) {
 			return this.aJs5Index1;
 		}
 		if (this.aClass2_Sub2_Sub17_1 == null) {
-			if (this.aJs5NetQueue2.method6630()) {
+			if (this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
 				return null;
 			}
-			this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.method6633(255, this.anInt7465, true, (byte) 0);
+			this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.read(255, this.anInt7465, true, (byte) 0);
 		}
-		if (this.aClass2_Sub2_Sub17_1.aBoolean778) {
+		if (this.aClass2_Sub2_Sub17_1.incomplete) {
 			return null;
 		}
-		@Pc(53) byte[] local53 = this.aClass2_Sub2_Sub17_1.method8971();
+		@Pc(53) byte[] local53 = this.aClass2_Sub2_Sub17_1.getData();
 		if (this.aClass2_Sub2_Sub17_1 instanceof Js5CacheRequest) {
 			try {
 				if (local53 == null) {
 					throw new RuntimeException();
 				}
 				this.aJs5Index1 = new Js5Index(local53, this.anInt7463, this.aByteArray89);
-				if (this.anInt7472 != this.aJs5Index1.anInt7366) {
+				if (this.anInt7472 != this.aJs5Index1.version) {
 					throw new RuntimeException();
 				}
 			} catch (@Pc(162) RuntimeException local162) {
 				this.aJs5Index1 = null;
-				if (this.aJs5NetQueue2.method6630()) {
+				if (this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
 					this.aClass2_Sub2_Sub17_1 = null;
 				} else {
-					this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.method6633(255, this.anInt7465, true, (byte) 0);
+					this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.read(255, this.anInt7465, true, (byte) 0);
 				}
 				return null;
 			}
@@ -472,10 +472,10 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			} catch (@Pc(76) RuntimeException local76) {
 				this.aJs5NetQueue2.method6619();
 				this.aJs5Index1 = null;
-				if (this.aJs5NetQueue2.method6630()) {
+				if (this.aJs5NetQueue2.isUrgentRequestQueueFull()) {
 					this.aClass2_Sub2_Sub17_1 = null;
 				} else {
-					this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.method6633(255, this.anInt7465, true, (byte) 0);
+					this.aClass2_Sub2_Sub17_1 = this.aJs5NetQueue2.read(255, this.anInt7465, true, (byte) 0);
 				}
 				return null;
 			}
@@ -484,7 +484,7 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 			}
 		}
 		if (this.aCache3 != null) {
-			this.aByteArray88 = new byte[this.aJs5Index1.anInt7368];
+			this.aByteArray88 = new byte[this.aJs5Index1.capacity];
 			this.anInt7473 = 0;
 		}
 		this.aClass2_Sub2_Sub17_1 = null;

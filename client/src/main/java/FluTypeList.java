@@ -15,7 +15,7 @@ public final class FluTypeList {
 	@OriginalMember(owner = "client!dh", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
 	public FluTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs518 = arg2;
-		this.aJs518.method7608(1);
+		this.aJs518.getGroupCapacity(1);
 	}
 
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(II)Lclient!nq;")
@@ -23,7 +23,7 @@ public final class FluTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable47;
 		@Pc(18) FluType local18;
 		synchronized (this.aSoftLruHashTable47) {
-			local18 = (FluType) this.aSoftLruHashTable47.method2156((long) arg0);
+			local18 = (FluType) this.aSoftLruHashTable47.get((long) arg0);
 		}
 		if (local18 != null) {
 			return local18;
@@ -31,15 +31,15 @@ public final class FluTypeList {
 		@Pc(32) Js5 local32 = this.aJs518;
 		@Pc(41) byte[] local41;
 		synchronized (this.aJs518) {
-			local41 = this.aJs518.method7595(arg0, 1);
+			local41 = this.aJs518.fetchFile(1, arg0);
 		}
 		local18 = new FluType();
 		if (local41 != null) {
-			local18.method5921(new Packet(local41));
+			local18.decode(new Packet(local41));
 		}
 		@Pc(67) SoftLruHashTable local67 = this.aSoftLruHashTable47;
 		synchronized (this.aSoftLruHashTable47) {
-			this.aSoftLruHashTable47.method2150(local18, (long) arg0);
+			this.aSoftLruHashTable47.put((long) arg0, local18);
 			return local18;
 		}
 	}
@@ -48,7 +48,7 @@ public final class FluTypeList {
 	public void method2067() {
 		@Pc(17) SoftLruHashTable local17 = this.aSoftLruHashTable47;
 		synchronized (this.aSoftLruHashTable47) {
-			this.aSoftLruHashTable47.method2157();
+			this.aSoftLruHashTable47.clear();
 		}
 	}
 
@@ -56,7 +56,7 @@ public final class FluTypeList {
 	public void method2072() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable47;
 		synchronized (this.aSoftLruHashTable47) {
-			this.aSoftLruHashTable47.method2151();
+			this.aSoftLruHashTable47.removeSoft();
 		}
 	}
 
@@ -64,7 +64,7 @@ public final class FluTypeList {
 	public void method2073() {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable47;
 		synchronized (this.aSoftLruHashTable47) {
-			this.aSoftLruHashTable47.method2147(5);
+			this.aSoftLruHashTable47.clean(5);
 		}
 	}
 }

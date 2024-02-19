@@ -9,7 +9,7 @@ public final class Static335 {
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(II)V")
 	public static void method4945(@OriginalArg(1) int arg0) {
 		Static108.anInt2168 = arg0;
-		Static312.aSoftLruHashTable106.method2157();
+		Component.modelCache.clear();
 	}
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(IIZ)Z")

@@ -10,14 +10,14 @@ public abstract class Js5ResourceProvider {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(II)V")
-	public abstract void method6636(@OriginalArg(1) int arg0);
+	public abstract void prefetchGroup(@OriginalArg(1) int arg0);
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(BI)I")
-	public abstract int method6637(@OriginalArg(1) int arg0);
+	public abstract int getPercentageComplete(@OriginalArg(1) int arg0);
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IB)[B")
-	public abstract byte[] method6641(@OriginalArg(0) int arg0);
+	public abstract byte[] fetchGroup(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!bm", name = "b", descriptor = "(B)Lclient!pj;")
-	public abstract Js5Index method6642();
+	public abstract Js5Index fetchIndex();
 }

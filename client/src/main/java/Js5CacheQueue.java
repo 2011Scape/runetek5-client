@@ -53,7 +53,7 @@ public final class Js5CacheQueue implements Runnable {
 					break;
 				}
 				if (local21.secondaryKey == (long) arg1 && local21.aCache4 == arg0 && local21.anInt10352 == 2) {
-					local7.aBoolean778 = false;
+					local7.incomplete = false;
 					local7.aByteArray109 = local21.aByteArray109;
 					return local7;
 				}
@@ -61,8 +61,8 @@ public final class Js5CacheQueue implements Runnable {
 			}
 		}
 		local7.aByteArray109 = arg0.method126(arg1);
-		local7.aBoolean777 = true;
-		local7.aBoolean778 = false;
+		local7.urgent = true;
+		local7.incomplete = false;
 		return local7;
 	}
 
@@ -116,7 +116,7 @@ public final class Js5CacheQueue implements Runnable {
 			} catch (@Pc(83) Exception local83) {
 				Static240.method3496(local83, (String) null);
 			}
-			local18.aBoolean778 = false;
+			local18.incomplete = false;
 		}
 	}
 
@@ -127,7 +127,7 @@ public final class Js5CacheQueue implements Runnable {
 		local7.anInt10352 = 2;
 		local7.aByteArray109 = arg0;
 		local7.aCache4 = arg2;
-		local7.aBoolean777 = false;
+		local7.urgent = false;
 		this.method3827(local7);
 		return local7;
 	}
@@ -136,7 +136,7 @@ public final class Js5CacheQueue implements Runnable {
 	public Js5CacheRequest method3830(@OriginalArg(0) Cache arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) Js5CacheRequest local7 = new Js5CacheRequest();
 		local7.aCache4 = arg0;
-		local7.aBoolean777 = false;
+		local7.urgent = false;
 		local7.anInt10352 = 3;
 		local7.secondaryKey = (long) arg1;
 		this.method3827(local7);

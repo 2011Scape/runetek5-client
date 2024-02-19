@@ -21,7 +21,7 @@ public final class Static9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(B)V")
 	public static void method123() {
-		Static594.aSoftLruHashTable193.method2157();
+		Static594.aSoftLruHashTable193.clear();
 	}
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "([BZ)V")

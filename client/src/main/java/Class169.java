@@ -23,17 +23,17 @@ public final class Class169 {
 
 	@OriginalMember(owner = "client!hm", name = "b", descriptor = "(I)V")
 	public void method3527() {
-		this.aSoftLruHashTable85.method2157();
+		this.aSoftLruHashTable85.clear();
 	}
 
 	@OriginalMember(owner = "client!hm", name = "a", descriptor = "(Z)V")
 	public void method3528() {
-		this.aSoftLruHashTable85.method2147(5);
+		this.aSoftLruHashTable85.clean(5);
 	}
 
 	@OriginalMember(owner = "client!hm", name = "a", descriptor = "(BI)Lclient!rq;")
 	public Class93_Sub2 method3529(@OriginalArg(1) int arg0) {
-		@Pc(10) Object local10 = this.aSoftLruHashTable85.method2156((long) arg0);
+		@Pc(10) Object local10 = this.aSoftLruHashTable85.get((long) arg0);
 		if (local10 != null) {
 			return (Class93_Sub2) local10;
 		} else if (this.anInterface4_4.method6814(arg0)) {
@@ -53,7 +53,7 @@ public final class Class169 {
 				local90 = new Class93_Sub2(this.aClass19_Sub3_17, 3553, 6408, local52, local52, local33.aByte53 != 0, local114, 0, 0, false);
 			}
 			local90.method2946(local33.aBoolean236, local33.aBoolean235);
-			this.aSoftLruHashTable85.method2150(local90, (long) arg0);
+			this.aSoftLruHashTable85.put((long) arg0, local90);
 			return local90;
 		} else {
 			return null;

@@ -16,7 +16,7 @@ public final class QuestTypeList {
 	public QuestTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs59 = arg2;
 		if (this.aJs59 != null) {
-			this.aJs59.method7608(35);
+			this.aJs59.getGroupCapacity(35);
 		}
 	}
 
@@ -24,7 +24,7 @@ public final class QuestTypeList {
 	public void method1093() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable17;
 		synchronized (this.aSoftLruHashTable17) {
-			this.aSoftLruHashTable17.method2151();
+			this.aSoftLruHashTable17.removeSoft();
 		}
 	}
 
@@ -33,7 +33,7 @@ public final class QuestTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable17;
 		@Pc(16) QuestType local16;
 		synchronized (this.aSoftLruHashTable17) {
-			local16 = (QuestType) this.aSoftLruHashTable17.method2156((long) arg0);
+			local16 = (QuestType) this.aSoftLruHashTable17.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -41,7 +41,7 @@ public final class QuestTypeList {
 		@Pc(30) Js5 local30 = this.aJs59;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs59) {
-			local39 = this.aJs59.method7595(arg0, 35);
+			local39 = this.aJs59.fetchFile(35, arg0);
 		}
 		local16 = new QuestType();
 		if (local39 != null) {
@@ -50,7 +50,7 @@ public final class QuestTypeList {
 		local16.method5123();
 		@Pc(66) SoftLruHashTable local66 = this.aSoftLruHashTable17;
 		synchronized (this.aSoftLruHashTable17) {
-			this.aSoftLruHashTable17.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable17.put((long) arg0, local16);
 			return local16;
 		}
 	}
@@ -59,7 +59,7 @@ public final class QuestTypeList {
 	public void method1096() {
 		@Pc(11) SoftLruHashTable local11 = this.aSoftLruHashTable17;
 		synchronized (this.aSoftLruHashTable17) {
-			this.aSoftLruHashTable17.method2147(5);
+			this.aSoftLruHashTable17.clean(5);
 		}
 	}
 
@@ -67,7 +67,7 @@ public final class QuestTypeList {
 	public void method1098() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable17;
 		synchronized (this.aSoftLruHashTable17) {
-			this.aSoftLruHashTable17.method2157();
+			this.aSoftLruHashTable17.clear();
 		}
 	}
 }

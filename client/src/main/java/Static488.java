@@ -59,11 +59,11 @@ public final class Static488 {
 
 	@OriginalMember(owner = "client!pga", name = "a", descriptor = "(II)Lclient!fj;")
 	public static ClientScript method6525(@OriginalArg(0) int arg0) {
-		@Pc(10) ClientScript local10 = (ClientScript) Static480.aLruHashTable2.method8342((long) arg0);
+		@Pc(10) ClientScript local10 = (ClientScript) Static480.aLruHashTable2.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static31.aJs56.method7595(0, arg0);
+		@Pc(21) byte[] local21 = Static31.aJs56.fetchFile(arg0, 0);
 		if (local21 == null || local21.length <= 1) {
 			return null;
 		}
@@ -72,7 +72,7 @@ public final class Static488 {
 		} catch (@Pc(38) Exception local38) {
 			throw new RuntimeException(local38.getMessage() + " S: " + arg0);
 		}
-		Static480.aLruHashTable2.method8341(local10, (long) arg0);
+		Static480.aLruHashTable2.method8341((long) arg0, local10);
 		return local10;
 	}
 }

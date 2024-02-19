@@ -30,13 +30,13 @@ public final class CursorType {
 
 	@OriginalMember(owner = "client!vla", name = "a", descriptor = "(B)Lclient!wp;")
 	public synchronized Class407 method8934() {
-		@Pc(13) Class407 local13 = (Class407) this.aCursorTypeList2.aSoftLruHashTable143.method2156((long) this.anInt10305);
+		@Pc(13) Class407 local13 = (Class407) this.aCursorTypeList2.aSoftLruHashTable143.get((long) this.anInt10305);
 		if (local13 != null) {
 			return local13;
 		}
 		local13 = Static735.method9382(this.aCursorTypeList2.aJs588, this.anInt10305, 0);
 		if (local13 != null) {
-			this.aCursorTypeList2.aSoftLruHashTable143.method2150(local13, (long) this.anInt10305);
+			this.aCursorTypeList2.aSoftLruHashTable143.put((long) this.anInt10305, local13);
 		}
 		return local13;
 	}

@@ -29,7 +29,7 @@ public final class Class324 implements Interface24 {
 
 	@OriginalMember(owner = "client!rla", name = "a", descriptor = "(I)J")
 	@Override
-	public long method7433() {
+	public long getKey() {
 		@Pc(5) long[] local5 = ReferenceNode.aLongArray21;
 		@Pc(7) long local7 = -1L;
 		@Pc(22) long local22 = local5[(int) ((local7 ^ (long) this.anInt8432) & 0xFFL)] ^ local7 >>> 8;

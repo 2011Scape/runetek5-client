@@ -53,7 +53,7 @@ public final class Static668 {
 			Static30.aMsiTypeList3.method8365(64, 64);
 		}
 		if (Static30.aLocTypeList3 != null) {
-			Static30.aLocTypeList3.method3062(64);
+			Static30.aLocTypeList3.initCache(64);
 		}
 		Static529.aVarBitTypeList1.method3420(64);
 	}

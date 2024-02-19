@@ -6,87 +6,73 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ts")
 public final class LruHashTable {
 
-	@OriginalMember(owner = "client!ts", name = "l", descriptor = "[I")
-	public static final int[] anIntArray740 = new int[16384];
-
-	@OriginalMember(owner = "client!ts", name = "b", descriptor = "[I")
-	public static final int[] anIntArray741 = new int[16384];
-
 	@OriginalMember(owner = "client!ts", name = "j", descriptor = "Lclient!cm;")
-	private SecondaryLinkable aClass2_Sub2_57 = new SecondaryLinkable();
+	private SecondaryLinkable last = new SecondaryLinkable();
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "Lclient!jga;")
-	private final SecondaryLinkedList aSecondaryLinkedList15 = new SecondaryLinkedList();
+	private final SecondaryLinkedList queue = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!ts", name = "h", descriptor = "I")
-	private int anInt9483;
+	private int available;
 
 	@OriginalMember(owner = "client!ts", name = "g", descriptor = "I")
-	private final int anInt9484;
+	private final int capacity;
 
 	@OriginalMember(owner = "client!ts", name = "c", descriptor = "Lclient!av;")
-	private final HashTable aHashTable42;
-
-	static {
-		@Pc(63) double local63 = 3.834951969714103E-4D;
-		for (@Pc(65) int local65 = 0; local65 < 16384; local65++) {
-			anIntArray741[local65] = (int) (Math.sin((double) local65 * local63) * 16384.0D);
-			anIntArray740[local65] = (int) (Math.cos(local63 * (double) local65) * 16384.0D);
-		}
-	}
+	private final HashTable table;
 
 	@OriginalMember(owner = "client!ts", name = "<init>", descriptor = "(I)V")
-	public LruHashTable(@OriginalArg(0) int arg0) {
-		this.anInt9483 = arg0;
-		this.anInt9484 = arg0;
-		@Pc(19) int local19;
-		for (local19 = 1; local19 + local19 < arg0; local19 += local19) {
+	public LruHashTable(@OriginalArg(0) int capacity) {
+		this.available = capacity;
+		this.capacity = capacity;
+		@Pc(19) int bucketCount;
+		for (bucketCount = 1; bucketCount + bucketCount < capacity; bucketCount += bucketCount) {
 		}
-		this.aHashTable42 = new HashTable(local19);
+		this.table = new HashTable(bucketCount);
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(BLclient!cm;J)V")
-	public void method8341(@OriginalArg(1) SecondaryLinkable arg0, @OriginalArg(2) long arg1) {
-		if (this.anInt9483 == 0) {
-			@Pc(19) SecondaryLinkable local19 = this.aSecondaryLinkedList15.removeTail();
-			local19.unlink();
-			local19.unlinkSecondary();
-			if (this.aClass2_Sub2_57 == local19) {
-				local19 = this.aSecondaryLinkedList15.removeTail();
-				local19.unlink();
-				local19.unlinkSecondary();
+	public void method8341(@OriginalArg(2) long key, @OriginalArg(1) SecondaryLinkable value) {
+		if (this.available == 0) {
+			@Pc(19) SecondaryLinkable first = this.queue.removeTail();
+			first.unlink();
+			first.unlinkSecondary();
+			if (this.last == first) {
+				SecondaryLinkable second = this.queue.removeTail();
+				second.unlink();
+				second.unlinkSecondary();
 			}
 		} else {
-			this.anInt9483--;
+			this.available--;
 		}
-		this.aHashTable42.put(arg1, arg0);
-		this.aSecondaryLinkedList15.addTail(arg0);
+		this.table.put(key, value);
+		this.queue.addTail(value);
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(JZ)Lclient!cm;")
-	public SecondaryLinkable method8342(@OriginalArg(0) long arg0) {
-		@Pc(16) SecondaryLinkable local16 = (SecondaryLinkable) this.aHashTable42.get(arg0);
-		if (local16 != null) {
-			this.aSecondaryLinkedList15.addTail(local16);
+	public SecondaryLinkable get(@OriginalArg(0) long key) {
+		@Pc(16) SecondaryLinkable value = (SecondaryLinkable) this.table.get(key);
+		if (value != null) {
+			this.queue.addTail(value);
 		}
-		return local16;
+		return value;
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(IJ)V")
-	public void method8344(@OriginalArg(1) long arg0) {
-		@Pc(18) SecondaryLinkable local18 = (SecondaryLinkable) this.aHashTable42.get(arg0);
-		if (local18 != null) {
-			local18.unlink();
-			local18.unlinkSecondary();
-			this.anInt9483++;
+	public void remove(@OriginalArg(1) long key) {
+		@Pc(18) SecondaryLinkable value = (SecondaryLinkable) this.table.get(key);
+		if (value != null) {
+			value.unlink();
+			value.unlinkSecondary();
+			this.available++;
 		}
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(B)V")
-	public void method8345() {
-		this.aSecondaryLinkedList15.clear();
-		this.aHashTable42.clear();
-		this.aClass2_Sub2_57 = new SecondaryLinkable();
-		this.anInt9483 = this.anInt9484;
+	public void clear() {
+		this.queue.clear();
+		this.table.clear();
+		this.last = new SecondaryLinkable();
+		this.available = this.capacity;
 	}
 }

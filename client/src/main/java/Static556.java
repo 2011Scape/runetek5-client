@@ -52,9 +52,9 @@ public final class Static556 {
 			local63 = Static518.method9293(local55);
 			@Pc(65) int[] local65 = null;
 			if (Static245.method8635(local55.anInt7314)) {
-				local65 = Static419.aObjTypeList1.method2486((int) local55.aLong233).anIntArray800;
+				local65 = ObjTypeList.objTypes.method2486((int) local55.aLong233).anIntArray800;
 			} else if (local55.anInt7317 != -1) {
-				local65 = Static419.aObjTypeList1.method2486(local55.anInt7317).anIntArray800;
+				local65 = ObjTypeList.objTypes.method2486(local55.anInt7317).anIntArray800;
 			} else if (Static598.method7825(local55.anInt7314)) {
 				@Pc(93) Linkable_Sub45 local93 = (Linkable_Sub45) Static18.aHashTable2.get((long) (int) local55.aLong233);
 				if (local93 != null) {

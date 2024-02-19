@@ -87,10 +87,10 @@ public abstract class Class90 implements Interface13 {
 	@Override
 	public boolean method7747() {
 		@Pc(5) boolean local5 = true;
-		if (!this.aJs5109.method7581(this.aClass138_5.anInt4415)) {
+		if (!this.aJs5109.isFileReady(this.aClass138_5.anInt4415)) {
 			local5 = false;
 		}
-		if (!this.aJs5110.method7581(this.aClass138_5.anInt4415)) {
+		if (!this.aJs5110.isFileReady(this.aClass138_5.anInt4415)) {
 			local5 = false;
 		}
 		return local5;

@@ -249,8 +249,8 @@ public final class ProjAnimEntity extends Entity {
 				local187 = local21.anIntArray877[this.anInt695];
 			}
 			@Pc(213) int local213 = local187 - local185 & 0x3FFF;
-			@Pc(217) int local217 = LruHashTable.anIntArray741[local213];
-			@Pc(221) int local221 = LruHashTable.anIntArray740[local213];
+			@Pc(217) int local217 = Model.anIntArray741[local213];
+			@Pc(221) int local221 = Model.anIntArray740[local213];
 			@Pc(232) int local232 = local217 * local109 + local221 * local107 >> 14;
 			local109 = local109 * local221 - local217 * local107 >> 14;
 			super.anInt10694 += local109;

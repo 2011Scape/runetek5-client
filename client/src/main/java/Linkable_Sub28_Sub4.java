@@ -29,10 +29,6 @@ public final class Linkable_Sub28_Sub4 extends Linkable_Sub28 {
 	@OriginalMember(owner = "client!un", name = "r", descriptor = "I")
 	private int anInt9764;
 
-	static {
-		new ModeGame("game5", "Game 5", 4);
-	}
-
 	@OriginalMember(owner = "client!un", name = "<init>", descriptor = "(Lclient!jagtheora/ogg/OggStreamState;)V")
 	public Linkable_Sub28_Sub4(@OriginalArg(0) OggStreamState arg0) {
 		super(arg0);

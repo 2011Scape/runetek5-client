@@ -583,7 +583,7 @@ public final class LocType {
 		synchronized (modelArchive) {
 			for (@Pc(19) int shape = 0; shape < this.models.length; shape++) {
 				for (@Pc(22) int model = 0; model < this.models[shape].length; model++) {
-					success &= this.locTypes.modelArchive.method7586(0, this.models[shape][model]);
+					success &= this.locTypes.modelArchive.isFileReady(this.models[shape][model], 0);
 				}
 			}
 
@@ -620,7 +620,7 @@ public final class LocType {
 			for (@Pc(26) int i = 0; i < this.shapes.length; i++) {
 				if (shape == this.shapes[i]) {
 					for (@Pc(35) int j = 0; j < this.models[i].length; j++) {
-						if (!this.locTypes.modelArchive.method7586(0, this.models[i][j])) {
+						if (!this.locTypes.modelArchive.isFileReady(this.models[i][j], 0)) {
 							return false;
 						}
 					}
@@ -725,7 +725,7 @@ public final class LocType {
 		@Pc(96) SoftLruHashTable cache = this.locTypes.aSoftLruHashTable75;
 		@Pc(106) Class272 local106;
 		synchronized (cache) {
-			local106 = (Class272) this.locTypes.aSoftLruHashTable75.method2156(local21);
+			local106 = (Class272) this.locTypes.aSoftLruHashTable75.get(local21);
 		}
 
 		@Pc(120) Model local120 = local106 == null ? null : local106.model;
@@ -760,7 +760,7 @@ public final class LocType {
 			local106.model = local120;
 			@Pc(210) SoftLruHashTable local210 = this.locTypes.aSoftLruHashTable75;
 			synchronized (this.locTypes.aSoftLruHashTable75) {
-				this.locTypes.aSoftLruHashTable75.method2150(local106, local21);
+				this.locTypes.aSoftLruHashTable75.put(local21, local106);
 			}
 		}
 
@@ -822,7 +822,7 @@ public final class LocType {
 		@Pc(116) SoftLruHashTable local116 = this.locTypes.aSoftLruHashTable76;
 		@Pc(126) Model local126;
 		synchronized (this.locTypes.aSoftLruHashTable76) {
-			local126 = (Model) this.locTypes.aSoftLruHashTable76.method2156(local22);
+			local126 = (Model) this.locTypes.aSoftLruHashTable76.get(local22);
 		}
 
 		if (local126 == null || arg6.method7960(local126.ua(), arg9) != 0) {
@@ -835,7 +835,7 @@ public final class LocType {
 			}
 			local116 = this.locTypes.aSoftLruHashTable76;
 			synchronized (this.locTypes.aSoftLruHashTable76) {
-				this.locTypes.aSoftLruHashTable76.method2150(local126, local22);
+				this.locTypes.aSoftLruHashTable76.put(local22, local126);
 			}
 		}
 
@@ -944,7 +944,7 @@ public final class LocType {
 
 			@Pc(211) SoftLruHashTable local211 = this.locTypes.aSoftLruHashTable74;
 			synchronized (this.locTypes.aSoftLruHashTable74) {
-				local123 = (Model) this.locTypes.aSoftLruHashTable74.method2156(local191);
+				local123 = (Model) this.locTypes.aSoftLruHashTable74.get(local191);
 			}
 
 			if (local123 != null) {
@@ -994,7 +994,7 @@ public final class LocType {
 				local123 = arg0.method7952(local275, local265, this.locTypes.anInt3390, ambient, contrast);
 				@Pc(372) SoftLruHashTable local372 = this.locTypes.aSoftLruHashTable74;
 				synchronized (this.locTypes.aSoftLruHashTable74) {
-					this.locTypes.aSoftLruHashTable74.method2150(local123, local191);
+					this.locTypes.aSoftLruHashTable74.put(local191, local123);
 				}
 			}
 		}

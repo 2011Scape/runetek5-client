@@ -880,8 +880,8 @@ public final class Class88 {
 		@Pc(11) int local11;
 		@Pc(28) int local28;
 		if (arg0 != 0) {
-			local5 = LruHashTable.anIntArray741[arg0];
-			local9 = LruHashTable.anIntArray740[arg0];
+			local5 = Model.anIntArray741[arg0];
+			local9 = Model.anIntArray740[arg0];
 			for (local11 = 0; local11 < this.anInt2372; local11++) {
 				local28 = local9 * this.anIntArray213[local11] + local5 * this.anIntArray205[local11] >> 14;
 				this.anIntArray205[local11] = local9 * this.anIntArray205[local11] - this.anIntArray213[local11] * local5 >> 14;
@@ -889,8 +889,8 @@ public final class Class88 {
 			}
 		}
 		if (arg1 != 0) {
-			local5 = LruHashTable.anIntArray741[arg1];
-			local9 = LruHashTable.anIntArray740[arg1];
+			local5 = Model.anIntArray741[arg1];
+			local9 = Model.anIntArray740[arg1];
 			for (local11 = 0; local11 < this.anInt2372; local11++) {
 				local28 = local9 * this.anIntArray205[local11] - local5 * this.anIntArray204[local11] >> 14;
 				this.anIntArray204[local11] = local5 * this.anIntArray205[local11] + this.anIntArray204[local11] * local9 >> 14;
@@ -900,8 +900,8 @@ public final class Class88 {
 		if (arg2 == 0) {
 			return;
 		}
-		local5 = LruHashTable.anIntArray741[arg2];
-		local9 = LruHashTable.anIntArray740[arg2];
+		local5 = Model.anIntArray741[arg2];
+		local9 = Model.anIntArray740[arg2];
 		for (local11 = 0; local11 < this.anInt2372; local11++) {
 			local28 = local5 * this.anIntArray204[local11] + local9 * this.anIntArray213[local11] >> 14;
 			this.anIntArray204[local11] = this.anIntArray204[local11] * local9 - local5 * this.anIntArray213[local11] >> 14;

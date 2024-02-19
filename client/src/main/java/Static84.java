@@ -297,7 +297,7 @@ public final class Static84 {
 			for (local33 = (SecondaryLinkable_Sub4) Static490.aHashTable34.get(local41); local33 != null && !local33.aString10.equals(arg0.aString86); local33 = (SecondaryLinkable_Sub4) Static490.aHashTable34.nextWithKey()) {
 			}
 			if (local33 == null) {
-				local33 = (SecondaryLinkable_Sub4) Static717.aSoftLruHashTable232.method2156(local41);
+				local33 = (SecondaryLinkable_Sub4) Static717.aSoftLruHashTable232.get(local41);
 				if (local33 != null && !local33.aString10.equals(arg0.aString86)) {
 					local33 = null;
 				}
@@ -620,8 +620,8 @@ public final class Static84 {
 										} else {
 											local1125 = (int) Static171.aFloat64 + Static29.anInt723 & 0x3FFF;
 										}
-										@Pc(1137) int local1137 = LruHashTable.anIntArray741[local1125];
-										@Pc(1141) int local1141 = LruHashTable.anIntArray740[local1125];
+										@Pc(1137) int local1137 = Model.anIntArray741[local1125];
+										@Pc(1141) int local1141 = Model.anIntArray740[local1125];
 										if (Static511.anInt7645 != 4) {
 											local1137 = local1137 * (Static660.anInt9835 + 256) >> 8;
 											local1141 = local1141 * (Static660.anInt9835 + 256) >> 8;
@@ -647,7 +647,7 @@ public final class Static84 {
 											}
 											continue;
 										}
-										if (Static392.aModeGame4 == Static723.aModeGame9) {
+										if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
 											Static416.method5707(false, -1, 1L, local1191, local1199, LocalizedText.FACE_HERE.get(Static51.anInt1052), 11, true, -1, "", 0L, true);
 										}
 										Static416.method5707(false, -1, 1L, local1191, local1199, Static331.aString52, 58, true, Static331.anInt5439, "", 0L, true);

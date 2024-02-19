@@ -50,6 +50,6 @@ public final class Class109 implements Interface13 {
 	@OriginalMember(owner = "client!en", name = "b", descriptor = "(I)Z")
 	@Override
 	public boolean method7747() {
-		return this.aJs527.method7581(this.aClass200_1.anInt4996);
+		return this.aJs527.isFileReady(this.aClass200_1.anInt4996);
 	}
 }

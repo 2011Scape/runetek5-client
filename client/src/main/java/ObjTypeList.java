@@ -6,6 +6,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!es")
 public final class ObjTypeList {
 
+	@OriginalMember(owner = "client!ne", name = "n", descriptor = "Lclient!es;")
+	public static ObjTypeList objTypes;
 	@OriginalMember(owner = "client!es", name = "p", descriptor = "I")
 	public int anInt2673;
 
@@ -16,7 +18,7 @@ public final class ObjTypeList {
 	public final SoftLruHashTable aSoftLruHashTable58 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!es", name = "f", descriptor = "Lclient!aka;")
-	public final ObjLruHashTable aObjLruHashTable1 = new ObjLruHashTable(250);
+	public final ObjLruHashTable spriteCache = new ObjLruHashTable(250);
 
 	@OriginalMember(owner = "client!es", name = "j", descriptor = "Lclient!rla;")
 	private final Class324 aClass324_1 = new Class324();
@@ -59,8 +61,8 @@ public final class ObjTypeList {
 		if (this.aJs529 == null) {
 			this.anInt2670 = 0;
 		} else {
-			@Pc(54) int local54 = this.aJs529.method7597() - 1;
-			this.anInt2670 = this.aJs529.method7608(local54) + local54 * 256;
+			@Pc(54) int local54 = this.aJs529.capacity() - 1;
+			this.anInt2670 = this.aJs529.getGroupCapacity(local54) + local54 * 256;
 		}
 		if (this.aModeGame1 == ModeGame.GAME_RUNESCAPE) {
 			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.anInt2662), null, null, LocalizedText.EXAMINE.get(this.anInt2662) };
@@ -74,15 +76,15 @@ public final class ObjTypeList {
 	public void method2476() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable57;
 		synchronized (this.aSoftLruHashTable57) {
-			this.aSoftLruHashTable57.method2157();
+			this.aSoftLruHashTable57.clear();
 		}
 		local6 = this.aSoftLruHashTable58;
 		synchronized (this.aSoftLruHashTable58) {
-			this.aSoftLruHashTable58.method2157();
+			this.aSoftLruHashTable58.clear();
 		}
-		@Pc(44) ObjLruHashTable local44 = this.aObjLruHashTable1;
-		synchronized (this.aObjLruHashTable1) {
-			this.aObjLruHashTable1.method252();
+		@Pc(44) ObjLruHashTable local44 = this.spriteCache;
+		synchronized (this.spriteCache) {
+			this.spriteCache.clear();
 		}
 	}
 
@@ -123,7 +125,7 @@ public final class ObjTypeList {
 			local136.anInt8434 = arg0;
 			local136.anInt8433 = arg10;
 			local136.anInt8436 = arg5;
-			this.aObjLruHashTable1.method261(local119, local136);
+			this.spriteCache.put(local136, local119);
 		}
 		return local119;
 	}
@@ -132,15 +134,15 @@ public final class ObjTypeList {
 	public void method2479() {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable57;
 		synchronized (this.aSoftLruHashTable57) {
-			this.aSoftLruHashTable57.method2147(5);
+			this.aSoftLruHashTable57.clean(5);
 		}
 		local14 = this.aSoftLruHashTable58;
 		synchronized (this.aSoftLruHashTable58) {
-			this.aSoftLruHashTable58.method2147(5);
+			this.aSoftLruHashTable58.clean(5);
 		}
-		@Pc(48) ObjLruHashTable local48 = this.aObjLruHashTable1;
-		synchronized (this.aObjLruHashTable1) {
-			this.aObjLruHashTable1.method255();
+		@Pc(48) ObjLruHashTable local48 = this.spriteCache;
+		synchronized (this.spriteCache) {
+			this.spriteCache.clean(5);
 		}
 	}
 
@@ -148,15 +150,15 @@ public final class ObjTypeList {
 	public void method2480() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable57;
 		synchronized (this.aSoftLruHashTable57) {
-			this.aSoftLruHashTable57.method2151();
+			this.aSoftLruHashTable57.removeSoft();
 		}
 		local6 = this.aSoftLruHashTable58;
 		synchronized (this.aSoftLruHashTable58) {
-			this.aSoftLruHashTable58.method2151();
+			this.aSoftLruHashTable58.removeSoft();
 		}
-		@Pc(44) ObjLruHashTable local44 = this.aObjLruHashTable1;
-		synchronized (this.aObjLruHashTable1) {
-			this.aObjLruHashTable1.method253();
+		@Pc(44) ObjLruHashTable local44 = this.spriteCache;
+		synchronized (this.spriteCache) {
+			this.spriteCache.removeSoft();
 		}
 	}
 
@@ -165,7 +167,7 @@ public final class ObjTypeList {
 		this.anInt2673 = arg0;
 		@Pc(17) SoftLruHashTable local17 = this.aSoftLruHashTable58;
 		synchronized (this.aSoftLruHashTable58) {
-			this.aSoftLruHashTable58.method2157();
+			this.aSoftLruHashTable58.clear();
 		}
 	}
 
@@ -173,7 +175,7 @@ public final class ObjTypeList {
 	public void method2482() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable58;
 		synchronized (this.aSoftLruHashTable58) {
-			this.aSoftLruHashTable58.method2157();
+			this.aSoftLruHashTable58.clear();
 		}
 	}
 
@@ -186,14 +188,14 @@ public final class ObjTypeList {
 		this.aClass324_1.aBoolean641 = arg0 != null;
 		this.aClass324_1.anInt8434 = arg4;
 		this.aClass324_1.anInt8433 = arg3;
-		return (SoftwareIndexedSprite) this.aObjLruHashTable1.method260(this.aClass324_1);
+		return (SoftwareIndexedSprite) this.spriteCache.get(this.aClass324_1);
 	}
 
 	@OriginalMember(owner = "client!es", name = "c", descriptor = "(I)V")
 	public void method2484() {
-		@Pc(6) ObjLruHashTable local6 = this.aObjLruHashTable1;
-		synchronized (this.aObjLruHashTable1) {
-			this.aObjLruHashTable1.method252();
+		@Pc(6) ObjLruHashTable local6 = this.spriteCache;
+		synchronized (this.spriteCache) {
+			this.spriteCache.clear();
 		}
 	}
 
@@ -210,7 +212,7 @@ public final class ObjTypeList {
 		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable57;
 		@Pc(26) ObjType local26;
 		synchronized (this.aSoftLruHashTable57) {
-			local26 = (ObjType) this.aSoftLruHashTable57.method2156((long) arg0);
+			local26 = (ObjType) this.aSoftLruHashTable57.get((long) arg0);
 		}
 		if (local26 != null) {
 			return local26;
@@ -218,7 +220,7 @@ public final class ObjTypeList {
 		@Pc(40) Js5 local40 = this.aJs529;
 		@Pc(53) byte[] local53;
 		synchronized (this.aJs529) {
-			local53 = this.aJs529.method7595(Static223.method9100(arg0), Static593.method7781(arg0));
+			local53 = this.aJs529.fetchFile(Static593.method7781(arg0), Static223.method9100(arg0));
 		}
 		local26 = new ObjType();
 		local26.anInt10134 = arg0;
@@ -262,7 +264,7 @@ public final class ObjTypeList {
 		}
 		@Pc(238) SoftLruHashTable local238 = this.aSoftLruHashTable57;
 		synchronized (this.aSoftLruHashTable57) {
-			this.aSoftLruHashTable57.method2150(local26, (long) arg0);
+			this.aSoftLruHashTable57.put((long) arg0, local26);
 			return local26;
 		}
 	}

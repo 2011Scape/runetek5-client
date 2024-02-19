@@ -45,10 +45,10 @@ public final class Class26_Sub8 extends Class26 {
 		if (arg1 == null || (this.aClass19_Sub1_Sub1_6.aD3DCAPS1.VertexShaderVersion & 0xFFFF) < 257) {
 			this.aBoolean555 = false;
 		} else {
-			this.anIDirect3DVertexShader4 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.method7600("dx", "uw_ground_unlit"));
-			this.anIDirect3DVertexShader5 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.method7600("dx", "uw_ground_lit"));
-			this.anIDirect3DVertexShader6 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.method7600("dx", "uw_model_unlit"));
-			this.anIDirect3DVertexShader2 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.method7600("dx", "uw_model_lit"));
+			this.anIDirect3DVertexShader4 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.fetchFile("dx", "uw_ground_unlit"));
+			this.anIDirect3DVertexShader5 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.fetchFile("dx", "uw_ground_lit"));
+			this.anIDirect3DVertexShader6 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.fetchFile("dx", "uw_model_unlit"));
+			this.anIDirect3DVertexShader2 = this.aClass19_Sub1_Sub1_6.anIDirect3DDevice1.b(arg1.fetchFile("dx", "uw_model_lit"));
 			if (this.anIDirect3DVertexShader2 != null & this.anIDirect3DVertexShader6 != null & this.anIDirect3DVertexShader5 != null & this.anIDirect3DVertexShader4 != null) {
 				this.anInterface18_5 = this.aClass19_Sub1_21.method8034(false, 1, 2, new int[] { 0, -1 });
 				this.anInterface18_5.method9052(false, false);

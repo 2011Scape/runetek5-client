@@ -22,18 +22,18 @@ public final class HitmarkTypeList {
 	public HitmarkTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs575 = arg2;
 		this.aJs576 = arg3;
-		this.aJs575.method7608(46);
+		this.aJs575.getGroupCapacity(46);
 	}
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(I)V")
 	public void method5182() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable122;
 		synchronized (this.aSoftLruHashTable122) {
-			this.aSoftLruHashTable122.method2157();
+			this.aSoftLruHashTable122.clear();
 		}
 		local2 = this.aSoftLruHashTable121;
 		synchronized (this.aSoftLruHashTable121) {
-			this.aSoftLruHashTable121.method2157();
+			this.aSoftLruHashTable121.clear();
 		}
 	}
 
@@ -41,11 +41,11 @@ public final class HitmarkTypeList {
 	public void method5183() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable122;
 		synchronized (this.aSoftLruHashTable122) {
-			this.aSoftLruHashTable122.method2151();
+			this.aSoftLruHashTable122.removeSoft();
 		}
 		local2 = this.aSoftLruHashTable121;
 		synchronized (this.aSoftLruHashTable121) {
-			this.aSoftLruHashTable121.method2151();
+			this.aSoftLruHashTable121.removeSoft();
 		}
 	}
 
@@ -53,11 +53,11 @@ public final class HitmarkTypeList {
 	public void method5184() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable122;
 		synchronized (this.aSoftLruHashTable122) {
-			this.aSoftLruHashTable122.method2147(5);
+			this.aSoftLruHashTable122.clean(5);
 		}
 		local6 = this.aSoftLruHashTable121;
 		synchronized (this.aSoftLruHashTable121) {
-			this.aSoftLruHashTable121.method2147(5);
+			this.aSoftLruHashTable121.clean(5);
 		}
 	}
 
@@ -66,7 +66,7 @@ public final class HitmarkTypeList {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable122;
 		@Pc(16) HitmarkType local16;
 		synchronized (this.aSoftLruHashTable122) {
-			local16 = (HitmarkType) this.aSoftLruHashTable122.method2156((long) arg0);
+			local16 = (HitmarkType) this.aSoftLruHashTable122.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -74,16 +74,16 @@ public final class HitmarkTypeList {
 		@Pc(30) Js5 local30 = this.aJs575;
 		@Pc(39) byte[] local39;
 		synchronized (this.aJs575) {
-			local39 = this.aJs575.method7595(arg0, 46);
+			local39 = this.aJs575.fetchFile(46, arg0);
 		}
 		local16 = new HitmarkType();
 		local16.aHitmarkTypeList1 = this;
 		if (local39 != null) {
-			local16.method6458(new Packet(local39));
+			local16.decode(new Packet(local39));
 		}
 		@Pc(66) SoftLruHashTable local66 = this.aSoftLruHashTable122;
 		synchronized (this.aSoftLruHashTable122) {
-			this.aSoftLruHashTable122.method2150(local16, (long) arg0);
+			this.aSoftLruHashTable122.put((long) arg0, local16);
 			return local16;
 		}
 	}

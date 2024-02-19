@@ -51,7 +51,7 @@ public final class Static126 {
 	public static void method2229() {
 		@Pc(1) SoftLruHashTable local1 = Static354.aSoftLruHashTable120;
 		synchronized (Static354.aSoftLruHashTable120) {
-			Static354.aSoftLruHashTable120.method2151();
+			Static354.aSoftLruHashTable120.removeSoft();
 		}
 	}
 }

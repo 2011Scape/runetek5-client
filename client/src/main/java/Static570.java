@@ -59,9 +59,9 @@ public final class Static570 {
 
 	@OriginalMember(owner = "client!rv", name = "a", descriptor = "(I)V")
 	public static void method7553() {
-		Static473.aSoftLruHashTable157.method2151();
-		Static312.aSoftLruHashTable106.method2151();
-		Static449.aSoftLruHashTable146.method2151();
-		Static444.aSoftLruHashTable145.method2151();
+		Component.spriteCache.removeSoft();
+		Component.modelCache.removeSoft();
+		Static449.aSoftLruHashTable146.removeSoft();
+		Static444.aSoftLruHashTable145.removeSoft();
 	}
 }

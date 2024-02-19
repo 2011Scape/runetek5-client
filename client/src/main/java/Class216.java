@@ -103,15 +103,15 @@ public final class Class216 {
 		@Pc(84) int local84;
 		@Pc(94) int local94;
 		if (this.anInt5639 != 0) {
-			local79 = LruHashTable.anIntArray741[this.anInt5639];
-			local84 = LruHashTable.anIntArray740[this.anInt5639];
+			local79 = Model.anIntArray741[this.anInt5639];
+			local84 = Model.anIntArray740[this.anInt5639];
 			local94 = local33 * local84 - local35 * local79 >> 14;
 			local35 = local33 * local79 + local35 * local84 >> 14;
 			local33 = local94;
 		}
 		if (this.anInt5628 != 0) {
-			local79 = LruHashTable.anIntArray741[this.anInt5628];
-			local84 = LruHashTable.anIntArray740[this.anInt5628];
+			local79 = Model.anIntArray741[this.anInt5628];
+			local84 = Model.anIntArray740[this.anInt5628];
 			local94 = local35 * local79 + local31 * local84 >> 14;
 			local35 = local35 * local84 - local31 * local79 >> 14;
 			local31 = local94;
@@ -172,16 +172,16 @@ public final class Class216 {
 		@Pc(101) int local101;
 		if (this.anInt5639 != 0) {
 			local83 = -this.anInt5639 & 0x3FFF;
-			local87 = LruHashTable.anIntArray741[local83];
-			local91 = LruHashTable.anIntArray740[local83];
+			local87 = Model.anIntArray741[local83];
+			local91 = Model.anIntArray740[local83];
 			local101 = local36 * local91 - local38 * local87 >> 14;
 			local38 = local36 * local87 + local38 * local91 >> 14;
 			local36 = local101;
 		}
 		if (this.anInt5628 != 0) {
 			local83 = -this.anInt5628 & 0x3FFF;
-			local87 = LruHashTable.anIntArray741[local83];
-			local91 = LruHashTable.anIntArray740[local83];
+			local87 = Model.anIntArray741[local83];
+			local91 = Model.anIntArray740[local83];
 			local101 = local38 * local87 + local34 * local91 >> 14;
 			local38 = local38 * local91 - local34 * local87 >> 14;
 			local34 = local101;

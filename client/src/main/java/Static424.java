@@ -13,11 +13,11 @@ public final class Static424 {
 	public static void method5779() {
 		@Pc(1) SoftLruHashTable local1 = Static580.aSoftLruHashTable186;
 		synchronized (Static580.aSoftLruHashTable186) {
-			Static580.aSoftLruHashTable186.method2151();
+			Static580.aSoftLruHashTable186.removeSoft();
 		}
 		local1 = Static54.aSoftLruHashTable25;
 		synchronized (Static54.aSoftLruHashTable25) {
-			Static54.aSoftLruHashTable25.method2151();
+			Static54.aSoftLruHashTable25.removeSoft();
 		}
 	}
 }

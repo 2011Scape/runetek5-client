@@ -7,9 +7,6 @@ public final class Static312 {
 	@OriginalMember(owner = "client!jt", name = "f", descriptor = "I")
 	public static int anInt5001;
 
-	@OriginalMember(owner = "client!jt", name = "a", descriptor = "Lclient!dla;")
-	public static final SoftLruHashTable aSoftLruHashTable106 = new SoftLruHashTable(50);
-
 	@OriginalMember(owner = "client!jt", name = "h", descriptor = "Lclient!lga;")
 	public static final ServerProt ServerProt131 = new ServerProt(112, 6);
 

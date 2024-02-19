@@ -7,7 +7,20 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ka")
 public abstract class Model {
 
-	@OriginalMember(owner = "client!ka", name = "j", descriptor = "Z")
+    @OriginalMember(owner = "client!ts", name = "l", descriptor = "[I")
+    public static final int[] anIntArray740 = new int[16384];
+    @OriginalMember(owner = "client!ts", name = "b", descriptor = "[I")
+    public static final int[] anIntArray741 = new int[16384];
+
+    static {
+        @Pc(63) double local63 = 3.834951969714103E-4D;
+        for (@Pc(65) int local65 = 0; local65 < 16384; local65++) {
+            anIntArray741[local65] = (int) (Math.sin((double) local65 * local63) * 16384.0D);
+            anIntArray740[local65] = (int) (Math.cos(local63 * (double) local65) * 16384.0D);
+        }
+    }
+
+    @OriginalMember(owner = "client!ka", name = "j", descriptor = "Z")
 	protected boolean aBoolean645 = false;
 
 	@OriginalMember(owner = "client!ka", name = "<init>", descriptor = "()V")

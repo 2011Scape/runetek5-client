@@ -11,7 +11,7 @@ public final class SoftReferenceNodeFactory extends ReferenceNodeFactory {
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(Lclient!vw;I)Lclient!vw;")
 	@Override
-	public ReferenceNode method4433(@OriginalArg(0) ReferenceNode arg0) {
-		return new SoftReferenceNode(arg0.method9268(), arg0.anInt10683);
+	public ReferenceNode create(@OriginalArg(0) ReferenceNode arg0) {
+		return new SoftReferenceNode(arg0.get(), arg0.size);
 	}
 }

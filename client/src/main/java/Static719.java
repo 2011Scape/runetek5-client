@@ -19,8 +19,8 @@ public final class Static719 {
 			return;
 		}
 		if (Static273.anInt4403 < 10) {
-			if (!Static30.aJs574.method7598(Static30.aClass2_Sub2_Sub13_3.aString48)) {
-				Static273.anInt4403 = Static120.aJs519.method7593(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
+			if (!Static30.aJs574.isGroupReady(Static30.aClass2_Sub2_Sub13_3.aString48)) {
+				Static273.anInt4403 = Static120.aJs519.getPercentageComplete(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
 				return;
 			}
 			Static700.method9152();
@@ -98,7 +98,7 @@ public final class Static719 {
 			Static30.method5067(arg0, Static30.anInt5641 >> 2 << 10, Static30.anInt5642 >> 1);
 			Static30.aMelTypeList3.method5583(1024, 256);
 			Static30.aMsiTypeList3.method8365(256, 256);
-			Static30.aLocTypeList3.method3062(4096);
+			Static30.aLocTypeList3.initCache(4096);
 			Static529.aVarBitTypeList1.method3420(256);
 			Static273.anInt4403 = 20;
 		} else if (Static273.anInt4403 == 20) {
@@ -108,8 +108,8 @@ public final class Static719 {
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 60) {
-			if (Static30.aJs574.method7587(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
-				if (!Static30.aJs574.method7598(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
+			if (Static30.aJs574.isGroupNameVaild(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
+				if (!Static30.aJs574.isGroupReady(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
 					return;
 				}
 				Static30.aClass255_3 = Static284.method4103(Static174.aBoolean249, Static30.aJs574, Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements");

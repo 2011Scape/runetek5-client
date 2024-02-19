@@ -27,7 +27,7 @@ public final class Static303 {
 	public static int method4429() {
 		@Pc(13) SoftLruHashTable local13 = Static580.aSoftLruHashTable186;
 		synchronized (Static580.aSoftLruHashTable186) {
-			return Static580.aSoftLruHashTable186.method2148();
+			return Static580.aSoftLruHashTable186.size();
 		}
 	}
 
