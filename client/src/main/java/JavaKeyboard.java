@@ -136,6 +136,11 @@ public final class JavaKeyboard extends Keyboard implements KeyListener, FocusLi
 				Static502.zoom -= 15;
 				System.out.println("Zoom: " + Static502.zoom);
 			}
+			// Reset zoom to 320 if home is pressed.
+			else if (keyEvent.getKeyCode() == KeyEvent.VK_HOME) {
+				Static502.zoom = 320;
+				System.out.println("Zoom: " + Static502.zoom);
+			}
 		}
 
 		this.method8487(0, keyEvent);
