@@ -12,17 +12,17 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class238 {
 
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "Ljava/awt/Component;")
-	private Component aComponent2;
+	public Component aComponent2;
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "Ljava/awt/Robot;")
-	private final Robot aRobot1 = new Robot();
+	public final Robot aRobot1 = new Robot();
 
 	@OriginalMember(owner = "client!me", name = "<init>", descriptor = "()V")
-	private Class238() throws Exception {
+	public Class238() throws Exception {
 	}
 
 	@OriginalMember(owner = "client!me", name = "showcursor", descriptor = "(Ljava/awt/Component;Z)V")
-	private void showcursor(@OriginalArg(0) Component arg0, @OriginalArg(1) boolean arg1) {
+	public void showCursor(@OriginalArg(0) Component arg0, @OriginalArg(1) boolean arg1) {
 		if (arg1) {
 			arg0 = null;
 		} else if (arg0 == null) {
@@ -42,12 +42,12 @@ public final class Class238 {
 	}
 
 	@OriginalMember(owner = "client!me", name = "movemouse", descriptor = "(II)V")
-	private void movemouse(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public void moveMouse(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.aRobot1.mouseMove(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!me", name = "setcustomcursor", descriptor = "(Ljava/awt/Component;[IIILjava/awt/Point;)V")
-	private void setcustomcursor(@OriginalArg(0) Component arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Point arg4) {
+	public void setCustomCursor(@OriginalArg(0) Component arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Point arg4) {
 		if (arg1 == null) {
 			arg0.setCursor((Cursor) null);
 		} else {
