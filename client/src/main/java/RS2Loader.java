@@ -109,7 +109,7 @@ public class RS2Loader extends Applet {
      * Open the applet frame with specified configurations.
      */
     void openFrame() {
-        appletFrame = new JFrame("RuneScape");
+        appletFrame = new JFrame("2011Scape");
         appletFrame.setLayout(new BorderLayout());
         appletPanel.setLayout(new BorderLayout());
         appletPanel.add(this);
