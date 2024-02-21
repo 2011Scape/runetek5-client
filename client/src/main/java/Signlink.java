@@ -443,7 +443,7 @@ public final class Signlink implements Runnable {
 								if (this.aBoolean779) {
 									this.aWin32Callback.method6431(local460, local463);
 								} else {
-									Class.forName("Class238").getDeclaredMethod("movemouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
+									Class.forName("Class238").getDeclaredMethod("moveMouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
 								}
 							} else if (this.aBoolean781 && local42 == 15) {
 								@Pc(534) boolean local534 = local15.anInt6788 != 0;
@@ -451,11 +451,11 @@ public final class Signlink implements Runnable {
 								if (this.aBoolean779) {
 									this.aWin32Callback.method6432(local534, local538);
 								} else {
-									Class.forName("Class238").getDeclaredMethod("showcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
+									Class.forName("Class238").getDeclaredMethod("showCursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
 								}
 							} else if (!this.aBoolean779 && local42 == 17) {
 								local102 = (Object[]) local15.anObject12;
-								Class.forName("Class238").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
+								Class.forName("Class238").getDeclaredMethod("setCustomCursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
 							} else if (local42 == 16) {
 								try {
 									if (!Static689.osName.startsWith("win")) {
