@@ -151,7 +151,7 @@ public final class JavaMouse extends Mouse implements MouseListener, MouseMotion
 
 		// Scroll wheel zooming
 		if(mousewheelevent.isControlDown() && !mousewheelevent.isShiftDown()) {
-			if (Static502.zoom <= 150 && wheelRotation == -1 || Static502.zoom >= 400 && wheelRotation == 1) {
+			if (Static502.zoom <= 150 && wheelRotation == -1 || Static502.zoom >= 510 && wheelRotation == 1) {
 				return;
 			}
 			int diff = wheelRotation == -1 ? -15 : 15;

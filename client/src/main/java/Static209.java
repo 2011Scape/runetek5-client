@@ -16,11 +16,11 @@ public final class Static209 {
 
 	@OriginalMember(owner = "client!gi", name = "c", descriptor = "(I)V")
 	public static void method3110() {
-		Static329.anInt1752 = (int) ((double) Static720.anInt10859 * 34.46D);
+		Static329.zFar = (int) ((double) Static720.anInt10859 * 34.46D) * ClientConfig.FOG_DISTANCE_MULTIPLIER;
 		Static32.anInt775 = 200;
-		Static329.anInt1752 <<= 0x2;
+		Static329.zFar <<= 0x2;
 		if (Static163.aClass19_17.method7968()) {
-			Static329.anInt1752 += 512;
+			Static329.zFar += 512;
 		}
 		Static501.method6716(false);
 	}
