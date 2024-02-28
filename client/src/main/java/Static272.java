@@ -21,9 +21,6 @@ public final class Static272 {
 	@OriginalMember(owner = "client!ija", name = "k", descriptor = "I")
 	public static int anInt4374;
 
-	@OriginalMember(owner = "client!ija", name = "i", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt112 = new ServerProt(143, -2);
-
 	@OriginalMember(owner = "client!ija", name = "d", descriptor = "Z")
 	public static boolean aBoolean337 = false;
 

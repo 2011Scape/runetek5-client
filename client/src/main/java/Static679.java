@@ -22,9 +22,6 @@ public final class Static679 {
 	@OriginalMember(owner = "client!vj", name = "s", descriptor = "Lclient!eba;")
 	public static final Class92 aClass92_15 = new Class92(1);
 
-	@OriginalMember(owner = "client!vj", name = "l", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt247 = new ServerProt(63, 5);
-
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(Z)I")
 	public static int method8909() {
 		if (Static109.aComponent3 == null) {

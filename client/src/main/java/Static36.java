@@ -8,9 +8,6 @@ public final class Static36 {
 	@OriginalMember(owner = "client!bda", name = "E", descriptor = "Lclient!nh;")
 	public static VarPlayerTypeList aVarPlayerTypeList1;
 
-	@OriginalMember(owner = "client!bda", name = "D", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt15 = new ServerProt(70, -2);
-
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(IB)V")
 	public static void method977(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
 		Static101.method2000();

@@ -10,9 +10,6 @@ public final class Static619 {
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "I")
 	public static int anInt1566;
 
-	@OriginalMember(owner = "client!tk", name = "b", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt34 = new ServerProt(68, 1);
-
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(IIIIII)V")
 	public static void method1508(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(7) int local7 = 0;

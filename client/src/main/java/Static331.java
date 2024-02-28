@@ -13,14 +13,8 @@ public final class Static331 {
 	@OriginalMember(owner = "client!ki", name = "h", descriptor = "Lclient!sb;")
 	public static Js5 aJs565;
 
-	@OriginalMember(owner = "client!ki", name = "e", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt138 = new ServerProt(36, 4);
-
 	@OriginalMember(owner = "client!ki", name = "i", descriptor = "I")
 	public static int anInt5439 = -1;
-
-	@OriginalMember(owner = "client!ki", name = "g", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt139 = new ServerProt(118, -2);
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "I")
 	public static int anInt5441 = -50;

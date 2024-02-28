@@ -16,9 +16,6 @@ public final class Static617 {
 	@OriginalMember(owner = "client!tj", name = "C", descriptor = "[F")
 	public static final float[] aFloatArray69 = new float[4];
 
-	@OriginalMember(owner = "client!tj", name = "D", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt224 = new ServerProt(111, 3);
-
 	@OriginalMember(owner = "client!tj", name = "a", descriptor = "(I[FZ)[F")
 	public static float[] method8299(@OriginalArg(0) int arg0, @OriginalArg(1) float[] arg1) {
 		@Pc(12) float[] local12 = new float[arg0];

@@ -7,9 +7,6 @@ public final class Static109 {
 	@OriginalMember(owner = "client!dh", name = "e", descriptor = "I")
 	public static int anInt2178;
 
-	@OriginalMember(owner = "client!dh", name = "j", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt45 = new ServerProt(33, -2);
-
 	@OriginalMember(owner = "client!dh", name = "f", descriptor = "Lclient!hda;")
 	public static Component aComponent3 = null;
 

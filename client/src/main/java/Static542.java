@@ -7,9 +7,6 @@ public final class Static542 {
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "Lclient!st;")
 	public static SoftwareIndexedSprite aSoftwareIndexedSprite33;
 
-	@OriginalMember(owner = "client!rb", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt199 = new ServerProt(104, 8);
-
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "([Ljava/lang/Object;B[JII)V")
 	public static void method7200(@OriginalArg(0) Object[] arg0, @OriginalArg(2) long[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (arg2 >= arg3) {

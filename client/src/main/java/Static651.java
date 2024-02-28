@@ -10,9 +10,6 @@ public final class Static651 {
 	@OriginalMember(owner = "client!uja", name = "p", descriptor = "[Lclient!gaa;")
 	public static Interface9[] anInterface9Array1;
 
-	@OriginalMember(owner = "client!uja", name = "h", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt235 = new ServerProt(43, -2);
-
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(BILclient!ha;)Lclient!st;")
 	public static SoftwareIndexedSprite method8512(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(18) Linkable_Sub5 local18 = (Linkable_Sub5) Static106.aHashTable11.get((long) arg0);

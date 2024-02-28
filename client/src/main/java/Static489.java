@@ -8,9 +8,6 @@ public final class Static489 {
 	@OriginalMember(owner = "client!ph", name = "K", descriptor = "I")
 	public static int anInt7343;
 
-	@OriginalMember(owner = "client!ph", name = "I", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt185 = new ServerProt(8, 6);
-
 	@OriginalMember(owner = "client!ph", name = "D", descriptor = "[Lclient!pa;")
 	public static final Class283[] aClass283Array1 = new Class283[100];
 

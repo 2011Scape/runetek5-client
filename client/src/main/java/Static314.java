@@ -8,9 +8,6 @@ public final class Static314 {
 	@OriginalMember(owner = "client!jw", name = "v", descriptor = "I")
 	public static int anInt5035;
 
-	@OriginalMember(owner = "client!jw", name = "D", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt132 = new ServerProt(27, 0);
-
 	@OriginalMember(owner = "client!jw", name = "c", descriptor = "(B)V")
 	public static void method4560() {
 		@Pc(5) SoftLruHashTable local5 = Static580.aSoftLruHashTable186;
