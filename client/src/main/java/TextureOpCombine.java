@@ -23,7 +23,7 @@ public final class TextureOpCombine extends TextureOp {
 			super.aBoolean824 = arg1.g1() == 1;
 		}
 		if (arg0) {
-			ServerProt.OPCODE_121 = null;
+			ServerProt.SYNTH_SOUND_REPEAT = null;
 		}
 	}
 
