@@ -508,7 +508,7 @@ public final class Static364 {
 						}
 						Static524.aConnection3.aClass348_1.method7929(local1435.data, 1, 3);
 					}
-					Static524.aConnection3.packetType = ServerProt.method7677()[local1435.method7421()];
+					Static524.aConnection3.packetType = ServerProt.all()[local1435.method7421()];
 					Static524.aConnection3.anInt3648 = local1435.g2();
 					Static135.anInt8223 = 15;
 				}

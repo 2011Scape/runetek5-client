@@ -33,7 +33,7 @@ public class Protocol {
                 arg0.anInt3646 = 0;
             }
             arg0.aBoolean279 = true;
-            @Pc(96) ServerProt[] local96 = ServerProt.method7677();
+            @Pc(96) ServerProt[] local96 = ServerProt.all();
             local100 = local11.method7421();
             if (local100 < 0 || local96.length <= local100) {
                 throw new IOException("invo:" + local100 + " ip:" + local11.pos);
