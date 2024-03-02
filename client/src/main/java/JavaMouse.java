@@ -148,10 +148,11 @@ public final class JavaMouse extends Mouse implements MouseListener, MouseMotion
 		@Pc(2) int mouseWheelX = mousewheelevent.getX();
 		@Pc(5) int mouseWheelY = mousewheelevent.getY();
 		@Pc(8) int wheelRotation = mousewheelevent.getWheelRotation();
+		int maxZoom = 660;
 
 		// Scroll wheel zooming
 		if(mousewheelevent.isControlDown() && !mousewheelevent.isShiftDown()) {
-			if (Static502.zoom <= 150 && wheelRotation == -1 || Static502.zoom >= 510 && wheelRotation == 1) {
+			if (Static502.zoom <= 150 && wheelRotation == -1 || Static502.zoom >= maxZoom && wheelRotation == 1) {
 				return;
 			}
 			int diff = wheelRotation == -1 ? -15 : 15;
