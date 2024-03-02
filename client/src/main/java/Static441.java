@@ -13,9 +13,6 @@ public final class Static441 {
 	@OriginalMember(owner = "client!nu", name = "g", descriptor = "I")
 	public static int anInt6691;
 
-	@OriginalMember(owner = "client!nu", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt168 = new ServerProt(20, -1);
-
 	@OriginalMember(owner = "client!nu", name = "a", descriptor = "(II[I[Ljava/lang/Object;Z)V")
 	public static void method5966(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) Object[] arg3) {
 		if (arg1 >= arg0) {

@@ -9,9 +9,6 @@ public final class Static297 {
 	@OriginalMember(owner = "client!jha", name = "o", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt59 = new ClientProt(9, 3);
 
-	@OriginalMember(owner = "client!jha", name = "g", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt125 = new ServerProt(66, 10);
-
 	@OriginalMember(owner = "client!jha", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray24 = new String[8];
 

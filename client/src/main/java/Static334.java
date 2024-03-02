@@ -9,9 +9,6 @@ public final class Static334 {
 	@OriginalMember(owner = "client!kja", name = "b", descriptor = "Lclient!rg;")
 	public static Keyboard aKeyboard1;
 
-	@OriginalMember(owner = "client!kja", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt140 = new ServerProt(71, 2);
-
 	@OriginalMember(owner = "client!kja", name = "a", descriptor = "I")
 	public static int anInt5456 = 0;
 

@@ -13,9 +13,6 @@ public final class Static706 {
 	@OriginalMember(owner = "client!wfa", name = "T", descriptor = "I")
 	public static int anInt10633;
 
-	@OriginalMember(owner = "client!wfa", name = "Q", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt255 = new ServerProt(105, -1);
-
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(IILclient!gp;III)V")
 	public static void method9220(@OriginalArg(0) int arg0, @OriginalArg(2) Class150 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (arg4 < 1 || arg2 < 1 || arg4 > Static720.anInt10859 - 2 || Static501.anInt7568 - 2 < arg2) {

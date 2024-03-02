@@ -8,9 +8,6 @@ public final class Static166 {
 	@OriginalMember(owner = "client!fca", name = "a", descriptor = "Ljava/applet/Applet;")
 	public static Applet anApplet1;
 
-	@OriginalMember(owner = "client!fca", name = "b", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt63 = new ServerProt(41, 7);
-
 	@OriginalMember(owner = "client!fca", name = "h", descriptor = "[I")
 	public static final int[] anIntArray247 = new int[1];
 

@@ -6,9 +6,6 @@ public final class Static291 {
 	@OriginalMember(owner = "client!je", name = "g", descriptor = "[Lclient!st;")
 	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray8;
 
-	@OriginalMember(owner = "client!je", name = "e", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt123 = new ServerProt(128, -2);
-
 	@OriginalMember(owner = "client!je", name = "h", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable24 = new HashTable(512);
 

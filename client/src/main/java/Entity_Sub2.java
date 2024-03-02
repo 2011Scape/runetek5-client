@@ -29,7 +29,7 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 	@Override
 	public void method9285(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) ParticleNode_Sub2 arg6) {
 		if (arg4 < 101) {
-			Static451.aServerProt_171 = null;
+			ServerProt.OPCODE_12 = null;
 		}
 		throw new IllegalStateException();
 	}

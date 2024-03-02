@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static491 {
 
-	@OriginalMember(owner = "client!pi", name = "a", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt253 = new ServerProt(142, 0);
-
-	@OriginalMember(owner = "client!pi", name = "e", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt254 = new ServerProt(103, 2);
-
 	@OriginalMember(owner = "client!pi", name = "c", descriptor = "[[I")
 	public static final int[][] anIntArrayArray257 = new int[][] { { 12, 12, 12, 12 }, { 12, 12, 12, 12 }, { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 12, 12, 12, 12, 12, 12 }, { 1, 1, 1, 7 }, { 1, 1, 7, 1 }, { 8, 9, 9, 8, 8, 9 }, { 8, 8, 9, 8, 9, 9 }, { 10, 10, 11, 11, 11, 10 }, { 12, 12, 12, 12 } };
 

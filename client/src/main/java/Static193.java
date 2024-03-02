@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static193 {
 
-	@OriginalMember(owner = "client!fw", name = "D", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt74 = new ServerProt(10, 0);
-
 	@OriginalMember(owner = "client!fw", name = "a", descriptor = "(BI)V")
 	public static void method2897(@OriginalArg(1) int arg0) {
 		for (@Pc(11) Linkable local11 = Static291.aHashTable24.head(); local11 != null; local11 = Static291.aHashTable24.next()) {

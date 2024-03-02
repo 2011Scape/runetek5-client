@@ -14,9 +14,6 @@ public final class Static353 {
 	@OriginalMember(owner = "client!lca", name = "s", descriptor = "[I")
 	public static final int[] anIntArray748 = new int[] { 1, 2, 4, 8 };
 
-	@OriginalMember(owner = "client!lca", name = "A", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt233 = new ServerProt(30, -2);
-
 	@OriginalMember(owner = "client!lca", name = "a", descriptor = "(Lclient!ge;B)Lclient!fw;")
 	public static Class138_Sub1_Sub1 method8430(@OriginalArg(0) Packet arg0) {
 		@Pc(7) Class138_Sub1 local7 = Static715.method9346(arg0);

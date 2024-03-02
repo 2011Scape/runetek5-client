@@ -10,9 +10,6 @@ public final class Static25 {
 	@OriginalMember(owner = "client!as", name = "g", descriptor = "I")
 	public static int anInt598;
 
-	@OriginalMember(owner = "client!as", name = "e", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt11 = new ServerProt(52, 6);
-
 	@OriginalMember(owner = "client!as", name = "c", descriptor = "Lclient!av;")
 	public static final HashTable aHashTable4 = new HashTable(32);
 
