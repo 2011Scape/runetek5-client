@@ -53,14 +53,14 @@ public final class Static363 {
 			return 1;
 		}
 		if (arg1 != Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915()) {
-			Static667.method8695(true, LocalizedText.PROFILING.get(Static51.anInt1052), arg1);
+			Static667.method8695(true, LocalizedText.PROFILING.get(Static51.clientLanguageId), arg1);
 			if (arg1 != Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915()) {
 				return -1;
 			}
 		}
 		try {
 			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
-			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
 			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, client.models);
 			@Pc(70) long local70 = Static588.method7715();
 			Static163.aClass19_17.la();

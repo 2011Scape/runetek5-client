@@ -43,6 +43,6 @@ public final class Static32 {
 
 	@OriginalMember(owner = "client!bba", name = "a", descriptor = "(IZZ)V")
 	public static void method880(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
-		Static667.method8695(arg1, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052), arg0);
+		Static667.method8695(arg1, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId), arg0);
 	}
 }

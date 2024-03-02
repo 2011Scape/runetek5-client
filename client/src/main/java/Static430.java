@@ -44,7 +44,7 @@ public final class Static430 {
 		if (Static150.aString26 != null) {
 			local88 = "/p=" + Static150.aString26;
 		}
-		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + Static51.anInt1052 + "/a=" + Static323.anInt5121 + local88 + "/j" + (Static98.aBoolean191 ? "1" : "0") + ",o" + (Static464.aBoolean533 ? "1" : "0") + ",a2";
+		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + Static51.clientLanguageId + "/a=" + Static323.anInt5121 + local88 + "/j" + (Static98.aBoolean191 ? "1" : "0") + ",o" + (Static464.aBoolean533 ? "1" : "0") + ",a2";
 		try {
 			Static295.aClient1.getAppletContext().showDocument(new URL(local152), "_self");
 			return true;

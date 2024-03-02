@@ -29,7 +29,7 @@ public final class Static684 {
 			Static164.anInt2808 = 0;
 		}
 		Static81.method1586(arg2);
-		Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052), true, Static694.aClass381_13, Static437.aClass14_9);
+		Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
 		@Pc(74) int local74 = Static691.anInt10367;
 		Static691.anInt10367 = (Static62.anInt1465 - (Static720.anInt10859 >> 4)) * 8;
 		@Pc(85) int local85 = Static116.anInt2270;

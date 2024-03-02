@@ -23,7 +23,7 @@ public final class Static104 {
 		@Pc(39) int[] local39 = Static664.method8652(local6);
 		@Pc(43) int local43 = local6.buffer.pos;
 		local6.buffer.pjstr(arg0);
-		local6.buffer.p1(Static51.anInt1052);
+		local6.buffer.p1(Static51.clientLanguageId);
 		local6.buffer.pos += 7;
 		local6.buffer.tinyenc(local39, local43, local6.buffer.pos);
 		local6.buffer.psize2(local6.buffer.pos - local28);

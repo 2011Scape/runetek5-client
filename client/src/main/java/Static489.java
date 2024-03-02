@@ -183,7 +183,7 @@ public final class Static489 {
 			return;
 		}
 		if (Static213.anInt3472 != 0) {
-			Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.anInt1052) + "<br>(100%)", true, Static694.aClass381_13, Static437.aClass14_9);
+			Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId) + "<br>(100%)", true, Static694.aClass381_13, Static437.aClass14_9);
 		}
 		Static557.method7331();
 		Static352.resetCache();

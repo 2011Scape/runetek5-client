@@ -54,7 +54,7 @@ public final class Static720 {
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(I)Lclient!kv;")
 	public static Preferences method9398() {
 		@Pc(13) FileOnDisk local13 = null;
-		@Pc(19) Preferences local19 = new Preferences(Static392.aModeGame4, 0);
+		@Pc(19) Preferences local19 = new Preferences(Static392.clientModeGame, 0);
 		try {
 			@Pc(25) PrivilegedRequest local25 = Static446.aSignlink6.method8981("");
 			while (local25.anInt6789 == 0) {
@@ -70,7 +70,7 @@ public final class Static720 {
 						throw new IOException("EOF");
 					}
 				}
-				local19 = new Preferences(new Packet(local51), Static392.aModeGame4, 0);
+				local19 = new Preferences(new Packet(local51), Static392.clientModeGame, 0);
 			}
 		} catch (@Pc(97) Exception local97) {
 		}

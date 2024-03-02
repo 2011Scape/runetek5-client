@@ -45,7 +45,7 @@ public final class Static420 {
 			return;
 		}
 		if (arg0.aString42 == null) {
-			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, LocalizedText.CONTINUE.get(Static51.anInt1052), 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, LocalizedText.CONTINUE.get(Static51.clientLanguageId), 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
 		} else {
 			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, arg0.aString42, 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
 		}

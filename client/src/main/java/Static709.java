@@ -35,7 +35,7 @@ public final class Static709 {
 		@Pc(27) Class140 local27 = Static473.aClass140_22;
 		@Pc(35) int local35 = client.method3448();
 		if (Static473.aClass140_22 == local27) {
-			Static579.aString106 = Static473.aClass140_22.aLocalizedText_63.get(Static51.anInt1052);
+			Static579.aString106 = Static473.aClass140_22.aLocalizedText_63.get(Static51.clientLanguageId);
 			if (Static473.aClass140_22.aBoolean264) {
 				Static376.anInt5919 = Static473.aClass140_22.anInt3271 + local35 * (Static473.aClass140_22.anInt3270 - Static473.aClass140_22.anInt3271) / 100;
 			}
@@ -46,7 +46,7 @@ public final class Static709 {
 			Static449.aClass364_1 = null;
 			Static81.method1586(3);
 		} else {
-			Static579.aString106 = local27.aLocalizedText_64.get(Static51.anInt1052);
+			Static579.aString106 = local27.aLocalizedText_64.get(Static51.clientLanguageId);
 			if (Static473.aClass140_22.aBoolean263) {
 				Static579.aString106 = Static579.aString106 + local27.anInt3270 + "%";
 			}
@@ -551,10 +551,10 @@ public final class Static709 {
 											for (@Pc(2281) SecondaryParticleNode_Sub1 local2281 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2790(); local2281 != null; local2281 = (SecondaryParticleNode_Sub1) Static168.aParticleLinkedList5.method2785()) {
 												if (Static588.method7715() / 1000L - 5L > (long) local2281.anInt6433) {
 													if (local2281.aShort74 > 0) {
-														Static44.method1072(local2281.aString72 + LocalizedText.FRIEND_LOGGED_IN.get(Static51.anInt1052), "", 0, "", "", 5);
+														Static44.method1072(local2281.aString72 + LocalizedText.FRIEND_LOGGED_IN.get(Static51.clientLanguageId), "", 0, "", "", 5);
 													}
 													if (local2281.aShort74 == 0) {
-														Static44.method1072(local2281.aString72 + LocalizedText.FRIEND_LOGGED_OUT.get(Static51.anInt1052), "", 0, "", "", 5);
+														Static44.method1072(local2281.aString72 + LocalizedText.FRIEND_LOGGED_OUT.get(Static51.clientLanguageId), "", 0, "", "", 5);
 													}
 													local2281.method9274();
 												}

@@ -53,7 +53,7 @@ public final class Static515 {
 		@Pc(152) int local152 = Static534.anInt8111 * local46 / Static30.anInt5650 + local75;
 		@Pc(166) int local166 = local48 + local84 - local144 - Static510.anInt7639 * local48 / Static30.anInt5644;
 		@Pc(168) int local168 = -1996554240;
-		if (Static392.aModeGame4 == ModeGame.GAME_STELLARDAWN) {
+		if (Static392.clientModeGame == ModeGame.GAME_STELLARDAWN) {
 			local168 = -1996488705;
 		}
 		arg1.aa(local152, local166, local138, local144, local168, 1);
@@ -92,7 +92,7 @@ public final class Static515 {
 		}
 		if (Static234.aBoolean303) {
 			@Pc(34) Linkable_Sub5 local34 = new Linkable_Sub5(arg1, new Class222_Sub1(4096, client.js5Archive36, arg1), arg2, arg0);
-			local34.aClass222_Sub1_1.method9183(Static384.aStringArray31[Static51.anInt1052]);
+			local34.aClass222_Sub1_1.method9183(Static384.aStringArray31[Static51.clientLanguageId]);
 			Static106.aHashTable11.put((long) arg1, local34);
 		} else {
 			Static635.method8380(arg1, arg0);

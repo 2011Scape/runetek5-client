@@ -330,7 +330,7 @@ public final class Static71 {
 											}
 										}
 										if (local19 == Static390.aComponent9) {
-											local1533 = LocalizedText.PLEASE_WAIT.get(Static51.anInt1052);
+											local1533 = LocalizedText.PLEASE_WAIT.get(Static51.clientLanguageId);
 											local323 = local19.anInt3779;
 										}
 										if (Static376.aBoolean452) {
@@ -446,7 +446,7 @@ public final class Static71 {
 										local1255 = local19.anInt3831;
 										if (local1255 >= 0 && local1255 < 2048) {
 											@Pc(2341) Player local2341 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local1255];
-											if (local2341 != null && (local1255 == Static312.anInt5000 || Static214.method3157(local2341.aString9) == local19.anInt3738)) {
+											if (local2341 != null && (local1255 == Static312.anInt5000 || Static214.method3157(local2341.name2) == local19.anInt3738)) {
 												local2313 = local2341.aPlayerAppearance1.method4546(ObjTypeList.objTypes, local19.aClass152_6, Static574.aBasTypeList2, Static25.aSeqTypeList1, 2048, (int[]) null, Static125.aClass388_1, Static68.aIdkTypeList3, Static163.aClass19_17, Static690.aNpcTypeList2, (Class152[]) null, 0, (Class152) null, Static34.aClass304_1);
 											}
 										}

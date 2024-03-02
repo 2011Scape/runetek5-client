@@ -26,6 +26,6 @@ public final class Static362 {
 				return true;
 			}
 		}
-		return arg1.equalsIgnoreCase(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9);
+		return arg1.equalsIgnoreCase(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2);
 	}
 }

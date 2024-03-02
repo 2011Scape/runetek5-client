@@ -20,7 +20,7 @@ public final class Static693 {
 	public static int anInt10382 = -1;
 
 	@OriginalMember(owner = "client!vu", name = "b", descriptor = "(III)Ljava/lang/String;")
-	public static String method9009(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public static String levelDifferenceColor(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) int local8 = arg0 - arg1;
 		if (local8 < -9) {
 			return "<col=ff0000>";

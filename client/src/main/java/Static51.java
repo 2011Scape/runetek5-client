@@ -8,7 +8,7 @@ public final class Static51 {
 	public static final Class184 aClass184_1 = new Class184(6, 0, 4, 2);
 
 	@OriginalMember(owner = "client!bma", name = "c", descriptor = "I")
-	public static int anInt1052 = 0;
+	public static int clientLanguageId = 0;
 
 	@OriginalMember(owner = "client!bma", name = "b", descriptor = "I")
 	public static int anInt1053 = 0;
