@@ -9,9 +9,6 @@ public final class Static688 {
 	@OriginalMember(owner = "client!vp", name = "K", descriptor = "I")
 	public static int anInt10356;
 
-	@OriginalMember(owner = "client!vp", name = "B", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt250 = new ServerProt(88, -2);
-
 	@OriginalMember(owner = "client!vp", name = "F", descriptor = "I")
 	public static int anInt10355 = 0;
 

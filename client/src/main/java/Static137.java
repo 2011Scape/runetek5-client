@@ -7,12 +7,6 @@ public final class Static137 {
 	@OriginalMember(owner = "client!ef", name = "g", descriptor = "Ljava/util/Hashtable;")
 	public static Hashtable aHashtable2 = new Hashtable();
 
-	@OriginalMember(owner = "client!ef", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt56 = new ServerProt(11, 3);
-
-	@OriginalMember(owner = "client!ef", name = "l", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt57 = new ServerProt(24, -1);
-
 	@OriginalMember(owner = "client!ef", name = "e", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt28 = new ClientProt(7, -1);
 

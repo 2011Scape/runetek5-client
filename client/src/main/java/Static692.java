@@ -14,6 +14,4 @@ public final class Static692 {
 	@OriginalMember(owner = "client!vt", name = "h", descriptor = "I")
 	public static int anInt10376;
 
-	@OriginalMember(owner = "client!vt", name = "g", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt251 = new ServerProt(139, -2);
 }

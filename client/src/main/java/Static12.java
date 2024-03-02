@@ -19,9 +19,6 @@ public final class Static12 {
 	@OriginalMember(owner = "client!ah", name = "f", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_24 = new Class155(13);
 
-	@OriginalMember(owner = "client!ah", name = "d", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt147 = new ServerProt(51, 0);
-
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Ljava/lang/String;IZ)I")
 	public static int method5162(@OriginalArg(0) String arg0) {
 		return Static269.method3908(arg0, 16);

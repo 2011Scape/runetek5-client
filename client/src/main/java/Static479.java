@@ -10,9 +10,6 @@ public final class Static479 {
 	@OriginalMember(owner = "client!pc", name = "b", descriptor = "I")
 	public static int anInt7201 = 503;
 
-	@OriginalMember(owner = "client!pc", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt177 = new ServerProt(49, 1);
-
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(IZI)V")
 	public static void method6461(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) OutboundPacket local13 = OutboundPacket.create(Static288.aClientProt58, Connection.gameConnection.random);

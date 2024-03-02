@@ -38,9 +38,6 @@ public final class Static231 {
 	@OriginalMember(owner = "client!hd", name = "e", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt41 = new ClientProt(34, 4);
 
-	@OriginalMember(owner = "client!hd", name = "m", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt102 = new ServerProt(34, 6);
-
 	@OriginalMember(owner = "client!hd", name = "b", descriptor = "(I)V")
 	public static void method3375() {
 		if (Static163.aClass19_17 == null) {

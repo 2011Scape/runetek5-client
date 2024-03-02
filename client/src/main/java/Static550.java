@@ -7,9 +7,6 @@ public final class Static550 {
 	@OriginalMember(owner = "client!rf", name = "n", descriptor = "I")
 	public static int anInt8271;
 
-	@OriginalMember(owner = "client!rf", name = "t", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt200 = new ServerProt(116, -1);
-
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(BLclient!ca;II)V")
 	public static void method7260(@OriginalArg(1) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(6) int[] local6 = new int[4];

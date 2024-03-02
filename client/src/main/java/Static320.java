@@ -15,9 +15,6 @@ public final class Static320 {
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "Lclient!hw;")
 	public static final Class172 aClass172_2 = new Class172();
 
-	@OriginalMember(owner = "client!kc", name = "d", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt135 = new ServerProt(85, -2);
-
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Z)V")
 	public static void method4598() {
 		if (!Static400.aBoolean622) {

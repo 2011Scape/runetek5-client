@@ -7,9 +7,6 @@ public final class Static269 {
 	@OriginalMember(owner = "client!iha", name = "c", descriptor = "Lclient!sb;")
 	public static Js5 aJs558;
 
-	@OriginalMember(owner = "client!iha", name = "f", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt111 = new ServerProt(6, -2);
-
 	@OriginalMember(owner = "client!iha", name = "a", descriptor = "(ILjava/lang/String;IZ)I")
 	public static int method3908(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1) {
 		if (arg1 > 36) {

@@ -16,9 +16,6 @@ public final class Static346 {
 	@OriginalMember(owner = "client!kt", name = "R", descriptor = "[I")
 	public static int[] anIntArray420 = new int[4];
 
-	@OriginalMember(owner = "client!kt", name = "S", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt145 = new ServerProt(124, 1);
-
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(BB)C")
 	public static char method5084(@OriginalArg(0) byte arg0) {
 		@Pc(14) int local14 = arg0 & 0xFF;

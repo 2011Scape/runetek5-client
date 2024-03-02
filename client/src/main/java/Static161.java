@@ -10,9 +10,6 @@ public final class Static161 {
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "[[[J")
 	public static long[][][] aLongArrayArrayArray1;
 
-	@OriginalMember(owner = "client!fa", name = "n", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt62 = new ServerProt(22, 10);
-
 	@OriginalMember(owner = "client!fa", name = "q", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt29 = new ClientProt(33, 0);
 

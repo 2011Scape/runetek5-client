@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static347 {
 
-	@OriginalMember(owner = "client!ku", name = "n", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt146 = new ServerProt(47, 4);
-
 	@OriginalMember(owner = "client!ku", name = "a", descriptor = "(IZ)V")
 	public static void method5094(@OriginalArg(0) int arg0) {
 		if (arg0 != -1 && Static132.aBooleanArray5[arg0]) {

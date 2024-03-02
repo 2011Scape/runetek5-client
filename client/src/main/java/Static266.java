@@ -9,12 +9,6 @@ public final class Static266 {
 	@OriginalMember(owner = "client!ifa", name = "c", descriptor = "[[B")
 	public static final byte[][] aByteArrayArray27 = new byte[1000][];
 
-	@OriginalMember(owner = "client!ifa", name = "g", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt191 = new ServerProt(138, -1);
-
-	@OriginalMember(owner = "client!ifa", name = "i", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt192 = new ServerProt(109, 10);
-
 	@OriginalMember(owner = "client!ifa", name = "h", descriptor = "Z")
 	public static boolean aBoolean583 = true;
 

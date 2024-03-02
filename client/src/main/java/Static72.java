@@ -7,9 +7,6 @@ public final class Static72 {
 	@OriginalMember(owner = "client!cf", name = "c", descriptor = "J")
 	public static long aLong52;
 
-	@OriginalMember(owner = "client!cf", name = "a", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt35 = new ServerProt(125, 2);
-
 	@OriginalMember(owner = "client!cf", name = "a", descriptor = "(I[I)Ljava/lang/String;")
 	public static String method1527(@OriginalArg(1) int[] arg0) {
 		@Pc(7) StringBuffer local7 = new StringBuffer();

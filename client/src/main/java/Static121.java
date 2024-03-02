@@ -7,9 +7,6 @@ public final class Static121 {
 	@OriginalMember(owner = "client!dp", name = "f", descriptor = "I")
 	public static int anInt2333;
 
-	@OriginalMember(owner = "client!dp", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt49 = new ServerProt(5, 7);
-
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(II)V")
 	public static void method2199(@OriginalArg(0) int arg0) {
 		@Pc(17) Linkable_Sub5 local17 = (Linkable_Sub5) Static106.aHashTable11.get((long) arg0);

@@ -93,7 +93,7 @@ public final class Static501 {
 
 	@OriginalMember(owner = "client!pq", name = "a", descriptor = "(ZI)V")
 	public static void method6716(@OriginalArg(0) boolean arg0) {
-		@Pc(5) int local5 = Static329.anInt1752;
+		@Pc(5) int local5 = Static329.zFar;
 		@Pc(7) int local7 = Static32.anInt775;
 		if (arg0 && Static504.aBoolean579) {
 			local5 <<= 0x1;

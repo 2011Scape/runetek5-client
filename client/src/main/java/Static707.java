@@ -7,9 +7,6 @@ public final class Static707 {
 	@OriginalMember(owner = "client!wg", name = "c", descriptor = "I")
 	public static int anInt10641;
 
-	@OriginalMember(owner = "client!wg", name = "b", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt256 = new ServerProt(107, 4);
-
 	@OriginalMember(owner = "client!wg", name = "a", descriptor = "(B)V")
 	public static void method9227() {
 		Static284.anInt4583 = -2;

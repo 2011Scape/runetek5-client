@@ -17,7 +17,7 @@ public class Js5Compression {
         } else {
             @Pc(44) int local44 = local8.g4();
             if (local44 < 0 || Static112.anInt2222 != 0 && local44 > Static112.anInt2222) {
-                throw new RuntimeException();
+                return new byte[1];
             }
             @Pc(66) byte[] local66 = new byte[local44];
             if (local18 == 1) {

@@ -7,9 +7,6 @@ public final class Static284 {
 	@OriginalMember(owner = "client!iu", name = "h", descriptor = "Lclient!vq;")
 	public static Signlink aSignlink4;
 
-	@OriginalMember(owner = "client!iu", name = "c", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt116 = new ServerProt(65, 6);
-
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "I")
 	public static int anInt4583 = -2;
 

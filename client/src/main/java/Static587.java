@@ -14,9 +14,6 @@ public final class Static587 {
 	@OriginalMember(owner = "client!sia", name = "n", descriptor = "Z")
 	public static boolean aBoolean663 = false;
 
-	@OriginalMember(owner = "client!sia", name = "w", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt216 = new ServerProt(82, 6);
-
 	@OriginalMember(owner = "client!sia", name = "b", descriptor = "[I")
 	public static final int[] anIntArray689 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
 

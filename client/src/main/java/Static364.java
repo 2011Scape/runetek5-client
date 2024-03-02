@@ -508,7 +508,7 @@ public final class Static364 {
 						}
 						Static524.aConnection3.aClass348_1.method7929(local1435.data, 1, 3);
 					}
-					Static524.aConnection3.packetType = ServerProt.method7677()[local1435.method7421()];
+					Static524.aConnection3.packetType = ServerProt.all()[local1435.method7421()];
 					Static524.aConnection3.anInt3648 = local1435.g2();
 					Static135.anInt8223 = 15;
 				}
@@ -522,7 +522,7 @@ public final class Static364 {
 						Static254.method3605();
 						Static168.method2633(Static524.aConnection3.inboundPacket);
 						Static62.anInt1465 = -1;
-						if (Static524.aConnection3.packetType == Static291.ServerProt123) {
+						if (Static524.aConnection3.packetType == ServerProt.OPCODE_128) {
 							Static466.method6325();
 						} else {
 							Static434.method5855();

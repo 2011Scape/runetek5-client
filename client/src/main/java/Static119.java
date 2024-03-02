@@ -6,9 +6,6 @@ public final class Static119 {
 	@OriginalMember(owner = "client!dma", name = "m", descriptor = "[Lclient!st;")
 	public static SoftwareIndexedSprite[] aSoftwareIndexedSpriteArray3;
 
-	@OriginalMember(owner = "client!dma", name = "k", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt47 = new ServerProt(137, 8);
-
 	@OriginalMember(owner = "client!dma", name = "l", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_11 = new Class155(41);
 

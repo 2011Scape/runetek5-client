@@ -7,9 +7,6 @@ public final class Static383 {
 	@OriginalMember(owner = "client!ma", name = "o", descriptor = "I")
 	public static int anInt6001 = -1;
 
-	@OriginalMember(owner = "client!ma", name = "f", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt155 = new ServerProt(50, -2);
-
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!rka;I)Z")
 	public static boolean method5379(@OriginalArg(0) int arg0, @OriginalArg(1) PacketBit arg1) {
 		@Pc(18) int local18 = arg1.gBit(2);

@@ -7,9 +7,6 @@ public final class Static85 {
 	@OriginalMember(owner = "client!cm", name = "o", descriptor = "I")
 	public static int anInt10675;
 
-	@OriginalMember(owner = "client!cm", name = "p", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt257 = new ServerProt(76, 9);
-
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(II)V")
 	public static void method9262(@OriginalArg(1) int arg0) {
 		@Pc(11) SecondaryLinkable_Sub2 local11 = Static440.method5963(2, (long) arg0);

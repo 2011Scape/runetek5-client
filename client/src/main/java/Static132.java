@@ -10,9 +10,6 @@ public final class Static132 {
 	@OriginalMember(owner = "client!ec", name = "G", descriptor = "[Z")
 	public static boolean[] aBooleanArray5;
 
-	@OriginalMember(owner = "client!ec", name = "A", descriptor = "Lclient!lga;")
-	public static final ServerProt ServerProt54 = new ServerProt(91, -1);
-
 	@OriginalMember(owner = "client!ec", name = "e", descriptor = "(I)V")
 	public static void method2312() {
 		@Pc(16) byte[] local16;
