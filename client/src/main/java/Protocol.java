@@ -1473,7 +1473,7 @@ public class Protocol {
                                                                     local11.pdataisaac(local3044, arg0.anInt3648);
                                                                     local627 = Static350.method5126(0, local3044, arg0.anInt3648);
                                                                     local629 = "opensn";
-                                                                    if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local627, local629, 1).anInt6789 == 2) {
+                                                                    if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local627, local629, 1).state == 2) {
                                                                         Static259.method3693(local627, local629, Static446.aSignlink6, Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1, true);
                                                                     }
                                                                     arg0.packetType = null;

@@ -35,7 +35,7 @@ public final class Static76 {
 		}
 		try {
 			if (++Static654.anInt9739 > 2000) {
-				Connection.lobbyConnection.method3274();
+				Connection.lobbyConnection.close();
 				if (Static720.anInt10865 >= 2) {
 					Static6.anInt95 = 0;
 					Static580.anInt8621 = -5;
@@ -51,10 +51,10 @@ public final class Static76 {
 				Static6.anInt95 = 2;
 			}
 			if (Static6.anInt95 == 2) {
-				if (Connection.lobbyConnection.aPrivilegedRequest1.anInt6789 == 2) {
+				if (Connection.lobbyConnection.aPrivilegedRequest1.state == 2) {
 					throw new IOException();
 				}
-				if (Connection.lobbyConnection.aPrivilegedRequest1.anInt6789 != 1) {
+				if (Connection.lobbyConnection.aPrivilegedRequest1.state != 1) {
 					return;
 				}
 				Connection.lobbyConnection.aClass348_1 = Static99.method1975((Socket) Connection.lobbyConnection.aPrivilegedRequest1.anObject13);
@@ -67,10 +67,10 @@ public final class Static76 {
 				@Pc(139) int local139 = Connection.lobbyConnection.inboundPacket.data[0] & 0xFF;
 				Static6.anInt95 = 0;
 				Static580.anInt8621 = local139;
-				Connection.lobbyConnection.method3274();
+				Connection.lobbyConnection.close();
 			}
 		} catch (@Pc(148) IOException local148) {
-			Connection.lobbyConnection.method3274();
+			Connection.lobbyConnection.close();
 			if (Static720.anInt10865 < 2) {
 				Static660.aClass229_4.method5260();
 				Static720.anInt10865++;

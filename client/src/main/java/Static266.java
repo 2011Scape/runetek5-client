@@ -143,11 +143,11 @@ public final class Static266 {
 		}
 		try {
 			if (local5 != null) {
-				local5.method2158();
+				local5.close();
 			}
 		} catch (@Pc(74) Exception local74) {
 		}
-		Static98.aLong71 = Static588.method7715();
+		Static98.aLong71 = Static588.currentTimeWithDrift();
 		Static624.aBoolean727 = false;
 	}
 }

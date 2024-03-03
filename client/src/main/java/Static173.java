@@ -15,12 +15,12 @@ public final class Static173 {
 	public static int anInt2913 = -1;
 
 	@OriginalMember(owner = "client!fga", name = "b", descriptor = "(Z)V")
-	public static void method2690() {
+	public static void closeAudioChannels() {
 		if (Static719.aAudioChannel5 != null) {
-			Static719.aAudioChannel5.method3586();
+			Static719.aAudioChannel5.close();
 		}
 		if (Static559.aAudioChannel3 != null) {
-			Static559.aAudioChannel3.method3586();
+			Static559.aAudioChannel3.close();
 		}
 	}
 

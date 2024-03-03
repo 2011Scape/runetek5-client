@@ -69,7 +69,7 @@ public final class Class190 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(B)V")
-	public void method4227() {
+	public void cleanup() {
 		synchronized (this) {
 			if (this.anIOException1 == null) {
 				this.anIOException1 = new IOException("");
@@ -78,7 +78,8 @@ public final class Class190 implements Runnable {
 		}
 		try {
 			this.aThread3.join();
-		} catch (@Pc(37) InterruptedException local37) {
+		} catch (@Pc(37) InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 
