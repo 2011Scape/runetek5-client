@@ -70,7 +70,7 @@ public final class oa extends Class19 implements Interface5 {
 				this.method8019(arg0);
 			}
 		} catch (@Pc(82) Throwable local82) {
-			this.method7940();
+			this.cleanup();
 			throw new RuntimeException();
 		}
 	}
@@ -614,7 +614,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "finalize", descriptor = "()V")
 	@Override
 	public synchronized void finalize() {
-		this.method7940();
+		this.cleanup();
 		if (this.nativeid != 0L) {
 			Static307.method4477(this);
 		}
@@ -770,7 +770,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "u", descriptor = "()V")
 	@Override
-	protected void method7987() {
+	protected void doCleanup() {
 		if (this.aBoolean509) {
 			return;
 		}

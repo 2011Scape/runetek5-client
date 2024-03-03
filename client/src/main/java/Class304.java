@@ -20,10 +20,10 @@ public final class Class304 implements VarDomain {
 		this.anIntArray621[arg0] = arg1;
 		@Pc(24) LongNode local24 = (LongNode) this.aHashTable39.get((long) arg0);
 		if (local24 == null) {
-			local24 = new LongNode(Static588.method7715() + 500L);
+			local24 = new LongNode(Static588.currentTimeWithDrift() + 500L);
 			this.aHashTable39.put((long) arg0, local24);
 		} else {
-			local24.value = Static588.method7715() + 500L;
+			local24.value = Static588.currentTimeWithDrift() + 500L;
 		}
 	}
 
@@ -86,7 +86,7 @@ public final class Class304 implements VarDomain {
 
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(IZ)I")
 	public int method6872(@OriginalArg(1) boolean arg0) {
-		@Pc(8) long local8 = Static588.method7715();
+		@Pc(8) long local8 = Static588.currentTimeWithDrift();
 		for (@Pc(23) LongNode local23 = arg0 ? (LongNode) this.aHashTable39.head() : (LongNode) this.aHashTable39.next(); local23 != null; local23 = (LongNode) this.aHashTable39.next()) {
 			if ((local23.value & 0x3FFFFFFFFFFFFFFFL) < local8) {
 				if ((local23.value & 0x4000000000000000L) != 0L) {
@@ -109,7 +109,7 @@ public final class Class304 implements VarDomain {
 			local24 = new LongNode(4611686018427387905L);
 			this.aHashTable39.put((long) arg0, local24);
 		} else if (local24.value != 4611686018427387905L) {
-			local24.value = Static588.method7715() + 500L | 0x4000000000000000L;
+			local24.value = Static588.currentTimeWithDrift() + 500L | 0x4000000000000000L;
 		}
 	}
 }

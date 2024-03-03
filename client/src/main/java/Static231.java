@@ -75,7 +75,7 @@ public final class Static231 {
 		}
 		Static59.aClass73_5 = null;
 		Static460.aClass73_10 = null;
-		Static163.aClass19_17.method7940();
+		Static163.aClass19_17.cleanup();
 		Static163.aClass19_17 = null;
 	}
 
@@ -241,7 +241,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("unloadnatives")) {
-					Static79.method1579(Static501.method6714() ? "Libraries unloaded" : "Library unloading failed!");
+					Static79.method1579(Static501.unloadLibraries() ? "Libraries unloaded" : "Library unloading failed!");
 					return;
 				}
 				if (arg2.equalsIgnoreCase("clientdrop")) {
@@ -260,7 +260,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("clientjs5drop")) {
-					client.js5NetQueue.method6621();
+					client.js5NetQueue.shutDown();
 					Static79.method1579("Dropped client js5 net queue");
 					return;
 				}
@@ -290,7 +290,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("rebuildprofile")) {
-					Static690.aLong318 = Static588.method7715();
+					Static690.aLong318 = Static588.currentTimeWithDrift();
 					Static28.aBoolean43 = true;
 					Static449.method6116();
 					Static244.method3512();
@@ -728,7 +728,7 @@ public final class Static231 {
 				if (arg2.startsWith("setoutput ")) {
 					local2592 = new File(arg2.substring(10));
 					if (local2592.exists()) {
-						local2592 = new File(arg2.substring(10) + "." + Static588.method7715() + ".log");
+						local2592 = new File(arg2.substring(10) + "." + Static588.currentTimeWithDrift() + ".log");
 						if (local2592.exists()) {
 							Static79.method1579("file already exists!");
 							return;

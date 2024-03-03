@@ -36,7 +36,8 @@ public final class Static419 {
 			try {
 				Static242.aThread1.join();
 				return;
-			} catch (@Pc(26) InterruptedException local26) {
+			} catch (@Pc(26) InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
 	}

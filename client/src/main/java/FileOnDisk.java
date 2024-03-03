@@ -43,7 +43,7 @@ public final class FileOnDisk {
 	}
 
 	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(Z)V")
-	public void method2158() throws IOException {
+	public void close() throws IOException {
 		if (this.aRandomAccessFile1 != null) {
 			this.aRandomAccessFile1.close();
 			this.aRandomAccessFile1 = null;
@@ -66,7 +66,7 @@ public final class FileOnDisk {
 	public void finalize() throws Throwable {
 		if (this.aRandomAccessFile1 != null) {
 			System.out.println("Warning! fileondisk " + this.aFile1 + " not closed correctly using close(). Auto-closing instead. ");
-			this.method2158();
+			this.close();
 		}
 	}
 

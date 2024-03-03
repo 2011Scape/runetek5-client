@@ -15,6 +15,12 @@ public final class Static588 {
 		return arg0 | arg1;
 	}
 
+	@OriginalMember(owner = "client!in", name = "I", descriptor = "J")
+	public static long nowWithDrift;
+
+	@OriginalMember(owner = "client!vea", name = "G", descriptor = "J")
+	public static long drift;
+
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(I)V")
 	public static void method7713() {
 		Static425.aClass19_13.xa(((float) Static400.aClass2_Sub34_28.aPreference_Sub22_1.method6769() * 0.1F + 0.7F) * Static318.aFloat210);
@@ -52,12 +58,12 @@ public final class Static588 {
 	}
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(Z)J")
-	public static synchronized long method7715() {
-		@Pc(5) long local5 = System.currentTimeMillis();
-		if (Static278.aLong144 > local5) {
-			Static672.aLong305 += Static278.aLong144 - local5;
+	public static synchronized long currentTimeWithDrift() {
+		@Pc(5) long now = System.currentTimeMillis();
+		if (nowWithDrift > now) {
+			drift += nowWithDrift - now;
 		}
-		Static278.aLong144 = local5;
-		return local5 + Static672.aLong305;
+		nowWithDrift = now;
+		return now + drift;
 	}
 }

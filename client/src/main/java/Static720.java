@@ -57,10 +57,10 @@ public final class Static720 {
 		@Pc(19) Preferences local19 = new Preferences(Static392.clientModeGame, 0);
 		try {
 			@Pc(25) PrivilegedRequest local25 = Static446.aSignlink6.method8981("");
-			while (local25.anInt6789 == 0) {
-				Static638.method8395(1L);
+			while (local25.state == 0) {
+				Static638.sleep(1L);
 			}
-			if (local25.anInt6789 == 1) {
+			if (local25.state == 1) {
 				local13 = (FileOnDisk) local25.anObject13;
 				@Pc(51) byte[] local51 = new byte[(int) local13.method2161()];
 				@Pc(66) int local66;
@@ -76,7 +76,7 @@ public final class Static720 {
 		}
 		try {
 			if (local13 != null) {
-				local13.method2158();
+				local13.close();
 			}
 		} catch (@Pc(104) Exception local104) {
 		}

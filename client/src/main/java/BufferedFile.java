@@ -242,7 +242,7 @@ public final class BufferedFile {
 	@OriginalMember(owner = "client!mj", name = "d", descriptor = "(I)V")
 	public void method5566() throws IOException {
 		this.method5567();
-		this.aFileOnDisk1.method2158();
+		this.aFileOnDisk1.close();
 	}
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "(Z)V")

@@ -29,10 +29,16 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public static final float[] aFloatArray14 = new float[16384];
 
 	@OriginalMember(owner = "client!kh", name = "z", descriptor = "Z")
-	private boolean aBoolean157 = false;
+	private boolean isUsingJagMisc = false;
 
 	@OriginalMember(owner = "client!kh", name = "h", descriptor = "Z")
 	private boolean aBoolean156 = false;
+
+	@OriginalMember(owner = "client!hn", name = "b", descriptor = "Z")
+	public static boolean isShuttingDown = false;
+
+	@OriginalMember(owner = "client!tb", name = "c", descriptor = "J")
+	public static long shutDownTimestamp = 0L;
 
 	static {
 		@Pc(433) double local433 = 3.834951969714103E-4D;
@@ -48,54 +54,58 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IZ)V")
-	private void method1632(@OriginalArg(1) boolean arg0) {
+	private void shutDown(@OriginalArg(1) boolean clean) {
 		synchronized (this) {
-			if (Static250.aBoolean311) {
+			if (isShuttingDown) {
 				return;
 			}
-			Static250.aBoolean311 = true;
+			isShuttingDown = true;
 		}
-		System.out.println("Shutdown start - clean:" + arg0);
+		System.out.println("Shutdown start - clean:" + clean);
 		if (Static166.anApplet1 != null) {
 			Static166.anApplet1.destroy();
 		}
 		try {
-			this.method1633();
-		} catch (@Pc(42) Exception local42) {
+			this.doShutDown();
+		} catch (@Pc(42) Exception e) {
+			e.printStackTrace();
+
 		}
-		if (this.aBoolean157) {
+		if (this.isUsingJagMisc) {
 			try {
 				jagmisc.quit();
-			} catch (@Pc(48) Throwable local48) {
+			} catch (@Pc(48) Throwable e) {
+				e.printStackTrace();
 			}
-			this.aBoolean157 = false;
+			this.isUsingJagMisc = false;
 		}
-		Static307.method4480();
-		Static501.method6714();
+		Static307.shutDown();
+		Static501.unloadLibraries();
 		if (Static434.aCanvas7 != null) {
 			try {
 				Static434.aCanvas7.removeFocusListener(this);
 				Static434.aCanvas7.getParent().remove(Static434.aCanvas7);
-			} catch (@Pc(68) Exception local68) {
+			} catch (@Pc(68) Exception e) {
+				e.printStackTrace();
 			}
 		}
 		if (Static446.aSignlink6 != null) {
 			try {
-				Static446.aSignlink6.method8985();
-			} catch (@Pc(76) Exception local76) {
+				Static446.aSignlink6.shutDown();
+			} catch (@Pc(76) Exception e) {
+				e.printStackTrace();
 			}
 		}
-		this.method1637();
 		if (Static353.aFrame10 != null) {
 			Static353.aFrame10.setVisible(false);
 			Static353.aFrame10.dispose();
 			Static353.aFrame10 = null;
 		}
-		System.out.println("Shutdown complete - clean:" + arg0);
+		System.out.println("Shutdown complete - clean:" + clean);
 	}
 
 	@OriginalMember(owner = "client!kh", name = "j", descriptor = "(I)V")
-	protected abstract void method1633();
+	protected abstract void doShutDown();
 
 	@OriginalMember(owner = "client!kh", name = "b", descriptor = "(I)Z")
 	public final boolean method1634() {
@@ -129,8 +139,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static353.aFrame10.setSize(Static52.anInt1059 + local54.left + local54.right, local54.bottom + local54.top + Static54.anInt1084);
 			Static284.aSignlink4 = Static446.aSignlink6 = new Signlink(arg0, arg1, 37, true);
 			@Pc(88) PrivilegedRequest local88 = Static446.aSignlink6.method8991(this, 1);
-			while (local88.anInt6789 == 0) {
-				Static638.method8395(10L);
+			while (local88.state == 0) {
+				Static638.sleep(10L);
 			}
 		} catch (@Pc(103) Exception local103) {
 			Static240.method3496(local103, (String) null);
@@ -154,14 +164,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		Static664.aBoolean759 = true;
 	}
 
-	@OriginalMember(owner = "client!kh", name = "e", descriptor = "(B)V")
-	protected abstract void method1637();
-
 	@OriginalMember(owner = "client!kh", name = "start", descriptor = "()V")
 	@Override
 	public final void start() {
-		if (Static149.aGameShell == this && !Static250.aBoolean311) {
-			Static604.aLong278 = 0L;
+		if (Static149.aGameShell == this && !isShuttingDown) {
+			shutDownTimestamp = 0L;
 		}
 	}
 
@@ -189,7 +196,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
 	@OriginalMember(owner = "client!kh", name = "e", descriptor = "(I)V")
 	private void method1639() {
-		@Pc(6) long local6 = Static588.method7715();
+		@Pc(6) long local6 = Static588.currentTimeWithDrift();
 		@Pc(17) long local17 = Static475.aLongArray16[Static708.anInt10644];
 		Static475.aLongArray16[Static708.anInt10644] = local6;
 		if (local17 != 0L && local17 < local6) {
@@ -232,8 +239,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				Static149.aGameShell = this;
 				Static284.aSignlink4 = Static446.aSignlink6 = new Signlink(arg1, arg2, 37, Static166.anApplet1 != null);
 				@Pc(80) PrivilegedRequest local80 = Static446.aSignlink6.method8991(this, 1);
-				while (local80.anInt6789 == 0) {
-					Static638.method8395(10L);
+				while (local80.state == 0) {
+					Static638.sleep(10L);
 				}
 			} else {
 				Static426.anInt941++;
@@ -297,7 +304,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			this.method1641();
 			this.method1647();
 			Static600.aTimer1 = Static570.method7550();
-			while (Static604.aLong278 == 0L || Static588.method7715() < Static604.aLong278) {
+			while (shutDownTimestamp == 0L || Static588.currentTimeWithDrift() < shutDownTimestamp) {
 				Static32.anInt776 = Static600.aTimer1.method5598(Static324.aLong164);
 				for (@Pc(213) int local213 = 0; local213 < Static32.anInt776; local213++) {
 					this.method1646();
@@ -312,7 +319,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			this.method1638("crash");
 		} finally {
 			@Pc(275) Object local275 = null;
-			this.method1632(true);
+			this.shutDown(true);
 		}
 	}
 
@@ -329,11 +336,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!kh", name = "paint", descriptor = "(Ljava/awt/Graphics;)V")
 	@Override
 	public final synchronized void paint(@OriginalArg(0) Graphics arg0) {
-		if (Static149.aGameShell != this || Static250.aBoolean311) {
+		if (Static149.aGameShell != this || isShuttingDown) {
 			return;
 		}
 		Static664.aBoolean759 = true;
-		if (Static463.aBoolean531 && Static588.method7715() - Static149.aLong96 > 1000L) {
+		if (Static463.aBoolean531 && Static588.currentTimeWithDrift() - Static149.aLong96 > 1000L) {
 			@Pc(28) Rectangle local28 = arg0.getClipBounds();
 			if (local28 == null || Static52.anInt1059 <= local28.width && local28.height >= Static54.anInt1084) {
 				Static723.aBoolean827 = true;
@@ -355,8 +362,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!kh", name = "stop", descriptor = "()V")
 	@Override
 	public final void stop() {
-		if (Static149.aGameShell == this && !Static250.aBoolean311) {
-			Static604.aLong278 = Static588.method7715() + 4000L;
+		if (Static149.aGameShell == this && !isShuttingDown) {
+			shutDownTimestamp = Static588.currentTimeWithDrift() + 4000L;
 		}
 	}
 
@@ -397,7 +404,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		Static206.aBoolean268 = true;
 		Static664.aBoolean759 = true;
 		Static723.aBoolean827 = false;
-		Static149.aLong96 = Static588.method7715();
+		Static149.aLong96 = Static588.currentTimeWithDrift();
 	}
 
 	@OriginalMember(owner = "client!kh", name = "d", descriptor = "(B)Z")
@@ -436,7 +443,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
 	@OriginalMember(owner = "client!kh", name = "f", descriptor = "(I)V")
 	private void method1646() {
-		@Pc(6) long local6 = Static588.method7715();
+		@Pc(6) long local6 = Static588.currentTimeWithDrift();
 		@Pc(10) long local10 = Static221.aLongArray18[Static392.anInt6142];
 		Static221.aLongArray18[Static392.anInt6142] = local6;
 		@Pc(31) boolean local31;
@@ -479,11 +486,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!kh", name = "destroy", descriptor = "()V")
 	@Override
 	public final void destroy() {
-		if (Static149.aGameShell == this && !Static250.aBoolean311) {
-			Static604.aLong278 = Static588.method7715();
-			Static638.method8395(5000L);
+		if (Static149.aGameShell == this && !isShuttingDown) {
+			shutDownTimestamp = Static588.currentTimeWithDrift();
+			Static638.sleep(5000L);
 			Static284.aSignlink4 = null;
-			this.method1632(false);
+			this.shutDown(false);
 		}
 	}
 

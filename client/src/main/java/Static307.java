@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static307 {
 
 	@OriginalMember(owner = "client!jo", name = "b", descriptor = "Z")
-	private static boolean aBoolean380 = false;
+	private static boolean isShuttingDown = false;
 
 	@OriginalMember(owner = "client!jo", name = "c", descriptor = "Lclient!sia;")
 	private static final LinkedList aLinkedList28 = new LinkedList();
@@ -15,7 +15,7 @@ public final class Static307 {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!e;)V")
 	public static synchronized void method4477(@OriginalArg(1) Interface5 arg0) {
-		if (aBoolean380) {
+		if (isShuttingDown) {
 			return;
 		}
 		if (anInt4924 <= 0) {
@@ -45,8 +45,8 @@ public final class Static307 {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZI)V")
-	public static synchronized void method4480() {
-		aBoolean380 = true;
+	public static synchronized void shutDown() {
+		isShuttingDown = true;
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(I)V")

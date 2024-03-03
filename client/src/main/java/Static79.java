@@ -34,7 +34,7 @@ public final class Static79 {
 		if (Static393.aStringArray32 == null) {
 			Static279.method4072();
 		}
-		Static459.aCalendar3.setTime(new Date(Static588.method7715()));
+		Static459.aCalendar3.setTime(new Date(Static588.currentTimeWithDrift()));
 		@Pc(20) int local20 = Static459.aCalendar3.get(11);
 		@Pc(31) int local31 = Static459.aCalendar3.get(12);
 		@Pc(35) int local35 = Static459.aCalendar3.get(13);

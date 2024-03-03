@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class SecondaryParticleNode_Sub1 extends SecondaryParticleNode {
 
 	@OriginalMember(owner = "client!ne", name = "q", descriptor = "I")
-	public final int anInt6433 = (int) (Static588.method7715() / 1000L);
+	public final int anInt6433 = (int) (Static588.currentTimeWithDrift() / 1000L);
 
 	@OriginalMember(owner = "client!ne", name = "s", descriptor = "Ljava/lang/String;")
 	public final String aString72;

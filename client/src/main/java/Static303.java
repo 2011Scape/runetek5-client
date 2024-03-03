@@ -16,7 +16,7 @@ public final class Static303 {
 			Static319.aString51 = "";
 		}
 		Static129.anInt2409 = arg0;
-		Connection.lobbyConnection.method3274();
+		Connection.lobbyConnection.close();
 		Static81.method1586(5);
 	}
 

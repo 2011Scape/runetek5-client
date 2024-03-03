@@ -16,7 +16,7 @@ public final class Js5CacheQueue implements Runnable {
 	public int anInt4243 = 0;
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "Z")
-	private boolean aBoolean333 = false;
+	private boolean isShuttingDown = false;
 
 	@OriginalMember(owner = "client!iba", name = "g", descriptor = "Ljava/lang/Thread;")
 	private Thread aThread2;
@@ -32,10 +32,10 @@ public final class Js5CacheQueue implements Runnable {
 	@OriginalMember(owner = "client!iba", name = "<init>", descriptor = "(Lclient!vq;)V")
 	public Js5CacheQueue(@OriginalArg(0) Signlink arg0) {
 		@Pc(20) PrivilegedRequest local20 = arg0.method8991(this, 5);
-		while (local20.anInt6789 == 0) {
-			Static638.method8395(10L);
+		while (local20.state == 0) {
+			Static638.sleep(10L);
 		}
-		if (local20.anInt6789 == 2) {
+		if (local20.state == 2) {
 			throw new RuntimeException();
 		}
 		this.aThread2 = (Thread) local20.anObject13;
@@ -67,15 +67,15 @@ public final class Js5CacheQueue implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(I)V")
-	public void method3826() {
-		this.aBoolean333 = true;
-		@Pc(9) SecondaryLinkedList local9 = this.aSecondaryLinkedList7;
+	public void shutDown() {
+		this.isShuttingDown = true;
 		synchronized (this.aSecondaryLinkedList7) {
 			this.aSecondaryLinkedList7.notifyAll();
 		}
 		try {
 			this.aThread2.join();
-		} catch (@Pc(25) InterruptedException local25) {
+		} catch (@Pc(25) InterruptedException e) {
+			e.printStackTrace();
 		}
 		this.aThread2 = null;
 	}
@@ -93,7 +93,7 @@ public final class Js5CacheQueue implements Runnable {
 	@OriginalMember(owner = "client!iba", name = "run", descriptor = "()V")
 	@Override
 	public void run() {
-		while (!this.aBoolean333) {
+		while (!this.isShuttingDown) {
 			@Pc(10) SecondaryLinkedList local10 = this.aSecondaryLinkedList7;
 			@Pc(18) Js5CacheRequest local18;
 			synchronized (this.aSecondaryLinkedList7) {

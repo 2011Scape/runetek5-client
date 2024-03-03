@@ -37,10 +37,10 @@ public final class Static240 {
 			local12 = Static232.method3395(local12, "#", "%23");
 			if (Static631.anApplet4 != null) {
 				@Pc(131) PrivilegedRequest local131 = Static284.aSignlink4.method8992(new URL(Static631.anApplet4.getCodeBase(), "clienterror.ws?c=" + Static373.anInt5905 + "&u=" + (Static515.aString96 == null ? String.valueOf(Static292.aLong163) : Static515.aString96) + "&v1=" + Static689.aString123 + "&v2=" + Static689.aString124 + "&e=" + local12));
-				while (local131.anInt6789 == 0) {
-					Static638.method8395(1L);
+				while (local131.state == 0) {
+					Static638.sleep(1L);
 				}
-				if (local131.anInt6789 == 1) {
+				if (local131.state == 1) {
 					@Pc(148) DataInputStream local148 = (DataInputStream) local131.anObject13;
 					local148.read();
 					local148.close();

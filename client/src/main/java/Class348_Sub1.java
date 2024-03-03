@@ -46,19 +46,20 @@ public final class Class348_Sub1 extends Class348 {
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(I)V")
 	@Override
-	public void method7926() {
+	public void cleanup() {
 		try {
 			this.aSocket2.close();
-		} catch (@Pc(11) IOException local11) {
+		} catch (@Pc(11) IOException e) {
+			e.printStackTrace();
 		}
-		this.aClass190_1.method4227();
-		this.aClass385_1.method8915();
+		this.aClass190_1.cleanup();
+		this.aClass385_1.cleanup();
 	}
 
 	@OriginalMember(owner = "client!tc", name = "finalize", descriptor = "()V")
 	@Override
 	public void finalize() {
-		this.method7926();
+		this.cleanup();
 	}
 
 	@OriginalMember(owner = "client!tc", name = "b", descriptor = "(I)V")
