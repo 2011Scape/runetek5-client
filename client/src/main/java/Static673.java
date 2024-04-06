@@ -16,10 +16,10 @@ public final class Static673 {
 			return new Class273[0];
 		}
 		@Pc(15) PrivilegedRequest local15 = arg0.method8984();
-		while (local15.anInt6789 == 0) {
-			Static638.method8395(10L);
+		while (local15.state == 0) {
+			Static638.sleep(10L);
 		}
-		if (local15.anInt6789 == 2) {
+		if (local15.state == 2) {
 			return new Class273[0];
 		}
 		@Pc(38) int[] local38 = (int[]) local15.anObject13;

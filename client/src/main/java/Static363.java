@@ -39,7 +39,7 @@ public final class Static363 {
 				Static79.method1579("Pausing for " + local61 + " seconds...");
 				Static144.aStringArray7 = arg0;
 				Static523.anInt3885 = local41 + 1;
-				Static305.aLong157 = (long) (local61 * 1000) + Static588.method7715();
+				Static305.aLong157 = (long) (local61 * 1000) + Static588.currentTimeWithDrift();
 				return;
 			}
 			Static110.aString19 = arg0[local41];
@@ -62,7 +62,7 @@ public final class Static363 {
 			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
 			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
 			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, client.models);
-			@Pc(70) long local70 = Static588.method7715();
+			@Pc(70) long local70 = Static588.currentTimeWithDrift();
 			Static163.aClass19_17.la();
 			Static460.aClass73_10.method7125(0, Static247.anInt3993, 0);
 			Static163.aClass19_17.method8000(Static460.aClass73_10);
@@ -79,14 +79,14 @@ public final class Static363 {
 						Static59.aClass73_5.method7125((int) ((float) Static340.anInt5586 * (-((float) local123 / 2.0F) + (float) local126)), 0, (local123 + 1) * Static340.anInt5586);
 						local111.method7473(Static59.aClass73_5, (ParticleNode_Sub6) null, 0);
 						local113++;
-						if ((long) arg0 <= Static588.method7715() - local70) {
+						if ((long) arg0 <= Static588.currentTimeWithDrift() - local70) {
 							break label41;
 						}
 					}
 				}
 			}
 			Static163.aClass19_17.method7950();
-			@Pc(195) long local195 = (long) (local113 * 1000) / (Static588.method7715() - local70);
+			@Pc(195) long local195 = (long) (local113 * 1000) / (Static588.currentTimeWithDrift() - local70);
 			Static163.aClass19_17.GA(0);
 			Static163.aClass19_17.ya();
 			return (int) local195;
@@ -99,7 +99,7 @@ public final class Static363 {
 	@OriginalMember(owner = "client!li", name = "a", descriptor = "(IIIIIZ)V")
 	public static void method6236(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		if (Static316.aFrame8 != null && (arg2 != 3 || arg3 != Static328.anInt5427 || Static110.anInt2189 != arg1)) {
-			Static655.method8562(Static446.aSignlink6, Static316.aFrame8);
+			Static655.closeFrame(Static446.aSignlink6, Static316.aFrame8);
 			Static316.aFrame8 = null;
 		}
 		if (arg2 == 3 && Static316.aFrame8 == null) {

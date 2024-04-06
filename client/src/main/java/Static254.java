@@ -18,7 +18,7 @@ public final class Static254 {
 		Static618.anInt9449 = 0;
 		Static674.anInt10128 = 0;
 		Static373.anInt5903 = 0;
-		Connection.lobbyConnection.method3274();
+		Connection.lobbyConnection.close();
 		Static50.aBoolean565 = true;
 		Static91.aBoolean750 = true;
 		Static230.method3374();
