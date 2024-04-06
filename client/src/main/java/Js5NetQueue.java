@@ -153,7 +153,7 @@ public final class Js5NetQueue {
 						local236 = local199;
 					}
 					this.aClientStream1.method5825(local236, this.aPacket_14.pos, this.aPacket_14.data);
-					if (this.aByte120 != 0) {
+					if (this.aByte120 != 0 && ClientConfig.ENABLE_JS5_XOR) {
 						for (local260 = 0; local260 < local236; local260++) {
 							this.aPacket_14.data[this.aPacket_14.pos + local260] = (byte) (this.aPacket_14.data[this.aPacket_14.pos + local260] ^ this.aByte120);
 						}
@@ -206,7 +206,7 @@ public final class Js5NetQueue {
 						local260 = local199;
 					}
 					this.aClientStream1.method5825(local260, this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos, this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.data);
-					if (this.aByte120 != 0) {
+					if (this.aByte120 != 0 && ClientConfig.ENABLE_JS5_XOR) {
 						for (local328 = 0; local328 < local260; local328++) {
 							this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.data[this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos + local328] = (byte) (this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.data[this.aClass2_Sub2_Sub17_Sub1_2.aPacket_15.pos + local328] ^ this.aByte120);
 						}
@@ -281,7 +281,7 @@ public final class Js5NetQueue {
 				while (true) {
 					local48 = (Js5NetRequest) this.aSecondaryLinkedList13.removeTail();
 					if (local48 == null) {
-						if (this.aByte120 != 0) {
+						if (this.aByte120 != 0 && ClientConfig.ENABLE_JS5_XOR) {
 							try {
 								this.aPacket_13.pos = 0;
 								this.aPacket_13.p1(4);
