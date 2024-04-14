@@ -23,5 +23,5 @@ public final class PrivilegedRequest {
 	public int anInt6790;
 
 	@OriginalMember(owner = "client!oba", name = "g", descriptor = "I")
-	public volatile int anInt6789 = 0;
+	public volatile int state = 0;
 }

@@ -39,11 +39,12 @@ public final class Static314 {
 	}
 
 	@OriginalMember(owner = "client!jw", name = "a", descriptor = "(Z)V")
-	public static void method4567() {
+	public static void closeAFileOutputStream2() {
 		if (Static134.aFileOutputStream2 != null) {
 			try {
 				Static134.aFileOutputStream2.close();
-			} catch (@Pc(10) IOException local10) {
+			} catch (@Pc(10) IOException e) {
+				e.printStackTrace();
 			}
 		}
 		Static134.aFileOutputStream2 = null;

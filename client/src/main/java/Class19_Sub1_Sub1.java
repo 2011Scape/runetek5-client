@@ -159,7 +159,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 			}
 		} catch (@Pc(281) RuntimeException local281) {
 			if (local1 != null) {
-				local1.method7987();
+				local1.doCleanup();
 			}
 			throw local281;
 		}
@@ -200,7 +200,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 			this.anIDirect3DDevice1.BeginScene();
 		} catch (@Pc(228) Throwable local228) {
 			local228.printStackTrace();
-			this.method7940();
+			this.cleanup();
 			throw new RuntimeException("");
 		}
 	}
@@ -440,9 +440,9 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!kea", name = "u", descriptor = "()V")
 	@Override
-	protected void method7987() {
+	protected void doCleanup() {
 		this.aTi1.b(-23417);
-		super.method7987();
+		super.doCleanup();
 	}
 
 	@OriginalMember(owner = "client!kea", name = "I", descriptor = "()I")

@@ -473,7 +473,7 @@ public abstract class Class19_Sub1 extends Class19 {
 			}
 		} catch (@Pc(399) Throwable local399) {
 			local399.printStackTrace();
-			this.method7940();
+			this.cleanup();
 			throw new RuntimeException("");
 		}
 	}
@@ -1059,7 +1059,7 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "u", descriptor = "()V")
 	@Override
-	protected void method7987() {
+	protected void doCleanup() {
 		if (this.aBoolean687) {
 			return;
 		}
