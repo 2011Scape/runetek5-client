@@ -4,15 +4,15 @@ import java.math.BigInteger;
 
 public class ClientConfig {
 
-    public static final String HOST_ADDRESS = "127.0.0.1";
+    public static final String HOST_ADDRESS = "185.213.26.59";
 
     public static final boolean ENABLE_LOBBY = false;
     public static final boolean DISABLE_DEFAULT_FPSON = true;
-    public static final boolean ENABLE_HOST_CHECK = false;
-    public static final boolean ENABLE_RSA = false;
-    public static final boolean ENABLE_ISAAC = false;
-    public static final boolean ENABLE_JS5_RSA = false;
-    public static final boolean ENABLE_JS5_XOR = false;
+    public static final boolean ENABLE_HOST_CHECK = true;
+    public static final boolean ENABLE_RSA = true;
+    public static final boolean ENABLE_ISAAC = true;
+    public static final boolean ENABLE_JS5_RSA = true;
+    public static final boolean ENABLE_JS5_XOR = true;
 
     public static final int FOG_DISTANCE_MULTIPLIER = 2;
     public static final int RENDER_DISTANCE_MULTIPLIER = 3; /* setting this value above 2 will cause clipping issues when "remove roofs" is turned to "always" */
