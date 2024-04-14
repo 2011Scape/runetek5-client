@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 public class ClientConfig {
 
-    public static final String HOST_ADDRESS = "185.213.26.59";
+    public static final String HOST_ADDRESS = "127.0.0.1";
 
     public static final boolean ENABLE_LOBBY = false;
     public static final boolean DISABLE_DEFAULT_FPSON = true;
