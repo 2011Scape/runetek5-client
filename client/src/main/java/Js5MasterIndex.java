@@ -42,7 +42,6 @@ public final class Js5MasterIndex {
 
 	@OriginalMember(owner = "client!nj", name = "c", descriptor = "(I)Z")
 	public boolean method5800() {
-
 		if (this.buffer != null) {
 			return true;
 		}
@@ -62,7 +61,7 @@ public final class Js5MasterIndex {
 		@Pc(72) byte[] local72 = new byte[buf.data.length - buf.pos];
 		buf.gdata(local72, 0, local72.length);
 		@Pc(102) byte[] local102;
-		if (this.aBigInteger3 == null || this.aBigInteger4 == null || !ClientConfig.ENABLE_JS5_RSA) {
+		if (this.aBigInteger3 == null || this.aBigInteger4 == null) {
 			local102 = local72;
 		} else {
 			@Pc(92) BigInteger local92 = new BigInteger(local72);

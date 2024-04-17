@@ -9,7 +9,7 @@ public final class Static616 {
 	@OriginalMember(owner = "client!tia", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;B)V")
 	public static void method8283(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
 		Static470.anInt7113 = -1;
-		if (ClientConfig.ENABLE_LOBBY) {
+		if (ClientConfig.DISABLE_LOBBY) {
 			Static524.aConnection3 = Connection.gameConnection;
 			Static299.anInt4825 = 2;
 		} else {

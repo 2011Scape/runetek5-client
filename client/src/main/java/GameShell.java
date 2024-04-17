@@ -410,7 +410,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!kh", name = "d", descriptor = "(B)Z")
 	protected final boolean method1643() {
 		@Pc(16) String local16 = this.getDocumentBase().getHost().toLowerCase();
-		if (ClientConfig.ENABLE_HOST_CHECK) {
+		if (ClientConfig.SKIP_HOST_CHECK) {
 			return true;
 		} else if (local16.equals("jagex.com") || local16.endsWith(".jagex.com")) {
 			return true;

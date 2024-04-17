@@ -169,11 +169,7 @@ public final class IsaacRandom {
 			this.method4106();
 			this.anInt4585 = 256;
 		}
-		if (ClientConfig.ENABLE_ISAAC) {
-			return this.anIntArray356[--this.anInt4585];
-		} else {
-			return 0;
-		}
+		return this.anIntArray356[--this.anInt4585];
 	}
 
 	@OriginalMember(owner = "client!iv", name = "c", descriptor = "(I)V")
@@ -205,10 +201,6 @@ public final class IsaacRandom {
 			this.method4106();
 			this.anInt4585 = 256;
 		}
-		if (ClientConfig.ENABLE_ISAAC) {
-			return this.anIntArray356[this.anInt4585 - 1];
-		} else {
-			return 0;
-		}
+		return this.anIntArray356[this.anInt4585 - 1];
 	}
 }

@@ -415,9 +415,6 @@ public class Packet extends Linkable {
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(ILjava/math/BigInteger;Ljava/math/BigInteger;)V")
 	public final void rsaenc(@OriginalArg(1) BigInteger modulus, @OriginalArg(2) BigInteger exponent) {
-		if (!ClientConfig.ENABLE_RSA) {
-			return;
-		}
 		@Pc(6) int length = this.pos;
 		this.pos = 0;
 		@Pc(12) byte[] temp = new byte[length];
