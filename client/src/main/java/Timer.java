@@ -16,7 +16,7 @@ public abstract class Timer {
 	public final int method5598(@OriginalArg(0) long arg0) {
 		@Pc(13) long local13 = this.method5599();
 		if (local13 > 0L) {
-			Static638.method8395(local13);
+			Static638.sleep(local13);
 		}
 		return this.method5596(arg0);
 	}

@@ -64,7 +64,7 @@ public final class Static112 {
 	@OriginalMember(owner = "client!dj", name = "e", descriptor = "(I)V")
 	public static void method2109() {
 		if (Static158.aClass19_5 != null) {
-			Static158.aClass19_5.method7940();
+			Static158.aClass19_5.cleanup();
 			Static629.aClass14_11 = null;
 			Static158.aClass19_5 = null;
 		}

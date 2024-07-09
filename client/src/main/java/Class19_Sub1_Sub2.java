@@ -202,7 +202,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			}
 		} catch (@Pc(514) Throwable local514) {
 			local514.printStackTrace();
-			this.method7940();
+			this.cleanup();
 			throw new RuntimeException("");
 		}
 	}
@@ -519,9 +519,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			local19 = (IntNode) this.aLinkedList60.removeHead();
 			OpenGL.glDeleteLists((int) local19.id, local19.value);
 		}
-		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.method7715()) {
+		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.currentTimeWithDrift()) {
 			System.gc();
-			this.aLong279 = Static588.method7715();
+			this.aLong279 = Static588.currentTimeWithDrift();
 		}
 		super.method7977(local11);
 	}
@@ -1028,8 +1028,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "u", descriptor = "()V")
 	@Override
-	protected void method7987() {
-		super.method7987();
+	protected void doCleanup() {
+		super.doCleanup();
 		if (this.anOpenGL2 != null) {
 			this.anOpenGL2.a();
 			this.anOpenGL2.release();

@@ -49,7 +49,7 @@ public final class Js5NetQueue {
 	@OriginalMember(owner = "client!pla", name = "b", descriptor = "(B)V")
 	public void method6619() {
 		try {
-			this.aClientStream1.method5830();
+			this.aClientStream1.shutDown();
 		} catch (@Pc(5) Exception local5) {
 		}
 		this.aClientStream1 = null;
@@ -70,7 +70,7 @@ public final class Js5NetQueue {
 			this.aClientStream1.method5829(4, this.aPacket_13.data);
 		} catch (@Pc(33) IOException local33) {
 			try {
-				this.aClientStream1.method5830();
+				this.aClientStream1.shutDown();
 			} catch (@Pc(39) Exception local39) {
 			}
 			this.anInt7453++;
@@ -80,9 +80,9 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(Z)V")
-	public void method6621() {
+	public void shutDown() {
 		if (this.aClientStream1 != null) {
-			this.aClientStream1.method5830();
+			this.aClientStream1.shutDown();
 		}
 	}
 
@@ -95,7 +95,7 @@ public final class Js5NetQueue {
 	public boolean method6624() {
 		@Pc(14) int local14;
 		if (this.aClientStream1 != null) {
-			@Pc(7) long local7 = Static588.method7715();
+			@Pc(7) long local7 = Static588.currentTimeWithDrift();
 			local14 = (int) (local7 - this.aLong238);
 			this.aLong238 = local7;
 			if (local14 > 200) {
@@ -104,7 +104,7 @@ public final class Js5NetQueue {
 			this.anInt7451 += local14;
 			if (this.anInt7451 > 30000) {
 				try {
-					this.aClientStream1.method5830();
+					this.aClientStream1.shutDown();
 				} catch (@Pc(42) Exception local42) {
 				}
 				this.aClientStream1 = null;
@@ -225,7 +225,7 @@ public final class Js5NetQueue {
 			return true;
 		} catch (@Pc(694) IOException local694) {
 			try {
-				this.aClientStream1.method5830();
+				this.aClientStream1.shutDown();
 			} catch (@Pc(702) Exception local702) {
 			}
 			this.aClientStream1 = null;
@@ -252,7 +252,7 @@ public final class Js5NetQueue {
 			this.aClientStream1.method5829(4, this.aPacket_13.data);
 		} catch (@Pc(38) IOException local38) {
 			try {
-				this.aClientStream1.method5830();
+				this.aClientStream1.shutDown();
 			} catch (@Pc(44) Exception local44) {
 			}
 			this.aClientStream1 = null;
@@ -265,7 +265,7 @@ public final class Js5NetQueue {
 	public void method6627(@OriginalArg(0) boolean arg0, @OriginalArg(2) ClientStream arg1) {
 		if (this.aClientStream1 != null) {
 			try {
-				this.aClientStream1.method5830();
+				this.aClientStream1.shutDown();
 			} catch (@Pc(14) Exception local14) {
 			}
 			this.aClientStream1 = null;
@@ -290,7 +290,7 @@ public final class Js5NetQueue {
 								this.aClientStream1.method5829(4, this.aPacket_13.data);
 							} catch (@Pc(117) IOException local117) {
 								try {
-									this.aClientStream1.method5830();
+									this.aClientStream1.shutDown();
 								} catch (@Pc(123) Exception local123) {
 								}
 								this.anInt7453++;
@@ -299,7 +299,7 @@ public final class Js5NetQueue {
 							}
 						}
 						this.anInt7451 = 0;
-						this.aLong238 = Static588.method7715();
+						this.aLong238 = Static588.currentTimeWithDrift();
 						return;
 					}
 					this.aSecondaryLinkedList12.addTail(local48);
@@ -321,7 +321,7 @@ public final class Js5NetQueue {
 			this.aClientStream1.method5829(4, this.aPacket_13.data);
 		} catch (@Pc(42) IOException local42) {
 			try {
-				this.aClientStream1.method5830();
+				this.aClientStream1.shutDown();
 			} catch (@Pc(48) Exception local48) {
 			}
 			this.aClientStream1 = null;

@@ -40,7 +40,7 @@ public final class Class385 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vja", name = "a", descriptor = "(I)V")
-	public void method8915() {
+	public void cleanup() {
 		synchronized (this) {
 			if (this.anIOException2 == null) {
 				this.anIOException2 = new IOException("");
@@ -49,7 +49,8 @@ public final class Class385 implements Runnable {
 		}
 		try {
 			this.aThread6.join();
-		} catch (@Pc(29) InterruptedException local29) {
+		} catch (@Pc(29) InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 
