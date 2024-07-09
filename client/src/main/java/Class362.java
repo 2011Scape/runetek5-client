@@ -66,9 +66,9 @@ public final class Class362 implements Runnable {
 				return true;
 			}
 		}
-		if (this.aPrivilegedRequest7 == null || this.aPrivilegedRequest7.state == 2) {
+		if (this.aPrivilegedRequest7 == null || this.aPrivilegedRequest7.anInt6789 == 2) {
 			return true;
-		} else if (this.aPrivilegedRequest7.state == 1) {
+		} else if (this.aPrivilegedRequest7.anInt6789 == 1) {
 			if (this.aThread5 == null) {
 				this.aThread5 = new Thread(this);
 				this.aThread5.start();

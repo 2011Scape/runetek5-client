@@ -33,7 +33,7 @@ public final class Static233 {
 		@Pc(12) Connection[] local12 = Connection.connections;
 		for (@Pc(14) int local14 = 0; local14 < local12.length; local14++) {
 			@Pc(19) Connection local19 = local12[local14];
-			local19.close();
+			local19.method3274();
 		}
 		Static707.method9227();
 		Static352.resetCache();

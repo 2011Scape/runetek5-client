@@ -20,7 +20,7 @@ public final class Static150 {
 
 	@OriginalMember(owner = "client!en", name = "a", descriptor = "(B)V")
 	public static void method2455() {
-		Static173.closeAudioChannels();
+		Static173.method2690();
 		Static517.method6822(Static400.aClass2_Sub34_28.aPreference_Sub17_1.method5667() == 1);
 		Static719.aAudioChannel5 = Static638.method8394(Static446.aSignlink6, 0, 22050, Static434.aCanvas7);
 		Static697.method9120(Static48.method1100((MidiPcmStream) null));

@@ -26,7 +26,7 @@ public final class Static501 {
 	public static final Linkable_Sub7[] aClass2_Sub7Array4 = new Linkable_Sub7[8];
 
 	@OriginalMember(owner = "client!pq", name = "d", descriptor = "(I)Z")
-	public static boolean unloadLibraries() {
+	public static boolean method6714() {
 		@Pc(7) Hashtable local7 = new Hashtable();
 		@Pc(10) Enumeration local10 = Static137.aHashtable2.keys();
 		while (local10.hasMoreElements()) {

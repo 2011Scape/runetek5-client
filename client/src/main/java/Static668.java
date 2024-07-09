@@ -63,7 +63,7 @@ public final class Static668 {
 			Static566.anInt8472 += 6;
 		}
 		@Pc(26) int local26;
-		if (Static523.anInt3885 != -1 && Static305.aLong157 < Static588.currentTimeWithDrift()) {
+		if (Static523.anInt3885 != -1 && Static305.aLong157 < Static588.method7715()) {
 			for (local26 = Static523.anInt3885; local26 < Static144.aStringArray7.length; local26++) {
 				if (Static144.aStringArray7[local26].startsWith("pause")) {
 					@Pc(40) int local40 = 5;
@@ -73,7 +73,7 @@ public final class Static668 {
 					}
 					Static79.method1579("Pausing for " + local40 + " seconds...");
 					Static523.anInt3885 = local26 + 1;
-					Static305.aLong157 = (long) (local40 * 1000) + Static588.currentTimeWithDrift();
+					Static305.aLong157 = (long) (local40 * 1000) + Static588.method7715();
 					return;
 				}
 				Static110.aString19 = Static144.aStringArray7[local26];

@@ -120,9 +120,9 @@ public final class Connection {
 	}
 
 	@OriginalMember(owner = "client!gw", name = "c", descriptor = "(I)V")
-	public void close() {
+	public void method3274() {
 		if (this.aClass348_1 != null) {
-			this.aClass348_1.cleanup();
+			this.aClass348_1.method7926();
 			this.aClass348_1 = null;
 		}
 	}

@@ -51,7 +51,7 @@ public final class JavaKeyboard extends Keyboard implements KeyListener, FocusLi
 		local7.aChar4 = arg0;
 		local7.anInt2881 = arg1;
 		local7.anInt2886 = arg2;
-		local7.aLong99 = Static588.currentTimeWithDrift();
+		local7.aLong99 = Static588.method7715();
 		this.aLinkedList71.addTail(local7);
 	}
 

@@ -82,7 +82,7 @@ public final class JavaMouse extends Mouse implements MouseListener, MouseMotion
 		local3.anInt1889 = arg1;
 		local3.anInt1888 = arg2;
 		local3.anInt1887 = arg0;
-		local3.aLong68 = Static588.currentTimeWithDrift();
+		local3.aLong68 = Static588.method7715();
 		local3.anInt1890 = arg3;
 		this.aLinkedList21.addTail(local3);
 	}

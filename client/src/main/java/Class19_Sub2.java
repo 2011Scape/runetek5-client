@@ -187,10 +187,10 @@ public final class Class19_Sub2 extends Class19 {
 			this.method8020(0);
 			Static198.method2954(true, true);
 			this.aBoolean330 = true;
-			this.anInt4184 = (int) Static588.currentTimeWithDrift();
+			this.anInt4184 = (int) Static588.method7715();
 		} catch (@Pc(99) Throwable local99) {
 			local99.printStackTrace();
-			this.cleanup();
+			this.method7940();
 			throw new RuntimeException("");
 		}
 	}
@@ -203,14 +203,14 @@ public final class Class19_Sub2 extends Class19 {
 			this.method8019(arg0);
 		} catch (@Pc(12) Throwable local12) {
 			local12.printStackTrace();
-			this.cleanup();
+			this.method7940();
 			throw new RuntimeException("");
 		}
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "u", descriptor = "()V")
 	@Override
-	protected void doCleanup() {
+	protected void method7987() {
 		if (this.aBoolean330) {
 			Static300.method4390(true, false);
 			this.aBoolean330 = false;

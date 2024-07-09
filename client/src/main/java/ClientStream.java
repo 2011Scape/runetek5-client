@@ -18,7 +18,7 @@ public final class ClientStream implements Runnable {
 	private byte[] aByteArray79;
 
 	@OriginalMember(owner = "client!nk", name = "n", descriptor = "Z")
-	private boolean isShuttingDown = false;
+	private boolean aBoolean488 = false;
 
 	@OriginalMember(owner = "client!nk", name = "k", descriptor = "I")
 	private int anInt6541 = 0;
@@ -57,7 +57,7 @@ public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(I)V")
 	public void method5823() throws IOException {
-		if (!this.isShuttingDown && this.aBoolean489) {
+		if (!this.aBoolean488 && this.aBoolean489) {
 			this.aBoolean489 = false;
 			throw new IOException();
 		}
@@ -65,7 +65,7 @@ public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!nk", name = "d", descriptor = "(I)I")
 	public int method5824() throws IOException {
-		return this.isShuttingDown ? 0 : this.anInputStream2.read();
+		return this.aBoolean488 ? 0 : this.anInputStream2.read();
 	}
 
 	@OriginalMember(owner = "client!nk", name = "run", descriptor = "()V")
@@ -78,7 +78,7 @@ public final class ClientStream implements Runnable {
 					@Pc(26) int local26;
 					synchronized (this) {
 						if (this.anInt6540 == this.anInt6541) {
-							if (this.isShuttingDown) {
+							if (this.aBoolean488) {
 								break label80;
 							}
 							try {
@@ -133,7 +133,7 @@ public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IBI[B)V")
 	public void method5825(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte[] arg2) throws IOException {
-		if (this.isShuttingDown) {
+		if (this.aBoolean488) {
 			return;
 		}
 		while (arg0 > 0) {
@@ -148,7 +148,7 @@ public final class ClientStream implements Runnable {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(B)V")
 	public void method5826() {
-		if (!this.isShuttingDown) {
+		if (!this.aBoolean488) {
 			this.anInputStream2 = new BrokenInputStream();
 			this.anOutputStream1 = new BrokenOutputStream();
 		}
@@ -157,17 +157,17 @@ public final class ClientStream implements Runnable {
 	@OriginalMember(owner = "client!nk", name = "finalize", descriptor = "()V")
 	@Override
 	public void finalize() {
-		this.shutDown();
+		this.method5830();
 	}
 
 	@OriginalMember(owner = "client!nk", name = "c", descriptor = "(I)I")
 	public int method5828() throws IOException {
-		return this.isShuttingDown ? 0 : this.anInputStream2.available();
+		return this.aBoolean488 ? 0 : this.anInputStream2.available();
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(II[BB)V")
 	public void method5829(@OriginalArg(1) int arg0, @OriginalArg(2) byte[] arg1) throws IOException {
-		if (this.isShuttingDown) {
+		if (this.aBoolean488) {
 			return;
 		}
 		if (this.aBoolean489) {
@@ -193,23 +193,22 @@ public final class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "e", descriptor = "(I)V")
-	public void shutDown() {
-		if (this.isShuttingDown) {
+	public void method5830() {
+		if (this.aBoolean488) {
 			return;
 		}
 		synchronized (this) {
-			this.isShuttingDown = true;
+			this.aBoolean488 = true;
 			this.notifyAll();
 		}
 		if (this.aPrivilegedRequest3 != null) {
-			while (this.aPrivilegedRequest3.state == 0) {
-				Static638.sleep(1L);
+			while (this.aPrivilegedRequest3.anInt6789 == 0) {
+				Static638.method8395(1L);
 			}
-			if (this.aPrivilegedRequest3.state == 1) {
+			if (this.aPrivilegedRequest3.anInt6789 == 1) {
 				try {
 					((Thread) this.aPrivilegedRequest3.anObject13).join();
-				} catch (@Pc(60) InterruptedException e) {
-					e.printStackTrace();
+				} catch (@Pc(60) InterruptedException local60) {
 				}
 			}
 		}

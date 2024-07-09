@@ -16,11 +16,11 @@ public final class Static711 {
 		if (Static236.aPrivilegedRequest2 == null) {
 			return;
 		}
-		if (Static236.aPrivilegedRequest2.state == 1) {
+		if (Static236.aPrivilegedRequest2.anInt6789 == 1) {
 			Static236.aPrivilegedRequest2 = null;
 			return;
 		}
-		if (Static236.aPrivilegedRequest2.state == 2) {
+		if (Static236.aPrivilegedRequest2.anInt6789 == 2) {
 			Static637.method8382(Static340.aString53, 2, Static272.aSignlink3);
 			Static236.aPrivilegedRequest2 = null;
 			return;

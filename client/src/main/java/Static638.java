@@ -73,23 +73,15 @@ public final class Static638 {
 	}
 
 	@OriginalMember(owner = "client!uca", name = "a", descriptor = "(JZ)V")
-	public static void sleep(@OriginalArg(0) long ms) {
-		if (ms <= 0L) {
+	public static void method8395(@OriginalArg(0) long arg0) {
+		if (arg0 <= 0L) {
 			return;
 		}
-		if (ms % 10L == 0L) {
-			doSleep(ms - 1L);
-			doSleep(1L);
+		if (arg0 % 10L == 0L) {
+			Static315.method4578(arg0 - 1L);
+			Static315.method4578(1L);
 		} else {
-			doSleep(ms);
-		}
-	}
-
-	@OriginalMember(owner = "client!k", name = "a", descriptor = "(JB)V")
-	public static void doSleep(@OriginalArg(0) long ms) {
-		try {
-			Thread.sleep(ms);
-		} catch (@Pc(12) InterruptedException local12) {
+			Static315.method4578(arg0);
 		}
 	}
 

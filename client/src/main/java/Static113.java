@@ -43,7 +43,7 @@ public final class Static113 {
 			}
 		}
 		Static149.aBoolean221 = false;
-		Static363.aLong219 = Static588.currentTimeWithDrift();
+		Static363.aLong219 = Static588.method7715();
 		Static339.aPacket_9 = null;
 	}
 }

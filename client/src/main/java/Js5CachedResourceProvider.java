@@ -218,7 +218,7 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 				this.aLinkedList42 = null;
 			}
 		}
-		if (!this.aBoolean569 || Static588.currentTimeWithDrift() < this.aLong239) {
+		if (!this.aBoolean569 || Static588.method7715() < this.aLong239) {
 			return;
 		}
 		for (@Pc(366) Js5Request local366 = (Js5Request) this.aHashTable36.head(); local366 != null; local366 = (Js5Request) this.aHashTable36.next()) {
@@ -233,7 +233,7 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 				}
 			}
 		}
-		this.aLong239 = Static588.currentTimeWithDrift() + 1000L;
+		this.aLong239 = Static588.method7715() + 1000L;
 	}
 
 	@OriginalMember(owner = "client!pm", name = "d", descriptor = "(B)I")

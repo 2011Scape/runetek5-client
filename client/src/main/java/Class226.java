@@ -51,21 +51,21 @@ public final class Class226 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!lha", name = "a", descriptor = "(I)V")
-	public void shutDown() {
+	public void method5243() {
 		if (this.aThread4 == null) {
 			return;
 		}
 		this.method5244(new Linkable());
 		try {
 			this.aThread4.join();
-		} catch (@Pc(23) InterruptedException e) {
-			e.printStackTrace();
+		} catch (@Pc(23) InterruptedException local23) {
 		}
 		this.aThread4 = null;
 	}
 
 	@OriginalMember(owner = "client!lha", name = "a", descriptor = "(ILclient!ie;)V")
 	private void method5244(@OriginalArg(1) Linkable arg0) {
+		@Pc(2) LinkedList local2 = this.aLinkedList32;
 		synchronized (this.aLinkedList32) {
 			this.aLinkedList32.addTail(arg0);
 			this.aLinkedList32.notify();

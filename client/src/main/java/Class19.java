@@ -65,9 +65,9 @@ public abstract class Class19 {
 	public abstract void EA(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!ha", name = "i", descriptor = "(I)V")
-	public final void cleanup() {
+	public final void method7940() {
 		Static259.aBooleanArray8[this.anInt8962] = false;
-		this.doCleanup();
+		this.method7987();
 	}
 
 	@OriginalMember(owner = "client!ha", name = "K", descriptor = "([I)V")
@@ -259,11 +259,11 @@ public abstract class Class19 {
 	@OriginalMember(owner = "client!ha", name = "finalize", descriptor = "()V")
 	@Override
 	public void finalize() {
-		this.cleanup();
+		this.method7940();
 	}
 
 	@OriginalMember(owner = "client!ha", name = "u", descriptor = "()V")
-	protected abstract void doCleanup();
+	protected abstract void method7987();
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!eca;Lclient!wja;)Lclient!gaa;")
 	public abstract Interface9 method7988(@OriginalArg(0) IndexedSprite arg0, @OriginalArg(1) Interface26 arg1);

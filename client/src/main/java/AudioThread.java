@@ -12,31 +12,31 @@ public final class AudioThread implements Runnable {
 	public final AudioChannel[] aAudioChannelArray1 = new AudioChannel[2];
 
 	@OriginalMember(owner = "client!faa", name = "h", descriptor = "Z")
-	public volatile boolean allChannelsClosed = false;
+	public volatile boolean aBoolean241 = false;
 
 	@OriginalMember(owner = "client!faa", name = "e", descriptor = "Z")
-	public volatile boolean isRunning = false;
+	public volatile boolean aBoolean242 = false;
 
 	@OriginalMember(owner = "client!faa", name = "run", descriptor = "()V")
 	@Override
 	public void run() {
-		this.isRunning = true;
+		this.aBoolean242 = true;
 		try {
-			while (!this.allChannelsClosed) {
+			while (!this.aBoolean241) {
 				for (@Pc(12) int local12 = 0; local12 < 2; local12++) {
 					@Pc(21) AudioChannel local21 = this.aAudioChannelArray1[local12];
 					if (local21 != null) {
 						local21.method3594();
 					}
 				}
-				Static638.sleep(10L);
+				Static638.method8395(10L);
 				Static61.method1312(this.aSignlink2, (Object) null);
 			}
 		} catch (@Pc(49) Exception local49) {
 			Static240.method3496(local49, (String) null);
 		} finally {
 			@Pc(59) Object local59 = null;
-			this.isRunning = false;
+			this.aBoolean242 = false;
 		}
 	}
 }

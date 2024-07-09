@@ -15,7 +15,7 @@ public final class Static218 {
 		if (arg1.length() > 320 || !Static470.method6387()) {
 			return;
 		}
-		Connection.lobbyConnection.close();
+		Connection.lobbyConnection.method3274();
 		Static367.method5268();
 		Static59.aString63 = arg0;
 		Static449.aString75 = arg1;
@@ -27,10 +27,10 @@ public final class Static218 {
 		@Pc(7) FileOnDisk local7 = null;
 		try {
 			@Pc(13) PrivilegedRequest local13 = Static446.aSignlink6.method8981("2");
-			while (local13.state == 0) {
-				Static638.sleep(1L);
+			while (local13.anInt6789 == 0) {
+				Static638.method8395(1L);
 			}
-			if (local13.state == 1) {
+			if (local13.anInt6789 == 1) {
 				local7 = (FileOnDisk) local13.anObject13;
 				@Pc(41) byte[] local41 = new byte[(int) local7.method2161()];
 				@Pc(57) int local57;
@@ -46,7 +46,7 @@ public final class Static218 {
 		}
 		try {
 			if (local7 != null) {
-				local7.close();
+				local7.method2158();
 			}
 		} catch (@Pc(100) Exception local100) {
 		}

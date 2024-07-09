@@ -53,7 +53,7 @@ public final class Mouse_Sub2 extends Mouse implements MouseListener, MouseMotio
 		local15.anInt5937 = arg3;
 		local15.anInt5942 = arg1;
 		local15.anInt5940 = arg0;
-		local15.aLong181 = Static588.currentTimeWithDrift();
+		local15.aLong181 = Static588.method7715();
 		this.aLinkedList75.addTail(local15);
 	}
 

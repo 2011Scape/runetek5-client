@@ -61,7 +61,7 @@ public final class Class364 implements Runnable {
 	public synchronized void method8373(@OriginalArg(1) Interface22 arg0) {
 		this.anInterface22_2 = this.anInterface22_1;
 		this.anInterface22_1 = arg0;
-		this.aLong286 = Static588.currentTimeWithDrift();
+		this.aLong286 = Static588.method7715();
 	}
 
 	@OriginalMember(owner = "client!uaa", name = "a", descriptor = "(ILjava/lang/String;Lclient!gca;IJ)V")
@@ -106,14 +106,14 @@ public final class Class364 implements Runnable {
 	@Override
 	public void run() {
 		while (!this.aBoolean732) {
-			@Pc(8) long local8 = Static588.currentTimeWithDrift();
+			@Pc(8) long local8 = Static588.method7715();
 			synchronized (this) {
 				try {
 					this.anInt9523++;
 					if (this.anInterface22_1 instanceof Class374) {
 						this.anInterface22_1.method8465(this.aBoolean731);
 					} else {
-						@Pc(25) long local25 = Static588.currentTimeWithDrift();
+						@Pc(25) long local25 = Static588.method7715();
 						if (Static163.aClass19_17 == null || this.anInterface22_2 == null || this.anInterface22_2.method8462() == 0 || this.aLong286 < local25 - (long) this.anInterface22_2.method8462()) {
 							if (this.anInterface22_2 != null) {
 								this.aBoolean731 = true;
@@ -175,10 +175,10 @@ public final class Class364 implements Runnable {
 					continue;
 				}
 			}
-			@Pc(304) long local304 = Static588.currentTimeWithDrift();
+			@Pc(304) long local304 = Static588.method7715();
 			@Pc(312) int local312 = (int) (local8 + 20L - local304);
 			if (local312 > 0) {
-				Static638.sleep((long) local312);
+				Static638.method8395((long) local312);
 			}
 		}
 	}

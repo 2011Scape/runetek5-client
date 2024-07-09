@@ -73,7 +73,7 @@ public final class Static364 {
 				local25 = 6000;
 			}
 			if (local25 < Static330.anInt5434) {
-				Static524.aConnection3.close();
+				Static524.aConnection3.method3274();
 				if (Static76.anInt1601 >= 3) {
 					Static135.anInt8223 = 0;
 					Static342.method4464(-5);
@@ -100,10 +100,10 @@ public final class Static364 {
 			@Pc(203) int local203;
 			@Pc(250) int local250;
 			if (Static135.anInt8223 == 2) {
-				if (Static524.aConnection3.aPrivilegedRequest1.state == 2) {
+				if (Static524.aConnection3.aPrivilegedRequest1.anInt6789 == 2) {
 					throw new IOException();
 				}
-				if (Static524.aConnection3.aPrivilegedRequest1.state != 1) {
+				if (Static524.aConnection3.aPrivilegedRequest1.anInt6789 != 1) {
 					return;
 				}
 				Static524.aConnection3.aClass348_1 = Static99.method1975((Socket) Static524.aConnection3.aPrivilegedRequest1.anObject13);
@@ -149,7 +149,7 @@ public final class Static364 {
 				if (local360 != 0) {
 					Static135.anInt8223 = 0;
 					Static342.method4464(local360);
-					Static524.aConnection3.close();
+					Static524.aConnection3.method3274();
 					Static564.method7465();
 					return;
 				}
@@ -178,7 +178,7 @@ public final class Static364 {
 				@Pc(465) String local465 = Static524.aConnection3.inboundPacket.gjstr2();
 				Static524.aConnection3.inboundPacket.pos = 0;
 				@Pc(473) String local473 = "opensn";
-				if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local465, local473, 1).state == 2) {
+				if (!Static98.aBoolean191 || Static36.method980(Static446.aSignlink6, local465, local473, 1).anInt6789 == 2) {
 					Static259.method3693(local465, local473, Static446.aSignlink6, Static400.aClass2_Sub34_28.aPreference_Sub29_1.method7915() == 1, true);
 				}
 				Static135.anInt8223 = 6;
@@ -319,7 +319,7 @@ public final class Static364 {
 					Static330.anInt5434 = 0;
 					Static135.anInt8223 = 1;
 					Static76.anInt1601++;
-					Static524.aConnection3.aClass348_1.cleanup();
+					Static524.aConnection3.aClass348_1.method7926();
 					Static524.aConnection3.aClass348_1 = null;
 					return;
 				} else if (local360 == 42) {
@@ -329,7 +329,7 @@ public final class Static364 {
 				} else if (!Static561.aBoolean640 || Static311.aBoolean384 || Static129.anInt2409 == -1 || local360 != 35) {
 					Static135.anInt8223 = 0;
 					Static342.method4464(local360);
-					Static524.aConnection3.aClass348_1.cleanup();
+					Static524.aConnection3.aClass348_1.method7926();
 					Static524.aConnection3.aClass348_1 = null;
 					Static564.method7465();
 					return;
@@ -337,7 +337,7 @@ public final class Static364 {
 					Static311.aBoolean384 = true;
 					Static135.anInt8223 = 1;
 					Static330.anInt5434 = 0;
-					Static524.aConnection3.aClass348_1.cleanup();
+					Static524.aConnection3.aClass348_1.method7926();
 					Static524.aConnection3.aClass348_1 = null;
 					return;
 				}
@@ -358,7 +358,7 @@ public final class Static364 {
 					Static135.anInt8223 = 0;
 					Static118.anInt2292 = local360 * 50;
 					Static342.method4464(21);
-					Static524.aConnection3.aClass348_1.cleanup();
+					Static524.aConnection3.aClass348_1.method7926();
 					Static524.aConnection3.aClass348_1 = null;
 					Static564.method7465();
 				}
@@ -387,7 +387,7 @@ public final class Static364 {
 				}
 				Static135.anInt8223 = 0;
 				Static342.method4464(Static79.anInt1634);
-				Static524.aConnection3.aClass348_1.cleanup();
+				Static524.aConnection3.aClass348_1.method7926();
 				Static524.aConnection3.aClass348_1 = null;
 				Static564.method7465();
 			} else if (Static135.anInt8223 != 13) {
@@ -423,7 +423,7 @@ public final class Static364 {
 						Static34.aBoolean62 = local1435.g1() == 1;
 						Static298.aBoolean369 = local1435.g1() == 1;
 						Static416.aLong207 = local1435.g8();
-						Static94.aLong70 = Static416.aLong207 - Static588.currentTimeWithDrift() - local1435.g5();
+						Static94.aLong70 = Static416.aLong207 - Static588.method7715() - local1435.g5();
 						local203 = local1435.g1();
 						Static126.aBoolean200 = (local203 & 0x1) != 0;
 						Static425.aBoolean482 = (local203 & 0x2) != 0;
@@ -561,7 +561,7 @@ public final class Static364 {
 				Static135.anInt8223 = 14;
 			}
 		} catch (@Pc(2184) IOException local2184) {
-			Static524.aConnection3.close();
+			Static524.aConnection3.method3274();
 			if (Static76.anInt1601 < 3) {
 				if (Static299.anInt4825 == 2) {
 					Static344.aClass229_1.method5260();

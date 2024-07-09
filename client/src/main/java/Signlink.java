@@ -28,7 +28,7 @@ public final class Signlink implements Runnable {
 	private PrivilegedRequest aPrivilegedRequest8 = null;
 
 	@OriginalMember(owner = "client!vq", name = "F", descriptor = "Z")
-	private boolean isShuttingDown = false;
+	private boolean aBoolean780 = false;
 
 	@OriginalMember(owner = "client!vq", name = "h", descriptor = "Lclient!oba;")
 	private PrivilegedRequest aPrivilegedRequest9 = null;
@@ -169,7 +169,7 @@ public final class Signlink implements Runnable {
 				}
 			}
 		}
-		this.isShuttingDown = false;
+		this.aBoolean780 = false;
 		this.aThread7 = new Thread(this);
 		this.aThread7.setPriority(10);
 		this.aThread7.setDaemon(true);
@@ -212,46 +212,41 @@ public final class Signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(I)V")
-	public void shutDown() {
+	public void method8985() {
 		synchronized (this) {
-			this.isShuttingDown = true;
+			this.aBoolean780 = true;
 			this.notifyAll();
 		}
 		try {
 			this.aThread7.join();
-		} catch (@Pc(25) InterruptedException e) {
-			e.printStackTrace();
+		} catch (@Pc(25) InterruptedException local25) {
 		}
 		if (this.aFileOnDisk2 != null) {
 			try {
-				this.aFileOnDisk2.close();
-			} catch (@Pc(35) IOException e) {
-				e.printStackTrace();
+				this.aFileOnDisk2.method2158();
+			} catch (@Pc(35) IOException local35) {
 			}
 		}
 		if (this.aFileOnDisk3 != null) {
 			try {
-				this.aFileOnDisk3.close();
-			} catch (@Pc(46) IOException e) {
-				e.printStackTrace();
+				this.aFileOnDisk3.method2158();
+			} catch (@Pc(46) IOException local46) {
 			}
 		}
 		if (this.aFileOnDiskArray1 != null) {
-            for (FileOnDisk fileOnDisk : this.aFileOnDiskArray1) {
-                if (fileOnDisk != null) {
-                    try {
-                        fileOnDisk.close();
-                    } catch (@Pc(67) IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
+			for (@Pc(52) int local52 = 0; local52 < this.aFileOnDiskArray1.length; local52++) {
+				if (this.aFileOnDiskArray1[local52] != null) {
+					try {
+						this.aFileOnDiskArray1[local52].method2158();
+					} catch (@Pc(67) IOException local67) {
+					}
+				}
+			}
 		}
 		if (this.aFileOnDisk4 != null) {
 			try {
-				this.aFileOnDisk4.close();
-			} catch (@Pc(90) IOException e) {
-				e.printStackTrace();
+				this.aFileOnDisk4.method2158();
+			} catch (@Pc(90) IOException local90) {
 			}
 		}
 	}
@@ -325,7 +320,7 @@ public final class Signlink implements Runnable {
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(B)V")
 	public void method8994() {
-		Static689.aLong317 = Static588.currentTimeWithDrift() + 5000L;
+		Static689.aLong317 = Static588.method7715() + 5000L;
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IB[ILjava/awt/Component;Ljava/awt/Point;I)Lclient!oba;")
@@ -340,7 +335,7 @@ public final class Signlink implements Runnable {
 			@Pc(15) PrivilegedRequest local15;
 			synchronized (this) {
 				while (true) {
-					if (this.isShuttingDown) {
+					if (this.aBoolean780) {
 						return;
 					}
 					if (this.aPrivilegedRequest8 != null) {
@@ -360,12 +355,12 @@ public final class Signlink implements Runnable {
 			try {
 				@Pc(42) int local42 = local15.anInt6790;
 				if (local42 == 1) {
-					if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+					if (Static588.method7715() < Static689.aLong317) {
 						throw new IOException();
 					}
 					local15.anObject13 = new Socket(InetAddress.getByName((String) local15.anObject12), local15.anInt6788);
 				} else if (local42 == 22) {
-					if (Static689.aLong317 > Static588.currentTimeWithDrift()) {
+					if (Static689.aLong317 > Static588.method7715()) {
 						throw new IOException();
 					}
 					try {
@@ -381,7 +376,7 @@ public final class Signlink implements Runnable {
 					local911.setPriority(local15.anInt6788);
 					local15.anObject13 = local911;
 				} else if (local42 == 4) {
-					if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+					if (Static588.method7715() < Static689.aLong317) {
 						throw new IOException();
 					}
 					local15.anObject13 = new DataInputStream(((URL) local15.anObject12).openStream());
@@ -409,13 +404,13 @@ public final class Signlink implements Runnable {
 					} else if (this.aBoolean781) {
 						@Pc(220) String local220;
 						if (local42 == 3) {
-							if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+							if (Static588.method7715() < Static689.aLong317) {
 								throw new IOException();
 							}
 							local220 = (local15.anInt6788 >> 24 & 0xFF) + "." + (local15.anInt6788 >> 16 & 0xFF) + "." + (local15.anInt6788 >> 8 & 0xFF) + "." + (local15.anInt6788 & 0xFF);
 							local15.anObject13 = InetAddress.getByName(local220).getHostName();
 						} else if (local42 == 21) {
-							if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+							if (Static588.method7715() < Static689.aLong317) {
 								throw new IOException();
 							}
 							local15.anObject13 = InetAddress.getByName((String) local15.anObject12).getAddress();
@@ -494,11 +489,11 @@ public final class Signlink implements Runnable {
 						throw new Exception("");
 					}
 				}
-				local15.state = 1;
+				local15.anInt6789 = 1;
 			} catch (@Pc(958) ThreadDeath local958) {
 				throw local958;
 			} catch (@Pc(961) Throwable local961) {
-				local15.state = 2;
+				local15.anInt6789 = 2;
 			}
 			synchronized (local15) {
 				local15.notify();

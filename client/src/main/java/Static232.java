@@ -123,10 +123,10 @@ public final class Static232 {
 			return false;
 		}
 		for (@Pc(23) int local23 = 0; local23 < local10.anInt10364; local23++) {
-			if (local10.aPrivilegedRequestArray1[local23] != null && local10.aPrivilegedRequestArray1[local23].state == 0) {
+			if (local10.aPrivilegedRequestArray1[local23] != null && local10.aPrivilegedRequestArray1[local23].anInt6789 == 0) {
 				return false;
 			}
-			if (local10.aPrivilegedRequestArray2[local23] != null && local10.aPrivilegedRequestArray2[local23].state == 0) {
+			if (local10.aPrivilegedRequestArray2[local23] != null && local10.aPrivilegedRequestArray2[local23].anInt6789 == 0) {
 				return false;
 			}
 		}

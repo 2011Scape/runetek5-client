@@ -26,10 +26,10 @@ public class AudioChannel {
 	private final int anInt4087 = 32;
 
 	@OriginalMember(owner = "client!cd", name = "w", descriptor = "Z")
-	private boolean isClosed = false;
+	private boolean aBoolean319 = false;
 
 	@OriginalMember(owner = "client!cd", name = "e", descriptor = "J")
-	private long aLong128 = Static588.currentTimeWithDrift();
+	private long aLong128 = Static588.method7715();
 
 	@OriginalMember(owner = "client!cd", name = "h", descriptor = "J")
 	private long aLong129 = 0L;
@@ -79,28 +79,28 @@ public class AudioChannel {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "c", descriptor = "(I)V")
-	public final synchronized void close() {
+	public final synchronized void method3586() {
 		if (Static232.aAudioThread1 != null) {
-			@Pc(11) boolean allChannelsClosed = true;
-			for (@Pc(13) int i = 0; i < 2; i++) {
-				if (Static232.aAudioThread1.aAudioChannelArray1[i] == this) {
-					Static232.aAudioThread1.aAudioChannelArray1[i] = null;
+			@Pc(11) boolean local11 = true;
+			for (@Pc(13) int local13 = 0; local13 < 2; local13++) {
+				if (Static232.aAudioThread1.aAudioChannelArray1[local13] == this) {
+					Static232.aAudioThread1.aAudioChannelArray1[local13] = null;
 				}
-				if (Static232.aAudioThread1.aAudioChannelArray1[i] != null) {
-					allChannelsClosed = false;
+				if (Static232.aAudioThread1.aAudioChannelArray1[local13] != null) {
+					local11 = false;
 				}
 			}
-			if (allChannelsClosed) {
-				Static232.aAudioThread1.allChannelsClosed = true;
-				while (Static232.aAudioThread1.isRunning) {
-					Static638.sleep(50L);
+			if (local11) {
+				Static232.aAudioThread1.aBoolean241 = true;
+				while (Static232.aAudioThread1.aBoolean242) {
+					Static638.method8395(50L);
 				}
 				Static232.aAudioThread1 = null;
 			}
 		}
 		this.method3596();
 		this.anIntArray315 = null;
-		this.isClosed = true;
+		this.aBoolean319 = true;
 	}
 
 	@OriginalMember(owner = "client!cd", name = "d", descriptor = "()I")
@@ -136,7 +136,7 @@ public class AudioChannel {
 			this.method3583();
 		} catch (@Pc(19) Exception local19) {
 			this.method3596();
-			this.aLong129 = Static588.currentTimeWithDrift() + 2000L;
+			this.aLong129 = Static588.method7715() + 2000L;
 		}
 	}
 
@@ -146,10 +146,10 @@ public class AudioChannel {
 
 	@OriginalMember(owner = "client!cd", name = "b", descriptor = "(B)V")
 	public final synchronized void method3594() {
-		if (this.isClosed) {
+		if (this.aBoolean319) {
 			return;
 		}
-		@Pc(11) long local11 = Static588.currentTimeWithDrift();
+		@Pc(11) long local11 = Static588.method7715();
 		try {
 			if (this.aLong128 + 6000L < local11) {
 				this.aLong128 = local11 - 6000L;
@@ -157,7 +157,7 @@ public class AudioChannel {
 			while (local11 > this.aLong128 + 5000L) {
 				this.method3584();
 				this.aLong128 += (long) (256000 / Static686.anInt8944);
-				local11 = Static588.currentTimeWithDrift();
+				local11 = Static588.method7715();
 			}
 		} catch (@Pc(54) Exception local54) {
 			this.aLong128 = local11;
@@ -316,7 +316,7 @@ public class AudioChannel {
 		if (this.aClass2_Sub6_6 != null) {
 			this.aClass2_Sub6_6.method9131(arg0, 0, 256);
 		}
-		this.aLong128 = Static588.currentTimeWithDrift();
+		this.aLong128 = Static588.method7715();
 	}
 
 	@OriginalMember(owner = "client!cd", name = "c", descriptor = "()V")

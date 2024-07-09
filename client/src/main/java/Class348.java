@@ -11,7 +11,7 @@ public abstract class Class348 {
 	}
 
 	@OriginalMember(owner = "client!vn", name = "a", descriptor = "(I)V")
-	public abstract void cleanup();
+	public abstract void method7926();
 
 	@OriginalMember(owner = "client!vn", name = "b", descriptor = "(I)V")
 	public abstract void method7927();

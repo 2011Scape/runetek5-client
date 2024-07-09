@@ -31,18 +31,18 @@ public final class Static437 {
 		@Pc(16) boolean local16 = false;
 		for (@Pc(18) int local18 = 0; local18 < local10.anInt10364; local18++) {
 			if (local10.aPrivilegedRequestArray1[local18] != null) {
-				if (local10.aPrivilegedRequestArray1[local18].state == 2) {
+				if (local10.aPrivilegedRequestArray1[local18].anInt6789 == 2) {
 					local10.anIntArray829[local18] = -5;
 				}
-				if (local10.aPrivilegedRequestArray1[local18].state == 0) {
+				if (local10.aPrivilegedRequestArray1[local18].anInt6789 == 0) {
 					local16 = true;
 				}
 			}
 			if (local10.aPrivilegedRequestArray2[local18] != null) {
-				if (local10.aPrivilegedRequestArray2[local18].state == 2) {
+				if (local10.aPrivilegedRequestArray2[local18].anInt6789 == 2) {
 					local10.anIntArray829[local18] = -6;
 				}
-				if (local10.aPrivilegedRequestArray2[local18].state == 0) {
+				if (local10.aPrivilegedRequestArray2[local18].anInt6789 == 0) {
 					local16 = true;
 				}
 			}

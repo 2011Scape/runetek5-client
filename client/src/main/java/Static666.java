@@ -18,10 +18,10 @@ public final class Static666 {
 		@Pc(5) FileOnDisk local5 = null;
 		try {
 			@Pc(18) PrivilegedRequest local18 = Static446.aSignlink6.method8981("");
-			while (local18.state == 0) {
-				Static638.sleep(1L);
+			while (local18.anInt6789 == 0) {
+				Static638.method8395(1L);
 			}
-			if (local18.state == 1) {
+			if (local18.anInt6789 == 1) {
 				local5 = (FileOnDisk) local18.anObject13;
 				@Pc(41) Packet local41 = Static400.aClass2_Sub34_28.method5110();
 				local5.method2162(local41.data, 0, local41.pos);
@@ -30,7 +30,7 @@ public final class Static666 {
 		}
 		try {
 			if (local5 != null) {
-				local5.close();
+				local5.method2158();
 			}
 		} catch (@Pc(58) Exception local58) {
 		}

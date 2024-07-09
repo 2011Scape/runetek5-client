@@ -31,14 +31,14 @@ public final class Static489 {
 			return null;
 		}
 		@Pc(101) PrivilegedRequest local101 = arg1.method8977(arg0, arg2, arg3);
-		while (local101.state == 0) {
-			Static638.sleep(10L);
+		while (local101.anInt6789 == 0) {
+			Static638.method8395(10L);
 		}
 		@Pc(112) Frame local112 = (Frame) local101.anObject13;
 		if (local112 == null) {
 			return null;
-		} else if (local101.state == 2) {
-			Static655.closeFrame(arg1, local112);
+		} else if (local101.anInt6789 == 2) {
+			Static655.method8562(arg1, local112);
 			return null;
 		} else {
 			return local112;
@@ -351,7 +351,7 @@ public final class Static489 {
 		Static199.method2977();
 		Static75.aBoolean521 = true;
 		if (Static28.aBoolean43) {
-			Static79.method1579("Took: " + (Static588.currentTimeWithDrift() - Static690.aLong318) + "ms");
+			Static79.method1579("Took: " + (Static588.method7715() - Static690.aLong318) + "ms");
 			Static28.aBoolean43 = false;
 		}
 	}

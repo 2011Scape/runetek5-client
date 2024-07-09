@@ -19,7 +19,7 @@ public final class Static81 {
 			Static670.method8735();
 		}
 		if (arg0 != 14 && Static467.aClass348_2 != null) {
-			Static467.aClass348_2.cleanup();
+			Static467.aClass348_2.method7926();
 			Static467.aClass348_2 = null;
 		}
 		if (arg0 == 3) {
@@ -96,7 +96,7 @@ public final class Static81 {
 			if (local17 == null) {
 				return null;
 			}
-			if (local17.method201() > Static588.currentTimeWithDrift()) {
+			if (local17.method201() > Static588.method7715()) {
 				return null;
 			}
 			local17.unlink();

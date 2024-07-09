@@ -7,6 +7,9 @@ public final class Static604 {
 	@OriginalMember(owner = "client!tb", name = "b", descriptor = "[I")
 	public static final int[] anIntArray708 = new int[16];
 
+	@OriginalMember(owner = "client!tb", name = "c", descriptor = "J")
+	public static long aLong278 = 0L;
+
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(JI)V")
 	public static void method7903(@OriginalArg(0) long arg0) {
 		@Pc(9) int local9 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 + Static508.anInt7627;

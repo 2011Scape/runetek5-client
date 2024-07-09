@@ -52,22 +52,22 @@ public final class Static36 {
 					throw new RuntimeException();
 				}
 				@Pc(47) PrivilegedRequest local47 = new PrivilegedRequest();
-				local47.state = 1;
+				local47.anInt6789 = 1;
 				return local47;
 			} catch (@Pc(53) Throwable local53) {
 				local57 = new PrivilegedRequest();
-				local57.state = 2;
+				local57.anInt6789 = 2;
 				return local57;
 			}
 		} else if (arg3 == 2) {
 			try {
 				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_blank");
 				local57 = new PrivilegedRequest();
-				local57.state = 1;
+				local57.anInt6789 = 1;
 				return local57;
 			} catch (@Pc(94) Exception local94) {
 				local57 = new PrivilegedRequest();
-				local57.state = 2;
+				local57.anInt6789 = 2;
 				return local57;
 			}
 		} else if (arg3 == 3) {
@@ -78,11 +78,11 @@ public final class Static36 {
 			try {
 				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_top");
 				local57 = new PrivilegedRequest();
-				local57.state = 1;
+				local57.anInt6789 = 1;
 				return local57;
 			} catch (@Pc(137) Exception local137) {
 				local57 = new PrivilegedRequest();
-				local57.state = 2;
+				local57.anInt6789 = 2;
 				return local57;
 			}
 		} else {

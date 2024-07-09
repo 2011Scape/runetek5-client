@@ -7,6 +7,9 @@ public final class Static672 {
 	@OriginalMember(owner = "client!vea", name = "J", descriptor = "Lclient!nk;")
 	public static ClientStream aClientStream2;
 
+	@OriginalMember(owner = "client!vea", name = "G", descriptor = "J")
+	public static long aLong305;
+
 	@OriginalMember(owner = "client!vea", name = "I", descriptor = "Lclient!it;")
 	public static final Class184 aClass184_18 = new Class184(2, 4, 4, 0);
 
