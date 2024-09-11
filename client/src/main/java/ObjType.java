@@ -488,7 +488,7 @@ public final class ObjType {
 					} else {
 						// Forcing 457 (shard return) to be 105 for the Rune Minotaur Pouch
 						if (itemId == 12083 && key == 457) {
-							node = new IntNode(105);
+							node = new IntNode(70);
 						}
 						// Forcing 599 (Scrolls needed) to be 1 for the Rune Bull Rush Scroll
 						else if (itemId == 12466 && key == 599) {
@@ -501,6 +501,11 @@ public final class ObjType {
 					// Setting 457 (shard return) to be 6 for the Rune Bull Rush scroll
 					if (itemId == 12466) {
 						this.params.put(457, new IntNode(6));
+					}
+
+					// Setting 541 (shard crafting requirement) to be 100 for the Rune Minotaur Pouch
+					if (itemId == 12083) {
+						this.params.put(541, new IntNode(100));
 					}
 
 					this.params.put((long) key, node);
