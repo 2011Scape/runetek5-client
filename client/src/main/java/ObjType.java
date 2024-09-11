@@ -504,8 +504,17 @@ public final class ObjType {
 					}
 
 					// Setting 541 (shard crafting requirement) to be 100 for the Rune Minotaur Pouch
+					// Without setting the other the crafting interface won't grey out the icon
+					// when you don't have the appropriate items to craft with.
 					if (itemId == 12083) {
+						this.params.put(538, new IntNode(12155));
+						this.params.put(539, new IntNode(1));
+						this.params.put(540, new IntNode(12183));
 						this.params.put(541, new IntNode(100));
+						this.params.put(542, new IntNode(12163));
+						this.params.put(543, new IntNode(1));
+						this.params.put(697, new IntNode(2363));
+						this.params.put(698, new IntNode(1));
 					}
 
 					this.params.put((long) key, node);
