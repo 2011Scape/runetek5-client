@@ -13,7 +13,7 @@ public final class Static656 {
 
 	@OriginalMember(owner = "client!up", name = "c", descriptor = "(Z)V")
 	public static void method6692() {
-		Static453.aComponentArrayArray2 = new Component[Static666.aJs5118.capacity()][];
+		Static453.components = new Component[Static666.aJs5118.capacity()][];
 		Static148.aComponentArrayArray1 = new Component[Static666.aJs5118.capacity()][];
 		Static132.aBooleanArray5 = new boolean[Static666.aJs5118.capacity()];
 	}

@@ -11,7 +11,7 @@ public final class Static536 {
 	public static int anInt8149 = 0;
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(IZBI)I")
-	public static int method7169(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2) {
+	public static int getItemCount(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2) {
 		@Pc(8) Linkable_Sub22 local8 = Static556.method7303(arg2, arg1);
 		if (local8 == null) {
 			return 0;

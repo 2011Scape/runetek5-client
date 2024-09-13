@@ -14,16 +14,16 @@ public final class Static666 {
 	public static boolean aBoolean766 = false;
 
 	@OriginalMember(owner = "client!vba", name = "h", descriptor = "(I)V")
-	public static void method8693(@OriginalArg(0) int arg0) {
+	public static void write(@OriginalArg(0) int arg0) {
 		@Pc(5) FileOnDisk local5 = null;
 		try {
-			@Pc(18) PrivilegedRequest local18 = Static446.aSignlink6.method8981("");
+			@Pc(18) PrivilegedRequest local18 = Static446.aSignlink6.openPreferences("");
 			while (local18.state == 0) {
 				Static638.sleep(1L);
 			}
 			if (local18.state == 1) {
-				local5 = (FileOnDisk) local18.anObject13;
-				@Pc(41) Packet local41 = Static400.aClass2_Sub34_28.method5110();
+				local5 = (FileOnDisk) local18.result;
+				@Pc(41) Packet local41 = Static400.aClass2_Sub34_28.encode();
 				local5.method2162(local41.data, 0, local41.pos);
 			}
 		} catch (@Pc(51) Exception local51) {

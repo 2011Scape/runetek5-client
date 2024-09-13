@@ -12,7 +12,7 @@ public final class Static396 {
 	}
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(I)V")
-	public static void method5551() {
+	public static void leave() {
 		@Pc(10) Connection local10 = Connection.getActiveConnection();
 		@Pc(18) OutboundPacket local18 = OutboundPacket.create(ClientProt.aClientProt53, local10.random);
 		local18.buffer.p1(0);

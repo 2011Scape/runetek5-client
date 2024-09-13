@@ -38,7 +38,7 @@ public final class Static625 {
 			Static400.aClass2_Sub34_28.method5104(0, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 			Static32.method880(0, false);
 		}
-		Static666.method8693(1);
+		Static666.write(1);
 		return local10;
 	}
 }

@@ -28,11 +28,11 @@ public abstract class Entity extends ParticleNode_Sub2 {
 	protected Entity(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9, @OriginalArg(10) byte arg10) {
 		this.aShort132 = (short) arg7;
 		super.anInt10691 = arg3;
-		super.aByte144 = (byte) arg0;
+		super.plane = (byte) arg0;
 		this.aShort133 = (short) arg8;
 		super.aByte143 = (byte) arg1;
-		super.anInt10694 = arg4;
-		super.anInt10690 = arg2;
+		super.zFine = arg4;
+		super.xFine = arg2;
 		this.aBoolean815 = arg9;
 		this.aByte145 = arg10;
 		this.aShort134 = (short) arg6;
@@ -48,7 +48,7 @@ public abstract class Entity extends ParticleNode_Sub2 {
 		@Pc(57) int local57;
 		label112: for (@Pc(16) int local16 = this.aShort131; local16 <= this.aShort134; local16++) {
 			label110: for (local21 = this.aShort132; local21 <= this.aShort133; local21++) {
-				@Pc(32) long local32 = Static161.aLongArrayArrayArray1[super.aByte144][local16][local21];
+				@Pc(32) long local32 = Static161.aLongArrayArrayArray1[super.plane][local16][local21];
 				@Pc(34) long local34 = 0L;
 				while (true) {
 					label105: while (true) {
@@ -109,7 +109,7 @@ public abstract class Entity extends ParticleNode_Sub2 {
 				local191 = this.aShort132;
 			}
 			label76: for (local57 = 0; local57 < local7; local57++) {
-				@Pc(267) long local267 = Static161.aLongArrayArrayArray1[super.aByte144][local183][local188];
+				@Pc(267) long local267 = Static161.aLongArrayArrayArray1[super.plane][local183][local188];
 				@Pc(278) Class353 local278;
 				while (local267 != 0L) {
 					local278 = Static265.aClass353Array1[(int) ((local267 & 0xFFFFL) - 1L)];
@@ -118,7 +118,7 @@ public abstract class Entity extends ParticleNode_Sub2 {
 						continue label76;
 					}
 				}
-				local267 = Static161.aLongArrayArrayArray1[super.aByte144][local180][local191];
+				local267 = Static161.aLongArrayArrayArray1[super.plane][local180][local191];
 				while (local267 != 0L) {
 					local278 = Static265.aClass353Array1[(int) ((local267 & 0xFFFFL) - 1L)];
 					local267 >>>= 0x10;

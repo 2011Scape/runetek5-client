@@ -21,7 +21,7 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 	@OriginalMember(owner = "client!oe", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIIIIIII)V")
 	public Entity_Sub2(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14) {
 		super(arg2, arg3, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.raiseobject == 1, Static609.method8215(arg12, arg13));
-		this.aClass337_3 = new Class337(arg0, arg1, arg12, arg13, super.aByte144, arg3, this, arg7, arg14);
+		this.aClass337_3 = new Class337(arg0, arg1, arg12, arg13, super.plane, arg3, this, arg7, arg14);
 		this.aBoolean517 = arg1.active != 0 && !arg7;
 	}
 
@@ -42,7 +42,7 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 			return false;
 		} else {
 			@Pc(20) Class73 local20 = arg3.method7985();
-			local20.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+			local20.method7125(super.xFine, super.anInt10691, super.zFine);
 			return Static504.aBoolean579 ? local12.method7483(arg1, arg0, local20, false, 0, Static582.anInt8627) : local12.method7486(arg1, arg0, local20, false, 0);
 		}
 	}
@@ -55,7 +55,7 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 			return null;
 		}
 		@Pc(30) Class73 local30 = arg0.method7985();
-		local30.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+		local30.method7125(super.xFine, super.anInt10691, super.zFine);
 		@Pc(44) ParticleNode_Sub7 local44 = Static642.method8441(this.aBoolean517, 1);
 		this.aClass337_3.method7681(super.aShort133, local14, true, -9827, arg0, super.aShort134, super.aShort131, super.aShort132, local30);
 		if (Static504.aBoolean579) {
@@ -73,9 +73,9 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 		}
 		this.aBoolean518 = local14.F() || this.aClass337_3.aClass8_Sub5_7 != null;
 		if (this.aClass205_7 == null) {
-			this.aClass205_7 = Static317.method4583(super.anInt10691, super.anInt10690, local14, super.anInt10694);
+			this.aClass205_7 = Static317.method4583(super.anInt10691, super.xFine, local14, super.zFine);
 		} else {
-			Static223.method9103(local14, super.anInt10694, super.anInt10691, super.anInt10690, this.aClass205_7);
+			Static223.method9103(local14, super.zFine, super.anInt10691, super.xFine, this.aClass205_7);
 		}
 		return local44;
 	}
@@ -119,7 +119,7 @@ public final class Entity_Sub2 extends Entity implements Interface25 {
 		@Pc(12) Model local12 = this.aClass337_3.method7678(arg0, true, true, true, 262144);
 		if (arg1 == -5 && local12 != null) {
 			@Pc(22) Class73 local22 = arg0.method7985();
-			local22.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+			local22.method7125(super.xFine, super.anInt10691, super.zFine);
 			this.aClass337_3.method7681(super.aShort133, local12, false, -9827, arg0, super.aShort134, super.aShort131, super.aShort132, local22);
 		}
 	}

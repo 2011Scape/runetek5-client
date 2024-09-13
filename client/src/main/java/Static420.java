@@ -20,34 +20,34 @@ public final class Static420 {
 	public static void method5758(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (Static156.aBoolean223) {
 			@Pc(16) ParamType local16 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
-			if (Static84.method1661(arg0).method6217() && (Static717.anInt10822 & 0x20) != 0 && (local16 == null || arg0.method3404(local16.anInt7509, Static610.anInt9329) != local16.anInt7509)) {
-				Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, Static153.aString27, 18, true, Static369.anInt4263, Static128.aString108 + " -> " + arg0.aString41, (long) (arg0.anInt3741 << 0 | arg0.anInt3812), false);
+			if (Static84.getServerActiveProperties(arg0).isUseTarget() && (Static717.anInt10822 & 0x20) != 0 && (local16 == null || arg0.method3404(local16.anInt7509, Static610.anInt9329) != local16.anInt7509)) {
+				Static416.method5707(false, arg0.objId, 0L, arg0.createdComponentId, arg0.id, Static153.aString27, 18, true, Static369.anInt4263, Static128.aString108 + " -> " + arg0.optionBase, (long) (arg0.createdComponentId << 0 | arg0.id), false);
 			}
 		}
 		@Pc(106) String local106;
 		for (@Pc(97) int local97 = 9; local97 >= 5; local97--) {
 			local106 = Static443.method5982(arg0, local97);
 			if (local106 != null) {
-				Static416.method5707(false, arg0.anInt3760, (long) (local97 + 1), arg0.anInt3741, arg0.anInt3812, local106, 1002, true, Static372.method5292(local97, arg0), arg0.aString41, (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+				Static416.method5707(false, arg0.objId, (long) (local97 + 1), arg0.createdComponentId, arg0.id, local106, 1002, true, Static372.method5292(local97, arg0), arg0.optionBase, (long) (arg0.id | arg0.createdComponentId << 0), false);
 			}
 		}
 		local106 = Static380.method5359(arg0);
 		if (local106 != null) {
-			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, local106, 12, true, arg0.anInt3776, arg0.aString41, (long) (arg0.anInt3741 << 0 | arg0.anInt3812), false);
+			Static416.method5707(false, arg0.objId, 0L, arg0.createdComponentId, arg0.id, local106, 12, true, arg0.anInt3776, arg0.optionBase, (long) (arg0.createdComponentId << 0 | arg0.id), false);
 		}
 		for (@Pc(193) int local193 = 4; local193 >= 0; local193--) {
 			@Pc(204) String local204 = Static443.method5982(arg0, local193);
 			if (local204 != null) {
-				Static416.method5707(false, arg0.anInt3760, (long) (local193 + 1), arg0.anInt3741, arg0.anInt3812, local204, 20, true, Static372.method5292(local193, arg0), arg0.aString41, (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+				Static416.method5707(false, arg0.objId, (long) (local193 + 1), arg0.createdComponentId, arg0.id, local204, 20, true, Static372.method5292(local193, arg0), arg0.optionBase, (long) (arg0.id | arg0.createdComponentId << 0), false);
 			}
 		}
-		if (!Static84.method1661(arg0).method6219()) {
+		if (!Static84.getServerActiveProperties(arg0).isResumePauseButtonEnabled()) {
 			return;
 		}
 		if (arg0.aString42 == null) {
-			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, LocalizedText.CONTINUE.get(Static51.clientLanguageId), 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+			Static416.method5707(false, arg0.objId, 0L, arg0.createdComponentId, arg0.id, LocalizedText.CONTINUE.get(Static51.clientLanguageId), 10, true, -1, "", (long) (arg0.id | arg0.createdComponentId << 0), false);
 		} else {
-			Static416.method5707(false, arg0.anInt3760, 0L, arg0.anInt3741, arg0.anInt3812, arg0.aString42, 10, true, -1, "", (long) (arg0.anInt3812 | arg0.anInt3741 << 0), false);
+			Static416.method5707(false, arg0.objId, 0L, arg0.createdComponentId, arg0.id, arg0.aString42, 10, true, -1, "", (long) (arg0.id | arg0.createdComponentId << 0), false);
 		}
 	}
 

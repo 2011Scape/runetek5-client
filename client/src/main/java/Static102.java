@@ -60,7 +60,7 @@ public final class Static102 {
 		@Pc(48) int local48;
 		for (@Pc(44) int local44 = arg0.aShort131; local44 <= arg0.aShort134; local44++) {
 			for (local48 = arg0.aShort132; local48 <= arg0.aShort133; local48++) {
-				@Pc(55) Class291 local55 = Static347.method5095(arg0.aByte144, local44, local48);
+				@Pc(55) Class291 local55 = Static347.method5095(arg0.plane, local44, local48);
 				if (local55 != null) {
 					@Pc(61) Class286 local61 = Static223.method9095(arg0);
 					@Pc(64) Class286 local64 = local55.aClass286_2;

@@ -74,9 +74,9 @@ public final class Static329 {
 	public static int anInt1749 = -1;
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(BI)V")
-	public static void method1631(@OriginalArg(1) int arg0) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(9, (long) arg0);
-		local9.method205();
+	public static void setComponentObjClient(@OriginalArg(1) int arg0) {
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(9, (long) arg0);
+		local9.pushClient();
 	}
 
 	@OriginalMember(owner = "client!kh", name = "b", descriptor = "(B)V")

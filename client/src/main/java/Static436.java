@@ -10,7 +10,7 @@ public final class Static436 {
 	public static final ClientProt aClientProt44 = new ClientProt(22, 2);
 
 	@OriginalMember(owner = "client!no", name = "c", descriptor = "I")
-	public static int anInt3849 = 0;
+	public static int size = 0;
 
 	@OriginalMember(owner = "client!no", name = "a", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt45 = new ClientProt(32, -1);

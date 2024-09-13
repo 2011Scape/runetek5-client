@@ -33,7 +33,7 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 			return false;
 		} else {
 			@Pc(20) Class73 local20 = arg3.method7985();
-			local20.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+			local20.method7125(super.xFine, super.anInt10691, super.zFine);
 			return Static504.aBoolean579 ? local12.method7483(arg1, arg0, local20, false, 0, Static582.anInt8627) : local12.method7486(arg1, arg0, local20, false, 0);
 		}
 	}
@@ -57,10 +57,10 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 		if (local21 == null) {
 			return;
 		}
-		@Pc(28) int local28 = super.anInt10690 >> 9;
-		@Pc(33) int local33 = super.anInt10694 >> 9;
+		@Pc(28) int local28 = super.xFine >> 9;
+		@Pc(33) int local33 = super.zFine >> 9;
 		@Pc(36) Class73 local36 = arg0.method7985();
-		local36.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+		local36.method7125(super.xFine, super.anInt10691, super.zFine);
 		this.aClass337_2.method7681(local33, local21, false, -9827, arg0, local28, local28, local33, local36);
 	}
 
@@ -152,10 +152,10 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 			return null;
 		}
 		@Pc(30) Class73 local30 = arg0.method7985();
-		local30.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+		local30.method7125(super.xFine, super.anInt10691, super.zFine);
 		@Pc(44) ParticleNode_Sub7 local44 = Static642.method8441(this.aBoolean318, 1);
-		@Pc(49) int local49 = super.anInt10690 >> 9;
-		@Pc(54) int local54 = super.anInt10694 >> 9;
+		@Pc(49) int local49 = super.xFine >> 9;
+		@Pc(54) int local54 = super.zFine >> 9;
 		this.aClass337_2.method7681(local54, local22, true, -9827, arg0, local49, local49, local54, local30);
 		if (Static504.aBoolean579) {
 			local22.method7484(local30, local44.aClass8_Sub6Array1[0], Static582.anInt8627, 0);
@@ -172,9 +172,9 @@ public final class ParticleNode_Sub2_Sub2_Sub2 extends ParticleNode_Sub2_Sub2 im
 		}
 		this.aBoolean317 = local22.F() || this.aClass337_2.aClass8_Sub5_7 != null;
 		if (this.aClass205_3 == null) {
-			this.aClass205_3 = Static317.method4583(super.anInt10691, super.anInt10690, local22, super.anInt10694);
+			this.aClass205_3 = Static317.method4583(super.anInt10691, super.xFine, local22, super.zFine);
 		} else {
-			Static223.method9103(local22, super.anInt10694, super.anInt10691, super.anInt10690, this.aClass205_3);
+			Static223.method9103(local22, super.zFine, super.anInt10691, super.xFine, this.aClass205_3);
 		}
 		return local44;
 	}

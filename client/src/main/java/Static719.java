@@ -34,7 +34,7 @@ public final class Static719 {
 			@Pc(77) int[] local77 = new int[3];
 			@Pc(79) int local79 = -1;
 			@Pc(81) int local81 = -1;
-			if (Static30.aClass2_Sub2_Sub13_3.method4088(local77, Static116.anInt2270 + (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 >> 9), Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144, (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 >> 9) + Static691.anInt10367)) {
+			if (Static30.aClass2_Sub2_Sub13_3.method4088(local77, Static116.originZ + (Static556.self.zFine >> 9), Static556.self.plane, (Static556.self.xFine >> 9) + Static691.originX)) {
 				local79 = local77[1] - Static30.anInt5655;
 				local81 = local77[2] - Static30.anInt5648;
 			}
@@ -112,7 +112,7 @@ public final class Static719 {
 				if (!Static30.aJs574.isGroupReady(Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements")) {
 					return;
 				}
-				Static30.aClass255_3 = Static284.method4103(Static174.aBoolean249, Static30.aJs574, Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements");
+				Static30.aClass255_3 = Static284.method4103(Static174.mapMembers, Static30.aJs574, Static30.aClass2_Sub2_Sub13_3.aString48 + "_staticelements");
 			} else {
 				Static30.aClass255_3 = new Class255(0);
 			}
@@ -121,42 +121,42 @@ public final class Static719 {
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 70) {
-			Static559.aWorldMapFont7 = new WorldMapFont(arg1, 11, true, Static434.aCanvas7);
+			Static559.aWorldMapFont7 = new WorldMapFont(arg1, 11, true, Static434.canvas);
 			Static273.anInt4403 = 73;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 73) {
-			Static484.aWorldMapFont6 = new WorldMapFont(arg1, 12, true, Static434.aCanvas7);
+			Static484.aWorldMapFont6 = new WorldMapFont(arg1, 12, true, Static434.canvas);
 			Static273.anInt4403 = 76;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 76) {
-			Static142.aWorldMapFont1 = new WorldMapFont(arg1, 14, true, Static434.aCanvas7);
+			Static142.aWorldMapFont1 = new WorldMapFont(arg1, 14, true, Static434.canvas);
 			Static273.anInt4403 = 79;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 79) {
-			Static651.aWorldMapFont8 = new WorldMapFont(arg1, 17, true, Static434.aCanvas7);
+			Static651.aWorldMapFont8 = new WorldMapFont(arg1, 17, true, Static434.canvas);
 			Static273.anInt4403 = 82;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 82) {
-			Static275.aWorldMapFont2 = new WorldMapFont(arg1, 19, true, Static434.aCanvas7);
+			Static275.aWorldMapFont2 = new WorldMapFont(arg1, 19, true, Static434.canvas);
 			Static273.anInt4403 = 85;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 85) {
-			Static390.aWorldMapFont5 = new WorldMapFont(arg1, 22, true, Static434.aCanvas7);
+			Static390.aWorldMapFont5 = new WorldMapFont(arg1, 22, true, Static434.canvas);
 			Static273.anInt4403 = 88;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else if (Static273.anInt4403 == 88) {
-			Static364.aWorldMapFont4 = new WorldMapFont(arg1, 26, true, Static434.aCanvas7);
+			Static364.aWorldMapFont4 = new WorldMapFont(arg1, 26, true, Static434.canvas);
 			Static273.anInt4403 = 91;
 			Static314.method4568(true);
 			Static199.method2977();
 		} else {
-			Static359.aWorldMapFont3 = new WorldMapFont(arg1, 30, true, Static434.aCanvas7);
+			Static359.aWorldMapFont3 = new WorldMapFont(arg1, 30, true, Static434.canvas);
 			Static273.anInt4403 = 100;
 			Static314.method4568(true);
 			Static199.method2977();

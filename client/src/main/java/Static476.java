@@ -7,7 +7,7 @@ public final class Static476 {
 	public static int anInt7175;
 
 	@OriginalMember(owner = "client!paa", name = "e", descriptor = "I")
-	public static int anInt7177;
+	public static int size;
 
 	@OriginalMember(owner = "client!paa", name = "b", descriptor = "[F")
 	public static final float[] aFloatArray46 = new float[4];

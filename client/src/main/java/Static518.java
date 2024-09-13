@@ -7,7 +7,7 @@ public final class Static518 {
 	public static Packet aPacket_18;
 
 	@OriginalMember(owner = "client!qf", name = "H", descriptor = "Z")
-	public static boolean aBoolean814 = false;
+	public static boolean loaded = false;
 
 	@OriginalMember(owner = "client!qf", name = "G", descriptor = "[[I")
 	public static final int[][] anIntArrayArray262 = new int[6][];

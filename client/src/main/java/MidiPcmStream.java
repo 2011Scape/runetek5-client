@@ -164,7 +164,7 @@ public final class MidiPcmStream extends PcmStream {
 	@Override
 	public synchronized void method9131(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (this.aClass40_1.method1055()) {
-			@Pc(14) int local14 = this.aClass40_1.anInt988 * this.anInt815 / Static686.anInt8944;
+			@Pc(14) int local14 = this.aClass40_1.anInt988 * this.anInt815 / Static686.sampleRate;
 			do {
 				@Pc(24) long local24 = this.aLong29 + (long) arg2 * (long) local14;
 				if (this.aLong28 - local24 >= 0L) {
@@ -229,7 +229,7 @@ public final class MidiPcmStream extends PcmStream {
 			@Pc(104) double local104 = Math.sin((double) (arg0.anInt2188 & 0x1FF) * 0.01227184630308513D);
 			local14 += (int) (local104 * (double) local65);
 		}
-		local65 = (int) ((double) (arg0.aClass2_Sub49_Sub1_1.anInt8818 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) Static686.anInt8944 + 0.5D);
+		local65 = (int) ((double) (arg0.aClass2_Sub49_Sub1_1.anInt8818 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) Static686.sampleRate + 0.5D);
 		return local65 >= 1 ? local65 : 1;
 	}
 
@@ -566,7 +566,7 @@ public final class MidiPcmStream extends PcmStream {
 		for (@Pc(14) Linkable_Sub16 local14 = (Linkable_Sub16) this.aClass2_Sub6_Sub4_1.aLinkedList72.head(); local14 != null; local14 = (Linkable_Sub16) this.aClass2_Sub6_Sub4_1.aLinkedList72.next()) {
 			if (arg0 < 0 || local14.anInt2187 == arg0) {
 				if (local14.aClass2_Sub6_Sub2_1 != null) {
-					local14.aClass2_Sub6_Sub2_1.method3320(Static686.anInt8944 / 100);
+					local14.aClass2_Sub6_Sub2_1.method3320(Static686.sampleRate / 100);
 					if (local14.aClass2_Sub6_Sub2_1.method3336()) {
 						this.aClass2_Sub6_Sub4_1.aClass2_Sub6_Sub3_2.method5882(local14.aClass2_Sub6_Sub2_1);
 					}
@@ -813,7 +813,7 @@ public final class MidiPcmStream extends PcmStream {
 	@Override
 	public synchronized void method9130(@OriginalArg(0) int arg0) {
 		if (this.aClass40_1.method1055()) {
-			@Pc(18) int local18 = this.aClass40_1.anInt988 * this.anInt815 / Static686.anInt8944;
+			@Pc(18) int local18 = this.aClass40_1.anInt988 * this.anInt815 / Static686.sampleRate;
 			do {
 				@Pc(27) long local27 = (long) arg0 * (long) local18 + this.aLong29;
 				if (this.aLong28 - local27 >= 0L) {
@@ -832,7 +832,7 @@ public final class MidiPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(Lclient!dha;I[III)Z")
 	public boolean method945(@OriginalArg(0) Linkable_Sub16 arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		arg0.anInt2184 = Static686.anInt8944 / 100;
+		arg0.anInt2184 = Static686.sampleRate / 100;
 		if (arg0.anInt2202 >= 0 && (arg0.aClass2_Sub6_Sub2_1 == null || arg0.aClass2_Sub6_Sub2_1.method3311())) {
 			arg0.method2083();
 			arg0.unlink();

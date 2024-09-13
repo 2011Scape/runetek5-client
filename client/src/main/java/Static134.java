@@ -36,15 +36,15 @@ public final class Static134 {
 
 	@OriginalMember(owner = "client!eda", name = "a", descriptor = "(Lclient!hda;BZ)V")
 	public static void method8956(@OriginalArg(0) Component arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(16) int local16 = arg0.anInt3769 == 0 ? arg0.anInt3802 : arg0.anInt3769;
-		@Pc(37) int local37 = arg0.anInt3742 == 0 ? arg0.anInt3746 : arg0.anInt3742;
-		Static220.method3200(local16, arg1, local37, Static453.aComponentArrayArray2[arg0.anInt3812 >> 16], arg0.anInt3812);
+		@Pc(16) int local16 = arg0.scrollMaxH == 0 ? arg0.width : arg0.scrollMaxH;
+		@Pc(37) int local37 = arg0.scrollMaxV == 0 ? arg0.height : arg0.scrollMaxV;
+		Static220.method3200(local16, arg1, local37, Static453.components[arg0.id >> 16], arg0.id);
 		if (arg0.aComponentArray1 != null) {
-			Static220.method3200(local16, arg1, local37, arg0.aComponentArray1, arg0.anInt3812);
+			Static220.method3200(local16, arg1, local37, arg0.aComponentArray1, arg0.id);
 		}
-		@Pc(72) SubInterface local72 = (SubInterface) Static548.aHashTable40.get((long) arg0.anInt3812);
+		@Pc(72) SubInterface local72 = (SubInterface) Static548.openInterfaces.get((long) arg0.id);
 		if (local72 != null) {
-			Static19.method265(arg1, local72.anInt147, local37, local16);
+			Static19.method265(arg1, local72.interfaceId, local37, local16);
 		}
 	}
 }

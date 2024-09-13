@@ -12,31 +12,31 @@ public final class Component {
 	public static final SoftLruHashTable modelCache = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!hda", name = "M", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray1;
+	public Object[] onRelease;
 
 	@OriginalMember(owner = "client!hda", name = "Jc", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray17;
+	public String[] ops;
 
 	@OriginalMember(owner = "client!hda", name = "Ub", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray2;
+	public Object[] onVarcTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "ed", descriptor = "[S")
 	private short[] aShortArray55;
 
 	@OriginalMember(owner = "client!hda", name = "jd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray3;
+	public Object[] onTimer;
 
 	@OriginalMember(owner = "client!hda", name = "ud", descriptor = "[I")
 	public int[] anIntArray293;
 
 	@OriginalMember(owner = "client!hda", name = "Zb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray4;
+	public Object[] onMouseOver;
 
 	@OriginalMember(owner = "client!hda", name = "c", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray5;
+	public Object[] onDragRelease;
 
 	@OriginalMember(owner = "client!hda", name = "eb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray6;
+	public Object[] onWidgetsOpenClose;
 
 	@OriginalMember(owner = "client!hda", name = "rb", descriptor = "[S")
 	private short[] aShortArray56;
@@ -48,22 +48,22 @@ public final class Component {
 	public ParticleSystem aClass8_Sub5_4;
 
 	@OriginalMember(owner = "client!hda", name = "bc", descriptor = "Z")
-	public boolean aBoolean291;
+	public boolean vFlip;
 
 	@OriginalMember(owner = "client!hda", name = "Eb", descriptor = "[B")
 	public byte[] aByteArray36;
 
 	@OriginalMember(owner = "client!hda", name = "mb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray7;
+	public Object[] onMsg;
 
 	@OriginalMember(owner = "client!hda", name = "gc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray8;
+	public Object[] onInvTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "ic", descriptor = "Z")
-	public boolean aBoolean293;
+	public boolean hFlip;
 
 	@OriginalMember(owner = "client!hda", name = "wc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray9;
+	public Object[] onStockTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "zc", descriptor = "I")
 	public int anInt3774;
@@ -72,7 +72,7 @@ public final class Component {
 	public Object[] anObjectArray10;
 
 	@OriginalMember(owner = "client!hda", name = "m", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray11;
+	public Object[] onScroll;
 
 	@OriginalMember(owner = "client!hda", name = "s", descriptor = "Lclient!gu;")
 	public Class152 aClass152_6;
@@ -93,28 +93,28 @@ public final class Component {
 	public String aString40;
 
 	@OriginalMember(owner = "client!hda", name = "Hc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray14;
+	public Object[] onUse;
 
 	@OriginalMember(owner = "client!hda", name = "W", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray15;
+	public Object[] onOptionClick;
 
 	@OriginalMember(owner = "client!hda", name = "o", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray16;
+	public Object[] onUseWith;
 
 	@OriginalMember(owner = "client!hda", name = "Nb", descriptor = "[I")
 	public int[] anIntArray294;
 
 	@OriginalMember(owner = "client!hda", name = "bd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray17;
+	public Object[] onClickRepeat;
 
 	@OriginalMember(owner = "client!hda", name = "Rb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray18;
+	public Object[] onVarcstrTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "od", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray19;
+	public Object[] onResize;
 
 	@OriginalMember(owner = "client!hda", name = "B", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray20;
+	public Object[] onDialogAbort;
 
 	@OriginalMember(owner = "client!hda", name = "H", descriptor = "Ljava/lang/String;")
 	public String aString42;
@@ -123,10 +123,10 @@ public final class Component {
 	private short[] aShortArray57;
 
 	@OriginalMember(owner = "client!hda", name = "Yc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray21;
+	public Object[] onStatTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "D", descriptor = "[I")
-	public int[] anIntArray295;
+	public int[] statTriggers;
 
 	@OriginalMember(owner = "client!hda", name = "Oc", descriptor = "[Lclient!hda;")
 	public Component[] aComponentArray1;
@@ -135,31 +135,31 @@ public final class Component {
 	public int anInt3796;
 
 	@OriginalMember(owner = "client!hda", name = "fd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray22;
+	public Object[] onKey;
 
 	@OriginalMember(owner = "client!hda", name = "sb", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray23;
 
 	@OriginalMember(owner = "client!hda", name = "v", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray24;
+	public Object[] onDrag;
 
 	@OriginalMember(owner = "client!hda", name = "Qb", descriptor = "[Lclient!hda;")
-	public Component[] aComponentArray2;
+	public Component[] createdComponents;
 
 	@OriginalMember(owner = "client!hda", name = "r", descriptor = "[I")
-	public int[] anIntArray296;
+	public int[] varcstrTriggers;
 
 	@OriginalMember(owner = "client!hda", name = "db", descriptor = "[B")
 	public byte[] aByteArray37;
 
 	@OriginalMember(owner = "client!hda", name = "Xc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray25;
+	public Object[] onVarpTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "V", descriptor = "[I")
 	public int[] anIntArray297;
 
 	@OriginalMember(owner = "client!hda", name = "Bb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray26;
+	public Object[] onMouseLeave;
 
 	@OriginalMember(owner = "client!hda", name = "qd", descriptor = "Lclient!av;")
 	private HashTable aHashTable17;
@@ -168,49 +168,49 @@ public final class Component {
 	public int anInt3815;
 
 	@OriginalMember(owner = "client!hda", name = "ac", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray27;
+	public Object[] onClanTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "Pb", descriptor = "[I")
-	public int[] anIntArray298;
+	public int[] varcTriggers;
 
 	@OriginalMember(owner = "client!hda", name = "z", descriptor = "[I")
-	public int[] anIntArray299;
+	public int[] inventoryTriggers;
 
 	@OriginalMember(owner = "client!hda", name = "yb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray28;
+	public Object[] onMouseRepeat;
 
 	@OriginalMember(owner = "client!hda", name = "ib", descriptor = "[S")
 	private short[] aShortArray58;
 
 	@OriginalMember(owner = "client!hda", name = "Ab", descriptor = "[I")
-	public int[] anIntArray300;
+	public int[] varpTriggers;
 
 	@OriginalMember(owner = "client!hda", name = "P", descriptor = "I")
-	public int anInt3820;
+	public int type;
 
 	@OriginalMember(owner = "client!hda", name = "Dc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray29;
+	public Object[] onFriendTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "x", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray30;
+	public Object[] onDragStart;
 
 	@OriginalMember(owner = "client!hda", name = "Fb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray31;
+	public Object[] onMinimapUnlock;
 
 	@OriginalMember(owner = "client!hda", name = "Q", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray32;
+	public Object[] onHold;
 
 	@OriginalMember(owner = "client!hda", name = "cc", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray33;
 
 	@OriginalMember(owner = "client!hda", name = "wd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray34;
+	public Object[] onMiscTransmit;
 
 	@OriginalMember(owner = "client!hda", name = "Z", descriptor = "[I")
 	public int[] anIntArray301;
 
 	@OriginalMember(owner = "client!hda", name = "Mb", descriptor = "I")
-	public int anInt3831;
+	public int modelId;
 
 	@OriginalMember(owner = "client!hda", name = "L", descriptor = "Z")
 	public boolean aBoolean302;
@@ -231,46 +231,46 @@ public final class Component {
 	public int anInt3775 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "ad", descriptor = "Z")
-	public boolean aBoolean285 = false;
+	public boolean modelOrtho = false;
 
 	@OriginalMember(owner = "client!hda", name = "Hb", descriptor = "I")
-	public int anInt3737 = 0;
+	public int modelYOffset = 0;
 
 	@OriginalMember(owner = "client!hda", name = "e", descriptor = "I")
-	public int anInt3778 = 1;
+	public int lineWidth = 1;
 
 	@OriginalMember(owner = "client!hda", name = "vd", descriptor = "I")
-	public int anInt3765 = 0;
+	public int angle2d = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Wb", descriptor = "I")
-	public int anInt3781 = -1;
+	public int font = -1;
 
 	@OriginalMember(owner = "client!hda", name = "hc", descriptor = "Z")
 	public boolean aBoolean289 = false;
 
 	@OriginalMember(owner = "client!hda", name = "yd", descriptor = "Z")
-	public boolean aBoolean294 = false;
+	public boolean filled = false;
 
 	@OriginalMember(owner = "client!hda", name = "Yb", descriptor = "I")
-	public int anInt3744 = 0;
+	public int baseWidth = 0;
 
 	@OriginalMember(owner = "client!hda", name = "J", descriptor = "I")
 	public int anInt3788 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "cb", descriptor = "B")
-	public byte aByte63 = 0;
+	public byte dynamicWidthValue = 0;
 
 	@OriginalMember(owner = "client!hda", name = "n", descriptor = "I")
-	public int anInt3735 = 0;
+	public int x = 0;
 
 	@OriginalMember(owner = "client!hda", name = "t", descriptor = "I")
 	public int anInt3783 = -1;
 
 	@OriginalMember(owner = "client!hda", name = "Lb", descriptor = "Ljava/lang/String;")
-	public String aString41 = "";
+	public String optionBase = "";
 
 	@OriginalMember(owner = "client!hda", name = "Ed", descriptor = "B")
-	public byte aByte62 = 0;
+	public byte dynamicHeightValue = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Mc", descriptor = "I")
 	public int anInt3791 = 0;
@@ -279,28 +279,28 @@ public final class Component {
 	public boolean aBoolean295 = true;
 
 	@OriginalMember(owner = "client!hda", name = "nd", descriptor = "I")
-	public int anInt3780 = 0;
+	public int alpha = 0;
 
 	@OriginalMember(owner = "client!hda", name = "l", descriptor = "I")
-	public int anInt3779 = 0;
+	public int color = 0;
 
 	@OriginalMember(owner = "client!hda", name = "bb", descriptor = "I")
-	public int anInt3741 = -1;
+	public int createdComponentId = -1;
 
 	@OriginalMember(owner = "client!hda", name = "lb", descriptor = "I")
 	public int lb = -1;
 
 	@OriginalMember(owner = "client!hda", name = "yc", descriptor = "I")
-	public int anInt3789 = -1;
+	public int modelSeqId = -1;
 
 	@OriginalMember(owner = "client!hda", name = "Ib", descriptor = "I")
-	public int anInt3797 = 0;
+	public int dragDeadtime = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Tb", descriptor = "I")
-	public int anInt3798 = 0;
+	public int shadowColor = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Fc", descriptor = "I")
-	public int anInt3736 = 0;
+	public int modelXOffset = 0;
 
 	@OriginalMember(owner = "client!hda", name = "gb", descriptor = "I")
 	public int anInt3757 = 2;
@@ -312,88 +312,88 @@ public final class Component {
 	public boolean aBoolean297 = false;
 
 	@OriginalMember(owner = "client!hda", name = "Sb", descriptor = "I")
-	public int anInt3773 = 0;
+	public int outlineThickness = 0;
 
 	@OriginalMember(owner = "client!hda", name = "td", descriptor = "Ljava/lang/String;")
-	public String aString43 = "";
+	public String optionCircumfix = "";
 
 	@OriginalMember(owner = "client!hda", name = "S", descriptor = "I")
 	public int anInt3750 = 1;
 
 	@OriginalMember(owner = "client!hda", name = "gd", descriptor = "I")
-	public int anInt3748 = 0;
+	public int vpadding = 0;
 
 	@OriginalMember(owner = "client!hda", name = "pb", descriptor = "Z")
 	public boolean aBoolean298 = false;
 
 	@OriginalMember(owner = "client!hda", name = "vb", descriptor = "I")
-	public int anInt3812 = -1;
+	public int id = -1;
 
 	@OriginalMember(owner = "client!hda", name = "Cb", descriptor = "I")
-	public int anInt3811 = 0;
+	public int modelYAngle = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Ac", descriptor = "I")
-	public int anInt3807 = 0;
+	public int modelXAngle = 0;
 
 	@OriginalMember(owner = "client!hda", name = "b", descriptor = "I")
-	public int anInt3760 = -1;
+	public int objId = -1;
 
 	@OriginalMember(owner = "client!hda", name = "oc", descriptor = "I")
-	public int anInt3810 = -1;
+	public int spriteId = -1;
 
 	@OriginalMember(owner = "client!hda", name = "Lc", descriptor = "Z")
 	public boolean aBoolean287 = false;
 
 	@OriginalMember(owner = "client!hda", name = "dd", descriptor = "B")
-	public byte aByte61 = 0;
+	public byte yMode = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Uc", descriptor = "I")
-	public int anInt3809 = 0;
+	public int scrollX = 0;
 
 	@OriginalMember(owner = "client!hda", name = "vc", descriptor = "I")
-	public int anInt3754 = 0;
+	public int dragDeadzone = 0;
 
 	@OriginalMember(owner = "client!hda", name = "qb", descriptor = "I")
 	public int anInt3803 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "wb", descriptor = "I")
-	public int anInt3793 = 100;
+	public int modelZoom = 100;
 
 	@OriginalMember(owner = "client!hda", name = "qc", descriptor = "Z")
 	public boolean aBoolean292 = false;
 
 	@OriginalMember(owner = "client!hda", name = "ld", descriptor = "I")
-	public int anInt3742 = 0;
+	public int scrollMaxV = 0;
 
 	@OriginalMember(owner = "client!hda", name = "O", descriptor = "Z")
-	public boolean aBoolean286 = false;
+	public boolean shadowed = false;
 
 	@OriginalMember(owner = "client!hda", name = "Cd", descriptor = "I")
-	public int anInt3814 = 0;
+	public int valign = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Db", descriptor = "I")
 	public int anInt3761 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "h", descriptor = "I")
-	public int anInt3768 = 0;
+	public int scrollY = 0;
 
 	@OriginalMember(owner = "client!hda", name = "f", descriptor = "Ljava/lang/String;")
-	public String aString44 = "";
+	public String text = "";
 
 	@OriginalMember(owner = "client!hda", name = "Vb", descriptor = "Z")
 	public boolean aBoolean299 = true;
 
 	@OriginalMember(owner = "client!hda", name = "ab", descriptor = "I")
-	public int anInt3784 = 0;
+	public int y = 0;
 
 	@OriginalMember(owner = "client!hda", name = "g", descriptor = "I")
 	public int anInt3795 = 1;
 
 	@OriginalMember(owner = "client!hda", name = "Kc", descriptor = "I")
-	public int anInt3769 = 0;
+	public int scrollMaxH = 0;
 
 	@OriginalMember(owner = "client!hda", name = "ub", descriptor = "I")
-	public int anInt3817 = 0;
+	public int objCount = 0;
 
 	@OriginalMember(owner = "client!hda", name = "jc", descriptor = "I")
 	public int anInt3800 = 0;
@@ -402,31 +402,31 @@ public final class Component {
 	public int anInt3776 = -1;
 
 	@OriginalMember(owner = "client!hda", name = "A", descriptor = "I")
-	public int anInt3802 = 0;
+	public int width = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Cc", descriptor = "I")
-	public int anInt3818 = 0;
+	public int halign = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Vc", descriptor = "I")
-	public int anInt3746 = 0;
+	public int height = 0;
 
 	@OriginalMember(owner = "client!hda", name = "y", descriptor = "I")
 	public int anInt3805 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "jb", descriptor = "I")
-	public int anInt3823 = 1;
+	public int modelType = 1;
 
 	@OriginalMember(owner = "client!hda", name = "w", descriptor = "Lclient!ofa;")
-	public ServerActiveProperties aClass2_Sub41_2 = ServerActiveProperties.aClass2_Sub41_1;
+	public ServerActiveProperties aClass2_Sub41_2 = ServerActiveProperties.DEFAULT_SERVER_ACTIVE_PROPERTIES;
 
 	@OriginalMember(owner = "client!hda", name = "Ec", descriptor = "I")
-	public int anInt3806 = 0;
+	public int clientCode = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Rc", descriptor = "I")
-	public int anInt3804 = 0;
+	public int modelZOffset = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Pc", descriptor = "I")
-	public int anInt3762 = 0;
+	public int baseHeight = 0;
 
 	@OriginalMember(owner = "client!hda", name = "nb", descriptor = "I")
 	public int anInt3825 = 0;
@@ -435,7 +435,7 @@ public final class Component {
 	public int anInt3738 = -1;
 
 	@OriginalMember(owner = "client!hda", name = "zb", descriptor = "I")
-	public int anInt3743 = -1;
+	public int overlayer = -1;
 
 	@OriginalMember(owner = "client!hda", name = "R", descriptor = "I")
 	public int anInt3801 = 0;
@@ -453,10 +453,10 @@ public final class Component {
 	public boolean aBoolean300 = false;
 
 	@OriginalMember(owner = "client!hda", name = "fc", descriptor = "Z")
-	public boolean aBoolean284 = false;
+	public boolean hidden = false;
 
 	@OriginalMember(owner = "client!hda", name = "xc", descriptor = "I")
-	public int anInt3826 = 0;
+	public int baseX = 0;
 
 	@OriginalMember(owner = "client!hda", name = "kb", descriptor = "Z")
 	public boolean aBoolean301 = false;
@@ -468,16 +468,16 @@ public final class Component {
 	public int anInt3799 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Wc", descriptor = "I")
-	public int anInt3830 = Static351.anInt5719;
+	public int dragRenderBehavior = Static351.anInt5719;
 
 	@OriginalMember(owner = "client!hda", name = "N", descriptor = "Z")
 	public boolean aBoolean288 = false;
 
 	@OriginalMember(owner = "client!hda", name = "cd", descriptor = "B")
-	public byte aByte64 = 0;
+	public byte xMode = 0;
 
 	@OriginalMember(owner = "client!hda", name = "Gb", descriptor = "I")
-	public int anInt3808 = 0;
+	public int baseY = 0;
 
 	@OriginalMember(owner = "client!hda", name = "kc", descriptor = "I")
 	public int anInt3821 = 0;
@@ -488,35 +488,35 @@ public final class Component {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(ZLclient!ha;)Lclient!st;")
 	public SoftwareIndexedSprite method3383(@OriginalArg(1) Class19 arg0) {
 		Static544.aBoolean624 = false;
-		@Pc(54) long local54 = ((long) this.anInt3798 << 40) + (((this.aBoolean292 ? 1L : 0L) << 35) + (long) this.anInt3810 - (-((long) this.anInt3773 << 36) + -((this.aBoolean291 ? 1L : 0L) << 38)) + ((this.aBoolean293 ? 1L : 0L) << 39));
+		@Pc(54) long local54 = ((long) this.shadowColor << 40) + (((this.aBoolean292 ? 1L : 0L) << 35) + (long) this.spriteId - (-((long) this.outlineThickness << 36) + -((this.vFlip ? 1L : 0L) << 38)) + ((this.hFlip ? 1L : 0L) << 39));
 		@Pc(60) SoftwareIndexedSprite local60 = (SoftwareIndexedSprite) spriteCache.get(local54);
 		if (local60 != null) {
 			return local60;
 		}
-		@Pc(71) Class407 local71 = Static735.method9382(Static262.aJs556, this.anInt3810, 0);
+		@Pc(71) Class407 local71 = Static735.method9382(Static262.aJs556, this.spriteId, 0);
 		if (local71 == null) {
 			Static544.aBoolean624 = true;
 			return null;
 		}
-		if (this.aBoolean291) {
+		if (this.vFlip) {
 			local71.method9377();
 		}
-		if (this.aBoolean293) {
+		if (this.hFlip) {
 			local71.method9388();
 		}
-		if (this.anInt3773 > 0) {
-			local71.method9380(this.anInt3773);
-		} else if (this.anInt3798 != 0) {
+		if (this.outlineThickness > 0) {
+			local71.method9380(this.outlineThickness);
+		} else if (this.shadowColor != 0) {
 			local71.method9380(1);
 		}
-		if (this.anInt3773 >= 1) {
+		if (this.outlineThickness >= 1) {
 			local71.method9385(1);
 		}
-		if (this.anInt3773 >= 2) {
+		if (this.outlineThickness >= 2) {
 			local71.method9385(16777215);
 		}
-		if (this.anInt3798 != 0) {
-			local71.method9381(this.anInt3798 | 0xFF000000);
+		if (this.shadowColor != 0) {
+			local71.method9381(this.shadowColor | 0xFF000000);
 		}
 		local60 = arg0.method7948(local71, true);
 		spriteCache.put(local54, local60, local60.method8199() * local60.method8182() * 4);
@@ -594,125 +594,125 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ge;B)V")
-	public void method3390(@OriginalArg(0) Packet arg0) {
+	public void decodeIf3(@OriginalArg(0) Packet arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		if (local7 == 255) {
 			local7 = -1;
 		}
-		this.anInt3820 = arg0.g1();
-		if ((this.anInt3820 & 0x80) != 0) {
-			this.anInt3820 &= 0x7F;
+		this.type = arg0.g1();
+		if ((this.type & 0x80) != 0) {
+			this.type &= 0x7F;
 			this.aString40 = arg0.gjstr();
 		}
-		this.anInt3806 = arg0.g2();
-		this.anInt3826 = arg0.g2s();
-		this.anInt3808 = arg0.g2s();
-		this.anInt3744 = arg0.g2();
-		this.anInt3762 = arg0.g2();
-		this.aByte63 = arg0.g1b();
-		this.aByte62 = arg0.g1b();
-		this.aByte61 = arg0.g1b();
-		this.aByte64 = arg0.g1b();
-		this.anInt3743 = arg0.g2();
-		if (this.anInt3743 == 65535) {
-			this.anInt3743 = -1;
+		this.clientCode = arg0.g2();
+		this.baseX = arg0.g2s();
+		this.baseY = arg0.g2s();
+		this.baseWidth = arg0.g2();
+		this.baseHeight = arg0.g2();
+		this.dynamicWidthValue = arg0.g1b();
+		this.dynamicHeightValue = arg0.g1b();
+		this.yMode = arg0.g1b();
+		this.xMode = arg0.g1b();
+		this.overlayer = arg0.g2();
+		if (this.overlayer == 65535) {
+			this.overlayer = -1;
 		} else {
-			this.anInt3743 += this.anInt3812 & 0xFFFF0000;
+			this.overlayer += this.id & 0xFFFF0000;
 		}
 		@Pc(110) int local110 = arg0.g1();
-		this.aBoolean284 = (local110 & 0x1) != 0;
+		this.hidden = (local110 & 0x1) != 0;
 		if (local7 >= 0) {
 			this.aBoolean300 = (local110 & 0x2) != 0;
 		}
-		if (this.anInt3820 == 0) {
-			this.anInt3769 = arg0.g2();
-			this.anInt3742 = arg0.g2();
+		if (this.type == 0) {
+			this.scrollMaxH = arg0.g2();
+			this.scrollMaxV = arg0.g2();
 			if (local7 < 0) {
 				this.aBoolean300 = arg0.g1() == 1;
 			}
 		}
 		@Pc(191) int local191;
-		if (this.anInt3820 == 5) {
-			this.anInt3810 = arg0.g4();
-			this.anInt3765 = arg0.g2();
+		if (this.type == 5) {
+			this.spriteId = arg0.g4();
+			this.angle2d = arg0.g2();
 			local191 = arg0.g1();
 			this.aBoolean301 = (local191 & 0x1) != 0;
 			this.aBoolean292 = (local191 & 0x2) != 0;
-			this.anInt3780 = arg0.g1();
-			this.anInt3773 = arg0.g1();
-			this.anInt3798 = arg0.g4();
-			this.aBoolean291 = arg0.g1() == 1;
-			this.aBoolean293 = arg0.g1() == 1;
-			this.anInt3779 = arg0.g4();
+			this.alpha = arg0.g1();
+			this.outlineThickness = arg0.g1();
+			this.shadowColor = arg0.g4();
+			this.vFlip = arg0.g1() == 1;
+			this.hFlip = arg0.g1() == 1;
+			this.color = arg0.g4();
 			if (local7 >= 3) {
 				this.aBoolean295 = arg0.g1() == 1;
 			}
 		}
-		if (this.anInt3820 == 6) {
-			this.anInt3823 = 1;
-			this.anInt3831 = arg0.g2();
-			if (this.anInt3831 == 65535) {
-				this.anInt3831 = -1;
+		if (this.type == 6) {
+			this.modelType = 1;
+			this.modelId = arg0.g2();
+			if (this.modelId == 65535) {
+				this.modelId = -1;
 			}
 			local191 = arg0.g1();
-			this.aBoolean285 = (local191 & 0x4) == 4;
+			this.modelOrtho = (local191 & 0x4) == 4;
 			@Pc(326) boolean local326 = (local191 & 0x1) == 1;
 			this.aBoolean302 = (local191 & 0x2) == 2;
 			this.aBoolean289 = (local191 & 0x8) == 8;
 			if (local326) {
 				this.anInt3755 = arg0.g2s();
 				this.anInt3799 = arg0.g2s();
-				this.anInt3807 = arg0.g2();
-				this.anInt3811 = arg0.g2();
-				this.anInt3737 = arg0.g2();
-				this.anInt3793 = arg0.g2();
+				this.modelXAngle = arg0.g2();
+				this.modelYAngle = arg0.g2();
+				this.modelYOffset = arg0.g2();
+				this.modelZoom = arg0.g2();
 			} else if (this.aBoolean302) {
 				this.anInt3755 = arg0.g2s();
 				this.anInt3799 = arg0.g2s();
 				this.anInt3821 = arg0.g2s();
-				this.anInt3807 = arg0.g2();
-				this.anInt3811 = arg0.g2();
-				this.anInt3737 = arg0.g2();
-				this.anInt3793 = arg0.g2s();
+				this.modelXAngle = arg0.g2();
+				this.modelYAngle = arg0.g2();
+				this.modelYOffset = arg0.g2();
+				this.modelZoom = arg0.g2s();
 			}
-			this.anInt3789 = arg0.g2();
-			if (this.anInt3789 == 65535) {
-				this.anInt3789 = -1;
+			this.modelSeqId = arg0.g2();
+			if (this.modelSeqId == 65535) {
+				this.modelSeqId = -1;
 			}
-			if (this.aByte63 != 0) {
+			if (this.dynamicWidthValue != 0) {
 				this.anInt3800 = arg0.g2();
 			}
-			if (this.aByte62 != 0) {
+			if (this.dynamicHeightValue != 0) {
 				this.anInt3825 = arg0.g2();
 			}
 		}
-		if (this.anInt3820 == 4) {
-			this.anInt3781 = arg0.g2();
-			if (this.anInt3781 == 65535) {
-				this.anInt3781 = -1;
+		if (this.type == 4) {
+			this.font = arg0.g2();
+			if (this.font == 65535) {
+				this.font = -1;
 			}
 			if (local7 >= 2) {
 				this.aBoolean299 = arg0.g1() == 1;
 			}
-			this.aString44 = arg0.gjstr();
-			this.anInt3748 = arg0.g1();
-			this.anInt3818 = arg0.g1();
-			this.anInt3814 = arg0.g1();
-			this.aBoolean286 = arg0.g1() == 1;
-			this.anInt3779 = arg0.g4();
-			this.anInt3780 = arg0.g1();
+			this.text = arg0.gjstr();
+			this.vpadding = arg0.g1();
+			this.halign = arg0.g1();
+			this.valign = arg0.g1();
+			this.shadowed = arg0.g1() == 1;
+			this.color = arg0.g4();
+			this.alpha = arg0.g1();
 			if (local7 >= 0) {
 				this.anInt3788 = arg0.g1();
 			}
 		}
-		if (this.anInt3820 == 3) {
-			this.anInt3779 = arg0.g4();
-			this.aBoolean294 = arg0.g1() == 1;
-			this.anInt3780 = arg0.g1();
+		if (this.type == 3) {
+			this.color = arg0.g4();
+			this.filled = arg0.g1() == 1;
+			this.alpha = arg0.g1();
 		}
-		if (this.anInt3820 == 9) {
-			this.anInt3778 = arg0.g1();
-			this.anInt3779 = arg0.g4();
+		if (this.type == 9) {
+			this.lineWidth = arg0.g1();
+			this.color = arg0.g4();
 			this.aBoolean287 = arg0.g1() == 1;
 		}
 		local191 = arg0.g3();
@@ -740,14 +740,14 @@ public final class Component {
 				local628 = arg0.g1();
 			}
 		}
-		this.aString41 = arg0.gjstr();
+		this.optionBase = arg0.gjstr();
 		local653 = arg0.g1();
 		@Pc(722) int local722 = local653 & 0xF;
 		@Pc(730) int local730;
 		if (local722 > 0) {
-			this.aStringArray17 = new String[local722];
+			this.ops = new String[local722];
 			for (local730 = 0; local730 < local722; local730++) {
-				this.aStringArray17[local730] = arg0.gjstr();
+				this.ops[local730] = arg0.gjstr();
 			}
 		}
 		@Pc(750) int local750 = local653 >> 4;
@@ -768,12 +768,12 @@ public final class Component {
 		if (this.aString42.equals("")) {
 			this.aString42 = null;
 		}
-		this.anInt3754 = arg0.g1();
-		this.anInt3797 = arg0.g1();
-		this.anInt3830 = arg0.g1();
-		this.aString43 = arg0.gjstr();
+		this.dragDeadzone = arg0.g1();
+		this.dragDeadtime = arg0.g1();
+		this.dragRenderBehavior = arg0.g1();
+		this.optionCircumfix = arg0.gjstr();
 		local730 = -1;
-		if (Static622.method6853(local191) != 0) {
+		if (Static622.getTargetMask(local191) != 0) {
 			local730 = arg0.g2();
 			if (local730 == 65535) {
 				local730 = -1;
@@ -811,55 +811,55 @@ public final class Component {
 			}
 		}
 		this.anObjectArray13 = this.method3386(arg0);
-		this.anObjectArray4 = this.method3386(arg0);
-		this.anObjectArray26 = this.method3386(arg0);
-		this.anObjectArray16 = this.method3386(arg0);
-		this.anObjectArray14 = this.method3386(arg0);
-		this.anObjectArray25 = this.method3386(arg0);
-		this.anObjectArray8 = this.method3386(arg0);
-		this.anObjectArray21 = this.method3386(arg0);
-		this.anObjectArray3 = this.method3386(arg0);
-		this.anObjectArray15 = this.method3386(arg0);
+		this.onMouseOver = this.method3386(arg0);
+		this.onMouseLeave = this.method3386(arg0);
+		this.onUseWith = this.method3386(arg0);
+		this.onUse = this.method3386(arg0);
+		this.onVarpTransmit = this.method3386(arg0);
+		this.onInvTransmit = this.method3386(arg0);
+		this.onStatTransmit = this.method3386(arg0);
+		this.onTimer = this.method3386(arg0);
+		this.onOptionClick = this.method3386(arg0);
 		if (local7 >= 0) {
 			this.anObjectArray10 = this.method3386(arg0);
 		}
-		this.anObjectArray28 = this.method3386(arg0);
-		this.anObjectArray17 = this.method3386(arg0);
-		this.anObjectArray24 = this.method3386(arg0);
-		this.anObjectArray1 = this.method3386(arg0);
-		this.anObjectArray32 = this.method3386(arg0);
-		this.anObjectArray30 = this.method3386(arg0);
-		this.anObjectArray5 = this.method3386(arg0);
-		this.anObjectArray11 = this.method3386(arg0);
-		this.anObjectArray2 = this.method3386(arg0);
-		this.anObjectArray18 = this.method3386(arg0);
-		this.anIntArray300 = this.method3398(arg0);
-		this.anIntArray299 = this.method3398(arg0);
-		this.anIntArray295 = this.method3398(arg0);
-		this.anIntArray298 = this.method3398(arg0);
-		this.anIntArray296 = this.method3398(arg0);
+		this.onMouseRepeat = this.method3386(arg0);
+		this.onClickRepeat = this.method3386(arg0);
+		this.onDrag = this.method3386(arg0);
+		this.onRelease = this.method3386(arg0);
+		this.onHold = this.method3386(arg0);
+		this.onDragStart = this.method3386(arg0);
+		this.onDragRelease = this.method3386(arg0);
+		this.onScroll = this.method3386(arg0);
+		this.onVarcTransmit = this.method3386(arg0);
+		this.onVarcstrTransmit = this.method3386(arg0);
+		this.varpTriggers = this.method3398(arg0);
+		this.inventoryTriggers = this.method3398(arg0);
+		this.statTriggers = this.method3398(arg0);
+		this.varcTriggers = this.method3398(arg0);
+		this.varcstrTriggers = this.method3398(arg0);
 	}
 
 	@OriginalMember(owner = "client!hda", name = "c", descriptor = "(Ljava/lang/String;II)V")
 	public void method3391(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		if (this.aStringArray17 == null || arg1 >= this.aStringArray17.length) {
+		if (this.ops == null || arg1 >= this.ops.length) {
 			@Pc(14) String[] local14 = new String[arg1 + 1];
-			if (this.aStringArray17 != null) {
-				for (@Pc(19) int local19 = 0; local19 < this.aStringArray17.length; local19++) {
-					local14[local19] = this.aStringArray17[local19];
+			if (this.ops != null) {
+				for (@Pc(19) int local19 = 0; local19 < this.ops.length; local19++) {
+					local14[local19] = this.ops[local19];
 				}
 			}
-			this.aStringArray17 = local14;
+			this.ops = local14;
 		}
-		this.aStringArray17[arg1] = arg0;
+		this.ops[arg1] = arg0;
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;I)Lclient!he;")
 	public Class159 method3393(@OriginalArg(0) Class19 arg0) {
-		@Pc(15) long local15 = (long) this.anInt3741 & 0xFFFFFFFFL | (long) this.anInt3812 << 32;
+		@Pc(15) long local15 = (long) this.createdComponentId & 0xFFFFFFFFL | (long) this.id << 32;
 		@Pc(21) Class159 local21 = (Class159) Static449.aSoftLruHashTable146.get(local15);
 		if (local21 != null) {
-			if (local21.anInt3836 != this.anInt3810) {
+			if (local21.anInt3836 != this.spriteId) {
 				local21 = null;
 				Static449.aSoftLruHashTable146.remove(local15);
 			}
@@ -867,7 +867,7 @@ public final class Component {
 				return local21;
 			}
 		}
-		@Pc(53) Class407 local53 = Static735.method9382(Static262.aJs556, this.anInt3810, 0);
+		@Pc(53) Class407 local53 = Static735.method9382(Static262.aJs556, this.spriteId, 0);
 		if (local53 == null) {
 			return null;
 		}
@@ -897,7 +897,7 @@ public final class Component {
 		if (local180 == null) {
 			return null;
 		} else {
-			local21 = new Class159(local77, local86, local92, local89, local180, this.anInt3810);
+			local21 = new Class159(local77, local86, local92, local89, local180, this.spriteId);
 			Static449.aSoftLruHashTable146.put(local15, local21);
 			return local21;
 		}
@@ -951,52 +951,52 @@ public final class Component {
 	@OriginalMember(owner = "client!hda", name = "b", descriptor = "(I)V")
 	public void method3399() {
 		this.anObjectArray10 = null;
-		this.anObjectArray20 = null;
-		this.anObjectArray5 = null;
-		this.anObjectArray1 = null;
-		this.anIntArray299 = null;
-		this.anObjectArray14 = null;
-		this.anIntArray298 = null;
-		this.anObjectArray17 = null;
-		this.anIntArray300 = null;
-		this.anObjectArray2 = null;
-		this.anObjectArray30 = null;
-		this.anObjectArray19 = null;
-		this.anObjectArray11 = null;
-		this.anIntArray296 = null;
-		this.anObjectArray15 = null;
-		this.anObjectArray16 = null;
+		this.onDialogAbort = null;
+		this.onDragRelease = null;
+		this.onRelease = null;
+		this.inventoryTriggers = null;
+		this.onUse = null;
+		this.varcTriggers = null;
+		this.onClickRepeat = null;
+		this.varpTriggers = null;
+		this.onVarcTransmit = null;
+		this.onDragStart = null;
+		this.onResize = null;
+		this.onScroll = null;
+		this.varcstrTriggers = null;
+		this.onOptionClick = null;
+		this.onUseWith = null;
 		this.anObjectArray23 = null;
-		this.anObjectArray27 = null;
-		this.anObjectArray8 = null;
-		this.anObjectArray31 = null;
-		this.anObjectArray32 = null;
-		this.anObjectArray26 = null;
-		this.anObjectArray4 = null;
-		this.anObjectArray25 = null;
-		this.anIntArray295 = null;
+		this.onClanTransmit = null;
+		this.onInvTransmit = null;
+		this.onMinimapUnlock = null;
+		this.onHold = null;
+		this.onMouseLeave = null;
+		this.onMouseOver = null;
+		this.onVarpTransmit = null;
+		this.statTriggers = null;
 		this.anObjectArray13 = null;
-		this.anObjectArray9 = null;
-		this.anObjectArray22 = null;
-		this.anObjectArray6 = null;
-		this.anObjectArray29 = null;
-		this.anObjectArray24 = null;
-		this.anObjectArray3 = null;
-		this.anObjectArray7 = null;
-		this.anObjectArray21 = null;
-		this.anObjectArray34 = null;
-		this.anObjectArray18 = null;
-		this.anObjectArray28 = null;
+		this.onStockTransmit = null;
+		this.onKey = null;
+		this.onWidgetsOpenClose = null;
+		this.onFriendTransmit = null;
+		this.onDrag = null;
+		this.onTimer = null;
+		this.onMsg = null;
+		this.onStatTransmit = null;
+		this.onMiscTransmit = null;
+		this.onVarcstrTransmit = null;
+		this.onMouseRepeat = null;
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;Lclient!gu;Lclient!qp;Lclient!kr;BLclient!bp;Lclient!ju;Lclient!uk;Lclient!ql;Lclient!es;ILclient!vk;)Lclient!ka;")
 	public Model method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(3) IdkTypeList arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) PlayerAppearance arg5, @OriginalArg(7) VarDomain arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) ObjTypeList arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class386 arg10) {
 		Static544.aBoolean624 = false;
-		if (this.anInt3823 == 0) {
+		if (this.modelType == 0) {
 			return null;
-		} else if (this.anInt3823 == 1 && this.anInt3831 == -1) {
+		} else if (this.modelType == 1 && this.modelId == -1) {
 			return null;
-		} else if (this.anInt3823 == 1) {
+		} else if (this.modelType == 1) {
 			if (arg1 != null) {
 				arg9 = arg1.method9101() | 0x800;
 			}
@@ -1021,13 +1021,13 @@ public final class Component {
 				}
 				arg9 |= 0x8000;
 			}
-			@Pc(271) long local271 = local53 & 0x3FFFFFFFFFL | (long) this.anInt3831 << 38 | (long) this.anInt3823 << 54 | (long) arg0.anInt8962 << 59;
+			@Pc(271) long local271 = local53 & 0x3FFFFFFFFFL | (long) this.modelId << 38 | (long) this.modelType << 54 | (long) arg0.anInt8962 << 59;
 			@Pc(277) Model local277 = (Model) modelCache.get(local271);
 			if (local277 == null || arg0.method7960(local277.ua(), arg9) != 0) {
 				if (local277 != null) {
 					arg9 = arg0.method8013(arg9, local277.ua());
 				}
-				@Pc(307) Class88 local307 = Static121.method2201(this.anInt3831, Static607.aJs5113);
+				@Pc(307) Class88 local307 = Static121.method2201(this.modelId, Static607.aJs5113);
 				if (local307 == null) {
 					Static544.aBoolean624 = true;
 					return null;
@@ -1057,15 +1057,15 @@ public final class Component {
 			return local277;
 		} else {
 			@Pc(438) Model local438;
-			if (this.anInt3823 == 2) {
-				local438 = arg7.method7092(this.anInt3831).method5992(arg1, arg10, arg0, arg6);
+			if (this.modelType == 2) {
+				local438 = arg7.method7092(this.modelId).method5992(arg1, arg10, arg0, arg6);
 				if (local438 == null) {
 					Static544.aBoolean624 = true;
 					return null;
 				} else {
 					return local438;
 				}
-			} else if (this.anInt3823 == 3) {
+			} else if (this.modelType == 3) {
 				if (arg5 == null) {
 					return null;
 				}
@@ -1076,8 +1076,8 @@ public final class Component {
 				} else {
 					return local438;
 				}
-			} else if (this.anInt3823 == 4) {
-				@Pc(489) ObjType local489 = arg8.method2486(this.anInt3831);
+			} else if (this.modelType == 4) {
+				@Pc(489) ObjType local489 = arg8.method2486(this.modelId);
 				@Pc(498) Model local498 = local489.method8805(arg1, 2048, arg5, 10, arg0);
 				if (local498 == null) {
 					Static544.aBoolean624 = true;
@@ -1085,21 +1085,21 @@ public final class Component {
 				} else {
 					return local498;
 				}
-			} else if (this.anInt3823 == 6) {
-				local438 = arg7.method7092(this.anInt3831).method5993(arg6, arg0, arg2, arg1, 0, (int[]) null, arg10, (Class152) null, 2048, (Class152[]) null);
+			} else if (this.modelType == 6) {
+				local438 = arg7.method7092(this.modelId).method5993(arg6, arg0, arg2, arg1, 0, (int[]) null, arg10, (Class152) null, 2048, (Class152[]) null);
 				if (local438 == null) {
 					Static544.aBoolean624 = true;
 					return null;
 				} else {
 					return local438;
 				}
-			} else if (this.anInt3823 != 7) {
+			} else if (this.modelType != 7) {
 				return null;
 			} else if (arg5 == null) {
 				return null;
 			} else {
-				@Pc(558) int local558 = this.anInt3831 >>> 16;
-				@Pc(563) int local563 = this.anInt3831 & 0xFFFF;
+				@Pc(558) int local558 = this.modelId >>> 16;
+				@Pc(563) int local563 = this.modelId & 0xFFFF;
 				@Pc(566) int local566 = this.anInt3738;
 				@Pc(578) Model local578 = arg5.method4550(arg1, local558, local566, arg4, arg0, arg3, local563);
 				if (local578 == null) {
@@ -1124,7 +1124,7 @@ public final class Component {
 
 	@OriginalMember(owner = "client!hda", name = "b", descriptor = "(ZLclient!ha;)Lclient!da;")
 	public Class14 method3403(@OriginalArg(1) Class19 arg0) {
-		@Pc(18) Class14 local18 = Static324.method4628(this.aBoolean299, false, this.anInt3781, arg0);
+		@Pc(18) Class14 local18 = Static324.method4628(this.aBoolean299, false, this.font, arg0);
 		Static544.aBoolean624 = local18 == null;
 		return local18;
 	}

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class EnumType {
 
 	@OriginalMember(owner = "client!bt", name = "k", descriptor = "Lclient!av;")
-	private HashTable aHashTable9;
+	private HashTable inverseTable;
 
 	@OriginalMember(owner = "client!bt", name = "m", descriptor = "I")
 	private int anInt1142;
@@ -16,7 +16,7 @@ public final class EnumType {
 	private int anInt1144;
 
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "C")
-	public char aChar1;
+	public char valueType;
 
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "Ljava/lang/Object;")
 	private Object anObject3;
@@ -28,15 +28,15 @@ public final class EnumType {
 	private String aString5 = "null";
 
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(Ljava/lang/String;B)Z")
-	public boolean method1221(@OriginalArg(0) String arg0) {
+	public boolean containsValue(@OriginalArg(0) String arg0) {
 		if (this.anObject3 == null) {
 			return false;
 		}
-		if (this.aHashTable9 == null) {
+		if (this.inverseTable == null) {
 			this.method1226();
 		}
-		for (@Pc(30) Linkable_Sub46 local30 = (Linkable_Sub46) this.aHashTable9.get(Static203.method3071(arg0)); local30 != null; local30 = (Linkable_Sub46) this.aHashTable9.nextWithKey()) {
-			if (local30.aString100.equals(arg0)) {
+		for (@Pc(30) Linkable_Sub46 local30 = (Linkable_Sub46) this.inverseTable.get(Static203.method3071(arg0)); local30 != null; local30 = (Linkable_Sub46) this.inverseTable.nextWithKey()) {
+			if (local30.value.equals(arg0)) {
 				return true;
 			}
 		}
@@ -59,10 +59,10 @@ public final class EnumType {
 		if (this.anObject3 == null) {
 			return null;
 		} else {
-			if (this.aHashTable9 == null) {
+			if (this.inverseTable == null) {
 				this.method1236();
 			}
-			return (Linkable_Sub40) this.aHashTable9.get((long) arg0);
+			return (Linkable_Sub40) this.inverseTable.get((long) arg0);
 		}
 	}
 
@@ -71,12 +71,12 @@ public final class EnumType {
 		@Pc(58) Linkable_Sub46 local58;
 		if (this.anObject3 instanceof HashTable) {
 			@Pc(203) HashTable local203 = (HashTable) this.anObject3;
-			this.aHashTable9 = new HashTable(local203.getBucketCount());
+			this.inverseTable = new HashTable(local203.getBucketCount());
 			@Pc(218) HashTable local218 = new HashTable(local203.getBucketCount());
 			for (@Pc(223) StringNode local223 = (StringNode) local203.head(); local223 != null; local223 = (StringNode) local203.next()) {
 				@Pc(229) long local229 = Static203.method3071(local223.value);
 				@Pc(235) Linkable_Sub46 local235;
-				for (local235 = (Linkable_Sub46) local218.get(local229); local235 != null && !local235.aString100.equals(local223.value); local235 = (Linkable_Sub46) local218.nextWithKey()) {
+				for (local235 = (Linkable_Sub46) local218.get(local229); local235 != null && !local235.value.equals(local223.value); local235 = (Linkable_Sub46) local218.nextWithKey()) {
 				}
 				if (local235 == null) {
 					local235 = new Linkable_Sub46(local223.value, 0);
@@ -87,14 +87,14 @@ public final class EnumType {
 			for (@Pc(283) StringNode local283 = (StringNode) local203.head(); local283 != null; local283 = (StringNode) local203.next()) {
 				@Pc(289) long local289 = Static203.method3071(local283.value);
 				@Pc(296) Linkable_Sub26 local296;
-				for (local296 = (Linkable_Sub26) this.aHashTable9.get(local289); local296 != null && !local296.aString47.equals(local283.value); local296 = (Linkable_Sub26) this.aHashTable9.nextWithKey()) {
+				for (local296 = (Linkable_Sub26) this.inverseTable.get(local289); local296 != null && !local296.aString47.equals(local283.value); local296 = (Linkable_Sub26) this.inverseTable.nextWithKey()) {
 				}
-				for (local58 = (Linkable_Sub46) local218.get(local289); local58 != null && !local58.aString100.equals(local283.value); local58 = (Linkable_Sub46) local218.nextWithKey()) {
+				for (local58 = (Linkable_Sub46) local218.get(local289); local58 != null && !local58.value.equals(local283.value); local58 = (Linkable_Sub46) local218.nextWithKey()) {
 				}
 				@Pc(339) int local339 = local58.anInt8241--;
 				if (local296 == null) {
 					local296 = new Linkable_Sub26(local283.value, local339);
-					this.aHashTable9.put(local289, local296);
+					this.inverseTable.put(local289, local296);
 				}
 				local296.anIntArray318[local296.anIntArray318.length - local339] = (int) local283.id;
 			}
@@ -102,13 +102,13 @@ public final class EnumType {
 		}
 		@Pc(21) String[] local21 = (String[]) this.anObject3;
 		@Pc(26) int local26 = IntUtils.clp2(local21.length);
-		this.aHashTable9 = new HashTable(local26);
+		this.inverseTable = new HashTable(local26);
 		@Pc(37) HashTable local37 = new HashTable(local26);
 		for (@Pc(39) int local39 = 0; local39 < local21.length; local39++) {
 			if (local21[local39] != null) {
 				@Pc(48) String local48 = local21[local39];
 				@Pc(52) long local52 = Static203.method3071(local48);
-				for (local58 = (Linkable_Sub46) local37.get(local52); local58 != null && !local58.aString100.equals(local48); local58 = (Linkable_Sub46) local37.nextWithKey()) {
+				for (local58 = (Linkable_Sub46) local37.get(local52); local58 != null && !local58.value.equals(local48); local58 = (Linkable_Sub46) local37.nextWithKey()) {
 				}
 				if (local58 == null) {
 					local58 = new Linkable_Sub46(local48, 0);
@@ -122,15 +122,15 @@ public final class EnumType {
 				@Pc(112) String local112 = local21[local103];
 				@Pc(116) long local116 = Static203.method3071(local112);
 				@Pc(123) Linkable_Sub26 local123;
-				for (local123 = (Linkable_Sub26) this.aHashTable9.get(local116); local123 != null && !local123.aString47.equals(local112); local123 = (Linkable_Sub26) this.aHashTable9.nextWithKey()) {
+				for (local123 = (Linkable_Sub26) this.inverseTable.get(local116); local123 != null && !local123.aString47.equals(local112); local123 = (Linkable_Sub26) this.inverseTable.nextWithKey()) {
 				}
 				@Pc(143) Linkable_Sub46 local143;
-				for (local143 = (Linkable_Sub46) local37.get(local116); local143 != null && !local143.aString100.equals(local112); local143 = (Linkable_Sub46) local37.nextWithKey()) {
+				for (local143 = (Linkable_Sub46) local37.get(local116); local143 != null && !local143.value.equals(local112); local143 = (Linkable_Sub46) local37.nextWithKey()) {
 				}
 				@Pc(164) int local164 = local143.anInt8241--;
 				if (local123 == null) {
 					local123 = new Linkable_Sub26(local112, local164);
-					this.aHashTable9.put(local116, local123);
+					this.inverseTable.put(local116, local123);
 				}
 				local123.anIntArray318[local123.anIntArray318.length - local164] = local103;
 			}
@@ -138,7 +138,7 @@ public final class EnumType {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IB)I")
-	public int method1227(@OriginalArg(0) int arg0) {
+	public int getInt(@OriginalArg(0) int arg0) {
 		if (this.anObject3 == null) {
 			return this.anInt1142;
 		} else if (this.anObject3 instanceof HashTable) {
@@ -156,12 +156,12 @@ public final class EnumType {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(I)I")
-	public int method1228() {
+	public int size() {
 		return this.anInt1144;
 	}
 
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(II)Ljava/lang/String;")
-	public String method1229(@OriginalArg(1) int arg0) {
+	public String getString(@OriginalArg(1) int arg0) {
 		if (this.anObject3 == null) {
 			return this.aString5;
 		} else if (this.anObject3 instanceof HashTable) {
@@ -179,14 +179,14 @@ public final class EnumType {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(II)Z")
-	public boolean method1233(@OriginalArg(1) int arg0) {
+	public boolean containsValue(@OriginalArg(1) int arg0) {
 		if (this.anObject3 == null) {
 			return false;
 		} else {
-			if (this.aHashTable9 == null) {
+			if (this.inverseTable == null) {
 				this.method1236();
 			}
-			return this.aHashTable9.get((long) arg0) != null;
+			return this.inverseTable.get((long) arg0) != null;
 		}
 	}
 
@@ -195,7 +195,7 @@ public final class EnumType {
 		if (arg0 == 1) {
 			this.aChar2 = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 2) {
-			this.aChar1 = Static346.method5084(arg1.g1b());
+			this.valueType = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 3) {
 			this.aString5 = arg1.gjstr();
 		} else if (arg0 == 4) {
@@ -247,7 +247,7 @@ public final class EnumType {
 		@Pc(101) int local101;
 		if (this.anObject3 instanceof HashTable) {
 			@Pc(16) HashTable local16 = (HashTable) this.anObject3;
-			this.aHashTable9 = new HashTable(local16.getBucketCount());
+			this.inverseTable = new HashTable(local16.getBucketCount());
 			@Pc(31) HashTable local31 = new HashTable(local16.getBucketCount());
 			@Pc(45) IntNode local45;
 			for (@Pc(36) IntNode local36 = (IntNode) local16.head(); local36 != null; local36 = (IntNode) local16.next()) {
@@ -259,11 +259,11 @@ public final class EnumType {
 				local45.value++;
 			}
 			for (local45 = (IntNode) local16.head(); local45 != null; local45 = (IntNode) local16.next()) {
-				@Pc(87) Linkable_Sub40 local87 = (Linkable_Sub40) this.aHashTable9.get((long) local45.value);
+				@Pc(87) Linkable_Sub40 local87 = (Linkable_Sub40) this.inverseTable.get((long) local45.value);
 				local101 = ((IntNode) local31.get((long) local45.value)).value--;
 				if (local87 == null) {
 					local87 = new Linkable_Sub40(local101);
-					this.aHashTable9.put((long) local45.value, local87);
+					this.inverseTable.put((long) local45.value, local87);
 				}
 				local87.anIntArray531[local87.anIntArray531.length - local101] = (int) local45.id;
 			}
@@ -271,7 +271,7 @@ public final class EnumType {
 		}
 		@Pc(140) Integer[] local140 = (Integer[]) this.anObject3;
 		@Pc(145) int local145 = IntUtils.clp2(local140.length);
-		this.aHashTable9 = new HashTable(local145);
+		this.inverseTable = new HashTable(local145);
 		@Pc(156) HashTable local156 = new HashTable(local145);
 		@Pc(168) int local168;
 		for (@Pc(158) int local158 = 0; local158 < local140.length; local158++) {
@@ -288,11 +288,11 @@ public final class EnumType {
 		for (local168 = 0; local168 < local140.length; local168++) {
 			if (local140[local168] != null) {
 				local101 = local140[local168];
-				@Pc(223) Linkable_Sub40 local223 = (Linkable_Sub40) this.aHashTable9.get((long) local101);
+				@Pc(223) Linkable_Sub40 local223 = (Linkable_Sub40) this.inverseTable.get((long) local101);
 				@Pc(236) int local236 = ((IntNode) local156.get((long) local101)).value--;
 				if (local223 == null) {
 					local223 = new Linkable_Sub40(local236);
-					this.aHashTable9.put((long) local101, local223);
+					this.inverseTable.put((long) local101, local223);
 				}
 				local223.anIntArray531[local223.anIntArray531.length - local236] = local168;
 			}
@@ -304,11 +304,11 @@ public final class EnumType {
 		if (this.anObject3 == null) {
 			return null;
 		}
-		if (this.aHashTable9 == null) {
+		if (this.inverseTable == null) {
 			this.method1226();
 		}
 		@Pc(26) Linkable_Sub26 local26;
-		for (local26 = (Linkable_Sub26) this.aHashTable9.get(Static203.method3071(arg0)); local26 != null && !local26.aString47.equals(arg0); local26 = (Linkable_Sub26) this.aHashTable9.nextWithKey()) {
+		for (local26 = (Linkable_Sub26) this.inverseTable.get(Static203.method3071(arg0)); local26 != null && !local26.aString47.equals(arg0); local26 = (Linkable_Sub26) this.inverseTable.nextWithKey()) {
 		}
 		return local26;
 	}

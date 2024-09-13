@@ -20,7 +20,7 @@ public final class Static655 {
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(Lclient!vq;ILjava/awt/Frame;)V")
 	public static void closeFrame(@OriginalArg(0) Signlink signlink, @OriginalArg(2) Frame frame) {
 		while (true) {
-			@Pc(10) PrivilegedRequest request = signlink.method8989(frame);
+			@Pc(10) PrivilegedRequest request = signlink.exitFullScreen(frame);
 			while (request.state == 0) {
 				Static638.sleep(10L);
 			}

@@ -40,12 +40,12 @@ public final class PcmSound extends Sound {
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(Lclient!lg;)Lclient!sq;")
 	public PcmSound method7821(@OriginalArg(0) Resampler arg0) {
 		this.aByteArray98 = arg0.method5235(this.aByteArray98);
-		this.anInt8818 = arg0.method5234(this.anInt8818);
+		this.anInt8818 = arg0.scaleRate(this.anInt8818);
 		if (this.anInt8819 == this.anInt8820) {
-			this.anInt8819 = this.anInt8820 = arg0.method5231(this.anInt8819);
+			this.anInt8819 = this.anInt8820 = arg0.scalePosition(this.anInt8819);
 		} else {
-			this.anInt8819 = arg0.method5231(this.anInt8819);
-			this.anInt8820 = arg0.method5231(this.anInt8820);
+			this.anInt8819 = arg0.scalePosition(this.anInt8819);
+			this.anInt8820 = arg0.scalePosition(this.anInt8820);
 			if (this.anInt8819 == this.anInt8820) {
 				this.anInt8819--;
 			}

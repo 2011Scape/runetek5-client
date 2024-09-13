@@ -21,9 +21,9 @@ public final class Static605 {
 		if (arg0 == ZoneProt.OPCODE_8) {
 			local15 = local8.g1();
 			local21 = (local15 & 0x7) + Static270.anInt4354;
-			local25 = Static116.anInt2270 + local21;
+			local25 = Static116.originZ + local21;
 			local34 = Static626.anInt9476 + (local15 >> 4 & 0x7);
-			local38 = Static691.anInt10367 + local34;
+			local38 = Static691.originX + local34;
 			local42 = local8.g2();
 			local46 = local8.g2();
 			local52 = local8.g2();
@@ -144,7 +144,7 @@ public final class Static605 {
 				local212 = local8.g2();
 				if (local21 >= 0 && local25 >= 0 && local21 < Static720.anInt10859 && Static501.anInt7568 > local25) {
 					local217 = local42 + 1;
-					if (local21 - local217 <= Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] && local217 + local21 >= Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0] >= local25 - local217 && local217 + local25 >= Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) {
+					if (local21 - local217 <= Static556.self.anIntArray879[0] && local217 + local21 >= Static556.self.anIntArray879[0] && Static556.self.anIntArray878[0] >= local25 - local217 && local217 + local25 >= Static556.self.anIntArray878[0]) {
 						Static165.method2608(local537, local52, local34, local46, local212, local42 + (local25 << 8) + (Static87.anInt1810 << 24) + (local21 << 16));
 					}
 				}
@@ -209,7 +209,7 @@ public final class Static605 {
 							} else {
 								local957 = -local212 - 1;
 								if (local957 == Static312.anInt5000) {
-									local948 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
+									local948 = Static556.self;
 								} else {
 									local948 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local957];
 								}
@@ -224,17 +224,17 @@ public final class Static605 {
 								}
 							}
 						}
-						@Pc(1053) ProjAnimEntity local1053 = new ProjAnimEntity(local219, Static87.anInt1810, Static87.anInt1810, local21, local25, local812, local322 + Static333.anInt5455, Static333.anInt5455 + local353, local843, local847, local212, local217, local290, local764, local46);
-						local1053.method813(Static102.method2025(Static87.anInt1810, -29754, local537, local52) - local290, local322 + Static333.anInt5455, local537, local52);
+						@Pc(1053) ProjAnimEntity local1053 = new ProjAnimEntity(local219, Static87.anInt1810, Static87.anInt1810, local21, local25, local812, local322 + Static333.loop, Static333.loop + local353, local843, local847, local212, local217, local290, local764, local46);
+						local1053.method813(Static102.method2025(Static87.anInt1810, -29754, local537, local52) - local290, local322 + Static333.loop, local537, local52);
 						Static505.aLinkedList77.addTail(new SecondaryLinkable_Sub15(local1053));
 					}
 				} else if (ZoneProt.OPCODE_13 == arg0) {
 					local15 = local8.g2_alt2();
 					local21 = local8.g1_alt1();
 					local25 = Static270.anInt4354 + (local21 & 0x7);
-					local34 = local25 + Static116.anInt2270;
+					local34 = local25 + Static116.originZ;
 					local38 = Static626.anInt9476 + (local21 >> 4 & 0x7);
-					local42 = Static691.anInt10367 + local38;
+					local42 = Static691.originX + local38;
 					local46 = local8.ig2();
 					local52 = local8.g2();
 					if (local15 != Static312.anInt5000) {
@@ -262,7 +262,7 @@ public final class Static605 {
 					local212 = local8.g2();
 					if (local21 >= 0 && local25 >= 0 && Static720.anInt10859 > local21 && Static501.anInt7568 > local25) {
 						local217 = local42 + 1;
-						if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] >= local21 - local217 && local217 + local21 >= Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0] >= local25 - local217 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0] <= local25 + local217) {
+						if (Static556.self.anIntArray879[0] >= local21 - local217 && local217 + local21 >= Static556.self.anIntArray879[0] && Static556.self.anIntArray878[0] >= local25 - local217 && Static556.self.anIntArray878[0] <= local25 + local217) {
 							Static179.method2770(local46, local52, local42 + (local25 << 8) + (Static87.anInt1810 << 24) + (local21 << 16), local212, local537, local34);
 						}
 					}
@@ -270,9 +270,9 @@ public final class Static605 {
 					local15 = local8.g2();
 					local21 = local8.g1();
 					local25 = (local21 & 0x7) + Static270.anInt4354;
-					local34 = local25 + Static116.anInt2270;
+					local34 = local25 + Static116.originZ;
 					local38 = (local21 >> 4 & 0x7) + Static626.anInt9476;
-					local42 = local38 + Static691.anInt10367;
+					local42 = local38 + Static691.originX;
 					@Pc(1389) Linkable_Sub17 local1389 = (Linkable_Sub17) Static497.aHashTable35.get((long) (local34 << 14 | Static87.anInt1810 << 28 | local42));
 					if (local1389 != null) {
 						for (@Pc(1399) Linkable_Sub15 local1399 = (Linkable_Sub15) local1389.aLinkedList12.head(); local1399 != null; local1399 = (Linkable_Sub15) local1389.aLinkedList12.next()) {
@@ -324,8 +324,8 @@ public final class Static605 {
 						local212 <<= 0x2;
 						local38 = local38 * 512 + 256;
 						local34 = local34 * 512 + 256;
-						@Pc(1728) ProjAnimEntity local1728 = new ProjAnimEntity(local52, Static87.anInt1810, Static87.anInt1810, local25, local34, local537, local217 + Static333.anInt5455, local219 + Static333.anInt5455, local812, local290, 0, local46, local212, local1540, -1);
-						local1728.method813(Static102.method2025(Static87.anInt1810, -29754, local42, local38) - local212, Static333.anInt5455 + local217, local42, local38);
+						@Pc(1728) ProjAnimEntity local1728 = new ProjAnimEntity(local52, Static87.anInt1810, Static87.anInt1810, local25, local34, local537, local217 + Static333.loop, local219 + Static333.loop, local812, local290, 0, local46, local212, local1540, -1);
+						local1728.method813(Static102.method2025(Static87.anInt1810, -29754, local42, local38) - local212, Static333.loop + local217, local42, local38);
 						Static505.aLinkedList77.addTail(new SecondaryLinkable_Sub15(local1728));
 					}
 				} else if (ZoneProt.OPCODE_7 == arg0) {
@@ -342,9 +342,9 @@ public final class Static605 {
 				} else if (ZoneProt.OPCODE_14 == arg0) {
 					local15 = local8.g1_alt2();
 					local21 = Static270.anInt4354 + (local15 & 0x7);
-					local25 = local21 + Static116.anInt2270;
+					local25 = local21 + Static116.originZ;
 					local34 = (local15 >> 4 & 0x7) + Static626.anInt9476;
-					local38 = Static691.anInt10367 + local34;
+					local38 = Static691.originX + local34;
 					local42 = local8.g2_alt2();
 					local46 = local8.g2();
 					@Pc(1886) boolean local1886 = local34 >= 0 && local21 >= 0 && local34 < Static720.anInt10859 && local21 < Static501.anInt7568;

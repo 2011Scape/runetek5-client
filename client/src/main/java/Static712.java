@@ -58,21 +58,21 @@ public final class Static712 {
 					local101 = false;
 				}
 			}
-			Static434.aCanvas7.setSize(Static680.anInt10289, Static380.anInt5979);
+			Static434.canvas.setSize(Static680.anInt10289, Static380.anInt5979);
 			if (Static163.aClass19_17 != null) {
 				if (Static137.aBoolean210) {
-					Static575.method7606(Static434.aCanvas7);
+					Static575.method7606(Static434.canvas);
 				} else {
-					Static163.aClass19_17.method7935(Static434.aCanvas7, Static680.anInt10289, Static380.anInt5979);
+					Static163.aClass19_17.method7935(Static434.canvas, Static680.anInt10289, Static380.anInt5979);
 				}
 			}
 			if (local22 == Static353.aFrame10) {
 				local44 = Static353.aFrame10.getInsets();
-				Static434.aCanvas7.setLocation(local44.left + Static134.anInt10329, local44.top + Static241.anInt3962);
+				Static434.canvas.setLocation(local44.left + Static134.anInt10329, local44.top + Static241.anInt3962);
 			} else {
-				Static434.aCanvas7.setLocation(Static134.anInt10329, Static241.anInt3962);
+				Static434.canvas.setLocation(Static134.anInt10329, Static241.anInt3962);
 			}
-			if (Static377.anInt5930 != -1) {
+			if (Static377.topLevelInterface != -1) {
 				Static640.method8435(true);
 			}
 			Static288.method4182();

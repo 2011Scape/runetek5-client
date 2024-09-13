@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static498 {
 
 	@OriginalMember(owner = "client!pm", name = "p", descriptor = "[I")
-	public static final int[] anIntArray604 = new int[25];
+	public static final int[] baseLevels = new int[25];
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(IZIIBI)V")
 	public static void method6643(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
@@ -79,7 +79,7 @@ public final class Static498 {
 			Static126.method2227(Static163.aClass19_17, Static680.anInt10289, Static32.anInt777, Static288.anInt4620, Static380.anInt5979);
 		}
 		if (Static400.aClass2_Sub34_28.aPreference_Sub3_1.method2118()) {
-			Static575.method7606(Static434.aCanvas7);
+			Static575.method7606(Static434.canvas);
 		}
 		if (Static163.aClass19_17 != null) {
 			Static209.method3110();

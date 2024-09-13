@@ -8,9 +8,9 @@ public final class Static367 {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	public static void method5267() {
-		@Pc(1) SoftLruHashTable local1 = Static354.aSoftLruHashTable120;
-		synchronized (Static354.aSoftLruHashTable120) {
-			Static354.aSoftLruHashTable120.clear();
+		@Pc(1) SoftLruHashTable local1 = Static354.SHADOWS;
+		synchronized (Static354.SHADOWS) {
+			Static354.SHADOWS.clear();
 		}
 	}
 

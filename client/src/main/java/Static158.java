@@ -11,7 +11,7 @@ public final class Static158 {
 	public static Object anObject5;
 
 	@OriginalMember(owner = "client!ev", name = "b", descriptor = "Ljava/lang/String;")
-	public static String aString28 = null;
+	public static String owner = null;
 
 	@OriginalMember(owner = "client!ev", name = "b", descriptor = "(I)V")
 	public static void method2569() {

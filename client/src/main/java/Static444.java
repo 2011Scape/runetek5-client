@@ -18,14 +18,14 @@ public final class Static444 {
 		Static262.aJs556 = arg2;
 		Static666.aJs5118 = arg0;
 		Static607.aJs5113 = arg3;
-		Static453.aComponentArrayArray2 = new Component[Static666.aJs5118.capacity()][];
+		Static453.components = new Component[Static666.aJs5118.capacity()][];
 		Static132.aBooleanArray5 = new boolean[Static666.aJs5118.capacity()];
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(B)V")
 	public static void method5988() {
-		@Pc(13) SecondaryLinkable_Sub2 local13 = Static440.method5963(15, 0L);
-		local13.method205();
+		@Pc(13) SecondaryLinkable_Sub2 local13 = Static440.create(15, 0L);
+		local13.pushClient();
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BI)Lclient!vaa;")

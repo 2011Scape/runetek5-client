@@ -24,9 +24,9 @@ public final class Class39_Sub5 extends Class39 {
 		Static323.anInt5120 = Static399.anInt6215;
 		Static493.anInt7370 = Static186.anInt3059;
 		Static582.anInt8628 = Static337.anInt5556;
-		Static4.anInt84 = this.anInt3000 + Static333.anInt5455;
+		Static4.anInt84 = this.anInt3000 + Static333.loop;
 		Static201.anInt8407 = Static622.anInt7737;
-		Static115.anInt2259 = Static333.anInt5455;
+		Static115.anInt2259 = Static333.loop;
 		Static622.anInt7737 = this.anInt2996 & 0xFF;
 		Static337.anInt5556 = this.anInt2996 >>> 16 & 0xFF;
 		Static399.anInt6215 = this.anInt2996 >>> 24;

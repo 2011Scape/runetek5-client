@@ -26,10 +26,10 @@ public final class Static658 {
 				local6 = ((Entity) arg0).aShort131;
 				local28 = ((Entity) arg0).aShort132;
 			} else {
-				local6 = arg0.anInt10690 >> Static52.anInt1066;
-				local28 = arg0.anInt10694 >> Static52.anInt1066;
+				local6 = arg0.xFine >> Static52.anInt1066;
+				local28 = arg0.zFine >> Static52.anInt1066;
 			}
-			Static665.aClass19_15.EA(Static706.aClass178Array3[0].method7878(arg0.anInt10694, arg0.anInt10690), Static100.method1987(local6, local28), Static350.method5124(local6, local28), Static339.method5005(local6, local28));
+			Static665.aClass19_15.EA(Static706.aClass178Array3[0].method7878(arg0.zFine, arg0.xFine), Static100.method1987(local6, local28), Static350.method5124(local6, local28), Static339.method5005(local6, local28));
 		}
 		@Pc(64) ParticleNode_Sub7 local64 = arg0.method9276(Static665.aClass19_15);
 		if (local64 == null) {

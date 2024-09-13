@@ -31,14 +31,14 @@ public final class Js5CacheQueue implements Runnable {
 
 	@OriginalMember(owner = "client!iba", name = "<init>", descriptor = "(Lclient!vq;)V")
 	public Js5CacheQueue(@OriginalArg(0) Signlink arg0) {
-		@Pc(20) PrivilegedRequest local20 = arg0.method8991(this, 5);
+		@Pc(20) PrivilegedRequest local20 = arg0.startThread(this, 5);
 		while (local20.state == 0) {
 			Static638.sleep(10L);
 		}
 		if (local20.state == 2) {
 			throw new RuntimeException();
 		}
-		this.aThread2 = (Thread) local20.anObject13;
+		this.aThread2 = (Thread) local20.result;
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(Lclient!af;IZ)Lclient!vp;")

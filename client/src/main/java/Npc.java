@@ -68,7 +68,7 @@ public final class Npc extends PathingEntity {
 		@Pc(20) Class73 local20 = arg3.method7985();
 		@Pc(25) int local25 = super.aClass126_7.method2673(16383);
 		local20.method7131(local25);
-		local20.method7134(super.anInt10690, super.anInt10691, super.anInt10694);
+		local20.method7134(super.xFine, super.anInt10691, super.zFine);
 		@Pc(38) boolean local38 = arg2;
 		for (@Pc(40) int local40 = 0; local40 < super.aModelArray3.length; local40++) {
 			if (super.aModelArray3[local40] != null) {
@@ -123,14 +123,14 @@ public final class Npc extends PathingEntity {
 		@Pc(22) Class73 local22 = arg0.method7985();
 		@Pc(27) int local27 = super.aClass126_7.method2673(16383);
 		local22.method7131(local27);
-		@Pc(45) Class291 local45 = Static334.aClass291ArrayArrayArray1[super.aByte144][super.anInt10690 >> Static52.anInt1066][super.anInt10694 >> Static52.anInt1066];
+		@Pc(45) Class291 local45 = Static334.aClass291ArrayArrayArray1[super.plane][super.xFine >> Static52.anInt1066][super.zFine >> Static52.anInt1066];
 		if (local45 == null || local45.aClass8_Sub2_Sub2_1 == null) {
 			super.anInt10732 = (int) ((float) super.anInt10732 - (float) super.anInt10732 / 10.0F);
 		} else {
 			@Pc(75) int local75 = super.anInt10732 - local45.aClass8_Sub2_Sub2_1.aShort46;
 			super.anInt10732 = (int) ((float) super.anInt10732 - (float) local75 / 10.0F);
 		}
-		local22.method7134(super.anInt10690, -super.anInt10732 + super.anInt10691 - 20, super.anInt10694);
+		local22.method7134(super.xFine, -super.anInt10732 + super.anInt10691 - 20, super.zFine);
 		@Pc(104) BasType local104 = this.method9317();
 		@Pc(118) NpcType local118 = this.aNpcType1.anIntArray532 == null ? this.aNpcType1 : this.aNpcType1.method5985(65535, Static34.aClass304_1);
 		super.aBoolean819 = false;
@@ -152,7 +152,7 @@ public final class Npc extends PathingEntity {
 			}
 		}
 		local22.method7131(local27);
-		local22.method7134(super.anInt10690, -super.anInt10732 + super.anInt10691 - 5, super.anInt10694);
+		local22.method7134(super.xFine, -super.anInt10732 + super.anInt10691 - 5, super.zFine);
 		if (local123 == null) {
 			local123 = Static642.method8441(this.method9330(), super.aModelArray3.length);
 		}
@@ -200,7 +200,7 @@ public final class Npc extends PathingEntity {
 		if (local50 != 0 || local53 != 0 || local9.anInt7224 != 0 || local9.anInt7252 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(100) boolean local100 = super.aByte149 != 0 && super.anInt10760 <= Static333.anInt5455 && Static333.anInt5455 < super.anInt10752;
+		@Pc(100) boolean local100 = super.aByte149 != 0 && super.anInt10760 <= Static333.loop && Static333.loop < super.anInt10752;
 		if (local100) {
 			arg0 |= 0x80000;
 		}
@@ -317,14 +317,14 @@ public final class Npc extends PathingEntity {
 			local10--;
 			local20++;
 		}
-		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().anInt1654 == 1) {
+		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().movetype == 1) {
 			super.anIntArray869 = null;
 			super.aClass152_11.method9113(true, -1);
 		}
 		for (@Pc(110) int local110 = 0; local110 < super.aClass199Array3.length; local110++) {
 			if (super.aClass199Array3[local110].anInt4930 != -1) {
 				@Pc(131) SpotAnimType local131 = Static23.aSpotAnimTypeList1.method2694(super.aClass199Array3[local110].anInt4930);
-				if (local131.aBoolean448 && local131.anInt5842 != -1 && Static25.aSeqTypeList1.method1162(local131.anInt5842).anInt1654 == 1) {
+				if (local131.aBoolean448 && local131.anInt5842 != -1 && Static25.aSeqTypeList1.get(local131.anInt5842).movetype == 1) {
 					super.aClass199Array3[local110].aClass152_7.method9113(true, -1);
 					super.aClass199Array3[local110].anInt4930 = -1;
 				}
@@ -345,18 +345,18 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(IZIIII)V")
 	public void method9326(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		super.aByte144 = super.aByte143 = (byte) arg3;
+		super.plane = super.aByte143 = (byte) arg3;
 		if (Static441.method5968(arg1, arg2)) {
 			super.aByte143++;
 		}
-		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().anInt1654 == 1) {
+		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().movetype == 1) {
 			super.anIntArray869 = null;
 			super.aClass152_11.method9113(true, -1);
 		}
 		for (@Pc(61) int local61 = 0; local61 < super.aClass199Array3.length; local61++) {
 			if (super.aClass199Array3[local61].anInt4930 != -1) {
 				@Pc(81) SpotAnimType local81 = Static23.aSpotAnimTypeList1.method2694(super.aClass199Array3[local61].anInt4930);
-				if (local81.aBoolean448 && local81.anInt5842 != -1 && Static25.aSeqTypeList1.method1162(local81.anInt5842).anInt1654 == 1) {
+				if (local81.aBoolean448 && local81.anInt5842 != -1 && Static25.aSeqTypeList1.get(local81.anInt5842).movetype == 1) {
 					super.aClass199Array3[local61].aClass152_7.method9113(true, -1);
 					super.aClass199Array3[local61].anInt4930 = -1;
 				}
@@ -385,8 +385,8 @@ public final class Npc extends PathingEntity {
 		super.anIntArray879[0] = arg2;
 		super.anInt10762 = 0;
 		super.anIntArray878[0] = arg1;
-		super.anInt10690 = (arg4 << 8) + (super.anIntArray879[0] << 9);
-		super.anInt10694 = (super.anIntArray878[0] << 9) + (arg4 << 8);
+		super.xFine = (arg4 << 8) + (super.anIntArray879[0] << 9);
+		super.zFine = (super.anIntArray878[0] << 9) + (arg4 << 8);
 		if (super.aClass8_Sub5_8 != null) {
 			super.aClass8_Sub5_8.method3656();
 		}
@@ -406,7 +406,7 @@ public final class Npc extends PathingEntity {
 		}
 		@Pc(26) Class73 local26 = arg0.method7985();
 		local26.method7131(super.aClass126_7.method2673(16383));
-		local26.method7134(super.anInt10690, super.anInt10691 - 20, super.anInt10694);
+		local26.method7134(super.xFine, super.anInt10691 - 20, super.zFine);
 		this.method9319(arg0, super.aBoolean820, super.aModelArray3, local26);
 		for (@Pc(53) int local53 = 0; local53 < super.aModelArray3.length; local53++) {
 			super.aModelArray3[local53] = null;

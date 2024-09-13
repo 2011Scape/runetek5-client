@@ -73,7 +73,7 @@ public final class Static546 {
 			return;
 		}
 		local65 = -1;
-		if (Static333.anInt5455 % 30 > 15) {
+		if (Static333.loop % 30 > 15) {
 			local65 = 16777215;
 		}
 		arg0.method7998(12, local9 + 350 - Static42.aClass381_4.anInt10036 - 11, local65, Static42.aClass381_4.method8744("--> " + Static386.method5439(Static110.aString19).substring(0, Static594.anInt8776)) + local7 + 10);

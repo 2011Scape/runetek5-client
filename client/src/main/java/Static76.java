@@ -30,42 +30,42 @@ public final class Static76 {
 
 	@OriginalMember(owner = "client!cha", name = "b", descriptor = "(B)V")
 	public static void method1555() {
-		if (Static6.anInt95 == 0) {
+		if (Static6.step == 0) {
 			return;
 		}
 		try {
 			if (++Static654.anInt9739 > 2000) {
 				Connection.lobbyConnection.close();
 				if (Static720.anInt10865 >= 2) {
-					Static6.anInt95 = 0;
+					Static6.step = 0;
 					Static580.anInt8621 = -5;
 					return;
 				}
 				Static660.aClass229_4.method5260();
-				Static6.anInt95 = 1;
+				Static6.step = 1;
 				Static654.anInt9739 = 0;
 				Static720.anInt10865++;
 			}
-			if (Static6.anInt95 == 1) {
+			if (Static6.step == 1) {
 				Connection.lobbyConnection.aPrivilegedRequest1 = Static660.aClass229_4.method5263(Static446.aSignlink6);
-				Static6.anInt95 = 2;
+				Static6.step = 2;
 			}
-			if (Static6.anInt95 == 2) {
+			if (Static6.step == 2) {
 				if (Connection.lobbyConnection.aPrivilegedRequest1.state == 2) {
 					throw new IOException();
 				}
 				if (Connection.lobbyConnection.aPrivilegedRequest1.state != 1) {
 					return;
 				}
-				Connection.lobbyConnection.aClass348_1 = Static99.method1975((Socket) Connection.lobbyConnection.aPrivilegedRequest1.anObject13);
+				Connection.lobbyConnection.aClass348_1 = Static99.method1975((Socket) Connection.lobbyConnection.aPrivilegedRequest1.result);
 				Connection.lobbyConnection.aPrivilegedRequest1 = null;
 				Connection.lobbyConnection.method3273();
-				Static6.anInt95 = 4;
+				Static6.step = 4;
 			}
-			if (Static6.anInt95 == 4 && Connection.lobbyConnection.aClass348_1.method7932(1)) {
+			if (Static6.step == 4 && Connection.lobbyConnection.aClass348_1.method7932(1)) {
 				Connection.lobbyConnection.aClass348_1.method7929(Connection.lobbyConnection.inboundPacket.data, 1, 0);
 				@Pc(139) int local139 = Connection.lobbyConnection.inboundPacket.data[0] & 0xFF;
-				Static6.anInt95 = 0;
+				Static6.step = 0;
 				Static580.anInt8621 = local139;
 				Connection.lobbyConnection.close();
 			}
@@ -75,9 +75,9 @@ public final class Static76 {
 				Static660.aClass229_4.method5260();
 				Static720.anInt10865++;
 				Static654.anInt9739 = 0;
-				Static6.anInt95 = 1;
+				Static6.step = 1;
 			} else {
-				Static6.anInt95 = 0;
+				Static6.step = 0;
 				Static580.anInt8621 = -4;
 			}
 		}

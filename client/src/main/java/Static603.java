@@ -16,7 +16,7 @@ public final class Static603 {
 
 	@OriginalMember(owner = "client!taa", name = "b", descriptor = "(Z)V")
 	public static void method7899() {
-		Static178.method2729(Static109.aComponent3);
+		Static178.redraw(Static109.aComponent3);
 		Static181.anInt3003++;
 		if (Static702.aBoolean797 && Static343.aBoolean428) {
 			@Pc(30) int local30 = 0;
@@ -32,45 +32,45 @@ public final class Static603 {
 			if (Static123.anInt2341 > local46) {
 				local46 = Static123.anInt2341;
 			}
-			if (Static109.aComponent3.anInt3802 + local46 > Static123.anInt2341 - -Static354.aComponent8.anInt3802) {
-				local46 = Static354.aComponent8.anInt3802 + Static123.anInt2341 - Static109.aComponent3.anInt3802;
+			if (Static109.aComponent3.width + local46 > Static123.anInt2341 - -Static354.aComponent8.width) {
+				local46 = Static354.aComponent8.width + Static123.anInt2341 - Static109.aComponent3.width;
 			}
 			if (local52 < Static169.anInt2853) {
 				local52 = Static169.anInt2853;
 			}
-			if (Static169.anInt2853 + Static354.aComponent8.anInt3746 < local52 - -Static109.aComponent3.anInt3746) {
-				local52 = Static169.anInt2853 + Static354.aComponent8.anInt3746 - Static109.aComponent3.anInt3746;
+			if (Static169.anInt2853 + Static354.aComponent8.height < local52 - -Static109.aComponent3.height) {
+				local52 = Static169.anInt2853 + Static354.aComponent8.height - Static109.aComponent3.height;
 			}
-			@Pc(119) int local119 = Static354.aComponent8.anInt3809 + local46 - Static123.anInt2341;
-			@Pc(127) int local127 = Static354.aComponent8.anInt3768 + local52 - Static169.anInt2853;
+			@Pc(119) int local119 = Static354.aComponent8.scrollX + local46 - Static123.anInt2341;
+			@Pc(127) int local127 = Static354.aComponent8.scrollY + local52 - Static169.anInt2853;
 			@Pc(197) Linkable_Sub42 local197;
 			if (Static189.aMouse1.method8844()) {
-				if (Static109.aComponent3.anInt3797 < Static181.anInt3003) {
+				if (Static109.aComponent3.dragDeadtime < Static181.anInt3003) {
 					@Pc(141) int local141 = local46 - Static655.anInt9763;
 					@Pc(146) int local146 = local52 - Static115.anInt2258;
-					if (Static109.aComponent3.anInt3754 < local141 || -Static109.aComponent3.anInt3754 > local141 || Static109.aComponent3.anInt3754 < local146 || local146 < -Static109.aComponent3.anInt3754) {
+					if (Static109.aComponent3.dragDeadzone < local141 || -Static109.aComponent3.dragDeadzone > local141 || Static109.aComponent3.dragDeadzone < local146 || local146 < -Static109.aComponent3.dragDeadzone) {
 						Static172.aBoolean246 = true;
 					}
 				}
-				if (Static109.aComponent3.anObjectArray30 != null && Static172.aBoolean246) {
+				if (Static109.aComponent3.onDragStart != null && Static172.aBoolean246) {
 					local197 = new Linkable_Sub42();
 					local197.aComponent14 = Static109.aComponent3;
 					local197.anInt7218 = local119;
 					local197.anInt7214 = local127;
-					local197.anObjectArray36 = Static109.aComponent3.anObjectArray30;
+					local197.anObjectArray36 = Static109.aComponent3.onDragStart;
 					Static472.method6420(local197);
 					return;
 				}
 			} else {
 				if (Static172.aBoolean246) {
 					Static470.method6384();
-					if (Static109.aComponent3.anObjectArray5 != null) {
+					if (Static109.aComponent3.onDragRelease != null) {
 						local197 = new Linkable_Sub42();
 						local197.aComponent13 = Static327.aComponent7;
 						local197.anInt7218 = local119;
 						local197.aComponent14 = Static109.aComponent3;
 						local197.anInt7214 = local127;
-						local197.anObjectArray36 = Static109.aComponent3.anObjectArray5;
+						local197.anObjectArray36 = Static109.aComponent3.onDragRelease;
 						Static472.method6420(local197);
 					}
 					if (Static327.aComponent7 != null && Static84.method1657(Static109.aComponent3) != null) {

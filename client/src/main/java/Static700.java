@@ -37,7 +37,7 @@ public final class Static700 {
 
 	@OriginalMember(owner = "client!wca", name = "a", descriptor = "(III)V")
 	public static void method9153(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(17, (long) arg1);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(17, (long) arg1);
 		local9.method202();
 		local9.anInt197 = arg0;
 	}

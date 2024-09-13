@@ -11,7 +11,7 @@ public final class Static59 {
 	public static final SecondaryLinkedList aSecondaryLinkedList9 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "o", descriptor = "Lclient!sia;")
-	public static final LinkedList aLinkedList33 = new LinkedList();
+	public static final LinkedList mediumPriorityRequests = new LinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "n", descriptor = "I")
 	public static int anInt5936 = 999999;

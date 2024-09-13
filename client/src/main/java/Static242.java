@@ -54,13 +54,13 @@ public final class Static242 {
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(Ljava/lang/String;II)V")
-	public static void method3504(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+	public static void clickPlayerOption(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) int local5 = Static338.anInt5564;
 		@Pc(7) int[] local7 = Static210.anIntArray280;
 		@Pc(9) boolean local9 = false;
 		for (@Pc(19) int local19 = 0; local19 < local5; local19++) {
 			@Pc(26) Player local26 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local7[local19]];
-			if (local26 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != local26 && local26.name2 != null && local26.name2.equalsIgnoreCase(arg0)) {
+			if (local26 != null && Static556.self != local26 && local26.username != null && local26.username.equalsIgnoreCase(arg0)) {
 				@Pc(47) ClientProt local47 = null;
 				if (arg1 == 1) {
 					local47 = Static424.aClientProt79;

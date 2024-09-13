@@ -14,7 +14,7 @@ public final class Static549 {
 	public static void method8293(@OriginalArg(0) Entity arg0, @OriginalArg(1) boolean arg1) {
 		for (@Pc(2) int local2 = arg0.aShort131; local2 <= arg0.aShort134; local2++) {
 			for (@Pc(6) int local6 = arg0.aShort132; local6 <= arg0.aShort133; local6++) {
-				@Pc(16) Class291 local16 = Static334.aClass291ArrayArrayArray1[arg0.aByte144][local2][local6];
+				@Pc(16) Class291 local16 = Static334.aClass291ArrayArrayArray1[arg0.plane][local2][local6];
 				if (local16 != null) {
 					@Pc(21) Class286 local21 = local16.aClass286_2;
 					@Pc(23) Class286 local23 = null;

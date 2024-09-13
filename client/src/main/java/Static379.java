@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static379 {
 
 	@OriginalMember(owner = "client!lu", name = "G", descriptor = "I")
-	public static int anInt5968;
+	public static int checksum;
 
 	@OriginalMember(owner = "client!lu", name = "a", descriptor = "(Z)V")
 	public static void method5355(@OriginalArg(0) boolean arg0) {

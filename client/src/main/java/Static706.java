@@ -11,7 +11,7 @@ public final class Static706 {
 	public static Class178[] aClass178Array3;
 
 	@OriginalMember(owner = "client!wfa", name = "T", descriptor = "I")
-	public static int anInt10633;
+	public static int size;
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(IILclient!gp;III)V")
 	public static void method9220(@OriginalArg(0) int arg0, @OriginalArg(2) Class150 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -67,11 +67,11 @@ public final class Static706 {
 	}
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(Ljava/lang/String;Z)V")
-	public static void method9225(@OriginalArg(0) String arg0) {
+	public static void add(@OriginalArg(0) String arg0) {
 		if (arg0 == null) {
 			return;
 		}
-		if (Static327.anInt5392 >= 200 && !Static126.aBoolean200 || Static327.anInt5392 >= 200) {
+		if (Static327.size >= 200 && !Static126.playerMember || Static327.size >= 200) {
 			Static67.method6098(LocalizedText.FRIENDS_FULL.get(Static51.clientLanguageId));
 			return;
 		}
@@ -80,7 +80,7 @@ public final class Static706 {
 			return;
 		}
 		@Pc(81) String local81;
-		for (@Pc(40) int local40 = 0; local40 < Static327.anInt5392; local40++) {
+		for (@Pc(40) int local40 = 0; local40 < Static327.size; local40++) {
 			@Pc(47) String local47 = Static390.method5492(Static330.aStringArray25[local40]);
 			if (local47 != null && local47.equals(local34)) {
 				Static67.method6098(arg0 + LocalizedText.FRIEND_ALREADY_ADDED.get(Static51.clientLanguageId));
@@ -94,7 +94,7 @@ public final class Static706 {
 				}
 			}
 		}
-		for (@Pc(115) int local115 = 0; local115 < Static436.anInt3849; local115++) {
+		for (@Pc(115) int local115 = 0; local115 < Static436.size; local115++) {
 			local81 = Static390.method5492(Static632.aStringArray44[local115]);
 			if (local81 != null && local81.equals(local34)) {
 				Static67.method6098(LocalizedText.IGNORE_REMOVE_PRE.get(Static51.clientLanguageId) + arg0 + LocalizedText.IGNORE_REMOVE_POST.get(Static51.clientLanguageId));
@@ -108,7 +108,7 @@ public final class Static706 {
 				}
 			}
 		}
-		if (Static390.method5492(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2).equals(local34)) {
+		if (Static390.method5492(Static556.self.username).equals(local34)) {
 			Static67.method6098(LocalizedText.FRIEND_CANNOT_ADD_SELF.get(Static51.clientLanguageId));
 			return;
 		}

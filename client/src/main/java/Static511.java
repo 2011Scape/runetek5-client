@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static511 {
 
 	@OriginalMember(owner = "client!qb", name = "j", descriptor = "I")
-	public static int anInt7645;
+	public static int cameraType;
 
 	@OriginalMember(owner = "client!qb", name = "g", descriptor = "[I")
 	public static int[] anIntArray614;
 
 	@OriginalMember(owner = "client!qb", name = "i", descriptor = "[Lclient!ci;")
-	public static Country[] aCountryArray1;
+	public static Country[] countries;
 
 	@OriginalMember(owner = "client!qb", name = "n", descriptor = "[J")
 	public static final long[] aLongArray17 = new long[100];

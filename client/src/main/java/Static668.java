@@ -53,7 +53,7 @@ public final class Static668 {
 	}
 
 	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(II)I")
-	public static int method8702(@OriginalArg(0) int arg0) {
+	public static int getFileId(@OriginalArg(0) int arg0) {
 		return arg0 & 0x7F;
 	}
 

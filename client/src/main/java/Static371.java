@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static371 {
 
 	@OriginalMember(owner = "client!lma", name = "a", descriptor = "[I")
-	public static final int[] anIntArray455 = new int[200];
+	public static final int[] worlds = new int[200];
 
 	@OriginalMember(owner = "client!lma", name = "b", descriptor = "(I)V")
 	public static void method5284() {

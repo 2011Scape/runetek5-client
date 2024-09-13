@@ -24,7 +24,7 @@ public final class Static393 {
 				@Pc(40) int local40 = (arg1 & 0x3F) << 10 | (local10 & 0x7) << 7 | local16 & 0x7F;
 				@Pc(44) int local44 = Static154.anIntArray237[local40];
 				Static300.method4390(false, true);
-				arg0.aa(arg3 + (arg2.anInt3802 * local16 >> 7), arg4 + ((-local10 + 7) * arg2.anInt3746 >> 3), (arg2.anInt3802 >> 7) + 1, (arg2.anInt3746 >> 3) - -1, local44, 0);
+				arg0.aa(arg3 + (arg2.width * local16 >> 7), arg4 + ((-local10 + 7) * arg2.height >> 3), (arg2.width >> 7) + 1, (arg2.height >> 3) - -1, local44, 0);
 			}
 		}
 		anInt6147++;

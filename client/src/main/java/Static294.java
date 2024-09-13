@@ -40,7 +40,7 @@ public final class Static294 {
 		}
 		@Pc(19) boolean local19 = false;
 		if (Static1.anInt10798 == 0) {
-			if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 < 0 || Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 >= Static720.anInt10859 * 512 || Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 < 0 || Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 >= Static501.anInt7568 * 512) {
+			if (Static556.self.xFine < 0 || Static556.self.xFine >= Static720.anInt10859 * 512 || Static556.self.zFine < 0 || Static556.self.zFine >= Static501.anInt7568 * 512) {
 				local19 = true;
 			}
 		} else if (!Static421.aBoolean480) {
@@ -51,7 +51,7 @@ public final class Static294 {
 			return;
 		}
 		Static198.anInt3276++;
-		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != null && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 + 256 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 45) * 256 >> 9 == Static675.anInt10156 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 - (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 48) - 1) * 256 >> 9 == Static212.anInt3466) {
+		if (Static556.self != null && Static556.self.xFine + 256 - Static556.self.method9302((byte) 45) * 256 >> 9 == Static675.anInt10156 && Static556.self.zFine - (Static556.self.method9302((byte) 48) - 1) * 256 >> 9 == Static212.anInt3466) {
 			Static675.anInt10156 = -1;
 			Static212.anInt3466 = -1;
 			Static444.method5988();
@@ -68,7 +68,7 @@ public final class Static294 {
 		@Pc(161) int local161 = Static200.anInt3305;
 		@Pc(169) int local169;
 		@Pc(204) int local204;
-		if (Static511.anInt7645 == 1) {
+		if (Static511.cameraType == 1) {
 			local169 = (int) Static479.aFloat123;
 			if (Static188.anInt3103 >> 8 > local169) {
 				local169 = Static188.anInt3103 >> 8;
@@ -77,8 +77,8 @@ public final class Static294 {
 				local169 = Static140.anIntArray222[4] + 128;
 			}
 			local204 = Static288.anInt4621 + (int) Static171.aFloat64 & 0x3FFF;
-			Static292.method4606(local169, (local169 >> 3) * 3 + 600 << 2, local161, Static494.anInt7409, local204, Static38.anInt920, Static102.method2025(Static394.anInt6176, -29754, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690) - 200);
-		} else if (Static511.anInt7645 == 4) {
+			Static292.method4606(local169, (local169 >> 3) * 3 + 600 << 2, local161, Static494.anInt7409, local204, Static38.anInt920, Static102.method2025(Static394.anInt6176, -29754, Static556.self.zFine, Static556.self.xFine) - 200);
+		} else if (Static511.cameraType == 4) {
 			local169 = (int) Static479.aFloat123;
 			if (Static188.anInt3103 >> 8 > local169) {
 				local169 = Static188.anInt3103 >> 8;
@@ -88,20 +88,20 @@ public final class Static294 {
 			}
 			local204 = (int) Static171.aFloat64 & 0x3FFF;
 			Static292.method4606(local169, (local169 >> 3) * 3 + 600 << 2, local161, Static494.anInt7409, local204, Static38.anInt920, Static102.method2025(Static394.anInt6176, -29754, Static249.anInt4018, Static433.anInt6262) - 200);
-		} else if (Static511.anInt7645 == 5) {
+		} else if (Static511.cameraType == 5) {
 			Static110.method2079(local161);
 		}
 		local169 = Static170.anInt2864;
 		local204 = Static359.anInt5801;
 		@Pc(325) int local325 = Static110.anInt2186;
 		@Pc(327) int local327 = Static598.anInt8832;
-		@Pc(329) int local329 = Static323.anInt5119;
+		@Pc(329) int local329 = Static323.cameraYaw;
 		@Pc(375) int local375;
 		for (@Pc(331) int local331 = 0; local331 < 5; local331++) {
 			if (Static572.aBooleanArray29[local331]) {
 				local375 = (int) ((double) -Static331.anIntArray403[local331] + (double) (Static331.anIntArray403[local331] * 2 + 1) * Math.random() + Math.sin((double) Static362.anIntArray450[local331] / 100.0D * (double) Static194.anIntArray268[local331]) * (double) Static140.anIntArray222[local331]);
 				if (local331 == 3) {
-					Static323.anInt5119 = local375 + Static323.anInt5119 & 0x3FFF;
+					Static323.cameraYaw = local375 + Static323.cameraYaw & 0x3FFF;
 				}
 				if (local331 == 0) {
 					Static170.anInt2864 += local375 << 2;
@@ -138,7 +138,7 @@ public final class Static294 {
 		Static163.aClass19_17.KA(local153, local159, local155 + local153, local159 + local161);
 		Static501.method6716(true);
 		local375 = Static251.anInt4037;
-		Static460.aClass73_10.method7135(Static170.anInt2864, Static359.anInt5801, Static110.anInt2186, -Static598.anInt8832 & 0x3FFF, -Static323.anInt5119 & 0x3FFF, -Static81.anInt1644 & 0x3FFF);
+		Static460.aClass73_10.method7135(Static170.anInt2864, Static359.anInt5801, Static110.anInt2186, -Static598.anInt8832 & 0x3FFF, -Static323.cameraYaw & 0x3FFF, -Static81.anInt1644 & 0x3FFF);
 		Static163.aClass19_17.method8000(Static460.aClass73_10);
 		Static163.aClass19_17.DA(local155 / 2 + local153, local161 / 2 + local159, Static428.anInt6495 << 1, Static428.anInt6495 << 1);
 		if (Static137.aBoolean210) {
@@ -155,18 +155,18 @@ public final class Static294 {
 		} else {
 			Static163.aClass19_17.xa(1.0F);
 			Static163.aClass19_17.ZA(16777215, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F);
-			Static456.aClass148_3.method3159(local159, Static163.aClass19_17, Static323.anInt5119, local155, local375, Static81.anInt1644, local161, local153, Static436.anInt3852 << 3, Static598.anInt8832);
+			Static456.aClass148_3.method3159(local159, Static163.aClass19_17, Static323.cameraYaw, local155, local375, Static81.anInt1644, local161, local153, Static436.anInt3852 << 3, Static598.anInt8832);
 		}
 		Static557.method7331();
 		Static527.method7081(Static428.anInt6495 << 1, local161 / 2 + local159, Static428.anInt6495 << 1, local153 + local155 / 2);
-		Static620.method8324(-Static323.anInt5119 & 0x3FFF, Static110.anInt2186, -Static81.anInt1644 & 0x3FFF, Static359.anInt5801, -Static598.anInt8832 & 0x3FFF, Static170.anInt2864);
+		Static620.method8324(-Static323.cameraYaw & 0x3FFF, Static110.anInt2186, -Static81.anInt1644 & 0x3FFF, Static359.anInt5801, -Static598.anInt8832 & 0x3FFF, Static170.anInt2864);
 		Static159.method2575();
 		@Pc(688) byte local688 = Static400.aClass2_Sub34_28.aPreference_Sub4_2.method2143() == 2 ? (byte) Static198.anInt3276 : 1;
 		if (Static137.aBoolean210) {
-			Static648.method8483(-Static323.anInt5119 & 0x3FFF, -Static81.anInt1644 & 0x3FFF, -Static598.anInt8832 & 0x3FFF);
-			Static466.method6324(local688, Static170.anInt2864, Static110.anInt2186, Static359.anInt5801, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 >> 9, Static457.anIntArray552, Static682.anIntArray817, Static333.anInt5455, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, Static482.anIntArray588, Static400.aClass2_Sub34_28.aPreference_Sub8_1.method3176() == 0, Static582.anInt8627, Static9.anIntArray18, Static328.aByteArrayArrayArray4, Static153.anIntArray235, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 >> 9);
+			Static648.method8483(-Static323.cameraYaw & 0x3FFF, -Static81.anInt1644 & 0x3FFF, -Static598.anInt8832 & 0x3FFF);
+			Static466.method6324(local688, Static170.anInt2864, Static110.anInt2186, Static359.anInt5801, Static556.self.zFine >> 9, Static457.anIntArray552, Static682.anIntArray817, Static333.loop, Static556.self.plane + 1, Static482.anIntArray588, Static400.aClass2_Sub34_28.aPreference_Sub8_1.method3176() == 0, Static582.anInt8627, Static9.anIntArray18, Static328.aByteArrayArrayArray4, Static153.anIntArray235, Static556.self.xFine >> 9);
 		} else {
-			Static283.method4100(Static333.anInt5455, Static170.anInt2864, Static359.anInt5801, Static110.anInt2186, Static328.aByteArrayArrayArray4, Static482.anIntArray588, Static9.anIntArray18, Static457.anIntArray552, Static153.anIntArray235, Static682.anIntArray817, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, local688, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 >> 9, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 >> 9, Static400.aClass2_Sub34_28.aPreference_Sub8_1.method3176() == 0, Static504.aBoolean579 ? Static582.anInt8627 : -1, 0, false);
+			Static283.method4100(Static333.loop, Static170.anInt2864, Static359.anInt5801, Static110.anInt2186, Static328.aByteArrayArrayArray4, Static482.anIntArray588, Static9.anIntArray18, Static457.anIntArray552, Static153.anIntArray235, Static682.anIntArray817, Static556.self.plane + 1, local688, Static556.self.xFine >> 9, Static556.self.zFine >> 9, Static400.aClass2_Sub34_28.aPreference_Sub8_1.method3176() == 0, Static504.aBoolean579 ? Static582.anInt8627 : -1, 0, false);
 		}
 		Static557.method7331();
 		if (Static283.gameState == 11) {
@@ -180,7 +180,7 @@ public final class Static294 {
 		Static170.anInt2864 = local169;
 		Static598.anInt8832 = local327;
 		Static359.anInt5801 = local204;
-		Static323.anInt5119 = local329;
+		Static323.cameraYaw = local329;
 		Static288.aBoolean356 = false;
 		if (Static426.aBoolean72 && client.js5NetQueue.method6622() == 0) {
 			Static426.aBoolean72 = false;

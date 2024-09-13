@@ -30,11 +30,11 @@ public final class Static489 {
 		if (!local25) {
 			return null;
 		}
-		@Pc(101) PrivilegedRequest local101 = arg1.method8977(arg0, arg2, arg3);
+		@Pc(101) PrivilegedRequest local101 = arg1.enterFullScreen(arg0, arg2, arg3);
 		while (local101.state == 0) {
 			Static638.sleep(10L);
 		}
-		@Pc(112) Frame local112 = (Frame) local101.anObject13;
+		@Pc(112) Frame local112 = (Frame) local101.result;
 		if (local112 == null) {
 			return null;
 		} else if (local101.state == 2) {
@@ -49,9 +49,9 @@ public final class Static489 {
 	public static void method6547(@OriginalArg(0) boolean arg0, @OriginalArg(2) PathingEntity arg1) {
 		@Pc(7) int local7 = -1;
 		@Pc(16) int local16 = 0;
-		if (arg1.anInt10759 > Static333.anInt5455) {
+		if (arg1.anInt10759 > Static333.loop) {
 			Static441.method5967(arg1);
-		} else if (Static333.anInt5455 > arg1.anInt10755) {
+		} else if (Static333.loop > arg1.anInt10755) {
 			Static256.method3638(arg1, arg0);
 			local7 = Static521.anInt7756;
 			local16 = Static524.anInt8042;
@@ -59,7 +59,7 @@ public final class Static489 {
 			Static354.method5181(arg1);
 		}
 		@Pc(107) int local107;
-		if (arg1.anInt10690 < 512 || arg1.anInt10694 < 512 || Static720.anInt10859 * 512 - 512 <= arg1.anInt10690 || arg1.anInt10694 >= Static501.anInt7568 * 512 - 512) {
+		if (arg1.xFine < 512 || arg1.zFine < 512 || Static720.anInt10859 * 512 - 512 <= arg1.xFine || arg1.zFine >= Static501.anInt7568 * 512 - 512) {
 			arg1.aClass152_11.method9113(true, -1);
 			for (local107 = 0; local107 < arg1.aClass199Array3.length; local107++) {
 				arg1.aClass199Array3[local107].anInt4930 = -1;
@@ -70,11 +70,11 @@ public final class Static489 {
 			arg1.anInt10755 = 0;
 			arg1.anIntArray869 = null;
 			local16 = 0;
-			arg1.anInt10690 = arg1.anIntArray879[0] * 512 + arg1.method9302((byte) 97) * 256;
-			arg1.anInt10694 = arg1.anIntArray878[0] * 512 + arg1.method9302((byte) 113) * 256;
+			arg1.xFine = arg1.anIntArray879[0] * 512 + arg1.method9302((byte) 97) * 256;
+			arg1.zFine = arg1.anIntArray878[0] * 512 + arg1.method9302((byte) 113) * 256;
 			arg1.method9316();
 		}
-		if (arg1 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 && (arg1.anInt10690 < 6144 || arg1.anInt10694 < 6144 || arg1.anInt10690 >= Static720.anInt10859 * 512 - 6144 || Static501.anInt7568 * 512 - 6144 <= arg1.anInt10694)) {
+		if (arg1 == Static556.self && (arg1.xFine < 6144 || arg1.zFine < 6144 || arg1.xFine >= Static720.anInt10859 * 512 - 6144 || Static501.anInt7568 * 512 - 6144 <= arg1.zFine)) {
 			arg1.aClass152_11.method9113(true, -1);
 			for (local107 = 0; local107 < arg1.aClass199Array3.length; local107++) {
 				arg1.aClass199Array3[local107].anInt4930 = -1;
@@ -85,8 +85,8 @@ public final class Static489 {
 			arg1.anIntArray869 = null;
 			local16 = 0;
 			local7 = -1;
-			arg1.anInt10690 = arg1.anIntArray879[0] * 512 + arg1.method9302((byte) 69) * 256;
-			arg1.anInt10694 = arg1.anIntArray878[0] * 512 + arg1.method9302((byte) 49) * 256;
+			arg1.xFine = arg1.anIntArray879[0] * 512 + arg1.method9302((byte) 69) * 256;
+			arg1.zFine = arg1.anIntArray878[0] * 512 + arg1.method9302((byte) 49) * 256;
 			arg1.method9316();
 		}
 		local107 = Static112.method2104(arg1);
@@ -142,7 +142,7 @@ public final class Static489 {
 			if (Static162.aClass2_Sub2_Sub13_2 == null || !client.worldMapData.isGroupNameVaild(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
 				Static42.aClass255_2 = new Class255(0);
 			} else if (client.worldMapData.isGroupReady(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
-				Static42.aClass255_2 = Static284.method4103(Static174.aBoolean249, client.worldMapData, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
+				Static42.aClass255_2 = Static284.method4103(Static174.mapMembers, client.worldMapData, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
 			} else {
 				local10 = false;
 				Static593.anInt8763++;
@@ -159,8 +159,8 @@ public final class Static489 {
 			@Pc(287) byte[] local287 = Static118.aByteArrayArray3[local282];
 			@Pc(299) int local299;
 			if (local287 != null) {
-				local299 = (Static89.anIntArray169[local282] >> 8) * 64 - Static691.anInt10367;
-				chunkSize = (Static89.anIntArray169[local282] & 0xFF) * 64 - Static116.anInt2270;
+				local299 = (Static89.anIntArray169[local282] >> 8) * 64 - Static691.originX;
+				chunkSize = (Static89.anIntArray169[local282] & 0xFF) * 64 - Static116.originZ;
 				if (Static117.anInt2282 != 0) {
 					local299 = 10;
 					chunkSize = 10;
@@ -169,8 +169,8 @@ public final class Static489 {
 			}
 			local287 = Static421.aByteArrayArray19[local282];
 			if (local287 != null) {
-				local299 = (Static89.anIntArray169[local282] >> 8) * 64 - Static691.anInt10367;
-				chunkSize = (Static89.anIntArray169[local282] & 0xFF) * 64 - Static116.anInt2270;
+				local299 = (Static89.anIntArray169[local282] >> 8) * 64 - Static691.originX;
+				chunkSize = (Static89.anIntArray169[local282] & 0xFF) * 64 - Static116.originZ;
 				if (Static117.anInt2282 != 0) {
 					chunkSize = 10;
 					local299 = 10;

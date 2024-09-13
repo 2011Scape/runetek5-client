@@ -20,7 +20,7 @@ public final class Static479 {
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(IIIII)V")
 	public static void method6462(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(4, (long) arg3);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(4, (long) arg3);
 		local9.method202();
 		local9.anInt192 = arg2;
 		local9.anInt197 = arg1;

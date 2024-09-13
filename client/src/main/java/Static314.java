@@ -21,7 +21,7 @@ public final class Static314 {
 	}
 
 	@OriginalMember(owner = "client!jw", name = "b", descriptor = "(B)V")
-	public static void method4562() {
+	public static void topBannerRefresh() {
 		if (Static2.aModeWhere1 != ModeWhere.LOCAL) {
 			try {
 				BrowserControl.call("tbrefresh", Static295.aClient1);

@@ -89,7 +89,7 @@ public final class Class337 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!ha;B)V")
 	public void method7669(@OriginalArg(0) Class19 arg0) {
 		if (this.aClass2_Sub2_Sub9_6 != null) {
-			Static292.method4618(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10690, this.aClass8_Sub2_21.anInt10694, this.aBooleanArray27);
+			Static292.method4618(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.xFine, this.aClass8_Sub2_21.zFine, this.aBooleanArray27);
 			this.aBooleanArray27 = null;
 			this.aClass2_Sub2_Sub9_6 = null;
 		}
@@ -172,7 +172,7 @@ public final class Class337 {
 			this.aClass152_9.method9092(local10, 0, arg0, local12);
 			this.aModel8 = null;
 			this.aBoolean662 = false;
-			this.anInt8643 = Static333.anInt5455;
+			this.anInt8643 = Static333.loop;
 		}
 	}
 
@@ -201,7 +201,7 @@ public final class Class337 {
 			return null;
 		}
 		if (arg3) {
-			Static292.method4618(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10690, this.aClass8_Sub2_21.anInt10694, this.aBooleanArray27);
+			Static292.method4618(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.xFine, this.aClass8_Sub2_21.zFine, this.aBooleanArray27);
 			this.aBoolean662 = false;
 		}
 		@Pc(142) Class178 local142 = Static246.aClass178Array1[this.aByte133];
@@ -216,7 +216,7 @@ public final class Class337 {
 			if (arg3) {
 				arg4 |= 0x40000;
 			}
-			local171 = local11.getModel(this.anInt8645 == 11 ? this.anInt8663 + 4 : this.anInt8663, this.aClass8_Sub2_21.anInt10694, this.anInt8645 == 11 ? 10 : this.anInt8645, this.aClass8_Sub2_21.anInt10690, local163, this.aClass152_9, arg0, local142, this.aClass150_2, arg4, local142.method7878(this.aClass8_Sub2_21.anInt10694, this.aClass8_Sub2_21.anInt10690));
+			local171 = local11.getModel(this.anInt8645 == 11 ? this.anInt8663 + 4 : this.anInt8663, this.aClass8_Sub2_21.zFine, this.anInt8645 == 11 ? 10 : this.anInt8645, this.aClass8_Sub2_21.xFine, local163, this.aClass152_9, arg0, local142, this.aClass150_2, arg4, local142.method7878(this.aClass8_Sub2_21.zFine, this.aClass8_Sub2_21.xFine));
 			if (local171 == null) {
 				this.aBooleanArray27 = null;
 				this.aClass2_Sub2_Sub9_6 = null;
@@ -228,7 +228,7 @@ public final class Class337 {
 						this.aBooleanArray27 = new boolean[4];
 					}
 					this.aClass2_Sub2_Sub9_6 = local171.ba(this.aClass2_Sub2_Sub9_6);
-					Static630.method8357(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10690, this.aClass8_Sub2_21.anInt10694, this.aBooleanArray27);
+					Static630.method8357(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.xFine, this.aClass8_Sub2_21.zFine, this.aBooleanArray27);
 					this.aBoolean662 = true;
 				}
 				this.anInt8660 = local171.fa();
@@ -241,7 +241,7 @@ public final class Class337 {
 			if (this.aModel8 != null) {
 				arg4 |= this.aModel8.ua();
 			}
-			@Pc(389) Class272 local389 = local11.method1309(this.anInt8645 == 11 ? this.anInt8663 + 4 : this.anInt8663, this.aClass8_Sub2_21.anInt10694, this.aClass8_Sub2_21.anInt10690, local142, arg3, local142.method7878(this.aClass8_Sub2_21.anInt10694, this.aClass8_Sub2_21.anInt10690), this.anInt8645 == 11 ? 10 : this.anInt8645, arg0, this.aClass150_2, arg4, local163);
+			@Pc(389) Class272 local389 = local11.method1309(this.anInt8645 == 11 ? this.anInt8663 + 4 : this.anInt8663, this.aClass8_Sub2_21.zFine, this.aClass8_Sub2_21.xFine, local142, arg3, local142.method7878(this.aClass8_Sub2_21.zFine, this.aClass8_Sub2_21.xFine), this.anInt8645 == 11 ? 10 : this.anInt8645, arg0, this.aClass150_2, arg4, local163);
 			if (local389 == null) {
 				this.anInt8652 = 0;
 				this.aBooleanArray27 = null;
@@ -254,7 +254,7 @@ public final class Class337 {
 				if (arg3) {
 					this.aClass2_Sub2_Sub9_6 = local389.aClass2_Sub2_Sub9_5;
 					this.aBooleanArray27 = null;
-					Static630.method8357(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10690, this.aClass8_Sub2_21.anInt10694, (boolean[]) null);
+					Static630.method8357(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.xFine, this.aClass8_Sub2_21.zFine, (boolean[]) null);
 					this.aBoolean662 = true;
 				}
 				this.anInt8660 = local171.fa();
@@ -283,7 +283,7 @@ public final class Class337 {
 	private void method7680(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) boolean arg1) {
 		if (!this.aClass152_9.method9109()) {
 			this.method7676(0, -1, false);
-		} else if (this.aClass152_9.method9112(Static333.anInt5455 - this.anInt8643)) {
+		} else if (this.aClass152_9.method9112(Static333.loop - this.anInt8643)) {
 			if (Static400.aClass2_Sub34_28.aPreference_Sub12_1.method4364() == 2) {
 				this.aBoolean662 = false;
 			}
@@ -294,7 +294,7 @@ public final class Class337 {
 			}
 		}
 		if (arg1) {
-			this.anInt8643 = Static333.anInt5455;
+			this.anInt8643 = Static333.loop;
 		}
 	}
 
@@ -311,7 +311,7 @@ public final class Class337 {
 				local37 = local37.getMultiLoc(Static1.anInt10798 == 3 ? Static298.aVarDomain2 : Static34.aClass304_1);
 			}
 			if (local37 != null) {
-				this.aClass8_Sub5_7 = Static257.method3654(Static333.anInt5455, true);
+				this.aClass8_Sub5_7 = Static257.method3654(Static333.loop, true);
 			}
 		}
 		if (this.aClass8_Sub5_7 == null) {
@@ -319,9 +319,9 @@ public final class Class337 {
 		}
 		arg1.method7476(arg8);
 		if (arg2) {
-			this.aClass8_Sub5_7.method3643(arg4, (long) Static333.anInt5455, local11, local14);
+			this.aClass8_Sub5_7.method3643(arg4, (long) Static333.loop, local11, local14);
 		} else {
-			this.aClass8_Sub5_7.method3649((long) Static333.anInt5455);
+			this.aClass8_Sub5_7.method3649((long) Static333.loop);
 		}
 		this.aClass8_Sub5_7.method3658(this.aByte132, arg6, arg5, arg7, arg0);
 	}

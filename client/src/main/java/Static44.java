@@ -18,8 +18,8 @@ public final class Static44 {
 			local27 = Static380.anInt5979;
 			local24 = Static680.anInt10289;
 		} else {
-			local24 = local7.anInt3802;
-			local27 = local7.anInt3746;
+			local24 = local7.width;
+			local27 = local7.height;
 		}
 		Static507.method6743(false, local27, local24, arg0);
 		Static470.method6383(arg0, local24, local27, -8525);

@@ -13,17 +13,17 @@ public final class SecondaryHashTable {
 	private long aLong115;
 
 	@OriginalMember(owner = "client!gga", name = "d", descriptor = "[Lclient!cm;")
-	private final SecondaryLinkable[] aClass2_Sub2Array1;
+	private final SecondaryLinkable[] buckets;
 
 	@OriginalMember(owner = "client!gga", name = "a", descriptor = "I")
-	private final int anInt3417;
+	private final int size;
 
 	@OriginalMember(owner = "client!gga", name = "<init>", descriptor = "(I)V")
 	public SecondaryHashTable(@OriginalArg(0) int arg0) {
-		this.aClass2_Sub2Array1 = new SecondaryLinkable[arg0];
-		this.anInt3417 = arg0;
+		this.buckets = new SecondaryLinkable[arg0];
+		this.size = arg0;
 		for (@Pc(10) int local10 = 0; local10 < arg0; local10++) {
-			@Pc(20) SecondaryLinkable local20 = this.aClass2_Sub2Array1[local10] = new SecondaryLinkable();
+			@Pc(20) SecondaryLinkable local20 = this.buckets[local10] = new SecondaryLinkable();
 			local20.secondaryNext = local20;
 			local20.secondaryPrev = local20;
 		}
@@ -34,7 +34,7 @@ public final class SecondaryHashTable {
 		if (arg0.secondaryNext != null) {
 			arg0.unlinkSecondary();
 		}
-		@Pc(28) SecondaryLinkable local28 = this.aClass2_Sub2Array1[(int) ((long) (this.anInt3417 - 1) & arg1)];
+		@Pc(28) SecondaryLinkable local28 = this.buckets[(int) ((long) (this.size - 1) & arg1)];
 		arg0.secondaryPrev = local28;
 		arg0.secondaryNext = local28.secondaryNext;
 		arg0.secondaryNext.secondaryPrev = arg0;
@@ -45,7 +45,7 @@ public final class SecondaryHashTable {
 	@OriginalMember(owner = "client!gga", name = "a", descriptor = "(JI)Lclient!cm;")
 	public SecondaryLinkable method3095(@OriginalArg(0) long arg0) {
 		this.aLong115 = arg0;
-		@Pc(20) SecondaryLinkable local20 = this.aClass2_Sub2Array1[(int) (arg0 & (long) (this.anInt3417 - 1))];
+		@Pc(20) SecondaryLinkable local20 = this.buckets[(int) (arg0 & (long) (this.size - 1))];
 		for (this.aClass2_Sub2_31 = local20.secondaryPrev; this.aClass2_Sub2_31 != local20; this.aClass2_Sub2_31 = this.aClass2_Sub2_31.secondaryPrev) {
 			if (arg0 == this.aClass2_Sub2_31.secondaryKey) {
 				@Pc(41) SecondaryLinkable local41 = this.aClass2_Sub2_31;
@@ -62,7 +62,7 @@ public final class SecondaryHashTable {
 		if (this.aClass2_Sub2_31 == null) {
 			return null;
 		}
-		@Pc(24) SecondaryLinkable local24 = this.aClass2_Sub2Array1[(int) (this.aLong115 & (long) (this.anInt3417 - 1))];
+		@Pc(24) SecondaryLinkable local24 = this.buckets[(int) (this.aLong115 & (long) (this.size - 1))];
 		while (this.aClass2_Sub2_31 != local24) {
 			if (this.aLong115 == this.aClass2_Sub2_31.secondaryKey) {
 				@Pc(38) SecondaryLinkable local38 = this.aClass2_Sub2_31;

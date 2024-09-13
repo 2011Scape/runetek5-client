@@ -9,13 +9,13 @@ public final class Static15 {
 
 	@OriginalMember(owner = "client!aia", name = "a", descriptor = "(III)Lclient!hda;")
 	public static Component method186(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(21) Component local21 = Static145.method2412(arg1);
+		@Pc(21) Component local21 = Static145.getComponent(arg1);
 		if (arg0 == -1) {
 			return local21;
-		} else if (local21 == null || local21.aComponentArray2 == null || arg0 >= local21.aComponentArray2.length) {
+		} else if (local21 == null || local21.createdComponents == null || arg0 >= local21.createdComponents.length) {
 			return null;
 		} else {
-			return local21.aComponentArray2[arg0];
+			return local21.createdComponents[arg0];
 		}
 	}
 

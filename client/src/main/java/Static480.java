@@ -101,7 +101,7 @@ public final class Static480 {
 					}
 					local23.anIntArray828[local65] = local73;
 					local23.anIntArray827[local65] = local114;
-					local23.aPrivilegedRequestArray1[local65] = arg1.method8978(Static488.method6524(local106), local110);
+					local23.aPrivilegedRequestArray1[local65] = arg1.getDeclaredField(Static488.method6524(local106), local110);
 				} else if (local73 == 3 || local73 == 4) {
 					local106 = arg0.gjstr();
 					local110 = arg0.gjstr();
@@ -124,7 +124,7 @@ public final class Static480 {
 					for (local153 = 0; local153 < local114; local153++) {
 						local180[local153] = Static488.method6524(local117[local153]);
 					}
-					local23.aPrivilegedRequestArray2[local65] = arg1.method8988(Static488.method6524(local106), local180, local110);
+					local23.aPrivilegedRequestArray2[local65] = arg1.getDeclaredMethod(Static488.method6524(local106), local180, local110);
 					local23.aByteArrayArrayArray18[local65] = local138;
 				}
 			} catch (@Pc(271) ClassNotFoundException local271) {

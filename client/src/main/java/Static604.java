@@ -9,8 +9,8 @@ public final class Static604 {
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(JI)V")
 	public static void method7903(@OriginalArg(0) long arg0) {
-		@Pc(9) int local9 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 + Static508.anInt7627;
-		@Pc(15) int local15 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 + Static145.anInt2561;
+		@Pc(9) int local9 = Static556.self.xFine + Static508.anInt7627;
+		@Pc(15) int local15 = Static556.self.zFine + Static145.anInt2561;
 		if (Static494.anInt7409 - local9 < -2000 || Static494.anInt7409 - local9 > 2000 || Static38.anInt920 - local15 < -2000 || Static38.anInt920 - local15 > 2000) {
 			Static38.anInt920 = local15;
 			Static494.anInt7409 = local9;

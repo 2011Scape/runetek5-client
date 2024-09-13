@@ -8,5 +8,5 @@ public final class SubInterface extends Linkable {
 	public int anInt146;
 
 	@OriginalMember(owner = "client!aha", name = "n", descriptor = "I")
-	public int anInt147;
+	public int interfaceId;
 }

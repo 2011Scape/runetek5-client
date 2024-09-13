@@ -28,22 +28,22 @@ public final class Static449 {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BZZLclient!aha;)V")
 	public static void method6115(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) SubInterface arg2) {
-		@Pc(6) int local6 = arg2.anInt147;
+		@Pc(6) int local6 = arg2.interfaceId;
 		@Pc(10) int local10 = (int) arg2.id;
 		arg2.unlink();
 		if (arg1) {
 			Static347.method5094(local6);
 		}
 		Static193.method2897(local6);
-		@Pc(27) Component local27 = Static145.method2412(local10);
+		@Pc(27) Component local27 = Static145.getComponent(local10);
 		if (local27 != null) {
-			Static178.method2729(local27);
+			Static178.redraw(local27);
 		}
 		Static94.method1840();
-		if (!arg0 && Static377.anInt5930 != -1) {
-			Static145.method2411(1, Static377.anInt5930);
+		if (!arg0 && Static377.topLevelInterface != -1) {
+			Static145.method2411(1, Static377.topLevelInterface);
 		}
-		@Pc(55) Class331 local55 = new Class331(Static548.aHashTable40);
+		@Pc(55) Class331 local55 = new Class331(Static548.openInterfaces);
 		for (@Pc(60) SubInterface local60 = (SubInterface) local55.method7613(); local60 != null; local60 = (SubInterface) local55.method7610()) {
 			if (!local60.isLinked()) {
 				local60 = (SubInterface) local55.method7613();

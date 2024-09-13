@@ -95,16 +95,16 @@ public final class Static73 {
 				@Pc(20) Packet local20 = new Packet(local13);
 				local26 = Static89.anIntArray169[local8] >> 8;
 				@Pc(32) int local32 = Static89.anIntArray169[local8] & 0xFF;
-				@Pc(38) int local38 = local26 * 64 - Static691.anInt10367;
-				@Pc(45) int local45 = local32 * 64 - Static116.anInt2270;
+				@Pc(38) int local38 = local26 * 64 - Static691.originX;
+				@Pc(45) int local45 = local32 * 64 - Static116.originZ;
 				Static557.method7331();
-				arg1.method7879(local20, local45, Static577.aClass110Array1, Static116.anInt2270, Static691.anInt10367, local38);
+				arg1.method7879(local20, local45, Static577.aClass110Array1, Static116.originZ, Static691.originX, local38);
 				arg1.method7893(local45, local20, local38, Static163.aClass19_17);
 			}
 		}
 		for (@Pc(78) int local78 = 0; local78 < local6; local78++) {
-			@Pc(90) int local90 = (Static89.anIntArray169[local78] >> 8) * 64 - Static691.anInt10367;
-			local26 = (Static89.anIntArray169[local78] & 0xFF) * 64 - Static116.anInt2270;
+			@Pc(90) int local90 = (Static89.anIntArray169[local78] >> 8) * 64 - Static691.originX;
+			local26 = (Static89.anIntArray169[local78] & 0xFF) * 64 - Static116.originZ;
 			@Pc(105) byte[] local105 = arg0[local78];
 			if (local105 == null && Static525.anInt8907 < 800) {
 				Static557.method7331();

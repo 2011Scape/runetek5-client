@@ -9,7 +9,7 @@ public final class Static622 {
 	public static int anInt7737 = 0;
 
 	@OriginalMember(owner = "client!tla", name = "a", descriptor = "(II)I")
-	public static int method6853(@OriginalArg(0) int arg0) {
+	public static int getTargetMask(@OriginalArg(0) int arg0) {
 		return arg0 >> 11 & 0x7F;
 	}
 

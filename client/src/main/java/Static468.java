@@ -9,9 +9,9 @@ public final class Static468 {
 
 	@OriginalMember(owner = "client!op", name = "a", descriptor = "(ZIII)V")
 	public static void method7641(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(8) int local8 = arg2 + Static691.anInt10367;
-		@Pc(12) int local12 = Static116.anInt2270 + arg1;
-		if (Static334.aClass291ArrayArrayArray1 == null || arg2 < 0 || arg1 < 0 || arg2 >= Static720.anInt10859 || Static501.anInt7568 <= arg1 || Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 0 && arg0 != Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
+		@Pc(8) int local8 = arg2 + Static691.originX;
+		@Pc(12) int local12 = Static116.originZ + arg1;
+		if (Static334.aClass291ArrayArrayArray1 == null || arg2 < 0 || arg1 < 0 || arg2 >= Static720.anInt10859 || Static501.anInt7568 <= arg1 || Static400.aClass2_Sub34_28.aPreference_Sub19_2.method5960() == 0 && arg0 != Static556.self.plane) {
 			return;
 		}
 		@Pc(67) long local67 = (long) (local12 << 14 | arg0 << 28 | local8);
@@ -54,12 +54,12 @@ public final class Static468 {
 			}
 		}
 		@Pc(209) int local209 = Static102.method2025(arg0, -29754, (arg1 << 9) + 256, (arg2 << 9) - -256);
-		local103.aByte144 = (byte) arg0;
+		local103.plane = (byte) arg0;
 		local103.anInt10691 = local209;
 		local103.aByte143 = (byte) arg0;
-		local103.anInt10694 = arg1 << 9;
+		local103.zFine = arg1 << 9;
 		local103.anInt8885 = 0;
-		local103.anInt10690 = arg2 << 9;
+		local103.xFine = arg2 << 9;
 		if (Static441.method5968(arg1, arg2)) {
 			local103.aByte143++;
 		}
@@ -120,7 +120,7 @@ public final class Static468 {
 		if (arg0.method9111() && arg2.method9111()) {
 			@Pc(12) SeqType local12 = arg0.aSeqType4;
 			@Pc(15) SeqType local15 = arg2.aSeqType4;
-			arg1.method7477(arg2.anInt10478, arg0.aClass257_8.anInt6448, arg0.aClass257_8.aClass2_Sub2_Sub18_2, arg2.aClass257_8.anInt6450, arg0.aClass257_8.anInt6450, arg2.aClass257_8.aClass2_Sub2_Sub18_2, arg0.aClass257_8.aClass2_Sub2_Sub18_1, arg0.anInt10478, local12.aBoolean140 | local15.aBoolean140, local15.anIntArray157[arg2.anInt10489], arg2.aClass257_8.aClass2_Sub2_Sub18_1, local12.aBooleanArray3, local12.anIntArray157[arg0.anInt10489], arg2.aClass257_8.anInt6448);
+			arg1.method7477(arg2.anInt10478, arg0.aClass257_8.anInt6448, arg0.aClass257_8.aClass2_Sub2_Sub18_2, arg2.aClass257_8.anInt6450, arg0.aClass257_8.anInt6450, arg2.aClass257_8.aClass2_Sub2_Sub18_2, arg0.aClass257_8.aClass2_Sub2_Sub18_1, arg0.anInt10478, local12.rotateNormals | local15.rotateNormals, local15.frameDelay[arg2.anInt10489], arg2.aClass257_8.aClass2_Sub2_Sub18_1, local12.framegroup, local12.frameDelay[arg0.anInt10489], arg2.aClass257_8.anInt6448);
 		}
 	}
 

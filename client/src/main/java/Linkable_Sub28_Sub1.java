@@ -76,7 +76,7 @@ public final class Linkable_Sub28_Sub1 extends Linkable_Sub28 {
 				}
 				this.aDSPState1 = new DSPState(this.aVorbisInfo1);
 				this.aVorbisBlock1 = new VorbisBlock(this.aDSPState1);
-				this.aResampler1 = new Resampler(this.aVorbisInfo1.rate, Static686.anInt8944);
+				this.aResampler1 = new Resampler(this.aVorbisInfo1.rate, Static686.sampleRate);
 				this.aClass2_Sub6_Sub5_1 = new Linkable_Sub6_Sub5(this.aVorbisInfo1.channels);
 			}
 			return;
@@ -108,7 +108,7 @@ public final class Linkable_Sub28_Sub1 extends Linkable_Sub28 {
 				local13 = this.aDouble14;
 			}
 		}
-		return (double) -(256.0F / (float) Static686.anInt8944) + local13;
+		return (double) -(256.0F / (float) Static686.sampleRate) + local13;
 	}
 
 	@OriginalMember(owner = "client!ik", name = "h", descriptor = "(I)I")

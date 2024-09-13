@@ -41,7 +41,7 @@ public final class Static319 {
 			Static110.anInt2186 = Static709.anInt10667 * 512 + 256;
 			Static359.anInt5801 = Static102.method2025(Static394.anInt6176, -29754, Static110.anInt2186, Static170.anInt2864) - Static363.anInt6934;
 		}
-		Static511.anInt7645 = 2;
+		Static511.cameraType = 2;
 		Static693.anInt10383 = -1;
 		Static692.anInt10376 = -1;
 	}

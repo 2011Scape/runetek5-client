@@ -28,8 +28,8 @@ public final class Static580 {
 	}
 
 	@OriginalMember(owner = "client!sea", name = "a", descriptor = "(II)V")
-	public static void method7651(@OriginalArg(0) int arg0) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(10, (long) arg0);
-		local9.method205();
+	public static void setComponentModelOffsetClient(@OriginalArg(0) int arg0) {
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(10, (long) arg0);
+		local9.pushClient();
 	}
 }

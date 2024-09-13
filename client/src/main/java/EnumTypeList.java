@@ -22,7 +22,7 @@ public final class EnumTypeList {
 	}
 
 	@OriginalMember(owner = "client!vka", name = "a", descriptor = "(II)Lclient!bt;")
-	public EnumType method8925(@OriginalArg(0) int arg0) {
+	public EnumType get(@OriginalArg(0) int arg0) {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable223;
 		@Pc(16) EnumType local16;
 		synchronized (this.aSoftLruHashTable223) {

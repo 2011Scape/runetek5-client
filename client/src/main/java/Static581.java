@@ -12,5 +12,5 @@ public final class Static581 {
 	public static final int[] anIntArray687 = new int[1];
 
 	@OriginalMember(owner = "client!sf", name = "h", descriptor = "[I")
-	public static final int[] anIntArray688 = new int[25];
+	public static final int[] boostedLevels = new int[25];
 }

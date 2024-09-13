@@ -10,7 +10,7 @@ public final class Static291 {
 	public static final HashTable aHashTable24 = new HashTable(512);
 
 	@OriginalMember(owner = "client!je", name = "b", descriptor = "(II)I")
-	public static int method4226(@OriginalArg(1) int arg0) {
+	public static int getGroupId(@OriginalArg(1) int arg0) {
 		return arg0 >>> 7;
 	}
 }

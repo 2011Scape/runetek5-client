@@ -81,10 +81,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		}
 		Static307.shutDown();
 		Static501.unloadLibraries();
-		if (Static434.aCanvas7 != null) {
+		if (Static434.canvas != null) {
 			try {
-				Static434.aCanvas7.removeFocusListener(this);
-				Static434.aCanvas7.getParent().remove(Static434.aCanvas7);
+				Static434.canvas.removeFocusListener(this);
+				Static434.canvas.getParent().remove(Static434.canvas);
 			} catch (@Pc(68) Exception e) {
 				e.printStackTrace();
 			}
@@ -138,7 +138,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			@Pc(54) Insets local54 = Static353.aFrame10.getInsets();
 			Static353.aFrame10.setSize(Static52.anInt1059 + local54.left + local54.right, local54.bottom + local54.top + Static54.anInt1084);
 			Static284.aSignlink4 = Static446.aSignlink6 = new Signlink(arg0, arg1, 37, true);
-			@Pc(88) PrivilegedRequest local88 = Static446.aSignlink6.method8991(this, 1);
+			@Pc(88) PrivilegedRequest local88 = Static446.aSignlink6.startThread(this, 1);
 			while (local88.state == 0) {
 				Static638.sleep(10L);
 			}
@@ -207,13 +207,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		if (Static169.anInt2850++ > 50) {
 			Static664.aBoolean759 = true;
 			Static169.anInt2850 -= 50;
-			Static434.aCanvas7.setSize(Static680.anInt10289, Static380.anInt5979);
-			Static434.aCanvas7.setVisible(true);
+			Static434.canvas.setSize(Static680.anInt10289, Static380.anInt5979);
+			Static434.canvas.setVisible(true);
 			if (Static353.aFrame10 != null && Static316.aFrame8 == null) {
 				@Pc(86) Insets local86 = Static353.aFrame10.getInsets();
-				Static434.aCanvas7.setLocation(local86.left + Static134.anInt10329, Static241.anInt3962 + local86.top);
+				Static434.canvas.setLocation(local86.left + Static134.anInt10329, Static241.anInt3962 + local86.top);
 			} else {
-				Static434.aCanvas7.setLocation(Static134.anInt10329, Static241.anInt3962);
+				Static434.canvas.setLocation(Static134.anInt10329, Static241.anInt3962);
 			}
 		}
 		this.method1650();
@@ -238,7 +238,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				Static241.anInt3962 = 0;
 				Static149.aGameShell = this;
 				Static284.aSignlink4 = Static446.aSignlink6 = new Signlink(arg1, arg2, 37, Static166.anApplet1 != null);
-				@Pc(80) PrivilegedRequest local80 = Static446.aSignlink6.method8991(this, 1);
+				@Pc(80) PrivilegedRequest local80 = Static446.aSignlink6.startThread(this, 1);
 				while (local80.state == 0) {
 					Static638.sleep(10L);
 				}
@@ -310,7 +310,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					this.method1646();
 				}
 				this.method1639();
-				Static61.method1312(Static446.aSignlink6, Static434.aCanvas7);
+				Static61.method1312(Static446.aSignlink6, Static434.canvas);
 			}
 		} catch (@Pc(254) ThreadDeath local254) {
 			throw local254;
@@ -372,10 +372,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
 	@OriginalMember(owner = "client!kh", name = "i", descriptor = "(I)V")
 	public synchronized void method1641() {
-		if (Static434.aCanvas7 != null) {
-			Static434.aCanvas7.removeFocusListener(this);
-			Static434.aCanvas7.getParent().setBackground(Color.black);
-			Static434.aCanvas7.getParent().remove(Static434.aCanvas7);
+		if (Static434.canvas != null) {
+			Static434.canvas.removeFocusListener(this);
+			Static434.canvas.getParent().setBackground(Color.black);
+			Static434.canvas.getParent().remove(Static434.canvas);
 		}
 		@Pc(30) Container local30;
 		if (Static316.aFrame8 != null) {
@@ -388,18 +388,18 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			local30 = Static166.anApplet1;
 		}
 		local30.setLayout((LayoutManager) null);
-		Static434.aCanvas7 = new GameCanvas(this);
-		local30.add(Static434.aCanvas7);
-		Static434.aCanvas7.setSize(Static680.anInt10289, Static380.anInt5979);
-		Static434.aCanvas7.setVisible(true);
+		Static434.canvas = new GameCanvas(this);
+		local30.add(Static434.canvas);
+		Static434.canvas.setSize(Static680.anInt10289, Static380.anInt5979);
+		Static434.canvas.setVisible(true);
 		if (local30 == Static353.aFrame10) {
 			@Pc(74) Insets local74 = Static353.aFrame10.getInsets();
-			Static434.aCanvas7.setLocation(Static134.anInt10329 + local74.left, local74.top + Static241.anInt3962);
+			Static434.canvas.setLocation(Static134.anInt10329 + local74.left, local74.top + Static241.anInt3962);
 		} else {
-			Static434.aCanvas7.setLocation(Static134.anInt10329, Static241.anInt3962);
+			Static434.canvas.setLocation(Static134.anInt10329, Static241.anInt3962);
 		}
-		Static434.aCanvas7.addFocusListener(this);
-		Static434.aCanvas7.requestFocus();
+		Static434.canvas.addFocusListener(this);
+		Static434.canvas.requestFocus();
 		Static91.aBoolean750 = true;
 		Static206.aBoolean268 = true;
 		Static664.aBoolean759 = true;

@@ -8,7 +8,7 @@ public final class Static726 {
 	public static Class280 aClass280_7;
 
 	@OriginalMember(owner = "client!za", name = "a", descriptor = "(Ljava/lang/String;Z)V")
-	public static void method9463(@OriginalArg(0) String arg0) {
+	public static void remove(@OriginalArg(0) String arg0) {
 		if (arg0 == null) {
 			return;
 		}
@@ -16,12 +16,12 @@ public final class Static726 {
 		if (local11 == null) {
 			return;
 		}
-		for (@Pc(25) int local25 = 0; local25 < Static436.anInt3849; local25++) {
+		for (@Pc(25) int local25 = 0; local25 < Static436.size; local25++) {
 			@Pc(30) String local30 = Static632.aStringArray44[local25];
 			@Pc(34) String local34 = Static390.method5492(local30);
 			if (Static585.method7682(arg0, local34, local30, local11)) {
-				Static436.anInt3849--;
-				for (@Pc(47) int local47 = local25; local47 < Static436.anInt3849; local47++) {
+				Static436.size--;
+				for (@Pc(47) int local47 = local25; local47 < Static436.size; local47++) {
 					Static632.aStringArray44[local47] = Static632.aStringArray44[local47 + 1];
 					Static446.aStringArray35[local47] = Static446.aStringArray35[local47 + 1];
 					Static10.aStringArray1[local47] = Static10.aStringArray1[local47 + 1];

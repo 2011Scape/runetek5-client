@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static249 {
 
 	@OriginalMember(owner = "client!hma", name = "B", descriptor = "I")
-	public static int anInt4008 = 0;
+	public static int rebootTimer = 0;
 
 	@OriginalMember(owner = "client!hma", name = "k", descriptor = "I")
 	public static int anInt4018 = 0;
@@ -87,7 +87,7 @@ public final class Static249 {
 			return false;
 		} else {
 			Static400.aClass2_Sub34_28.method5104(arg0 ? 1 : 0, Static400.aClass2_Sub34_28.aPreference_Sub20_1);
-			Static666.method8693(1);
+			Static666.write(1);
 			return true;
 		}
 	}

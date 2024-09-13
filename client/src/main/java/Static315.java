@@ -81,16 +81,16 @@ public final class Static315 {
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(IILclient!cka;)V")
 	public static void method4577(@OriginalArg(0) int arg0, @OriginalArg(2) SeqType arg1) {
-		if (Static33.anInt779 >= 50 || (arg1 == null || arg1.anIntArrayArray38 == null || arg1.anIntArrayArray38.length <= arg0 || arg1.anIntArrayArray38[arg0] == null)) {
+		if (Static33.anInt779 >= 50 || (arg1 == null || arg1.soundeffect == null || arg1.soundeffect.length <= arg0 || arg1.soundeffect[arg0] == null)) {
 			return;
 		}
-		@Pc(42) int local42 = arg1.anIntArrayArray38[arg0][0];
+		@Pc(42) int local42 = arg1.soundeffect[arg0][0];
 		@Pc(46) int local46 = local42 >> 8;
 		@Pc(63) int local63;
-		if (arg1.anIntArrayArray38[arg0].length > 1) {
-			local63 = (int) (Math.random() * (double) arg1.anIntArrayArray38[arg0].length);
+		if (arg1.soundeffect[arg0].length > 1) {
+			local63 = (int) (Math.random() * (double) arg1.soundeffect[arg0].length);
 			if (local63 > 0) {
-				local46 = arg1.anIntArrayArray38[arg0][local63];
+				local46 = arg1.soundeffect[arg0][local63];
 			}
 		}
 		@Pc(81) int local81 = local42 >> 5 & 0x7;
@@ -101,7 +101,7 @@ public final class Static315 {
 		if (arg1.aBoolean141) {
 			Static186.method2818(local46, local81, local63, 0, 255, false);
 		} else {
-			Static161.method2586(local63, 0, local46, local81, 255);
+			Static161.play(local63, 0, local46, local81, 255);
 		}
 	}
 }

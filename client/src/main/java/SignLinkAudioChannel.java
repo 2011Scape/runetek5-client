@@ -17,7 +17,7 @@ public final class SignLinkAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
 	@Override
-	public void method3588(@OriginalArg(0) int arg0) throws Exception {
+	public void open(@OriginalArg(0) int arg0) throws Exception {
 		if (arg0 > 32768) {
 			throw new IllegalArgumentException();
 		}
@@ -38,14 +38,14 @@ public final class SignLinkAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(Ljava/awt/Component;)V")
 	@Override
-	public void method3593(@OriginalArg(0) Component arg0) throws Exception {
-		Static253.anInterface7_1.method4096(Static686.anInt8944, Static316.aBoolean644, arg0);
+	public void init(@OriginalArg(0) Component arg0) throws Exception {
+		Static253.anInterface7_1.method4096(Static686.sampleRate, Static316.stereo, arg0);
 	}
 
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "()V")
 	@Override
 	protected void method3590() {
-		Static253.anInterface7_1.method4098(this.anInt4104, super.anIntArray315);
+		Static253.anInterface7_1.method4098(this.anInt4104, super.samples);
 	}
 
 	@OriginalMember(owner = "client!hq", name = "c", descriptor = "()V")

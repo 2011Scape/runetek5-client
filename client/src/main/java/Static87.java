@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static87 {
 
 	@OriginalMember(owner = "client!cn", name = "i", descriptor = "[Lclient!mga;")
-	public static Class241[] aClass241Array1;
+	public static Class241[] members;
 
 	@OriginalMember(owner = "client!cn", name = "c", descriptor = "I")
 	public static int anInt1810;

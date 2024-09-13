@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static698 {
 
 	@OriginalMember(owner = "client!wba", name = "f", descriptor = "[I")
-	public static final int[] anIntArray831 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
+	public static final int[] MALE_FEATURES = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
 
 	@OriginalMember(owner = "client!wba", name = "d", descriptor = "I")
 	public static int anInt10510 = -1;
@@ -76,7 +76,7 @@ public final class Static698 {
 	}
 
 	@OriginalMember(owner = "client!wba", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method9124(@OriginalArg(1) String arg0) {
+	public static void join(@OriginalArg(1) String arg0) {
 		if (arg0.equals("")) {
 			return;
 		}

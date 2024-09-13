@@ -14,10 +14,10 @@ public final class Static471 {
 	public static void method6408(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1) {
 		@Pc(11) int local11 = arg1 << 3;
 		@Pc(15) int local15 = arg0 << 3;
-		if (Static511.anInt7645 == 2) {
+		if (Static511.cameraType == 2) {
 			Static598.anInt8832 = local11;
 			Static81.anInt1644 = 0;
-			Static323.anInt5119 = local15;
+			Static323.cameraYaw = local15;
 		}
 		Static479.aFloat123 = (float) local11;
 		Static171.aFloat64 = (float) local15;

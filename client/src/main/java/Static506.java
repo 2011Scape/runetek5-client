@@ -37,13 +37,13 @@ public final class Static506 {
 			@Pc(40) int local40 = 255 - local35;
 			@Pc(45) float local45 = (float) local35 / 255.0F;
 			@Pc(50) float local50 = 1.0F - local45;
-			Static448.anInt6801 = (local40 * (Static346.aClass367_1.anInt9537 & 0xFF00FF) + (Static386.anInt6062 & 0xFF00FF) * local35 & 0xFF00FF00) + (local35 * (Static386.anInt6062 & 0xFF00) + (local40 * (Static346.aClass367_1.anInt9537 & 0xFF00)) & 0xFF0000) >>> 8;
-			Static318.aFloat210 = Static620.aFloat197 + (Static346.aClass367_1.aFloat204 - Static620.aFloat197) * local50;
-			Static688.aFloat216 = local50 * (Static346.aClass367_1.aFloat205 - Static659.aFloat213) + Static659.aFloat213;
-			Static171.anInt2882 = Static679.anInt10273 * local35 + Static346.aClass367_1.anInt9539 * local40 >> 8;
-			Static683.aFloat215 = (Static346.aClass367_1.aFloat202 - Static671.aFloat214) * local50 + Static671.aFloat214;
+			Static448.anInt6801 = (local40 * (Static346.aClass367_1.screenColorRgb & 0xFF00FF) + (Static386.anInt6062 & 0xFF00FF) * local35 & 0xFF00FF00) + (local35 * (Static386.anInt6062 & 0xFF00) + (local40 * (Static346.aClass367_1.screenColorRgb & 0xFF00)) & 0xFF0000) >>> 8;
+			Static318.aFloat210 = Static620.aFloat197 + (Static346.aClass367_1.lightModelAmbient - Static620.aFloat197) * local50;
+			Static688.aFloat216 = local50 * (Static346.aClass367_1.light0Diffuse - Static659.aFloat213) + Static659.aFloat213;
+			Static171.anInt2882 = Static679.anInt10273 * local35 + Static346.aClass367_1.fogDepth * local40 >> 8;
+			Static683.aFloat215 = (Static346.aClass367_1.light1Diffuse - Static671.aFloat214) * local50 + Static671.aFloat214;
 			Static151.aFloat218 = Static600.aFloat179 + (Static346.aClass367_1.aFloat203 - Static600.aFloat179) * local50;
-			Static251.anInt4037 = (local40 * (Static346.aClass367_1.anInt9538 & 0xFF00FF) + (Static360.anInt5820 & 0xFF00FF) * local35 & 0xFF00FF00) + (local35 * (Static360.anInt5820 & 0xFF00) + (Static346.aClass367_1.anInt9538 & 0xFF00) * local40 & 0xFF0000) >>> 8;
+			Static251.anInt4037 = (local40 * (Static346.aClass367_1.fogColorRgb & 0xFF00FF) + (Static360.anInt5820 & 0xFF00FF) * local35 & 0xFF00FF00) + (local35 * (Static360.anInt5820 & 0xFF00) + (Static346.aClass367_1.fogColorRgb & 0xFF00) * local40 & 0xFF0000) >>> 8;
 			Static133.aFloat63 = Static538.aFloat174 + (Static346.aClass367_1.aFloat201 - Static538.aFloat174) * local50;
 			Static57.aFloat29 = local50 * (Static346.aClass367_1.aFloat200 - Static203.aFloat69) + Static203.aFloat69;
 			if (Static74.aClass67_3 != Static346.aClass367_1.aClass67_10) {
@@ -63,15 +63,15 @@ public final class Static506 {
 				}
 			}
 		} else {
-			Static448.anInt6801 = Static346.aClass367_1.anInt9537;
+			Static448.anInt6801 = Static346.aClass367_1.screenColorRgb;
 			Static151.aFloat218 = Static346.aClass367_1.aFloat203;
-			Static318.aFloat210 = Static346.aClass367_1.aFloat204;
+			Static318.aFloat210 = Static346.aClass367_1.lightModelAmbient;
 			Static133.aFloat63 = Static346.aClass367_1.aFloat201;
-			Static683.aFloat215 = Static346.aClass367_1.aFloat202;
+			Static683.aFloat215 = Static346.aClass367_1.light1Diffuse;
 			Static425.aClass67_6 = Static346.aClass367_1.aClass67_10;
-			Static171.anInt2882 = Static346.aClass367_1.anInt9539;
-			Static251.anInt4037 = Static346.aClass367_1.anInt9538;
-			Static688.aFloat216 = Static346.aClass367_1.aFloat205;
+			Static171.anInt2882 = Static346.aClass367_1.fogDepth;
+			Static251.anInt4037 = Static346.aClass367_1.fogColorRgb;
+			Static688.aFloat216 = Static346.aClass367_1.light0Diffuse;
 			Static57.aFloat29 = Static346.aClass367_1.aFloat200;
 			if (Static456.aClass148_3 != null) {
 				Static456.aClass148_3.method3169();

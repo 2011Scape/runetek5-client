@@ -8,7 +8,7 @@ public final class Static419 {
 	public static int[] anIntArray500;
 
 	@OriginalMember(owner = "client!ne", name = "u", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray33 = new String[200];
+	public static final String[] worldNames = new String[200];
 
 	@OriginalMember(owner = "client!ne", name = "p", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt77 = new ClientProt(42, 15);

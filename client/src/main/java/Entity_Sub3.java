@@ -50,20 +50,20 @@ public final class Entity_Sub3 extends Entity {
 		@Pc(9) Class328[] local9 = arg1.method7482();
 		@Pc(19) Class249[] local19 = arg1.method7480();
 		if ((this.aClass8_Sub5_5 == null || this.aClass8_Sub5_5.aBoolean324) && (local9 != null || local19 != null)) {
-			this.aClass8_Sub5_5 = Static257.method3654(Static333.anInt5455, true);
+			this.aClass8_Sub5_5 = Static257.method3654(Static333.loop, true);
 		}
 		if (this.aClass8_Sub5_5 != null) {
-			this.aClass8_Sub5_5.method3643(arg2, (long) Static333.anInt5455, local9, local19);
-			this.aClass8_Sub5_5.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
+			this.aClass8_Sub5_5.method3643(arg2, (long) Static333.loop, local9, local19);
+			this.aClass8_Sub5_5.method3658(super.plane, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}
 
 	@OriginalMember(owner = "client!pja", name = "a", descriptor = "(IILclient!ha;I)Lclient!ka;")
 	private Model method6594(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2) {
 		@Pc(8) SpotAnimType local8 = Static23.aSpotAnimTypeList1.method2694(arg0);
-		@Pc(22) Class178 local22 = Static706.aClass178Array3[super.aByte144];
+		@Pc(22) Class178 local22 = Static706.aClass178Array3[super.plane];
 		@Pc(36) Class178 local36 = super.aByte143 < 3 ? Static706.aClass178Array3[super.aByte143 + 1] : null;
-		return this.aClass152_8 == null || this.aClass152_8.method9102() ? local8.method5249((byte) 2, true, super.anInt10694, (Class152) null, local36, super.anInt10690, local22, arg2, super.anInt10691, arg1) : local8.method5249((byte) 2, true, super.anInt10694, this.aClass152_8, local36, super.anInt10690, local22, arg2, super.anInt10691, arg1);
+		return this.aClass152_8 == null || this.aClass152_8.method9102() ? local8.method5249((byte) 2, true, super.zFine, (Class152) null, local36, super.xFine, local22, arg2, super.anInt10691, arg1) : local8.method5249((byte) 2, true, super.zFine, this.aClass152_8, local36, super.xFine, local22, arg2, super.anInt10691, arg1);
 	}
 
 	@OriginalMember(owner = "client!pja", name = "finalize", descriptor = "()V")
@@ -83,7 +83,7 @@ public final class Entity_Sub3 extends Entity {
 		@Pc(20) Model local20 = this.method6594(this.anInt7402, arg0, 0);
 		if (local20 != null) {
 			@Pc(25) Class73 local25 = arg0.method7985();
-			local25.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+			local25.method7125(super.xFine, super.anInt10691, super.zFine);
 			this.method6593(local25, local20, arg0);
 		}
 	}
@@ -186,7 +186,7 @@ public final class Entity_Sub3 extends Entity {
 			local24.a(this.anInt7400 * 2048);
 		}
 		@Pc(43) Class73 local43 = arg0.method7985();
-		local43.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+		local43.method7125(super.xFine, super.anInt10691, super.zFine);
 		this.method6593(local43, local24, arg0);
 		@Pc(62) ParticleNode_Sub7 local62 = Static642.method8441(false, 1);
 		if (Static504.aBoolean579) {

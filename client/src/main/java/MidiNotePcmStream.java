@@ -43,7 +43,7 @@ public final class MidiNotePcmStream extends PcmStream {
 	@OriginalMember(owner = "client!uka", name = "a", descriptor = "(Lclient!dha;II)V")
 	private void method8530(@OriginalArg(0) Linkable_Sub16 arg0, @OriginalArg(2) int arg1) {
 		if ((this.aClass2_Sub6_Sub1_4.anIntArray56[arg0.anInt2187] & 0x4) != 0 && arg0.anInt2202 < 0) {
-			@Pc(28) int local28 = this.aClass2_Sub6_Sub1_4.anIntArray57[arg0.anInt2187] / Static686.anInt8944;
+			@Pc(28) int local28 = this.aClass2_Sub6_Sub1_4.anIntArray57[arg0.anInt2187] / Static686.sampleRate;
 			@Pc(37) int local37 = (local28 + 1048575 - arg0.anInt2183) / local28;
 			arg0.anInt2183 = arg0.anInt2183 + local28 * arg1 & 0xFFFFF;
 			if (local37 <= arg1) {
@@ -97,7 +97,7 @@ public final class MidiNotePcmStream extends PcmStream {
 	@OriginalMember(owner = "client!uka", name = "a", descriptor = "([ILclient!dha;IIII)V")
 	private void method8535(@OriginalArg(0) int[] arg0, @OriginalArg(1) Linkable_Sub16 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if ((this.aClass2_Sub6_Sub1_4.anIntArray56[arg1.anInt2187] & 0x4) != 0 && arg1.anInt2202 < 0) {
-			@Pc(34) int local34 = this.aClass2_Sub6_Sub1_4.anIntArray57[arg1.anInt2187] / Static686.anInt8944;
+			@Pc(34) int local34 = this.aClass2_Sub6_Sub1_4.anIntArray57[arg1.anInt2187] / Static686.sampleRate;
 			while (true) {
 				@Pc(44) int local44 = (local34 + 1048575 - arg1.anInt2183) / local34;
 				if (local44 > arg3) {
@@ -108,7 +108,7 @@ public final class MidiNotePcmStream extends PcmStream {
 				arg1.anInt2183 += local34 * local44 - 1048576;
 				arg3 -= local44;
 				arg4 += local44;
-				@Pc(75) int local75 = Static686.anInt8944 / 100;
+				@Pc(75) int local75 = Static686.sampleRate / 100;
 				@Pc(79) int local79 = 262144 / local34;
 				if (local79 < local75) {
 					local75 = local79;

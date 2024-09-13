@@ -73,7 +73,7 @@ public final class TextureOpCurve extends TextureOp {
 			}
 		}
 		if (arg0 <= 107) {
-			Static706.anInt10633 = 6;
+			Static706.size = 6;
 		}
 		return local11;
 	}

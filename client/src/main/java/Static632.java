@@ -83,14 +83,14 @@ public final class Static632 {
 		if (local187 > 0 && local172 > 0) {
 			local182 = (local172 - local187) * local33 / local172;
 		}
-		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 71);
+		Static556.self.method9302((byte) 71);
 		@Pc(214) int local214 = 8192;
 		@Pc(225) int local225 = (arg1.anInt9362 + arg1.anInt9357) / 2 - arg3;
 		@Pc(236) int local236 = (arg1.anInt9349 + arg1.anInt9352) / 2 - arg4;
 		@Pc(264) int local264;
 		@Pc(275) int local275;
 		if (local225 != 0 || local236 != 0) {
-			local264 = -Static323.anInt5119 - (int) (Math.atan2((double) local225, (double) local236) * 2607.5945876176133D) - 4096 & 0x3FFF;
+			local264 = -Static323.cameraYaw - (int) (Math.atan2((double) local225, (double) local236) * 2607.5945876176133D) - 4096 & 0x3FFF;
 			if (local264 > 8192) {
 				local264 = 16384 - local264;
 			}

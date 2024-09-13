@@ -12,8 +12,8 @@ public final class Static611 {
 
 	@OriginalMember(owner = "client!tfa", name = "a", descriptor = "(II)V")
 	public static void method8227(@OriginalArg(1) int arg0) {
-		@Pc(23) SecondaryLinkable_Sub2 local23 = Static440.method5963(3, (long) arg0);
-		local23.method205();
+		@Pc(23) SecondaryLinkable_Sub2 local23 = Static440.create(3, (long) arg0);
+		local23.pushClient();
 	}
 
 	@OriginalMember(owner = "client!tfa", name = "c", descriptor = "(ZI)I")
@@ -36,7 +36,7 @@ public final class Static611 {
 			Static400.aClass2_Sub34_28.method5104(2, Static400.aClass2_Sub34_28.aPreference_Sub29_2);
 			Static32.method880(2, false);
 		}
-		Static666.method8693(1);
+		Static666.write(1);
 		return local8;
 	}
 

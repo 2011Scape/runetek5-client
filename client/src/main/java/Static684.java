@@ -30,14 +30,14 @@ public final class Static684 {
 		}
 		Static81.method1586(arg2);
 		Static694.method9028(Static163.aClass19_17, LocalizedText.LOADING_PLEASE_WAIT.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
-		@Pc(74) int local74 = Static691.anInt10367;
-		Static691.anInt10367 = (Static62.anInt1465 - (Static720.anInt10859 >> 4)) * 8;
-		@Pc(85) int local85 = Static116.anInt2270;
-		Static116.anInt2270 = (Static525.anInt8907 - (Static501.anInt7568 >> 4)) * 8;
+		@Pc(74) int local74 = Static691.originX;
+		Static691.originX = (Static62.anInt1465 - (Static720.anInt10859 >> 4)) * 8;
+		@Pc(85) int local85 = Static116.originZ;
+		Static116.originZ = (Static525.anInt8907 - (Static501.anInt7568 >> 4)) * 8;
 		Static162.aClass2_Sub2_Sub13_2 = Static30.method5078(Static62.anInt1465 * 8, Static525.anInt8907 * 8);
 		Static42.aClass255_2 = null;
-		@Pc(109) int local109 = Static691.anInt10367 - local74;
-		@Pc(113) int local113 = Static116.anInt2270 - local85;
+		@Pc(109) int local109 = Static691.originX - local74;
+		@Pc(113) int local113 = Static116.originZ - local85;
 		@Pc(134) int local134;
 		@Pc(136) int local136;
 		@Pc(193) int local193;
@@ -51,8 +51,8 @@ public final class Static684 {
 						local318.anIntArray879[local136] -= local109;
 						local318.anIntArray878[local136] -= local113;
 					}
-					local318.anInt10690 -= local109 * 512;
-					local318.anInt10694 -= local113 * 512;
+					local318.xFine -= local109 * 512;
+					local318.zFine -= local113 * 512;
 				}
 			}
 		} else {
@@ -64,9 +64,9 @@ public final class Static684 {
 				@Pc(141) Linkable_Sub45 local141 = Static592.aClass2_Sub45Array1[local136];
 				if (local141 != null) {
 					@Pc(146) Npc local146 = local141.aClass8_Sub2_Sub1_Sub2_Sub2_2;
-					local146.anInt10694 -= local113 * 512;
-					local146.anInt10690 -= local109 * 512;
-					if (local146.anInt10690 >= 0 && local128 >= local146.anInt10690 && local146.anInt10694 >= 0 && local134 >= local146.anInt10694) {
+					local146.zFine -= local113 * 512;
+					local146.xFine -= local109 * 512;
+					if (local146.xFine >= 0 && local128 >= local146.xFine && local146.zFine >= 0 && local134 >= local146.zFine) {
 						@Pc(191) boolean local191 = true;
 						for (local193 = 0; local193 < local146.anIntArray879.length; local193++) {
 							local146.anIntArray879[local193] -= local109;
@@ -101,8 +101,8 @@ public final class Static684 {
 					local389.anIntArray879[local134] -= local109;
 					local389.anIntArray878[local134] -= local113;
 				}
-				local389.anInt10694 -= local113 * 512;
-				local389.anInt10690 -= local109 * 512;
+				local389.zFine -= local113 * 512;
+				local389.xFine -= local109 * 512;
 			}
 		}
 		@Pc(446) Class254[] local446 = Static527.aClass254Array1;
@@ -131,9 +131,9 @@ public final class Static684 {
 		if (Static117.anInt2282 != 4) {
 			for (@Pc(608) Linkable_Sub17 local608 = (Linkable_Sub17) Static497.aHashTable35.head(); local608 != null; local608 = (Linkable_Sub17) Static497.aHashTable35.next()) {
 				@Pc(615) int local615 = (int) (local608.id & 0x3FFFL);
-				@Pc(619) int local619 = local615 - Static691.anInt10367;
+				@Pc(619) int local619 = local615 - Static691.originX;
 				local193 = (int) (local608.id >> 14 & 0x3FFFL);
-				@Pc(632) int local632 = local193 - Static116.anInt2270;
+				@Pc(632) int local632 = local193 - Static116.originZ;
 				if (local619 < 0 || local632 < 0 || local619 >= Static720.anInt10859 || local632 >= Static501.anInt7568) {
 					local608.unlink();
 				}
@@ -154,7 +154,7 @@ public final class Static684 {
 			if (Math.abs(local109) > Static720.anInt10859 || Math.abs(local113) > Static501.anInt7568) {
 				Static218.method3187();
 			}
-		} else if (Static511.anInt7645 == 4) {
+		} else if (Static511.cameraType == 4) {
 			Static433.anInt6262 -= local109 * 512;
 			Static38.anInt920 -= local113 * 512;
 			Static249.anInt4018 -= local113 * 512;
@@ -162,7 +162,7 @@ public final class Static684 {
 		} else {
 			Static693.anInt10383 = -1;
 			Static692.anInt10376 = -1;
-			Static511.anInt7645 = 1;
+			Static511.cameraType = 1;
 		}
 		Static533.method7119();
 		Static244.method3512();

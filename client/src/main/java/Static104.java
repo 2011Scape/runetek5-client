@@ -30,15 +30,15 @@ public final class Static104 {
 		Connection.lobbyConnection.queue(local6);
 		Static580.anInt8621 = -3;
 		Static654.anInt9739 = 0;
-		Static6.anInt95 = 1;
+		Static6.step = 1;
 		Static720.anInt10865 = 0;
 	}
 
 	@OriginalMember(owner = "client!de", name = "b", descriptor = "(B)V")
 	public static void method2033() {
 		Static425.aClass19_13.xa(((float) Static400.aClass2_Sub34_28.aPreference_Sub22_1.method6769() * 0.1F + 0.7F) * 1.1523438F);
-		Static425.aClass19_13.ZA(Static68.anInt4096, 0.69921875F, 1.2F, -200.0F, -240.0F, -200.0F);
-		Static425.aClass19_13.L(Static563.anInt8460, -1, 0);
+		Static425.aClass19_13.ZA(Static68.defaultLightColorRgb, 0.69921875F, 1.2F, -200.0F, -240.0F, -200.0F);
+		Static425.aClass19_13.L(Static563.defaulFogColorRgb, -1, 0);
 		Static425.aClass19_13.method7973(Static226.aClass67_9);
 	}
 }

@@ -88,7 +88,7 @@ public final class ObjType {
 	public int anInt10092 = -1;
 
 	@OriginalMember(owner = "client!vfa", name = "F", descriptor = "I")
-	public int anInt10098 = 2000;
+	public int zoom2d = 2000;
 
 	@OriginalMember(owner = "client!vfa", name = "A", descriptor = "I")
 	public int anInt10103 = -1;
@@ -124,7 +124,7 @@ public final class ObjType {
 	public int anInt10129 = -1;
 
 	@OriginalMember(owner = "client!vfa", name = "s", descriptor = "I")
-	public int anInt10096 = 0;
+	public int yAngle2D = 0;
 
 	@OriginalMember(owner = "client!vfa", name = "mb", descriptor = "I")
 	private int anInt10118 = 0;
@@ -178,7 +178,7 @@ public final class ObjType {
 	public int anInt10144 = -1;
 
 	@OriginalMember(owner = "client!vfa", name = "qb", descriptor = "I")
-	public int anInt10107 = 0;
+	public int xAngle2D = 0;
 
 	@OriginalMember(owner = "client!vfa", name = "Bb", descriptor = "I")
 	public int anInt10143 = -1;
@@ -242,11 +242,11 @@ public final class ObjType {
 		this.anInt10119 = arg0.anInt10119;
 		this.aByteArray107 = arg0.aByteArray107;
 		this.anInt10116 = arg0.anInt10116;
-		this.anInt10107 = arg1.anInt10107;
+		this.xAngle2D = arg1.xAngle2D;
 		this.anInt10104 = arg0.anInt10104;
 		this.anInt10120 = arg1.anInt10120;
 		this.aStringArray45 = new String[5];
-		this.anInt10096 = arg1.anInt10096;
+		this.yAngle2D = arg1.yAngle2D;
 		this.anInt10099 = arg1.anInt10099;
 		this.aShortArray134 = arg0.aShortArray134;
 		this.anInt10113 = arg0.anInt10113;
@@ -257,7 +257,7 @@ public final class ObjType {
 		this.anInt10126 = arg1.anInt10126;
 		this.anInt10136 = arg0.anInt10136;
 		this.anInt10092 = arg0.anInt10092;
-		this.anInt10098 = arg1.anInt10098;
+		this.zoom2d = arg1.zoom2d;
 		this.aString118 = arg0.aString118;
 		this.anInt10135 = arg0.anInt10135;
 		this.anInt10084 = arg0.anInt10084;
@@ -277,14 +277,14 @@ public final class ObjType {
 		this.anInt10142 = arg1.anInt10142;
 		this.aString118 = arg1.aString118;
 		this.aShortArray137 = arg0.aShortArray137;
-		this.anInt10096 = arg0.anInt10096;
+		this.yAngle2D = arg0.yAngle2D;
 		this.anInt10094 = arg0.anInt10094;
 		this.aShortArray134 = arg0.aShortArray134;
 		this.anInt10120 = arg0.anInt10120;
-		this.anInt10098 = arg0.anInt10098;
+		this.zoom2d = arg0.zoom2d;
 		this.aByteArray107 = arg0.aByteArray107;
 		this.anInt10115 = 1;
-		this.anInt10107 = arg0.anInt10107;
+		this.xAngle2D = arg0.xAngle2D;
 		this.anInt10126 = arg0.anInt10126;
 		this.aBoolean770 = arg1.aBoolean770;
 		this.aShortArray136 = arg0.aShortArray136;
@@ -334,11 +334,11 @@ public final class ObjType {
 		} else if (arg1 == 2) {
 			this.aString118 = arg0.gjstr();
 		} else if (arg1 == 4) {
-			this.anInt10098 = arg0.g2();
+			this.zoom2d = arg0.g2();
 		} else if (arg1 == 5) {
-			this.anInt10107 = arg0.g2();
+			this.xAngle2D = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt10096 = arg0.g2();
+			this.yAngle2D = arg0.g2();
 		} else if (arg1 == 7) {
 			this.anInt10126 = arg0.g2();
 			if (this.anInt10126 > 32767) {
@@ -557,11 +557,11 @@ public final class ObjType {
 		}
 		@Pc(363) int local363;
 		if (arg4) {
-			local363 = (int) ((double) this.anInt10098 * 1.5D) << 2;
+			local363 = (int) ((double) this.zoom2d * 1.5D) << 2;
 		} else if (arg8 == 2) {
-			local363 = (int) ((double) this.anInt10098 * 1.04D) << 2;
+			local363 = (int) ((double) this.zoom2d * 1.04D) << 2;
 		} else {
-			local363 = this.anInt10098 << 2;
+			local363 = this.zoom2d << 2;
 		}
 		arg6.DA(16, 16, 512, 512);
 		@Pc(395) Class73 local395 = arg6.method7953();
@@ -571,9 +571,9 @@ public final class ObjType {
 		arg6.ZA(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
 		@Pc(414) Class73 local414 = arg6.method7985();
 		local414.method7132(-this.anInt10094 << 3);
-		local414.method7127(this.anInt10096 << 3);
-		local414.method7134(this.anInt10126 << 2, (Model.anIntArray741[this.anInt10107 << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (Model.anIntArray740[this.anInt10107 << 3] * local363 >> 14) - -(this.anInt10099 << 2));
-		local414.method7130(this.anInt10107 << 3);
+		local414.method7127(this.yAngle2D << 3);
+		local414.method7134(this.anInt10126 << 2, (Model.anIntArray741[this.xAngle2D << 3] * local363 >> 14) + (this.anInt10099 << 2) - (local244.fa() / 2), (Model.anIntArray740[this.xAngle2D << 3] * local363 >> 14) - -(this.anInt10099 << 2));
+		local414.method7130(this.xAngle2D << 3);
 		@Pc(480) int local480 = arg6.i();
 		@Pc(483) int local483 = arg6.XA();
 		arg6.f(50, Integer.MAX_VALUE);
@@ -973,13 +973,13 @@ public final class ObjType {
 		this.anInt10133 = arg1.anInt10133;
 		this.anInt10116 = arg1.anInt10116;
 		this.aString118 = arg1.aString118;
-		this.anInt10098 = arg0.anInt10098;
+		this.zoom2d = arg0.zoom2d;
 		this.aShortArray135 = arg1.aShortArray135;
 		this.anInt10119 = arg1.anInt10119;
 		this.aHashTable44 = arg1.aHashTable44;
 		this.anInt10104 = arg1.anInt10104;
-		this.anInt10107 = arg0.anInt10107;
-		this.anInt10096 = arg0.anInt10096;
+		this.xAngle2D = arg0.xAngle2D;
+		this.yAngle2D = arg0.yAngle2D;
 		this.anInt10113 = arg1.anInt10113;
 		this.anInt10111 = arg1.anInt10111;
 		this.anInt10135 = arg1.anInt10135;

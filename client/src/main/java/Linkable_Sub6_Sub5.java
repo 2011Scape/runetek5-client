@@ -47,7 +47,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 			if (arg0) {
 				this.method9130(87);
 			}
-			return local16.aDouble10 - (double) ((float) local16.aShortArrayArray3[0].length / (float) Static686.anInt8944);
+			return local16.aDouble10 - (double) ((float) local16.aShortArrayArray3[0].length / (float) Static686.sampleRate);
 		}
 	}
 
@@ -164,7 +164,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 		}
 		if (this.method9145() != null) {
 			@Pc(32) int local32 = arg2 + arg1;
-			if (Static316.aBoolean644) {
+			if (Static316.stereo) {
 				local32 <<= 0x1;
 			}
 			@Pc(42) byte local42 = 0;
@@ -178,7 +178,7 @@ public final class Linkable_Sub6_Sub5 extends PcmStream {
 				}
 				@Pc(62) short[][] local62 = local56.aShortArrayArray3;
 				while (local32 > arg1 && this.anInt10536 < local62[0].length) {
-					if (Static316.aBoolean644) {
+					if (Static316.stereo) {
 						arg0[arg1++] = local62[0][this.anInt10536] * this.anInt10534;
 						arg0[arg1++] = this.anInt10537 * local62[local42][this.anInt10536];
 					} else {

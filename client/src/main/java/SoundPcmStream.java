@@ -69,12 +69,12 @@ public final class SoundPcmStream extends PcmStream {
 		do {
 			if (this.anInt3684 <= 0) {
 				if (this.anInt3679 == -256 && (this.anInt3686 & 0xFF) == 0) {
-					if (Static316.aBoolean644) {
+					if (Static316.stereo) {
 						return Static730.method3334(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, arg3, arg2, this);
 					}
 					return Static730.method3343(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, arg3, arg2, this);
 				}
-				if (Static316.aBoolean644) {
+				if (Static316.stereo) {
 					return Static730.method3324(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, arg3, arg2, this, this.anInt3679, arg4);
 				}
 				return Static730.method3339(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, arg3, arg2, this, this.anInt3679, arg4);
@@ -85,12 +85,12 @@ public final class SoundPcmStream extends PcmStream {
 			}
 			this.anInt3684 += arg1;
 			if (this.anInt3679 == -256 && (this.anInt3686 & 0xFF) == 0) {
-				if (Static316.aBoolean644) {
+				if (Static316.stereo) {
 					arg1 = Static730.method3342(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, this.anInt3683, this.anInt3687, local5, arg2, this);
 				} else {
 					arg1 = Static730.method3332(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, this.anInt3678, local5, arg2, this);
 				}
-			} else if (Static316.aBoolean644) {
+			} else if (Static316.stereo) {
 				arg1 = Static730.method3326(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, this.anInt3683, this.anInt3687, local5, arg2, this, this.anInt3679, arg4);
 			} else {
 				arg1 = Static730.method3347(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, this.anInt3678, local5, arg2, this, this.anInt3679, arg4);
@@ -284,12 +284,12 @@ public final class SoundPcmStream extends PcmStream {
 		do {
 			if (this.anInt3684 <= 0) {
 				if (this.anInt3679 == 256 && (this.anInt3686 & 0xFF) == 0) {
-					if (Static316.aBoolean644) {
+					if (Static316.stereo) {
 						return Static730.method3329(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, arg3, arg2, this);
 					}
 					return Static730.method3310(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, arg3, arg2, this);
 				}
-				if (Static316.aBoolean644) {
+				if (Static316.stereo) {
 					return Static730.method3312(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, arg3, arg2, this, this.anInt3679, arg4);
 				}
 				return Static730.method3316(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, arg3, arg2, this, this.anInt3679, arg4);
@@ -300,12 +300,12 @@ public final class SoundPcmStream extends PcmStream {
 			}
 			this.anInt3684 += arg1;
 			if (this.anInt3679 == 256 && (this.anInt3686 & 0xFF) == 0) {
-				if (Static316.aBoolean644) {
+				if (Static316.stereo) {
 					arg1 = Static730.method3325(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, this.anInt3683, this.anInt3687, local5, arg2, this);
 				} else {
 					arg1 = Static730.method3321(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, this.anInt3678, local5, arg2, this);
 				}
-			} else if (Static316.aBoolean644) {
+			} else if (Static316.stereo) {
 				arg1 = Static730.method3313(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3680, this.anInt3677, this.anInt3683, this.anInt3687, local5, arg2, this, this.anInt3679, arg4);
 			} else {
 				arg1 = Static730.method3331(((PcmSound) super.aClass2_Sub49_6).aByteArray98, arg0, this.anInt3686, arg1, this.anInt3676, this.anInt3678, local5, arg2, this, this.anInt3679, arg4);

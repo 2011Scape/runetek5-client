@@ -10,10 +10,10 @@ public abstract class ParticleNode_Sub2 extends ParticleNode {
 	public byte aByte143;
 
 	@OriginalMember(owner = "client!eo", name = "j", descriptor = "B")
-	public byte aByte144;
+	public byte plane;
 
 	@OriginalMember(owner = "client!eo", name = "f", descriptor = "I")
-	public int anInt10690;
+	public int xFine;
 
 	@OriginalMember(owner = "client!eo", name = "q", descriptor = "Z")
 	public boolean aBoolean812;
@@ -25,7 +25,7 @@ public abstract class ParticleNode_Sub2 extends ParticleNode {
 	public int anInt10692;
 
 	@OriginalMember(owner = "client!eo", name = "v", descriptor = "I")
-	public int anInt10694;
+	public int zFine;
 
 	@OriginalMember(owner = "client!eo", name = "t", descriptor = "Lclient!eo;")
 	public ParticleNode_Sub2 aClass8_Sub2_25;
@@ -51,7 +51,7 @@ public abstract class ParticleNode_Sub2 extends ParticleNode {
 
 	@OriginalMember(owner = "client!eo", name = "a", descriptor = "(I[Lclient!lca;II)I")
 	protected final int method9277(@OriginalArg(1) Linkable_Sub7[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(21) long local21 = Static161.aLongArrayArrayArray1[this.aByte144][arg2][arg1];
+		@Pc(21) long local21 = Static161.aLongArrayArrayArray1[this.plane][arg2][arg1];
 		@Pc(23) long local23 = 0L;
 		@Pc(25) int local25 = 0;
 		@Pc(35) int local35;

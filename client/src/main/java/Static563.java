@@ -7,7 +7,7 @@ public final class Static563 {
 	public static int anInt8455;
 
 	@OriginalMember(owner = "client!ro", name = "h", descriptor = "I")
-	public static final int anInt8460 = 13156520;
+	public static final int defaulFogColorRgb = 13156520;
 
 	@OriginalMember(owner = "client!ro", name = "j", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt102 = new ClientProt(88, -1);

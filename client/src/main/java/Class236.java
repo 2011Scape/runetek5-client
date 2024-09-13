@@ -38,7 +38,7 @@ public final class Class236 {
 	@OriginalMember(owner = "client!lw", name = "a", descriptor = "(IBII)V")
 	public void method5360(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (this.aClass8_Sub2_Sub1_Sub2_Sub2_1 == null) {
-			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte144 = this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte143 = (byte) arg1;
+			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.plane = this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte143 = (byte) arg1;
 			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1419(arg0, arg2);
 		} else {
 			this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9326(true, arg2, arg0, arg1, this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9302((byte) 44));
@@ -63,7 +63,7 @@ public final class Class236 {
 			this.aBoolean455 = true;
 			if (this.anInt5980 >= 0) {
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1 = new Npc(25);
-				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10751 = Static333.anInt5455;
+				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10751 = Static333.loop;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10740 = this.anInt5985;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9328(Static690.aNpcTypeList2.method7092(this.anInt5980));
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9310(this.aClass8_Sub2_Sub1_Sub2_Sub2_1.aNpcType1.anInt6713);
@@ -72,13 +72,13 @@ public final class Class236 {
 			} else {
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1 = new Player(25);
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1420(Static518.aPacket_18);
-				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10751 = Static333.anInt5455;
+				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10751 = Static333.loop;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10739 = Static457.anInt6933++;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10740 = this.anInt5985;
 			}
 		}
 		if (this.anInt5980 < 0) {
-			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte144 = this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte143 = (byte) arg1;
+			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.plane = this.aClass8_Sub2_Sub1_Sub2_Sub1_1.aByte143 = (byte) arg1;
 			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1419(arg2, arg3);
 			this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method9298(arg0, true);
 		} else {

@@ -21,8 +21,8 @@ public final class Static273 {
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(II)V")
 	public static void method3959(@OriginalArg(0) int arg0) {
-		@Pc(17) SecondaryLinkable_Sub2 local17 = Static440.method5963(16, (long) arg0);
-		local17.method205();
+		@Pc(17) SecondaryLinkable_Sub2 local17 = Static440.create(16, (long) arg0);
+		local17.pushClient();
 	}
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(Lclient!bd;ZIILclient!sb;II)V")

@@ -8,16 +8,16 @@ import org.openrs2.deob.annotation.Pc;
 public class AudioChannel {
 
 	@OriginalMember(owner = "client!cd", name = "t", descriptor = "[I")
-	public int[] anIntArray315;
+	public int[] samples;
 
 	@OriginalMember(owner = "client!cd", name = "A", descriptor = "Lclient!dea;")
 	private PcmStream aClass2_Sub6_6;
 
 	@OriginalMember(owner = "client!cd", name = "B", descriptor = "I")
-	public int anInt4097;
+	public int bufferCapacity;
 
 	@OriginalMember(owner = "client!cd", name = "k", descriptor = "I")
-	public int anInt4098;
+	public int sampleRate2;
 
 	@OriginalMember(owner = "client!cd", name = "v", descriptor = "I")
 	private int anInt4103;
@@ -80,36 +80,36 @@ public class AudioChannel {
 
 	@OriginalMember(owner = "client!cd", name = "c", descriptor = "(I)V")
 	public final synchronized void close() {
-		if (Static232.aAudioThread1 != null) {
+		if (Static232.thread != null) {
 			@Pc(11) boolean allChannelsClosed = true;
 			for (@Pc(13) int i = 0; i < 2; i++) {
-				if (Static232.aAudioThread1.aAudioChannelArray1[i] == this) {
-					Static232.aAudioThread1.aAudioChannelArray1[i] = null;
+				if (Static232.thread.channels[i] == this) {
+					Static232.thread.channels[i] = null;
 				}
-				if (Static232.aAudioThread1.aAudioChannelArray1[i] != null) {
+				if (Static232.thread.channels[i] != null) {
 					allChannelsClosed = false;
 				}
 			}
 			if (allChannelsClosed) {
-				Static232.aAudioThread1.allChannelsClosed = true;
-				while (Static232.aAudioThread1.isRunning) {
+				Static232.thread.allChannelsClosed = true;
+				while (Static232.thread.isRunning) {
 					Static638.sleep(50L);
 				}
-				Static232.aAudioThread1 = null;
+				Static232.thread = null;
 			}
 		}
 		this.method3596();
-		this.anIntArray315 = null;
+		this.samples = null;
 		this.isClosed = true;
 	}
 
 	@OriginalMember(owner = "client!cd", name = "d", descriptor = "()I")
 	protected int method3587() throws Exception {
-		return this.anInt4097;
+		return this.bufferCapacity;
 	}
 
 	@OriginalMember(owner = "client!cd", name = "b", descriptor = "(I)V")
-	public void method3588(@OriginalArg(0) int arg0) throws Exception {
+	public void open(@OriginalArg(0) int arg0) throws Exception {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "b", descriptor = "()V")
@@ -141,7 +141,7 @@ public class AudioChannel {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(Ljava/awt/Component;)V")
-	public void method3593(@OriginalArg(0) Component arg0) throws Exception {
+	public void init(@OriginalArg(0) Component arg0) throws Exception {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "b", descriptor = "(B)V")
@@ -156,13 +156,13 @@ public class AudioChannel {
 			}
 			while (local11 > this.aLong128 + 5000L) {
 				this.method3584();
-				this.aLong128 += (long) (256000 / Static686.anInt8944);
+				this.aLong128 += (long) (256000 / Static686.sampleRate);
 				local11 = Static588.currentTimeWithDrift();
 			}
 		} catch (@Pc(54) Exception local54) {
 			this.aLong128 = local11;
 		}
-		if (this.anIntArray315 == null) {
+		if (this.samples == null) {
 			return;
 		}
 		try {
@@ -170,7 +170,7 @@ public class AudioChannel {
 				if (this.aLong129 > local11) {
 					return;
 				}
-				this.method3588(this.anInt4097);
+				this.open(this.bufferCapacity);
 				this.aLong129 = 0L;
 				this.aBoolean320 = true;
 			}
@@ -178,26 +178,26 @@ public class AudioChannel {
 			if (this.anInt4100 - local95 > this.anInt4101) {
 				this.anInt4101 = this.anInt4100 - local95;
 			}
-			@Pc(118) int local118 = this.anInt4098 + this.anInt4103;
+			@Pc(118) int local118 = this.sampleRate2 + this.anInt4103;
 			if (local118 + 256 > 16384) {
 				local118 = 16128;
 			}
-			if (this.anInt4097 < local118 + 256) {
-				this.anInt4097 += 1024;
-				if (this.anInt4097 > 16384) {
-					this.anInt4097 = 16384;
+			if (this.bufferCapacity < local118 + 256) {
+				this.bufferCapacity += 1024;
+				if (this.bufferCapacity > 16384) {
+					this.bufferCapacity = 16384;
 				}
 				this.method3596();
-				this.method3588(this.anInt4097);
+				this.open(this.bufferCapacity);
 				local95 = 0;
-				if (this.anInt4097 < local118 + 256) {
-					local118 = this.anInt4097 - 256;
-					this.anInt4103 = local118 - this.anInt4098;
+				if (this.bufferCapacity < local118 + 256) {
+					local118 = this.bufferCapacity - 256;
+					this.anInt4103 = local118 - this.sampleRate2;
 				}
 				this.aBoolean320 = true;
 			}
 			while (local118 > local95) {
-				this.method3595(this.anIntArray315);
+				this.method3595(this.samples);
 				local95 += 256;
 				this.method3590();
 			}
@@ -225,13 +225,13 @@ public class AudioChannel {
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "([II)V")
 	private void method3595(@OriginalArg(0) int[] arg0) {
 		@Pc(1) short local1 = 256;
-		if (Static316.aBoolean644) {
+		if (Static316.stereo) {
 			local1 = 512;
 		}
 		Static734.method7688(arg0, 0, local1);
 		this.anInt4099 -= 256;
 		if (this.aClass2_Sub6_6 != null && this.anInt4099 <= 0) {
-			this.anInt4099 += Static686.anInt8944 >> 4;
+			this.anInt4099 += Static686.sampleRate >> 4;
 			Static440.method5964(this.aClass2_Sub6_6);
 			this.method3591(this.aClass2_Sub6_6.method9136(), this.aClass2_Sub6_6);
 			@Pc(47) int local47 = 0;

@@ -35,16 +35,16 @@ public final class Static163 {
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(IIIIZ)Lclient!aha;")
 	public static SubInterface method8850(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(7) SubInterface local7 = new SubInterface();
-		local7.anInt147 = arg1;
+		local7.interfaceId = arg1;
 		local7.anInt146 = arg0;
-		Static548.aHashTable40.put((long) arg2, local7);
+		Static548.openInterfaces.put((long) arg2, local7);
 		Static122.method2208(arg1);
-		@Pc(26) Component local26 = Static145.method2412(arg2);
+		@Pc(26) Component local26 = Static145.getComponent(arg2);
 		if (local26 != null) {
-			Static178.method2729(local26);
+			Static178.redraw(local26);
 		}
 		if (Static390.aComponent9 != null) {
-			Static178.method2729(Static390.aComponent9);
+			Static178.redraw(Static390.aComponent9);
 			Static390.aComponent9 = null;
 		}
 		Static94.method1840();
@@ -54,8 +54,8 @@ public final class Static163 {
 		if (!arg3) {
 			Static472.method6414(arg1);
 		}
-		if (!arg3 && Static377.anInt5930 != -1) {
-			Static145.method2411(1, Static377.anInt5930);
+		if (!arg3 && Static377.topLevelInterface != -1) {
+			Static145.method2411(1, Static377.topLevelInterface);
 		}
 		return local7;
 	}

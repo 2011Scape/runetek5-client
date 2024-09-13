@@ -18,17 +18,17 @@ public final class Static168 {
 	public static void method2633(@OriginalArg(0) PacketBit arg0) {
 		arg0.bits();
 		@Pc(10) int local10 = Static312.anInt5000;
-		@Pc(20) Player local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new Player();
+		@Pc(20) Player local20 = Static556.self = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new Player();
 		local20.anInt10740 = local10;
 		@Pc(28) int local28 = arg0.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
 		@Pc(39) int local39 = local28 >> 14 & 0x3FFF;
-		local20.anIntArray879[0] = local39 - Static691.anInt10367;
+		local20.anIntArray879[0] = local39 - Static691.originX;
 		@Pc(51) int local51 = local28 & 0x3FFF;
-		local20.anInt10690 = (local20.anIntArray879[0] << 9) + (local20.method9302((byte) 53) << 8);
-		local20.anIntArray878[0] = local51 - Static116.anInt2270;
-		local20.anInt10694 = (local20.anIntArray878[0] << 9) + (local20.method9302((byte) 65) << 8);
-		Static394.anInt6176 = local20.aByte144 = local20.aByte143 = local33;
+		local20.xFine = (local20.anIntArray879[0] << 9) + (local20.method9302((byte) 53) << 8);
+		local20.anIntArray878[0] = local51 - Static116.originZ;
+		local20.zFine = (local20.anIntArray878[0] << 9) + (local20.method9302((byte) 65) << 8);
+		Static394.anInt6176 = local20.plane = local20.aByte143 = local33;
 		if (Static441.method5968(local20.anIntArray878[0], local20.anIntArray879[0])) {
 			local20.aByte143++;
 		}
@@ -90,18 +90,18 @@ public final class Static168 {
 		}
 		@Pc(13) int local13 = (arg1 + arg0) / 2;
 		@Pc(15) int local15 = arg1;
-		@Pc(19) World local19 = Static343.aClass297_Sub1Array2[local13];
-		Static343.aClass297_Sub1Array2[local13] = Static343.aClass297_Sub1Array2[arg0];
-		Static343.aClass297_Sub1Array2[arg0] = local19;
+		@Pc(19) World local19 = Static343.sorted[local13];
+		Static343.sorted[local13] = Static343.sorted[arg0];
+		Static343.sorted[arg0] = local19;
 		for (@Pc(31) int local31 = arg1; local31 < arg0; local31++) {
-			if (Static639.method8418(local19, arg3, arg5, arg4, 70, Static343.aClass297_Sub1Array2[local31], arg2) <= 0) {
-				@Pc(47) World local47 = Static343.aClass297_Sub1Array2[local31];
-				Static343.aClass297_Sub1Array2[local31] = Static343.aClass297_Sub1Array2[local15];
-				Static343.aClass297_Sub1Array2[local15++] = local47;
+			if (Static639.method8418(local19, arg3, arg5, arg4, 70, Static343.sorted[local31], arg2) <= 0) {
+				@Pc(47) World local47 = Static343.sorted[local31];
+				Static343.sorted[local31] = Static343.sorted[local15];
+				Static343.sorted[local15++] = local47;
 			}
 		}
-		Static343.aClass297_Sub1Array2[arg0] = Static343.aClass297_Sub1Array2[local15];
-		Static343.aClass297_Sub1Array2[local15] = local19;
+		Static343.sorted[arg0] = Static343.sorted[local15];
+		Static343.sorted[local15] = local19;
 		method2636(local15 - 1, arg1, arg2, arg3, arg4, arg5);
 		method2636(arg0, local15 + 1, arg2, arg3, arg4, arg5);
 	}

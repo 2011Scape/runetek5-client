@@ -82,7 +82,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			this.aClass2_Sub2_Sub9_3 = null;
 		}
 		if (local16 != null) {
-			Static292.method4618(local16, super.aByte143, super.anInt10690, super.anInt10694, (boolean[]) null);
+			Static292.method4618(local16, super.aByte143, super.xFine, super.zFine, (boolean[]) null);
 		}
 		if (arg1 > -42) {
 			this.aModel4 = null;
@@ -153,7 +153,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			return arg2 ? false : false;
 		} else {
 			@Pc(14) Class73 local14 = arg3.method7985();
-			local14.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+			local14.method7125(super.xFine, super.anInt10691, super.zFine);
 			return Static504.aBoolean579 ? local9.method7483(arg1, arg0, local14, false, 0, Static582.anInt8627) : local9.method7486(arg1, arg0, local14, false, 0);
 		}
 	}
@@ -188,7 +188,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			return null;
 		} else {
 			if (this.aClass205_5 == null) {
-				this.aClass205_5 = Static317.method4583(super.anInt10691, super.anInt10690, this.method4221(arg0, 0), super.anInt10694);
+				this.aClass205_5 = Static317.method4583(super.anInt10691, super.xFine, this.method4221(arg0, 0), super.zFine);
 			}
 			return this.aClass205_5;
 		}
@@ -206,7 +206,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			this.aClass2_Sub2_Sub9_3 = null;
 		}
 		if (local21 != null) {
-			Static630.method8357(local21, super.aByte143, super.anInt10690, super.anInt10694, (boolean[]) null);
+			Static630.method8357(local21, super.aByte143, super.xFine, super.zFine, (boolean[]) null);
 		}
 	}
 
@@ -244,7 +244,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 			return null;
 		}
 		@Pc(20) Class73 local20 = arg0.method7985();
-		local20.method7125(super.anInt10690, super.anInt10691, super.anInt10694);
+		local20.method7125(super.xFine, super.anInt10691, super.zFine);
 		@Pc(34) ParticleNode_Sub7 local34 = Static642.method8441(this.aBoolean364, 1);
 		if (Static504.aBoolean579) {
 			this.aModel4.method7484(local20, local34.aClass8_Sub6Array1[0], Static582.anInt8627, 0);
@@ -289,7 +289,7 @@ public final class Entity_Sub1 extends Entity implements Interface25 {
 				local33 = Static706.aClass178Array3[super.aByte143 + 1];
 			}
 		}
-		return local11.method1309(this.aByte84 == 11 ? this.aByte83 + 4 : this.aByte83, super.anInt10694, super.anInt10690, local27, arg1, super.anInt10691, this.aByte84 == 11 ? 10 : this.aByte84, arg0, (Class150) null, arg2, local33);
+		return local11.method1309(this.aByte84 == 11 ? this.aByte83 + 4 : this.aByte83, super.zFine, super.xFine, local27, arg1, super.anInt10691, this.aByte84 == 11 ? 10 : this.aByte84, arg0, (Class150) null, arg2, local33);
 	}
 
 	@OriginalMember(owner = "client!jda", name = "c", descriptor = "(I)I")

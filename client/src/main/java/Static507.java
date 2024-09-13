@@ -21,49 +21,49 @@ public final class Static507 {
 
 	@OriginalMember(owner = "client!pw", name = "a", descriptor = "(ZIIILclient!hda;)V")
 	public static void method6743(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component arg3) {
-		@Pc(6) int local6 = arg3.anInt3802;
-		@Pc(16) int local16 = arg3.anInt3746;
-		if (arg3.aByte63 == 0) {
-			arg3.anInt3802 = arg3.anInt3744;
-		} else if (arg3.aByte63 == 1) {
-			arg3.anInt3802 = arg2 - arg3.anInt3744;
-		} else if (arg3.aByte63 == 2) {
-			arg3.anInt3802 = arg3.anInt3744 * arg2 >> 14;
+		@Pc(6) int local6 = arg3.width;
+		@Pc(16) int local16 = arg3.height;
+		if (arg3.dynamicWidthValue == 0) {
+			arg3.width = arg3.baseWidth;
+		} else if (arg3.dynamicWidthValue == 1) {
+			arg3.width = arg2 - arg3.baseWidth;
+		} else if (arg3.dynamicWidthValue == 2) {
+			arg3.width = arg3.baseWidth * arg2 >> 14;
 		}
-		if (arg3.aByte62 == 0) {
-			arg3.anInt3746 = arg3.anInt3762;
-		} else if (arg3.aByte62 == 1) {
-			arg3.anInt3746 = arg1 - arg3.anInt3762;
-		} else if (arg3.aByte62 == 2) {
-			arg3.anInt3746 = arg1 * arg3.anInt3762 >> 14;
+		if (arg3.dynamicHeightValue == 0) {
+			arg3.height = arg3.baseHeight;
+		} else if (arg3.dynamicHeightValue == 1) {
+			arg3.height = arg1 - arg3.baseHeight;
+		} else if (arg3.dynamicHeightValue == 2) {
+			arg3.height = arg1 * arg3.baseHeight >> 14;
 		}
-		if (arg3.aByte63 == 4) {
-			arg3.anInt3802 = arg3.anInt3795 * arg3.anInt3746 / arg3.anInt3750;
+		if (arg3.dynamicWidthValue == 4) {
+			arg3.width = arg3.anInt3795 * arg3.height / arg3.anInt3750;
 		}
-		if (arg3.aByte62 == 4) {
-			arg3.anInt3746 = arg3.anInt3802 * arg3.anInt3750 / arg3.anInt3795;
+		if (arg3.dynamicHeightValue == 4) {
+			arg3.height = arg3.width * arg3.anInt3750 / arg3.anInt3795;
 		}
-		if (Static103.aBoolean195 && (Static84.method1661(arg3).anInt6909 != 0 || arg3.anInt3820 == 0)) {
-			if (arg3.anInt3746 < 5 && arg3.anInt3802 < 5) {
-				arg3.anInt3746 = 5;
-				arg3.anInt3802 = 5;
+		if (Static103.aBoolean195 && (Static84.getServerActiveProperties(arg3).events != 0 || arg3.type == 0)) {
+			if (arg3.height < 5 && arg3.width < 5) {
+				arg3.height = 5;
+				arg3.width = 5;
 			} else {
-				if (arg3.anInt3802 <= 0) {
-					arg3.anInt3802 = 5;
+				if (arg3.width <= 0) {
+					arg3.width = 5;
 				}
-				if (arg3.anInt3746 <= 0) {
-					arg3.anInt3746 = 5;
+				if (arg3.height <= 0) {
+					arg3.height = 5;
 				}
 			}
 		}
-		if (Static188.anInt3104 == arg3.anInt3806) {
+		if (Static188.anInt3104 == arg3.clientCode) {
 			Static610.aComponent16 = arg3;
 		}
-		if (arg0 && arg3.anObjectArray19 != null && (local6 != arg3.anInt3802 || local16 != arg3.anInt3746)) {
+		if (arg0 && arg3.onResize != null && (local6 != arg3.width || local16 != arg3.height)) {
 			@Pc(225) Linkable_Sub42 local225 = new Linkable_Sub42();
-			local225.anObjectArray36 = arg3.anObjectArray19;
+			local225.anObjectArray36 = arg3.onResize;
 			local225.aComponent14 = arg3;
-			Static521.aLinkedList44.addTail(local225);
+			Static521.lowPriorityRequests.addTail(local225);
 		}
 	}
 

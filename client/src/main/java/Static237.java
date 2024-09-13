@@ -6,7 +6,7 @@ public final class Static237 {
 	public static Js5 aJs587;
 
 	@OriginalMember(owner = "client!hga", name = "A", descriptor = "[I")
-	public static final int[] anIntArray518 = new int[25];
+	public static final int[] experience = new int[25];
 
 	@OriginalMember(owner = "client!hga", name = "q", descriptor = "I")
 	public static final int anInt6524 = 2;

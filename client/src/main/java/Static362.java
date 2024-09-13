@@ -21,11 +21,11 @@ public final class Static362 {
 		if (arg1 == null) {
 			return false;
 		}
-		for (@Pc(10) int local10 = arg0; local10 < Static327.anInt5392; local10++) {
+		for (@Pc(10) int local10 = arg0; local10 < Static327.size; local10++) {
 			if (arg1.equalsIgnoreCase(Static330.aStringArray25[local10])) {
 				return true;
 			}
 		}
-		return arg1.equalsIgnoreCase(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2);
+		return arg1.equalsIgnoreCase(Static556.self.username);
 	}
 }

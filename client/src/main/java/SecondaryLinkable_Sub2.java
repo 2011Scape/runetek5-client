@@ -46,7 +46,7 @@ public final class SecondaryLinkable_Sub2 extends SecondaryLinkable {
 	}
 
 	@OriginalMember(owner = "client!aj", name = "c", descriptor = "(B)V")
-	public void method205() {
+	public void pushClient() {
 		super.secondaryKey = Static588.currentTimeWithDrift() + 500L | super.secondaryKey & Long.MIN_VALUE;
 		Static59.aSecondaryLinkedList9.addTail(this);
 	}

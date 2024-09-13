@@ -33,7 +33,7 @@ public final class Class362 implements Runnable {
 	@Override
 	public void run() {
 		try {
-			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aPrivilegedRequest7.anObject13));
+			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aPrivilegedRequest7.result));
 			@Pc(19) String local19 = local16.readLine();
 			@Pc(22) Class396 local22 = Static640.method8436();
 			while (local19 != null) {
@@ -61,7 +61,7 @@ public final class Class362 implements Runnable {
 		if (this.aPrivilegedRequest7 == null) {
 			try {
 				@Pc(23) int local23 = ModeWhere.LIVE == Static2.aModeWhere1 ? 80 : Static527.aClass229_3.worldId + 7000;
-				this.aPrivilegedRequest7 = Static446.aSignlink6.method8992(new URL("http://" + Static527.aClass229_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.clientModeGame.id));
+				this.aPrivilegedRequest7 = Static446.aSignlink6.openUrlStream(new URL("http://" + Static527.aClass229_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.clientModeGame.id));
 			} catch (@Pc(54) MalformedURLException local54) {
 				return true;
 			}

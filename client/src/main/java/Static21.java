@@ -116,7 +116,7 @@ public final class Static21 {
 	}
 
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "(B)Z")
-	public static boolean method8119() {
+	public static boolean showVideoAd() {
 		if (Static98.aBoolean191) {
 			try {
 				BrowserControl.call("showVideoAd", Static166.anApplet1);
