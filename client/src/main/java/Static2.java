@@ -34,13 +34,13 @@ public final class Static2 {
 			return;
 		}
 		@Pc(45) ObjType local45 = ObjTypeList.objTypes.method2486(arg3.anInt1958);
-		@Pc(48) int local48 = local45.anInt10142;
+		@Pc(48) int local48 = local45.value;
 		if (local45.anInt10115 == 1) {
 			local48 *= arg3.anInt1959 + 1;
 		}
 		for (@Pc(65) Linkable_Sub15 local65 = (Linkable_Sub15) local22.aLinkedList12.head(); local65 != null; local65 = (Linkable_Sub15) local22.aLinkedList12.next()) {
 			local45 = ObjTypeList.objTypes.method2486(local65.anInt1958);
-			@Pc(78) int local78 = local45.anInt10142;
+			@Pc(78) int local78 = local45.value;
 			if (local45.anInt10115 == 1) {
 				local78 *= local65.anInt1959 + 1;
 			}
