@@ -962,7 +962,7 @@ public class Protocol {
                                                     Static574.method7573();
                                                     Static301.method4394(local526, local100, local277);
                                                     @Pc(4005) ObjType local4005 = ObjTypeList.objTypes.method2486(local277);
-                                                    Static231.method3378(local4005.rotation1, local4005.inventoryZoom, local526, local4005.rotation2);
+                                                    Static231.method3378(local4005.anInt10107, local4005.anInt10098, local526, local4005.anInt10096);
                                                     Static528.method7087(local4005.anInt10094, local526, local4005.anInt10099, local4005.anInt10126);
                                                     arg0.packetType = null;
                                                     return true;
