@@ -2834,8 +2834,8 @@ public final class Static472 {
 												local15 = intStack[isp];
 												local21 = intStack[isp + 1];
 												local11206 = ObjTypeList.objTypes.method2486(local15);
-												if (local21 >= 1 && local21 <= 5 && local11206.aStringArray46[local21 - 1] != null) {
-													stringStack[ssp++] = local11206.aStringArray46[local21 - 1];
+												if (local21 >= 1 && local21 <= 5 && local11206.groundOptions[local21 - 1] != null) {
+													stringStack[ssp++] = local11206.groundOptions[local21 - 1];
 													return;
 												}
 												stringStack[ssp++] = "";
@@ -2846,8 +2846,8 @@ public final class Static472 {
 												local15 = intStack[isp];
 												local21 = intStack[isp + 1];
 												local11206 = ObjTypeList.objTypes.method2486(local15);
-												if (local21 >= 1 && local21 <= 5 && local11206.aStringArray45[local21 - 1] != null) {
-													stringStack[ssp++] = local11206.aStringArray45[local21 - 1];
+												if (local21 >= 1 && local21 <= 5 && local11206.inventoryOptions[local21 - 1] != null) {
+													stringStack[ssp++] = local11206.inventoryOptions[local21 - 1];
 													return;
 												}
 												stringStack[ssp++] = "";
@@ -2855,7 +2855,7 @@ public final class Static472 {
 											}
 											if (arg0 == 4203) {
 												local15 = intStack[--isp];
-												intStack[isp++] = ObjTypeList.objTypes.method2486(local15).anInt10142;
+												intStack[isp++] = ObjTypeList.objTypes.method2486(local15).value;
 												return;
 											}
 											if (arg0 == 4204) {
@@ -2867,8 +2867,8 @@ public final class Static472 {
 											if (arg0 == 4205) {
 												local15 = intStack[--isp];
 												local11380 = ObjTypeList.objTypes.method2486(local15);
-												if (local11380.anInt10087 == -1 && local11380.anInt10110 >= 0) {
-													intStack[isp++] = local11380.anInt10110;
+												if (local11380.anInt10087 == -1 && local11380.notedId >= 0) {
+													intStack[isp++] = local11380.notedId;
 													return;
 												}
 												intStack[isp++] = local15;
@@ -2877,8 +2877,8 @@ public final class Static472 {
 											if (arg0 == 4206) {
 												local15 = intStack[--isp];
 												local11380 = ObjTypeList.objTypes.method2486(local15);
-												if (local11380.anInt10087 >= 0 && local11380.anInt10110 >= 0) {
-													intStack[isp++] = local11380.anInt10110;
+												if (local11380.anInt10087 >= 0 && local11380.notedId >= 0) {
+													intStack[isp++] = local11380.notedId;
 													return;
 												}
 												intStack[isp++] = local15;
