@@ -28,8 +28,8 @@ public final class Static112 {
 				local24 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0.anInt10722 - 32768];
 			}
 			if (local24 != null) {
-				local67 = arg0.anInt10690 - local24.anInt10690;
-				local74 = arg0.anInt10694 - local24.anInt10694;
+				local67 = arg0.xFine - local24.xFine;
+				local74 = arg0.zFine - local24.zFine;
 				if (local67 != 0 || local74 != 0) {
 					arg0.method9305((int) (Math.atan2((double) local67, (double) local74) * 2607.5945876176133D) & 0x3FFF);
 				}
@@ -44,8 +44,8 @@ public final class Static112 {
 		} else if (arg0 instanceof Npc) {
 			@Pc(138) Npc local138 = (Npc) arg0;
 			if (local138.anInt10774 != -1 && (local138.anInt10764 == 0 || local138.anInt10763 > 0)) {
-				local67 = local138.anInt10690 - (local138.anInt10774 - Static691.anInt10367 - Static691.anInt10367) * 256;
-				local74 = local138.anInt10694 - (local138.anInt10767 - Static116.anInt2270 - Static116.anInt2270) * 256;
+				local67 = local138.xFine - (local138.anInt10774 - Static691.originX - Static691.originX) * 256;
+				local74 = local138.zFine - (local138.anInt10767 - Static116.originZ - Static116.originZ) * 256;
 				if (local67 != 0 || local74 != 0) {
 					local138.method9305((int) (Math.atan2((double) local67, (double) local74) * 2607.5945876176133D) & 0x3FFF);
 				}

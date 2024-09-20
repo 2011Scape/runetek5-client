@@ -14,12 +14,12 @@ public final class Static77 {
 	public static int anInt1614 = -1;
 
 	@OriginalMember(owner = "client!ci", name = "a", descriptor = "(IZ)V")
-	public static void method1557() {
+	public static void closeWidget() {
 		@Pc(13) OutboundPacket local13 = OutboundPacket.create(Static317.aClientProt62, Connection.gameConnection.random);
 		Connection.gameConnection.queue(local13);
-		for (@Pc(22) SubInterface local22 = (SubInterface) Static548.aHashTable40.head(); local22 != null; local22 = (SubInterface) Static548.aHashTable40.next()) {
+		for (@Pc(22) SubInterface local22 = (SubInterface) Static548.openInterfaces.head(); local22 != null; local22 = (SubInterface) Static548.openInterfaces.next()) {
 			if (!local22.isLinked()) {
-				local22 = (SubInterface) Static548.aHashTable40.head();
+				local22 = (SubInterface) Static548.openInterfaces.head();
 				if (local22 == null) {
 					break;
 				}
@@ -29,15 +29,15 @@ public final class Static77 {
 			}
 		}
 		if (Static390.aComponent9 != null) {
-			Static178.method2729(Static390.aComponent9);
+			Static178.redraw(Static390.aComponent9);
 			Static390.aComponent9 = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!ci", name = "b", descriptor = "(IZ)V")
-	public static void method1558(@OriginalArg(0) int arg0) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(8, (long) arg0);
-		local9.method205();
+	public static void setComponentModelAngleClient(@OriginalArg(0) int arg0) {
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(8, (long) arg0);
+		local9.pushClient();
 	}
 
 	@OriginalMember(owner = "client!ci", name = "a", descriptor = "(I)Z")

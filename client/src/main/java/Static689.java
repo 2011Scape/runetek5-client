@@ -56,7 +56,7 @@ public final class Static689 {
 	public static Class aClass27;
 
 	@OriginalMember(owner = "client!vq", name = "t", descriptor = "J")
-	public static volatile long aLong317 = 0L;
+	public static volatile long breakConnectionsUntil = 0L;
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;I)Lclient!dm;")
 	public static FileOnDisk method8980(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {

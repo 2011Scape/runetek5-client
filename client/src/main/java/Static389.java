@@ -20,20 +20,20 @@ public final class Static389 {
 		if (arg1 == null) {
 			return;
 		}
-		if (arg1.anObjectArray14 != null) {
+		if (arg1.onUse != null) {
 			@Pc(14) Linkable_Sub42 local14 = new Linkable_Sub42();
 			local14.aComponent14 = arg1;
-			local14.anObjectArray36 = arg1.anObjectArray14;
+			local14.anObjectArray36 = arg1.onUse;
 			Static472.method6420(local14);
 		}
-		Static162.anInt2799 = arg1.anInt3760;
-		Static450.anInt6819 = arg1.anInt3812;
+		Static162.anInt2799 = arg1.objId;
+		Static450.anInt6819 = arg1.id;
 		Static156.aBoolean223 = true;
 		Static610.anInt9329 = arg2;
 		Static369.anInt4263 = arg1.anInt3749;
-		Static77.anInt1614 = arg1.anInt3741;
+		Static77.anInt1614 = arg1.createdComponentId;
 		Static442.anInt6699 = arg1.anInt3819;
 		Static717.anInt10822 = arg0;
-		Static178.method2729(arg1);
+		Static178.redraw(arg1);
 	}
 }

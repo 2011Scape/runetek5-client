@@ -24,10 +24,10 @@ public final class Static122 {
 
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(II)V")
 	public static void method2208(@OriginalArg(0) int arg0) {
-		if (!Static571.method7566(arg0)) {
+		if (!Static571.load(arg0)) {
 			return;
 		}
-		@Pc(13) Component[] local13 = Static453.aComponentArrayArray2[arg0];
+		@Pc(13) Component[] local13 = Static453.components[arg0];
 		for (@Pc(15) int local15 = 0; local15 < local13.length; local15++) {
 			@Pc(20) Component local20 = local13[local15];
 			if (local20 != null && local20.aClass152_6 != null) {

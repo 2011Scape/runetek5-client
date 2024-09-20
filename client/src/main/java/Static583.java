@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static583 {
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(I)V")
-	public static void method7659() {
+	public static void updateLoginScreenCamera() {
 		if (Static197.anInt3260 == -1 || Static374.anInt5907 == -1) {
 			return;
 		}
@@ -41,9 +41,9 @@ public final class Static583 {
 			local165 = Static603.anIntArrayArrayArray18[Static197.anInt3260][local61 + 2][local63] + local94 - local135 - local127;
 			local57[local63] = (float) local135 + ((float) local140 + (local54 * (float) local165 + (float) local149) * local54) * local54;
 		}
-		Static110.anInt2186 = (int) local57[2] - Static116.anInt2270 * 512;
+		Static110.anInt2186 = (int) local57[2] - Static116.originZ * 512;
 		Static359.anInt5801 = (int) local57[1] * -1;
-		Static170.anInt2864 = (int) local57[0] - Static691.anInt10367 * 512;
+		Static170.anInt2864 = (int) local57[0] - Static691.originX * 512;
 		@Pc(220) float[] local220 = new float[3];
 		local94 = Static591.anInt8739 * 2;
 		for (local127 = 0; local127 < 3; local127++) {
@@ -61,7 +61,7 @@ public final class Static583 {
 		@Pc(372) float local372 = local220[2] - local57[2];
 		@Pc(382) double local382 = Math.sqrt((double) (local353 * local353 + local372 * local372));
 		Static598.anInt8832 = (int) (Math.atan2((double) local363, local382) * 2607.5945876176133D) & 0x3FFF;
-		Static323.anInt5119 = (int) (-Math.atan2((double) local353, (double) local372) * 2607.5945876176133D) & 0x3FFF;
+		Static323.cameraYaw = (int) (-Math.atan2((double) local353, (double) local372) * 2607.5945876176133D) & 0x3FFF;
 		Static81.anInt1644 = ((Static603.anIntArrayArrayArray18[Static197.anInt3260][local61 + 2][3] - Static603.anIntArrayArrayArray18[Static197.anInt3260][local61][3]) * Static260.anInt4244 >> 16) + Static603.anIntArrayArrayArray18[Static197.anInt3260][local61][3];
 	}
 }

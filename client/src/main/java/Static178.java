@@ -13,7 +13,7 @@ public final class Static178 {
 	public static boolean aBoolean251 = false;
 
 	@OriginalMember(owner = "client!fj", name = "a", descriptor = "(ILclient!hda;)V")
-	public static void method2729(@OriginalArg(1) Component arg0) {
+	public static void redraw(@OriginalArg(1) Component arg0) {
 		if (arg0.anInt3813 == Static171.anInt2880) {
 			Static364.aBooleanArray18[arg0.anInt3752] = true;
 		}

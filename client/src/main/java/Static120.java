@@ -11,67 +11,67 @@ public final class Static120 {
 		if (local8 == null) {
 			return;
 		}
-		if (local8.anObjectArray15 != null) {
+		if (local8.onOptionClick != null) {
 			@Pc(19) Linkable_Sub42 local19 = new Linkable_Sub42();
-			local19.anObjectArray36 = local8.anObjectArray15;
+			local19.anObjectArray36 = local8.onOptionClick;
 			local19.anInt7219 = arg3;
 			local19.aString84 = arg2;
 			local19.aComponent14 = local8;
 			Static472.method6420(local19);
 		}
-		if (Static283.gameState != 11 || !Static84.method1661(local8).method6221(arg3 - 1)) {
+		if (Static283.gameState != 11 || !Static84.getServerActiveProperties(local8).isButtonEnabled(arg3 - 1)) {
 			return;
 		}
 		@Pc(64) OutboundPacket local64;
 		if (arg3 == 1) {
 			local64 = OutboundPacket.create(Static546.aClientProt98, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
+			Static277.method4040(arg0, local8.objId, local64, arg1);
 			Connection.gameConnection.queue(local64);
 		}
 		if (arg3 == 2) {
 			local64 = OutboundPacket.create(Static323.aClientProt65, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
+			Static277.method4040(arg0, local8.objId, local64, arg1);
 			Connection.gameConnection.queue(local64);
 		}
 		if (arg3 == 3) {
 			local64 = OutboundPacket.create(Static255.aClientProt54, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
+			Static277.method4040(arg0, local8.objId, local64, arg1);
 			Connection.gameConnection.queue(local64);
 		}
 		@Pc(148) OutboundPacket local148;
 		if (arg3 == 4) {
 			local148 = OutboundPacket.create(Static710.aClientProt93, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 5) {
 			local148 = OutboundPacket.create(Static693.aClientProt121, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 6) {
 			local148 = OutboundPacket.create(Static126.aClientProt23, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 7) {
 			local148 = OutboundPacket.create(Static358.aClientProt124, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 8) {
 			local148 = OutboundPacket.create(Static700.aClientProt123, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 9) {
 			local148 = OutboundPacket.create(Static372.aClientProt69, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 		if (arg3 == 10) {
 			local148 = OutboundPacket.create(ClientProt.aClientProt125, Connection.gameConnection.random);
-			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
+			Static277.method4040(arg0, local8.objId, local148, arg1);
 			Connection.gameConnection.queue(local148);
 		}
 	}

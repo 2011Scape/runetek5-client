@@ -11,7 +11,7 @@ public final class Static38 {
 	public static int anInt922 = 0;
 
 	@OriginalMember(owner = "client!bea", name = "f", descriptor = "I")
-	public static int anInt928 = 0;
+	public static int blackmarks = 0;
 
 	@OriginalMember(owner = "client!bea", name = "a", descriptor = "(IIJI)V")
 	public static void method1001(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1, @OriginalArg(3) int arg2) {

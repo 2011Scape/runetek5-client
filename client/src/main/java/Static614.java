@@ -17,7 +17,7 @@ public final class Static614 {
 	public static final boolean aBoolean718 = false;
 
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "(ZJ)I")
-	public static int method8242(@OriginalArg(1) long arg0) {
+	public static int getYear(@OriginalArg(1) long arg0) {
 		Static551.method7276(arg0);
 		return Static260.aCalendar2.get(1);
 	}
@@ -39,7 +39,7 @@ public final class Static614 {
 		Static354.aLocTypeList4.cleanCaches();
 		Static690.aNpcTypeList2.method7085();
 		ObjTypeList.objTypes.method2479();
-		Static25.aSeqTypeList1.method1163();
+		Static25.aSeqTypeList1.clean();
 		Static23.aSpotAnimTypeList1.method2698();
 		Static529.aVarBitTypeList1.method3428();
 		Static36.aVarPlayerTypeList1.method5785();

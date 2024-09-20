@@ -8,7 +8,7 @@ public final class Static618 {
 	public static int anInt9449;
 
 	@OriginalMember(owner = "client!tja", name = "G", descriptor = "Lclient!sia;")
-	public static final LinkedList aLinkedList68 = new LinkedList();
+	public static final LinkedList highPriorityRequests = new LinkedList();
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(III)Z")
 	public static boolean method8316(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
@@ -84,10 +84,10 @@ public final class Static618 {
 			local12 &= 0xFFFFFDFF;
 		}
 		@Pc(58) long local58 = ((long) arg3 << 48) + ((long) arg11 << 32) + (long) (arg5 + (arg7 << 16) + (arg0 << 24));
-		@Pc(60) SoftLruHashTable local60 = Static354.aSoftLruHashTable120;
+		@Pc(60) SoftLruHashTable local60 = Static354.SHADOWS;
 		@Pc(68) Model local68;
-		synchronized (Static354.aSoftLruHashTable120) {
-			local68 = (Model) Static354.aSoftLruHashTable120.get(local58);
+		synchronized (Static354.SHADOWS) {
+			local68 = (Model) Static354.SHADOWS.get(local58);
 		}
 		if (local68 == null || arg6.method7960(local68.ua(), local12) != 0) {
 			if (local68 != null) {
@@ -138,9 +138,9 @@ public final class Static618 {
 				}
 			}
 			local68 = arg6.method7952(local162, local12, Static722.anInt10905, 64, 768);
-			@Pc(440) SoftLruHashTable local440 = Static354.aSoftLruHashTable120;
-			synchronized (Static354.aSoftLruHashTable120) {
-				Static354.aSoftLruHashTable120.put(local58, local68);
+			@Pc(440) SoftLruHashTable local440 = Static354.SHADOWS;
+			synchronized (Static354.SHADOWS) {
+				Static354.SHADOWS.put(local58, local68);
 			}
 		}
 		@Pc(456) int local456 = arg1.V();

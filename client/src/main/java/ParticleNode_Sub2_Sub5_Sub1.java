@@ -103,7 +103,7 @@ public final class ParticleNode_Sub2_Sub5_Sub1 extends ParticleNode_Sub2_Sub5 {
 			this.method9278((Class19) null, 104);
 		}
 		@Pc(16) Class73 local16 = arg3.method7985();
-		local16.method7125(super.anInt10690, super.anInt10691 - 10, super.anInt10694);
+		local16.method7125(super.xFine, super.anInt10691 - 10, super.zFine);
 		@Pc(32) ObjType local32 = ObjTypeList.objTypes.method2486(this.anInt8867);
 		@Pc(42) Model local42 = local32.method8805((Class152) null, 131072, (PlayerAppearance) null, this.anInt8873, arg3);
 		if (local42 != null && (Static504.aBoolean579 ? local42.method7483(arg1, arg0, local16, true, local32.anInt10138, Static582.anInt8627) : local42.method7486(arg1, arg0, local16, true, local32.anInt10138))) {
@@ -136,8 +136,8 @@ public final class ParticleNode_Sub2_Sub5_Sub1 extends ParticleNode_Sub2_Sub5 {
 	@OriginalMember(owner = "client!sv", name = "a", descriptor = "(ILclient!ha;)Lclient!pea;")
 	@Override
 	public ParticleNode_Sub7 method9276(@OriginalArg(1) Class19 arg0) {
-		@Pc(17) Class286 local17 = Static467.method6351(super.aByte144, super.anInt10690 >> Static52.anInt1066, super.anInt10694 >> Static52.anInt1066);
-		@Pc(29) ParticleNode_Sub2_Sub2 local29 = Static687.method8959(super.aByte144, super.anInt10690 >> Static52.anInt1066, super.anInt10694 >> Static52.anInt1066);
+		@Pc(17) Class286 local17 = Static467.method6351(super.plane, super.xFine >> Static52.anInt1066, super.zFine >> Static52.anInt1066);
+		@Pc(29) ParticleNode_Sub2_Sub2 local29 = Static687.method8959(super.plane, super.xFine >> Static52.anInt1066, super.zFine >> Static52.anInt1066);
 		@Pc(31) int local31 = 0;
 		if (local17 != null && local17.aClass8_Sub2_Sub1_1.aBoolean815) {
 			local31 = local17.aClass8_Sub2_Sub1_1.method9286(2);
@@ -157,16 +157,16 @@ public final class ParticleNode_Sub2_Sub5_Sub1 extends ParticleNode_Sub2_Sub5 {
 			@Pc(115) int local115 = this.anInt8879 << 1;
 			@Pc(122) int local122 = -local115 / 2;
 			@Pc(127) int local127 = -local115 / 2;
-			@Pc(139) int local139 = local110.method7878(super.anInt10694 + local127, local122 + super.anInt10690);
+			@Pc(139) int local139 = local110.method7878(super.zFine + local127, local122 + super.xFine);
 			@Pc(143) int local143 = local115 / 2;
 			@Pc(148) int local148 = -local115 / 2;
-			@Pc(161) int local161 = local110.method7878(super.anInt10694 + local148, local143 + super.anInt10690);
+			@Pc(161) int local161 = local110.method7878(super.zFine + local148, local143 + super.xFine);
 			@Pc(166) int local166 = -local115 / 2;
 			@Pc(170) int local170 = local115 / 2;
-			@Pc(182) int local182 = local110.method7878(local170 + super.anInt10694, super.anInt10690 + local166);
+			@Pc(182) int local182 = local110.method7878(local170 + super.zFine, super.xFine + local166);
 			@Pc(186) int local186 = local115 / 2;
 			@Pc(190) int local190 = local115 / 2;
-			@Pc(203) int local203 = local110.method7878(super.anInt10694 + local190, local186 + super.anInt10690);
+			@Pc(203) int local203 = local110.method7878(super.zFine + local190, local186 + super.xFine);
 			@Pc(215) int local215 = local161 > local139 ? local139 : local161;
 			@Pc(223) int local223 = local203 > local182 ? local182 : local203;
 			@Pc(235) int local235 = local161 < local203 ? local161 : local203;
@@ -192,7 +192,7 @@ public final class ParticleNode_Sub2_Sub5_Sub1 extends ParticleNode_Sub2_Sub5 {
 				local94.method7134(0, local297, 0);
 			}
 		}
-		local94.method7134(super.anInt10690, super.anInt10691 - 10, super.anInt10694);
+		local94.method7134(super.xFine, super.anInt10691 - 10, super.zFine);
 		@Pc(345) ParticleNode_Sub7 local345 = Static642.method8441(true, 3);
 		this.anInt8879 = 0;
 		this.aBoolean672 = false;

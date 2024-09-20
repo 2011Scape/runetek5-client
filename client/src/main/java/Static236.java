@@ -19,8 +19,8 @@ public final class Static236 {
 
 	@OriginalMember(owner = "client!hfa", name = "a", descriptor = "(IZ)V")
 	public static void method3450(@OriginalArg(0) int arg0) {
-		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.method5963(14, (long) arg0);
-		local16.method205();
+		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.create(14, (long) arg0);
+		local16.pushClient();
 	}
 
 	@OriginalMember(owner = "client!hfa", name = "a", descriptor = "(Lclient!gw;I)Z")
@@ -36,7 +36,7 @@ public final class Static236 {
 				return true;
 			}
 		} catch (@Pc(29) Exception local29) {
-			@Pc(106) String local106 = "T2 - " + (arg0.packetType == null ? -1 : arg0.packetType.getOpcode()) + "," + (arg0.lastPacketType == null ? -1 : arg0.lastPacketType.getOpcode()) + "," + (arg0.lastPacketType2 == null ? -1 : arg0.lastPacketType2.getOpcode()) + " - " + arg0.anInt3648 + "," + (Static691.anInt10367 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2270 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
+			@Pc(106) String local106 = "T2 - " + (arg0.packetType == null ? -1 : arg0.packetType.getOpcode()) + "," + (arg0.lastPacketType == null ? -1 : arg0.lastPacketType.getOpcode()) + "," + (arg0.lastPacketType2 == null ? -1 : arg0.lastPacketType2.getOpcode()) + " - " + arg0.anInt3648 + "," + (Static691.originX + Static556.self.anIntArray879[0]) + "," + (Static116.originZ + Static556.self.anIntArray878[0]) + " - ";
 			for (@Pc(108) int local108 = 0; arg0.anInt3648 > local108 && local108 < 50; local108++) {
 				local106 = local106 + arg0.inboundPacket.data[local108] + ",";
 			}

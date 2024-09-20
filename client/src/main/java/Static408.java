@@ -8,19 +8,19 @@ public final class Static408 {
 		Static295.aClient1.method1634();
 		Static524.aConnection3.method3272();
 		Static524.aConnection3.anInt3646 = 0;
-		Static249.anInt4008 = 0;
+		Static249.rebootTimer = 0;
 		Static524.aConnection3.lastPacketType2 = null;
 		Static524.aConnection3.lastPacketType = null;
 		Static524.aConnection3.aServerProt_92 = null;
 		Static524.aConnection3.inboundPacket.pos = 0;
 		Static102.method2022();
-		Static251.anInt4036 = 0;
-		Static723.aString129 = null;
-		Static327.anInt5392 = 0;
+		Static251.state = 0;
+		Static723.name = null;
+		Static327.size = 0;
 		Static91.aClass164_9 = null;
 		Static128.aClass164_8 = null;
-		Static706.anInt10633 = 0;
-		Static87.aClass241Array1 = null;
+		Static706.size = 0;
+		Static87.members = null;
 	}
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(ZLclient!el;)Z")

@@ -10,10 +10,10 @@ public final class Resampler {
 	private int[][] anIntArrayArray143;
 
 	@OriginalMember(owner = "client!lg", name = "c", descriptor = "I")
-	private int anInt5812;
+	private int inputRate;
 
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "I")
-	private int anInt5819;
+	private int outputRate;
 
 	@OriginalMember(owner = "client!lg", name = "<init>", descriptor = "(II)V")
 	public Resampler(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -22,8 +22,8 @@ public final class Resampler {
 			@Pc(18) int local18 = arg0 / local14;
 			@Pc(22) int local22 = arg1 / local14;
 			this.anIntArrayArray143 = new int[local18][14];
-			this.anInt5812 = local18;
-			this.anInt5819 = local22;
+			this.inputRate = local18;
+			this.outputRate = local22;
 			for (@Pc(35) int local35 = 0; local35 < local18; local35++) {
 				@Pc(41) int[] local41 = this.anIntArrayArray143[local35];
 				@Pc(49) double local49 = (double) local35 / (double) local18 + 6.0D;
@@ -51,17 +51,17 @@ public final class Resampler {
 	}
 
 	@OriginalMember(owner = "client!lg", name = "c", descriptor = "(II)I")
-	public int method5231(@OriginalArg(1) int arg0) {
+	public int scalePosition(@OriginalArg(1) int arg0) {
 		if (this.anIntArrayArray143 != null) {
-			arg0 = (int) ((long) arg0 * (long) this.anInt5819 / (long) this.anInt5812) + 6;
+			arg0 = (int) ((long) arg0 * (long) this.outputRate / (long) this.inputRate) + 6;
 		}
 		return arg0;
 	}
 
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(II)I")
-	public int method5234(@OriginalArg(1) int arg0) {
+	public int scaleRate(@OriginalArg(1) int arg0) {
 		if (this.anIntArrayArray143 != null) {
-			arg0 = (int) ((long) this.anInt5819 * (long) arg0 / (long) this.anInt5812);
+			arg0 = (int) ((long) this.outputRate * (long) arg0 / (long) this.inputRate);
 		}
 		return arg0;
 	}
@@ -69,7 +69,7 @@ public final class Resampler {
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(I[B)[B")
 	public byte[] method5235(@OriginalArg(1) byte[] arg0) {
 		if (this.anIntArrayArray143 != null) {
-			@Pc(19) int local19 = (int) ((long) arg0.length * (long) this.anInt5819 / (long) this.anInt5812) + 14;
+			@Pc(19) int local19 = (int) ((long) arg0.length * (long) this.outputRate / (long) this.inputRate) + 14;
 			@Pc(22) int[] local22 = new int[local19];
 			@Pc(24) int local24 = 0;
 			@Pc(26) int local26 = 0;
@@ -79,9 +79,9 @@ public final class Resampler {
 				for (@Pc(41) int local41 = 0; local41 < 14; local41++) {
 					local22[local24 + local41] += local39[local41] * local34;
 				}
-				local26 += this.anInt5819;
-				@Pc(74) int local74 = local26 / this.anInt5812;
-				local26 -= this.anInt5812 * local74;
+				local26 += this.outputRate;
+				@Pc(74) int local74 = local26 / this.inputRate;
+				local26 -= this.inputRate * local74;
 				local24 += local74;
 			}
 			arg0 = new byte[local19];
@@ -102,7 +102,7 @@ public final class Resampler {
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "([SI)[S")
 	public short[] method5237(@OriginalArg(0) short[] arg0) {
 		if (this.anIntArrayArray143 != null) {
-			@Pc(23) int local23 = (int) ((long) this.anInt5819 * (long) arg0.length / (long) this.anInt5812) + 14;
+			@Pc(23) int local23 = (int) ((long) this.outputRate * (long) arg0.length / (long) this.inputRate) + 14;
 			@Pc(26) int[] local26 = new int[local23];
 			@Pc(28) int local28 = 0;
 			@Pc(30) int local30 = 0;
@@ -112,10 +112,10 @@ public final class Resampler {
 				for (@Pc(45) int local45 = 0; local45 < 14; local45++) {
 					local26[local28 + local45] += local43[local45] * local38 >> 2;
 				}
-				local30 += this.anInt5819;
-				@Pc(80) int local80 = local30 / this.anInt5812;
+				local30 += this.outputRate;
+				@Pc(80) int local80 = local30 / this.inputRate;
 				local28 += local80;
-				local30 -= this.anInt5812 * local80;
+				local30 -= this.inputRate * local80;
 			}
 			arg0 = new short[local23];
 			for (@Pc(103) int local103 = 0; local103 < local23; local103++) {

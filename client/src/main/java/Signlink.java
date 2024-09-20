@@ -25,13 +25,13 @@ public final class Signlink implements Runnable {
 	public FileOnDisk aFileOnDisk2 = null;
 
 	@OriginalMember(owner = "client!vq", name = "l", descriptor = "Lclient!oba;")
-	private PrivilegedRequest aPrivilegedRequest8 = null;
+	private PrivilegedRequest requestQueueHead = null;
 
 	@OriginalMember(owner = "client!vq", name = "F", descriptor = "Z")
 	private boolean isShuttingDown = false;
 
 	@OriginalMember(owner = "client!vq", name = "h", descriptor = "Lclient!oba;")
-	private PrivilegedRequest aPrivilegedRequest9 = null;
+	private PrivilegedRequest requestQueueTail = null;
 
 	@OriginalMember(owner = "client!vq", name = "i", descriptor = "Lclient!dm;")
 	public FileOnDisk aFileOnDisk4 = null;
@@ -182,33 +182,33 @@ public final class Signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IIIII)Lclient!oba;")
-	public PrivilegedRequest method8977(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		return this.method8993(arg0 << 16, 6, (Object) null, (arg2 << 16) + arg1);
+	public PrivilegedRequest enterFullScreen(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+		return this.enqueue(arg0 << 16, 6, (Object) null, (arg2 << 16) + arg1);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;I)Lclient!oba;")
-	public PrivilegedRequest method8978(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
-		return this.method8993(0, 9, new Object[] { arg0, arg1 }, 0);
+	public PrivilegedRequest getDeclaredField(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
+		return this.enqueue(0, 9, new Object[] { arg0, arg1 }, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;ZZI)Lclient!oba;")
 	public PrivilegedRequest method8979(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
-		return this.method8993(0, arg1 ? 22 : 1, arg0, arg2);
+		return this.enqueue(0, arg1 ? 22 : 1, arg0, arg2);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ZLjava/lang/String;B)Lclient!oba;")
-	public PrivilegedRequest method8981(@OriginalArg(1) String arg0) {
-		return this.method8993(0, 12, arg0, 0);
+	public PrivilegedRequest openPreferences(@OriginalArg(1) String arg0) {
+		return this.enqueue(0, 12, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BI)Lclient!oba;")
-	public PrivilegedRequest method8982(@OriginalArg(1) int arg0) {
-		return this.method8993(0, 3, (Object) null, arg0);
+	public PrivilegedRequest getReverseDns(@OriginalArg(1) int arg0) {
+		return this.enqueue(0, 3, (Object) null, arg0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(B)Lclient!oba;")
-	public PrivilegedRequest method8984() {
-		return this.method8993(0, 5, (Object) null, 0);
+	public PrivilegedRequest getDisplayModes() {
+		return this.enqueue(0, 5, (Object) null, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(I)V")
@@ -257,8 +257,8 @@ public final class Signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;B)Lclient!oba;")
-	public PrivilegedRequest method8986(@OriginalArg(0) String arg0) {
-		return this.method8993(0, 16, arg0, 0);
+	public PrivilegedRequest openUrl(@OriginalArg(0) String arg0) {
+		return this.enqueue(0, 16, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/io/File;I[B)Z")
@@ -274,13 +274,13 @@ public final class Signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/Class;[Ljava/lang/Class;Ljava/lang/String;Z)Lclient!oba;")
-	public PrivilegedRequest method8988(@OriginalArg(0) Class arg0, @OriginalArg(1) Class[] arg1, @OriginalArg(2) String arg2) {
-		return this.method8993(0, 8, new Object[] { arg0, arg2, arg1 }, 0);
+	public PrivilegedRequest getDeclaredMethod(@OriginalArg(0) Class arg0, @OriginalArg(1) Class[] arg1, @OriginalArg(2) String arg2) {
+		return this.enqueue(0, 8, new Object[] { arg0, arg2, arg1 }, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/awt/Frame;I)Lclient!oba;")
-	public PrivilegedRequest method8989(@OriginalArg(0) Frame arg0) {
-		return this.method8993(0, 7, arg0, 0);
+	public PrivilegedRequest exitFullScreen(@OriginalArg(0) Frame arg0) {
+		return this.enqueue(0, 7, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(I)Z")
@@ -295,28 +295,28 @@ public final class Signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BLjava/lang/Runnable;I)Lclient!oba;")
-	public PrivilegedRequest method8991(@OriginalArg(1) Runnable arg0, @OriginalArg(2) int arg1) {
-		return this.method8993(0, 2, arg0, arg1);
+	public PrivilegedRequest startThread(@OriginalArg(1) Runnable arg0, @OriginalArg(2) int arg1) {
+		return this.enqueue(0, 2, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BLjava/net/URL;)Lclient!oba;")
-	public PrivilegedRequest method8992(@OriginalArg(1) URL arg0) {
-		return this.method8993(0, 4, arg0, 0);
+	public PrivilegedRequest openUrlStream(@OriginalArg(1) URL arg0) {
+		return this.enqueue(0, 4, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IILjava/lang/Object;II)Lclient!oba;")
-	private PrivilegedRequest method8993(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Object arg2, @OriginalArg(4) int arg3) {
+	private PrivilegedRequest enqueue(@OriginalArg(0) int intArg1, @OriginalArg(1) int type, @OriginalArg(2) Object objectArg, @OriginalArg(4) int intArg2) {
 		@Pc(3) PrivilegedRequest local3 = new PrivilegedRequest();
-		local3.anObject12 = arg2;
-		local3.anInt6788 = arg3;
-		local3.anInt6790 = arg1;
-		local3.anInt6787 = arg0;
+		local3.objectArg = objectArg;
+		local3.intArg2 = intArg2;
+		local3.type = type;
+		local3.intArg1 = intArg1;
 		synchronized (this) {
-			if (this.aPrivilegedRequest9 == null) {
-				this.aPrivilegedRequest9 = this.aPrivilegedRequest8 = local3;
+			if (this.requestQueueTail == null) {
+				this.requestQueueTail = this.requestQueueHead = local3;
 			} else {
-				this.aPrivilegedRequest9.aPrivilegedRequest5 = local3;
-				this.aPrivilegedRequest9 = local3;
+				this.requestQueueTail.next = local3;
+				this.requestQueueTail = local3;
 			}
 			this.notify();
 			return local3;
@@ -325,12 +325,12 @@ public final class Signlink implements Runnable {
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(B)V")
 	public void method8994() {
-		Static689.aLong317 = Static588.currentTimeWithDrift() + 5000L;
+		Static689.breakConnectionsUntil = Static588.currentTimeWithDrift() + 5000L;
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IB[ILjava/awt/Component;Ljava/awt/Point;I)Lclient!oba;")
-	public PrivilegedRequest method8995(@OriginalArg(0) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) int arg4) {
-		return this.method8993(arg0, 17, new Object[] { arg2, arg1, arg3 }, arg4);
+	public PrivilegedRequest setCursor(@OriginalArg(0) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) int arg4) {
+		return this.enqueue(arg0, 17, new Object[] { arg2, arg1, arg3 }, arg4);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "run", descriptor = "()V")
@@ -343,11 +343,11 @@ public final class Signlink implements Runnable {
 					if (this.isShuttingDown) {
 						return;
 					}
-					if (this.aPrivilegedRequest8 != null) {
-						local15 = this.aPrivilegedRequest8;
-						this.aPrivilegedRequest8 = this.aPrivilegedRequest8.aPrivilegedRequest5;
-						if (this.aPrivilegedRequest8 == null) {
-							this.aPrivilegedRequest9 = null;
+					if (this.requestQueueHead != null) {
+						local15 = this.requestQueueHead;
+						this.requestQueueHead = this.requestQueueHead.next;
+						if (this.requestQueueHead == null) {
+							this.requestQueueTail = null;
 						}
 						break;
 					}
@@ -358,115 +358,115 @@ public final class Signlink implements Runnable {
 				}
 			}
 			try {
-				@Pc(42) int local42 = local15.anInt6790;
+				@Pc(42) int local42 = local15.type;
 				if (local42 == 1) {
-					if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+					if (Static588.currentTimeWithDrift() < Static689.breakConnectionsUntil) {
 						throw new IOException();
 					}
-					local15.anObject13 = new Socket(InetAddress.getByName((String) local15.anObject12), local15.anInt6788);
+					local15.result = new Socket(InetAddress.getByName((String) local15.objectArg), local15.intArg2);
 				} else if (local42 == 22) {
-					if (Static689.aLong317 > Static588.currentTimeWithDrift()) {
+					if (Static689.breakConnectionsUntil > Static588.currentTimeWithDrift()) {
 						throw new IOException();
 					}
 					try {
-						local15.anObject13 = Static327.method4894((String) local15.anObject12, local15.anInt6788).method6097();
+						local15.result = Static327.method4894((String) local15.objectArg, local15.intArg2).method6097();
 					} catch (@Pc(947) IOException_Sub1 local947) {
-						local15.anObject13 = local947.getMessage();
+						local15.result = local947.getMessage();
 						throw local947;
 					}
 				} else if (local42 == 2) {
-					@Pc(911) Thread local911 = new Thread((Runnable) local15.anObject12);
+					@Pc(911) Thread local911 = new Thread((Runnable) local15.objectArg);
 					local911.setDaemon(true);
 					local911.start();
-					local911.setPriority(local15.anInt6788);
-					local15.anObject13 = local911;
+					local911.setPriority(local15.intArg2);
+					local15.result = local911;
 				} else if (local42 == 4) {
-					if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+					if (Static588.currentTimeWithDrift() < Static689.breakConnectionsUntil) {
 						throw new IOException();
 					}
-					local15.anObject13 = new DataInputStream(((URL) local15.anObject12).openStream());
+					local15.result = new DataInputStream(((URL) local15.objectArg).openStream());
 				} else {
 					@Pc(102) Object[] local102;
 					if (local42 == 8) {
-						local102 = (Object[]) local15.anObject12;
+						local102 = (Object[]) local15.objectArg;
 						if (this.aBoolean781 && ((Class) local102[0]).getClassLoader() == null) {
 							throw new SecurityException();
 						}
-						local15.anObject13 = ((Class) local102[0]).getDeclaredMethod((String) local102[1], (Class[]) local102[2]);
+						local15.result = ((Class) local102[0]).getDeclaredMethod((String) local102[1], (Class[]) local102[2]);
 					} else if (local42 == 9) {
-						local102 = (Object[]) local15.anObject12;
+						local102 = (Object[]) local15.objectArg;
 						if (this.aBoolean781 && ((Class) local102[0]).getClassLoader() == null) {
 							throw new SecurityException();
 						}
-						local15.anObject13 = ((Class) local102[0]).getDeclaredField((String) local102[1]);
+						local15.result = ((Class) local102[0]).getDeclaredField((String) local102[1]);
 					} else if (local42 == 18) {
 						@Pc(136) Clipboard local136 = Toolkit.getDefaultToolkit().getSystemClipboard();
-						local15.anObject13 = local136.getContents((Object) null);
+						local15.result = local136.getContents((Object) null);
 					} else if (local42 == 19) {
-						@Pc(149) Transferable local149 = (Transferable) local15.anObject12;
+						@Pc(149) Transferable local149 = (Transferable) local15.objectArg;
 						@Pc(152) Clipboard local152 = Toolkit.getDefaultToolkit().getSystemClipboard();
 						local152.setContents(local149, (ClipboardOwner) null);
 					} else if (this.aBoolean781) {
 						@Pc(220) String local220;
 						if (local42 == 3) {
-							if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+							if (Static588.currentTimeWithDrift() < Static689.breakConnectionsUntil) {
 								throw new IOException();
 							}
-							local220 = (local15.anInt6788 >> 24 & 0xFF) + "." + (local15.anInt6788 >> 16 & 0xFF) + "." + (local15.anInt6788 >> 8 & 0xFF) + "." + (local15.anInt6788 & 0xFF);
-							local15.anObject13 = InetAddress.getByName(local220).getHostName();
+							local220 = (local15.intArg2 >> 24 & 0xFF) + "." + (local15.intArg2 >> 16 & 0xFF) + "." + (local15.intArg2 >> 8 & 0xFF) + "." + (local15.intArg2 & 0xFF);
+							local15.result = InetAddress.getByName(local220).getHostName();
 						} else if (local42 == 21) {
-							if (Static588.currentTimeWithDrift() < Static689.aLong317) {
+							if (Static588.currentTimeWithDrift() < Static689.breakConnectionsUntil) {
 								throw new IOException();
 							}
-							local15.anObject13 = InetAddress.getByName((String) local15.anObject12).getAddress();
+							local15.result = InetAddress.getByName((String) local15.objectArg).getAddress();
 						} else if (local42 == 5) {
 							if (this.aBoolean779) {
-								local15.anObject13 = this.aClass15_1.method250();
+								local15.result = this.aClass15_1.listmodes();
 							} else {
-								local15.anObject13 = Class.forName("Class66").getMethod("listmodes").invoke(this.anObject19);
+								local15.result = Class.forName("Class66").getMethod("listmodes").invoke(this.anObject19);
 							}
 						} else if (local42 == 6) {
 							@Pc(268) Frame local268 = new Frame("Jagex Full Screen");
-							local15.anObject13 = local268;
+							local15.result = local268;
 							local268.setResizable(false);
 							if (this.aBoolean779) {
-								this.aClass15_1.method248(local268, local15.anInt6787 >> 16, local15.anInt6787 & 0xFFFF, local15.anInt6788 & 0xFFFF, local15.anInt6788 >>> 16);
+								this.aClass15_1.enter(local268, local15.intArg1 >> 16, local15.intArg1 & 0xFFFF, local15.intArg2 & 0xFFFF, local15.intArg2 >>> 16);
 							} else {
-								Class.forName("Class66").getMethod("enter", Static689.aClass24 == null ? (Static689.aClass24 = Class.forName("java.awt.Frame")) : Static689.aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6788 >>> 16), new Integer(local15.anInt6788 & 0xFFFF), Integer.valueOf(local15.anInt6787 >> 16), new Integer(local15.anInt6787 & 0xFFFF));
+								Class.forName("Class66").getMethod("enter", Static689.aClass24 == null ? (Static689.aClass24 = Class.forName("java.awt.Frame")) : Static689.aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.intArg2 >>> 16), new Integer(local15.intArg2 & 0xFFFF), Integer.valueOf(local15.intArg1 >> 16), new Integer(local15.intArg1 & 0xFFFF));
 							}
 						} else if (local42 != 7) {
 							@Pc(438) FileOnDisk local438;
 							if (local42 == 12) {
-								local438 = Static689.method8980(Static689.aString122, Static689.anInt10357, (String) local15.anObject12);
-								local15.anObject13 = local438;
+								local438 = Static689.method8980(Static689.aString122, Static689.anInt10357, (String) local15.objectArg);
+								local15.result = local438;
 							} else if (local42 == 13) {
-								local438 = Static689.method8980("", Static689.anInt10357, (String) local15.anObject12);
-								local15.anObject13 = local438;
+								local438 = Static689.method8980("", Static689.anInt10357, (String) local15.objectArg);
+								local15.result = local438;
 							} else if (this.aBoolean781 && local42 == 14) {
-								@Pc(460) int local460 = local15.anInt6788;
-								@Pc(463) int local463 = local15.anInt6787;
+								@Pc(460) int local460 = local15.intArg2;
+								@Pc(463) int local463 = local15.intArg1;
 								if (this.aBoolean779) {
-									this.aWin32Callback.method6431(local460, local463);
+									this.aWin32Callback.moveMouse(local460, local463);
 								} else {
 									Class.forName("Class238").getDeclaredMethod("moveMouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
 								}
 							} else if (this.aBoolean781 && local42 == 15) {
-								@Pc(534) boolean local534 = local15.anInt6788 != 0;
-								@Pc(538) Component local538 = (Component) local15.anObject12;
+								@Pc(534) boolean local534 = local15.intArg2 != 0;
+								@Pc(538) Component local538 = (Component) local15.objectArg;
 								if (this.aBoolean779) {
-									this.aWin32Callback.method6432(local534, local538);
+									this.aWin32Callback.showCursor(local534, local538);
 								} else {
 									Class.forName("Class238").getDeclaredMethod("showCursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
 								}
 							} else if (!this.aBoolean779 && local42 == 17) {
-								local102 = (Object[]) local15.anObject12;
-								Class.forName("Class238").getDeclaredMethod("setCustomCursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
+								local102 = (Object[]) local15.objectArg;
+								Class.forName("Class238").getDeclaredMethod("setCustomCursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.intArg2), new Integer(local15.intArg1), (Point) local102[2]);
 							} else if (local42 == 16) {
 								try {
 									if (!Static689.osName.startsWith("win")) {
 										throw new Exception();
 									}
-									local220 = (String) local15.anObject12;
+									local220 = (String) local15.objectArg;
 									if (!local220.startsWith("http://") && !local220.startsWith("https://")) {
 										throw new Exception();
 									}
@@ -477,16 +477,16 @@ public final class Signlink implements Runnable {
 										}
 									}
 									Runtime.getRuntime().exec("cmd /c start \"j\" \"" + local220 + "\"");
-									local15.anObject13 = null;
+									local15.result = null;
 								} catch (@Pc(793) Exception local793) {
-									local15.anObject13 = local793;
+									local15.result = local793;
 									throw local793;
 								}
 							} else {
 								throw new Exception("");
 							}
 						} else if (this.aBoolean779) {
-							this.aClass15_1.method249((Frame) local15.anObject12);
+							this.aClass15_1.method249((Frame) local15.objectArg);
 						} else {
 							Class.forName("Class66").getMethod("exit").invoke(this.anObject19);
 						}

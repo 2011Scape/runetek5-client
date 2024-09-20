@@ -23,7 +23,7 @@ public final class WorldMapFont {
 	private int anInt8498;
 
 	@OriginalMember(owner = "client!rt", name = "f", descriptor = "Z")
-	private boolean aBoolean653 = false;
+	private boolean grayscale = false;
 
 	@OriginalMember(owner = "client!rt", name = "c", descriptor = "[I")
 	private final int[] anIntArray680 = new int[4];
@@ -46,25 +46,25 @@ public final class WorldMapFont {
 
 	@OriginalMember(owner = "client!rt", name = "<init>", descriptor = "(Lclient!ha;IZLjava/awt/Component;)V")
 	public WorldMapFont(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component arg3) {
-		this.aBoolean653 = false;
+		this.grayscale = false;
 		this.aSoftwareIndexedSpriteArray13 = new SoftwareIndexedSprite[256];
 		this.anIntArray678 = new int[256];
 		@Pc(32) Font local32 = new Font("Helvetica", 1, arg1);
 		@Pc(36) FontMetrics local36 = arg3.getFontMetrics(local32);
-		for (@Pc(38) int local38 = 0; local38 < Static568.anInt8497; local38++) {
-			this.method7541(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local38), local38, false);
+		for (@Pc(38) int local38 = 0; local38 < Static568.ALPHABET_SIZE; local38++) {
+			this.preRenderGlyph(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local38), local38, false);
 		}
-		if (this.aBoolean653) {
-			this.aBoolean653 = false;
+		if (this.grayscale) {
+			this.grayscale = false;
 			local32 = new Font("Helvetica", 0, arg1);
 			local36 = arg3.getFontMetrics(local32);
-			for (@Pc(78) int local78 = 0; local78 < Static568.anInt8497; local78++) {
-				this.method7541(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local78), local78, false);
+			for (@Pc(78) int local78 = 0; local78 < Static568.ALPHABET_SIZE; local78++) {
+				this.preRenderGlyph(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local78), local78, false);
 			}
-			if (!this.aBoolean653) {
-				this.aBoolean653 = false;
-				for (@Pc(103) int local103 = 0; local103 < Static568.anInt8497; local103++) {
-					this.method7541(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local103), local103, true);
+			if (!this.grayscale) {
+				this.grayscale = false;
+				for (@Pc(103) int local103 = 0; local103 < Static568.ALPHABET_SIZE; local103++) {
+					this.preRenderGlyph(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local103), local103, true);
 				}
 			}
 		}
@@ -116,7 +116,7 @@ public final class WorldMapFont {
 	}
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(Lclient!ha;Ljava/awt/Font;Ljava/awt/FontMetrics;CIZ)V")
-	private void method7541(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Font arg1, @OriginalArg(2) FontMetrics arg2, @OriginalArg(3) char arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	private void preRenderGlyph(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Font arg1, @OriginalArg(2) FontMetrics arg2, @OriginalArg(3) char arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		@Pc(3) int local3 = arg2.charWidth(arg3);
 		@Pc(5) int local5 = local3;
 		if (arg5) {
@@ -133,7 +133,7 @@ public final class WorldMapFont {
 		@Pc(67) int local67 = arg2.getMaxAscent();
 		@Pc(73) int local73 = arg2.getMaxAscent() + arg2.getMaxDescent();
 		@Pc(76) int local76 = arg2.getHeight();
-		@Pc(81) Image local81 = Static434.aCanvas7.createImage(local3, local73);
+		@Pc(81) Image local81 = Static434.canvas.createImage(local3, local73);
 		@Pc(84) Graphics local84 = local81.getGraphics();
 		local84.setColor(Color.black);
 		local84.fillRect(0, 0, local3, local73);

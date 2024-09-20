@@ -91,9 +91,9 @@ public final class Class39_Sub23 extends Class39 {
 		@Pc(15) PathingEntity local15;
 		if (this.anInt9980 < 0) {
 			local15 = Static219.aClass236Array1[this.anInt9982].method5363();
-			local18 = local15.aByte144;
-			local21 = local15.anInt10694;
-			local24 = local15.anInt10690;
+			local18 = local15.plane;
+			local21 = local15.zFine;
+			local24 = local15.xFine;
 		} else {
 			local21 = this.anInt9972 * 512 + 256;
 			local24 = this.anInt9980 * 512 + 256;
@@ -106,15 +106,15 @@ public final class Class39_Sub23 extends Class39 {
 			local63 = this.anInt9985 * 512 + 256;
 		} else {
 			local15 = Static219.aClass236Array1[this.anInt9989].method5363();
-			local63 = local15.anInt10690;
-			local56 = local15.anInt10694;
+			local63 = local15.xFine;
+			local56 = local15.zFine;
 			if (local18 < 0) {
-				local18 = local15.aByte144;
+				local18 = local15.plane;
 			}
 		}
 		@Pc(91) int local91 = this.anInt9979 << 2;
-		@Pc(128) ProjAnimEntity local128 = new ProjAnimEntity(this.anInt9976, local18, local18, local24, local21, this.anInt9974 << 2, Static333.anInt5455, Static333.anInt5455 + this.anInt9978, this.anInt9977, local91, this.anInt9982 + 1, this.anInt9989 + 1, this.anInt9988 << 2, false, 0);
-		local128.method813(this.anInt9988 << 2, this.anInt9978 + Static333.anInt5455, local56, local63);
+		@Pc(128) ProjAnimEntity local128 = new ProjAnimEntity(this.anInt9976, local18, local18, local24, local21, this.anInt9974 << 2, Static333.loop, Static333.loop + this.anInt9978, this.anInt9977, local91, this.anInt9982 + 1, this.anInt9989 + 1, this.anInt9988 << 2, false, 0);
+		local128.method813(this.anInt9988 << 2, this.anInt9978 + Static333.loop, local56, local63);
 		Static505.aLinkedList77.addTail(new SecondaryLinkable_Sub15(local128));
 	}
 }

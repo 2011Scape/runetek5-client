@@ -47,7 +47,7 @@ public final class Static55 {
 			Static481.anInt7215 = 0;
 			Static676.anInt10206 = arg2;
 			local147 = OutboundPacket.create(Static664.aClientProt115, Connection.gameConnection.random);
-			local147.buffer.ip2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10740);
+			local147.buffer.ip2(Static556.self.anInt10740);
 			local147.buffer.p4_alt1(Static450.anInt6819);
 			local147.buffer.p2(Static162.anInt2799);
 			local147.buffer.p1_alt3(Static334.aKeyboard1.method8479(82) ? 1 : 0);
@@ -58,10 +58,10 @@ public final class Static55 {
 			@Pc(197) Component local197 = Static15.method186(local16, local19);
 			if (local197 != null) {
 				Static470.method6384();
-				@Pc(206) ServerActiveProperties local206 = Static84.method1661(local197);
-				Static389.method5476(local206.method6216(), local197, local206.anInt6904);
+				@Pc(206) ServerActiveProperties local206 = Static84.getServerActiveProperties(local197);
+				Static389.method5476(local206.getTargetMask(), local197, local206.targetParam);
 				Static153.aString27 = Static380.method5359(local197);
-				Static128.aString108 = local197.aString41 + "<col=ffffff>";
+				Static128.aString108 = local197.optionBase + "<col=ffffff>";
 				if (Static153.aString27 == null) {
 					Static153.aString27 = "Null";
 				}
@@ -69,8 +69,8 @@ public final class Static55 {
 			return;
 		}
 		if (local22 == 58) {
-			if (Static608.anInt9290 > 0 && Static334.aKeyboard1.method8479(82) && Static334.aKeyboard1.method8479(81)) {
-				Static624.method8331(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144, Static116.anInt2270 + local19, Static691.anInt10367 + local16);
+			if (Static608.staffModLevel > 0 && Static334.aKeyboard1.method8479(82) && Static334.aKeyboard1.method8479(81)) {
+				Static624.method8331(Static556.self.plane, Static116.originZ + local19, Static691.originX + local16);
 			} else {
 				local147 = Static32.method878(local16, local19, local26);
 				if (local26 == 1) {
@@ -81,8 +81,8 @@ public final class Static55 {
 					local147.buffer.p1(Static29.anInt723);
 					local147.buffer.p1(Static660.anInt9835);
 					local147.buffer.p1(89);
-					local147.buffer.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690);
-					local147.buffer.p2(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694);
+					local147.buffer.p2(Static556.self.xFine);
+					local147.buffer.p2(Static556.self.zFine);
 					local147.buffer.p1(63);
 				} else {
 					Static305.anInt4882 = arg0;
@@ -97,7 +97,7 @@ public final class Static55 {
 		if (local22 == 10 && Static390.aComponent9 == null) {
 			Static479.method6461(local16, local19);
 			Static390.aComponent9 = Static15.method186(local16, local19);
-			Static178.method2729(Static390.aComponent9);
+			Static178.redraw(Static390.aComponent9);
 		}
 		@Pc(389) ClientProt local389 = null;
 		if (local22 == 2) {
@@ -158,22 +158,22 @@ public final class Static55 {
 			local494 = OutboundPacket.create(local548, Connection.gameConnection.random);
 			local494.buffer.p2_alt2(local26);
 			local494.buffer.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local494.buffer.p2(local19 + Static116.anInt2270);
-			local494.buffer.ip2(Static691.anInt10367 + local16);
+			local494.buffer.p2(local19 + Static116.originZ);
+			local494.buffer.ip2(Static691.originX + local16);
 			Connection.gameConnection.queue(local494);
 			Static414.method5697(local19, local16);
 		}
 		if (local22 == 11) {
-			if (Static608.anInt9290 > 0 && Static334.aKeyboard1.method8479(82) && Static334.aKeyboard1.method8479(81)) {
-				Static624.method8331(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144, Static116.anInt2270 + local19, Static691.anInt10367 + local16);
+			if (Static608.staffModLevel > 0 && Static334.aKeyboard1.method8479(82) && Static334.aKeyboard1.method8479(81)) {
+				Static624.method8331(Static556.self.plane, Static116.originZ + local19, Static691.originX + local16);
 			} else {
 				Static481.anInt7215 = 0;
 				Static676.anInt10206 = arg2;
 				Static616.anInt9417 = 1;
 				Static305.anInt4882 = arg0;
 				local494 = OutboundPacket.create(Static512.aClientProt96, Connection.gameConnection.random);
-				local494.buffer.p2_alt3(local19 + Static116.anInt2270);
-				local494.buffer.ip2(Static691.anInt10367 + local16);
+				local494.buffer.p2_alt3(local19 + Static116.originZ);
+				local494.buffer.ip2(Static691.originX + local16);
 				Connection.gameConnection.queue(local494);
 			}
 		}
@@ -234,9 +234,9 @@ public final class Static55 {
 			Static676.anInt10206 = arg2;
 			local949 = OutboundPacket.create(local878, Connection.gameConnection.random);
 			local949.buffer.p1_alt1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local949.buffer.p2_alt2(Static691.anInt10367 + local16);
+			local949.buffer.p2_alt2(Static691.originX + local16);
 			local949.buffer.p2_alt3((int) (local35 >>> 32) & Integer.MAX_VALUE);
-			local949.buffer.ip2(local19 + Static116.anInt2270);
+			local949.buffer.ip2(local19 + Static116.originZ);
 			Connection.gameConnection.queue(local949);
 			Static38.method1001(local16, local35, local19);
 		}
@@ -249,10 +249,10 @@ public final class Static55 {
 			Static305.anInt4882 = arg0;
 			Static481.anInt7215 = 0;
 			local949 = OutboundPacket.create(Static181.aClientProt34, Connection.gameConnection.random);
-			local949.buffer.p2_alt2(Static691.anInt10367 + local16);
+			local949.buffer.p2_alt2(Static691.originX + local16);
 			local949.buffer.ip2(Static162.anInt2799);
 			local949.buffer.p4_alt2(Static450.anInt6819);
-			local949.buffer.p2_alt2(Static116.anInt2270 + local19);
+			local949.buffer.p2_alt2(Static116.originZ + local19);
 			local949.buffer.p2(Static77.anInt1614);
 			Connection.gameConnection.queue(local949);
 			Static147.method2419(0, local19, 1, true, local16, 0, -4, 1);
@@ -263,8 +263,8 @@ public final class Static55 {
 			Static305.anInt4882 = arg0;
 			Static676.anInt10206 = arg2;
 			local949 = OutboundPacket.create(Static175.aClientProt31, Connection.gameConnection.random);
-			local949.buffer.p2(local16 + Static691.anInt10367);
-			local949.buffer.p2(Static116.anInt2270 + local19);
+			local949.buffer.p2(local16 + Static691.originX);
+			local949.buffer.p2(Static116.originZ + local19);
 			local949.buffer.p2_alt3(Static162.anInt2799);
 			local949.buffer.p4_alt3(Static450.anInt6819);
 			local949.buffer.ip2(Static77.anInt1614);
@@ -301,11 +301,11 @@ public final class Static55 {
 			Static616.anInt9417 = 2;
 			local949 = OutboundPacket.create(Static419.aClientProt77, Connection.gameConnection.random);
 			local949.buffer.p1_alt2(Static334.aKeyboard1.method8479(82) ? 1 : 0);
-			local949.buffer.ip2(Static116.anInt2270 + local19);
+			local949.buffer.ip2(Static116.originZ + local19);
 			local949.buffer.ip2(Static77.anInt1614);
 			local949.buffer.p4_alt1(Static450.anInt6819);
 			local949.buffer.p2_alt3(Static162.anInt2799);
-			local949.buffer.ip2(local16 + Static691.anInt10367);
+			local949.buffer.ip2(local16 + Static691.originX);
 			local949.buffer.p2_alt2(Integer.MAX_VALUE & (int) (local35 >>> 32));
 			Connection.gameConnection.queue(local949);
 			Static38.method1001(local16, local35, local19);
@@ -314,7 +314,7 @@ public final class Static55 {
 			Static470.method6384();
 		}
 		if (Static67.aComponent10 != null && Static499.anInt7501 == 0) {
-			Static178.method2729(Static67.aComponent10);
+			Static178.redraw(Static67.aComponent10);
 		}
 	}
 

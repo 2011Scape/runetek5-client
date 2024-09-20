@@ -39,7 +39,7 @@ public final class Static212 {
 			@Pc(42) int local42 = (local16 & 0x3F) << 10 | 0x3F | 0x380;
 			@Pc(46) int local46 = Static154.anIntArray237[local42];
 			Static300.method4390(false, true);
-			arg3.aa(arg1, ((63 - local16) * arg0.anInt3746 >> 6) + arg2, arg0.anInt3802, (arg0.anInt3746 >> 6) + 1, local46, 0);
+			arg3.aa(arg1, ((63 - local16) * arg0.height >> 6) + arg2, arg0.width, (arg0.height >> 6) + 1, local46, 0);
 		}
 	}
 }

@@ -46,20 +46,20 @@ public final class Static523 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZLclient!hda;)V")
 	public static void method3449(@OriginalArg(1) Component arg0) {
-		if (Static376.anInt5921 != arg0.anInt3806) {
+		if (Static376.anInt5921 != arg0.clientCode) {
 			return;
 		}
-		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2 == null) {
-			arg0.anInt3831 = 0;
+		if (Static556.self.username == null) {
+			arg0.modelId = 0;
 			arg0.anInt3738 = 0;
 			return;
 		}
-		arg0.anInt3807 = 150;
-		arg0.anInt3811 = (int) (Math.sin((double) Static333.anInt5455 / 40.0D) * 256.0D) & 0x7FF;
-		arg0.anInt3823 = 5;
-		arg0.anInt3831 = Static312.anInt5000;
-		arg0.anInt3738 = Static214.method3157(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.name2);
-		@Pc(55) Class152 local55 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass152_10;
+		arg0.modelXAngle = 150;
+		arg0.modelYAngle = (int) (Math.sin((double) Static333.loop / 40.0D) * 256.0D) & 0x7FF;
+		arg0.modelType = 5;
+		arg0.modelId = Static312.anInt5000;
+		arg0.anInt3738 = Static214.method3157(Static556.self.username);
+		@Pc(55) Class152 local55 = Static556.self.aClass152_10;
 		if (local55 == null) {
 			arg0.aClass152_6 = null;
 			return;
@@ -67,7 +67,7 @@ public final class Static523 {
 		if (arg0.aClass152_6 == null) {
 			arg0.aClass152_6 = new Class152_Sub1();
 		}
-		arg0.anInt3789 = local55.method9114();
+		arg0.modelSeqId = local55.method9114();
 		arg0.aClass152_6.method9096(local55);
 	}
 }

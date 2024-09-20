@@ -8,7 +8,7 @@ public final class Static540 {
 	public static FluTypeList aFluTypeList6;
 
 	@OriginalMember(owner = "client!r", name = "t", descriptor = "[I")
-	public static final int[] anIntArray594 = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
+	public static final int[] FEMALE_FEATURES = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BC)Z")
 	public static boolean method6536(@OriginalArg(1) char arg0) {
@@ -37,7 +37,7 @@ public final class Static540 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IBI)V")
 	public static void method6537(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.method5963(1, (long) arg1);
+		@Pc(16) SecondaryLinkable_Sub2 local16 = Static440.create(1, (long) arg1);
 		local16.method202();
 		local16.anInt197 = arg0;
 	}
@@ -122,7 +122,7 @@ public final class Static540 {
 		local7.anInt957 = arg3;
 		local7.aString3 = arg2;
 		local7.anInt959 = arg5;
-		local7.anInt953 = Static333.anInt5455 + arg1;
+		local7.anInt953 = Static333.loop + arg1;
 		local7.anInt956 = arg4;
 		Static422.aParticleLinkedList9.method2787(local7);
 	}

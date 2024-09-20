@@ -71,7 +71,7 @@ public final class Static292 {
 		Static170.anInt2864 = arg3 - local67;
 		Static359.anInt5801 = arg6 - local69;
 		Static81.anInt1644 = 0;
-		Static323.anInt5119 = arg4;
+		Static323.cameraYaw = arg4;
 	}
 
 	@OriginalMember(owner = "client!jea", name = "b", descriptor = "(I)V")

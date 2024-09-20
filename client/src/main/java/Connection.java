@@ -83,7 +83,7 @@ public final class Connection {
 
 	@OriginalMember(owner = "client!gw", name = "b", descriptor = "(I)V")
 	public void method3271() {
-		if (Static333.anInt5455 % 50 == 0) {
+		if (Static333.loop % 50 == 0) {
 			this.outBytes = this.anInt3649;
 			this.inBytes = this.anInt3644;
 			this.anInt3649 = 0;

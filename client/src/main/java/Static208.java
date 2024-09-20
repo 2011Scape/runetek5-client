@@ -35,10 +35,10 @@ public final class Static208 {
 		Static334.aKeyboard1.method8482();
 		Static189.aMouse1.method8848();
 		Static295.aClient1.method1641();
-		Static434.aCanvas7.setBackground(Color.black);
+		Static434.canvas.setBackground(Color.black);
 		Static470.anInt7112 = -1;
-		Static334.aKeyboard1 = Static681.method8921(Static434.aCanvas7);
-		Static189.aMouse1 = Static70.method1513(Static434.aCanvas7);
+		Static334.aKeyboard1 = Static681.method8921(Static434.canvas);
+		Static189.aMouse1 = Static70.method1513(Static434.canvas);
 	}
 
 	@OriginalMember(owner = "client!gha", name = "a", descriptor = "(Lclient!eo;Z[[[BIB)Z")
@@ -46,9 +46,9 @@ public final class Static208 {
 		if (!Static581.aBoolean657) {
 			return false;
 		}
-		@Pc(9) int local9 = arg0.anInt10690 >> Static52.anInt1066;
+		@Pc(9) int local9 = arg0.xFine >> Static52.anInt1066;
 		@Pc(11) int local11 = local9;
-		@Pc(16) int local16 = arg0.anInt10694 >> Static52.anInt1066;
+		@Pc(16) int local16 = arg0.zFine >> Static52.anInt1066;
 		@Pc(18) int local18 = local16;
 		if (arg0 instanceof Entity) {
 			local11 = ((Entity) arg0).aShort134;
@@ -59,7 +59,7 @@ public final class Static208 {
 		for (@Pc(39) int local39 = local9; local39 <= local11; local39++) {
 			for (@Pc(42) int local42 = local16; local42 <= local18; local42++) {
 				if (arg0.aByte143 < Static299.anInt4824 && local39 >= Static441.anInt6691 && local39 < Static77.anInt1613 && local42 >= Static220.anInt3562 && local42 < Static692.anInt10370) {
-					if ((arg2 == null || arg0.aByte144 < arg3 || arg2[arg0.aByte144][local39][local42] != arg4) && arg0.method9275() && !arg0.method9284((byte) 59, Static665.aClass19_15)) {
+					if ((arg2 == null || arg0.plane < arg3 || arg2[arg0.plane][local39][local42] != arg4) && arg0.method9275() && !arg0.method9284((byte) 59, Static665.aClass19_15)) {
 						return false;
 					}
 					if (!arg1 && local39 >= Static403.anInt6246 - 16 && local39 <= Static403.anInt6246 + 16 && local42 >= Static550.anInt8271 - 16 && local42 <= Static550.anInt8271 + 16) {

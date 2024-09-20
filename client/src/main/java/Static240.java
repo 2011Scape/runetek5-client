@@ -36,12 +36,12 @@ public final class Static240 {
 			local12 = Static232.method3395(local12, "&", "%26");
 			local12 = Static232.method3395(local12, "#", "%23");
 			if (Static631.anApplet4 != null) {
-				@Pc(131) PrivilegedRequest local131 = Static284.aSignlink4.method8992(new URL(Static631.anApplet4.getCodeBase(), "clienterror.ws?c=" + Static373.anInt5905 + "&u=" + (Static515.aString96 == null ? String.valueOf(Static292.aLong163) : Static515.aString96) + "&v1=" + Static689.aString123 + "&v2=" + Static689.aString124 + "&e=" + local12));
+				@Pc(131) PrivilegedRequest local131 = Static284.aSignlink4.openUrlStream(new URL(Static631.anApplet4.getCodeBase(), "clienterror.ws?c=" + Static373.anInt5905 + "&u=" + (Static515.aString96 == null ? String.valueOf(Static292.aLong163) : Static515.aString96) + "&v1=" + Static689.aString123 + "&v2=" + Static689.aString124 + "&e=" + local12));
 				while (local131.state == 0) {
 					Static638.sleep(1L);
 				}
 				if (local131.state == 1) {
-					@Pc(148) DataInputStream local148 = (DataInputStream) local131.anObject13;
+					@Pc(148) DataInputStream local148 = (DataInputStream) local131.result;
 					local148.read();
 					local148.close();
 				}

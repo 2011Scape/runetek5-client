@@ -50,13 +50,13 @@ public final class Static35 {
 							local179 = local13.anInt2577 * (local13.aByte49 == 3 ? Static400.aClass2_Sub34_28.lb.method7208() : Static400.aClass2_Sub34_28.aPreference_Sub25_3.method7208()) >> 2;
 						} else {
 							@Pc(188) int local188 = local13.anInt2578 >> 24 & 0x3;
-							if (local188 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
+							if (local188 == Static556.self.plane) {
 								@Pc(199) int local199 = (local13.anInt2578 & 0xFF) << 9;
-								@Pc(205) int local205 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.method9302((byte) 126) << 8;
+								@Pc(205) int local205 = Static556.self.method9302((byte) 126) << 8;
 								@Pc(212) int local212 = local13.anInt2578 >> 16 & 0xFF;
-								@Pc(224) int local224 = (local212 << 9) + local205 + 256 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690;
+								@Pc(224) int local224 = (local212 << 9) + local205 + 256 - Static556.self.xFine;
 								@Pc(231) int local231 = local13.anInt2578 >> 8 & 0xFF;
-								@Pc(243) int local243 = local205 + (local231 << 9) + 256 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694;
+								@Pc(243) int local243 = local205 + (local231 << 9) + 256 - Static556.self.zFine;
 								@Pc(251) int local251 = Math.abs(local224) + Math.abs(local243) - 512;
 								if (local199 < local251) {
 									local13.anInt2571 = -99999;
@@ -72,7 +72,7 @@ public final class Static35 {
 									@Pc(307) short local307 = local301.aShort131;
 								}
 								if (local224 != 0 || local243 != 0) {
-									@Pc(336) int local336 = -Static323.anInt5119 - (int) (Math.atan2((double) local224, (double) local243) * 2607.5945876176133D) - 4096 & 0x3FFF;
+									@Pc(336) int local336 = -Static323.cameraYaw - (int) (Math.atan2((double) local224, (double) local243) * 2607.5945876176133D) - 4096 & 0x3FFF;
 									if (local336 > 8192) {
 										local336 = 16384 - local336;
 									}

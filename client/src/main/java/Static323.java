@@ -8,7 +8,7 @@ public final class Static323 {
 	public static int anInt5118;
 
 	@OriginalMember(owner = "client!kda", name = "d", descriptor = "I")
-	public static int anInt5119;
+	public static int cameraYaw;
 
 	@OriginalMember(owner = "client!kda", name = "e", descriptor = "[I")
 	public static int[] anIntArray389;
@@ -20,7 +20,7 @@ public final class Static323 {
 	public static final ClientProt aClientProt65 = new ClientProt(64, 8);
 
 	@OriginalMember(owner = "client!kda", name = "j", descriptor = "I")
-	public static int anInt5121 = 0;
+	public static int affiliate = 0;
 
 	@OriginalMember(owner = "client!kda", name = "a", descriptor = "()V")
 	public static void method4624() {

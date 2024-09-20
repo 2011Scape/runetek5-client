@@ -19,8 +19,8 @@ public final class Static338 {
 		for (@Pc(8) int local8 = 0; local8 < local6; local8++) {
 			@Pc(13) byte[] local13 = arg0[local8];
 			if (local13 != null) {
-				@Pc(26) int local26 = (Static89.anIntArray169[local8] >> 8) * 64 - Static691.anInt10367;
-				@Pc(36) int local36 = (Static89.anIntArray169[local8] & 0xFF) * 64 - Static116.anInt2270;
+				@Pc(26) int local26 = (Static89.anIntArray169[local8] >> 8) * 64 - Static691.originX;
+				@Pc(36) int local36 = (Static89.anIntArray169[local8] & 0xFF) * 64 - Static116.originZ;
 				Static557.method7331();
 				arg1.method7892(local26, local36, Static577.aClass110Array1, Static163.aClass19_17, local13);
 			}

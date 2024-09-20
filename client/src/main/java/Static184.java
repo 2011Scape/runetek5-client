@@ -22,10 +22,10 @@ public final class Static184 {
 			if (local35 instanceof PathingEntity) {
 				@Pc(41) PathingEntity local41 = (PathingEntity) local35;
 				@Pc(51) int local51 = local41.method9302((byte) 76) * 256 + 252 - 256;
-				@Pc(59) int local59 = local41.anInt10690 - local51 >> 9;
-				@Pc(66) int local66 = local41.anInt10694 - local51 >> 9;
-				@Pc(74) int local74 = local41.anInt10690 + local51 >> 9;
-				@Pc(82) int local82 = local41.anInt10694 + local51 >> 9;
+				@Pc(59) int local59 = local41.xFine - local51 >> 9;
+				@Pc(66) int local66 = local41.zFine - local51 >> 9;
+				@Pc(74) int local74 = local41.xFine + local51 >> 9;
+				@Pc(82) int local82 = local41.zFine + local51 >> 9;
 				if (local59 <= arg0 && arg1 >= local66 && arg0 <= local74 && arg1 <= local82) {
 					@Pc(120) int local120 = (local74 + 1 - arg0) * (local82 + (1 - arg1));
 					if (local120 > local22) {

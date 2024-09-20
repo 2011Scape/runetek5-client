@@ -5,21 +5,21 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static556 {
 
 	@OriginalMember(owner = "client!rj", name = "c", descriptor = "Lclient!ca;")
-	public static Player aClass8_Sub2_Sub1_Sub2_Sub1_2;
+	public static Player self;
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "Lclient!uc;")
 	public static Class367 aClass367_2;
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "(BLclient!hda;)Lclient!hda;")
 	public static Component method7299(@OriginalArg(1) Component arg0) {
-		if (arg0.anInt3743 != -1) {
-			return Static145.method2412(arg0.anInt3743);
+		if (arg0.overlayer != -1) {
+			return Static145.getComponent(arg0.overlayer);
 		}
-		@Pc(25) int local25 = arg0.anInt3812 >>> 16;
-		@Pc(30) Class331 local30 = new Class331(Static548.aHashTable40);
+		@Pc(25) int local25 = arg0.id >>> 16;
+		@Pc(30) Class331 local30 = new Class331(Static548.openInterfaces);
 		for (@Pc(35) SubInterface local35 = (SubInterface) local30.method7613(); local35 != null; local35 = (SubInterface) local30.method7610()) {
-			if (local35.anInt147 == local25) {
-				return Static145.method2412((int) local35.id);
+			if (local35.interfaceId == local25) {
+				return Static145.getComponent((int) local35.id);
 			}
 		}
 		return null;
@@ -88,7 +88,7 @@ public final class Static556 {
 			if (local232 == null) {
 				local232 = Static180.aClass14_3;
 			}
-			local232.method8836(Static329.anIntArray163, Static605.aComponent15.anInt3818, Static605.aComponent15.anInt3802, Static460.anIntArray554, Static605.aComponent15.anInt3779, Static605.aComponent15.anInt3746, Static493.aRandom1, local63, Static366.anInt5852, Static605.aComponent15.anInt3798, Static186.aSoftwareIndexedSpriteArray5, Static178.anInt2947, Static157.anInt2777, Static605.aComponent15.anInt3814);
+			local232.method8836(Static329.anIntArray163, Static605.aComponent15.halign, Static605.aComponent15.width, Static460.anIntArray554, Static605.aComponent15.color, Static605.aComponent15.height, Static493.aRandom1, local63, Static366.anInt5852, Static605.aComponent15.shadowColor, Static186.aSoftwareIndexedSpriteArray5, Static178.anInt2947, Static157.anInt2777, Static605.aComponent15.valign);
 			Static585.method7670(Static329.anIntArray163[2], Static329.anIntArray163[0], Static329.anIntArray163[3], Static329.anIntArray163[1]);
 		} else if (Static71.aComponent2 != null && Static392.clientModeGame == ModeGame.GAME_RUNESCAPE) {
 			@Pc(299) int local299 = Static180.aClass14_3.method8816(Static186.aSoftwareIndexedSpriteArray5, Static178.anInt2947, Static192.anInt3123 + 16, local63, Static460.anIntArray554, Static493.aRandom1, Static725.anInt10936 + 4);

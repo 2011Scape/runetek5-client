@@ -30,9 +30,9 @@ public final class Static517 {
 		if (22050 > 48000) {
 			throw new IllegalArgumentException();
 		}
-		Static156.anInt2679 = 2;
-		Static686.anInt8944 = 22050;
-		Static316.aBoolean644 = arg0;
+		Static156.threadPriority = 2;
+		Static686.sampleRate = 22050;
+		Static316.stereo = arg0;
 	}
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Z[[[BIBIIZ)V")
@@ -209,7 +209,7 @@ public final class Static517 {
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!eo;)V")
 	private static void method6824(@OriginalArg(0) ParticleNode_Sub2 arg0) {
-		Static665.aClass19_15.H(arg0.anInt10690, arg0.anInt10691 + (arg0.method9286(2) >> 1), arg0.anInt10694, Static486.anIntArray591);
+		Static665.aClass19_15.H(arg0.xFine, arg0.anInt10691 + (arg0.method9286(2) >> 1), arg0.zFine, Static486.anIntArray591);
 		arg0.anInt10692 = Static486.anIntArray591[0];
 		arg0.anInt10698 = Static486.anIntArray591[1];
 		arg0.anInt10697 = Static486.anIntArray591[2];

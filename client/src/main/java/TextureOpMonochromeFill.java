@@ -36,7 +36,7 @@ public final class TextureOpMonochromeFill extends TextureOp {
 	@Override
 	public int[] method9411(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg0 < 107) {
-			Static379.anInt5968 = -76;
+			Static379.checksum = -76;
 		}
 		@Pc(16) int[] local16 = super.aMonochromeImageCache41.method3935(arg1);
 		if (super.aMonochromeImageCache41.aBoolean338) {

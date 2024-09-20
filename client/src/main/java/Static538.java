@@ -103,7 +103,7 @@ public final class Static538 {
 						}
 						local280 = local15.gSamrt1or2();
 						local284 = local15.g1();
-						local31.method9301(local240, local280, local284, local96, Static333.anInt5455, local90, local86);
+						local31.method9301(local240, local280, local284, local96, Static333.loop, local90, local86);
 					}
 				}
 			}
@@ -113,7 +113,7 @@ public final class Static538 {
 				local31.anInt10731 = local15.g1_alt2();
 				local31.anInt10737 = local73 & 0x7FFF;
 				local31.aBoolean818 = (local73 & 0x8000) != 0;
-				local31.anInt10719 = local31.anInt10737 + Static333.anInt5455 + local31.anInt10738;
+				local31.anInt10719 = local31.anInt10737 + Static333.loop + local31.anInt10738;
 			}
 			if ((local35 & 0x40000) != 0) {
 				local31.aString128 = local15.gjstr();
@@ -129,7 +129,7 @@ public final class Static538 {
 				local31.method9310(local31.aNpcType1.anInt6713);
 				local31.anInt10757 = local31.aNpcType1.lb << 3;
 				if (local31.aNpcType1.method5984()) {
-					Static89.method1714(local31.aByte144, (Player) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (LocType) null, 0);
+					Static89.method1714(local31.plane, (Player) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (LocType) null, 0);
 				}
 			}
 			if ((local35 & 0x2) != 0) {
@@ -208,8 +208,8 @@ public final class Static538 {
 				local31.anInt10753 = local15.g1b_alt3();
 				local31.anInt10761 = local15.g1b_alt2();
 				local31.anInt10758 = local15.g1b_alt2();
-				local31.anInt10759 = local15.g2() + Static333.anInt5455;
-				local31.anInt10755 = local15.g2_alt3() + Static333.anInt5455;
+				local31.anInt10759 = local15.g2() + Static333.loop;
+				local31.anInt10755 = local15.g2_alt3() + Static333.loop;
 				local31.anInt10754 = local15.g1_alt3();
 				local31.anInt10758 += local31.anIntArray878[0];
 				local31.anInt10764 = 1;
@@ -319,8 +319,8 @@ public final class Static538 {
 				local31.aByte147 = local15.g1b_alt3();
 				local31.aByte148 = local15.g1b();
 				local31.aByte149 = (byte) local15.g1_alt3();
-				local31.anInt10760 = Static333.anInt5455 + local15.ig2();
-				local31.anInt10752 = Static333.anInt5455 + local15.g2();
+				local31.anInt10760 = Static333.loop + local15.ig2();
+				local31.anInt10752 = Static333.loop + local15.g2();
 			}
 		}
 	}

@@ -26,7 +26,7 @@ public final class Class15 implements IEnumModesCallback {
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(Ljava/awt/Frame;IIIII)V")
-	public void method248(@OriginalArg(0) Frame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public void enter(@OriginalArg(0) Frame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		try {
 			arg0.setVisible(true);
 			Method getPeer = Frame.class.getDeclaredMethod("getPeer");
@@ -52,7 +52,7 @@ public final class Class15 implements IEnumModesCallback {
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(I)[I")
-	public int[] method250() {
+	public int[] listmodes() {
 		this.aDirectDraw1.enumDisplayModes(0, (DDSurfaceDesc) null, (IUnknown) null, this);
 		Static17.anIntArray28 = new int[Static17.anInt240];
 		Static17.anInt240 = 0;

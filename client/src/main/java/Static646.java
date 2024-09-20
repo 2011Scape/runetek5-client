@@ -16,23 +16,23 @@ public final class Static646 {
 				for (@Pc(33) Class286 local33 = local28.aClass286_2; local33 != null; local33 = local33.aClass286_1) {
 					@Pc(37) Entity local37 = local33.aClass8_Sub2_Sub1_1;
 					if (local37.aShort131 == arg0 && local37.aShort132 == arg1) {
-						local37.aByte144--;
+						local37.plane--;
 					}
 				}
 				if (local28.aClass8_Sub2_Sub2_1 != null) {
-					local28.aClass8_Sub2_Sub2_1.aByte144--;
+					local28.aClass8_Sub2_Sub2_1.plane--;
 				}
 				if (local28.aClass8_Sub2_Sub3_2 != null) {
-					local28.aClass8_Sub2_Sub3_2.aByte144--;
+					local28.aClass8_Sub2_Sub3_2.plane--;
 				}
 				if (local28.aClass8_Sub2_Sub3_1 != null) {
-					local28.aClass8_Sub2_Sub3_1.aByte144--;
+					local28.aClass8_Sub2_Sub3_1.plane--;
 				}
 				if (local28.aClass8_Sub2_Sub4_1 != null) {
-					local28.aClass8_Sub2_Sub4_1.aByte144--;
+					local28.aClass8_Sub2_Sub4_1.plane--;
 				}
 				if (local28.aClass8_Sub2_Sub4_2 != null) {
-					local28.aClass8_Sub2_Sub4_2.aByte144--;
+					local28.aClass8_Sub2_Sub4_2.plane--;
 				}
 			}
 		}
@@ -50,11 +50,11 @@ public final class Static646 {
 		if (local8 == null) {
 			return;
 		}
-		Static163.aClass19_17.KA(arg1, arg2, arg1 + arg0.anInt3802, arg2 + arg0.anInt3746);
+		Static163.aClass19_17.KA(arg1, arg2, arg1 + arg0.width, arg2 + arg0.height);
 		if (Static578.anInt8595 >= 3) {
 			Static163.aClass19_17.A(-16777216, local8.aClass1_1, arg1, arg2);
 		} else {
-			Static12.aSoftwareIndexedSprite27.method8183((float) arg0.anInt3802 / 2.0F + (float) arg1, (float) arg0.anInt3746 / 2.0F + (float) arg2, ((int) -Static171.aFloat64 & 0x3FFF) << 2, local8.aClass1_1, arg1, arg2);
+			Static12.aSoftwareIndexedSprite27.method8183((float) arg0.width / 2.0F + (float) arg1, (float) arg0.height / 2.0F + (float) arg2, ((int) -Static171.aFloat64 & 0x3FFF) << 2, local8.aClass1_1, arg1, arg2);
 		}
 	}
 

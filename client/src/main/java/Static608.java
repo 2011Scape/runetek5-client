@@ -11,7 +11,7 @@ public final class Static608 {
 	public static int anInt9289;
 
 	@OriginalMember(owner = "client!td", name = "n", descriptor = "I")
-	public static int anInt9290 = 0;
+	public static int staffModLevel = 0;
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIIIIIZ)V")
 	public static void method8176(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
@@ -71,7 +71,7 @@ public final class Static608 {
 						}
 					}
 				}
-				if (local51.anInt10739 < 0 || local51.anInt10704 != Static198.anInt3276 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 != local51.aByte144) {
+				if (local51.anInt10739 < 0 || local51.anInt10704 != Static198.anInt3276 && Static556.self.plane != local51.plane) {
 					continue;
 				}
 			}
@@ -91,7 +91,7 @@ public final class Static608 {
 				@Pc(306) SoftwareIndexedSprite[] local306;
 				@Pc(313) Class407[] local313;
 				@Pc(381) SoftwareIndexedSprite local381;
-				if (local51.aBoolean816 || Static333.anInt5455 >= local51.anInt10747) {
+				if (local51.aBoolean816 || Static333.loop >= local51.anInt10747) {
 					local233 -= Math.max(Static42.aClass381_4.anInt10030, Static119.aSoftwareIndexedSpriteArray3[0].method8182());
 				} else {
 					@Pc(262) byte local262 = 1;
@@ -146,7 +146,7 @@ public final class Static608 {
 				if (!local51.aBoolean816) {
 					@Pc(486) SoftwareIndexedSprite local486;
 					@Pc(496) SoftwareIndexedSprite local496;
-					if (local51.anInt10719 > Static333.anInt5455) {
+					if (local51.anInt10719 > Static333.loop) {
 						local486 = Static34.aSoftwareIndexedSpriteArray2[local51.aBoolean818 ? 2 : 0];
 						local496 = Static34.aSoftwareIndexedSpriteArray2[local51.aBoolean818 ? 3 : 1];
 						if (local51 instanceof Npc) {
@@ -174,7 +174,7 @@ public final class Static608 {
 								local496 = local306[local51.aBoolean818 ? 3 : 1];
 							}
 						}
-						@Pc(612) int local612 = local51.anInt10719 - Static333.anInt5455;
+						@Pc(612) int local612 = local51.anInt10719 - Static333.loop;
 						if (local51.anInt10738 < local612) {
 							local612 -= local51.anInt10738;
 							local321 = local51.anInt10731 == 0 ? 0 : (local51.anInt10737 - local612) / local51.anInt10731 * local51.anInt10731;
@@ -233,7 +233,7 @@ public final class Static608 {
 								local1071 = true;
 							} else {
 								local409 = Static504.method6733() * 1000 / local913.anInt6360 / 2;
-								local1071 = local409 > Static333.anInt5455 % (local409 * 2);
+								local1071 = local409 > Static333.loop % (local409 * 2);
 							}
 							if (local1071) {
 								local381.method8202(Static215.anIntArray284[0] + arg2 - 12, -local381.method8182() + local233);
@@ -266,7 +266,7 @@ public final class Static608 {
 					@Pc(1186) HitmarkType local1186 = null;
 					local651 = 0;
 					if (local504 >= 0) {
-						if (Static333.anInt5455 >= local1179) {
+						if (Static333.loop >= local1179) {
 							continue;
 						}
 						local1186 = Static561.aHitmarkTypeList2.method5186(local51.anIntArray873[local267]);
@@ -279,10 +279,10 @@ public final class Static608 {
 					if (local321 >= 0) {
 						local1218 = Static561.aHitmarkTypeList2.method5186(local321);
 					}
-					if (local1179 - local651 <= Static333.anInt5455) {
+					if (local1179 - local651 <= Static333.loop) {
 						local412 = local51.anIntArray875[local267];
 						if (local412 >= 0) {
-							local51.anInt10747 = Static333.anInt5455 + 300;
+							local51.anInt10747 = Static333.loop + 300;
 							local51.anInt10726 = local412;
 							local51.anIntArray875[local267] = -1;
 						}
@@ -494,7 +494,7 @@ public final class Static608 {
 										local1719 += local1351;
 									}
 								}
-								local1831 = local51.anIntArray871[local267] - Static333.anInt5455;
+								local1831 = local51.anIntArray871[local267] - Static333.loop;
 								@Pc(1871) int local1871 = local1186.anInt7184 - local1186.anInt7184 * local1831 / local1186.anInt7192;
 								@Pc(1884) int local1884 = local1831 * local1186.anInt7191 / local1186.anInt7192 - local1186.anInt7191;
 								@Pc(1898) int local1898 = arg2 + Static215.anIntArray284[0] + local1871 - (local1719 >> 1);

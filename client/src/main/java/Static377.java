@@ -6,6 +6,6 @@ public final class Static377 {
 	public static String[] aStringArray30;
 
 	@OriginalMember(owner = "client!ls", name = "j", descriptor = "I")
-	public static volatile int anInt5930 = -1;
+	public static volatile int topLevelInterface = -1;
 
 }

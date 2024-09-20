@@ -41,13 +41,13 @@ public final class Static256 {
 		}
 		if (arg0.aClass152_11.method9109() && !arg0.aClass152_11.method9106()) {
 			@Pc(41) SeqType local41 = arg0.aClass152_11.method9107();
-			if (arg0.anInt10762 > 0 && local41.anInt1642 == 0) {
+			if (arg0.anInt10762 > 0 && local41.looptype == 0) {
 				Static524.anInt8042 = 0;
 				Static521.anInt7756 = -1;
 				arg0.anInt10763++;
 				return;
 			}
-			if (arg0.anInt10762 <= 0 && local41.anInt1654 == 0) {
+			if (arg0.anInt10762 <= 0 && local41.movetype == 0) {
 				Static521.anInt7756 = -1;
 				arg0.anInt10763++;
 				Static524.anInt8042 = 0;
@@ -58,14 +58,14 @@ public final class Static256 {
 			if (arg0.aClass199Array3[local86].anInt4930 != -1 && arg0.aClass199Array3[local86].aClass152_7.method9106()) {
 				@Pc(117) SpotAnimType local117 = Static23.aSpotAnimTypeList1.method2694(arg0.aClass199Array3[local86].anInt4930);
 				if (local117.aBoolean448 && local117.anInt5842 != -1) {
-					@Pc(133) SeqType local133 = Static25.aSeqTypeList1.method1162(local117.anInt5842);
-					if (arg0.anInt10762 > 0 && local133.anInt1642 == 0) {
+					@Pc(133) SeqType local133 = Static25.aSeqTypeList1.get(local117.anInt5842);
+					if (arg0.anInt10762 > 0 && local133.looptype == 0) {
 						Static521.anInt7756 = -1;
 						arg0.anInt10763++;
 						Static524.anInt8042 = 0;
 						return;
 					}
-					if (arg0.anInt10762 <= 0 && local133.anInt1654 == 0) {
+					if (arg0.anInt10762 <= 0 && local133.movetype == 0) {
 						Static521.anInt7756 = -1;
 						arg0.anInt10763++;
 						Static524.anInt8042 = 0;
@@ -74,8 +74,8 @@ public final class Static256 {
 				}
 			}
 		}
-		@Pc(186) int local186 = arg0.anInt10690;
-		@Pc(189) int local189 = arg0.anInt10694;
+		@Pc(186) int local186 = arg0.xFine;
+		@Pc(189) int local189 = arg0.zFine;
 		@Pc(206) int local206 = arg0.anIntArray879[arg0.anInt10764 - 1] * 512 + arg0.method9302((byte) 76) * 256;
 		@Pc(222) int local222 = arg0.anIntArray878[arg0.anInt10764 - 1] * 512 + arg0.method9302((byte) 105) * 256;
 		if (local186 < local206) {
@@ -101,8 +101,8 @@ public final class Static256 {
 		}
 		@Pc(348) byte local348 = arg0.aByteArray111[arg0.anInt10764 - 1];
 		if (!arg1 && (local206 - local186 > 1024 || local206 - local186 < -1024 || local222 - local189 > 1024 || local222 - local189 < -1024)) {
-			arg0.anInt10694 = local222;
-			arg0.anInt10690 = local206;
+			arg0.zFine = local222;
+			arg0.xFine = local206;
 			arg0.method9298(arg0.anInt10756, false);
 			Static524.anInt8042 = 0;
 			if (arg0.anInt10762 > 0) {
@@ -150,8 +150,8 @@ public final class Static256 {
 			local422 <<= 0x9;
 			if (arg0.anInt10764 == 1) {
 				local468 = arg0.anInt10765 * arg0.anInt10765;
-				@Pc(642) int local642 = (local206 >= arg0.anInt10690 ? local206 - arg0.anInt10690 : arg0.anInt10690 - local206) << 9;
-				@Pc(661) int local661 = (arg0.anInt10694 <= local222 ? local222 - arg0.anInt10694 : arg0.anInt10694 + -local222) << 9;
+				@Pc(642) int local642 = (local206 >= arg0.xFine ? local206 - arg0.xFine : arg0.xFine - local206) << 9;
+				@Pc(661) int local661 = (arg0.zFine <= local222 ? local222 - arg0.zFine : arg0.zFine + -local222) << 9;
 				@Pc(673) int local673 = local642 > local661 ? local642 : local661;
 				@Pc(680) int local680 = local673 * local9.anInt7229 * 2;
 				if (local680 < local468) {
@@ -188,16 +188,16 @@ public final class Static256 {
 			Static521.anInt7756 = -1;
 		} else {
 			if (local206 > local186) {
-				arg0.anInt10690 += local422;
+				arg0.xFine += local422;
 				Static524.anInt8042 |= 0x4;
-				if (arg0.anInt10690 > local206) {
-					arg0.anInt10690 = local206;
+				if (arg0.xFine > local206) {
+					arg0.xFine = local206;
 				}
 			} else if (local206 < local186) {
-				arg0.anInt10690 -= local422;
+				arg0.xFine -= local422;
 				Static524.anInt8042 |= 0x8;
-				if (local206 > arg0.anInt10690) {
-					arg0.anInt10690 = local206;
+				if (local206 > arg0.xFine) {
+					arg0.xFine = local206;
 				}
 			}
 			if (local422 >= 32) {
@@ -207,19 +207,19 @@ public final class Static256 {
 			}
 			if (local222 > local189) {
 				Static524.anInt8042 |= 0x1;
-				arg0.anInt10694 += local422;
-				if (local222 < arg0.anInt10694) {
-					arg0.anInt10694 = local222;
+				arg0.zFine += local422;
+				if (local222 < arg0.zFine) {
+					arg0.zFine = local222;
 				}
 			} else if (local222 < local189) {
-				arg0.anInt10694 -= local422;
+				arg0.zFine -= local422;
 				Static524.anInt8042 |= 0x2;
-				if (local222 > arg0.anInt10694) {
-					arg0.anInt10694 = local222;
+				if (local222 > arg0.zFine) {
+					arg0.zFine = local222;
 				}
 			}
 		}
-		if (arg0.anInt10690 != local206 || local222 != arg0.anInt10694) {
+		if (arg0.xFine != local206 || local222 != arg0.zFine) {
 			return;
 		}
 		arg0.anInt10764--;
@@ -232,19 +232,19 @@ public final class Static256 {
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(Lclient!da;Ljava/lang/String;Lclient!ve;IIIZLclient!hda;Lclient!aa;III)V")
 	public static void method3639(@OriginalArg(0) Class14 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) Class381 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Component arg6, @OriginalArg(8) Class1 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10) {
 		@Pc(11) int local11;
-		if (Static511.anInt7645 == 4) {
+		if (Static511.cameraType == 4) {
 			local11 = (int) Static171.aFloat64 & 0x3FFF;
 		} else {
 			local11 = (int) Static171.aFloat64 + Static29.anInt723 & 0x3FFF;
 		}
-		@Pc(33) int local33 = Math.max(arg6.anInt3802 / 2, arg6.anInt3746 / 2) + 10;
+		@Pc(33) int local33 = Math.max(arg6.width / 2, arg6.height / 2) + 10;
 		@Pc(59) int local59 = arg8 * arg8 + arg10 * arg10;
 		if (local33 * local33 < local59) {
 			return;
 		}
 		@Pc(74) int local74 = Model.anIntArray741[local11];
 		@Pc(78) int local78 = Model.anIntArray740[local11];
-		if (Static511.anInt7645 != 4) {
+		if (Static511.cameraType != 4) {
 			local74 = local74 * 256 / (Static660.anInt9835 + 256);
 			local78 = local78 * 256 / (Static660.anInt9835 + 256);
 		}
@@ -253,8 +253,8 @@ public final class Static256 {
 		@Pc(125) int local125 = arg2.method8741((SoftwareIndexedSprite[]) null, arg1, 100);
 		@Pc(131) int local131 = local107 - local125 / 2;
 		@Pc(139) int local139 = arg2.method8745(100, 0, arg1, (SoftwareIndexedSprite[]) null);
-		if (local131 >= -arg6.anInt3802 && arg6.anInt3802 >= local131 && local118 >= -arg6.anInt3746 && arg6.anInt3746 >= local118) {
-			arg0.method8826(arg9, (int[]) null, arg4, arg1, arg7, (SoftwareIndexedSprite[]) null, arg6.anInt3746 / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.anInt3802 / 2 + local131 + arg3, 0, 0, local125, 50);
+		if (local131 >= -arg6.width && arg6.width >= local131 && local118 >= -arg6.height && arg6.height >= local118) {
+			arg0.method8826(arg9, (int[]) null, arg4, arg1, arg7, (SoftwareIndexedSprite[]) null, arg6.height / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.width / 2 + local131 + arg3, 0, 0, local125, 50);
 		}
 	}
 }

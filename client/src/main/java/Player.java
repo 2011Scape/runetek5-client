@@ -13,7 +13,7 @@ public final class Player extends PathingEntity {
 	public PlayerAppearance aPlayerAppearance1;
 
 	@OriginalMember(owner = "client!ca", name = "xd", descriptor = "Ljava/lang/String;")
-	public String name2;
+	public String username;
 
 	@OriginalMember(owner = "client!ca", name = "bd", descriptor = "I")
 	public int anInt1441;
@@ -110,7 +110,7 @@ public final class Player extends PathingEntity {
 		}
 		@Pc(24) Class73 local24 = arg0.method7985();
 		local24.method7131(super.aClass126_7.method2673(arg1 ^ 0xFFFFC004));
-		local24.method7134(super.anInt10690, arg1 + super.anInt10691, super.anInt10694);
+		local24.method7134(super.xFine, arg1 + super.anInt10691, super.zFine);
 		this.method9319(arg0, super.aBoolean820, super.aModelArray3, local24);
 		for (@Pc(53) int local53 = 0; local53 < super.aModelArray3.length; local53++) {
 			super.aModelArray3[local53] = null;
@@ -158,7 +158,7 @@ public final class Player extends PathingEntity {
 		@Pc(22) Class73 local22 = arg3.method7985();
 		@Pc(27) int local27 = super.aClass126_7.method2673(16383);
 		local22.method7131(local27);
-		local22.method7134(super.anInt10690, super.anInt10691, super.anInt10694);
+		local22.method7134(super.xFine, super.anInt10691, super.zFine);
 		@Pc(40) boolean local40 = arg2;
 		for (@Pc(42) int local42 = 0; local42 < super.aModelArray3.length; local42++) {
 			if (super.aModelArray3[local42] != null && (Static504.aBoolean579 ? super.aModelArray3[local42].method7483(arg1, arg0, local22, true, 0, Static582.anInt8627) : super.aModelArray3[local42].method7486(arg1, arg0, local22, true, 0))) {
@@ -266,9 +266,9 @@ public final class Player extends PathingEntity {
 		super.anInt10762 = 0;
 		super.anIntArray878[0] = arg1;
 		@Pc(26) int local26 = this.method9302((byte) 84);
-		super.anInt10690 = local26 * 256 + super.anIntArray879[0] * 512;
-		super.anInt10694 = super.anIntArray878[0] * 512 + local26 * 256;
-		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this) {
+		super.xFine = local26 * 256 + super.anIntArray879[0] * 512;
+		super.zFine = super.anIntArray878[0] * 512 + local26 * 256;
+		if (Static556.self == this) {
 			Static218.method3187();
 		}
 		if (super.aClass8_Sub5_8 != null) {
@@ -294,14 +294,14 @@ public final class Player extends PathingEntity {
 		@Pc(22) Class73 local22 = arg0.method7985();
 		@Pc(27) int local27 = super.aClass126_7.method2673(16383);
 		local22.method7131(local27);
-		@Pc(53) Class291 local53 = Static334.aClass291ArrayArrayArray1[super.aByte144][super.anInt10690 >> Static52.anInt1066][super.anInt10694 >> Static52.anInt1066];
+		@Pc(53) Class291 local53 = Static334.aClass291ArrayArrayArray1[super.plane][super.xFine >> Static52.anInt1066][super.zFine >> Static52.anInt1066];
 		if (local53 == null || local53.aClass8_Sub2_Sub2_1 == null) {
 			super.anInt10732 = (int) ((float) super.anInt10732 - (float) super.anInt10732 / 10.0F);
 		} else {
 			@Pc(68) int local68 = super.anInt10732 - local53.aClass8_Sub2_Sub2_1.aShort46;
 			super.anInt10732 = (int) ((float) super.anInt10732 - (float) local68 / 10.0F);
 		}
-		local22.method7134(super.anInt10690, -super.anInt10732 + super.anInt10691 - 20, super.anInt10694);
+		local22.method7134(super.xFine, -super.anInt10732 + super.anInt10691 - 20, super.zFine);
 		super.aBoolean819 = false;
 		@Pc(114) ParticleNode_Sub7 local114 = null;
 		if (Static400.aClass2_Sub34_28.aPreference_Sub7_1.method2905() == 1) {
@@ -324,7 +324,7 @@ public final class Player extends PathingEntity {
 			}
 		}
 		@Pc(269) int local269;
-		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this) {
+		if (Static556.self == this) {
 			for (local269 = Static527.aClass254Array1.length - 1; local269 >= 0; local269--) {
 				@Pc(275) Class254 local275 = Static527.aClass254Array1[local269];
 				if (local275 != null && local275.anInt6371 != -1) {
@@ -333,8 +333,8 @@ public final class Player extends PathingEntity {
 						@Pc(298) Linkable_Sub45 local298 = (Linkable_Sub45) Static18.aHashTable2.get((long) local275.anInt6366);
 						if (local298 != null) {
 							@Pc(303) Npc local303 = local298.aClass8_Sub2_Sub1_Sub2_Sub2_2;
-							local310 = local303.anInt10690 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690;
-							@Pc(316) int local316 = local303.anInt10694 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694;
+							local310 = local303.xFine - Static556.self.xFine;
+							@Pc(316) int local316 = local303.zFine - Static556.self.zFine;
 							if (Static504.aBoolean579) {
 								this.method1416(super.aModelArray3[0], 92160000, arg0, local275.anInt6371, local310, local22, Static582.anInt8627, local316);
 							} else {
@@ -344,8 +344,8 @@ public final class Player extends PathingEntity {
 					}
 					@Pc(371) int local371;
 					if (local275.anInt6363 == 2) {
-						@Pc(364) int local364 = local275.anInt6369 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690;
-						local371 = local275.anInt6362 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694;
+						@Pc(364) int local364 = local275.anInt6369 - Static556.self.xFine;
+						local371 = local275.anInt6362 - Static556.self.zFine;
 						local310 = local275.anInt6364 << 9;
 						local310 *= local310;
 						if (Static504.aBoolean579) {
@@ -357,8 +357,8 @@ public final class Player extends PathingEntity {
 					if (local275.anInt6363 == 10 && local275.anInt6366 >= 0 && local275.anInt6366 < Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3.length) {
 						@Pc(438) Player local438 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local275.anInt6366];
 						if (local438 != null) {
-							local371 = local438.anInt10690 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690;
-							local310 = local438.anInt10694 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694;
+							local371 = local438.xFine - Static556.self.xFine;
+							local310 = local438.zFine - Static556.self.zFine;
 							if (Static504.aBoolean579) {
 								this.method1416(super.aModelArray3[0], 92160000, arg0, local275.anInt6371, local371, local22, Static582.anInt8627, local310);
 							} else {
@@ -369,10 +369,10 @@ public final class Player extends PathingEntity {
 				}
 			}
 			local22.method7131(local27);
-			local22.method7134(super.anInt10690, super.anInt10691, super.anInt10694);
+			local22.method7134(super.xFine, super.anInt10691, super.zFine);
 		}
 		local22.method7131(local27);
-		local22.method7134(super.anInt10690, -super.anInt10732 + super.anInt10691 - 5, super.anInt10694);
+		local22.method7134(super.xFine, -super.anInt10732 + super.anInt10691 - 5, super.zFine);
 		if (local114 == null) {
 			local114 = Static642.method8441(true, super.aModelArray3.length);
 		}
@@ -380,13 +380,13 @@ public final class Player extends PathingEntity {
 		if (Static504.aBoolean579) {
 			for (local269 = 0; local269 < super.aModelArray3.length; local269++) {
 				if (super.aModelArray3[local269] != null) {
-					super.aModelArray3[local269].method7484(local22, local114.aClass8_Sub6Array1[local269], Static582.anInt8627, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this ? 1 : 0);
+					super.aModelArray3[local269].method7484(local22, local114.aClass8_Sub6Array1[local269], Static582.anInt8627, Static556.self == this ? 1 : 0);
 				}
 			}
 		} else {
 			for (local269 = 0; local269 < super.aModelArray3.length; local269++) {
 				if (super.aModelArray3[local269] != null) {
-					super.aModelArray3[local269].method7473(local22, local114.aClass8_Sub6Array1[local269], Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this ? 1 : 0);
+					super.aModelArray3[local269].method7473(local22, local114.aClass8_Sub6Array1[local269], Static556.self == this ? 1 : 0);
 				}
 			}
 		}
@@ -419,13 +419,13 @@ public final class Player extends PathingEntity {
 		@Pc(44) int local44 = super.method9302((byte) 85);
 		this.method9310((local12 >> 3 & 0x7) + 1);
 		this.aByte31 = (byte) (local12 >> 6 & 0x3);
-		super.anInt10690 += this.method9302((byte) 44) - local44 << 8;
-		super.anInt10694 += this.method9302((byte) 111) - local44 << 8;
+		super.xFine += this.method9302((byte) 44) - local44 << 8;
+		super.zFine += this.method9302((byte) 111) - local44 << 8;
 		this.aByte33 = arg0.g1b();
 		this.anInt1430 = arg0.g1b();
 		this.anInt1431 = arg0.g1b();
 		this.aBoolean124 = arg0.g1b() == 1;
-		if (ModeWhere.LIVE == Static2.aModeWhere1 && Static608.anInt9290 >= 2) {
+		if (ModeWhere.LIVE == Static2.aModeWhere1 && Static608.staffModLevel >= 2) {
 			this.aBoolean124 = false;
 		}
 		this.anInt1433 = 0;
@@ -486,10 +486,10 @@ public final class Player extends PathingEntity {
 		}
 		this.anInt1443 = arg0.g2();
 		this.name1 = arg0.gjstr();
-		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this) {
+		if (Static556.self == this) {
 			Static515.aString96 = this.name1;
 		}
-		this.name2 = this.name1;
+		this.username = this.name1;
 		this.combatLevel2 = arg0.g1();
 		if (local40) {
 			this.anInt1436 = arg0.g2();
@@ -533,8 +533,8 @@ public final class Player extends PathingEntity {
 		@Pc(603) int[] local603 = this.aPlayerAppearance1.anIntArray380;
 		this.aPlayerAppearance1.method4545(local332, local139, local144, local134, this.method9320(0), this.aByte32 == 1);
 		if (local134 != local240) {
-			super.anInt10690 = (super.anIntArray879[0] << 9) + (this.method9302((byte) 83) << 8);
-			super.anInt10694 = (super.anIntArray878[0] << 9) + (this.method9302((byte) 45) << 8);
+			super.xFine = (super.anIntArray879[0] << 9) + (this.method9302((byte) 83) << 8);
+			super.zFine = (super.anIntArray878[0] << 9) + (this.method9302((byte) 45) << 8);
 		}
 		if (Static312.anInt5000 == super.anInt10740 && local603 != null) {
 			for (local490 = 0; local490 < local332.length; local490++) {
@@ -570,7 +570,7 @@ public final class Player extends PathingEntity {
 			arg0 |= 0x7;
 		}
 		@Pc(95) int local95 = super.aClass126_7.method2673(16383);
-		@Pc(119) boolean local119 = super.aByte149 != 0 && Static333.anInt5455 >= super.anInt10760 && Static333.anInt5455 < super.anInt10752;
+		@Pc(119) boolean local119 = super.aByte149 != 0 && Static333.loop >= super.anInt10760 && Static333.loop < super.anInt10752;
 		if (local119) {
 			arg0 |= 0x80000;
 		}
@@ -630,7 +630,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(ZI)Ljava/lang/String;")
 	public String method1422() {
-		return this.name2;
+		return this.username;
 	}
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(ZZ)Ljava/lang/String;")
@@ -649,9 +649,9 @@ public final class Player extends PathingEntity {
 			local40 = Static406.anIntArray484;
 		}
 		if (local40 != null && local40[this.aByte31] != -1) {
-			@Pc(62) EnumType local62 = Static619.aEnumTypeList2.method8925(local40[this.aByte31]);
-			if (local62.aChar1 == 's') {
-				local5 = local5 + local62.method1229(this.aByte33 & 0xFF);
+			@Pc(62) EnumType local62 = Static619.aEnumTypeList2.get(local40[this.aByte31]);
+			if (local62.valueType == 's') {
+				local5 = local5 + local62.getString(this.aByte33 & 0xFF);
 			} else {
 				Static240.method3496(new Throwable(), "gdn1");
 				local40[this.aByte31] = -1;
@@ -674,7 +674,7 @@ public final class Player extends PathingEntity {
 			if (super.aClass80_3.aString20 == null) {
 				return null;
 			}
-			if (Static133.anInt2458 == 0 || Static133.anInt2458 == 3 || Static133.anInt2458 == 1 && Static362.method5241(arg0 + 3109, this.name2)) {
+			if (Static133.anInt2458 == 0 || Static133.anInt2458 == 3 || Static133.anInt2458 == 1 && Static362.method5241(arg0 + 3109, this.username)) {
 				return super.aClass80_3;
 			}
 		}
@@ -683,14 +683,14 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!ca", name = "b", descriptor = "(IIIB)V")
 	public void method1425(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte arg2) {
-		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().anInt1654 == 1) {
+		if (super.aClass152_11.method9109() && super.aClass152_11.method9107().movetype == 1) {
 			super.anIntArray869 = null;
 			super.aClass152_11.method9113(true, -1);
 		}
 		for (@Pc(33) int local33 = 0; local33 < super.aClass199Array3.length; local33++) {
 			if (super.aClass199Array3[local33].anInt4930 != -1) {
 				@Pc(56) SpotAnimType local56 = Static23.aSpotAnimTypeList1.method2694(super.aClass199Array3[local33].anInt4930);
-				if (local56.aBoolean448 && local56.anInt5842 != -1 && Static25.aSeqTypeList1.method1162(local56.anInt5842).anInt1654 == 1) {
+				if (local56.aBoolean448 && local56.anInt5842 != -1 && Static25.aSeqTypeList1.get(local56.anInt5842).movetype == 1) {
 					super.aClass199Array3[local33].aClass152_7.method9113(true, -1);
 					super.aClass199Array3[local33].anInt4930 = -1;
 				}

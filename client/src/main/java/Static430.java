@@ -20,7 +20,7 @@ public final class Static430 {
 	}
 
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(IBLjava/lang/String;)Z")
-	public static boolean method5817(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
+	public static boolean hopWorld(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		if (Static446.aSignlink6.aBoolean781) {
 			Static344.aClass229_1 = new Class229();
 			Static344.aClass229_1.worldId = arg0;
@@ -29,9 +29,9 @@ public final class Static430 {
 				Static344.aClass229_1.anInt5854 = Static344.aClass229_1.worldId + 40000;
 				Static344.aClass229_1.anInt5853 = Static344.aClass229_1.worldId + 50000;
 			}
-			for (@Pc(45) int local45 = 0; local45 < Static343.aClass297_Sub1Array2.length; local45++) {
-				if (Static343.aClass297_Sub1Array2[local45].anInt7569 == arg0) {
-					Static715.anInt10805 = Static343.aClass297_Sub1Array2[local45].anInt7563;
+			for (@Pc(45) int local45 = 0; local45 < Static343.sorted.length; local45++) {
+				if (Static343.sorted[local45].id == arg0) {
+					Static715.anInt10805 = Static343.sorted[local45].flags;
 				}
 			}
 			return true;
@@ -44,7 +44,7 @@ public final class Static430 {
 		if (Static150.aString26 != null) {
 			local88 = "/p=" + Static150.aString26;
 		}
-		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + Static51.clientLanguageId + "/a=" + Static323.anInt5121 + local88 + "/j" + (Static98.aBoolean191 ? "1" : "0") + ",o" + (Static464.aBoolean533 ? "1" : "0") + ",a2";
+		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + Static51.clientLanguageId + "/a=" + Static323.affiliate + local88 + "/j" + (Static98.aBoolean191 ? "1" : "0") + ",o" + (Static464.aBoolean533 ? "1" : "0") + ",a2";
 		try {
 			Static295.aClient1.getAppletContext().showDocument(new URL(local152), "_self");
 			return true;
@@ -63,7 +63,7 @@ public final class Static430 {
 	}
 
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
-	public static void method5819(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
+	public static void setRank(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Connection local10 = Connection.getActiveConnection();
 		@Pc(16) OutboundPacket local16 = OutboundPacket.create(ClientProt.aClientProt80, local10.random);
 		local16.buffer.p1(Static231.method3379(arg0) + 1);

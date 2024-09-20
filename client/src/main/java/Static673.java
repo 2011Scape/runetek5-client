@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static673 {
 
 	@OriginalMember(owner = "client!vf", name = "I", descriptor = "B")
-	public static byte aByte140;
+	public static byte minKick;
 
 	@OriginalMember(owner = "client!vf", name = "F", descriptor = "I")
 	public static int anInt10079 = -1;
@@ -15,14 +15,14 @@ public final class Static673 {
 		if (!arg0.method8990()) {
 			return new Class273[0];
 		}
-		@Pc(15) PrivilegedRequest local15 = arg0.method8984();
+		@Pc(15) PrivilegedRequest local15 = arg0.getDisplayModes();
 		while (local15.state == 0) {
 			Static638.sleep(10L);
 		}
 		if (local15.state == 2) {
 			return new Class273[0];
 		}
-		@Pc(38) int[] local38 = (int[]) local15.anObject13;
+		@Pc(38) int[] local38 = (int[]) local15.result;
 		@Pc(44) Class273[] local44 = new Class273[local38.length >> 2];
 		for (@Pc(46) int local46 = 0; local46 < local44.length; local46++) {
 			@Pc(51) Class273 local51 = new Class273();

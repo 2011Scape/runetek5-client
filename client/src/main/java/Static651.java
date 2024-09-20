@@ -128,7 +128,7 @@ public final class Static651 {
 			@Pc(31) Class152 local31 = arg3.aClass152_11;
 			if (local8 && local31.method9109()) {
 				@Pc(44) SeqType local44 = arg3.aClass152_11.method9107();
-				@Pc(47) int local47 = local44.anInt1646;
+				@Pc(47) int local47 = local44.exactmove;
 				if (local47 == 1) {
 					local31.method9093(arg1);
 				}
@@ -142,7 +142,7 @@ public final class Static651 {
 			if (arg0[local10] != -1) {
 				local8 = false;
 			}
-			if (arg3.anIntArray869 == null || arg3.anIntArray869[local10] == -1 || Static25.aSeqTypeList1.method1162(arg0[local10]).anInt1649 >= Static25.aSeqTypeList1.method1162(arg3.anIntArray869[local10]).anInt1649) {
+			if (arg3.anIntArray869 == null || arg3.anIntArray869[local10] == -1 || Static25.aSeqTypeList1.get(arg0[local10]).priority >= Static25.aSeqTypeList1.get(arg3.anIntArray869[local10]).priority) {
 				arg3.anIntArray869 = arg0;
 				arg3.aClass152_11.method9091(arg1);
 				if (arg2) {
@@ -185,7 +185,7 @@ public final class Static651 {
 		}
 		if (arg1.anInt10791 != 0) {
 			@Pc(67) String local67 = ModeGame.GAME_STELLARDAWN == Static392.clientModeGame ? LocalizedText.RATING.get(Static51.clientLanguageId) : LocalizedText.LEVEL.get(Static51.clientLanguageId);
-			local24 = local24 + Static693.levelDifferenceColor(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2, arg1.anInt10791) + " (" + local67 + arg1.anInt10791 + ")";
+			local24 = local24 + Static693.levelDifferenceColor(Static556.self.combatLevel2, arg1.anInt10791) + " (" + local67 + arg1.anInt10791 + ")";
 		}
 		if (Static156.aBoolean223 && !arg0) {
 			@Pc(113) ParamType local113 = Static610.anInt9329 == -1 ? null : Static386.aParamTypeList2.method1161(Static610.anInt9329);
@@ -240,7 +240,7 @@ public final class Static651 {
 		for (@Pc(341) int local341 = 0; local341 < local176.length; local341++) {
 			if (local176[local341] != null && (local176[local341].equalsIgnoreCase(LocalizedText.ATTACK.get(Static51.clientLanguageId)) || local176[local341].equalsIgnoreCase(LocalizedText.EXAMINE.get(Static51.clientLanguageId)))) {
 				@Pc(372) short local372 = 0;
-				if (arg1.anInt10791 > Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2) {
+				if (arg1.anInt10791 > Static556.self.combatLevel2) {
 					local372 = 2000;
 				}
 				@Pc(385) short local385 = 0;

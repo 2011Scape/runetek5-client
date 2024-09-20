@@ -42,12 +42,12 @@ public final class Class39_Sub18 extends Class39 {
 		Static71.anInt1581 = this.anInt8178;
 		Static197.anInt3260 = 0;
 		Static374.anInt5907 = 1;
-		Static511.anInt7645 = 3;
+		Static511.cameraType = 3;
 		Static260.anInt4244 = 0;
 		Static591.anInt8739 = this.anInt8182;
 		Static303.anInt4868 = this.anInt8180;
 		Static410.anInt6322 = this.anInt8184;
-		Static583.method7659();
+		Static583.updateLoginScreenCamera();
 		Static421.aBoolean480 = true;
 	}
 }

@@ -12,7 +12,7 @@ public final class Static382 {
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(BII)V")
 	public static void method5370(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(14) SecondaryLinkable_Sub2 local14 = Static440.method5963(12, (long) arg1);
+		@Pc(14) SecondaryLinkable_Sub2 local14 = Static440.create(12, (long) arg1);
 		local14.method202();
 		local14.anInt197 = arg0;
 	}

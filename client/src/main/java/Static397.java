@@ -105,7 +105,7 @@ public final class Static397 {
 			local27 = Static163.aClass19_17.method7948(local34[0], true);
 			Static541.aSoftLruHashTable174.put((long) local7, local27);
 		}
-		Static418.method7860(arg1.aByte144, arg1.anInt10694, 0, arg1.anInt10690, arg1.method9302((byte) 55) * 256);
+		Static418.method7860(arg1.plane, arg1.zFine, 0, arg1.xFine, arg1.method9302((byte) 55) * 256);
 		@Pc(75) int local75 = arg0 + Static215.anIntArray284[0] - 18;
 		@Pc(83) int local83 = local75 + arg6 / 4 * 18;
 		@Pc(94) int local94 = arg5 + Static215.anIntArray284[1] - 54 - 16;

@@ -48,11 +48,11 @@ public final class Static48 {
 		@Pc(95) int local95;
 		@Pc(100) int local100;
 		if (local84 > 0) {
-			local7.aHashTableArray1 = new HashTable[local84];
+			local7.switchTables = new HashTable[local84];
 			for (local95 = 0; local95 < local84; local95++) {
 				local100 = local12.g2();
 				@Pc(107) HashTable local107 = new HashTable(IntUtils.clp2(local100));
-				local7.aHashTableArray1[local95] = local107;
+				local7.switchTables[local95] = local107;
 				while (local100-- > 0) {
 					@Pc(117) int local117 = local12.g4();
 					@Pc(121) int local121 = local12.g4();

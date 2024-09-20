@@ -30,14 +30,14 @@ public final class Static94 {
 		Static524.aConnection3.lastPacketType2 = null;
 		Static524.aConnection3.lastPacketType = null;
 		Static524.aConnection3.anInt3648 = 0;
-		Static249.anInt4008 = 0;
+		Static249.rebootTimer = 0;
 		Static524.aConnection3.aServerProt_92 = null;
 		Static533.method7119();
 		Static605.method7914();
 		for (@Pc(36) int local36 = 0; local36 < 2048; local36++) {
 			Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local36] = null;
 		}
-		Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = null;
+		Static556.self = null;
 		for (@Pc(49) int local49 = 0; local49 < Static416.anInt6378; local49++) {
 			@Pc(55) Npc local55 = Static592.aClass2_Sub45Array1[local49].aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local55 != null) {
@@ -45,7 +45,7 @@ public final class Static94 {
 			}
 		}
 		Static576.method7614();
-		Static511.anInt7645 = 1;
+		Static511.cameraType = 1;
 		Static693.anInt10383 = -1;
 		Static692.anInt10376 = -1;
 		Static81.method1586(11);

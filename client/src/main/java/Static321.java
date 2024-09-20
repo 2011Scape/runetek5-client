@@ -18,8 +18,8 @@ public final class Static321 {
 
 	@OriginalMember(owner = "client!kca", name = "a", descriptor = "(IIZ)V")
 	public static void method4619(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(23) SecondaryLinkable_Sub2 local23 = Static440.method5963(18, (long) arg1 << 32 | (long) arg0);
-		local23.method205();
+		@Pc(23) SecondaryLinkable_Sub2 local23 = Static440.create(18, (long) arg1 << 32 | (long) arg0);
+		local23.pushClient();
 	}
 
 	@OriginalMember(owner = "client!kca", name = "a", descriptor = "(IB)Lclient!wca;")

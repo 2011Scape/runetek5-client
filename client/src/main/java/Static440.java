@@ -14,7 +14,7 @@ public final class Static440 {
 	public static final int[] anIntArray529 = new int[2];
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IIJ)Lclient!aj;")
-	public static SecondaryLinkable_Sub2 method5963(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
+	public static SecondaryLinkable_Sub2 create(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
 		@Pc(21) SecondaryLinkable_Sub2 local21 = (SecondaryLinkable_Sub2) Static658.aHashTable43.get(arg1 | (long) arg0 << 56);
 		if (local21 == null) {
 			local21 = new SecondaryLinkable_Sub2(arg0, arg1);

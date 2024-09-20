@@ -11,7 +11,7 @@ public final class Static691 {
 	public static VarClientTypeList aVarClientTypeList1;
 
 	@OriginalMember(owner = "client!vs", name = "o", descriptor = "I")
-	public static int anInt10367;
+	public static int originX;
 
 	@OriginalMember(owner = "client!vs", name = "m", descriptor = "I")
 	public static int anInt10368 = 0;

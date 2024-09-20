@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static703 {
 
 	@OriginalMember(owner = "client!we", name = "c", descriptor = "I")
-	public static int anInt10571 = 0;
+	public static int runEnergy = 0;
 
 	@OriginalMember(owner = "client!we", name = "b", descriptor = "Z")
 	public static final boolean aBoolean798 = true;

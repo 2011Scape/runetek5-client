@@ -31,8 +31,8 @@ public final class Static32 {
 		if (arg2 == 1) {
 			local11 = OutboundPacket.create(Static632.aClientProt111, Connection.gameConnection.random);
 		}
-		local11.buffer.p2_alt3(arg0 + Static691.anInt10367);
-		local11.buffer.p2_alt3(Static116.anInt2270 + arg1);
+		local11.buffer.p2_alt3(arg0 + Static691.originX);
+		local11.buffer.p2_alt3(Static116.originZ + arg1);
 		local11.buffer.p1(Static334.aKeyboard1.method8479(82) ? 1 : 0);
 		Static266.aBoolean583 = false;
 		Static675.anInt10156 = arg0;

@@ -374,7 +374,7 @@ public final class Preferences extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!kv", name = "d", descriptor = "(I)Lclient!ge;")
-	public Packet method5110() {
+	public Packet encode() {
 		@Pc(9) Packet local9 = new Packet(Static368.method5269());
 		local9.p1(25);
 		local9.p1(this.aPreference_Sub13_2.method4373());

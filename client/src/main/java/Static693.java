@@ -96,14 +96,14 @@ public final class Static693 {
 		Static374.anInt5907 = -1;
 		Static314.anInt5035 = 0;
 		Static197.anInt3260 = -1;
-		Static511.anInt7645 = 1;
+		Static511.cameraType = 1;
 		anInt10383 = -1;
 		Static692.anInt10376 = -1;
 	}
 
 	@OriginalMember(owner = "client!vu", name = "a", descriptor = "(III)V")
 	public static void method9013(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(21) SecondaryLinkable_Sub2 local21 = Static440.method5963(19, (long) arg0 | (long) arg1 << 32);
-		local21.method205();
+		@Pc(21) SecondaryLinkable_Sub2 local21 = Static440.create(19, (long) arg0 | (long) arg1 << 32);
+		local21.pushClient();
 	}
 }

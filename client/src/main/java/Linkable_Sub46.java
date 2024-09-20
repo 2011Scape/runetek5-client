@@ -9,7 +9,7 @@ public final class Linkable_Sub46 extends Linkable {
 	public int anInt8241;
 
 	@OriginalMember(owner = "client!rd", name = "o", descriptor = "Ljava/lang/String;")
-	public String aString100;
+	public String value;
 
 	@OriginalMember(owner = "client!rd", name = "<init>", descriptor = "()V")
 	private Linkable_Sub46() {
@@ -18,6 +18,6 @@ public final class Linkable_Sub46 extends Linkable {
 	@OriginalMember(owner = "client!rd", name = "<init>", descriptor = "(Ljava/lang/String;I)V")
 	public Linkable_Sub46(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		this.anInt8241 = arg1;
-		this.aString100 = arg0;
+		this.value = arg0;
 	}
 }

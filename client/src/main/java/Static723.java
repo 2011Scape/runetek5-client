@@ -13,7 +13,7 @@ public final class Static723 {
 	public static volatile boolean aBoolean827 = false;
 
 	@OriginalMember(owner = "client!wu", name = "z", descriptor = "Ljava/lang/String;")
-	public static String aString129 = null;
+	public static String name = null;
 
 	@OriginalMember(owner = "client!wu", name = "e", descriptor = "(I)V")
 	public static void method9450() {

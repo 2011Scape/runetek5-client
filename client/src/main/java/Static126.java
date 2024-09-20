@@ -8,7 +8,7 @@ public final class Static126 {
 	public static final Class155 aClass155_12 = new Class155(52);
 
 	@OriginalMember(owner = "client!du", name = "d", descriptor = "Z")
-	public static boolean aBoolean200 = false;
+	public static boolean playerMember = false;
 
 	@OriginalMember(owner = "client!du", name = "m", descriptor = "Lclient!ss;")
 	public static final ClientProt aClientProt23 = new ClientProt(91, 8);
@@ -49,9 +49,9 @@ public final class Static126 {
 
 	@OriginalMember(owner = "client!du", name = "b", descriptor = "(I)V")
 	public static void method2229() {
-		@Pc(1) SoftLruHashTable local1 = Static354.aSoftLruHashTable120;
-		synchronized (Static354.aSoftLruHashTable120) {
-			Static354.aSoftLruHashTable120.removeSoft();
+		@Pc(1) SoftLruHashTable local1 = Static354.SHADOWS;
+		synchronized (Static354.SHADOWS) {
+			Static354.SHADOWS.removeSoft();
 		}
 	}
 }

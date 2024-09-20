@@ -9,7 +9,7 @@ public final class Static724 {
 	@OriginalMember(owner = "client!wv", name = "a", descriptor = "(B)Lclient!pq;")
 	public static World method9452() {
 		Static59.anInt5936 = 0;
-		return Static557.method7333();
+		return Static557.getNextWorld();
 	}
 
 	@OriginalMember(owner = "client!wv", name = "a", descriptor = "(II)V")

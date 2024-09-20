@@ -159,7 +159,7 @@ public final class Static484 {
 							}
 							if (local730 != null) {
 								@Pc(776) LocType local776 = Static354.aLocTypeList4.get(local730.method6859(-32136));
-								if (!local776.members || Static174.aBoolean249) {
+								if (!local776.members || Static174.mapMembers) {
 									local238 = local776.mel;
 									if (local776.multiloc != null) {
 										for (local249 = 0; local249 < local776.multiloc.length; local249++) {
@@ -217,9 +217,9 @@ public final class Static484 {
 				Static577.aMelTypeList4.method5583(1024, 64);
 				for (local214 = 0; local214 < Static42.aClass255_2.anInt6373; local214++) {
 					local216 = Static42.aClass255_2.anIntArray495[local214];
-					if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local216 >> 28) {
-						local218 = (local216 >> 14 & 0x3FFF) - Static691.anInt10367;
-						local229 = (local216 & 0x3FFF) - Static116.anInt2270;
+					if (Static556.self.plane == local216 >> 28) {
+						local218 = (local216 >> 14 & 0x3FFF) - Static691.originX;
+						local229 = (local216 & 0x3FFF) - Static116.originZ;
 						if (local218 >= 0 && local218 < Static720.anInt10859 && local229 >= 0 && local229 < Static501.anInt7568) {
 							Static612.aLinkedList67.addTail(new IntNode(local214));
 						} else {

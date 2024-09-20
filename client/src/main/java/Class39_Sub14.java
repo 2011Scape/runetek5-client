@@ -29,6 +29,6 @@ public final class Class39_Sub14 extends Class39 {
 	@OriginalMember(owner = "client!lm", name = "b", descriptor = "(I)V")
 	@Override
 	public void method9161() {
-		Static161.method2586(this.anInt5879, 0, this.anInt5872, this.anInt5874, this.anInt5880);
+		Static161.play(this.anInt5879, 0, this.anInt5872, this.anInt5874, this.anInt5880);
 	}
 }

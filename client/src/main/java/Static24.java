@@ -15,9 +15,9 @@ public final class Static24 {
 
 	@OriginalMember(owner = "client!aq", name = "a", descriptor = "(I)V")
 	public static void method680() {
-		Static147.method2421((long) Static333.anInt5455, Static163.aClass19_17);
-		if (Static377.anInt5930 != -1) {
-			Static26.method716(Static377.anInt5930);
+		Static147.method2421((long) Static333.loop, Static163.aClass19_17);
+		if (Static377.topLevelInterface != -1) {
+			Static26.method716(Static377.topLevelInterface);
 		}
 		for (@Pc(23) int local23 = 0; local23 < Static122.anInt2339; local23++) {
 			if (Static364.aBooleanArray18[local23]) {
@@ -26,8 +26,8 @@ public final class Static24 {
 			Static359.aBooleanArray17[local23] = Static364.aBooleanArray18[local23];
 			Static364.aBooleanArray18[local23] = false;
 		}
-		Static171.anInt2880 = Static333.anInt5455;
-		if (Static377.anInt5930 != -1) {
+		Static171.anInt2880 = Static333.loop;
+		if (Static377.topLevelInterface != -1) {
 			Static122.anInt2339 = 0;
 			Static261.method3833();
 		}

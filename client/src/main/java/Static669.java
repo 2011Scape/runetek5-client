@@ -26,8 +26,8 @@ public final class Static669 {
 		@Pc(11) int local11;
 		@Pc(14) int local14;
 		if (arg3 == 1) {
-			local11 = arg2.anInt7561;
-			local14 = arg0.anInt7561;
+			local11 = arg2.players;
+			local14 = arg0.players;
 			if (!arg1) {
 				if (local11 == -1) {
 					local11 = 2001;
@@ -38,49 +38,49 @@ public final class Static669 {
 			}
 			return local11 - local14;
 		} else if (arg3 == 2) {
-			return Static540.method6538(arg0.method6717().aString13, Static51.clientLanguageId, arg2.method6717().aString13);
+			return Static540.method6538(arg0.getWorldInfo().name, Static51.clientLanguageId, arg2.getWorldInfo().name);
 		} else if (arg3 == 3) {
-			if (arg2.aString91.equals("-")) {
-				if (arg0.aString91.equals("-")) {
+			if (arg2.activity.equals("-")) {
+				if (arg0.activity.equals("-")) {
 					return 0;
 				} else if (arg1) {
 					return -1;
 				} else {
 					return 1;
 				}
-			} else if (arg0.aString91.equals("-")) {
+			} else if (arg0.activity.equals("-")) {
 				return arg1 ? 1 : -1;
 			} else {
-				return Static540.method6538(arg0.aString91, Static51.clientLanguageId, arg2.aString91);
+				return Static540.method6538(arg0.activity, Static51.clientLanguageId, arg2.activity);
 			}
 		} else if (arg3 == 4) {
-			if (arg2.method6712()) {
-				return arg0.method6712() ? 0 : 1;
-			} else if (arg0.method6712()) {
+			if (arg2.isLootShare()) {
+				return arg0.isLootShare() ? 0 : 1;
+			} else if (arg0.isLootShare()) {
 				return -1;
 			} else {
 				return 0;
 			}
 		} else if (arg3 == 5) {
-			if (arg2.method6706()) {
-				return arg0.method6706() ? 0 : 1;
-			} else if (arg0.method6706()) {
+			if (arg2.isQuickChat()) {
+				return arg0.isQuickChat() ? 0 : 1;
+			} else if (arg0.isQuickChat()) {
 				return -1;
 			} else {
 				return 0;
 			}
 		} else if (arg3 == 6) {
-			if (arg2.method6708()) {
-				return arg0.method6708() ? 0 : 1;
-			} else if (arg0.method6708()) {
+			if (arg2.isPvp()) {
+				return arg0.isPvp() ? 0 : 1;
+			} else if (arg0.isPvp()) {
 				return -1;
 			} else {
 				return 0;
 			}
 		} else if (arg3 == 7) {
-			if (arg2.method6709()) {
-				return arg0.method6709() ? 0 : 1;
-			} else if (arg0.method6709()) {
+			if (arg2.isMembers()) {
+				return arg0.isMembers() ? 0 : 1;
+			} else if (arg0.isMembers()) {
 				return -1;
 			} else {
 				return 0;
@@ -105,7 +105,7 @@ public final class Static669 {
 			}
 			return local11 - local14;
 		} else {
-			return arg2.anInt7569 - arg0.anInt7569;
+			return arg2.id - arg0.id;
 		}
 	}
 }

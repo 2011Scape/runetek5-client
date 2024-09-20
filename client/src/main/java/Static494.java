@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static494 {
 
 	@OriginalMember(owner = "client!pja", name = "Z", descriptor = "I")
-	public static int anInt7396;
+	public static int minId;
 
 	@OriginalMember(owner = "client!pja", name = "kb", descriptor = "I")
 	public static int anInt7409;
 
 	@OriginalMember(owner = "client!pja", name = "rb", descriptor = "I")
-	public static int anInt7404 = 0;
+	public static int weight = 0;
 
 	@OriginalMember(owner = "client!pja", name = "K", descriptor = "Z")
 	public static boolean aBoolean563 = false;
@@ -31,8 +31,8 @@ public final class Static494 {
 	@OriginalMember(owner = "client!pja", name = "e", descriptor = "(B)V")
 	public static void method6597() {
 		Static659.anInt9817 = 0;
-		@Pc(17) int local17 = (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10690 >> 9) + Static691.anInt10367;
-		@Pc(24) int local24 = Static116.anInt2270 + (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10694 >> 9);
+		@Pc(17) int local17 = (Static556.self.xFine >> 9) + Static691.originX;
+		@Pc(24) int local24 = Static116.originZ + (Static556.self.zFine >> 9);
 		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
 			Static659.anInt9817 = 1;
 		}

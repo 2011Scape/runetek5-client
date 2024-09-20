@@ -42,7 +42,7 @@ public final class Static36 {
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(BLclient!vq;Ljava/lang/String;Ljava/lang/String;I)Lclient!oba;")
 	public static PrivilegedRequest method980(@OriginalArg(1) Signlink arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
 		if (arg3 == 0) {
-			return arg0.method8986(arg1);
+			return arg0.openUrl(arg1);
 		}
 		@Pc(57) PrivilegedRequest local57;
 		if (arg3 == 1) {

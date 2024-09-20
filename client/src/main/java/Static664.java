@@ -77,7 +77,7 @@ public final class Static664 {
 		if (arg0 == null) {
 			return -1;
 		}
-		for (@Pc(10) int local10 = 0; local10 < Static327.anInt5392; local10++) {
+		for (@Pc(10) int local10 = 0; local10 < Static327.size; local10++) {
 			if (arg0.equalsIgnoreCase(Static330.aStringArray25[local10])) {
 				return local10;
 			}
@@ -93,7 +93,7 @@ public final class Static664 {
 		Static354.aLocTypeList4.method3058();
 		Static690.aNpcTypeList2.method7089();
 		ObjTypeList.objTypes.method2480();
-		Static25.aSeqTypeList1.method1164();
+		Static25.aSeqTypeList1.removeSoft();
 		Static23.aSpotAnimTypeList1.method2697();
 		Static529.aVarBitTypeList1.method3423();
 		Static36.aVarPlayerTypeList1.method5781();

@@ -60,7 +60,7 @@ public final class Static385 {
 	}
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(B)Z")
-	public static boolean method5421() {
+	public static boolean isShowingVideoAd() {
 		if (Static98.aBoolean191) {
 			try {
 				if ((Boolean) BrowserControl.call("showingVideoAd", Static166.anApplet1)) {

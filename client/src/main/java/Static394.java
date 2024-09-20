@@ -23,7 +23,7 @@ public final class Static394 {
 			@Pc(70) int local70 = (int) local53 >> 9;
 			@Pc(75) int local75 = (int) local65 >> 9;
 			if (local70 > 0 && local75 > 0 && Static720.anInt10859 > local70 && local75 < Static501.anInt7568) {
-				@Pc(104) int local104 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144;
+				@Pc(104) int local104 = Static556.self.plane;
 				if (local104 < 3 && (Static280.aByteArrayArrayArray3[1][local70][local75] & 0x2) != 0) {
 					local104++;
 				}
@@ -45,7 +45,7 @@ public final class Static394 {
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(ZILjava/lang/String;)V")
 	public static void method5544(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.method5963(2, (long) arg0);
+		@Pc(9) SecondaryLinkable_Sub2 local9 = Static440.create(2, (long) arg0);
 		local9.method202();
 		local9.aString1 = arg1;
 	}

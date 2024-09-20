@@ -8,7 +8,7 @@ public final class Static682 {
 	public static int anInt10295;
 
 	@OriginalMember(owner = "client!vka", name = "h", descriptor = "B")
-	public static byte aByte142;
+	public static byte rank;
 
 	@OriginalMember(owner = "client!vka", name = "f", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_43 = new Class155(61);
@@ -27,8 +27,8 @@ public final class Static682 {
 
 	@OriginalMember(owner = "client!vka", name = "b", descriptor = "(II)V")
 	public static void method8926(@OriginalArg(1) int arg0) {
-		@Pc(17) SecondaryLinkable_Sub2 local17 = Static440.method5963(20, (long) arg0);
-		local17.method205();
+		@Pc(17) SecondaryLinkable_Sub2 local17 = Static440.create(20, (long) arg0);
+		local17.pushClient();
 	}
 
 	@OriginalMember(owner = "client!vka", name = "a", descriptor = "(IIIBI)V")

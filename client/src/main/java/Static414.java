@@ -15,13 +15,13 @@ public final class Static414 {
 		if (Static594.anInt8777 >= 400) {
 			return;
 		}
-		if (arg1 != Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2) {
+		if (arg1 != Static556.self) {
 			@Pc(177) String local177;
 			if (arg1.anInt1436 == 0) {
 				@Pc(63) boolean local63 = true;
-				if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1471 != -1 && arg1.anInt1471 != -1) {
-					@Pc(91) int local91 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1471 < arg1.anInt1471 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1471 : arg1.anInt1471;
-					@Pc(98) int local98 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2 - arg1.combatLevel2;
+				if (Static556.self.anInt1471 != -1 && arg1.anInt1471 != -1) {
+					@Pc(91) int local91 = Static556.self.anInt1471 < arg1.anInt1471 ? Static556.self.anInt1471 : arg1.anInt1471;
+					@Pc(98) int local98 = Static556.self.combatLevel2 - arg1.combatLevel2;
 					if (local98 < 0) {
 						local98 = -local98;
 					}
@@ -31,9 +31,9 @@ public final class Static414 {
 				}
 				@Pc(129) String local129 = ModeGame.GAME_STELLARDAWN == Static392.clientModeGame ? LocalizedText.RATING.get(Static51.clientLanguageId) : LocalizedText.LEVEL.get(Static51.clientLanguageId);
 				if (arg1.combatLevel2 >= arg1.combatLevel1) {
-					local177 = arg1.method1424(false) + (local63 ? Static693.levelDifferenceColor(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2, arg1.combatLevel2) : "<col=ffffff>") + " (" + local129 + arg1.combatLevel2 + ")";
+					local177 = arg1.method1424(false) + (local63 ? Static693.levelDifferenceColor(Static556.self.combatLevel2, arg1.combatLevel2) : "<col=ffffff>") + " (" + local129 + arg1.combatLevel2 + ")";
 				} else {
-					local177 = arg1.method1424(false) + (local63 ? Static693.levelDifferenceColor(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2, arg1.combatLevel2) : "<col=ffffff>") + " (" + local129 + arg1.combatLevel2 + "+" + (arg1.combatLevel1 - arg1.combatLevel2) + ")";
+					local177 = arg1.method1424(false) + (local63 ? Static693.levelDifferenceColor(Static556.self.combatLevel2, arg1.combatLevel2) : "<col=ffffff>") + " (" + local129 + arg1.combatLevel2 + "+" + (arg1.combatLevel1 - arg1.combatLevel2) + ")";
 				}
 			} else if (arg1.anInt1436 == -1) {
 				local177 = arg1.method1424(false);
@@ -50,14 +50,14 @@ public final class Static414 {
 					if (Static297.aStringArray24[local318] != null) {
 						@Pc(325) short local325 = 0;
 						if (Static392.clientModeGame == ModeGame.GAME_RUNESCAPE && Static297.aStringArray24[local318].equalsIgnoreCase(LocalizedText.ATTACK.get(Static51.clientLanguageId))) {
-							if (Static324.aBoolean388 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.combatLevel2 < arg1.combatLevel2) {
+							if (Static324.aBoolean388 && Static556.self.combatLevel2 < arg1.combatLevel2) {
 								local325 = 2000;
 							}
-							if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1433 == 0 || arg1.anInt1433 == 0) {
+							if (Static556.self.anInt1433 == 0 || arg1.anInt1433 == 0) {
 								if (arg1.aBoolean125) {
 									local325 = 2000;
 								}
-							} else if (arg1.anInt1433 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1433) {
+							} else if (arg1.anInt1433 == Static556.self.anInt1433) {
 								local325 = 2000;
 							} else {
 								local325 = 0;

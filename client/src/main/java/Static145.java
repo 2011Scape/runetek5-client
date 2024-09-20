@@ -25,16 +25,16 @@ public final class Static145 {
 		}
 		Static70.anInt1569 = Static170.anInt2864;
 		Static411.anInt6329 = Static110.anInt2186;
-		Static225.anInt3641 = Static323.anInt5119;
+		Static225.anInt3641 = Static323.cameraYaw;
 		Static197.anInt3260 = -1;
 		Static340.anInt5584 = Static598.anInt8832;
 		Static693.anInt10383 = -1;
 		Static692.anInt10376 = -1;
 		Static374.anInt5907 = -1;
-		Static212.anInt3468 = Static333.anInt5455;
+		Static212.anInt3468 = Static333.loop;
 		Static179.anInt2991 = 0;
 		Static314.anInt5035 = 0;
-		Static511.anInt7645 = 5;
+		Static511.cameraType = 5;
 		Static302.anInt4854 = Static359.anInt5801;
 	}
 
@@ -57,9 +57,9 @@ public final class Static145 {
 				if ((local25 & -1073741824) == -1073741824) {
 					local72 = local25 & 0xFFFFFFF;
 					@Pc(148) int local148 = local72 >> 14;
-					local102 = arg0.anInt10690 - (local148 - Static691.anInt10367) * 512 - 256;
+					local102 = arg0.xFine - (local148 - Static691.originX) * 512 - 256;
 					@Pc(164) int local164 = local72 & 0x3FFF;
-					local95 = arg0.anInt10694 - (local164 - Static116.anInt2270) * 512 - 256;
+					local95 = arg0.zFine - (local164 - Static116.originZ) * 512 - 256;
 				} else if ((local25 & 0x8000) == 0) {
 					@Pc(111) Linkable_Sub45 local111 = (Linkable_Sub45) Static18.aHashTable2.get((long) local25);
 					if (local111 == null) {
@@ -67,8 +67,8 @@ public final class Static145 {
 						continue;
 					}
 					@Pc(116) Npc local116 = local111.aClass8_Sub2_Sub1_Sub2_Sub2_2;
-					local95 = arg0.anInt10694 - local116.anInt10694;
-					local102 = arg0.anInt10690 - local116.anInt10690;
+					local95 = arg0.zFine - local116.zFine;
+					local102 = arg0.xFine - local116.xFine;
 				} else {
 					local72 = local25 & 0x7FFF;
 					@Pc(76) Player local76 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local72];
@@ -76,8 +76,8 @@ public final class Static145 {
 						arg0.method9307(local19, -1);
 						continue;
 					}
-					local95 = arg0.anInt10694 - local76.anInt10694;
-					local102 = arg0.anInt10690 - local76.anInt10690;
+					local95 = arg0.zFine - local76.zFine;
+					local102 = arg0.xFine - local76.xFine;
 				}
 				if (local102 != 0 || local95 != 0) {
 					arg0.method9307(local19, (int) (Math.atan2((double) local102, (double) local95) * 2607.5945876176133D) & 0x3FFF);
@@ -94,21 +94,21 @@ public final class Static145 {
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(III)V")
 	public static void method2411(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (Static571.method7566(arg1)) {
-			Static84.method1663(Static453.aComponentArrayArray2[arg1], arg0);
+		if (Static571.load(arg1)) {
+			Static84.method1663(Static453.components[arg1], arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(BI)Lclient!hda;")
-	public static Component method2412(@OriginalArg(1) int arg0) {
+	public static Component getComponent(@OriginalArg(1) int arg0) {
 		@Pc(16) int local16 = arg0 >> 16;
 		@Pc(20) int local20 = arg0 & 0xFFFF;
-		if (Static453.aComponentArrayArray2[local16] == null || Static453.aComponentArrayArray2[local16][local20] == null) {
-			@Pc(38) boolean local38 = Static571.method7566(local16);
+		if (Static453.components[local16] == null || Static453.components[local16][local20] == null) {
+			@Pc(38) boolean local38 = Static571.load(local16);
 			if (!local38) {
 				return null;
 			}
 		}
-		return Static453.aComponentArrayArray2[local16][local20];
+		return Static453.components[local16][local20];
 	}
 }

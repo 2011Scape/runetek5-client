@@ -7,7 +7,7 @@ public final class Static592 {
 	public static final Linkable_Sub45[] aClass2_Sub45Array1 = new Linkable_Sub45[1024];
 
 	@OriginalMember(owner = "client!sla", name = "a", descriptor = "(I)V")
-	public static void method7761() {
+	public static void updateLockedCamera() {
 		@Pc(9) int local9 = Static121.anInt2333 * 512 + 256;
 		@Pc(15) int local15 = Static709.anInt10667 * 512 + 256;
 		@Pc(24) int local24 = Static102.method2025(Static394.anInt6176, -29754, local15, local9) - Static363.anInt6934;
@@ -80,7 +80,7 @@ public final class Static592 {
 				Static598.anInt8832 = local291;
 			}
 		}
-		@Pc(388) int local388 = local302 - Static323.anInt5119;
+		@Pc(388) int local388 = local302 - Static323.cameraYaw;
 		if (local388 > 8192) {
 			local388 -= 16384;
 		}
@@ -89,14 +89,14 @@ public final class Static592 {
 		}
 		local388 >>= 0x3;
 		if (local388 > 0) {
-			Static323.anInt5119 += Static314.anInt5035 + Static179.anInt2991 * local388 / 1000 << 3;
-			Static323.anInt5119 &= 0x3FFF;
+			Static323.cameraYaw += Static314.anInt5035 + Static179.anInt2991 * local388 / 1000 << 3;
+			Static323.cameraYaw &= 0x3FFF;
 		}
 		if (local388 < 0) {
-			Static323.anInt5119 -= Static179.anInt2991 * -local388 / 1000 + Static314.anInt5035 << 3;
-			Static323.anInt5119 &= 0x3FFF;
+			Static323.cameraYaw -= Static179.anInt2991 * -local388 / 1000 + Static314.anInt5035 << 3;
+			Static323.cameraYaw &= 0x3FFF;
 		}
-		@Pc(456) int local456 = local302 - Static323.anInt5119;
+		@Pc(456) int local456 = local302 - Static323.cameraYaw;
 		if (local456 > 8192) {
 			local456 -= 16384;
 		}
@@ -105,7 +105,7 @@ public final class Static592 {
 		}
 		Static81.anInt1644 = 0;
 		if (local456 < 0 && local388 > 0 || local456 > 0 && local388 < 0) {
-			Static323.anInt5119 = local302;
+			Static323.cameraYaw = local302;
 		}
 	}
 }

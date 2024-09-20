@@ -26,12 +26,12 @@ public final class Static218 {
 	public static void method3189() {
 		@Pc(7) FileOnDisk local7 = null;
 		try {
-			@Pc(13) PrivilegedRequest local13 = Static446.aSignlink6.method8981("2");
+			@Pc(13) PrivilegedRequest local13 = Static446.aSignlink6.openPreferences("2");
 			while (local13.state == 0) {
 				Static638.sleep(1L);
 			}
 			if (local13.state == 1) {
-				local7 = (FileOnDisk) local13.anObject13;
+				local7 = (FileOnDisk) local13.result;
 				@Pc(41) byte[] local41 = new byte[(int) local7.method2161()];
 				@Pc(57) int local57;
 				for (@Pc(43) int local43 = 0; local43 < local41.length; local43 += local57) {

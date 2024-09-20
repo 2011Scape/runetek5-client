@@ -59,7 +59,7 @@ public final class Static363 {
 			}
 		}
 		try {
-			@Pc(43) Dimension local43 = Static434.aCanvas7.getSize();
+			@Pc(43) Dimension local43 = Static434.canvas.getSize();
 			Static694.method9028(Static163.aClass19_17, LocalizedText.PROFILING.get(Static51.clientLanguageId), true, Static694.aClass381_13, Static437.aClass14_9);
 			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, client.models);
 			@Pc(70) long local70 = Static588.currentTimeWithDrift();
@@ -107,7 +107,7 @@ public final class Static363 {
 			if (Static316.aFrame8 != null) {
 				Static328.anInt5427 = arg3;
 				Static110.anInt2189 = arg1;
-				Static666.method8693(1);
+				Static666.write(1);
 			}
 		}
 		if (arg2 == 3 && Static316.aFrame8 == null) {
@@ -154,17 +154,17 @@ public final class Static363 {
 		if (arg4) {
 			Static574.method7572();
 		} else {
-			Static434.aCanvas7.setSize(Static680.anInt10289, Static380.anInt5979);
+			Static434.canvas.setSize(Static680.anInt10289, Static380.anInt5979);
 			if (Static137.aBoolean210) {
-				Static575.method7606(Static434.aCanvas7);
+				Static575.method7606(Static434.canvas);
 			} else {
-				Static163.aClass19_17.method7935(Static434.aCanvas7, Static680.anInt10289, Static380.anInt5979);
+				Static163.aClass19_17.method7935(Static434.canvas, Static680.anInt10289, Static380.anInt5979);
 			}
 			if (local95 == Static353.aFrame10) {
 				local110 = Static353.aFrame10.getInsets();
-				Static434.aCanvas7.setLocation(Static134.anInt10329 + local110.left, Static241.anInt3962 + local110.top);
+				Static434.canvas.setLocation(Static134.anInt10329 + local110.left, Static241.anInt3962 + local110.top);
 			} else {
-				Static434.aCanvas7.setLocation(Static134.anInt10329, Static241.anInt3962);
+				Static434.canvas.setLocation(Static134.anInt10329, Static241.anInt3962);
 			}
 		}
 		if (arg2 >= 2) {
@@ -172,7 +172,7 @@ public final class Static363 {
 		} else {
 			Static152.aBoolean811 = false;
 		}
-		if (Static377.anInt5930 != -1) {
+		if (Static377.topLevelInterface != -1) {
 			Static640.method8435(true);
 		}
 		if (Connection.gameConnection.aClass348_1 != null && Static109.method2070(Static283.gameState)) {

@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class241 {
 
 	@OriginalMember(owner = "client!mga", name = "a", descriptor = "B")
-	public byte aByte99;
+	public byte rank;
 
 	@OriginalMember(owner = "client!mga", name = "d", descriptor = "Ljava/lang/String;")
-	public String aString65;
+	public String worldName;
 
 	@OriginalMember(owner = "client!mga", name = "b", descriptor = "I")
-	public int anInt6148;
+	public int world;
 
 	@OriginalMember(owner = "client!mga", name = "e", descriptor = "Ljava/lang/String;")
-	public String aString66;
+	public String username;
 
 	@OriginalMember(owner = "client!mga", name = "c", descriptor = "Ljava/lang/String;")
 	public String aString67;

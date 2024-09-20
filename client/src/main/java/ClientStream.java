@@ -186,7 +186,7 @@ public final class ClientStream implements Runnable {
 				}
 			}
 			if (this.aPrivilegedRequest3 == null) {
-				this.aPrivilegedRequest3 = this.aSignlink5.method8991(this, 3);
+				this.aPrivilegedRequest3 = this.aSignlink5.startThread(this, 3);
 			}
 			this.notifyAll();
 		}
@@ -207,7 +207,7 @@ public final class ClientStream implements Runnable {
 			}
 			if (this.aPrivilegedRequest3.state == 1) {
 				try {
-					((Thread) this.aPrivilegedRequest3.anObject13).join();
+					((Thread) this.aPrivilegedRequest3.result).join();
 				} catch (@Pc(60) InterruptedException e) {
 					e.printStackTrace();
 				}

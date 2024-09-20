@@ -14,7 +14,7 @@ public final class Static210 {
 
 	@OriginalMember(owner = "client!gia", name = "a", descriptor = "(BZIIZ)V")
 	public static void method3119(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
-		Static168.method2636(Static343.aClass297_Sub1Array2.length - 1, 0, arg0, arg2, arg3, arg1);
+		Static168.method2636(Static343.sorted.length - 1, 0, arg0, arg2, arg3, arg1);
 		Static419.anInt6434 = 0;
 		Static522.aClass2_Sub12_4 = null;
 	}

@@ -11,7 +11,7 @@ public final class Static617 {
 	public static int anInt9434;
 
 	@OriginalMember(owner = "client!tj", name = "H", descriptor = "Z")
-	public static boolean aBoolean724 = false;
+	public static boolean mapQuickChat = false;
 
 	@OriginalMember(owner = "client!tj", name = "C", descriptor = "[F")
 	public static final float[] aFloatArray69 = new float[4];

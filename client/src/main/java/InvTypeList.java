@@ -19,7 +19,7 @@ public final class InvTypeList {
 	}
 
 	@OriginalMember(owner = "client!sfa", name = "a", descriptor = "(II)Lclient!dba;")
-	public InvType method7657(@OriginalArg(0) int arg0) {
+	public InvType get(@OriginalArg(0) int arg0) {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable188;
 		@Pc(16) InvType local16;
 		synchronized (this.aSoftLruHashTable188) {

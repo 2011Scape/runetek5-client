@@ -11,7 +11,7 @@ public final class Static715 {
 	public static int anInt10805 = 0;
 
 	@OriginalMember(owner = "client!wla", name = "p", descriptor = "[I")
-	public static final int[] anIntArray881 = new int[200];
+	public static final int[] ranks = new int[200];
 
 	@OriginalMember(owner = "client!wla", name = "a", descriptor = "(BLclient!ge;)Lclient!rk;")
 	public static Class138_Sub1 method9346(@OriginalArg(1) Packet arg0) {

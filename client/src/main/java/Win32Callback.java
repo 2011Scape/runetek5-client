@@ -55,12 +55,12 @@ public final class Win32Callback extends Callback {
 	}
 
 	@OriginalMember(owner = "client!ow", name = "a", descriptor = "(III)V")
-	public void method6431(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public void moveMouse(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		User32.SetCursorPos(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!ow", name = "a", descriptor = "(ZLjava/awt/Component;B)V")
-	public void method6432(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
+	public void showCursor(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
 		try {
 			Method getPeer = Component.class.getDeclaredMethod("getPeer");
 			getPeer.setAccessible(true);

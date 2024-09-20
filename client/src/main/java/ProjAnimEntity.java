@@ -120,13 +120,13 @@ public final class ProjAnimEntity extends Entity {
 	public void method813(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(9) double local9;
 		if (!this.aBoolean59) {
-			local9 = (double) (arg3 - super.anInt10690);
-			@Pc(16) double local16 = (double) (arg2 - super.anInt10694);
+			local9 = (double) (arg3 - super.xFine);
+			@Pc(16) double local16 = (double) (arg2 - super.zFine);
 			@Pc(25) double local25 = Math.sqrt(local16 * local16 + local9 * local9);
-			this.aDouble4 = (double) this.anInt709 * local16 / local25 + (double) super.anInt10694;
-			this.aDouble8 = (double) super.anInt10690 + local9 * (double) this.anInt709 / local25;
+			this.aDouble4 = (double) this.anInt709 * local16 / local25 + (double) super.zFine;
+			this.aDouble8 = (double) super.xFine + local9 * (double) this.anInt709 / local25;
 			if (this.aBoolean57) {
-				this.aDouble5 = (double) (Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt721);
+				this.aDouble5 = (double) (Static102.method2025(super.plane, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt721);
 			} else {
 				this.aDouble5 = (double) super.anInt10691;
 			}
@@ -210,7 +210,7 @@ public final class ProjAnimEntity extends Entity {
 			if (this.anInt706 < 0) {
 				local35 = -this.anInt706 - 1;
 				if (Static312.anInt5000 == local35) {
-					local21 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
+					local21 = Static556.self;
 				} else {
 					local21 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local35];
 				}
@@ -225,9 +225,9 @@ public final class ProjAnimEntity extends Entity {
 		if (local21 == null) {
 			return;
 		}
-		super.anInt10694 = local21.anInt10694;
-		super.anInt10690 = local21.anInt10690;
-		super.anInt10691 = Static102.method2025(super.aByte144, -29754, local21.anInt10694, local21.anInt10690) - this.anInt721;
+		super.zFine = local21.zFine;
+		super.xFine = local21.xFine;
+		super.anInt10691 = Static102.method2025(super.plane, -29754, local21.zFine, local21.xFine) - this.anInt721;
 		if (this.anInt695 < 0) {
 			return;
 		}
@@ -253,8 +253,8 @@ public final class ProjAnimEntity extends Entity {
 			@Pc(221) int local221 = Model.anIntArray740[local213];
 			@Pc(232) int local232 = local217 * local109 + local221 * local107 >> 14;
 			local109 = local109 * local221 - local217 * local107 >> 14;
-			super.anInt10694 += local109;
-			super.anInt10690 += local232;
+			super.zFine += local109;
+			super.xFine += local232;
 		}
 		return;
 	}
@@ -277,11 +277,11 @@ public final class ProjAnimEntity extends Entity {
 		@Pc(9) Class328[] local9 = arg2.method7482();
 		@Pc(12) Class249[] local12 = arg2.method7480();
 		if ((this.aClass8_Sub5_1 == null || this.aClass8_Sub5_1.aBoolean324) && (local9 != null || local12 != null)) {
-			this.aClass8_Sub5_1 = Static257.method3654(Static333.anInt5455, true);
+			this.aClass8_Sub5_1 = Static257.method3654(Static333.loop, true);
 		}
 		if (this.aClass8_Sub5_1 != null) {
-			this.aClass8_Sub5_1.method3643(arg0, (long) Static333.anInt5455, local9, local12);
-			this.aClass8_Sub5_1.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
+			this.aClass8_Sub5_1.method3643(arg0, (long) Static333.loop, local9, local12);
+			this.aClass8_Sub5_1.method3658(super.plane, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}
 
@@ -365,7 +365,7 @@ public final class ProjAnimEntity extends Entity {
 		this.aBoolean59 = true;
 		this.aDouble4 += (double) arg0 * this.aDouble2;
 		if (this.aBoolean57) {
-			this.aDouble5 = (double) (Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt721);
+			this.aDouble5 = (double) (Static102.method2025(super.plane, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt721);
 		} else if (this.anInt705 == -1) {
 			this.aDouble5 += this.aDouble1 * (double) arg0;
 		} else {

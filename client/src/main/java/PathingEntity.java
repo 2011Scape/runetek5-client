@@ -368,10 +368,10 @@ public abstract class PathingEntity extends Entity {
 	@Override
 	public final void method9294() {
 		@Pc(12) int local12 = (this.anInt10733 - 1 << 8) + 240;
-		super.aShort132 = (short) (super.anInt10694 - local12 >> 9);
-		super.aShort131 = (short) (super.anInt10690 - local12 >> 9);
-		super.aShort133 = (short) (super.anInt10694 + local12 >> 9);
-		super.aShort134 = (short) (super.anInt10690 + local12 >> 9);
+		super.aShort132 = (short) (super.zFine - local12 >> 9);
+		super.aShort131 = (short) (super.xFine - local12 >> 9);
+		super.aShort133 = (short) (super.zFine + local12 >> 9);
+		super.aShort134 = (short) (super.xFine + local12 >> 9);
 	}
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(IIZ)V")
@@ -394,7 +394,7 @@ public abstract class PathingEntity extends Entity {
 		} else {
 			local31 = -this.anInt10748;
 		}
-		@Pc(55) Class291 local55 = Static334.aClass291ArrayArrayArray1[super.aByte144][super.anInt10690 >> Static52.anInt1066][super.anInt10694 >> Static52.anInt1066];
+		@Pc(55) Class291 local55 = Static334.aClass291ArrayArrayArray1[super.plane][super.xFine >> Static52.anInt1066][super.zFine >> Static52.anInt1066];
 		return local55 == null || local55.aClass8_Sub2_Sub2_1 == null ? local31 : local31 + local55.aClass8_Sub2_Sub2_1.aShort46;
 	}
 
@@ -643,8 +643,8 @@ public abstract class PathingEntity extends Entity {
 			if (local19 == arg5) {
 				local38 = Static23.aSpotAnimTypeList1.method2694(arg5);
 				if (local38.aBoolean448 && local38.anInt5842 != -1) {
-					@Pc(54) SeqType local54 = Static25.aSeqTypeList1.method1162(local38.anInt5842);
-					@Pc(57) int local57 = local54.anInt1646;
+					@Pc(54) SeqType local54 = Static25.aSeqTypeList1.get(local38.anInt5842);
+					@Pc(57) int local57 = local54.exactmove;
 					if (local57 == 0) {
 						return;
 					}
@@ -657,9 +657,9 @@ public abstract class PathingEntity extends Entity {
 				local38 = Static23.aSpotAnimTypeList1.method2694(arg5);
 				@Pc(86) SpotAnimType local86 = Static23.aSpotAnimTypeList1.method2694(local19);
 				if (local38.anInt5842 != -1 && local86.anInt5842 != -1) {
-					@Pc(103) SeqType local103 = Static25.aSeqTypeList1.method1162(local38.anInt5842);
-					@Pc(109) SeqType local109 = Static25.aSeqTypeList1.method1162(local86.anInt5842);
-					if (local103.anInt1649 < local109.anInt1649) {
+					@Pc(103) SeqType local103 = Static25.aSeqTypeList1.get(local38.anInt5842);
+					@Pc(109) SeqType local109 = Static25.aSeqTypeList1.get(local86.anInt5842);
+					if (local103.priority < local109.priority) {
 						return;
 					}
 				}
@@ -708,22 +708,22 @@ public abstract class PathingEntity extends Entity {
 		@Pc(38) int local38 = -arg4 / 2;
 		@Pc(48) int local48 = local24 * local38 + local33 * local28 >> 14;
 		@Pc(59) int local59 = local38 * local28 - local33 * local24 >> 14;
-		@Pc(74) int local74 = Static323.method4626(local59 + super.anInt10694, super.aByte144, local11, local20, local48 + super.anInt10690);
+		@Pc(74) int local74 = Static323.method4626(local59 + super.zFine, super.plane, local11, local20, local48 + super.xFine);
 		@Pc(78) int local78 = arg3 / 2;
 		@Pc(83) int local83 = -arg4 / 2;
 		@Pc(93) int local93 = local28 * local78 + local83 * local24 >> 14;
 		@Pc(104) int local104 = local28 * local83 - local24 * local78 >> 14;
-		@Pc(119) int local119 = Static323.method4626(local104 + super.anInt10694, super.aByte144, local11, local20, local93 + super.anInt10690);
+		@Pc(119) int local119 = Static323.method4626(local104 + super.zFine, super.plane, local11, local20, local93 + super.xFine);
 		@Pc(124) int local124 = -arg3 / 2;
 		@Pc(128) int local128 = arg4 / 2;
 		@Pc(138) int local138 = local24 * local128 + local124 * local28 >> 14;
 		@Pc(149) int local149 = local128 * local28 - local124 * local24 >> 14;
-		@Pc(165) int local165 = Static323.method4626(local149 + super.anInt10694, super.aByte144, local11, local20, super.anInt10690 + local138);
+		@Pc(165) int local165 = Static323.method4626(local149 + super.zFine, super.plane, local11, local20, super.xFine + local138);
 		@Pc(169) int local169 = arg3 / 2;
 		@Pc(173) int local173 = arg4 / 2;
 		@Pc(183) int local183 = local24 * local173 + local28 * local169 >> 14;
 		@Pc(194) int local194 = local173 * local28 - local169 * local24 >> 14;
-		@Pc(210) int local210 = Static323.method4626(local194 + super.anInt10694, super.aByte144, local11, local20, super.anInt10690 + local183);
+		@Pc(210) int local210 = Static323.method4626(local194 + super.zFine, super.plane, local11, local20, super.xFine + local183);
 		@Pc(218) int local218 = local74 < local119 ? local74 : local119;
 		@Pc(226) int local226 = local210 > local165 ? local165 : local210;
 		@Pc(234) int local234 = local119 >= local210 ? local210 : local119;
@@ -841,7 +841,7 @@ public abstract class PathingEntity extends Entity {
 				}
 			}
 			if ((this.aClass8_Sub5_8 == null || this.aClass8_Sub5_8.aBoolean324) && (local17 > 0 || local21 > 0)) {
-				this.aClass8_Sub5_8 = Static257.method3654(Static333.anInt5455, true);
+				this.aClass8_Sub5_8 = Static257.method3654(Static333.loop, true);
 			}
 			if (this.aClass8_Sub5_8 != null) {
 				@Pc(138) Class328[] local138;
@@ -871,14 +871,14 @@ public abstract class PathingEntity extends Entity {
 						}
 					}
 				}
-				this.aClass8_Sub5_8.method3643(arg0, (long) Static333.anInt5455, local138, local191);
+				this.aClass8_Sub5_8.method3643(arg0, (long) Static333.loop, local138, local191);
 				this.aBoolean820 = true;
 			}
 		} else if (this.aClass8_Sub5_8 != null) {
-			this.aClass8_Sub5_8.method3649((long) Static333.anInt5455);
+			this.aClass8_Sub5_8.method3649((long) Static333.loop);
 		}
 		if (this.aClass8_Sub5_8 != null) {
-			this.aClass8_Sub5_8.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
+			this.aClass8_Sub5_8.method3658(super.plane, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}
 

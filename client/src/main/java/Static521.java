@@ -8,7 +8,7 @@ public final class Static521 {
 	public static int anInt7756;
 
 	@OriginalMember(owner = "client!qga", name = "i", descriptor = "Lclient!sia;")
-	public static final LinkedList aLinkedList44 = new LinkedList();
+	public static final LinkedList lowPriorityRequests = new LinkedList();
 
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(IIZIII[IBIIILclient!eq;[III)I")
 	public static int method6870(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class110 arg10, @OriginalArg(12) int[] arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {

@@ -9,5 +9,5 @@ public final class Static174 {
 	public static int anInt2918;
 
 	@OriginalMember(owner = "client!fh", name = "a", descriptor = "Z")
-	public static boolean aBoolean249 = false;
+	public static boolean mapMembers = false;
 }

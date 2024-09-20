@@ -56,12 +56,12 @@ public final class Static720 {
 		@Pc(13) FileOnDisk local13 = null;
 		@Pc(19) Preferences local19 = new Preferences(Static392.clientModeGame, 0);
 		try {
-			@Pc(25) PrivilegedRequest local25 = Static446.aSignlink6.method8981("");
+			@Pc(25) PrivilegedRequest local25 = Static446.aSignlink6.openPreferences("");
 			while (local25.state == 0) {
 				Static638.sleep(1L);
 			}
 			if (local25.state == 1) {
-				local13 = (FileOnDisk) local25.anObject13;
+				local13 = (FileOnDisk) local25.result;
 				@Pc(51) byte[] local51 = new byte[(int) local13.method2161()];
 				@Pc(66) int local66;
 				for (@Pc(53) int local53 = 0; local53 < local51.length; local53 += local66) {

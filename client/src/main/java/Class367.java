@@ -16,51 +16,51 @@ public final class Class367 {
 	public float aFloat200 = 0.25F;
 
 	@OriginalMember(owner = "client!uc", name = "e", descriptor = "I")
-	public int anInt9533;
+	public int lightY;
 
 	@OriginalMember(owner = "client!uc", name = "t", descriptor = "Lclient!pu;")
 	public Class67 aClass67_10;
 
 	@OriginalMember(owner = "client!uc", name = "i", descriptor = "I")
-	public int anInt9535;
+	public int lightX;
 
 	@OriginalMember(owner = "client!uc", name = "d", descriptor = "F")
-	public float aFloat202;
+	public float light1Diffuse;
 
 	@OriginalMember(owner = "client!uc", name = "s", descriptor = "Lclient!gm;")
 	public Class148 aClass148_5;
 
 	@OriginalMember(owner = "client!uc", name = "p", descriptor = "I")
-	public int anInt9537;
+	public int screenColorRgb;
 
 	@OriginalMember(owner = "client!uc", name = "g", descriptor = "F")
-	public float aFloat205;
+	public float light0Diffuse;
 
 	@OriginalMember(owner = "client!uc", name = "v", descriptor = "F")
-	public float aFloat204;
+	public float lightModelAmbient;
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "I")
-	public int anInt9534;
+	public int lightZ;
 
 	@OriginalMember(owner = "client!uc", name = "f", descriptor = "I")
-	public int anInt9538;
+	public int fogColorRgb;
 
 	@OriginalMember(owner = "client!uc", name = "c", descriptor = "I")
-	public int anInt9539;
+	public int fogDepth;
 
 	@OriginalMember(owner = "client!uc", name = "<init>", descriptor = "()V")
 	public Class367() {
-		this.anInt9533 = -60;
+		this.lightY = -60;
 		this.aClass67_10 = Static226.aClass67_9;
-		this.anInt9535 = -50;
-		this.aFloat202 = 1.2F;
+		this.lightX = -50;
+		this.light1Diffuse = 1.2F;
 		this.aClass148_5 = Static495.aClass148_4;
-		this.anInt9537 = Static68.anInt4096;
-		this.aFloat205 = 0.69921875F;
-		this.aFloat204 = 1.1523438F;
-		this.anInt9534 = -50;
-		this.anInt9538 = Static563.anInt8460;
-		this.anInt9539 = 0;
+		this.screenColorRgb = Static68.defaultLightColorRgb;
+		this.light0Diffuse = 0.69921875F;
+		this.lightModelAmbient = 1.1523438F;
+		this.lightZ = -50;
+		this.fogColorRgb = Static563.defaulFogColorRgb;
+		this.fogDepth = 0;
 	}
 
 	@OriginalMember(owner = "client!uc", name = "<init>", descriptor = "(Lclient!ge;)V")
@@ -91,24 +91,24 @@ public final class Class367 {
 		@Pc(7) int local7 = arg0.g1();
 		if (Static400.aClass2_Sub34_28.aPreference_Sub24_1.method7082() == 1 && Static425.aClass19_13.method7955() > 0) {
 			if ((local7 & 0x1) == 0) {
-				this.anInt9537 = Static68.anInt4096;
+				this.screenColorRgb = Static68.defaultLightColorRgb;
 			} else {
-				this.anInt9537 = arg0.g4();
+				this.screenColorRgb = arg0.g4();
 			}
 			if ((local7 & 0x2) == 0) {
-				this.aFloat204 = 1.1523438F;
+				this.lightModelAmbient = 1.1523438F;
 			} else {
-				this.aFloat204 = (float) arg0.g2() / 256.0F;
+				this.lightModelAmbient = (float) arg0.g2() / 256.0F;
 			}
 			if ((local7 & 0x4) == 0) {
-				this.aFloat205 = 0.69921875F;
+				this.light0Diffuse = 0.69921875F;
 			} else {
-				this.aFloat205 = (float) arg0.g2() / 256.0F;
+				this.light0Diffuse = (float) arg0.g2() / 256.0F;
 			}
 			if ((local7 & 0x8) == 0) {
-				this.aFloat202 = 1.2F;
+				this.light1Diffuse = 1.2F;
 			} else {
-				this.aFloat202 = (float) arg0.g2() / 256.0F;
+				this.light1Diffuse = (float) arg0.g2() / 256.0F;
 			}
 		} else {
 			if ((local7 & 0x1) != 0) {
@@ -123,29 +123,29 @@ public final class Class367 {
 			if ((local7 & 0x8) != 0) {
 				arg0.g2();
 			}
-			this.aFloat202 = 1.2F;
-			this.aFloat204 = 1.1523438F;
-			this.aFloat205 = 0.69921875F;
-			this.anInt9537 = Static68.anInt4096;
+			this.light1Diffuse = 1.2F;
+			this.lightModelAmbient = 1.1523438F;
+			this.light0Diffuse = 0.69921875F;
+			this.screenColorRgb = Static68.defaultLightColorRgb;
 		}
 		if ((local7 & 0x10) == 0) {
-			this.anInt9535 = -50;
-			this.anInt9534 = -50;
-			this.anInt9533 = -60;
+			this.lightX = -50;
+			this.lightZ = -50;
+			this.lightY = -60;
 		} else {
-			this.anInt9535 = arg0.g2s();
-			this.anInt9533 = arg0.g2s();
-			this.anInt9534 = arg0.g2s();
+			this.lightX = arg0.g2s();
+			this.lightY = arg0.g2s();
+			this.lightZ = arg0.g2s();
 		}
 		if ((local7 & 0x20) == 0) {
-			this.anInt9538 = Static563.anInt8460;
+			this.fogColorRgb = Static563.defaulFogColorRgb;
 		} else {
-			this.anInt9538 = arg0.g4();
+			this.fogColorRgb = arg0.g4();
 		}
 		if ((local7 & 0x40) == 0) {
-			this.anInt9539 = 0;
+			this.fogDepth = 0;
 		} else {
-			this.anInt9539 = arg0.g2();
+			this.fogDepth = arg0.g2();
 		}
 		if ((local7 & 0x80) == 0) {
 			this.aClass67_10 = Static226.aClass67_9;
@@ -162,6 +162,6 @@ public final class Class367 {
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(BLclient!uc;)Z")
 	public boolean method8388(@OriginalArg(1) Class367 arg0) {
-		return this.anInt9537 == arg0.anInt9537 && arg0.aFloat204 == this.aFloat204 && this.aFloat205 == arg0.aFloat205 && this.aFloat202 == arg0.aFloat202 && arg0.aFloat200 == this.aFloat200 && this.aFloat201 == arg0.aFloat201 && this.aFloat203 == arg0.aFloat203 && this.anInt9538 == arg0.anInt9538 && arg0.anInt9539 == this.anInt9539 && arg0.aClass67_10 == this.aClass67_10 && arg0.aClass148_5 == this.aClass148_5;
+		return this.screenColorRgb == arg0.screenColorRgb && arg0.lightModelAmbient == this.lightModelAmbient && this.light0Diffuse == arg0.light0Diffuse && this.light1Diffuse == arg0.light1Diffuse && arg0.aFloat200 == this.aFloat200 && this.aFloat201 == arg0.aFloat201 && this.aFloat203 == arg0.aFloat203 && this.fogColorRgb == arg0.fogColorRgb && arg0.fogDepth == this.fogDepth && arg0.aClass67_10 == this.aClass67_10 && arg0.aClass148_5 == this.aClass148_5;
 	}
 }

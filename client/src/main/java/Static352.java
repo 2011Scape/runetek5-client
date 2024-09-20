@@ -32,7 +32,7 @@ public final class Static352 {
 		Static354.aLocTypeList4.clearCaches();
 		Static690.aNpcTypeList2.method7086();
 		ObjTypeList.objTypes.method2476();
-		Static25.aSeqTypeList1.method1165();
+		Static25.aSeqTypeList1.clear();
 		Static23.aSpotAnimTypeList1.method2699();
 		Static529.aVarBitTypeList1.method3429();
 		Static36.aVarPlayerTypeList1.method5784();

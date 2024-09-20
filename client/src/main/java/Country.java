@@ -5,8 +5,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Country {
 
 	@OriginalMember(owner = "client!ci", name = "e", descriptor = "I")
-	public int anInt1610;
+	public int flag;
 
 	@OriginalMember(owner = "client!ci", name = "j", descriptor = "Ljava/lang/String;")
-	public String aString13;
+	public String name;
 }

@@ -9,7 +9,7 @@ public final class Static316 {
 	public static Frame aFrame8;
 
 	@OriginalMember(owner = "client!ka", name = "f", descriptor = "Z")
-	public static boolean aBoolean644;
+	public static boolean stereo;
 
 	@OriginalMember(owner = "client!ka", name = "h", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray41 = new String[100];

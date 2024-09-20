@@ -36,7 +36,7 @@ public final class JavaAudioChannel extends AudioChannel {
 		}
 		this.aSourceDataLine1.close();
 		this.aSourceDataLine1 = null;
-		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1519 << (Static316.aBoolean644 ? 2 : 1));
+		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1519 << (Static316.stereo ? 2 : 1));
 		this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local38);
 		this.aSourceDataLine1.open();
 		this.aSourceDataLine1.start();
@@ -46,11 +46,11 @@ public final class JavaAudioChannel extends AudioChannel {
 	@Override
 	protected void method3590() {
 		@Pc(1) short local1 = 256;
-		if (Static316.aBoolean644) {
+		if (Static316.stereo) {
 			local1 = 512;
 		}
 		for (@Pc(9) int local9 = 0; local9 < local1; local9++) {
-			@Pc(17) int local17 = this.anIntArray315[local9];
+			@Pc(17) int local17 = this.samples[local9];
 			if ((local17 + 8388608 & 0xFF000000) != 0) {
 				local17 = local17 >> 31 ^ 0x7FFFFF;
 			}
@@ -62,9 +62,9 @@ public final class JavaAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "(I)V")
 	@Override
-	public void method3588(@OriginalArg(0) int arg0) throws LineUnavailableException {
+	public void open(@OriginalArg(0) int arg0) throws LineUnavailableException {
 		try {
-			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (Static316.aBoolean644 ? 2 : 1));
+			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (Static316.stereo ? 2 : 1));
 			this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local23);
 			this.aSourceDataLine1.open();
 			this.aSourceDataLine1.start();
@@ -74,7 +74,7 @@ public final class JavaAudioChannel extends AudioChannel {
 				this.aSourceDataLine1 = null;
 				throw local39;
 			} else {
-				this.method3588(IntUtils.clp2(arg0));
+				this.open(IntUtils.clp2(arg0));
 			}
 		}
 	}
@@ -101,12 +101,12 @@ public final class JavaAudioChannel extends AudioChannel {
 	@OriginalMember(owner = "client!cb", name = "d", descriptor = "()I")
 	@Override
 	protected int method3587() {
-		return this.anInt1519 - (this.aSourceDataLine1.available() >> (Static316.aBoolean644 ? 2 : 1));
+		return this.anInt1519 - (this.aSourceDataLine1.available() >> (Static316.stereo ? 2 : 1));
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Ljava/awt/Component;)V")
 	@Override
-	public void method3593(@OriginalArg(0) Component arg0) {
+	public void init(@OriginalArg(0) Component arg0) {
 		@Pc(1) javax.sound.sampled.Mixer.Info[] local1 = AudioSystem.getMixerInfo();
 		if (local1 != null) {
 			for (@Pc(8) int local8 = 0; local8 < local1.length; local8++) {
@@ -119,7 +119,7 @@ public final class JavaAudioChannel extends AudioChannel {
 				}
 			}
 		}
-		this.anAudioFormat1 = new AudioFormat((float) Static686.anInt8944, 16, Static316.aBoolean644 ? 2 : 1, true, false);
-		this.aByteArray17 = new byte[0x100 << (Static316.aBoolean644 ? 2 : 1)];
+		this.anAudioFormat1 = new AudioFormat((float) Static686.sampleRate, 16, Static316.stereo ? 2 : 1, true, false);
+		this.aByteArray17 = new byte[0x100 << (Static316.stereo ? 2 : 1)];
 	}
 }

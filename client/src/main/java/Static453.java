@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static453 {
 
 	@OriginalMember(owner = "client!of", name = "z", descriptor = "[[Lclient!hda;")
-	public static Component[][] aComponentArrayArray2;
+	public static Component[][] components;
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(Lclient!eo;III)V")
 	public static void method6209(@OriginalArg(0) ParticleNode_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {

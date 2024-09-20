@@ -31,12 +31,12 @@ public final class Static115 {
 			if (local32 == null) {
 				arg0 = -1;
 			} else {
-				Static446.aSignlink6.method8995(local32.method9384(), local32.method9383(), Static434.aCanvas7, new Point(local28.anInt10303, local28.anInt10308), local32.method9378());
+				Static446.aSignlink6.setCursor(local32.method9384(), local32.method9383(), Static434.canvas, new Point(local28.anInt10303, local28.anInt10308), local32.method9378());
 				Static470.anInt7112 = arg0;
 			}
 		}
 		if (arg0 == -1 && Static470.anInt7112 != -1) {
-			Static446.aSignlink6.method8995(-1, (int[]) null, Static434.aCanvas7, new Point(), -1);
+			Static446.aSignlink6.setCursor(-1, (int[]) null, Static434.canvas, new Point(), -1);
 			Static470.anInt7112 = -1;
 		}
 	}

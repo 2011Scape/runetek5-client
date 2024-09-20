@@ -8,7 +8,7 @@ public final class Static152 {
 	@OriginalMember(owner = "client!ep", name = "f", descriptor = "(I)V")
 	public static void method9273() {
 		if (Static446.aSignlink6.aBoolean781 && Static668.aClass229_5.worldId != -1) {
-			Static430.method5817(Static668.aClass229_5.worldId, Static668.aClass229_5.aString60);
+			Static430.hopWorld(Static668.aClass229_5.worldId, Static668.aClass229_5.aString60);
 		}
 	}
 }

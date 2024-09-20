@@ -20,7 +20,7 @@ public final class ClientScript extends SecondaryLinkable {
 	public int anInt2949;
 
 	@OriginalMember(owner = "client!fj", name = "B", descriptor = "[Lclient!av;")
-	public HashTable[] aHashTableArray1;
+	public HashTable[] switchTables;
 
 	@OriginalMember(owner = "client!fj", name = "E", descriptor = "[Ljava/lang/String;")
 	public String[] aStringArray14;

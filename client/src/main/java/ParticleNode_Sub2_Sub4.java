@@ -13,11 +13,11 @@ public abstract class ParticleNode_Sub2_Sub4 extends ParticleNode_Sub2 implement
 
 	@OriginalMember(owner = "client!tla", name = "<init>", descriptor = "(IIIIIII)V")
 	protected ParticleNode_Sub2_Sub4(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
-		super.aByte144 = (byte) arg3;
+		super.plane = (byte) arg3;
 		this.aShort101 = (short) arg5;
-		super.anInt10694 = arg2;
+		super.zFine = arg2;
 		this.aShort102 = (short) arg6;
-		super.anInt10690 = arg0;
+		super.xFine = arg0;
 		super.aByte143 = (byte) arg4;
 		super.anInt10691 = arg1;
 	}
@@ -28,7 +28,7 @@ public abstract class ParticleNode_Sub2_Sub4 extends ParticleNode_Sub2 implement
 		if (arg0 != 59) {
 			this.aShort101 = -126;
 		}
-		return Static282.method3976(this.method9286(2), super.aByte143, super.anInt10690 >> Static52.anInt1066, super.anInt10694 >> Static52.anInt1066);
+		return Static282.method3976(this.method9286(2), super.aByte143, super.xFine >> Static52.anInt1066, super.zFine >> Static52.anInt1066);
 	}
 
 	@OriginalMember(owner = "client!tla", name = "j", descriptor = "(I)V")
@@ -60,12 +60,12 @@ public abstract class ParticleNode_Sub2_Sub4 extends ParticleNode_Sub2 implement
 	@OriginalMember(owner = "client!tla", name = "a", descriptor = "([Lclient!lca;I)I")
 	@Override
 	public final int method9288(@OriginalArg(0) Linkable_Sub7[] arg0) {
-		return this.method9277(arg0, super.anInt10694 >> Static52.anInt1066, super.anInt10690 >> Static52.anInt1066);
+		return this.method9277(arg0, super.zFine >> Static52.anInt1066, super.xFine >> Static52.anInt1066);
 	}
 
 	@OriginalMember(owner = "client!tla", name = "g", descriptor = "(I)Z")
 	@Override
 	public final boolean method9275() {
-		return Static258.aBooleanArrayArray3[(super.anInt10690 >> Static52.anInt1066) + Static35.anInt813 - Static403.anInt6246][(super.anInt10694 >> Static52.anInt1066) + Static35.anInt813 - Static550.anInt8271];
+		return Static258.aBooleanArrayArray3[(super.xFine >> Static52.anInt1066) + Static35.anInt813 - Static403.anInt6246][(super.zFine >> Static52.anInt1066) + Static35.anInt813 - Static550.anInt8271];
 	}
 }

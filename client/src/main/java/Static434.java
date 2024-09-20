@@ -9,7 +9,7 @@ public final class Static434 {
 	public static int anInt6565;
 
 	@OriginalMember(owner = "client!nla", name = "T", descriptor = "Ljava/awt/Canvas;")
-	public static Canvas aCanvas7;
+	public static Canvas canvas;
 
 	@OriginalMember(owner = "client!nla", name = "V", descriptor = "I")
 	public static int anInt6579;

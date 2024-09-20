@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static699 {
 
 	@OriginalMember(owner = "client!wc", name = "z", descriptor = "I")
-	public static int anInt10532;
+	public static int maxId;
 
 	@OriginalMember(owner = "client!wc", name = "F", descriptor = "I")
 	public static int anInt10540;

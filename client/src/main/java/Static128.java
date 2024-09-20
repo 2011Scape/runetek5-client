@@ -14,8 +14,8 @@ public final class Static128 {
 	public static String aString108 = null;
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method7754(@OriginalArg(1) String arg0) {
-		if (Static87.aClass241Array1 == null) {
+	public static void kick(@OriginalArg(1) String arg0) {
+		if (Static87.members == null) {
 			return;
 		}
 		@Pc(21) Connection local21 = Connection.getActiveConnection();

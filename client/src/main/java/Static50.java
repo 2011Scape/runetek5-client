@@ -134,13 +134,13 @@ public final class Static50 {
 					@Pc(88) SpotAnimType local88 = Static23.aSpotAnimTypeList1.method2694(arg0.aClass199Array3[local50].anInt4930);
 					@Pc(92) SeqType local92 = local75.method9107();
 					if (local88.aBoolean448) {
-						if (local92.anInt1642 == 3) {
-							if (arg0.anInt10762 > 0 && Static333.anInt5455 >= arg0.anInt10759 && arg0.anInt10755 < Static333.anInt5455) {
+						if (local92.looptype == 3) {
+							if (arg0.anInt10762 > 0 && Static333.loop >= arg0.anInt10759 && arg0.anInt10755 < Static333.loop) {
 								local75.method9113(true, -1);
 								arg0.aClass199Array3[local50].anInt4930 = -1;
 								continue;
 							}
-						} else if (local92.anInt1642 == 1 && arg0.anInt10762 > 0 && arg0.anInt10759 <= Static333.anInt5455 && Static333.anInt5455 > arg0.anInt10755) {
+						} else if (local92.looptype == 1 && arg0.anInt10762 > 0 && arg0.anInt10759 <= Static333.loop && Static333.loop > arg0.anInt10755) {
 							continue;
 						}
 					}
@@ -155,14 +155,14 @@ public final class Static50 {
 		if (local75.method9109()) {
 			label83: {
 				@Pc(214) SeqType local214 = local75.method9107();
-				if (local214.anInt1642 == 3) {
-					if (arg0.anInt10762 > 0 && arg0.anInt10759 <= Static333.anInt5455 && Static333.anInt5455 > arg0.anInt10755) {
+				if (local214.looptype == 3) {
+					if (arg0.anInt10762 > 0 && arg0.anInt10759 <= Static333.loop && Static333.loop > arg0.anInt10755) {
 						arg0.anIntArray869 = null;
 						local75.method9113(true, -1);
 						break label83;
 					}
-				} else if (local214.anInt1642 == 1) {
-					if (arg0.anInt10762 > 0 && Static333.anInt5455 >= arg0.anInt10759 && arg0.anInt10755 < Static333.anInt5455) {
+				} else if (local214.looptype == 1) {
+					if (arg0.anInt10762 > 0 && Static333.loop >= arg0.anInt10759 && arg0.anInt10755 < Static333.loop) {
 						local75.method9091(1);
 						break label83;
 					}
@@ -188,7 +188,7 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIB)V")
 	public static void method6639(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) SecondaryLinkable_Sub2 local8 = Static440.method5963(15, 0L);
+		@Pc(8) SecondaryLinkable_Sub2 local8 = Static440.create(15, 0L);
 		local8.method202();
 		local8.anInt197 = arg1;
 		local8.anInt195 = arg0;

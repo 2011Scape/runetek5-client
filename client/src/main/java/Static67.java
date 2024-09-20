@@ -16,7 +16,7 @@ public final class Static67 {
 	}
 
 	@OriginalMember(owner = "client!cca", name = "a", descriptor = "(IIZB)I")
-	public static int method6099(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+	public static int getSlotTotal(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
 		@Pc(8) Linkable_Sub22 local8 = Static556.method7303(arg1, arg2);
 		if (local8 == null) {
 			return 0;

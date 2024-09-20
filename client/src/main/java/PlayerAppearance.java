@@ -16,7 +16,7 @@ public final class PlayerAppearance {
 	private Class52[] aClass52Array1;
 
 	@OriginalMember(owner = "client!ju", name = "m", descriptor = "Z")
-	public boolean aBoolean385;
+	public boolean gender;
 
 	@OriginalMember(owner = "client!ju", name = "o", descriptor = "[I")
 	private int[] anIntArray381;
@@ -48,7 +48,7 @@ public final class PlayerAppearance {
 				if (this.aClass52Array1[local156] != null) {
 					@Pc(179) int[] local179;
 					@Pc(173) int[] local173;
-					if (this.aBoolean385) {
+					if (this.gender) {
 						local173 = this.aClass52Array1[local156].anIntArray100;
 						local179 = this.aClass52Array1[local156].anIntArray99;
 					} else {
@@ -86,14 +86,14 @@ public final class PlayerAppearance {
 		for (local156 = 0; local156 < 10; local156++) {
 			this.aLong160 = this.aLong160 >>> 8 ^ local5[(int) (((long) this.anIntArray380[local156] ^ this.aLong160) & 0xFFL)];
 		}
-		this.aLong160 = local5[(int) (((long) (this.aBoolean385 ? 1 : 0) ^ this.aLong160) & 0xFFL)] ^ this.aLong160 >>> 8;
+		this.aLong160 = local5[(int) (((long) (this.gender ? 1 : 0) ^ this.aLong160) & 0xFFL)] ^ this.aLong160 >>> 8;
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "([I[I[Lclient!bs;IIZB)V")
 	public void method4545(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class52[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		this.aClass52Array1 = arg2;
 		this.anIntArray380 = arg0;
-		this.aBoolean385 = arg5;
+		this.gender = arg5;
 		if (this.anInt5007 != arg4) {
 			this.anInt5007 = arg4;
 		}
@@ -116,20 +116,20 @@ public final class PlayerAppearance {
 		@Pc(116) int local116;
 		if (arg1 != null) {
 			@Pc(50) SeqType local50 = arg1.method9107();
-			if (local50 != null && (local50.anInt1652 >= 0 || local50.anInt1651 >= 0)) {
+			if (local50 != null && (local50.mainhand >= 0 || local50.offhand >= 0)) {
 				local34 = new int[this.anIntArray381.length];
 				for (local72 = 0; local72 < local34.length; local72++) {
 					local34[local72] = this.anIntArray381[local72];
 				}
-				if (local50.anInt1652 >= 0 && arg6.anInt10301 != -1) {
-					if (local50.anInt1652 == 65535) {
+				if (local50.mainhand >= 0 && arg6.anInt10301 != -1) {
+					if (local50.mainhand == 65535) {
 						local34[arg6.anInt10301] = 0;
 						for (local116 = 0; local116 < arg6.anIntArray818.length; local116++) {
 							local34[arg6.anIntArray818[local116]] = 0;
 						}
 						local31 ^= 0xFFFFFFFF00000000L;
 					} else {
-						local34[arg6.anInt10301] = local50.anInt1652 | 0x40000000;
+						local34[arg6.anInt10301] = local50.mainhand | 0x40000000;
 						for (local116 = 0; local116 < arg6.anIntArray818.length; local116++) {
 							local34[arg6.anIntArray818[local116]] = 0;
 						}
@@ -137,16 +137,16 @@ public final class PlayerAppearance {
 					}
 					local36 = true;
 				}
-				if (local50.anInt1651 >= 0 && arg6.anInt10300 != -1) {
+				if (local50.offhand >= 0 && arg6.anInt10300 != -1) {
 					local44 = true;
-					if (local50.anInt1651 == 65535) {
+					if (local50.offhand == 65535) {
 						local34[arg6.anInt10300] = 0;
 						for (local116 = 0; local116 < arg6.anIntArray820.length; local116++) {
 							local34[arg6.anIntArray820[local116]] = 0;
 						}
 						local31 ^= 0xFFFFFFFFL;
 					} else {
-						local34[arg6.anInt10300] = local50.anInt1651 | 0x40000000;
+						local34[arg6.anInt10300] = local50.offhand | 0x40000000;
 						for (local116 = 0; local116 < arg6.anIntArray820.length; local116++) {
 							local34[arg6.anIntArray820[local116]] = 0;
 						}
@@ -223,7 +223,7 @@ public final class PlayerAppearance {
 								if (!local614 && this.aClass52Array1 != null && this.aClass52Array1[local586] != null) {
 									local593 = this.aClass52Array1[local586];
 								}
-								local633 = arg0.method2486(local591 & 0x3FFFFFFF).method8799(local593, this.aBoolean385);
+								local633 = arg0.method2486(local591 & 0x3FFFFFFF).method8799(local593, this.gender);
 								if (local633 != null) {
 									local584[local586] = local633;
 								}
@@ -311,7 +311,7 @@ public final class PlayerAppearance {
 					if (!local399 && this.aClass52Array1 != null && this.aClass52Array1[local390] != null) {
 						local397 = this.aClass52Array1[local390];
 					}
-					if (!arg0.method2486(local395 & 0x3FFFFFFF).method8802(this.aBoolean385, local397)) {
+					if (!arg0.method2486(local395 & 0x3FFFFFFF).method8802(this.gender, local397)) {
 						local388 = true;
 					}
 				} else if ((Integer.MIN_VALUE & local395) != 0 && !arg7.method5042(local395 & 0x3FFFFFFF).method6616()) {
@@ -373,13 +373,13 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(IZ)V")
-	public void method4547(@OriginalArg(1) boolean arg0) {
-		this.aBoolean385 = arg0;
+	public void setGender(@OriginalArg(1) boolean arg0) {
+		this.gender = arg0;
 		this.method4543();
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(IBLclient!kr;I)V")
-	public void method4548(@OriginalArg(0) int arg0, @OriginalArg(2) IdkTypeList arg1, @OriginalArg(3) int arg2) {
+	public void setIdentikit(@OriginalArg(0) int arg0, @OriginalArg(2) IdkTypeList arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = Static264.anIntArray891[arg2];
 		if (arg1.method5042(arg0) != null) {
 			this.anIntArray381[local7] = Integer.MIN_VALUE | arg0;
@@ -388,7 +388,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(IIB)V")
-	public void method4549(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public void setColor(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.anIntArray380[arg0] = arg1;
 		this.method4543();
 	}
@@ -482,7 +482,7 @@ public final class PlayerAppearance {
 					if (this.aClass52Array1 != null && this.aClass52Array1[local83] != null) {
 						local94 = this.aClass52Array1[local83];
 					}
-					if (!arg4.method2486(local92 & 0x3FFFFFFF).method8808(local94, this.aBoolean385)) {
+					if (!arg4.method2486(local92 & 0x3FFFFFFF).method8808(local94, this.gender)) {
 						local81 = true;
 					}
 				} else if ((Integer.MIN_VALUE & local92) != 0 && !arg0.method5042(local92 & 0x3FFFFFFF).method6615()) {
@@ -502,7 +502,7 @@ public final class PlayerAppearance {
 					if (this.aClass52Array1 != null && this.aClass52Array1[local176] != null) {
 						local187 = this.aClass52Array1[local176];
 					}
-					local220 = arg4.method2486(local185 & 0x3FFFFFFF).method8801(this.aBoolean385, local187);
+					local220 = arg4.method2486(local185 & 0x3FFFFFFF).method8801(this.gender, local187);
 					if (local220 != null) {
 						local172[local174++] = local220;
 					}

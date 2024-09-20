@@ -40,12 +40,12 @@ public final class Static383 {
 			local131 = local127 >> 28;
 			local137 = local127 >> 14 & 0xFF;
 			@Pc(141) int local141 = local127 & 0xFF;
-			@Pc(149) int local149 = (local137 << 6) + (local45 - Static691.anInt10367);
+			@Pc(149) int local149 = (local137 << 6) + (local45 - Static691.originX);
 			local99.aBoolean125 = local91.aBoolean712;
-			@Pc(161) int local161 = (local141 << 6) + local50 - Static116.anInt2270;
+			@Pc(161) int local161 = (local141 << 6) + local50 - Static116.originZ;
 			local99.aBoolean128 = local91.aBoolean711;
 			local99.aByteArray111[0] = Static139.aByteArray30[arg0];
-			local99.aByte144 = local99.aByte143 = (byte) local131;
+			local99.plane = local99.aByte143 = (byte) local131;
 			if (Static441.method5968(local161, local149)) {
 				local99.aByte143++;
 			}

@@ -8,7 +8,7 @@ public final class Static695 {
 	public static int[] anIntArray868;
 
 	@OriginalMember(owner = "client!vw", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method9265(@OriginalArg(0) String arg0) {
+	public static void add(@OriginalArg(0) String arg0) {
 		Static44.method1072(arg0, "", 0, "", "", 0);
 	}
 

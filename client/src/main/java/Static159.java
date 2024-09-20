@@ -76,8 +76,8 @@ public final class Static159 {
 		if (Static41.method1027(Static283.gameState) || Static620.isInLobby(Static283.gameState)) {
 			Static127.method2243(Static412.anInt6358, Static170.anInt2864 >> 12, Static110.anInt2186 >> 12);
 		} else {
-			@Pc(20) int local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] >> 3;
-			@Pc(27) int local27 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0] >> 3;
+			@Pc(20) int local20 = Static556.self.anIntArray879[0] >> 3;
+			@Pc(27) int local27 = Static556.self.anIntArray878[0] >> 3;
 			if (local20 >= 0 && Static720.anInt10859 >> 3 > local20 && local27 >= 0 && Static501.anInt7568 >> 3 > local27) {
 				Static127.method2243(Static412.anInt6358, local20, local27);
 			} else {
