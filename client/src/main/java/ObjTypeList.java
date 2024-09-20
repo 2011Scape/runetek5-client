@@ -24,7 +24,7 @@ public final class ObjTypeList {
 	private final Class324 aClass324_1 = new Class324();
 
 	@OriginalMember(owner = "client!es", name = "m", descriptor = "I")
-	public final int anInt2662;
+	public final int languageId;
 
 	@OriginalMember(owner = "client!es", name = "w", descriptor = "Lclient!ul;")
 	private final ModeGame aModeGame1;
@@ -52,7 +52,7 @@ public final class ObjTypeList {
 
 	@OriginalMember(owner = "client!es", name = "<init>", descriptor = "(Lclient!ul;IZLclient!bo;Lclient!sb;Lclient!sb;)V")
 	public ObjTypeList(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) ParamTypeList arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
-		this.anInt2662 = arg1;
+		this.languageId = arg1;
 		this.aModeGame1 = arg0;
 		this.aJs528 = arg5;
 		this.aParamTypeList1 = arg3;
@@ -65,11 +65,11 @@ public final class ObjTypeList {
 			this.anInt2670 = this.aJs529.getGroupCapacity(local54) + local54 * 256;
 		}
 		if (this.aModeGame1 == ModeGame.GAME_RUNESCAPE) {
-			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.anInt2662), null, null, LocalizedText.EXAMINE.get(this.anInt2662) };
+			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.languageId), null, null, LocalizedText.EXAMINE.get(this.languageId) };
 		} else {
-			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.anInt2662), null, null, null };
+			this.aStringArray11 = new String[] { null, null, LocalizedText.TAKE.get(this.languageId), null, null, null };
 		}
-		this.aStringArray10 = new String[] { null, null, null, null, LocalizedText.DROP.get(this.anInt2662) };
+		this.aStringArray10 = new String[] { null, null, null, null, LocalizedText.DROP.get(this.languageId) };
 	}
 
 	@OriginalMember(owner = "client!es", name = "b", descriptor = "(B)V")
@@ -223,16 +223,16 @@ public final class ObjTypeList {
 			local53 = this.aJs529.fetchFile(Static593.method7781(arg0), Static223.method9100(arg0));
 		}
 		local26 = new ObjType();
-		local26.anInt10134 = arg0;
+		local26.itemId = arg0;
 		local26.aObjTypeList2 = this;
-		local26.aStringArray46 = (String[]) this.aStringArray11.clone();
-		local26.aStringArray45 = (String[]) this.aStringArray10.clone();
+		local26.groundOptions = (String[]) this.aStringArray11.clone();
+		local26.inventoryOptions = (String[]) this.aStringArray10.clone();
 		if (local53 != null) {
 			local26.method8791(new Packet(local53));
 		}
 		local26.method8807();
 		if (local26.anInt10087 != -1) {
-			local26.method8793(this.method2486(local26.anInt10087), this.method2486(local26.anInt10110));
+			local26.method8793(this.method2486(local26.anInt10087), this.method2486(local26.notedId));
 		}
 		if (local26.anInt10083 != -1) {
 			local26.method8792(this.method2486(local26.anInt10143), this.method2486(local26.anInt10083));
@@ -241,15 +241,15 @@ public final class ObjTypeList {
 			local26.method8809(this.method2486(local26.anInt10144), this.method2486(local26.anInt10114));
 		}
 		if (!this.aBoolean222 && local26.aBoolean770) {
-			local26.aString118 = LocalizedText.MEMBERS_OBJECT.get(this.anInt2662);
-			local26.aStringArray46 = this.aStringArray11;
-			local26.aStringArray45 = this.aStringArray10;
+			local26.aString118 = LocalizedText.MEMBERS_OBJECT.get(this.languageId);
+			local26.groundOptions = this.aStringArray11;
+			local26.inventoryOptions = this.aStringArray10;
 			local26.anIntArray800 = null;
 			local26.anInt10121 = 0;
 			local26.aBoolean771 = false;
-			if (local26.aHashTable44 != null) {
+			if (local26.params != null) {
 				@Pc(195) boolean local195 = false;
-				for (@Pc(200) Linkable local200 = local26.aHashTable44.head(); local200 != null; local200 = local26.aHashTable44.next()) {
+				for (@Pc(200) Linkable local200 = local26.params.head(); local200 != null; local200 = local26.params.next()) {
 					@Pc(209) ParamType local209 = this.aParamTypeList1.method1161((int) local200.id);
 					if (local209.aBoolean570) {
 						local200.unlink();
@@ -258,7 +258,7 @@ public final class ObjTypeList {
 					}
 				}
 				if (!local195) {
-					local26.aHashTable44 = null;
+					local26.params = null;
 				}
 			}
 		}
