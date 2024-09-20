@@ -472,21 +472,52 @@ public final class ObjType {
 			} else if (opcode == 140) {
 				this.anInt10144 = packet.g2();
 			} else if (opcode == 249) {
-				local202 = packet.g1();
+				int size = packet.g1();
 				if (this.params == null) {
-					local212 = IntUtils.clp2(local202);
-					this.params = new HashTable(local212);
+					int capacity = IntUtils.clp2(size);
+					this.params = new HashTable(capacity);
 				}
-				for (local212 = 0; local212 < local202; local212++) {
-					@Pc(554) boolean local554 = packet.g1() == 1;
-					@Pc(558) int local558 = packet.g3();
-					@Pc(567) Linkable local567;
-					if (local554) {
-						local567 = new StringNode(packet.gjstr());
+
+				for (int count = 0; count < size; count++) {
+					@Pc(554) boolean isString = packet.g1() == 1;
+					@Pc(558) int key = packet.g3();
+
+					@Pc(567) Linkable node;
+					if (isString) {
+						node = new StringNode(packet.gjstr());
 					} else {
-						local567 = new IntNode(packet.g4());
+						// Forcing 457 (shard return) to be 105 for the Rune Minotaur Pouch
+						if (itemId == 12083 && key == 457) {
+							node = new IntNode(70);
+						}
+						// Forcing 599 (Scrolls needed) to be 1 for the Rune Bull Rush Scroll
+						else if (itemId == 12466 && key == 599) {
+							node = new IntNode(1);
+						}
+						else {
+							node = new IntNode(packet.g4());
+						}
 					}
-					this.params.put((long) local558, local567);
+					// Setting 457 (shard return) to be 6 for the Rune Bull Rush scroll
+					if (itemId == 12466) {
+						this.params.put(457, new IntNode(6));
+					}
+
+					// Setting 541 (shard crafting requirement) to be 100 for the Rune Minotaur Pouch
+					// Without setting the other the crafting interface won't grey out the icon
+					// when you don't have the appropriate items to craft with.
+					if (itemId == 12083) {
+						this.params.put(538, new IntNode(12155));
+						this.params.put(539, new IntNode(1));
+						this.params.put(540, new IntNode(12183));
+						this.params.put(541, new IntNode(100));
+						this.params.put(542, new IntNode(12163));
+						this.params.put(543, new IntNode(1));
+						this.params.put(697, new IntNode(2363));
+						this.params.put(698, new IntNode(1));
+					}
+
+					this.params.put((long) key, node);
 				}
 			}
 		}
