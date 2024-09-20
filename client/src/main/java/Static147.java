@@ -234,7 +234,7 @@ public final class Static147 {
 									}
 								}
 								if (local543.aClass8_Sub2_18.aByte144 == Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
-									@Pc(1525) String[] local1525 = local1424.groundOptions;
+									@Pc(1525) String[] local1525 = local1424.aStringArray46;
 									for (local723 = local1525.length - 1; local723 >= 0; local723--) {
 										if (local1525[local723] != null) {
 											@Pc(1540) short local1540 = 0;
